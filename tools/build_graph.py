@@ -19,7 +19,7 @@ import yaml
 
 from kb import (CERTAINTIES, CHANNEL_ROLES, DIR_FOR_TYPE, ENTITIES,
                 EVIDENCE_FIELDS_FOR_VERIFIED, INTERPRETIVE_RELATIONS, PREDICTION_OUTCOMES,
-                RELATION_TARGET_TYPES, RELATIONS, ROOT, SATURATIONS, STAGES, STATUSES,
+                RELATION_TARGET_TYPES, RELATIONS, RETRIEVEDS, ROOT, SATURATIONS, STAGES, STATUSES,
                 TREND_KINDS, TYPES, URI_PREFIX, VERIFIABLE_CERTAINTIES, alias_map, build_edges,
                 data_as_of, edtf_ok, edtf_year_range, load_config, load_entities,
                 read_frontmatter, read_queries, recheck_deadline, resolve, search_entities)
@@ -206,16 +206,22 @@ def validate_trend(meta, body, cfg, err):
 
 
 def validate_evidence(meta, err):
-    """evidence（主張ごとの根拠）と、verified の条件。
+    """evidence（主張ごとの根拠）と、verified の2つの関門。
 
-    verified を名乗るには measured / independent / attested の根拠が最低1本要る——
-    vendor（その主張で儲かる側の数字）と anecdotal だけを重ねても verified にはならない。
+    verified を名乗るには2つを同時に満たす必要がある。
+    1. measured / independent / attested の根拠が最低1本——vendor（その主張で儲かる側の数字）と
+       anecdotal だけを重ねても verified にはならない（誰が出したか）
+    2. retrieved: primary の根拠が最低1本——権威あるURLは読まずにも貼れる。原典を1本も開いて
+       いない主張は verified にしない（自分が読んだか）
     """
     for c in meta.get("evidence") or []:
         if not c.get("source"):
             err(f"evidence の {c.get('field')} に source が無い")
         if c.get("certainty") not in CERTAINTIES:
             err(f"evidence の {c.get('field')} の certainty が語彙外: {c.get('certainty')}")
+        if c.get("retrieved") not in RETRIEVEDS:
+            err(f"evidence の {c.get('field')} の retrieved が語彙外: {c.get('retrieved')}"
+                f"（{sorted(RETRIEVEDS)}／原典を開いていないなら summary）")
         if not c.get("as_of"):
             err(f"evidence の {c.get('field')} に as_of（いつ時点の数字か）が無い")
 
@@ -228,6 +234,9 @@ def validate_evidence(meta, err):
         if rows and not any(c.get("certainty") in VERIFIABLE_CERTAINTIES for c in rows):
             err(f"verified を名乗るには {sorted(VERIFIABLE_CERTAINTIES)} の根拠が最低1本要る"
                 "（vendor / anecdotal だけでは verified にならない）")
+        if rows and not any(c.get("retrieved") == "primary" for c in rows):
+            err("verified を名乗るには retrieved: primary の根拠が最低1本要る"
+                "（原典を1本も開いていない主張は verified にしない）")
 
 
 def check_overview_freshness(entities, errors):
@@ -261,6 +270,7 @@ def coverage(entities, cfg):
     th = cfg["thresholds"]
     grid, per_cat = {}, {c: 0 for c in cats}
     stale, vendor_only, isolated = [], [], []
+    unread, hearsay = [], []
     all_edges = build_edges(entities)
     edge_ends = {e["from"] for e in all_edges} | {e["to"] for e in all_edges}
 
@@ -278,6 +288,11 @@ def coverage(entities, cfg):
         rows = meta.get("evidence") or []
         if rows and all(c.get("certainty") == "vendor" for c in rows):
             vendor_only.append(tid)
+        # 分母は counted（stub を除く trend）。一覧と比率が食い違わないよう同じループで拾う
+        if not any(c.get("retrieved") == "primary" for c in rows):
+            unread.append(tid)
+        if not any(c.get("certainty") in VERIFIABLE_CERTAINTIES for c in rows):
+            hearsay.append(tid)
         if tid not in edge_ends:
             isolated.append(tid)
 
@@ -303,12 +318,19 @@ def coverage(entities, cfg):
         "per_category": per_cat,
         "stale": sorted(stale),
         "vendor_only": sorted(vendor_only),
+        "unread": sorted(unread),
+        "hearsay": sorted(hearsay),
         "isolated": sorted(isolated),
         "measured": measured_ids,
         "progress": {
             "trend_total": f"{total}/{th['trend_total']}（stub {len(trends) - total}件は不算入）",
             "vendor_only_ratio": f"{(len(vendor_only) / total if total else 0):.2f}"
                                  f"（上限 {th['vendor_only_max_ratio']}）",
+            "primary_read_ratio": f"{((total - len(unread)) / total if total else 0):.2f}"
+                                  f"（下限 {th['primary_read_min_ratio']}・原典を実読した根拠を持つ trend）",
+            "independent_ratio": f"{((total - len(hearsay)) / total if total else 0):.2f}"
+                                 f"（下限 {th['independent_min_ratio']}・"
+                                 f"independent / attested / measured の根拠を持つ trend）",
             "self_measured": f"{len(measured_ids)}/{th['self_measured_min']} 件が measured の根拠を持つ",
             "per_category_min": f"{sum(1 for n in per_cat.values() if n >= th['per_category_min'])}"
                                 f"/{len(cats)} カテゴリが {th['per_category_min']}件以上",
@@ -343,6 +365,12 @@ def render_coverage(cov, cfg, entities):
         lines += ["", f"**鮮度切れ**（recheck_by < {cov['as_of']}）: {', '.join(cov['stale'])}"]
     if cov["vendor_only"]:
         lines += ["", f"**根拠が vendor だけ**: {', '.join(cov['vendor_only'])}"]
+    if cov["unread"]:
+        lines += ["", "**原典を実読していない**（`retrieved: primary` の根拠が1本も無い）: "
+                      f"{', '.join(cov['unread'])}"]
+    if cov["hearsay"]:
+        lines += ["", "**利害のない根拠が無い**（independent / attested / measured が1本も無い）: "
+                      f"{', '.join(cov['hearsay'])}"]
 
     # 空振りの記録は残すが、**いま当たる語は出さない**。KB が空だった頃に探された語をそのまま
     # 「無い」と出し続けると、既に入っているものを調べに行かせてしまう。

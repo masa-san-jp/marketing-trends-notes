@@ -71,6 +71,7 @@
           "field": "time",
           "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
           "certainty": "attested",
+          "retrieved": "primary",
           "as_of": "2026-08-10"
         }
       ],
@@ -168,6 +169,7 @@
           "field": "time",
           "source": "https://www.dentsu.co.jp/knowledge/ad_cost/",
           "certainty": "vendor",
+          "retrieved": "summary",
           "as_of": "2025"
         }
       ],
@@ -243,12 +245,14 @@
           "field": "stage",
           "source": "https://www.soumu.go.jp/main_content/001079136.pdf",
           "certainty": "independent",
+          "retrieved": "primary",
           "as_of": "2025-12"
         },
         {
           "field": "stage",
           "source": "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html",
           "certainty": "independent",
+          "retrieved": "primary",
           "as_of": "2025-12"
         }
       ],
@@ -320,6 +324,7 @@
           "field": "kind",
           "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
           "certainty": "attested",
+          "retrieved": "primary",
           "as_of": "2026-08-10"
         }
       ],

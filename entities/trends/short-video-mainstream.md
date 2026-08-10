@@ -25,8 +25,8 @@ freshness:
   valid_as_of: "2026-08-10"
   recheck_by: "2027-02-10"
 evidence:
-  - {field: stage, source: "https://www.soumu.go.jp/main_content/001079136.pdf", certainty: independent, as_of: "2025-12"}
-  - {field: stage, source: "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html", certainty: independent, as_of: "2025-12"}
+  - {field: stage, source: "https://www.soumu.go.jp/main_content/001079136.pdf", certainty: independent, retrieved: primary, as_of: "2025-12"}
+  - {field: stage, source: "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html", certainty: independent, retrieved: primary, as_of: "2025-12"}
 predictions:
   - {claim: "2027年末時点でも、国内若年層の動画視聴でショート形式が支配的であり続ける（総務省調査系の利用率が前年割れしない）", by: "2027-12", resolved: null, outcome: null}
   - {claim: "令和8年度調査（2026年12月実施・2027年6月公表見込み）で TikTok の10代利用率が67.9％を下回らない", by: "2027-07", resolved: null, outcome: null}
