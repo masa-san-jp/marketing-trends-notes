@@ -311,6 +311,9 @@ def coverage(entities, cfg):
                       for s in sorted(STATUSES)},
         "grid": grid,
         "per_category": per_cat,
+        # counted は指標の分母（draft / verified の trend）。一覧をここから作ることで、
+        # 表に出る顔ぶれと比率の対象を必ず一致させる
+        "counted": sorted(counted),
         "stale": sorted(stale),
         "vendor_only": sorted(vendor_only),
         "isolated": sorted(isolated),
@@ -359,9 +362,11 @@ def render_coverage(cov, cfg, entities):
         lines += ["", f"**鮮度切れ**（recheck_by < {cov['as_of']}）: {', '.join(cov['stale'])}"]
     if cov["vendor_only"]:
         lines += ["", f"**根拠が vendor だけ**: {', '.join(cov['vendor_only'])}"]
-    unread = [t for t in cov["independent_backed"] if t not in cov["primary_read"]]
+    # primary_read_ratio の分母（counted）から作る。independent_backed から作ると、
+    # 根拠が vendor / anecdotal だけの未読 trend が一覧から漏れて、比率と顔ぶれがずれる
+    unread = [t for t in cov["counted"] if t not in cov["primary_read"]]
     if unread:
-        lines += ["", f"**原典を実読していない**（retrieved: summary のみ）: {', '.join(unread)}"]
+        lines += ["", f"**原典を実読していない**（retrieved: primary の根拠が無い）: {', '.join(unread)}"]
 
     # 空振りの記録は残すが、**いま当たる語は出さない**。KB が空だった頃に探された語をそのまま
     # 「無い」と出し続けると、既に入っているものを調べに行かせてしまう。

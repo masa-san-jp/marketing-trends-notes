@@ -31,7 +31,7 @@ trend **2** 件（stub 0件は不算入）／内訳 {'draft': 2, 'stub': 0, 'ver
 | education（教育） |  |  |  | 0 |
 | cross-category（カテゴリ横断） | 1 |  |  | 1 |
 
-**原典を実読していない**（retrieved: summary のみ）: trend/short-video-mainstream
+**原典を実読していない**（retrieved: primary の根拠が無い）: trend/short-video-mainstream
 
 受け入れ条件の達成度:
 

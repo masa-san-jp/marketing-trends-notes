@@ -29,6 +29,10 @@
     "education": 0,
     "cross-category": 1
   },
+  "counted": [
+    "trend/short-video-mainstream",
+    "trend/tracking-restrictions"
+  ],
   "stale": [],
   "vendor_only": [],
   "isolated": [],

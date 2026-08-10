@@ -46,5 +46,6 @@ thresholds:            # issue #1 の受け入れ条件の機械化。数値の�
 # independent_backed_ratio と primary_read_ratio は別のことを測っている。前者は**誰が出した数字か**
 # （伝聞の集積にしない）、後者は**自分がそれを読んだか**（読まずに出典を付けない）。検索要約だけで
 # 60件積むことはできてしまうので、後者が無いと「出典付きの顔をした未読の山」になる。
-# 2026-08-10 時点の実行環境は WebSearch が通り WebFetch / curl が egress allowlist に阻まれるため、
-# primary_read_ratio は環境側の制約がそのまま未達として表に出る（docs/sources-directory.md）。
+# 2026-08-10 時点の実行環境は WebSearch が通り WebFetch / curl が egress allowlist に阻まれる。
+# 到達できない出典から trend を積むほど primary_read_ratio は下がるので、件数が増えるにつれて
+# 環境制約がそのまま指標に効いてくる（docs/sources-directory.md に実測と対処）。
