@@ -34,7 +34,8 @@ tools/
   audit.py           噛み合っていないか（鮮度切れ・vendor単独・未判定の予測…）→ 次に調べること
   bundle.py          知識のまとまりを1文書として取り出す
   linkcheck.py       出典URLの死活確認（ネットワークに出るので別枠）
-data/              生成物（graph.json / coverage.json / audit.json / queries.jsonl）
+  record_searched.py 調べたが該当が無かったカテゴリを1行残す（空欄と区別する）
+data/              生成物（graph.json / coverage.json / audit.json）と追記ログ（queries.jsonl / searched.jsonl）
 ```
 
 ## 3軸をどう持っているか
