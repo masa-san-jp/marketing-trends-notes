@@ -1,0 +1,409 @@
+{
+  "entities": {
+    "channel/tiktok": {
+      "id": "channel/tiktok",
+      "uri": "urn:mtn:channel/tiktok",
+      "type": "channel",
+      "label_ja": "TikTok",
+      "label_en": "TikTok",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidata に項目があることは確実だが、執筆環境からAPIに到達できず QID 未確認"
+      },
+      "time": {
+        "start": "2017~",
+        "end": "..",
+        "display": "国際版の展開開始（2017年とされる・未確認）から"
+      },
+      "relations": [
+        {
+          "type": "operated_by",
+          "target": "player/bytedance"
+        }
+      ],
+      "sources": [
+        "https://newsroom.tiktok.com/ja-jp"
+      ],
+      "status": "draft",
+      "updated": "2026-08-10",
+      "path": "entities/channels/tiktok.md"
+    },
+    "channel/youtube": {
+      "id": "channel/youtube",
+      "uri": "urn:mtn:channel/youtube",
+      "type": "channel",
+      "label_ja": "YouTube",
+      "label_en": "YouTube",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidata に項目があることは確実だが、執筆環境からAPIに到達できず QID 未確認"
+      },
+      "time": {
+        "start": "2005",
+        "end": "..",
+        "display": null
+      },
+      "relations": [],
+      "sources": [
+        "https://support.google.com/youtube/"
+      ],
+      "status": "stub",
+      "updated": "2026-08-10",
+      "path": "entities/channels/youtube.md"
+    },
+    "event/apple-att": {
+      "id": "event/apple-att",
+      "uri": "urn:mtn:event/apple-att",
+      "type": "event",
+      "label_ja": "Apple ATT（App Tracking Transparency）の許可必須化",
+      "label_en": "Apple App Tracking Transparency enforcement",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "執筆環境からWikidata APIに到達できず未確認（App Tracking Transparency で項目がある可能性が高い）"
+      },
+      "time": {
+        "start": "2021",
+        "end": null,
+        "display": "iOS 14.5 / iPadOS 14.5 / tvOS 14.5 以降"
+      },
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+          "certainty": "attested",
+          "as_of": "2026-08-10"
+        }
+      ],
+      "relations": [
+        {
+          "type": "part_of",
+          "target": "trend/tracking-restrictions"
+        },
+        {
+          "type": "documented_in",
+          "target": "source/apple-user-privacy-page"
+        }
+      ],
+      "sources": [
+        "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+        "https://developer.apple.com/documentation/apptrackingtransparency"
+      ],
+      "status": "verified",
+      "updated": "2026-08-10",
+      "path": "entities/events/apple-att.md"
+    },
+    "player/bytedance": {
+      "id": "player/bytedance",
+      "uri": "urn:mtn:player/bytedance",
+      "type": "player",
+      "label_ja": "ByteDance（字節跳動）",
+      "label_en": "ByteDance",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidata に項目があることは確実だが、執筆環境からAPIに到達できず QID 未確認"
+      },
+      "time": {
+        "start": "2012",
+        "end": "..",
+        "display": null
+      },
+      "relations": [],
+      "sources": [
+        "https://newsroom.tiktok.com/ja-jp"
+      ],
+      "status": "stub",
+      "updated": "2026-08-10",
+      "path": "entities/players/bytedance.md"
+    },
+    "practice/idfa-targeting": {
+      "id": "practice/idfa-targeting",
+      "uri": "urn:mtn:practice/idfa-targeting",
+      "type": "practice",
+      "label_ja": "IDFA前提の行動ターゲティング配信",
+      "label_en": "IDFA-based behavioral ad targeting",
+      "saturation": "negative",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "執筆環境からWikidata APIに到達できず未確認"
+      },
+      "time": {
+        "start": "2012~",
+        "end": "2021",
+        "display": "IDFA導入（2012年とされる・未確認）からATT許可必須化（2021）まで"
+      },
+      "evidence": [],
+      "relations": [
+        {
+          "type": "killed_by",
+          "target": "event/apple-att",
+          "certainty": "attested",
+          "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+        }
+      ],
+      "sources": [
+        "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+      ],
+      "status": "draft",
+      "updated": "2026-08-10",
+      "path": "entities/practices/idfa-targeting.md"
+    },
+    "practice/retail-media": {
+      "id": "practice/retail-media",
+      "uri": "urn:mtn:practice/retail-media",
+      "type": "practice",
+      "label_ja": "リテールメディア広告",
+      "label_en": "Retail media advertising",
+      "saturation": "spreading",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "執筆環境からWikidata APIに到達できず未確認（retail media で項目がある可能性がある）"
+      },
+      "time": {
+        "start": "2019~",
+        "end": "..",
+        "display": "米国でAmazon広告の急成長期から。日本は数年遅れとされる"
+      },
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.dentsu.co.jp/knowledge/ad_cost/",
+          "certainty": "vendor",
+          "as_of": "2025"
+        }
+      ],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/tracking-restrictions",
+          "certainty": "hypothesis",
+          "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+        }
+      ],
+      "sources": [
+        "https://www.dentsu.co.jp/knowledge/ad_cost/"
+      ],
+      "status": "draft",
+      "updated": "2026-08-10",
+      "path": "entities/practices/retail-media.md"
+    },
+    "source/apple-user-privacy-page": {
+      "id": "source/apple-user-privacy-page",
+      "uri": "urn:mtn:source/apple-user-privacy-page",
+      "type": "source",
+      "label_ja": "Apple「User Privacy and Data Use」開発者向け文書",
+      "label_en": "Apple Developer — User Privacy and Data Use",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "個別のウェブ文書。Wikidata に項目は無い前提で検索していない"
+      },
+      "time": {
+        "start": null,
+        "end": null,
+        "display": "版の日付表記なし（App Store 掲載の現行版）"
+      },
+      "sources": [
+        "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+      ],
+      "status": "verified",
+      "updated": "2026-08-10",
+      "path": "entities/sources/apple-user-privacy-page.md"
+    },
+    "trend/short-video-mainstream": {
+      "id": "trend/short-video-mainstream",
+      "uri": "urn:mtn:trend/short-video-mainstream",
+      "type": "trend",
+      "kind": "tech-enabled",
+      "stage": "peak",
+      "market": "entertainment-content",
+      "geo": "japan",
+      "label_ja": "ショート動画視聴の主流化",
+      "label_en": "Short-form video mainstreaming",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "現象そのものの項目は想定しにくい。執筆環境からWikidata APIに到達できず検索は未実施"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "コロナ禍の在宅時間拡大期から"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "ショート動画",
+        "note": "業界・媒体側の呼称が一般化した型。視聴者側の自称は「TikTok見てる」のように媒体名で、形式名では呼ばない。named_by は特定できない（未確認）"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-10",
+        "recheck_by": "2027-02-10"
+      },
+      "evidence": [
+        {
+          "field": "stage",
+          "source": "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html",
+          "certainty": "independent",
+          "as_of": "2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2027年末時点でも、国内若年層の動画視聴でショート形式が支配的であり続ける（総務省調査系の利用率が前年割れしない）",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [
+        {
+          "role": "originated_on",
+          "target": "channel/tiktok"
+        },
+        {
+          "role": "spread_to",
+          "target": "channel/youtube"
+        }
+      ],
+      "relations": [],
+      "sources": [
+        "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html",
+        "https://newsroom.tiktok.com/ja-jp"
+      ],
+      "status": "draft",
+      "updated": "2026-08-10",
+      "path": "entities/trends/short-video-mainstream.md"
+    },
+    "trend/tracking-restrictions": {
+      "id": "trend/tracking-restrictions",
+      "uri": "urn:mtn:trend/tracking-restrictions",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "peak",
+      "market": "cross-category",
+      "geo": "global",
+      "label_ja": "広告トラッキング制約の常態化",
+      "label_en": "Normalization of ad-tracking restrictions",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "現象そのものの項目は想定しにくい。執筆環境からWikidata APIに到達できず検索は未実施"
+      },
+      "time": {
+        "start": "2018~",
+        "end": "..",
+        "display": "GDPR適用（2018）前後から段階的に。ATT（2021）で モバイルに波及"
+      },
+      "naming": {
+        "self_identified": true,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "クッキーレス／ポストクッキー",
+        "note": "業界内で自然発生的に定着した呼称で、当事者（広告主・媒体・代理店）自身が使う。初出の特定は未確認。「クッキーレス」はブラウザ側、ATT はアプリ側と、指す範囲が呼称ごとに微妙に違う点に注意"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-10",
+        "recheck_by": "2027-02-10"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+          "certainty": "attested",
+          "as_of": "2026-08-10"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2027年末までに、日本の主要広告主の間で計測の主軸がユーザー単位のトラッキングからMMM・インクリメンタリティ計測側へ寄る（業界団体・独立調査でその旨が確認できる）",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "relations": [],
+      "sources": [
+        "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+        "https://developer.apple.com/documentation/apptrackingtransparency"
+      ],
+      "status": "draft",
+      "updated": "2026-08-10",
+      "path": "entities/trends/tracking-restrictions.md"
+    }
+  },
+  "edges": [
+    {
+      "from": "channel/tiktok",
+      "type": "operated_by",
+      "to": "player/bytedance",
+      "certainty": null,
+      "source": null
+    },
+    {
+      "from": "event/apple-att",
+      "type": "part_of",
+      "to": "trend/tracking-restrictions",
+      "certainty": null,
+      "source": null
+    },
+    {
+      "from": "event/apple-att",
+      "type": "documented_in",
+      "to": "source/apple-user-privacy-page",
+      "certainty": null,
+      "source": null
+    },
+    {
+      "from": "practice/idfa-targeting",
+      "type": "killed_by",
+      "to": "event/apple-att",
+      "certainty": "attested",
+      "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+    },
+    {
+      "from": "practice/retail-media",
+      "type": "responds_to",
+      "to": "trend/tracking-restrictions",
+      "certainty": "hypothesis",
+      "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+    },
+    {
+      "from": "trend/short-video-mainstream",
+      "type": "originated_on",
+      "to": "channel/tiktok"
+    },
+    {
+      "from": "trend/short-video-mainstream",
+      "type": "spread_to",
+      "to": "channel/youtube"
+    },
+    {
+      "from": "player/bytedance",
+      "type": "operates",
+      "to": "channel/tiktok",
+      "derived": true
+    },
+    {
+      "from": "trend/tracking-restrictions",
+      "type": "has_part",
+      "to": "event/apple-att",
+      "derived": true
+    },
+    {
+      "from": "source/apple-user-privacy-page",
+      "type": "documents",
+      "to": "event/apple-att",
+      "derived": true
+    },
+    {
+      "from": "event/apple-att",
+      "type": "killed",
+      "to": "practice/idfa-targeting",
+      "derived": true
+    },
+    {
+      "from": "trend/tracking-restrictions",
+      "type": "answered_by",
+      "to": "practice/retail-media",
+      "derived": true
+    }
+  ]
+}

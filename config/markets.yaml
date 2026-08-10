@@ -1,0 +1,43 @@
+# カテゴリ圏（12）と地理圏（6）。エンティティにせず、ここを唯一の正とする。
+# 粒度の原則: 内部差がこのKBの主題になったら割る。それまで割らない。割るときはこのファイルの diff 1つ。
+# 閾値は issue #1 の受け入れ条件の機械化。数値の変更は issue の編集を伴う。
+
+categories:            # 被覆マップの主軸。trend の market が指す
+  consumer-goods:        {label_ja: 消費財・日用品}
+  retail-commerce:       {label_ja: 小売・EC}
+  entertainment-content: {label_ja: エンタメ・コンテンツ}
+  creator-economy:       {label_ja: クリエイターエコノミー}
+  saas-b2b:              {label_ja: SaaS・B2B}
+  food-beverage:         {label_ja: 食品・飲料・外食}
+  fashion-beauty:        {label_ja: ファッション・美容}
+  health-wellness:       {label_ja: ヘルスケア・ウェルネス}
+  gaming:                {label_ja: ゲーム}
+  finance:               {label_ja: 金融}
+  education:             {label_ja: 教育}
+  cross-category:        {label_ja: カテゴリ横断}
+
+# cross-category を独立バケットにする理由: 広告・計測・プライバシーのようにカテゴリを選ばない変化を、
+# どれか1カテゴリに代表させると被覆の比率が歪む（art-history が複数起源をどのバケットにも
+# 代表させなかったのと同じ扱い）。「どのカテゴリでも起きる」は「このカテゴリで起きる」とは別の事実。
+# 広告・メディア業界そのものを1カテゴリに割らない理由: このKBの視点は事業者（買い手）側で、
+# 広告産業の内部差が主題になったら割る。
+
+geographies:           # 伝播の追跡用（従属軸）。trend の geo が指す
+  japan:  {label_ja: 日本}
+  us:     {label_ja: 北米}
+  china:  {label_ja: 中国圏}
+  sea:    {label_ja: 東南アジア}
+  europe: {label_ja: 欧州}
+  global: {label_ja: 地域を跨ぐ}
+
+# japan を最初から独立させる理由: 使い手の事業の主戦場で、内部差（日本だけ起きる・日本にだけ来ない）が
+# 最初から主題だから。それ以外は粗いまま置き、伝播の記述が増えた地域から割る。
+
+thresholds:            # issue #1 の受け入れ条件の機械化。数値の変更は issue の編集を伴う
+  trend_total: 60                # stub は数えない
+  vendor_only_max_ratio: 0.20    # 根拠が vendor だけの trend の上限（鵜呑みにしない）
+  self_measured_min: 10          # measured の根拠を持つエンティティの最低数（自分で測る）
+  per_category_min: 2
+  stale_max_ratio: 0.15          # recheck_by 超過の上限（腐らせない）
+  practice_linked_ratio: 0.50    # responds_to を持つ practice の下限比率（打ち手はトレンドに繋ぐ）
+  resolved_prediction_min: 5     # 答え合わせ済みの予測の最低数（外したと記録する）
