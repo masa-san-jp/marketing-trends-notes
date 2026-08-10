@@ -22,7 +22,7 @@ from kb import (CERTAINTIES, CHANNEL_ROLES, DIR_FOR_TYPE, ENTITIES,
                 RELATION_TARGET_TYPES, RELATIONS, ROOT, SATURATIONS, STAGES, STATUSES,
                 TREND_KINDS, TYPES, URI_PREFIX, VERIFIABLE_CERTAINTIES, alias_map, build_edges,
                 data_as_of, edtf_ok, edtf_year_range, load_config, load_entities,
-                read_frontmatter, read_queries, recheck_deadline, search_entities)
+                read_frontmatter, read_queries, recheck_deadline, resolve, search_entities)
 
 OVERVIEWS = ROOT / "overviews"
 MARK_START = "<!-- generated:coverage:start -->"
@@ -32,8 +32,26 @@ MARK_END = "<!-- generated:coverage:end -->"
 REFUTATION_HEADING = "## 反証"
 
 
+def find_todos(value, path=""):
+    """frontmatter を再帰に歩いて、TODO が残る場所をパス付きで返す。
+
+    top-level の文字列だけ見ると、naming.self_identified: TODO のような入れ子の雛形残りを見逃し、
+    「TODO が1つでも残っていると落ちる」という雛形の約束が嘘になる。
+    """
+    if isinstance(value, str):
+        return [path] if "TODO" in value else []
+    if isinstance(value, dict):
+        return [p for k, v in value.items()
+                for p in find_todos(v, f"{path}.{k}" if path else str(k))]
+    if isinstance(value, list):
+        return [p for i, v in enumerate(value) for p in find_todos(v, f"{path}[{i}]")]
+    return []
+
+
 def validate(entities, records, cfg, errors):
     seen = {}
+    alias_owner = {}
+    aliases = alias_map(entities)
     for path, meta, body in records:
         rel = meta["path"]
 
@@ -62,9 +80,9 @@ def validate(entities, records, cfg, errors):
             err(f"id が重複: {meta.get('id')}（既出: {seen[meta['id']]}）")
         seen[meta.get("id")] = rel
 
-        for key, value in meta.items():
-            if isinstance(value, str) and "TODO" in value:
-                err(f"{key} に TODO が残っている（雛形のまま）")
+        # sources は上で専用メッセージ、path は自分で注入した値なので除いて、残り全体を再帰で見る
+        for p in find_todos({k: v for k, v in meta.items() if k not in ("path", "sources")}):
+            err(f"{p} に TODO が残っている（雛形のまま）")
 
         if meta.get("status") not in STATUSES:
             err(f"status は {sorted(STATUSES)} のどれか（今: {meta.get('status')}）")
@@ -87,6 +105,9 @@ def validate(entities, records, cfg, errors):
         for a in meta.get("aliases") or []:
             if a in entities:
                 err(f"alias {a} が既存の id と衝突している")
+            if a in alias_owner and alias_owner[a] != meta.get("id"):
+                err(f"alias {a} が {alias_owner[a]} と重複している（同じ旧IDを2つのエンティティが名乗れない）")
+            alias_owner[a] = meta.get("id")
 
         for r in meta.get("relations") or []:
             rtype = r.get("type")
@@ -94,7 +115,8 @@ def validate(entities, records, cfg, errors):
                 err(f"未知の関係 type: {rtype}")
                 continue
             allowed = RELATION_TARGET_TYPES.get(rtype)
-            target = entities.get(r.get("target"))
+            # alias（旧ID）を指していても型検証が素通りしないよう、実IDに解決してから見る
+            target = entities.get(resolve(r.get("target"), entities, aliases))
             if allowed and target and target.get("type") not in allowed:
                 err(f"{rtype} が指せるのは {sorted(allowed)}。今: {r.get('target')}"
                     f"（{target.get('type')}）")
@@ -108,17 +130,17 @@ def validate(entities, records, cfg, errors):
             if role not in CHANNEL_ROLES:
                 err(f"未知の channels role: {role}")
                 continue
-            target = entities.get(c.get("target"))
+            target = entities.get(resolve(c.get("target"), entities, aliases))
             if target and target.get("type") != "channel":
                 err(f"{role} が指せるのは channel。今: {c.get('target')}（{target.get('type')}）")
 
         validate_evidence(meta, err)
 
-    aliases = alias_map(entities)
+    # build_edges が alias を実IDに解決済みなので、entities に無い先はすべて宙に浮いた参照
     for edge in build_edges(entities):
         if edge.get("derived"):
             continue
-        if edge["to"] not in entities and edge["to"] not in aliases:
+        if edge["to"] not in entities:
             errors.append(f"{edge['from']}: 存在しない参照先 {edge['to']}（{edge['type']}）")
 
     # 本文の相対リンクが実在するか（slug を変えたときに黙って切れるのを防ぐ）
@@ -143,6 +165,8 @@ def validate_trend(meta, body, cfg, err):
     naming = meta.get("naming")
     if not isinstance(naming, dict) or "self_identified" not in naming:
         err("trend は naming.self_identified が必須（名付けた側と当事者の認識の区別）")
+    elif not isinstance(naming.get("self_identified"), bool):
+        err(f"naming.self_identified は true / false のどちらか（今: {naming.get('self_identified')!r}）")
     elif naming.get("self_identified") is False and not naming.get("named_by") \
             and not (naming.get("note") or "").strip():
         err("naming.self_identified=false なら named_by か note で命名の経緯を書く")

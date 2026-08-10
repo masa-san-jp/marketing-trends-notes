@@ -174,7 +174,14 @@ def edges_of(meta):
 
 
 def build_edges(entities):
-    edges = [e for meta in entities.values() for e in edges_of(meta)]
+    """全エッジ＋逆向きの派生エッジ。target が alias（旧ID）なら実IDに解決してから積む——
+    解決しないと、旧IDを指すエッジが graph・audit・bundle のどこからも実体に繋がらない。"""
+    aliases = alias_map(entities)
+    edges = []
+    for meta in entities.values():
+        for e in edges_of(meta):
+            e["to"] = resolve(e["to"], entities, aliases)
+            edges.append(e)
     derived = [
         {"from": e["to"], "type": RELATIONS[e["type"]], "to": e["from"], "derived": True}
         for e in edges if e["type"] in RELATIONS and e["to"] in entities

@@ -290,3 +290,10 @@ evidence の `as_of` 欠落／trend の `market`・`geo`・`stage`・`kind`・`n
 - **`stub` は実績に数えない。** 受け入れ条件の件数は `draft` と `verified` だけを数える。
 - **鮮度・予測の判定に時計を使わない。** 生成物の「いま」はデータの最新日（`updated` の最大値）。
   理由と運用は [freshness.md](freshness.md)。
+
+### `aliases`（任意）
+
+slug を変えたときは旧 id を `aliases: [trend/old-slug]` に残す。旧 id を指したままの
+relations / channels は**ビルドが実IDに解決して**生成物（graph・派生エッジ・audit・bundle）に
+載せるので、参照側の書き換えは急がなくてよい。検証は alias と既存 id の衝突、複数エンティティに
+またがる alias の重複を落とし、`bundle.py` は alias でも引ける。
