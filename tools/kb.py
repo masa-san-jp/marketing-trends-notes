@@ -42,6 +42,12 @@ CERTAINTIES = {"measured", "independent", "attested", "vendor", "anecdotal", "hy
 # verified を名乗るのに使える確度。vendor と anecdotal だけでは verified にならない
 VERIFIABLE_CERTAINTIES = {"measured", "independent", "attested"}
 
+# certainty と独立した第2の軸。「誰が出したか」ではなく「自分がそれを読んだか」。
+#   primary   原典を開いた（PDF・統計表・規約そのものを取得して読んだ）
+#   summary   経由で得た（検索結果の要約・二次記事・他者のまとめ）
+# 権威あるURLは、読まずにも貼れてしまう。この軸が無いと未読の資料が出典付きで体系に入る。
+RETRIEVEDS = {"primary", "summary"}
+
 # stage → 再検証までの月数。emerging ほど早く腐る。dead は再検証しない（確定した過去）
 RECHECK_MONTHS = {"emerging": 1, "growing": 3, "peak": 6, "declining": 6, "dead": None}
 

@@ -13,7 +13,7 @@ time:
   end: ".."
   display: 米国でAmazon広告の急成長期から。日本は数年遅れとされる
 evidence:
-  - {field: time, source: "https://www.dentsu.co.jp/knowledge/ad_cost/", certainty: vendor, as_of: "2025"}
+  - {field: time, source: "https://www.dentsu.co.jp/knowledge/ad_cost/", certainty: vendor, retrieved: summary, as_of: "2025"}
 relations:
   - {type: responds_to, target: trend/tracking-restrictions, certainty: hypothesis, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/"}
 sources:

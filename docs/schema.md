@@ -77,7 +77,7 @@ freshness:                    # trend 必須（stage: dead を除く）
   valid_as_of: "2026-08-10"   # 最後に実データで確認した日
   recheck_by: "2027-02-10"    # stage から導出。手計算しない（--stage 付き new_entity.py が埋める）
 evidence:                     # verified を名乗るときは time / kind / stage に必要
-  - {field: stage, source: "https://...", certainty: independent, as_of: "2026-06"}
+  - {field: stage, source: "https://...", certainty: independent, retrieved: primary, as_of: "2026-06"}
 predictions:                  # 任意。答え合わせをするための予測
   - {claim: "...", by: "2027-12", resolved: null, outcome: null}
 channels:
@@ -164,9 +164,33 @@ Apple が「ATT は許可を必須にする」と書く開発者文書は attest
 プラットフォームが「当社広告のROASは平均◯倍」と書くブログは vendor（その主張で儲かる）。
 発行元ではなく**その記述で誰が得をするか**で判定する。
 
-**`status: verified` を名乗るには `measured` / `independent` / `attested` の根拠が最低1本要る。**
-vendor と anecdotal をいくら重ねても verified にならない（検証が強制する）。verified に evidence が
-要る field は trend が `time` / `kind` / `stage`、practice が `time`。
+### `retrieved` — もう1つの軸。**自分がそれを読んだか**
+
+`certainty` が「誰が出したか」なら、`retrieved` は「自分が原典を開いたか」。**全 evidence 行で必須。**
+
+| `retrieved` | 意味 |
+|---|---|
+| `primary` | **原典を開いた。** PDF・統計表・規約・決算そのものを取得して、使う数字をその中で見た |
+| `summary` | **経由で得た。** 検索結果の要約・二次記事・他者のまとめ・過去の記憶から書いた |
+
+この2軸は独立に動く。官公庁統計のURLを検索結果から拾って貼れば `independent` かつ `summary`——
+**利害のない出典であることと、自分が読んだことは別**。権威あるURLは読まずにも貼れてしまうので、
+この軸が無いと未読の資料が出典付きのまま体系に入る。
+
+判定は1行で決まる: **その数字を、そのファイル（PDF・表・ページ本文）の中で自分の目で見たか。**
+見ていないなら `summary`。「たぶん書いてある」は `summary`。原典を開いたが目的の数字が
+見つからなかった場合も `summary`（読めたのは別の部分なので）。
+
+### `status: verified` の2つの関門
+
+**両方を満たさないと verified を名乗れない**（どちらも検証が強制する）。
+
+1. `measured` / `independent` / `attested` の根拠が最低1本——vendor と anecdotal をいくら重ねても
+   verified にならない（**誰が出したか**）
+2. `retrieved: primary` の根拠が最低1本——原典を1本も開いていない主張は verified にしない
+   （**自分が読んだか**）
+
+verified に evidence が要る field は trend が `time` / `kind` / `stage`、practice が `time`。
 各行は `as_of`（いつ時点の数字か）が必須——数字の鮮度は記述の鮮度と別に動く。
 
 ### `predictions`（任意）— 答え合わせをするための予測

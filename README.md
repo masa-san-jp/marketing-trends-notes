@@ -52,9 +52,11 @@ data/              生成物（graph.json / coverage.json / audit.json / queries
 成因を、`stage` で段階を、独立に持つ。名付けの来歴は `naming` で分けて持つ——名前の存在と現象の
 存在を混同しないため。
 
-**出典は「誰が測ったか・利害があるか」で層別する**（`measured` / `independent` / `attested` /
-`vendor` / `anecdotal` / `hypothesis`）。**verified を名乗るには vendor 以外の根拠が必須**——
-検証が強制する。
+**出典は2つの独立した軸で持つ。** `certainty` ＝ 誰が測ったか・利害があるか（`measured` /
+`independent` / `attested` / `vendor` / `anecdotal` / `hypothesis`）、`retrieved` ＝ **自分が原典を
+開いたか**（`primary` / `summary`）。権威あるURLは読まずにも貼れるので、後者が無いと未読の資料が
+出典付きのまま入る。**verified を名乗るには vendor 以外の根拠が1本、かつ `retrieved: primary` の
+根拠が1本**——どちらも検証が強制する。
 
 ## 使う
 

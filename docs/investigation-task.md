@@ -75,7 +75,7 @@ curl -s -H "User-Agent: marketing-trends-notes/0.1" \
 | `time.start` / `end` | EDTF。`2021` / `202X`（2020年代）/ `2020~`（およそ）/ `..`（継続中）/ `null`（不明） |
 | `time.display` | 原表記（「コロナ禍以降」等）をそのまま |
 | `channels` | `originated_on`（発生チャネル）を最優先で特定。特定できないなら**書かない** |
-| `evidence` | `verified` を名乗るときだけ必須。`{field, source, certainty, as_of}` |
+| `evidence` | `verified` を名乗るときだけ必須。`{field, source, certainty, retrieved, as_of}`。**`retrieved` は書くなら全行必須** |
 | `status` | `stub`（枠だけ）/ `draft`（書いたが根拠が薄い）/ `verified`（利害のない根拠で裏が取れた） |
 
 #### kind の判定表（上から順に当てる。最初に当たったものを採る）
@@ -113,6 +113,34 @@ curl -s -H "User-Agent: marketing-trends-notes/0.1" \
 
 **発行元ではなく「その記述で誰が得をするか」で判定する。** 同じ Apple でも、ATT の仕様説明は
 `attested`、自社広告の効果主張は `vendor`。
+
+#### retrieved の判定表（certainty と独立に、全 evidence 行で決める）
+
+| 問い | retrieved |
+|---|---|
+| その数字を、原典のファイル（PDF・統計表・規約・決算）の中で自分の目で見たか | `primary` |
+| 検索結果の要約・二次記事・他者のまとめ・記憶から書いたか | `summary` |
+
+**迷ったら `summary`。** 「たぶんそのページに書いてある」は読んだことにならない。原典を開いたが
+目的の数字が見つからなかった場合も `summary`（読めたのは別の部分）。
+
+`independent` と `primary` は別物。官公庁統計のURLを検索結果から拾って貼れば
+`certainty: independent` かつ `retrieved: summary` になる。**利害のない出典であることと、
+自分が読んだことは独立している。**
+
+原典を開くための実務（この環境で通る手順）:
+
+```bash
+UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36'
+curl -s -L --max-time 30 -A "$UA" "<PDFのURL>" -o /tmp/src.pdf && pdftotext -layout /tmp/src.pdf /tmp/src.txt
+grep -n "<探す語>" /tmp/src.txt
+```
+
+- **素の curl で 400 / 403 が返ってもサイトが死んでいるとは限らない**（bot フィルタ）。上記のように
+  ブラウザ UA を付けて1回試す（`meti.go.jp` は素の curl で403・UA 付きで200）
+- 官公庁の HTML は **cp932** のことがある。UTF-8 で decode に失敗したら cp932 → euc-jp の順に試す
+- **PDF のグラフ部分は `pdftotext -layout` でも列と数値の対応が崩れる。** 崩れた表から数字を読み取って
+  書かない。読めた断面だけを採り、残りは「未確認」として `## 未着手` に送る
 
 #### 関係語彙（この中から選ぶ）
 
@@ -153,7 +181,12 @@ python3 tools/build_graph.py             # 通ったらグラフと被覆マッ�
 
 落ちる主な理由: TODO が残っている／典拠ゼロで `none_reason` が空／`kind`・`stage`・`market`・
 `geo` 未設定／`recheck_by` が stage と食い違う／EDTF の形式違反／解釈系の関係に `certainty` か
-`source` が無い／参照先のエンティティが存在しない／trend 本文に `## 反証` が無い。
+`source` が無い／参照先のエンティティが存在しない／trend 本文に `## 反証` が無い／
+evidence 行に `retrieved` が無い（`primary` か `summary`）／`verified` なのに
+`retrieved: primary` の根拠が1本も無い。
+
+**`retrieved: yes` と書くと YAML が真偽値として読むので語彙外で落ちる。** `primary` / `summary` の
+どちらかをそのまま書く。
 
 **YAML で必ず踏む罠**: `note:` や `display:` の説明文に**半角コロン＋スペース**（`: `）が入ると、
 YAML がそこを新しい項目の区切りだと解釈して落ちる。長い説明を書くときは値全体を `"` で囲む。
