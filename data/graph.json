@@ -148,6 +148,52 @@
       "updated": "2026-08-10",
       "path": "entities/practices/idfa-targeting.md"
     },
+    "practice/organic-post-boosting": {
+      "id": "practice/organic-post-boosting",
+      "uri": "urn:mtn:practice/organic-post-boosting",
+      "type": "practice",
+      "label_ja": "既存投稿のブースト配信",
+      "label_en": "Organic post boosting",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "wbsearchentities で Spark Ads（en）を検索して0件。運用の型そのものに項目は無く、プラットフォームの製品名にも項目が無い（2026-08-10 検索実施）"
+      },
+      "time": {
+        "start": null,
+        "end": "..",
+        "display": null
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://ads.tiktok.com/help/article/spark-ads",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-06"
+        }
+      ],
+      "channels": [
+        {
+          "role": "observed_on",
+          "target": "channel/tiktok"
+        }
+      ],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/short-video-mainstream",
+          "certainty": "hypothesis",
+          "source": "https://ads.tiktok.com/help/article/spark-ads"
+        }
+      ],
+      "sources": [
+        "https://ads.tiktok.com/help/article/spark-ads"
+      ],
+      "status": "draft",
+      "updated": "2026-08-10",
+      "path": "entities/practices/organic-post-boosting.md"
+    },
     "practice/retail-media": {
       "id": "practice/retail-media",
       "uri": "urn:mtn:practice/retail-media",
@@ -376,6 +422,18 @@
       "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
     },
     {
+      "from": "practice/organic-post-boosting",
+      "type": "responds_to",
+      "to": "trend/short-video-mainstream",
+      "certainty": "hypothesis",
+      "source": "https://ads.tiktok.com/help/article/spark-ads"
+    },
+    {
+      "from": "practice/organic-post-boosting",
+      "type": "observed_on",
+      "to": "channel/tiktok"
+    },
+    {
       "from": "practice/retail-media",
       "type": "responds_to",
       "to": "trend/tracking-restrictions",
@@ -414,6 +472,12 @@
       "from": "event/apple-att",
       "type": "killed",
       "to": "practice/idfa-targeting",
+      "derived": true
+    },
+    {
+      "from": "trend/short-video-mainstream",
+      "type": "answered_by",
+      "to": "practice/organic-post-boosting",
       "derived": true
     },
     {
