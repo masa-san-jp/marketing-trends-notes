@@ -211,6 +211,20 @@ def log_query(term, hits):
         fh.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
+SEARCHED_LOG = ROOT / "data" / "searched.jsonl"
+# 1行 = 「このカテゴリを実際に調べたが、載せるに足る trend が無かった」という記録。
+# 空欄には2つの意味がある——まだ手が届いていないのか、調べた上で無かったのか。区別しないと、
+# 調べ終わったところを何度も調べ直し、手つかずのところは手つかずのまま残る。
+SEARCHED_FIELDS = ("at", "market", "scope", "by")
+
+
+def read_searched():
+    import json
+    if not SEARCHED_LOG.exists():
+        return []
+    return [json.loads(l) for l in SEARCHED_LOG.read_text(encoding="utf-8").splitlines() if l.strip()]
+
+
 def read_queries():
     import json
     if not QUERY_LOG.exists():

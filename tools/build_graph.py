@@ -19,10 +19,12 @@ import yaml
 
 from kb import (CERTAINTIES, CHANNEL_ROLES, DIR_FOR_TYPE, ENTITIES,
                 EVIDENCE_FIELDS_FOR_VERIFIED, INTERPRETIVE_RELATIONS, PREDICTION_OUTCOMES,
-                RELATION_TARGET_TYPES, RELATIONS, RETRIEVEDS, ROOT, SATURATIONS, STAGES, STATUSES,
+                RELATION_TARGET_TYPES, RELATIONS, RETRIEVEDS, ROOT, SATURATIONS, SEARCHED_FIELDS,
+                STAGES, STATUSES,
                 TREND_KINDS, TYPES, URI_PREFIX, VERIFIABLE_CERTAINTIES, alias_map, build_edges,
                 data_as_of, edtf_ok, edtf_year_range, load_config, load_entities,
-                read_frontmatter, read_queries, recheck_deadline, resolve, search_entities)
+                read_frontmatter, read_queries, read_searched, recheck_deadline, resolve,
+                search_entities)
 
 OVERVIEWS = ROOT / "overviews"
 MARK_START = "<!-- generated:coverage:start -->"
@@ -239,6 +241,23 @@ def validate_evidence(meta, err):
                 "（原典を1本も開いていない主張は verified にしない）")
 
 
+def check_searched(cfg, errors):
+    """「調査したが該当なし」の記録を検証する。
+
+    この記録は空欄を「調査済み」に変える——つまり**次の調査をしなくてよい理由になる**。
+    だから語彙外のカテゴリや、何を探したか書いていない行は落とす。安く空欄を消せてはいけない。
+    """
+    for i, r in enumerate(read_searched(), 1):
+        where = f"data/searched.jsonl:{i}"
+        for field in SEARCHED_FIELDS:
+            if not r.get(field):
+                errors.append(f"{where}: {field} が空（何を調べたか分からない記録は残さない）")
+        if r.get("market") and r["market"] not in cfg["categories"]:
+            errors.append(f"{where}: market が語彙外: {r['market']}")
+        if r.get("geo") and r["geo"] not in cfg["geographies"]:
+            errors.append(f"{where}: geo が語彙外: {r['geo']}")
+
+
 def check_overview_freshness(entities, errors):
     """俯瞰の depends_on が as_of より後に更新されていたら STALE として落とす。"""
     for path in sorted(OVERVIEWS.glob("*.md")):
@@ -271,6 +290,9 @@ def coverage(entities, cfg):
     grid, per_cat = {}, {c: 0 for c in cats}
     stale, vendor_only, isolated = [], [], []
     unread, hearsay = [], []
+    searched_by_cat = {}
+    for r in read_searched():
+        searched_by_cat.setdefault(r.get("market"), []).append(r)
     all_edges = build_edges(entities)
     edge_ends = {e["from"] for e in all_edges} | {e["to"] for e in all_edges}
 
@@ -318,6 +340,7 @@ def coverage(entities, cfg):
         "per_category": per_cat,
         "stale": sorted(stale),
         "vendor_only": sorted(vendor_only),
+        "searched": searched_by_cat,
         "unread": sorted(unread),
         "hearsay": sorted(hearsay),
         "isolated": sorted(isolated),
@@ -356,7 +379,11 @@ def render_coverage(cov, cfg, entities):
     for c, conf in cats.items():
         row = cov["grid"].get(c, {})
         cells = " | ".join(str(row.get(k, 0) or "") for k, _label in cols)
-        lines.append(f"| {c}（{conf['label_ja']}） | {cells} | {cov['per_category'].get(c, 0)} |")
+        # 0件でも意味が2つある。調べた記録があるなら「未着手」ではないので、そう見せる
+        n = cov["per_category"].get(c, 0)
+        total_cell = str(n) if n else (f"0（調査済 {len(cov['searched'].get(c, []))}）"
+                                       if cov["searched"].get(c) else "0")
+        lines.append(f"| {c}（{conf['label_ja']}） | {cells} | {total_cell} |")
     if cov["grid"].get("market-unknown"):
         row = cov["grid"]["market-unknown"]
         cells = " | ".join(str(row.get(k, 0) or "") for k, _label in cols)
@@ -371,6 +398,12 @@ def render_coverage(cov, cfg, entities):
     if cov["hearsay"]:
         lines += ["", "**利害のない根拠が無い**（independent / attested / measured が1本も無い）: "
                       f"{', '.join(cov['hearsay'])}"]
+    if cov["searched"]:
+        lines += ["", "**調査したが該当が無かった**（空欄との区別。`tools/record_searched.py` の記録）:"]
+        for c, rows in sorted(cov["searched"].items()):
+            for r in rows:
+                src = f"／出典 {len(r.get('sources') or [])}本" if r.get("sources") else "／**出典0本**"
+                lines.append(f"- {c}: {r.get('scope')}（{r.get('at')}・{r.get('by')}{src}）")
 
     # 空振りの記録は残すが、**いま当たる語は出さない**。KB が空だった頃に探された語をそのまま
     # 「無い」と出し続けると、既に入っているものを調べに行かせてしまう。
@@ -419,6 +452,7 @@ def main():
 
     validate(entities, records, cfg, errors)
     check_overview_freshness(entities, errors)
+    check_searched(cfg, errors)
 
     if errors:
         print(f"✗ {len(errors)} 件:", file=sys.stderr)
