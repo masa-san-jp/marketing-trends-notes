@@ -71,7 +71,8 @@
           "field": "time",
           "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
           "certainty": "attested",
-          "as_of": "2026-08-10"
+          "as_of": "2026-08-10",
+          "retrieved": "primary"
         }
       ],
       "relations": [
@@ -163,14 +164,7 @@
         "end": "..",
         "display": "米国でAmazon広告の急成長期から。日本は数年遅れとされる"
       },
-      "evidence": [
-        {
-          "field": "time",
-          "source": "https://www.dentsu.co.jp/knowledge/ad_cost/",
-          "certainty": "vendor",
-          "as_of": "2025"
-        }
-      ],
+      "evidence": [],
       "relations": [
         {
           "type": "responds_to",
@@ -241,14 +235,15 @@
       "evidence": [
         {
           "field": "stage",
-          "source": "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html",
+          "source": "https://www.soumu.go.jp/menu_news/s-news/01iicp01_02000125.html",
           "certainty": "independent",
-          "as_of": "2025"
+          "as_of": "2024",
+          "retrieved": "summary"
         }
       ],
       "predictions": [
         {
-          "claim": "2027年末時点でも、国内若年層の動画視聴でショート形式が支配的であり続ける（総務省調査系の利用率が前年割れしない）",
+          "claim": "令和7年度以降の総務省調査で、TikTok の全年代利用率が33.2%を下回らない",
           "by": "2027-12",
           "resolved": null,
           "outcome": null
@@ -308,7 +303,8 @@
           "field": "kind",
           "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
           "certainty": "attested",
-          "as_of": "2026-08-10"
+          "as_of": "2026-08-10",
+          "retrieved": "primary"
         }
       ],
       "predictions": [

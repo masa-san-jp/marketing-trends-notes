@@ -31,11 +31,14 @@ trend **2** 件（stub 0件は不算入）／内訳 {'draft': 2, 'stub': 0, 'ver
 | education（教育） |  |  |  | 0 |
 | cross-category（カテゴリ横断） | 1 |  |  | 1 |
 
+**原典を実読していない**（retrieved: summary のみ）: trend/short-video-mainstream
+
 受け入れ条件の達成度:
 
 - trend_total: 2/60（stub 0件は不算入）
 - vendor_only_ratio: 0.00（上限 0.2）
-- self_measured: 0/10 件が measured の根拠を持つ
+- independent_backed_ratio: 1.00/0.5（2/2 件）
+- primary_read_ratio: 0.50/0.3（1/2 件が原典を実読）
 - per_category_min: 0/12 カテゴリが 2件以上
 - stale_ratio: 0.00（上限 0.15・as_of=2026-08-10 時点）
 - practice_linked: 1/2 の practice が responds_to を持つ（下限比率 0.5）

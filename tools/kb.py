@@ -31,16 +31,24 @@ STAGES = {"emerging", "growing", "peak", "declining", "dead"}
 SATURATIONS = {"novel", "spreading", "commoditized", "negative"}
 STATUSES = {"stub", "draft", "verified"}
 
-# 確度＝「誰が測ったか・利害があるか」。美術史の attested/scholarly をここに差し替えた。
-#   measured     自分で測った数字（自社GA・売上・投稿インプレッション）
-#   independent  利害のない第三者（官公庁統計・学術研究・査読論文）
+# 確度＝「誰が出したか・利害があるか」。美術史の attested/scholarly をここに差し替えた。
+#   independent  利害のない第三者（官公庁統計・学術研究・査読論文）。**このKBの主軸**
 #   attested     当事者の一次言明（仕様・規約・決算開示。自分に不利でも成り立つ事実）
+#   measured     自分で測った数字（自社GA・売上）。あれば最強だが、このKBの目的は外部情報の
+#                収集・蓄積なので主軸ではない（2026-08-10 masa 訂正）
 #   vendor       その主張で儲かる側が出す市場の数字・効果の主張（ベンダーレポート・代理店調査）
 #   anecdotal    事例・証言・個別の観測
 #   hypothesis   自分の仮説（俯瞰の生成から除外する）
-CERTAINTIES = {"measured", "independent", "attested", "vendor", "anecdotal", "hypothesis"}
+CERTAINTIES = {"independent", "attested", "measured", "vendor", "anecdotal", "hypothesis"}
 # verified を名乗るのに使える確度。vendor と anecdotal だけでは verified にならない
-VERIFIABLE_CERTAINTIES = {"measured", "independent", "attested"}
+VERIFIABLE_CERTAINTIES = {"independent", "attested", "measured"}
+
+# 取得の質＝「その出典に自分が到達したか」。certainty（誰が出したか）とは独立の軸。
+#   primary  一次資料そのものを読んだ（ページ・PDF・APIレスポンスを開いた）
+#   summary  検索結果の要約・二次記事の引用など、経由して得た（原典は未読）
+# 分けないと、読んでいない資料を読んだことにした記述が、出典付きの顔で体系に入る——
+# 形の上では出典があるので、読む側からは区別が付かない（linkcheck.py の教訓と同じ型の事故）。
+RETRIEVALS = {"primary", "summary"}
 
 # stage → 再検証までの月数。emerging ほど早く腐る。dead は再検証しない（確定した過去）
 RECHECK_MONTHS = {"emerging": 1, "growing": 3, "peak": 6, "declining": 6, "dead": None}

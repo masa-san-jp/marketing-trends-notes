@@ -12,8 +12,7 @@ time:
   start: "2019~"
   end: ".."
   display: 米国でAmazon広告の急成長期から。日本は数年遅れとされる
-evidence:
-  - {field: time, source: "https://www.dentsu.co.jp/knowledge/ad_cost/", certainty: vendor, as_of: "2025"}
+evidence: []             # time の根拠は未取得（電通「日本の広告費」は原典にも要約にも未到達）
 relations:
   - {type: responds_to, target: trend/tracking-restrictions, certainty: hypothesis, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/"}
 sources:
@@ -45,7 +44,10 @@ EC の成長だけでリテールメディアは伸びた可能性がある。�
 
 **未確認**: 国内の市場規模。電通「[日本の広告費](https://www.dentsu.co.jp/knowledge/ad_cost/)」系の
 推計が定番の出典だが、発行元は広告を売る側なので `vendor`（ベンダー調べ）としてしか使えない。
-かつ執筆環境から実読できていない。独立した規模の出典は見つかっていない。
+かつ原典にも要約にも到達できていないため、evidence には置いていない（未検証の行を置くと、
+出典があるように見えてしまう）。独立した規模の出典も見つかっていない。
+
+**未確認**: `time.start` の 2019~ は目安で、根拠を持っていない。
 
 ## 飽和度の判定
 

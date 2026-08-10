@@ -19,7 +19,7 @@ import yaml
 
 from kb import (CERTAINTIES, CHANNEL_ROLES, DIR_FOR_TYPE, ENTITIES,
                 EVIDENCE_FIELDS_FOR_VERIFIED, INTERPRETIVE_RELATIONS, PREDICTION_OUTCOMES,
-                RELATION_TARGET_TYPES, RELATIONS, ROOT, SATURATIONS, STAGES, STATUSES,
+                RELATION_TARGET_TYPES, RELATIONS, RETRIEVALS, ROOT, SATURATIONS, STAGES, STATUSES,
                 TREND_KINDS, TYPES, URI_PREFIX, VERIFIABLE_CERTAINTIES, alias_map, build_edges,
                 data_as_of, edtf_ok, edtf_year_range, load_config, load_entities,
                 read_frontmatter, read_queries, recheck_deadline, resolve, search_entities)
@@ -208,8 +208,9 @@ def validate_trend(meta, body, cfg, err):
 def validate_evidence(meta, err):
     """evidence（主張ごとの根拠）と、verified の条件。
 
-    verified を名乗るには measured / independent / attested の根拠が最低1本要る——
-    vendor（その主張で儲かる側の数字）と anecdotal だけを重ねても verified にはならない。
+    verified には2つの関門がある。**誰が出したか**（independent / attested / measured の根拠が
+    最低1本。vendor と anecdotal をいくら重ねても通らない）と、**自分が読んだか**
+    （retrieved: primary。検索要約だけで verified を名乗れない）。
     """
     for c in meta.get("evidence") or []:
         if not c.get("source"):
@@ -218,6 +219,10 @@ def validate_evidence(meta, err):
             err(f"evidence の {c.get('field')} の certainty が語彙外: {c.get('certainty')}")
         if not c.get("as_of"):
             err(f"evidence の {c.get('field')} に as_of（いつ時点の数字か）が無い")
+        if c.get("retrieved") not in RETRIEVALS:
+            err(f"evidence の {c.get('field')} に retrieved が要る"
+                f"（{sorted(RETRIEVALS)}／今: {c.get('retrieved')}）"
+                "——原典を読んだのか、要約経由なのかを空けたままにしない")
 
     if meta.get("status") == "verified":
         need = EVIDENCE_FIELDS_FOR_VERIFIED.get(meta.get("type"), set())
@@ -228,6 +233,10 @@ def validate_evidence(meta, err):
         if rows and not any(c.get("certainty") in VERIFIABLE_CERTAINTIES for c in rows):
             err(f"verified を名乗るには {sorted(VERIFIABLE_CERTAINTIES)} の根拠が最低1本要る"
                 "（vendor / anecdotal だけでは verified にならない）")
+        if rows and not any(c.get("certainty") in VERIFIABLE_CERTAINTIES
+                            and c.get("retrieved") == "primary" for c in rows):
+            err("verified を名乗るには、一次資料を実読した根拠（retrieved: primary）が最低1本要る"
+                "（検索結果の要約だけで verified にはならない）")
 
 
 def check_overview_freshness(entities, errors):
@@ -260,7 +269,7 @@ def coverage(entities, cfg):
     cats = cfg["categories"]
     th = cfg["thresholds"]
     grid, per_cat = {}, {c: 0 for c in cats}
-    stale, vendor_only, isolated = [], [], []
+    stale, vendor_only, isolated, independent_backed, primary_read = [], [], [], [], []
     all_edges = build_edges(entities)
     edge_ends = {e["from"] for e in all_edges} | {e["to"] for e in all_edges}
 
@@ -278,12 +287,13 @@ def coverage(entities, cfg):
         rows = meta.get("evidence") or []
         if rows and all(c.get("certainty") == "vendor" for c in rows):
             vendor_only.append(tid)
+        if any(c.get("certainty") in VERIFIABLE_CERTAINTIES for c in rows):
+            independent_backed.append(tid)
+        if any(c.get("retrieved") == "primary" for c in rows):
+            primary_read.append(tid)
         if tid not in edge_ends:
             isolated.append(tid)
 
-    measured_ids = sorted(
-        i for i, m in entities.items()
-        if any(c.get("certainty") == "measured" for c in m.get("evidence") or []))
     resolved_predictions = sum(
         1 for m in entities.values() for p in m.get("predictions") or [] if p.get("resolved"))
     practices = {i: m for i, m in entities.items()
@@ -304,12 +314,18 @@ def coverage(entities, cfg):
         "stale": sorted(stale),
         "vendor_only": sorted(vendor_only),
         "isolated": sorted(isolated),
-        "measured": measured_ids,
+        "independent_backed": sorted(independent_backed),
+        "primary_read": sorted(primary_read),
         "progress": {
             "trend_total": f"{total}/{th['trend_total']}（stub {len(trends) - total}件は不算入）",
             "vendor_only_ratio": f"{(len(vendor_only) / total if total else 0):.2f}"
                                  f"（上限 {th['vendor_only_max_ratio']}）",
-            "self_measured": f"{len(measured_ids)}/{th['self_measured_min']} 件が measured の根拠を持つ",
+            "independent_backed_ratio": f"{(len(independent_backed) / total if total else 0):.2f}"
+                                        f"/{th['independent_backed_ratio']}"
+                                        f"（{len(independent_backed)}/{total} 件）",
+            "primary_read_ratio": f"{(len(primary_read) / total if total else 0):.2f}"
+                                  f"/{th['primary_read_ratio']}"
+                                  f"（{len(primary_read)}/{total} 件が原典を実読）",
             "per_category_min": f"{sum(1 for n in per_cat.values() if n >= th['per_category_min'])}"
                                 f"/{len(cats)} カテゴリが {th['per_category_min']}件以上",
             "stale_ratio": f"{(len(stale) / total if total else 0):.2f}"
@@ -343,6 +359,9 @@ def render_coverage(cov, cfg, entities):
         lines += ["", f"**鮮度切れ**（recheck_by < {cov['as_of']}）: {', '.join(cov['stale'])}"]
     if cov["vendor_only"]:
         lines += ["", f"**根拠が vendor だけ**: {', '.join(cov['vendor_only'])}"]
+    unread = [t for t in cov["independent_backed"] if t not in cov["primary_read"]]
+    if unread:
+        lines += ["", f"**原典を実読していない**（retrieved: summary のみ）: {', '.join(unread)}"]
 
     # 空振りの記録は残すが、**いま当たる語は出さない**。KB が空だった頃に探された語をそのまま
     # 「無い」と出し続けると、既に入っているものを調べに行かせてしまう。

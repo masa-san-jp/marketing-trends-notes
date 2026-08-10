@@ -56,12 +56,13 @@ naming:
 freshness:
   valid_as_of: {today}   # 最後に実データで確認した日
   recheck_by: {recheck}  # stage から自動導出。stage を変えたら build_graph が再計算を要求する
-evidence: []             # verified を名乗るとき time / kind / stage の根拠が要る
+evidence: []             # [{{field, source, certainty, as_of, retrieved}}]
+                         # verified には time / kind / stage の根拠と、retrieved: primary が1本要る
 predictions: []          # 任意 [{{claim: ..., by: EDTF, resolved: null, outcome: null}}]
 """
 
 PRACTICE_EXTRA = """saturation: null        # 任意: {sats}
-evidence: []             # verified を名乗るとき time の根拠が要る
+evidence: []             # [{{field, source, certainty, as_of, retrieved}}]
 """
 
 

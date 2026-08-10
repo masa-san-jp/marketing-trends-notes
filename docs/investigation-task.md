@@ -55,11 +55,18 @@ curl -s -H "User-Agent: marketing-trends-notes/0.1" \
 **1つも見つからないとき**: `authority.none_reason` に「何を検索して見つからなかったか」を書く。
 それでよい。空にしたまま進めると検証で落ちる。
 
-**出典を読むときに必ず確かめる3点**（マーケの出典はここで嘘をつく）:
+**出典を読むときに必ず確かめる4点**（マーケの出典はここで嘘をつく）:
 
 - **誰が出したか。その記述で誰が得をするか** — 得をする側なら `vendor`
-- **いつ時点の数字か** — evidence の `as_of` に入れる。発表日ではなく調査時点
+- **いつ時点の数字か** — evidence の `as_of` に入れる。**発表日ではなく調査時点**
+  （令和6年度調査が令和7年6月公表、のような1年ずれが常にある）
 - **n と取り方** — n=200 のアンケートと官公庁の全数調査を同じ重さで扱わない。怪しければ本文に書く
+- **原典を開いたか** — 開いていないなら `retrieved: summary`。**検索結果の要約から数字を取って
+  官公庁のURLだけ添えるのが、このKBで最もやってはいけない加工**
+
+**この環境では原典に届かないことが多い**（WebSearch は通るが、WebFetch と curl は egress
+allowlist に阻まれる。詳細は [sources-directory.md](sources-directory.md)）。届かないときは
+`summary` のまま置き、本文に「原典未読」と書いて次へ進む。**空欄で隠さない。**
 
 ### 4. frontmatter を埋める
 
@@ -75,7 +82,7 @@ curl -s -H "User-Agent: marketing-trends-notes/0.1" \
 | `time.start` / `end` | EDTF。`2021` / `202X`（2020年代）/ `2020~`（およそ）/ `..`（継続中）/ `null`（不明） |
 | `time.display` | 原表記（「コロナ禍以降」等）をそのまま |
 | `channels` | `originated_on`（発生チャネル）を最優先で特定。特定できないなら**書かない** |
-| `evidence` | `verified` を名乗るときだけ必須。`{field, source, certainty, as_of}` |
+| `evidence` | `{field, source, certainty, as_of, retrieved}`。`retrieved` は全行必須（下の判定表） |
 | `status` | `stub`（枠だけ）/ `draft`（書いたが根拠が薄い）/ `verified`（利害のない根拠で裏が取れた） |
 
 #### kind の判定表（上から順に当てる。最初に当たったものを採る）
@@ -100,19 +107,32 @@ curl -s -H "User-Agent: marketing-trends-notes/0.1" \
 | `declining` | 数字が落ちている（出典を `evidence` に）。「もう古い」記事が出る |
 | `dead` | 終わった。**何が殺したかを `killed_by` で指す**（audit が要求する） |
 
-#### certainty の判定表（evidence と解釈系の関係に使う）
+#### certainty の判定表（誰が出したか。evidence と解釈系の関係に使う）
 
 | 問い | certainty |
 |---|---|
-| 自分（自社）が測ったか | `measured` |
 | 利害のない第三者か（官公庁・学術・業界団体） | `independent` |
 | 当事者の一次言明か（仕様・規約・決算。**自分に不利でも成り立つ事実**） | `attested` |
+| 自分（自社）が測ったか（このKBでは稀） | `measured` |
 | その記述で発行者が得をするか（ベンダーレポート・代理店調査・プラットフォームの効果自慢） | `vendor` |
 | 個別の事例・証言・投稿か | `anecdotal` |
 | 自分の見立てか | `hypothesis` |
 
 **発行元ではなく「その記述で誰が得をするか」で判定する。** 同じ Apple でも、ATT の仕様説明は
 `attested`、自社広告の効果主張は `vendor`。
+
+#### retrieved の判定表（自分が読んだか）
+
+| 問い | retrieved |
+|---|---|
+| その URL を開いて、引用する箇所を自分で読んだか | `primary` |
+| 検索結果の要約・二次記事の引用など、経由して得たか | `summary` |
+
+**迷ったら `summary`。** 「読んだ気がする」は読んでいない。原典を開いて数字を突き合わせたときだけ
+`primary` に上げる（要約は年度を取り違えたり、値を丸めていることがある——実際に令和5年度と
+令和6年度の数字が混ざって流通している）。
+
+`summary` は恥ではない。存在と概要を掴む段階では正しい状態で、**隠すのが事故になる**。
 
 #### 関係語彙（この中から選ぶ）
 
@@ -214,6 +234,7 @@ audit が「鮮度切れ」を指した trend の再検証は、新規1件と同
   必要だと思ったら issue #1 にコメントして止まる
 - 1タスクで複数の trend / practice を仕上げる（1件ずつ。周辺の stub は例外）
 - **ベンダーの数字を independent に格上げする**（発行者がその主張で儲かるなら vendor）
+- **原典を読まずに `retrieved: primary` と書く**（このKBで最も重い違反）
 - **「バズっている」を規模の出典にする**（投稿URLは anecdotal の evidence にはなる）
 - レポートPDF・記事全文を repo に置く（リンクと引用で参照する）
 - `data/`・`overviews/coverage.md` の生成ブロックを手で編集する

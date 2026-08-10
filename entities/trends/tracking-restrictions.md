@@ -25,7 +25,7 @@ freshness:
   valid_as_of: "2026-08-10"
   recheck_by: "2027-02-10"
 evidence:
-  - {field: kind, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/", certainty: attested, as_of: "2026-08-10"}
+  - {field: kind, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/", certainty: attested, as_of: "2026-08-10", retrieved: primary}
 predictions:
   - {claim: "2027年末までに、日本の主要広告主の間で計測の主軸がユーザー単位のトラッキングからMMM・インクリメンタリティ計測側へ寄る（業界団体・独立調査でその旨が確認できる）", by: "2027-12", resolved: null, outcome: null}
 relations: []

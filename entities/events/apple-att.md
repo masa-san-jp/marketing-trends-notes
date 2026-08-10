@@ -12,7 +12,7 @@ time:
   end: null
   display: iOS 14.5 / iPadOS 14.5 / tvOS 14.5 以降
 evidence:
-  - {field: time, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/", certainty: attested, as_of: "2026-08-10"}
+  - {field: time, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/", certainty: attested, as_of: "2026-08-10", retrieved: primary}
 relations:
   - {type: part_of, target: trend/tracking-restrictions}
   - {type: documented_in, target: source/apple-user-privacy-page}
