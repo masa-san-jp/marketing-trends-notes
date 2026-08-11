@@ -71,7 +71,7 @@ python3 tools/build_graph.py             # 検証 + グラフ・被覆マップ�
 python3 tools/audit.py                   # 鮮度切れ・食い違い → 次に調べること
 python3 tools/observe_social.py --check  # SNS空気感ログの形式検証
 python3 tools/observe_social.py --summary # SNS空気感ログの集計
-python3 tools/check_x_env.py --require-token # ローカルX API環境の確認
+python3 tools/check_x_env.py                 # X未設定ならスキップして続行
 python3 tools/audit.py --dry-run --now $(date +%F)   # 生きた時計で鮮度を見る
 python3 tools/bundle.py --search リテールメディア     # 語で探す（IDを知らなくていい）
 python3 tools/bundle.py trend/<slug>                 # 1件とその周辺を1文書で
