@@ -2094,6 +2094,76 @@
       "updated": "2026-08-11",
       "path": "entities/trends/creator-rights-compensation-transparency.md"
     },
+    "trend/cross-border-ecommerce-expansion": {
+      "id": "trend/cross-border-ecommerce-expansion",
+      "uri": "urn:mtn:trend/cross-border-ecommerce-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "retail-commerce",
+      "geo": "japan",
+      "label_ja": "越境ECの拡大",
+      "label_en": "Expansion of cross-border e-commerce",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「越境ECの拡大」「cross-border e-commerce expansion Japan」で検索したが、日本発着の越境ECフローの拡大現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "日本・中国・米国間の消費者向け越境EC取引額が増加する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "日米中間の越境EC市場規模拡大",
+        "note": "「越境ECの拡大」は、経済産業省が推計する日米中3か国間の消費者向け越境EC市場規模を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2025年の中国消費者による日本事業者からの越境EC購入額が2024年の2兆6,372億円を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/cross-border-ecommerce-expansion.md"
+    },
     "trend/domestic-travel-consumption-expansion": {
       "id": "trend/domestic-travel-consumption-expansion",
       "uri": "urn:mtn:trend/domestic-travel-consumption-expansion",
@@ -2164,6 +2234,77 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/domestic-travel-consumption-expansion.md"
+    },
+    "trend/electrified-vehicle-adoption": {
+      "id": "trend/electrified-vehicle-adoption",
+      "uri": "urn:mtn:trend/electrified-vehicle-adoption",
+      "type": "trend",
+      "kind": "tech-enabled",
+      "stage": "growing",
+      "market": "consumer-goods",
+      "geo": "japan",
+      "label_ja": "乗用車の電動化拡大",
+      "label_en": "Expansion of electrified passenger vehicles",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「乗用車の電動化拡大」「electrified vehicle adoption Japan」で検索したが、日本の乗用車販売構成の変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "HEV・PHEV・BEV・FCVを含む電動車の新車販売比率が高まる局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "電動車の普及拡大",
+        "note": "「乗用車の電動化拡大」は、資源エネルギー庁・経済産業省の電動車定義と販売比率を要約する記述的なラベル。BEVだけの拡大とは区別する"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.enecho.meti.go.jp/about/special/johoteikyo/xev_cev_2024.html?ui_medium=lpene",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-06-24"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-3.html",
+          "certainty": "independent",
+          "retrieved": "summary",
+          "as_of": "2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.enecho.meti.go.jp/about/special/johoteikyo/xev_cev_2024.html?ui_medium=lpene",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023年度-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の資源エネルギー庁または自動車関連公的統計で、乗用車新車販売に占める電動車比率が2024年の57％を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.enecho.meti.go.jp/about/special/johoteikyo/xev_cev_2024.html?ui_medium=lpene",
+        "https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-3.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/electrified-vehicle-adoption.md"
     },
     "trend/food-ecommerce-expansion": {
       "id": "trend/food-ecommerce-expansion",
@@ -3107,6 +3248,148 @@
       "updated": "2026-08-11",
       "path": "entities/trends/online-marketplace-transparency.md"
     },
+    "trend/online-medical-consultation-adoption": {
+      "id": "trend/online-medical-consultation-adoption",
+      "uri": "urn:mtn:trend/online-medical-consultation-adoption",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "emerging",
+      "market": "health-wellness",
+      "geo": "japan",
+      "label_ja": "オンライン診療の制度対応と利用拡大",
+      "label_en": "Regulatory normalization and adoption of online medical consultation",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「オンライン診療の制度対応と利用拡大」「online medical consultation adoption」で検索したが、日本の制度・利用変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2024~",
+        "end": "..",
+        "display": "2024年度の利用実績と2026年の医療法・指針整備が並行する段階"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "オンライン診療の実施・制度整備",
+        "note": "「オンライン診療の制度対応と利用拡大」は、厚生労働省の制度資料と調査結果をまとめるための記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-09-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mhlw.go.jp/stf/index_0024_00004.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-04-01"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024年度"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024年度-2026-04"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の厚生労働省調査または同等の公的調査で、患者のオンライン診療経験率と医療機関の実施割合が再計測される",
+          "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/index_0024_00004.html",
+        "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/online-medical-consultation-adoption.md"
+    },
+    "trend/outbound-travel-recovery": {
+      "id": "trend/outbound-travel-recovery",
+      "uri": "urn:mtn:trend/outbound-travel-recovery",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "cross-category",
+      "geo": "japan",
+      "label_ja": "海外旅行需要の回復",
+      "label_en": "Recovery of outbound travel demand",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「海外旅行需要の回復」「outbound travel recovery」で検索したが、この日本人海外旅行需要の回復現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "コロナ禍後に日本人の海外旅行者数が回復している局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "日本人海外旅行者数の回復",
+        "note": "「海外旅行需要の回復」は、観光庁が公表する日本人出国者数の推移を要約するための記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mlit.go.jp/kankocho/page01_00056.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2019-2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2026年の日本人海外旅行者数が2025年の1,473万人を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mlit.go.jp/kankocho/page01_00056.html",
+        "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/outbound-travel-recovery.md"
+    },
     "trend/plastic-resource-circulation": {
       "id": "trend/plastic-resource-circulation",
       "uri": "urn:mtn:trend/plastic-resource-circulation",
@@ -3308,6 +3591,76 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/school-generative-ai-governance.md"
+    },
+    "trend/service-ecommerce-expansion": {
+      "id": "trend/service-ecommerce-expansion",
+      "uri": "urn:mtn:trend/service-ecommerce-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "retail-commerce",
+      "geo": "japan",
+      "label_ja": "サービスECの拡大",
+      "label_en": "Expansion of service e-commerce",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「サービスECの拡大」「service e-commerce expansion Japan」で検索したが、調査上のサービス系BtoC-EC市場の拡大現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "旅行・チケット等を含むサービス系BtoC-EC市場規模が増加する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "サービス系分野のBtoC-EC市場拡大",
+        "note": "「サービスECの拡大」は、経済産業省のBtoC-EC分野別市場規模を要約する記述的なラベルで、すべてのサービス需要を意味しない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2025年のサービス系BtoC-EC市場規模が2024年の8兆2,256億円を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/service-ecommerce-expansion.md"
     },
     "trend/short-video-mainstream": {
       "id": "trend/short-video-mainstream",
@@ -3603,6 +3956,76 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/sustainable-fashion-behavior.md"
+    },
+    "trend/telework-stabilization": {
+      "id": "trend/telework-stabilization",
+      "uri": "urn:mtn:trend/telework-stabilization",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "saas-b2b",
+      "geo": "japan",
+      "label_ja": "テレワークの定着",
+      "label_en": "Stabilization of telework",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「テレワークの定着」「telework stabilization」で検索したが、日本の実施率が再上昇する現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "感染症流行後の減少を経て、2025年度にテレワーク実施率が再び上向いた局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "テレワーク実施率の安定・再上昇",
+        "note": "「テレワークの定着」は、国土交通省の実施率調査を要約するための記述的なラベルであり、全職種の働き方が固定化したことを意味しない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年度"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年度"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020-2025年度"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の同調査でテレワーク実施率が2025年度の16.8％を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/telework-stabilization.md"
     },
     "trend/tracking-restrictions": {
       "id": "trend/tracking-restrictions",

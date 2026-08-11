@@ -1,23 +1,25 @@
 {
   "as_of": "2026-08-11",
-  "trend_total": 30,
+  "trend_total": 36,
   "trend_stub_excluded": 0,
   "by_status": {
     "draft": 3,
     "stub": 0,
-    "verified": 27
+    "verified": 33
   },
   "grid": {
     "cross-category": {
       "2021": 1,
       "2022": 1,
       "2019": 1,
+      "2020": 1,
       "2018": 1
     },
     "saas-b2b": {
       "2022": 1,
       "2019": 1,
-      "2024": 1
+      "2024": 1,
+      "2020": 1
     },
     "finance": {
       "2010": 1,
@@ -31,13 +33,24 @@
       "2023": 1,
       "2021": 1
     },
+    "retail-commerce": {
+      "2022": 3,
+      "2020": 1,
+      "2023": 1
+    },
+    "consumer-goods": {
+      "2020": 1,
+      "2024": 1,
+      "2022": 1,
+      "2005": 1
+    },
     "food-beverage": {
       "2023": 1,
       "2019": 1,
       "2020": 1
     },
     "health-wellness": {
-      "2024": 2
+      "2024": 3
     },
     "gaming": {
       "2020": 1,
@@ -47,43 +60,41 @@
       "2024": 1,
       "2023": 1
     },
-    "consumer-goods": {
-      "2024": 1,
-      "2022": 1,
-      "2005": 1
-    },
-    "retail-commerce": {
-      "2022": 2,
-      "2020": 1
-    },
     "entertainment-content": {
       "2014": 1,
       "2020": 1
     }
   },
   "per_category": {
-    "consumer-goods": 3,
-    "retail-commerce": 3,
+    "consumer-goods": 4,
+    "retail-commerce": 5,
     "entertainment-content": 2,
     "creator-economy": 2,
-    "saas-b2b": 3,
+    "saas-b2b": 4,
     "food-beverage": 3,
     "fashion-beauty": 2,
-    "health-wellness": 2,
+    "health-wellness": 3,
     "gaming": 2,
     "finance": 2,
     "education": 2,
-    "cross-category": 4
+    "cross-category": 5
   },
   "stale": [],
   "vendor_only": [],
   "searched": {},
   "unread": [],
   "hearsay": [],
-  "isolated": [],
+  "isolated": [
+    "trend/cross-border-ecommerce-expansion",
+    "trend/electrified-vehicle-adoption",
+    "trend/online-medical-consultation-adoption",
+    "trend/outbound-travel-recovery",
+    "trend/service-ecommerce-expansion",
+    "trend/telework-stabilization"
+  ],
   "measured": [],
   "progress": {
-    "trend_total": "30/60（stub 0件は不算入）",
+    "trend_total": "36/60（stub 0件は不算入）",
     "vendor_only_ratio": "0.00（上限 0.2）",
     "primary_read_ratio": "1.00（下限 0.3・原典を実読した根拠を持つ trend）",
     "independent_ratio": "1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）",
