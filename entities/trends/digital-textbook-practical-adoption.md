@@ -28,15 +28,17 @@ evidence:
   - {field: kind, source: "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html", certainty: attested, retrieved: primary, as_of: "2025年度"}
   - {field: stage, source: "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf", certainty: independent, retrieved: summary, as_of: "2024年度"}
   - {field: time, source: "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html", certainty: attested, retrieved: primary, as_of: "2019-2025年度"}
+  - {field: prediction, source: "https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf", certainty: independent, retrieved: primary, as_of: "2025年度"}
 predictions:
-  - {claim: "次回の文部科学省調査で、教師の学習者用デジタル教科書の使用頻度が2024年度の水準を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "次回の文部科学省調査で、教師の学習者用デジタル教科書の使用頻度が2024年度の水準を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: hit}
 channels: []
 relations: []
 sources:
   - https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html
   - https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf
+  - https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf
 status: verified
-updated: 2026-08-11
+updated: 2026-08-12
 ---
 
 # デジタル教科書の実用化
@@ -45,7 +47,7 @@ updated: 2026-08-11
 
 学習者用デジタル教科書は、試行的な実証から学校で日常的に使う実用段階へ移っている。文部科学省は2019年4月から段階導入を進め、2024年度から小学校5年生から中学校3年生までの英語について、全ての小中学校等を対象に提供を開始した。2025年度も英語等一部教科を広く提供し、普及促進の実証を続けている。
 
-文部科学省の2024年度速報では、2023年度と比べて教師の授業中の学習者用デジタル教科書の使用頻度が全体的に向上し、「毎授業で使用」は9.7ポイント、「4回に3回程度は使用」は3.0ポイント上昇したとされる。利用頻度の上昇は確認できるが、全教科・全授業が紙からデジタルへ置き換わったことや、学習成果の因果までは示さない。
+文部科学省の2025年度成果報告書では、教師の「毎授業で使用」は28.4％で、2024年度の22.7％から約6ポイント上昇した。利用頻度の上昇は確認できるが、全教科・全授業が紙からデジタルへ置き換わったことや、学習成果の因果までは示さない。
 
 ## kind と stage の判定
 
@@ -71,4 +73,4 @@ updated: 2026-08-11
 
 - 教科、学年、学校規模、自治体、端末環境ごとの活用頻度を比較する
 - 紙との併用比率、教員研修、授業準備時間、学習成果を同じ定義で追う
-- 2025年度以降の実証報告で予測を答え合わせする
+- 2025年度の実証報告で予測を答え合わせし、28.4％（2024年度22.7％以上）のhitを記録した

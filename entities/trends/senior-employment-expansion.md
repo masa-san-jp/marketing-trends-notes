@@ -28,13 +28,15 @@ evidence:
   - {field: kind, source: "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
   - {field: stage, source: "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf", certainty: independent, retrieved: primary, as_of: "2004-2024"}
   - {field: time, source: "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf", certainty: independent, retrieved: primary, as_of: "2004-2024"}
+  - {field: prediction, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2025"}
 predictions:
-  - {claim: "次回公表される65歳以上の就業者数が2024年の930万人を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "次回公表される65歳以上の就業者数が2024年の930万人を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: hit}
 channels: []
 relations: []
 sources:
   - https://www.stat.go.jp/data/topics/topi1460.html
   - https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf
+  - https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/gaiyou.pdf
 status: verified
 updated: 2026-08-12
 ---
@@ -43,9 +45,9 @@ updated: 2026-08-12
 
 ## 何が変わったか
 
-65歳以上の就業者が増え、商品・サービス、職場、学習、移動、健康管理の設計で「引退後の消費者」だけではない生活者像を前提にする必要が高まっている。総務省統計局によると、2024年の65歳以上の就業者数は930万人で、2004年以降21年連続で前年を上回り過去最多となった。就業者総数に占める割合も13.7％で過去最高だった。
+65歳以上の就業者が増え、商品・サービス、職場、学習、移動、健康管理の設計で「引退後の消費者」だけではない生活者像を前提にする必要が高まっている。総務省統計局によると、2025年平均の65歳以上の就業者数は943万人で、2024年の930万人を上回り、過去最多を更新した。就業者総数に占める割合も13.8％で過去最高だった。
 
-65歳以上の就業率は25.7％で、65～69歳、70～74歳、75歳以上のすべてで過去最高となった。一方、65歳以上の雇用者は非正規が76.9％であり、就業者数の増加は所得、勤務時間、雇用保障が一様に改善したことを意味しない。
+65歳以上の就業率は26.0％で、65～69歳、70～74歳、75歳以上のすべてで過去最高となった。一方、65歳以上の雇用者は非正規が76.9％であり、就業者数の増加は所得、勤務時間、雇用保障が一様に改善したことを意味しない。
 
 ## kind と stage の判定
 
@@ -71,4 +73,4 @@ updated: 2026-08-12
 
 - 年齢階級、雇用形態、所得、就業時間、地域別に生活者ニーズを分解する
 - 高齢者就業と金融、健康、移動、学習、余暇サービスの利用を接続する
-- 次回の高齢者統計で予測を答え合わせする
+- 2025年平均結果で予測を答え合わせし、943万人（930万人以上）のhitを記録した

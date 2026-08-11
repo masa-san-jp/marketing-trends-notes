@@ -3118,24 +3118,32 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2024年度"
+        },
+        {
+          "field": "prediction",
+          "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-03審査分"
         }
       ],
       "predictions": [
         {
           "claim": "次回の同統計で介護サービス受給者数が2026年2月審査分の482.86万人を下回らない",
           "by": "2027-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-08-12",
+          "outcome": "miss"
         }
       ],
       "channels": [],
       "relations": [],
       "sources": [
         "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf",
+        "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf",
         "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-08-12",
       "path": "entities/trends/care-service-utilization-expansion.md"
     },
     "trend/care-workforce-shortage": {
@@ -3746,20 +3754,28 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2024-2026"
+        },
+        {
+          "field": "prediction",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-07-01"
         }
       ],
       "predictions": [
         {
           "claim": "指定資金移動業者の数が2025年3月31日時点の83事業者を下回らない",
           "by": "2027-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-08-12",
+          "outcome": "miss"
         }
       ],
       "channels": [],
       "relations": [],
       "sources": [
         "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html",
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html",
         "https://www.mhlw.go.jp/content/11200000/001478565.pdf"
       ],
       "status": "verified",
@@ -3817,24 +3833,32 @@
           "certainty": "attested",
           "retrieved": "primary",
           "as_of": "2019-2025年度"
+        },
+        {
+          "field": "prediction",
+          "source": "https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年度"
         }
       ],
       "predictions": [
         {
           "claim": "次回の文部科学省調査で、教師の学習者用デジタル教科書の使用頻度が2024年度の水準を下回らない",
           "by": "2027-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-08-12",
+          "outcome": "hit"
         }
       ],
       "channels": [],
       "relations": [],
       "sources": [
         "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html",
-        "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf"
+        "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf",
+        "https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-08-12",
       "path": "entities/trends/digital-textbook-practical-adoption.md"
     },
     "trend/domestic-travel-consumption-expansion": {
@@ -4237,23 +4261,31 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2022-2024"
+        },
+        {
+          "field": "prediction",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20260527_1.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
         }
       ],
       "predictions": [
         {
           "claim": "2025年のフード・ビジネス指数が2024年の96.3を下回らない",
           "by": "2027-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-08-12",
+          "outcome": "miss"
         }
       ],
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html"
+        "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html",
+        "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20260527_1.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-08-12",
       "path": "entities/trends/foodservice-demand-recovery.md"
     },
     "trend/foodtech-alternative-protein": {
@@ -6092,21 +6124,29 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2004-2024"
+        },
+        {
+          "field": "prediction",
+          "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
         }
       ],
       "predictions": [
         {
           "claim": "次回公表される65歳以上の就業者数が2024年の930万人を下回らない",
           "by": "2027-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-08-12",
+          "outcome": "hit"
         }
       ],
       "channels": [],
       "relations": [],
       "sources": [
         "https://www.stat.go.jp/data/topics/topi1460.html",
-        "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf"
+        "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
+        "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/gaiyou.pdf"
       ],
       "status": "verified",
       "updated": "2026-08-12",

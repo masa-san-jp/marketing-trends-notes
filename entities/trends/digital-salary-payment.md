@@ -28,12 +28,14 @@ evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html", certainty: independent, retrieved: primary, as_of: "2024-08"}
   - {field: stage, source: "https://www.mhlw.go.jp/content/11200000/001478565.pdf", certainty: independent, retrieved: primary, as_of: "2025-03-31"}
   - {field: time, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html", certainty: independent, retrieved: primary, as_of: "2024-2026"}
+  - {field: prediction, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html", certainty: independent, retrieved: primary, as_of: "2026-07-01"}
 predictions:
-  - {claim: "指定資金移動業者の数が2025年3月31日時点の83事業者を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "指定資金移動業者の数が2025年3月31日時点の83事業者を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: miss}
 channels: []
 relations: []
 sources:
   - https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html
+  - https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html
   - https://www.mhlw.go.jp/content/11200000/001478565.pdf
 status: verified
 updated: 2026-08-12
@@ -43,7 +45,7 @@ updated: 2026-08-12
 
 ## 何が変わったか
 
-給与を銀行口座だけでなく、厚生労働大臣が指定する資金移動業者の口座で受け取れる制度が整備され、給与・決済・福利厚生の接点に新しい選択肢が加わっている。2025年3月31日時点で、賃金デジタル払いの対象となる指定資金移動業者は83事業者全てと厚生労働省資料に示されている。
+給与を銀行口座だけでなく、厚生労働大臣が指定する資金移動業者の口座で受け取れる制度が整備され、給与・決済・福利厚生の接点に新しい選択肢が加わっている。2025年3月31日時点では83事業者全てが対象とされたが、厚生労働省の2026年7月1日現在の一覧では指定業者は4社であり、83事業者を下回った。このため、事業者数の継続拡大を見込む予測はmissと判定した。
 
 導入には、指定業者の確認、サービス選定、労使協定、労働者への説明、個別同意、事務処理の確認が必要である。労働者への強制はできず、現金・銀行口座・証券総合口座も引き続き選択できるため、事業者数の増加は利用定着や利用者満足を直接意味しない。
 
@@ -69,6 +71,6 @@ updated: 2026-08-12
 
 ## 未着手
 
-- 指定業者数、導入企業数、個別同意率、利用額を同じ定義で追う
+- 指定業者数の減少後に、指定取消・申請・導入企業数・個別同意率・利用額がどう推移するかを同じ定義で追う
 - 給与計算・同意取得・不正補償・解約時の実務負担を比較する
 - 事業者と労働者の属性別に、銀行振込との使い分けを確認する
