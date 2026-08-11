@@ -383,6 +383,77 @@
       "updated": "2026-08-10",
       "path": "entities/trends/anxiety-multiplication.md"
     },
+    "trend/creator-ad-disclosure": {
+      "id": "trend/creator-ad-disclosure",
+      "uri": "urn:mtn:trend/creator-ad-disclosure",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "emerging",
+      "market": "creator-economy",
+      "geo": "japan",
+      "label_ja": "クリエイター広告表示の可視化",
+      "label_en": "Creator advertising disclosure becoming visible",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「インフルエンサー広告表示」「クリエイターエコノミー」を確認したが、広告表示の可視化という日本の現象そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "令和5年10月1日のステマ規制施行以降"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": null,
+        "note": "「クリエイター広告表示の可視化」は、規制と消費者調査で観測される変化を要約するための記述的なラベル。原資料の固有名称ではない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-09-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2023-10-01"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-11"
+        },
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2023-10-01"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回以降の消費者庁調査または同等の独立調査で、インフルエンサー投稿の広告表示を見た経験と、表示を信頼判断に使う割合が再計測される",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/creator-ad-disclosure.md"
+    },
     "trend/japan-btoc-ec-expansion": {
       "id": "trend/japan-btoc-ec-expansion",
       "uri": "urn:mtn:trend/japan-btoc-ec-expansion",
