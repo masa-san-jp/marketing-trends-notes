@@ -194,6 +194,48 @@
       "updated": "2026-08-10",
       "path": "entities/practices/organic-post-boosting.md"
     },
+    "practice/recurring-cost-transparency": {
+      "id": "practice/recurring-cost-transparency",
+      "uri": "urn:mtn:practice/recurring-cost-transparency",
+      "type": "practice",
+      "label_ja": "継続支出の透明化",
+      "label_en": "Recurring cost transparency",
+      "saturation": "spreading",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「継続支出の透明化」「subscription cost transparency」で検索したが、この運用の型に対応する同一性項目は確認できなかった（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2022",
+        "end": "..",
+        "display": "改正特定商取引法の通信販売に関する規定が施行された2022年6月から"
+      },
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_transaction/specified_commercial_transactions/assets/consumer_transaction_cms202_220601_05.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2022-06-01"
+        }
+      ],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/anxiety-multiplication",
+          "certainty": "hypothesis",
+          "source": "https://www.boj.or.jp/research/o_survey/ishiki2507.htm"
+        }
+      ],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/consumer_transaction/specified_commercial_transactions/assets/consumer_transaction_cms202_220601_05.pdf",
+        "https://www.caa.go.jp/policies/policy/consumer_research/international_affairs/icpen_2023/",
+        "https://www.boj.or.jp/research/o_survey/ishiki2507.htm"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/recurring-cost-transparency.md"
+    },
     "practice/retail-media": {
       "id": "practice/retail-media",
       "uri": "urn:mtn:practice/retail-media",
@@ -225,13 +267,20 @@
           "target": "trend/tracking-restrictions",
           "certainty": "hypothesis",
           "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+        },
+        {
+          "type": "responds_to",
+          "target": "trend/japan-btoc-ec-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html"
         }
       ],
       "sources": [
-        "https://www.dentsu.co.jp/knowledge/ad_cost/"
+        "https://www.dentsu.co.jp/knowledge/ad_cost/",
+        "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html"
       ],
       "status": "draft",
-      "updated": "2026-08-10",
+      "updated": "2026-08-11",
       "path": "entities/practices/retail-media.md"
     },
     "source/apple-user-privacy-page": {
@@ -583,11 +632,25 @@
       "to": "channel/tiktok"
     },
     {
+      "from": "practice/recurring-cost-transparency",
+      "type": "responds_to",
+      "to": "trend/anxiety-multiplication",
+      "certainty": "hypothesis",
+      "source": "https://www.boj.or.jp/research/o_survey/ishiki2507.htm"
+    },
+    {
       "from": "practice/retail-media",
       "type": "responds_to",
       "to": "trend/tracking-restrictions",
       "certainty": "hypothesis",
       "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+    },
+    {
+      "from": "practice/retail-media",
+      "type": "responds_to",
+      "to": "trend/japan-btoc-ec-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html"
     },
     {
       "from": "trend/short-video-mainstream",
@@ -630,7 +693,19 @@
       "derived": true
     },
     {
+      "from": "trend/anxiety-multiplication",
+      "type": "answered_by",
+      "to": "practice/recurring-cost-transparency",
+      "derived": true
+    },
+    {
       "from": "trend/tracking-restrictions",
+      "type": "answered_by",
+      "to": "practice/retail-media",
+      "derived": true
+    },
+    {
+      "from": "trend/japan-btoc-ec-expansion",
       "type": "answered_by",
       "to": "practice/retail-media",
       "derived": true
