@@ -425,6 +425,78 @@
       "updated": "2026-08-10",
       "path": "entities/trends/anxiety-multiplication.md"
     },
+    "trend/cashless-payment-expansion": {
+      "id": "trend/cashless-payment-expansion",
+      "uri": "urn:mtn:trend/cashless-payment-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "finance",
+      "geo": "japan",
+      "label_ja": "国内キャッシュレス決済の拡大",
+      "label_en": "Expansion of cashless payments in Japan",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「キャッシュレス決済」「cashless payment adoption」を確認したが、日本の決済比率が上昇する現象そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2010~",
+        "end": "..",
+        "display": "経済産業省の国内指標で2010年から2025年までの年次系列を確認できる拡大局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "キャッシュレス決済比率",
+        "note": "「国内キャッシュレス決済の拡大」は、経済産業省の年次比率を要約するための記述的なラベル。消費者が拡大現象をこの語で自称することは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/files/000001765.xlsx",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2010-2025"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/files/000001765.xlsx",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2010-2025"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/files/000001765.xlsx",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2010-2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "経済産業省の次回年次公表で、国内指標のキャッシュレス決済比率が2025年の58.0％を下回らない",
+          "by": "2027-03",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/press/2025/03/20260331006/20260331006.html",
+        "https://www.meti.go.jp/files/000001765.xlsx",
+        "https://www.meti.go.jp/policy/mono_info_service/cashless/index.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/cashless-payment-expansion.md"
+    },
     "trend/creator-ad-disclosure": {
       "id": "trend/creator-ad-disclosure",
       "uri": "urn:mtn:trend/creator-ad-disclosure",
