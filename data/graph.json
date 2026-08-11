@@ -2494,6 +2494,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/b2b-ecommerce-expansion.md"
     },
+    "trend/building-renovation-market-expansion": {
+      "id": "trend/building-renovation-market-expansion",
+      "uri": "urn:mtn:trend/building-renovation-market-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "consumer-goods",
+      "geo": "japan",
+      "label_ja": "建築物リフォーム・リニューアル需要の拡大",
+      "label_en": "Expansion of building renovation and renewal demand",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「建築物リフォーム・リニューアル需要の拡大」「building renovation market expansion in Japan」で検索したが、日本の建築物リフォーム受注の変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "新築だけでなく、建築物の改装・改修・維持・修理への受注が拡大する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "建築物リフォーム・リニューアル工事受注高の増加",
+        "note": "「建築物リフォーム・リニューアル需要の拡大」は、国土交通省の受注高調査を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-11-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mlit.go.jp/report/press/joho04_hh_001375.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年度"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mlit.go.jp/report/press/content/002005995.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024-2025年度"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/report/press/joho04_hh_001375.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2008-2025年度"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回公表される建築物リフォーム・リニューアル工事の合計受注高が2025年度の16兆4,104億円を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mlit.go.jp/report/press/joho04_hh_001375.html",
+        "https://www.mlit.go.jp/report/press/content/002005995.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/building-renovation-market-expansion.md"
+    },
     "trend/care-service-utilization-expansion": {
       "id": "trend/care-service-utilization-expansion",
       "uri": "urn:mtn:trend/care-service-utilization-expansion",
@@ -3051,6 +3122,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/crypto-asset-user-expansion.md"
     },
+    "trend/digital-salary-payment": {
+      "id": "trend/digital-salary-payment",
+      "uri": "urn:mtn:trend/digital-salary-payment",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "emerging",
+      "market": "finance",
+      "geo": "japan",
+      "label_ja": "賃金デジタル払いの制度化",
+      "label_en": "Institutionalization of digital salary payments",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「賃金デジタル払いの制度化」「digital salary payments in Japan」で検索したが、日本の賃金支払制度の変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "指定資金移動業者の口座を賃金の受取方法として選べる制度が整備される局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "資金移動業者口座への賃金支払い",
+        "note": "「賃金デジタル払いの制度化」は、厚生労働省が説明する制度と導入手続を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-09-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024-08"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mhlw.go.jp/content/11200000/001478565.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-03-31"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024-2026"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "指定資金移動業者の数が2025年3月31日時点の83事業者を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html",
+        "https://www.mhlw.go.jp/content/11200000/001478565.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/digital-salary-payment.md"
+    },
     "trend/digital-textbook-practical-adoption": {
       "id": "trend/digital-textbook-practical-adoption",
       "uri": "urn:mtn:trend/digital-textbook-practical-adoption",
@@ -3536,6 +3678,76 @@
       "updated": "2026-08-11",
       "path": "entities/trends/foodtech-alternative-protein.md"
     },
+    "trend/foreign-worker-employment-expansion": {
+      "id": "trend/foreign-worker-employment-expansion",
+      "uri": "urn:mtn:trend/foreign-worker-employment-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "cross-category",
+      "geo": "japan",
+      "label_ja": "外国人雇用の拡大",
+      "label_en": "Expansion of foreign-worker employment",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「外国人雇用の拡大」「foreign-worker employment expansion in Japan」で検索したが、日本の外国人雇用届出数の変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2007~",
+        "end": "..",
+        "display": "外国人労働者と雇用事業所が過去最多となり、採用・労務・顧客対応の前提を変える局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "外国人労働者数の増加",
+        "note": "「外国人雇用の拡大」は、厚生労働省の外国人雇用状況届出を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-11-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mhlw.go.jp/stf/newpage_68794.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-10"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mhlw.go.jp/stf/newpage_68794.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2007-2025"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/newpage_68794.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2007-2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回公表される外国人労働者数が2025年10月末の2,571,037人を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/newpage_68794.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/foreign-worker-employment-expansion.md"
+    },
     "trend/functional-food-safety-governance": {
       "id": "trend/functional-food-safety-governance",
       "uri": "urn:mtn:trend/functional-food-safety-governance",
@@ -3737,6 +3949,77 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/generative-ai-business-adoption.md"
+    },
+    "trend/generative-ai-daily-life-adoption": {
+      "id": "trend/generative-ai-daily-life-adoption",
+      "uri": "urn:mtn:trend/generative-ai-daily-life-adoption",
+      "type": "trend",
+      "kind": "tech-enabled",
+      "stage": "emerging",
+      "market": "cross-category",
+      "geo": "japan",
+      "label_ja": "生成AIの日常利用の拡大",
+      "label_en": "Expansion of generative AI use in daily life",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「生成AIの日常利用の拡大」「generative AI daily-life adoption in Japan」で検索したが、日本の利用者行動の変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2026~",
+        "end": "..",
+        "display": "生成AIが検索・文章作成・相談・学習など日常生活の複数用途へ広がる局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "生成AI利用者の日常利用",
+        "note": "「生成AIの日常利用の拡大」は、消費者委員会の生成AI利用者調査を要約する記述的なラベル。調査対象者が生成AI利用者に限定される点を含む"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-09-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-02"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-02"
+        },
+        {
+          "field": "time",
+          "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-02"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回同種の生成AI利用者調査で、日常生活での毎日利用者が2026年調査の約20％を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/004/shiryou/index.html",
+        "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/generative-ai-daily-life-adoption.md"
     },
     "trend/giga-learning-platform-renewal": {
       "id": "trend/giga-learning-platform-renewal",
@@ -4837,6 +5120,76 @@
       "updated": "2026-08-11",
       "path": "entities/trends/plastic-resource-circulation.md"
     },
+    "trend/redelivery-reduction": {
+      "id": "trend/redelivery-reduction",
+      "uri": "urn:mtn:trend/redelivery-reduction",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "growing",
+      "market": "retail-commerce",
+      "geo": "japan",
+      "label_ja": "宅配便の再配達削減",
+      "label_en": "Redelivery reduction in parcel delivery",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「宅配便の再配達削減」「redelivery reduction in Japan」で検索したが、日本の再配達率と受取方法の政策的変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "宅配ボックス・置き配など多様な受取方法を通じて、宅配便の再配達率を下げる局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "宅配便再配達率の削減",
+        "note": "「宅配便の再配達削減」は、国土交通省の再配達率調査と受取方法の推進を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-11-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-04"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-10-2025-04"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2026年10月の宅配便再配達率が2025年4月の8.4％を上回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/redelivery-reduction.md"
+    },
     "trend/reuse-c2c-market-expansion": {
       "id": "trend/reuse-c2c-market-expansion",
       "uri": "urn:mtn:trend/reuse-c2c-market-expansion",
@@ -4972,6 +5325,77 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/school-generative-ai-governance.md"
+    },
+    "trend/senior-employment-expansion": {
+      "id": "trend/senior-employment-expansion",
+      "uri": "urn:mtn:trend/senior-employment-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "cross-category",
+      "geo": "japan",
+      "label_ja": "高齢者就業の拡大",
+      "label_en": "Expansion of senior employment",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「高齢者就業の拡大」「senior employment expansion in Japan」で検索したが、日本の65歳以上就業者の推移そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2004~",
+        "end": "..",
+        "display": "65歳以上の就業者が長期増加し、働き方・サービス設計の前提を変える局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "高齢者の就業者数の増加",
+        "note": "「高齢者就業の拡大」は、総務省統計局の労働力調査を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-11-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2004-2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2004-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回公表される65歳以上の就業者数が2024年の930万人を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.stat.go.jp/data/topics/topi1460.html",
+        "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/senior-employment-expansion.md"
     },
     "trend/service-ecommerce-expansion": {
       "id": "trend/service-ecommerce-expansion",
