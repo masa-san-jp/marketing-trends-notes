@@ -1,4 +1,35 @@
 {
   "as_of": "2026-08-12",
-  "findings": []
+  "findings": [
+    {
+      "kind": "unanswered",
+      "about": "trend/care-workforce-shortage",
+      "text": "介護人材の需給ギャップ拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/fertility-treatment-insurance-access",
+      "text": "不妊治療の保険アクセス拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/recurrent-education-institutionalization",
+      "text": "リカレント教育の社会実装 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/tokyo-region-inmigration-persistence",
+      "text": "東京圏への転入超過の持続 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/vacant-housing-expansion",
+      "text": "空き家の増加 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/workplace-stress-check-institutionalization",
+      "text": "職場ストレスチェックの制度定着 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    }
+  ]
 }

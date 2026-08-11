@@ -1,11 +1,11 @@
 {
   "as_of": "2026-08-12",
-  "trend_total": 54,
+  "trend_total": 60,
   "trend_stub_excluded": 0,
   "by_status": {
     "draft": 3,
     "stub": 0,
-    "verified": 51
+    "verified": 57
   },
   "grid": {
     "cross-category": {
@@ -16,6 +16,7 @@
       "2019": 1,
       "2020": 2,
       "2004": 1,
+      "1995": 1,
       "2018": 1
     },
     "saas-b2b": {
@@ -28,12 +29,14 @@
       "2020": 2,
       "2024": 1,
       "2022": 1,
-      "2005": 1
+      "2005": 1,
+      "1993": 1
     },
     "health-wellness": {
       "2020": 1,
+      "2022": 3,
       "2024": 3,
-      "2022": 1
+      "2015": 1
     },
     "finance": {
       "2010": 1,
@@ -57,6 +60,7 @@
     "education": {
       "2019": 1,
       "2024": 1,
+      "2022": 1,
       "2023": 1
     },
     "food-beverage": {
@@ -77,28 +81,35 @@
     }
   },
   "per_category": {
-    "consumer-goods": 5,
+    "consumer-goods": 6,
     "retail-commerce": 7,
     "entertainment-content": 5,
     "creator-economy": 3,
     "saas-b2b": 5,
     "food-beverage": 4,
     "fashion-beauty": 2,
-    "health-wellness": 5,
+    "health-wellness": 8,
     "gaming": 2,
     "finance": 4,
-    "education": 3,
-    "cross-category": 9
+    "education": 4,
+    "cross-category": 10
   },
   "stale": [],
   "vendor_only": [],
   "searched": {},
   "unread": [],
   "hearsay": [],
-  "isolated": [],
+  "isolated": [
+    "trend/care-workforce-shortage",
+    "trend/fertility-treatment-insurance-access",
+    "trend/recurrent-education-institutionalization",
+    "trend/tokyo-region-inmigration-persistence",
+    "trend/vacant-housing-expansion",
+    "trend/workplace-stress-check-institutionalization"
+  ],
   "measured": [],
   "progress": {
-    "trend_total": "54/60（stub 0件は不算入）",
+    "trend_total": "60/60（stub 0件は不算入）",
     "vendor_only_ratio": "0.00（上限 0.2）",
     "primary_read_ratio": "1.00（下限 0.3・原典を実読した根拠を持つ trend）",
     "independent_ratio": "1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）",
