@@ -152,5 +152,5 @@ ATT（2021）でモバイルアプリ側に波及した。以降も第三者提�
 - Safari・Chromeのバージョン別挙動と、サイト側の対応状況を同じ定義で追跡する
 - ATTの2024年以降の独立した許諾率測定と、日本のアプリ・カテゴリ別の独立時系列を探す。2024年の独立研究は
   許諾画面のダークパターンを測定し、日本のカテゴリ別数値は現時点ではベンダー資料のみである
-- 応答する practice の整理: MMM 回帰・リテールメディア（[practice/retail-media](../practices/retail-media.md)）・
-  ファーストパーティデータ活用を responds_to で繋ぐ
+- 応答する practice の整理: プライバシー保護型広告効果測定（[practice/privacy-preserving-ad-measurement](../practices/privacy-preserving-ad-measurement.md)）を追加。
+  MMM 回帰・リテールメディア（[practice/retail-media](../practices/retail-media.md)）・ファーストパーティデータ活用との因果は引き続き未確認

@@ -1047,6 +1047,64 @@
       "updated": "2026-08-11",
       "path": "entities/practices/plastic-circular-design-takeback.md"
     },
+    "practice/privacy-preserving-ad-measurement": {
+      "id": "practice/privacy-preserving-ad-measurement",
+      "uri": "urn:mtn:practice/privacy-preserving-ad-measurement",
+      "type": "practice",
+      "label_ja": "プライバシー保護型広告効果測定",
+      "label_en": "Privacy-preserving ad measurement",
+      "saturation": "spreading",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「プライバシー保護型広告効果測定」「privacy-preserving ad measurement」を確認したが、複数プラットフォームの仕様・研究・運用を束ねる実務の型そのものは確認できない"
+      },
+      "time": {
+        "start": "2021~",
+        "end": "..",
+        "display": "ATT・第三者Cookie制約の後、ユーザー単位の識別子共有を避け、集計・閾値・ノイズ付きの信号で広告効果を測る2020年代"
+      },
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://developer.apple.com/videos/play/wwdc2021/10033/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2021-06"
+        },
+        {
+          "field": "time",
+          "source": "https://developer.apple.com/videos/play/wwdc2024/10060/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-06"
+        },
+        {
+          "field": "time",
+          "source": "https://petsymposium.org/popets/2024/popets-2024-0044.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        }
+      ],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/tracking-restrictions",
+          "certainty": "hypothesis",
+          "source": "https://developer.apple.com/app-store/ad-attribution/"
+        }
+      ],
+      "sources": [
+        "https://developer.apple.com/app-store/ad-attribution/",
+        "https://developer.apple.com/videos/play/wwdc2021/10033/",
+        "https://developer.apple.com/videos/play/wwdc2024/10060/",
+        "https://privacysandbox.google.com/private-advertising/attribution-reporting/system-overview",
+        "https://petsymposium.org/popets/2024/popets-2024-0044.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/privacy-preserving-ad-measurement.md"
+    },
     "practice/recurring-cost-transparency": {
       "id": "practice/recurring-cost-transparency",
       "uri": "urn:mtn:practice/recurring-cost-transparency",
@@ -3150,6 +3208,13 @@
       "source": "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html"
     },
     {
+      "from": "practice/privacy-preserving-ad-measurement",
+      "type": "responds_to",
+      "to": "trend/tracking-restrictions",
+      "certainty": "hypothesis",
+      "source": "https://developer.apple.com/app-store/ad-attribution/"
+    },
+    {
       "from": "practice/recurring-cost-transparency",
       "type": "responds_to",
       "to": "trend/anxiety-multiplication",
@@ -3330,6 +3395,12 @@
       "from": "trend/plastic-resource-circulation",
       "type": "answered_by",
       "to": "practice/plastic-circular-design-takeback",
+      "derived": true
+    },
+    {
+      "from": "trend/tracking-restrictions",
+      "type": "answered_by",
+      "to": "practice/privacy-preserving-ad-measurement",
       "derived": true
     },
     {
