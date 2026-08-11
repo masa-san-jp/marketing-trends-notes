@@ -1,4 +1,10 @@
 {
   "as_of": "2026-08-11",
-  "findings": []
+  "findings": [
+    {
+      "kind": "unanswered",
+      "about": "trend/functional-food-safety-governance",
+      "text": "機能性表示食品の安全・表示管理強化 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    }
+  ]
 }
