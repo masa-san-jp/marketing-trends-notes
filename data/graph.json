@@ -1282,6 +1282,71 @@
       "updated": "2026-08-11",
       "path": "entities/trends/generative-ai-business-adoption.md"
     },
+    "trend/green-oriented-consumption": {
+      "id": "trend/green-oriented-consumption",
+      "uri": "urn:mtn:trend/green-oriented-consumption",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "consumer-goods",
+      "geo": "japan",
+      "label_ja": "日用品を含むグリーン志向消費の拡大",
+      "label_en": "Growing green-oriented consumption including daily goods",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「グリーン志向消費」「green-oriented consumption」を確認したが、日本の消費者の環境配慮商品選択が移行途上にある現象そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2024~",
+        "end": "..",
+        "display": "環境・社会課題への関心を背景に、日用品・雑貨を含む環境配慮商品の理解・選択・長期利用・リユースを促す動き"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "グリーン志向の消費行動",
+        "note": "消費者庁の政策・調査で使われる表現を参照したKBラベルであり、すべての消費者が自称する市場名ではない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-06-26"
+        },
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/notice/entry/044090/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-11-06"
+        },
+        {
+          "field": "stage",
+          "source": "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-06-26"
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.caa.go.jp/notice/entry/044090/",
+        "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html",
+        "https://www.caa.go.jp/policies/policy/consumer_education/consumer_education/subcommittee/effrots_001",
+        "https://www.ethical.caa.go.jp/ethical-consumption.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/green-oriented-consumption.md"
+    },
     "trend/japan-btoc-ec-expansion": {
       "id": "trend/japan-btoc-ec-expansion",
       "uri": "urn:mtn:trend/japan-btoc-ec-expansion",
