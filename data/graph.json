@@ -499,6 +499,57 @@
       "updated": "2026-08-10",
       "path": "entities/practices/idfa-targeting.md"
     },
+    "practice/music-content-operations": {
+      "id": "practice/music-content-operations",
+      "uri": "urn:mtn:practice/music-content-operations",
+      "type": "practice",
+      "label_ja": "配信・短尺動画・ライブ・ファンコミュニティをつなぐ音楽コンテンツ運用",
+      "label_en": "Integrated music content operations across streaming, short video, live, and fan communities",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「配信・短尺動画・ライブ・ファンコミュニティをつなぐ音楽コンテンツ運用」「integrated music content operations streaming short video live fan community」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2014~",
+        "end": "..",
+        "display": "音楽配信の拡大に合わせ、発見・再生・継続・ライブ・物販・ファン参加をコンテンツ単位でつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-05-30"
+        },
+        {
+          "field": "saturation",
+          "source": "https://riaj.or.jp/data/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/music-streaming-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/"
+        }
+      ],
+      "sources": [
+        "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf",
+        "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/",
+        "https://riaj.or.jp/data/",
+        "https://www.riaj.or.jp/data/archive/"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/music-content-operations.md"
+    },
     "practice/online-financial-crime-controls": {
       "id": "practice/online-financial-crime-controls",
       "uri": "urn:mtn:practice/online-financial-crime-controls",
@@ -2091,6 +2142,13 @@
       "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
     },
     {
+      "from": "practice/music-content-operations",
+      "type": "responds_to",
+      "to": "trend/music-streaming-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/"
+    },
+    {
       "from": "practice/online-financial-crime-controls",
       "type": "responds_to",
       "to": "trend/online-financial-crime-governance",
@@ -2231,6 +2289,12 @@
       "from": "event/apple-att",
       "type": "killed",
       "to": "practice/idfa-targeting",
+      "derived": true
+    },
+    {
+      "from": "trend/music-streaming-expansion",
+      "type": "answered_by",
+      "to": "practice/music-content-operations",
       "derived": true
     },
     {
