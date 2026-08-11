@@ -1001,6 +1001,70 @@
       "updated": "2026-08-11",
       "path": "entities/trends/functional-food-safety-governance.md"
     },
+    "trend/gaming-digital-global-expansion": {
+      "id": "trend/gaming-digital-global-expansion",
+      "uri": "urn:mtn:trend/gaming-digital-global-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "gaming",
+      "geo": "global",
+      "label_ja": "ゲーム市場のデジタル・グローバル化",
+      "label_en": "Digital and global expansion of the game market",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「ゲーム市場のデジタル・グローバル化」「digital and global expansion of the game market」を確認したが、この市場構造の変化そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "2020年代のゲーム市場拡大、デジタル販売・モバイル・PC・海外市場の比重上昇"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "ゲーム市場のデジタル・グローバル化",
+        "note": "消費者が自称する呼称ではなく、ゲーム産業の市場規模・プラットフォーム・地域データをこのKBでまとめた名称"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.cesa.or.jp/action/industry-research/2024/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024-12-20"
+        },
+        {
+          "field": "time",
+          "source": "https://www.cesa.or.jp/action/industry-research/2024/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024-12-20"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.cesa.or.jp/uploads/2025/release_game_industry_report2025.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-12-15"
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.cesa.or.jp/action/industry-research/2024/",
+        "https://www.cesa.or.jp/action/industry-research/2025/",
+        "https://www.cesa.or.jp/uploads/2025/release_game_industry_report2025.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/gaming-digital-global-expansion.md"
+    },
     "trend/generative-ai-business-adoption": {
       "id": "trend/generative-ai-business-adoption",
       "uri": "urn:mtn:trend/generative-ai-business-adoption",
