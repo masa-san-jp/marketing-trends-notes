@@ -22,8 +22,8 @@ naming:
   original_label: ニュースコンテンツのオンライン流通・利用増加
   note: "「オンラインニュースプラットフォーム依存の可視化」は、文化庁・公正取引委員会の実態調査の説明を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-09-11"
+  valid_as_of: "2026-08-12"
+  recheck_by: "2026-09-12"
 evidence:
   - {field: kind, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03"}
   - {field: stage, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03"}
@@ -34,8 +34,9 @@ channels: []
 relations: []
 sources:
   - https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/
+  - https://www.jftc.go.jp/houdou/pressrelease/cyosa/cyosa-platformer/index.html
 status: verified
-updated: 2026-08-11
+updated: 2026-08-12
 ---
 
 # オンラインニュースプラットフォーム依存の可視化
@@ -68,6 +69,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年8月12日時点の公正取引委員会のデジタルプラットフォーム実態調査ページを確認したが、ニュース利用経路・取引条件の結果公表は未確認
 - ニュースポータル、検索、媒体サイト、SNS、動画別の利用率・滞在・送客を比較する
 - ライセンス、抜粋、表示順位、広告、購読、対価還元を媒体規模別に分解する
 - 公正取引委員会の実態調査結果と、その後の取引条件の変化を確認する
