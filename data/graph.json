@@ -1251,6 +1251,72 @@
       "updated": "2026-08-11",
       "path": "entities/trends/japan-btoc-ec-expansion.md"
     },
+    "trend/online-financial-crime-governance": {
+      "id": "trend/online-financial-crime-governance",
+      "uri": "urn:mtn:trend/online-financial-crime-governance",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "growing",
+      "market": "finance",
+      "geo": "japan",
+      "label_ja": "オンライン金融犯罪対策の高度化",
+      "label_en": "Strengthening governance against online financial crime",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「オンライン金融犯罪対策の高度化」「online financial crime governance」を確認したが、金融機関横断の対策変化そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "フィッシング・不正送金・SNS型投資詐欺の増加を受けた2023年以降の認証・検知・顧客確認の強化"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "金融犯罪対策の高度化",
+        "note": "「オンライン金融犯罪対策の高度化」は、この金融機関横断の制度・運用変化を要約するためのKBラベルであり、顧客が自称する呼称ではない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.fsa.go.jp/news/r6/20250627/01.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-06-27"
+        },
+        {
+          "field": "time",
+          "source": "https://www.fsa.go.jp/news/r7/ginkou/20260630.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-06-30"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-04-16"
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html",
+        "https://www.fsa.go.jp/news/r6/20250627/01.pdf",
+        "https://www.fsa.go.jp/news/r7/ginkou/20260630.html",
+        "https://www.fsa.go.jp/status/higaijyoukyou/index.html",
+        "https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/260213/03.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/online-financial-crime-governance.md"
+    },
     "trend/plastic-resource-circulation": {
       "id": "trend/plastic-resource-circulation",
       "uri": "urn:mtn:trend/plastic-resource-circulation",
