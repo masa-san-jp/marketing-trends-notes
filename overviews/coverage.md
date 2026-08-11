@@ -43,7 +43,7 @@ trend **4** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'ver
 - practice_linked: 2/3 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 0/5 件の予測が答え合わせ済み
 
-関係を持たない trend: trend/anxiety-multiplication, trend/japan-btoc-ec-expansion
+関係を持たない trend: trend/anxiety-multiplication
 <!-- generated:coverage:end -->
 
 ## 空欄の読み方
@@ -69,7 +69,6 @@ trend **4** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'ver
 <!-- generated:audit:start -->
 **応答なきトレンド**
 - 不安の多重化 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- 国内BtoC-ECの拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
 <!-- generated:audit:end -->
 
 ## 需要から決める（探されたが無かった語）

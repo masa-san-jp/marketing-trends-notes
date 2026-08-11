@@ -225,13 +225,20 @@
           "target": "trend/tracking-restrictions",
           "certainty": "hypothesis",
           "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+        },
+        {
+          "type": "responds_to",
+          "target": "trend/japan-btoc-ec-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html"
         }
       ],
       "sources": [
-        "https://www.dentsu.co.jp/knowledge/ad_cost/"
+        "https://www.dentsu.co.jp/knowledge/ad_cost/",
+        "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html"
       ],
       "status": "draft",
-      "updated": "2026-08-10",
+      "updated": "2026-08-11",
       "path": "entities/practices/retail-media.md"
     },
     "source/apple-user-privacy-page": {
@@ -590,6 +597,13 @@
       "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
     },
     {
+      "from": "practice/retail-media",
+      "type": "responds_to",
+      "to": "trend/japan-btoc-ec-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html"
+    },
+    {
       "from": "trend/short-video-mainstream",
       "type": "originated_on",
       "to": "channel/tiktok"
@@ -631,6 +645,12 @@
     },
     {
       "from": "trend/tracking-restrictions",
+      "type": "answered_by",
+      "to": "practice/retail-media",
+      "derived": true
+    },
+    {
+      "from": "trend/japan-btoc-ec-expansion",
       "type": "answered_by",
       "to": "practice/retail-media",
       "derived": true

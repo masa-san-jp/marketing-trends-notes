@@ -16,10 +16,12 @@ evidence:
   - {field: time, source: "https://www.dentsu.co.jp/knowledge/ad_cost/", certainty: vendor, retrieved: summary, as_of: "2025"}
 relations:
   - {type: responds_to, target: trend/tracking-restrictions, certainty: hypothesis, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/"}
+  - {type: responds_to, target: trend/japan-btoc-ec-expansion, certainty: hypothesis, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html"}
 sources:
   - https://www.dentsu.co.jp/knowledge/ad_cost/
+  - https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html
 status: draft
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 # リテールメディア広告
@@ -38,6 +40,11 @@ updated: 2026-08-10
 EC の成長だけでリテールメディアは伸びた可能性がある。仮説の根拠側として、制約の実在は
 [Apple の一次文書](https://developer.apple.com/app-store/user-privacy-and-data-use/)で確認済み。
 **未確認**: この因果を主張する独立した研究・調査。
+
+同時に、[trend/japan-btoc-ec-expansion](../trends/japan-btoc-ec-expansion.md)への応答ともみる。
+EC取引が拡大すると、小売事業者が持つデジタル購買接点と購買データを広告面として設計する余地が広がる、
+という仮説である。経済産業省の公式発表本文はEC市場規模とEC化率の拡大を示すが、リテールメディアの成長との因果までは示していない。
+**未確認**: EC拡大がリテールメディアの採用・広告費を押し上げたことを示す独立した研究・調査。
 
 ## 効いた条件・効かない条件
 
