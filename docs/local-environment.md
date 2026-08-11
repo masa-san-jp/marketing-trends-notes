@@ -9,7 +9,7 @@ X APIの認証情報はリポジトリに保存しない。共有するのは [`
 cp .env.example .env
 chmod 600 .env
 $EDITOR .env
-python3 tools/check_x_env.py --require-token
+python3 tools/check_x_env.py
 ```
 
 `.env` の `X_BEARER_TOKEN` に、X Developer Console の App の Keys and tokens で発行した
@@ -17,6 +17,11 @@ Bearer Tokenを設定する。公開データを読むX API v2のアプリ専用
 [X公式のBearer Token説明](https://docs.x.com/fundamentals/authentication/oauth-2-0/bearer-tokens)
 と [v2認証の対応表](https://docs.x.com/fundamentals/authentication/guides/v2-authentication-mapping)
 を参照。
+
+トークンがない状態で `tools/check_x_env.py` を実行すると、エラーにせず
+`SKIP: X_BEARER_TOKEN がないため、Xリサーチをスキップして続行します` と表示して終了する。
+X以外の調査・検証を止めないための既定動作である。X APIを必須にする作業だけは
+`python3 tools/check_x_env.py --require-token` を使う。
 
 ## 変数
 

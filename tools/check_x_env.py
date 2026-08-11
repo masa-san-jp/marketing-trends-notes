@@ -66,11 +66,15 @@ def main() -> int:
     values, errors = merged_settings(args.file)
     warnings: list[str] = []
     token = values.get("X_BEARER_TOKEN", "").strip()
-    if not token or token.lower() in PLACEHOLDER_VALUES or token.startswith("<"):
+    token_missing = not token or token.lower() in PLACEHOLDER_VALUES or token.startswith("<")
+    if token_missing:
         if args.require_token:
             errors.append("X_BEARER_TOKEN が未設定です（値は出力しません）")
         else:
-            warnings.append("X_BEARER_TOKEN は未設定です")
+            print("SKIP: X_BEARER_TOKEN がないため、Xリサーチをスキップして続行します")
+            for error in errors:
+                print(f"警告: {error}", file=sys.stderr)
+            return 0
     else:
         print("X_BEARER_TOKEN: 設定済み（値は非表示）")
 
