@@ -199,6 +199,48 @@
       "updated": "2026-08-11",
       "path": "entities/practices/care-service-family-coordination.md"
     },
+    "practice/care-workforce-retention-productivity": {
+      "id": "practice/care-workforce-retention-productivity",
+      "uri": "urn:mtn:practice/care-workforce-retention-productivity",
+      "type": "practice",
+      "label_ja": "介護人材の定着・業務分担・生産性設計",
+      "label_en": "Care workforce retention, role design, and productivity operations",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「介護人材の定着・業務分担・生産性設計」「care workforce retention role design productivity」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "採用だけでなく、入門研修、資格、勤務、役割分担、ICT、離職防止、サービス品質を一体で設計する運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/newpage_02977.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2040年度"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/care-workforce-shortage",
+          "certainty": "hypothesis",
+          "source": "https://www.mhlw.go.jp/stf/newpage_02977.html"
+        }
+      ],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/newpage_02977.html",
+        "https://www.mhlw.go.jp/content/12004000/001274765.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/care-workforce-retention-productivity.md"
+    },
     "practice/cashless-checkout-design": {
       "id": "practice/cashless-checkout-design",
       "uri": "urn:mtn:practice/cashless-checkout-design",
@@ -727,6 +769,48 @@
       "status": "draft",
       "updated": "2026-08-11",
       "path": "entities/practices/fashion-takeback-repair-resale.md"
+    },
+    "practice/fertility-work-life-support-design": {
+      "id": "practice/fertility-work-life-support-design",
+      "uri": "urn:mtn:practice/fertility-work-life-support-design",
+      "type": "practice",
+      "label_ja": "不妊治療と仕事の両立・情報提供設計",
+      "label_en": "Fertility-treatment work-life support and information design",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「不妊治療と仕事の両立・情報提供設計」「fertility treatment work-life support information design」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "治療費、医療機関情報、通院、休暇、相談、個人情報保護をつないで治療と就業を支える運用"
+      },
+      "saturation": "novel",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/fertility-treatment-insurance-access",
+          "certainty": "hypothesis",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html"
+        }
+      ],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html",
+        "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/fertility-work-life-support-design.md"
     },
     "practice/food-ecommerce-fulfillment-retention": {
       "id": "practice/food-ecommerce-fulfillment-retention",
@@ -1977,6 +2061,48 @@
       "updated": "2026-08-11",
       "path": "entities/practices/privacy-preserving-ad-measurement.md"
     },
+    "practice/recurrent-learning-outcome-design": {
+      "id": "practice/recurrent-learning-outcome-design",
+      "uri": "urn:mtn:practice/recurrent-learning-outcome-design",
+      "type": "practice",
+      "label_ja": "リカレント教育の受講・成果・配置接続設計",
+      "label_en": "Recurrent education learning-to-outcome and placement design",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「リカレント教育の受講・成果・配置接続設計」「recurrent education learning outcome placement design」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "学習の発見・受講・修了・スキル証明・職務配置・業務成果をつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/recurrent-education-institutionalization",
+          "certainty": "hypothesis",
+          "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html"
+        }
+      ],
+      "sources": [
+        "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm",
+        "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/recurrent-learning-outcome-design.md"
+    },
     "practice/recurring-cost-transparency": {
       "id": "practice/recurring-cost-transparency",
       "uri": "urn:mtn:practice/recurring-cost-transparency",
@@ -2059,6 +2185,48 @@
       "status": "draft",
       "updated": "2026-08-12",
       "path": "entities/practices/redelivery-choice-friction-design.md"
+    },
+    "practice/regional-demand-localization": {
+      "id": "practice/regional-demand-localization",
+      "uri": "urn:mtn:practice/regional-demand-localization",
+      "type": "practice",
+      "label_ja": "地域別人口移動に合わせた需要配置設計",
+      "label_en": "Regional demand localization based on population movement",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「地域別人口移動に合わせた需要配置設計」「regional demand localization based on population movement」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "1995~",
+        "end": "..",
+        "display": "人口移動、年齢、就業、住居、通勤を分けて、店舗・サービス・採用・在庫の地域配置を見直す運用"
+      },
+      "saturation": "novel",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "1995-2025"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/tokyo-region-inmigration-persistence",
+          "certainty": "hypothesis",
+          "source": "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html"
+        }
+      ],
+      "sources": [
+        "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html",
+        "https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/regional-demand-localization.md"
     },
     "practice/renovation-lead-to-completion-design": {
       "id": "practice/renovation-lead-to-completion-design",
@@ -2491,6 +2659,48 @@
       "updated": "2026-08-11",
       "path": "entities/practices/telework-workflow-governance.md"
     },
+    "practice/vacant-housing-management-conversion": {
+      "id": "practice/vacant-housing-management-conversion",
+      "uri": "urn:mtn:practice/vacant-housing-management-conversion",
+      "type": "practice",
+      "label_ja": "空き家の管理・流通・活用転換設計",
+      "label_en": "Vacant-housing management, circulation, and reuse design",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「空き家の管理・流通・活用転換設計」「vacant housing management circulation reuse design」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "1993~",
+        "end": "..",
+        "display": "空き家の所有・状態・権利・立地を確認し、管理、賃貸、売却、改修、解体、地域活用へ振り分ける運用"
+      },
+      "saturation": "novel",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "1993-2023"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/vacant-housing-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.stat.go.jp/data/jyutaku/index.htm",
+        "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/vacant-housing-management-conversion.md"
+    },
     "practice/video-rights-data-sharing": {
       "id": "practice/video-rights-data-sharing",
       "uri": "urn:mtn:practice/video-rights-data-sharing",
@@ -2573,6 +2783,48 @@
       "status": "draft",
       "updated": "2026-08-11",
       "path": "entities/practices/women-worklife-service-design.md"
+    },
+    "practice/workplace-stress-check-improvement-loop": {
+      "id": "practice/workplace-stress-check-improvement-loop",
+      "uri": "urn:mtn:practice/workplace-stress-check-improvement-loop",
+      "type": "practice",
+      "label_ja": "ストレスチェックから職場改善までの運用ループ",
+      "label_en": "Workplace improvement loop from stress checks",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「ストレスチェックから職場改善までの運用ループ」「workplace improvement loop from stress checks」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2015~",
+        "end": "..",
+        "display": "ストレスチェック、集団分析、改善施策、再測定を一つの職場単位でつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/content/11303000/001681620.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/workplace-stress-check-institutionalization",
+          "certainty": "hypothesis",
+          "source": "https://www.mhlw.go.jp/content/11303000/001681620.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.mhlw.go.jp/toukei/list/r06-46-50d.html",
+        "https://www.mhlw.go.jp/content/11303000/001681620.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/workplace-stress-check-improvement-loop.md"
     },
     "source/apple-user-privacy-page": {
       "id": "source/apple-user-privacy-page",
@@ -6905,6 +7157,13 @@
       "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf"
     },
     {
+      "from": "practice/care-workforce-retention-productivity",
+      "type": "responds_to",
+      "to": "trend/care-workforce-shortage",
+      "certainty": "hypothesis",
+      "source": "https://www.mhlw.go.jp/stf/newpage_02977.html"
+    },
+    {
       "from": "practice/cashless-checkout-design",
       "type": "responds_to",
       "to": "trend/cashless-payment-expansion",
@@ -6987,6 +7246,13 @@
       "to": "trend/sustainable-fashion-behavior",
       "certainty": "hypothesis",
       "source": "https://www.env.go.jp/press/press_03475.html"
+    },
+    {
+      "from": "practice/fertility-work-life-support-design",
+      "type": "responds_to",
+      "to": "trend/fertility-treatment-insurance-access",
+      "certainty": "hypothesis",
+      "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html"
     },
     {
       "from": "practice/food-ecommerce-fulfillment-retention",
@@ -7183,6 +7449,13 @@
       "source": "https://developer.apple.com/app-store/ad-attribution/"
     },
     {
+      "from": "practice/recurrent-learning-outcome-design",
+      "type": "responds_to",
+      "to": "trend/recurrent-education-institutionalization",
+      "certainty": "hypothesis",
+      "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html"
+    },
+    {
       "from": "practice/recurring-cost-transparency",
       "type": "responds_to",
       "to": "trend/anxiety-multiplication",
@@ -7195,6 +7468,13 @@
       "to": "trend/redelivery-reduction",
       "certainty": "hypothesis",
       "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+    },
+    {
+      "from": "practice/regional-demand-localization",
+      "type": "responds_to",
+      "to": "trend/tokyo-region-inmigration-persistence",
+      "certainty": "hypothesis",
+      "source": "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html"
     },
     {
       "from": "practice/renovation-lead-to-completion-design",
@@ -7274,6 +7554,13 @@
       "source": "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html"
     },
     {
+      "from": "practice/vacant-housing-management-conversion",
+      "type": "responds_to",
+      "to": "trend/vacant-housing-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf"
+    },
+    {
       "from": "practice/video-rights-data-sharing",
       "type": "responds_to",
       "to": "trend/video-distribution-expansion",
@@ -7286,6 +7573,13 @@
       "to": "trend/women-employment-expansion",
       "certainty": "hypothesis",
       "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf"
+    },
+    {
+      "from": "practice/workplace-stress-check-improvement-loop",
+      "type": "responds_to",
+      "to": "trend/workplace-stress-check-institutionalization",
+      "certainty": "hypothesis",
+      "source": "https://www.mhlw.go.jp/content/11303000/001681620.pdf"
     },
     {
       "from": "trend/short-video-mainstream",
@@ -7325,6 +7619,12 @@
       "from": "trend/care-service-utilization-expansion",
       "type": "answered_by",
       "to": "practice/care-service-family-coordination",
+      "derived": true
+    },
+    {
+      "from": "trend/care-workforce-shortage",
+      "type": "answered_by",
+      "to": "practice/care-workforce-retention-productivity",
       "derived": true
     },
     {
@@ -7397,6 +7697,12 @@
       "from": "trend/sustainable-fashion-behavior",
       "type": "answered_by",
       "to": "practice/fashion-takeback-repair-resale",
+      "derived": true
+    },
+    {
+      "from": "trend/fertility-treatment-insurance-access",
+      "type": "answered_by",
+      "to": "practice/fertility-work-life-support-design",
       "derived": true
     },
     {
@@ -7562,6 +7868,12 @@
       "derived": true
     },
     {
+      "from": "trend/recurrent-education-institutionalization",
+      "type": "answered_by",
+      "to": "practice/recurrent-learning-outcome-design",
+      "derived": true
+    },
+    {
       "from": "trend/anxiety-multiplication",
       "type": "answered_by",
       "to": "practice/recurring-cost-transparency",
@@ -7571,6 +7883,12 @@
       "from": "trend/redelivery-reduction",
       "type": "answered_by",
       "to": "practice/redelivery-choice-friction-design",
+      "derived": true
+    },
+    {
+      "from": "trend/tokyo-region-inmigration-persistence",
+      "type": "answered_by",
+      "to": "practice/regional-demand-localization",
       "derived": true
     },
     {
@@ -7640,6 +7958,12 @@
       "derived": true
     },
     {
+      "from": "trend/vacant-housing-expansion",
+      "type": "answered_by",
+      "to": "practice/vacant-housing-management-conversion",
+      "derived": true
+    },
+    {
       "from": "trend/video-distribution-expansion",
       "type": "answered_by",
       "to": "practice/video-rights-data-sharing",
@@ -7649,6 +7973,12 @@
       "from": "trend/women-employment-expansion",
       "type": "answered_by",
       "to": "practice/women-worklife-service-design",
+      "derived": true
+    },
+    {
+      "from": "trend/workplace-stress-check-institutionalization",
+      "type": "answered_by",
+      "to": "practice/workplace-stress-check-improvement-loop",
       "derived": true
     }
   ]
