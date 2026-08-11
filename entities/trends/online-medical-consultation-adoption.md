@@ -22,8 +22,8 @@ naming:
   original_label: オンライン診療の実施・制度整備
   note: "「オンライン診療の制度対応と利用拡大」は、厚生労働省の制度資料と調査結果をまとめるための記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-09-11"
+  valid_as_of: "2026-08-12"
+  recheck_by: "2026-09-12"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: primary, as_of: "2026-04-01"}
   - {field: stage, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度"}
@@ -36,7 +36,7 @@ sources:
   - https://www.mhlw.go.jp/stf/index_0024_00004.html
   - https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html
 status: verified
-updated: 2026-08-11
+updated: 2026-08-12
 ---
 
 # オンライン診療の制度対応と利用拡大
@@ -46,6 +46,9 @@ updated: 2026-08-11
 オンライン診療は、限定的な利用にとどまりながら、制度と提供体制の整備が続く段階にある。厚生労働省の検討会資料では、2024年度の調査でオンライン診療を受けた経験がある患者は3.5％だった。医療機関側では、外来診療の1割超をオンラインで行う施設が18.6％、5割超の施設が5.4％で、いずれも2年前より増えたと説明されている。
 
 2026年4月1日にはオンライン診療に関する医療法上の規定が施行され、翌4月2日には指針改訂が示された。利用率はまだ小さく、対象となる診療科・患者・地域や調査方法の違いもあるため、医療全体がオンラインへ移行したとは言えない。
+
+厚生労働省は2026年7月23日付で、自治体におけるオンライン診療・遠隔医療の導入事例集（令和8年3月版）を掲載した。制度施行後も自治体導入の事例整理が続いているが、
+これは患者の利用率や医療機関の実施割合が増えたことを示す統計ではない。
 
 ## kind と stage の判定
 

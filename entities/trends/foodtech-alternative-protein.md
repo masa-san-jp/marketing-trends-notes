@@ -22,22 +22,23 @@ naming:
   original_label: フードテック
   note: "「フードテックによる新たなたんぱく質源の事業化」は、農林水産省の官民協議会と委託事業の対象領域を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-09-11"
+  valid_as_of: "2026-08-12"
+  recheck_by: "2026-09-12"
 evidence:
   - {field: kind, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
-  - {field: stage, source: "https://www.maff.go.jp/j/shokusan/sosyutu/itaku.html", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
+  - {field: stage, source: "https://www.maff.go.jp/j/shokusan/sosyutu/", certainty: attested, retrieved: primary, as_of: "2026-06-24"}
   - {field: time, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2020-10"}
 predictions: []
 channels: []
 relations: []
 sources:
   - https://food-tech.maff.go.jp/about/
+  - https://www.maff.go.jp/j/shokusan/sosyutu/
   - https://www.maff.go.jp/j/shokusan/sosyutu/itaku.html
   - https://www.maff.go.jp/j/shokusan/sosyutu/backnumber.html
   - https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html
 status: verified
-updated: 2026-08-11
+updated: 2026-08-12
 ---
 
 # フードテックによる新たなたんぱく質源の事業化
@@ -51,6 +52,10 @@ updated: 2026-08-11
 農林水産省はフードテックを活用した事業化・海外展開支援や、官民協議会の運営・調査を委託し、事業報告や実証の枠組みを積み上げている。過去の
 消費者調査では、植物性たんぱく質から作った代替肉を「積極的に」または「少しは」食べたいと答えた人が55.6％だったが、2020年の意向調査であり、
 現在の購買量・継続購入率・利益を示す市場実績ではない。このtrendでは、技術開発、事業化支援、消費者の受容性、実際の市場定着を分けて扱う。
+
+2026年6月24日には、農林水産省のページでフードテック官民協議会の令和8年度第1回総会の資料が公開され、同協議会は
+2026年6月時点で約1,900人が参加する枠組みとして更新されている。これは新たなたんぱく質源の販売実績ではないが、
+事業化・安全性・受容性を扱う官民の検討基盤が継続していることを示す。
 
 ## kind と stage の判定
 

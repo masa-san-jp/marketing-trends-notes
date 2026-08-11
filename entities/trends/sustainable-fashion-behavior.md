@@ -22,11 +22,11 @@ naming:
   original_label: サステナブルファッション
   note: "「サステナブルファッションへの関心・循環行動」は、環境省の調査項目と衣類の循環フローを要約するための記述的なラベル。生活者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-09-11"
+  valid_as_of: "2026-08-12"
+  recheck_by: "2026-09-12"
 evidence:
   - {field: kind, source: "https://www.env.go.jp/policy/sustainable_fashion/about/", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: stage, source: "https://www.env.go.jp/policy/sustainable_fashion/about/", certainty: independent, retrieved: primary, as_of: "2025"}
+  - {field: stage, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-03"}
   - {field: time, source: "https://www.env.go.jp/content/000389225.pdf", certainty: independent, retrieved: primary, as_of: "2025"}
 predictions:
   - {claim: "次回の同テーマ独立調査で、サステナブルファッションの認知・関心層が2025年調査の約6割・約4割を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
@@ -34,10 +34,11 @@ channels: []
 relations: []
 sources:
   - https://www.env.go.jp/policy/sustainable_fashion/about/
+  - https://www.env.go.jp/policy/sustainable_fashion/resources/
   - https://www.env.go.jp/content/000389225.pdf
   - https://www.env.go.jp/press/press_03475.html
 status: verified
-updated: 2026-08-11
+updated: 2026-08-12
 ---
 
 # サステナブルファッションへの関心・循環行動
@@ -58,6 +59,9 @@ updated: 2026-08-11
 同じ年度の環境省資料では、2025年版の衣類マテリアルフローとして、国内の衣類新規供給量82万トンに対し、約50万トンが
 焼却・埋立等で処理されると推計されている。家庭から手放された衣類のうち、リユース35％とリサイクル7％を合わせた再活用は
 42％で、残り58％は焼却等とされる。生活者の関心が、そのまま循環実績に転換しているわけではないことも同時に示している。
+
+環境省は2026年3月に、家庭から廃棄される衣類を2030年度までに2020年度比25％削減するためのアクションプランを取りまとめた。
+方針と目標が更新されても、生活者の関心が実際の回収・リユース・リペアへ転換したことまでは示さない。
 
 ## kind と stage の判定
 
