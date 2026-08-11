@@ -3454,8 +3454,8 @@
         "note": "「クリエイター広告表示の可視化」は、規制と消費者調査で観測される変化を要約するための記述的なラベル。原資料の固有名称ではない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-09-11"
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-09-12"
       },
       "evidence": [
         {
@@ -3495,7 +3495,7 @@
         "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-08-12",
       "path": "entities/trends/creator-ad-disclosure.md"
     },
     "trend/creator-rights-compensation-transparency": {
@@ -4999,8 +4999,8 @@
         "note": "「日本音楽の海外収入・売上の可視化」は、経済産業省の2024年調査結果を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-09-11"
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-09-12"
       },
       "evidence": [
         {
@@ -5036,11 +5036,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.meti.go.jp/policy/mono_info_service/contents/2026/260326.html",
+        "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/260430.html",
         "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-08-12",
       "path": "entities/trends/japanese-music-overseas-expansion.md"
     },
     "trend/live-entertainment-experience-expansion": {
@@ -5475,8 +5475,8 @@
         "note": "「オンラインニュースプラットフォーム依存の可視化」は、文化庁・公正取引委員会の実態調査の説明を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-09-11"
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-09-12"
       },
       "evidence": [
         {
@@ -5512,10 +5512,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/"
+        "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
+        "https://www.jftc.go.jp/houdou/pressrelease/cyosa/cyosa-platformer/index.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-08-12",
       "path": "entities/trends/online-news-platform-dependence.md"
     },
     "trend/outbound-travel-recovery": {
