@@ -18,6 +18,9 @@ evidence:
   - {field: time, source: "https://petsymposium.org/popets/2024/popets-2024-0044.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
   - {field: saturation, source: "https://markezine.jp/article/detail/46696", certainty: vendor, retrieved: primary, as_of: "2024-05"}
   - {field: saturation, source: "https://www.jicdaq.or.jp/release/press-release20241202/", certainty: attested, retrieved: primary, as_of: "2024-07"}
+  - {field: saturation, source: "https://www.ppc.go.jp/files/pdf/241205_hearing_material-3.pdf", certainty: attested, retrieved: primary, as_of: "2024-12-05"}
+  - {field: saturation, source: "https://privacysandbox.google.com/resources/case-studies/smn", certainty: vendor, retrieved: primary, as_of: "2025-01-29"}
+  - {field: saturation, source: "https://prtimes.jp/main/html/rd/p/000000482.000007821.html", certainty: vendor, retrieved: primary, as_of: "2022-05-31"}
 relations:
   - {type: responds_to, target: trend/tracking-restrictions, certainty: hypothesis, source: "https://developer.apple.com/app-store/ad-attribution/"}
 sources:
@@ -29,6 +32,9 @@ sources:
   - https://xica.net/en/action/marketing-mix-modeling/
   - https://markezine.jp/article/detail/46696
   - https://www.jicdaq.or.jp/release/press-release20241202/
+  - https://www.ppc.go.jp/files/pdf/241205_hearing_material-3.pdf
+  - https://privacysandbox.google.com/resources/case-studies/smn
+  - https://prtimes.jp/main/html/rd/p/000000482.000007821.html
 status: draft
 updated: 2026-08-11
 ---
@@ -81,6 +87,22 @@ MMMについては、サイカが主催しインテージが実施した2024年5
 これは広告品質管理の調査であって、MMMやインクリメンタリティの導入率を測ったものではない
 （[JICDAQデジタル広告課題意識調査2024](https://www.jicdaq.or.jp/release/press-release20241202/)、2026-08-11 実読）。
 
+日本固有の実装例として、2024年12月に個人情報保護委員会へ提出されたJIAA資料は、トラッキング制限への代替として、
+同意に基づく共通ID、ユーザーデータを使わないコンテンツ／コンテキストターゲティング、Privacy Sandboxなどのブラウザ技術を挙げ、
+広告主のFirst Party Data活用ニーズが広告配信だけでなく販促・経営戦略・サービス最適化へ広がっていると整理している
+（[JIAAヒアリング資料](https://www.ppc.go.jp/files/pdf/241205_hearing_material-3.pdf)、2026-08-11 実読）。
+これは業界団体の説明資料であり、導入率の統計ではない。
+
+また、ソニーグループ傘下で日本を拠点とするDSPのSMNは、複数のSSPと日本の3社（スポーツ、モバイル、通信）で、
+Protected Audience API、Topics API、Attribution Reporting APIのテストを行った。Googleのケーススタディでは、
+一部用途で従来システムに近い配信結果や高いCTRが得られた一方、レイテンシーと技術的参入障壁が残り、継続テストが必要とされている
+（[SMNのテスト事例](https://privacysandbox.google.com/resources/case-studies/smn)、2026-08-11 実読）。
+これは日本の実装可能性を示す個別事例であり、市場全体の採用率ではない。
+
+モバイル側の過去の実装例として、i-mobileは2022年5月時点で、自社ネットワークのiOSアプリ総リクエスト数の約90%を
+SKAdNetwork計測対応にしたと発表している。ただし、これは一社の在庫におけるリクエスト比率であり、日本のiOSアプリ全体や
+広告主全体の導入率には一般化しない（[i-mobile発表](https://prtimes.jp/main/html/rd/p/000000482.000007821.html)、2026-08-11 実読）。
+
 **未実施。** 自分の事業でAdAttributionKit、Attribution Reporting、MMM、インクリメンタリティを組み合わせた
 測定は試していない。導入率、欠測率、ノイズによる誤差、予算配分の改善幅は未確認である。
 
@@ -88,8 +110,8 @@ MMMについては、サイカが主催しインテージが実施した2024年5
 
 `spreading` とした。Apple・Googleの実装仕様と、プライバシー保護型広告測定の学術研究は確認できる一方、
 日本のMMM導入調査と広告品質対策の調査は確認できたが、いずれも特定主体・対象に限られ、プライバシー保護型計測APIの
-導入率や標準運用を直接測ってはいない。したがって、普及済み・標準化済みではなく、複数の測定方式が実装・検証されている
-拡大局面として暫定記録する。
+導入率や標準運用を直接測ってはいない。JIAAの整理、SMNの実装テスト、i-mobileの在庫対応は、導入可能な実装と周辺運用が
+存在することを示すが、普及済み・標準化済みとは言えない。複数の測定方式が実装・検証されている拡大局面として暫定記録する。
 
 ## 自分の事業にどう使うか
 
