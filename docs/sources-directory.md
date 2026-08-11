@@ -18,6 +18,12 @@
 | 総務省 情報通信メディアの利用時間と情報行動に関する調査 | メディア別・年代別の利用時間・利用率（年次） | https://www.soumu.go.jp/iicp/research/results/media_usage-time.html | **未確認**（2026-08-10 執筆環境から到達できず） |
 | 総務省 通信利用動向調査 | 世帯・企業のネット利用（年次） | https://www.soumu.go.jp/johotsusintokei/statistics/statistics05.html | **未確認**（同上） |
 | 経産省 電子商取引に関する市場調査 | EC市場規模・EC化率（年次） | https://www.meti.go.jp/policy/it_policy/statistics/outlook/ie_outlook.html | **未確認**（同上） |
+| 経産省 令和6年度電子商取引に関する市場調査 | 2024年のBtoC-EC・BtoB-EC市場規模、EC化率、食品・飲料・酒類のEC市場規模 | https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf | **確認済み**（2026-08-11 原典PDFを実読） |
+| 観光庁 訪日外国人旅行者数・出国日本人数 | 2025年の訪日外国人旅行者数 | https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html | **確認済み**（2026-08-11 実読） |
+| 観光庁 1月長官会見要旨 | 2025年の訪日旅行者数・訪日旅行消費額・地域別動向 | https://www.mlit.go.jp/kankocho/page01_00056.html | **確認済み**（2026-08-11 実読） |
+| 観光庁 旅行・観光消費動向調査 | 日本人の国内旅行消費額・延べ旅行者数・旅行単価（年次） | https://www.mlit.go.jp/kankocho/news02_00074.html | **確認済み**（2026-08-11 実読） |
+| 総務省統計局 令和2年国勢調査 人口等基本集計結果 | 単独世帯の世帯数・構成比・前回調査からの増減 | https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf | **確認済み**（2026-08-11 原典PDFを実読） |
+| 環境省 令和6年度リユース市場規模調査報告書 | CtoC-EC・リユース市場に関する公的統計・業界統計の整理と推計 | https://www.env.go.jp/content/000327691.pdf | **確認済み**（2026-08-11 原典PDFを実読） |
 | e-Stat（政府統計の総合窓口） | 家計調査ほか政府統計の横断検索 | https://www.e-stat.go.jp/ | **未確認**（同上） |
 | 消費者庁 ステルスマーケティング規制 | 景表法のステマ告示・運用基準 | https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/ | **未確認**（同上） |
 
