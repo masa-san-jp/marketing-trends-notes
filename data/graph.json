@@ -448,6 +448,57 @@
       "updated": "2026-08-10",
       "path": "entities/practices/idfa-targeting.md"
     },
+    "practice/online-financial-crime-controls": {
+      "id": "practice/online-financial-crime-controls",
+      "uri": "urn:mtn:practice/online-financial-crime-controls",
+      "type": "practice",
+      "label_ja": "オンライン金融取引の本人確認・異常検知・顧客通知・被害対応",
+      "label_en": "Integrated identity verification, anomaly detection, customer alerts, and incident response for online finance",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「オンライン金融取引の本人確認・異常検知・顧客通知・被害対応」「integrated online financial crime controls」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "フィッシング・不正送金・SNS型投資詐欺への対応として、本人確認から異常検知・顧客通知・停止・回復までをつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.fsa.go.jp/news/r6/20250627/01.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-06-27"
+        },
+        {
+          "field": "saturation",
+          "source": "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-04-16"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/online-financial-crime-governance",
+          "certainty": "hypothesis",
+          "source": "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html"
+        }
+      ],
+      "sources": [
+        "https://www.fsa.go.jp/news/r6/20250627/01.pdf",
+        "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html",
+        "https://www.fsa.go.jp/news/r7/ginkou/20260630.html",
+        "https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/260213/03.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/online-financial-crime-controls.md"
+    },
     "practice/organic-post-boosting": {
       "id": "practice/organic-post-boosting",
       "uri": "urn:mtn:practice/organic-post-boosting",
@@ -1735,6 +1786,13 @@
       "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
     },
     {
+      "from": "practice/online-financial-crime-controls",
+      "type": "responds_to",
+      "to": "trend/online-financial-crime-governance",
+      "certainty": "hypothesis",
+      "source": "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html"
+    },
+    {
       "from": "practice/organic-post-boosting",
       "type": "responds_to",
       "to": "trend/short-video-mainstream",
@@ -1855,6 +1913,12 @@
       "from": "event/apple-att",
       "type": "killed",
       "to": "practice/idfa-targeting",
+      "derived": true
+    },
+    {
+      "from": "trend/online-financial-crime-governance",
+      "type": "answered_by",
+      "to": "practice/online-financial-crime-controls",
       "derived": true
     },
     {
