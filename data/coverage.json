@@ -3,9 +3,9 @@
   "trend_total": 4,
   "trend_stub_excluded": 0,
   "by_status": {
-    "draft": 4,
+    "draft": 3,
     "stub": 0,
-    "verified": 0
+    "verified": 1
   },
   "grid": {
     "cross-category": {
@@ -36,9 +36,7 @@
   "stale": [],
   "vendor_only": [],
   "searched": {},
-  "unread": [
-    "trend/japan-btoc-ec-expansion"
-  ],
+  "unread": [],
   "hearsay": [],
   "isolated": [
     "trend/anxiety-multiplication",
@@ -48,7 +46,7 @@
   "progress": {
     "trend_total": "4/60（stub 0件は不算入）",
     "vendor_only_ratio": "0.00（上限 0.2）",
-    "primary_read_ratio": "0.75（下限 0.3・原典を実読した根拠を持つ trend）",
+    "primary_read_ratio": "1.00（下限 0.3・原典を実読した根拠を持つ trend）",
     "independent_ratio": "1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）",
     "self_measured": "0/10 件が measured の根拠を持つ",
     "per_category_min": "1/12 カテゴリが 2件以上",

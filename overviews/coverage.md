@@ -14,7 +14,7 @@ depends_on: []
 <!-- generated:coverage:start -->
 データの最新日: 2026-08-11 — `python3 tools/build_graph.py` が生成（手で書き換えない）
 
-trend **4** 件（stub 0件は不算入）／内訳 {'draft': 4, 'stub': 0, 'verified': 0}
+trend **4** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 1}
 
 | カテゴリ | 2018 | 2020 | 2021 | 2022 | 年代不明 | 計 |
 |---|---|---|---|---|---|---|
@@ -31,13 +31,11 @@ trend **4** 件（stub 0件は不算入）／内訳 {'draft': 4, 'stub': 0, 'ver
 | education（教育） |  |  |  |  |  | 0 |
 | cross-category（カテゴリ横断） | 1 |  | 1 |  |  | 2 |
 
-**原典を実読していない**（`retrieved: primary` の根拠が1本も無い）: trend/japan-btoc-ec-expansion
-
 受け入れ条件の達成度:
 
 - trend_total: 4/60（stub 0件は不算入）
 - vendor_only_ratio: 0.00（上限 0.2）
-- primary_read_ratio: 0.75（下限 0.3・原典を実読した根拠を持つ trend）
+- primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
 - self_measured: 0/10 件が measured の根拠を持つ
 - per_category_min: 1/12 カテゴリが 2件以上
