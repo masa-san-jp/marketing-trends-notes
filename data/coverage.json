@@ -1,11 +1,11 @@
 {
   "as_of": "2026-08-11",
-  "trend_total": 21,
+  "trend_total": 22,
   "trend_stub_excluded": 0,
   "by_status": {
     "draft": 3,
     "stub": 0,
-    "verified": 18
+    "verified": 19
   },
   "grid": {
     "cross-category": {
@@ -33,7 +33,7 @@
       "2020": 1
     },
     "health-wellness": {
-      "2024": 1
+      "2024": 2
     },
     "gaming": {
       "2020": 1
@@ -62,7 +62,7 @@
     "saas-b2b": 2,
     "food-beverage": 2,
     "fashion-beauty": 2,
-    "health-wellness": 1,
+    "health-wellness": 2,
     "gaming": 1,
     "finance": 2,
     "education": 1,
@@ -76,14 +76,14 @@
   "isolated": [],
   "measured": [],
   "progress": {
-    "trend_total": "21/60（stub 0件は不算入）",
+    "trend_total": "22/60（stub 0件は不算入）",
     "vendor_only_ratio": "0.00（上限 0.2）",
     "primary_read_ratio": "1.00（下限 0.3・原典を実読した根拠を持つ trend）",
     "independent_ratio": "1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）",
     "self_measured": "0/10 件が measured の根拠を持つ",
-    "per_category_min": "9/12 カテゴリが 2件以上",
+    "per_category_min": "10/12 カテゴリが 2件以上",
     "stale_ratio": "0.00（上限 0.15・as_of=2026-08-11 時点）",
-    "practice_linked": "20/21 の practice が responds_to を持つ（下限比率 0.5）",
+    "practice_linked": "21/22 の practice が responds_to を持つ（下限比率 0.5）",
     "resolved_predictions": "0/5 件の予測が答え合わせ済み"
   }
 }

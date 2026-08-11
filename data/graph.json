@@ -1076,6 +1076,57 @@
       "updated": "2026-08-11",
       "path": "entities/practices/school-generative-ai-policy-training-evaluation.md"
     },
+    "practice/sleep-health-check-intervention": {
+      "id": "practice/sleep-health-check-intervention",
+      "uri": "urn:mtn:practice/sleep-health-check-intervention",
+      "type": "practice",
+      "label_ja": "睡眠状態の確認・生活環境改善・相談導線運用",
+      "label_en": "Sleep assessment, lifestyle-environment improvement, and referral operations",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「睡眠状態の確認・生活環境改善・相談導線運用」「sleep health check intervention operations」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2024~",
+        "end": "..",
+        "display": "睡眠・休養を健康づくりの指標として確認し、生活・勤務環境の改善と必要時の専門相談をつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/index.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-09-18"
+        },
+        {
+          "field": "saturation",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kenkounippon21_00006.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-08-11"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/sleep-rest-health-management",
+          "certainty": "hypothesis",
+          "source": "https://www.mhlw.go.jp/content/10900000/001603146.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/index.html",
+        "https://www.mhlw.go.jp/content/001305530.pdf",
+        "https://www.mhlw.go.jp/content/10900000/001603146.pdf",
+        "https://www.mhlw.go.jp/content/10904750/001222157.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/sleep-health-check-intervention.md"
+    },
     "source/apple-user-privacy-page": {
       "id": "source/apple-user-privacy-page",
       "uri": "urn:mtn:source/apple-user-privacy-page",
@@ -2399,6 +2450,80 @@
       "updated": "2026-08-10",
       "path": "entities/trends/short-video-mainstream.md"
     },
+    "trend/sleep-rest-health-management": {
+      "id": "trend/sleep-rest-health-management",
+      "uri": "urn:mtn:trend/sleep-rest-health-management",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "health-wellness",
+      "geo": "japan",
+      "label_ja": "睡眠・休養の健康管理ニーズの可視化",
+      "label_en": "Visibility of sleep and rest as health-management needs",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「睡眠・休養の健康管理ニーズ」「sleep and rest health-management needs」を確認したが、日本の生活者の睡眠状態、健康目標、支援策が連動する現象そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2024~",
+        "end": "..",
+        "display": "健康日本21（第三次）の開始と2024年国民健康・栄養調査のベースラインを通じ、睡眠・休養を健康管理の対象として測定・支援する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "睡眠で休養がとれている者の増加",
+        "note": "「睡眠・休養の健康管理ニーズの可視化」は、厚生労働省の健康目標と国民調査を生活者側の課題として要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mhlw.go.jp/content/10900000/001603146.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-12-02"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/index.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-09-18"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/newpage_66279.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-12-02"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の国民健康・栄養調査で、睡眠で休養がとれている者の年齢調整値が2024年の78.5%を大きく下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/newpage_66279.html",
+        "https://www.mhlw.go.jp/content/10900000/001603146.pdf",
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/index.html",
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kenkounippon21_00006.html",
+        "https://www.mhlw.go.jp/web/t_doc?dataId=00012990&dataType=0&pageNo=1"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/sleep-rest-health-management.md"
+    },
     "trend/sustainable-fashion-behavior": {
       "id": "trend/sustainable-fashion-behavior",
       "uri": "urn:mtn:trend/sustainable-fashion-behavior",
@@ -2710,6 +2835,13 @@
       "source": "https://www.mext.go.jp/zyoukatsu/ai/about.html"
     },
     {
+      "from": "practice/sleep-health-check-intervention",
+      "type": "responds_to",
+      "to": "trend/sleep-rest-health-management",
+      "certainty": "hypothesis",
+      "source": "https://www.mhlw.go.jp/content/10900000/001603146.pdf"
+    },
+    {
       "from": "trend/short-video-mainstream",
       "type": "originated_on",
       "to": "channel/tiktok"
@@ -2867,6 +2999,12 @@
       "from": "trend/school-generative-ai-governance",
       "type": "answered_by",
       "to": "practice/school-generative-ai-policy-training-evaluation",
+      "derived": true
+    },
+    {
+      "from": "trend/sleep-rest-health-management",
+      "type": "answered_by",
+      "to": "practice/sleep-health-check-intervention",
       "derived": true
     }
   ]
