@@ -14,26 +14,26 @@ depends_on: []
 <!-- generated:coverage:start -->
 データの最新日: 2026-08-12 — `python3 tools/build_graph.py` が生成（手で書き換えない）
 
-trend **54** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 51}
+trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 57}
 
-| カテゴリ | 2004 | 2005 | 2007 | 2010 | 2014 | 2016 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | 年代不明 | 計 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| consumer-goods（消費財・日用品） |  | 1 |  |  |  |  |  |  | 2 |  | 1 |  | 1 |  |  |  | 5 |
-| retail-commerce（小売・EC） |  |  |  |  |  |  |  |  | 2 |  | 4 | 1 |  |  |  |  | 7 |
-| entertainment-content（エンタメ・コンテンツ） |  |  |  |  | 1 | 1 |  |  | 2 |  |  | 1 |  |  |  |  | 5 |
-| creator-economy（クリエイターエコノミー） |  |  |  |  |  |  |  |  |  | 1 |  | 1 | 1 |  |  |  | 3 |
-| saas-b2b（SaaS・B2B） |  |  |  |  |  |  |  | 1 | 1 |  | 2 |  | 1 |  |  |  | 5 |
-| food-beverage（食品・飲料・外食） |  |  |  |  |  |  |  | 1 | 1 |  | 1 | 1 |  |  |  |  | 4 |
-| fashion-beauty（ファッション・美容） |  |  |  |  |  |  |  |  | 1 |  |  |  |  | 1 |  |  | 2 |
-| health-wellness（ヘルスケア・ウェルネス） |  |  |  |  |  |  |  |  | 1 |  | 1 |  | 3 |  |  |  | 5 |
-| gaming（ゲーム） |  |  |  |  |  |  |  |  | 1 |  | 1 |  |  |  |  |  | 2 |
-| finance（金融） |  |  |  | 1 |  |  |  |  | 1 |  |  | 2 |  |  |  |  | 4 |
-| education（教育） |  |  |  |  |  |  |  | 1 |  |  |  | 1 | 1 |  |  |  | 3 |
-| cross-category（カテゴリ横断） | 1 |  | 1 |  |  |  | 1 | 1 | 2 | 1 | 1 |  |  |  | 1 |  | 9 |
+| カテゴリ | 1993 | 1995 | 2004 | 2005 | 2007 | 2010 | 2014 | 2015 | 2016 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | 年代不明 | 計 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| consumer-goods（消費財・日用品） | 1 |  |  | 1 |  |  |  |  |  |  |  | 2 |  | 1 |  | 1 |  |  |  | 6 |
+| retail-commerce（小売・EC） |  |  |  |  |  |  |  |  |  |  |  | 2 |  | 4 | 1 |  |  |  |  | 7 |
+| entertainment-content（エンタメ・コンテンツ） |  |  |  |  |  |  | 1 |  | 1 |  |  | 2 |  |  | 1 |  |  |  |  | 5 |
+| creator-economy（クリエイターエコノミー） |  |  |  |  |  |  |  |  |  |  |  |  | 1 |  | 1 | 1 |  |  |  | 3 |
+| saas-b2b（SaaS・B2B） |  |  |  |  |  |  |  |  |  |  | 1 | 1 |  | 2 |  | 1 |  |  |  | 5 |
+| food-beverage（食品・飲料・外食） |  |  |  |  |  |  |  |  |  |  | 1 | 1 |  | 1 | 1 |  |  |  |  | 4 |
+| fashion-beauty（ファッション・美容） |  |  |  |  |  |  |  |  |  |  |  | 1 |  |  |  |  | 1 |  |  | 2 |
+| health-wellness（ヘルスケア・ウェルネス） |  |  |  |  |  |  |  | 1 |  |  |  | 1 |  | 3 |  | 3 |  |  |  | 8 |
+| gaming（ゲーム） |  |  |  |  |  |  |  |  |  |  |  | 1 |  | 1 |  |  |  |  |  | 2 |
+| finance（金融） |  |  |  |  |  | 1 |  |  |  |  |  | 1 |  |  | 2 |  |  |  |  | 4 |
+| education（教育） |  |  |  |  |  |  |  |  |  |  | 1 |  |  | 1 | 1 | 1 |  |  |  | 4 |
+| cross-category（カテゴリ横断） |  | 1 | 1 |  | 1 |  |  |  |  | 1 | 1 | 2 | 1 | 1 |  |  |  | 1 |  | 10 |
 
 受け入れ条件の達成度:
 
-- trend_total: 54/60（stub 0件は不算入）
+- trend_total: 60/60（stub 0件は不算入）
 - vendor_only_ratio: 0.00（上限 0.2）
 - primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
@@ -42,6 +42,8 @@ trend **54** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 - stale_ratio: 0.00（上限 0.15・as_of=2026-08-12 時点）
 - practice_linked: 54/55 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 0/5 件の予測が答え合わせ済み
+
+関係を持たない trend: trend/care-workforce-shortage, trend/fertility-treatment-insurance-access, trend/recurrent-education-institutionalization, trend/tokyo-region-inmigration-persistence, trend/vacant-housing-expansion, trend/workplace-stress-check-institutionalization
 <!-- generated:coverage:end -->
 
 ## 空欄の読み方
@@ -65,7 +67,13 @@ trend **54** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 形式の検証（`build_graph.py --check`）と違って commit は止めない——次に何を調べるかの材料として出す。
 
 <!-- generated:audit:start -->
-食い違い・偏りの指摘はなし。
+**応答なきトレンド**
+- 介護人材の需給ギャップ拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- 不妊治療の保険アクセス拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- リカレント教育の社会実装 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- 東京圏への転入超過の持続 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- 空き家の増加 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- 職場ストレスチェックの制度定着 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
 <!-- generated:audit:end -->
 
 ## 需要から決める（探されたが無かった語）

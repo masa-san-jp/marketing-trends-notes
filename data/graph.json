@@ -2886,6 +2886,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/care-service-utilization-expansion.md"
     },
+    "trend/care-workforce-shortage": {
+      "id": "trend/care-workforce-shortage",
+      "uri": "urn:mtn:trend/care-workforce-shortage",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "health-wellness",
+      "geo": "japan",
+      "label_ja": "介護人材の需給ギャップ拡大",
+      "label_en": "Expansion of the care-workforce supply gap",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「介護人材の需給ギャップ拡大」「care workforce supply gap in Japan」で検索したが、日本の介護職員必要数と現有人材の差そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "介護サービス需要に対して必要な職員数が増え、採用・定着・生産性向上を同時に進める局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "介護職員の必要数の増加",
+        "note": "「介護人材の需給ギャップ拡大」は、厚生労働省の第9期介護保険事業計画に基づく必要数推計を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-11-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mhlw.go.jp/content/12004000/001274765.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2040年度"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mhlw.go.jp/stf/newpage_02977.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2040年度"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/content/12004000/001274765.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2040年度"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2026年度の介護職員必要数が第9期推計の約240万人となり、2022年度の約215万人を上回る",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/newpage_02977.html",
+        "https://www.mhlw.go.jp/content/12004000/001274765.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/care-workforce-shortage.md"
+    },
     "trend/cashless-payment-expansion": {
       "id": "trend/cashless-payment-expansion",
       "uri": "urn:mtn:trend/cashless-payment-expansion",
@@ -3655,6 +3726,77 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/electrified-vehicle-adoption.md"
+    },
+    "trend/fertility-treatment-insurance-access": {
+      "id": "trend/fertility-treatment-insurance-access",
+      "uri": "urn:mtn:trend/fertility-treatment-insurance-access",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "emerging",
+      "market": "health-wellness",
+      "geo": "japan",
+      "label_ja": "不妊治療の保険アクセス拡大",
+      "label_en": "Expansion of insurance access to fertility treatment",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「不妊治療の保険アクセス拡大」「fertility treatment insurance access in Japan」で検索したが、日本の不妊治療保険適用後の利用構造の変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "一般不妊治療と生殖補助医療の基本診療が保険適用となり、費用負担・情報提供・仕事との両立を再設計する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "不妊治療の保険適用",
+        "note": "「不妊治療の保険アクセス拡大」は、厚生労働省の保険適用説明と診療報酬実績を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-09-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-04"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022年度"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回公表される保険適用不妊治療の実患者数が2022年度の約37万人を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html",
+        "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/fertility-treatment-insurance-access.md"
     },
     "trend/food-ecommerce-expansion": {
       "id": "trend/food-ecommerce-expansion",
@@ -5370,6 +5512,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/plastic-resource-circulation.md"
     },
+    "trend/recurrent-education-institutionalization": {
+      "id": "trend/recurrent-education-institutionalization",
+      "uri": "urn:mtn:trend/recurrent-education-institutionalization",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "emerging",
+      "market": "education",
+      "geo": "japan",
+      "label_ja": "リカレント教育の社会実装",
+      "label_en": "Institutionalization of recurrent education in Japan",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「リカレント教育の社会実装」「institutionalization of recurrent education in Japan」で検索したが、日本の社会人学習政策と大学・企業連携の変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "社会人の学び直しを大学・企業・地域・学習履歴・就職支援へつなぐ政策・実装基盤が整備される局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "リカレント教育の社会実装",
+        "note": "「リカレント教育の社会実装」は、文部科学省の事業・調査研究・支援制度を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-09-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-2027年度"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2027年度"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "文部科学省のリカレント教育・リスキリング関連の支援事業が次年度も複数の目的別施策として掲載される",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm",
+        "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/recurrent-education-institutionalization.md"
+    },
     "trend/redelivery-reduction": {
       "id": "trend/redelivery-reduction",
       "uri": "urn:mtn:trend/redelivery-reduction",
@@ -6152,6 +6365,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/telework-stabilization.md"
     },
+    "trend/tokyo-region-inmigration-persistence": {
+      "id": "trend/tokyo-region-inmigration-persistence",
+      "uri": "urn:mtn:trend/tokyo-region-inmigration-persistence",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "peak",
+      "market": "cross-category",
+      "geo": "japan",
+      "label_ja": "東京圏への転入超過の持続",
+      "label_en": "Persistence of net in-migration to the Tokyo region",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「東京圏への転入超過の持続」「persistent net in-migration to Tokyo region」で検索したが、日本の住民基本台帳に基づく東京圏人口移動の変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "1995~",
+        "end": "..",
+        "display": "東京圏への日本人の転入超過が長期継続し、地域別の雇用・消費・住居設計を分ける局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "東京圏の転入超過",
+        "note": "「東京圏への転入超過の持続」は、総務省統計局の住民基本台帳人口移動報告を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-11-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "1995-2025"
+        },
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "1954-2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2026年の東京圏における日本人移動者が転入超過となり、2025年の11万2738人を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html",
+        "https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/tokyo-region-inmigration-persistence.md"
+    },
     "trend/tracking-restrictions": {
       "id": "trend/tracking-restrictions",
       "uri": "urn:mtn:trend/tracking-restrictions",
@@ -6300,6 +6584,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/tracking-restrictions.md"
     },
+    "trend/vacant-housing-expansion": {
+      "id": "trend/vacant-housing-expansion",
+      "uri": "urn:mtn:trend/vacant-housing-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "consumer-goods",
+      "geo": "japan",
+      "label_ja": "空き家の増加",
+      "label_en": "Expansion of vacant housing in Japan",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「空き家の増加」「vacant housing expansion in Japan」で検索したが、日本の住宅・土地統計に基づく空き家の変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "1993~",
+        "end": "..",
+        "display": "総住宅数が増える中で空き家が過去最多となり、管理・流通・改修・地域活用の課題が拡大する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "空き家数の増加",
+        "note": "「空き家の増加」は、総務省統計局の住宅・土地統計調査を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-11-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "1993-2023"
+        },
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "1978-2023"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の住宅・土地統計調査で空き家率が2023年の13.8％を下回らない",
+          "by": "2029-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.stat.go.jp/data/jyutaku/index.htm",
+        "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/vacant-housing-expansion.md"
+    },
     "trend/video-distribution-expansion": {
       "id": "trend/video-distribution-expansion",
       "uri": "urn:mtn:trend/video-distribution-expansion",
@@ -6440,6 +6795,77 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/women-employment-expansion.md"
+    },
+    "trend/workplace-stress-check-institutionalization": {
+      "id": "trend/workplace-stress-check-institutionalization",
+      "uri": "urn:mtn:trend/workplace-stress-check-institutionalization",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "growing",
+      "market": "health-wellness",
+      "geo": "japan",
+      "label_ja": "職場ストレスチェックの制度定着",
+      "label_en": "Institutionalization of workplace stress checks",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「職場ストレスチェックの制度定着」「workplace stress check institutionalization in Japan」で検索したが、日本のストレスチェック実施状況の変化そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2015~",
+        "end": "..",
+        "display": "職場のストレスチェックを実施し、集団分析を職場環境改善につなげる運用が制度として定着する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "ストレスチェック制度の実施状況",
+        "note": "「職場ストレスチェックの制度定着」は、厚生労働省の労働安全衛生調査を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-12",
+        "recheck_by": "2026-11-12"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mhlw.go.jp/content/11303000/001681620.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mhlw.go.jp/content/11303000/001681620.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/toukei/list/r06-46-50d.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2015-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回同種調査のストレスチェック実施率が2024年の75.4％を下回らず、集団分析実施率が58.0％を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mhlw.go.jp/toukei/list/r06-46-50d.html",
+        "https://www.mhlw.go.jp/content/11303000/001681620.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-12",
+      "path": "entities/trends/workplace-stress-check-institutionalization.md"
     }
   },
   "edges": [
