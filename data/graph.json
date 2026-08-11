@@ -804,6 +804,57 @@
       "updated": "2026-08-11",
       "path": "entities/practices/online-financial-crime-controls.md"
     },
+    "practice/online-game-spending-safety-controls": {
+      "id": "practice/online-game-spending-safety-controls",
+      "uri": "urn:mtn:practice/online-game-spending-safety-controls",
+      "type": "practice",
+      "label_ja": "オンラインゲームの年齢・課金・相談安全運用",
+      "label_en": "Age, spending, and support safety operations for online games",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「オンラインゲームの年齢・課金・相談安全運用」「online-game age spending support safety operations」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "オンラインゲームの配信・課金・未成年者保護・相談・返金をつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/notice/entry/029257/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-06-29"
+        },
+        {
+          "field": "saturation",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_022",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/online-game-spending-protection",
+          "certainty": "hypothesis",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_022"
+        }
+      ],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_022",
+        "https://www.caa.go.jp/policies/policy/consumer_policy/caution/internet/trouble/online.html",
+        "https://www.caa.go.jp/notice/entry/029257/",
+        "https://www.kportal.caa.go.jp/teaching-material/001514/"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/online-game-spending-safety-controls.md"
+    },
     "practice/online-marketplace-governance": {
       "id": "practice/online-marketplace-governance",
       "uri": "urn:mtn:practice/online-marketplace-governance",
@@ -2174,6 +2225,73 @@
       "updated": "2026-08-11",
       "path": "entities/trends/online-financial-crime-governance.md"
     },
+    "trend/online-game-spending-protection": {
+      "id": "trend/online-game-spending-protection",
+      "uri": "urn:mtn:trend/online-game-spending-protection",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "growing",
+      "market": "gaming",
+      "geo": "japan",
+      "label_ja": "オンラインゲーム課金・未成年者保護の運用強化",
+      "label_en": "Strengthening of online-game spending and minor-protection operations",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「オンラインゲーム課金・未成年者保護」「online-game spending and minor protection」を確認したが、日本の課金トラブル対応・消費者教育・事業者運用が連動する変化そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "2022年の消費者庁相談対応マニュアル以降、オンラインゲームの課金・未成年者保護・消費者教育を継続的に扱う局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "オンラインゲームの課金トラブル",
+        "note": "「オンラインゲーム課金・未成年者保護の運用強化」は、消費者庁の相談・注意喚起・教材・関係機関の取組を要約する記述的なラベル。利用者や事業者がこの複合語を自称するかは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_022",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.kportal.caa.go.jp/teaching-material/001514/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/notice/entry/029257/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-06-29"
+        }
+      ],
+      "predictions": [],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_022",
+        "https://www.caa.go.jp/policies/policy/consumer_policy/caution/internet/trouble/online.html",
+        "https://www.caa.go.jp/notice/entry/029257/",
+        "https://www.kportal.caa.go.jp/teaching-material/001514/",
+        "https://www.kportal.caa.go.jp/teaching-material/000509/"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/online-game-spending-protection.md"
+    },
     "trend/online-marketplace-transparency": {
       "id": "trend/online-marketplace-transparency",
       "uri": "urn:mtn:trend/online-marketplace-transparency",
@@ -2781,6 +2899,13 @@
       "source": "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html"
     },
     {
+      "from": "practice/online-game-spending-safety-controls",
+      "type": "responds_to",
+      "to": "trend/online-game-spending-protection",
+      "certainty": "hypothesis",
+      "source": "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_022"
+    },
+    {
       "from": "practice/online-marketplace-governance",
       "type": "responds_to",
       "to": "trend/online-marketplace-transparency",
@@ -2957,6 +3082,12 @@
       "from": "trend/online-financial-crime-governance",
       "type": "answered_by",
       "to": "practice/online-financial-crime-controls",
+      "derived": true
+    },
+    {
+      "from": "trend/online-game-spending-protection",
+      "type": "answered_by",
+      "to": "practice/online-game-spending-safety-controls",
       "derived": true
     },
     {
