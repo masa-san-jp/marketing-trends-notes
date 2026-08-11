@@ -1,11 +1,11 @@
 {
   "as_of": "2026-08-11",
-  "trend_total": 7,
+  "trend_total": 8,
   "trend_stub_excluded": 0,
   "by_status": {
     "draft": 3,
     "stub": 0,
-    "verified": 4
+    "verified": 5
   },
   "grid": {
     "cross-category": {
@@ -21,6 +21,9 @@
     "retail-commerce": {
       "2022": 1
     },
+    "consumer-goods": {
+      "2022": 1
+    },
     "entertainment-content": {
       "2020": 1
     },
@@ -29,7 +32,7 @@
     }
   },
   "per_category": {
-    "consumer-goods": 0,
+    "consumer-goods": 1,
     "retail-commerce": 1,
     "entertainment-content": 1,
     "creator-economy": 1,
@@ -47,10 +50,12 @@
   "searched": {},
   "unread": [],
   "hearsay": [],
-  "isolated": [],
+  "isolated": [
+    "trend/plastic-resource-circulation"
+  ],
   "measured": [],
   "progress": {
-    "trend_total": "7/60（stub 0件は不算入）",
+    "trend_total": "8/60（stub 0件は不算入）",
     "vendor_only_ratio": "0.00（上限 0.2）",
     "primary_read_ratio": "1.00（下限 0.3・原典を実読した根拠を持つ trend）",
     "independent_ratio": "1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）",
