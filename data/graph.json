@@ -116,6 +116,48 @@
       "updated": "2026-08-10",
       "path": "entities/players/bytedance.md"
     },
+    "practice/creator-ad-disclosure-governance": {
+      "id": "practice/creator-ad-disclosure-governance",
+      "uri": "urn:mtn:practice/creator-ad-disclosure-governance",
+      "type": "practice",
+      "label_ja": "クリエイター案件の広告表示管理",
+      "label_en": "Creator campaign ad disclosure governance",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「クリエイター案件の広告表示管理」「creator advertising disclosure governance」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "令和5年10月1日のステマ規制施行以降"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2023-10-01"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/creator-ad-disclosure",
+          "certainty": "hypothesis",
+          "source": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/"
+        }
+      ],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
+        "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/creator-ad-disclosure-governance.md"
+    },
     "practice/idfa-targeting": {
       "id": "practice/idfa-targeting",
       "uri": "urn:mtn:practice/idfa-targeting",
@@ -684,6 +726,13 @@
       "source": null
     },
     {
+      "from": "practice/creator-ad-disclosure-governance",
+      "type": "responds_to",
+      "to": "trend/creator-ad-disclosure",
+      "certainty": "hypothesis",
+      "source": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/"
+    },
+    {
       "from": "practice/idfa-targeting",
       "type": "killed_by",
       "to": "event/apple-att",
@@ -749,6 +798,12 @@
       "from": "source/apple-user-privacy-page",
       "type": "documents",
       "to": "event/apple-att",
+      "derived": true
+    },
+    {
+      "from": "trend/creator-ad-disclosure",
+      "type": "answered_by",
+      "to": "practice/creator-ad-disclosure-governance",
       "derived": true
     },
     {
