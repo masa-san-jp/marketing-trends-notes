@@ -200,6 +200,49 @@
       "updated": "2026-08-11",
       "path": "entities/practices/creator-ad-disclosure-governance.md"
     },
+    "practice/fashion-takeback-repair-resale": {
+      "id": "practice/fashion-takeback-repair-resale",
+      "uri": "urn:mtn:practice/fashion-takeback-repair-resale",
+      "type": "practice",
+      "label_ja": "衣類の回収・リペア・リユース連携",
+      "label_en": "Apparel take-back, repair, and reuse integration",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「衣類の回収・リペア・リユース連携」「apparel take-back repair reuse」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "2020年代の公的施策・企業事例で整理されている運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.env.go.jp/policy/sustainable_fashion/about/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/sustainable-fashion-behavior",
+          "certainty": "hypothesis",
+          "source": "https://www.env.go.jp/press/press_03475.html"
+        }
+      ],
+      "sources": [
+        "https://www.env.go.jp/policy/sustainable_fashion/about/",
+        "https://www.env.go.jp/press/press_03475.html",
+        "https://www.env.go.jp/content/000389225.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/fashion-takeback-repair-resale.md"
+    },
     "practice/idfa-targeting": {
       "id": "practice/idfa-targeting",
       "uri": "urn:mtn:practice/idfa-targeting",
@@ -926,6 +969,13 @@
       "source": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/"
     },
     {
+      "from": "practice/fashion-takeback-repair-resale",
+      "type": "responds_to",
+      "to": "trend/sustainable-fashion-behavior",
+      "certainty": "hypothesis",
+      "source": "https://www.env.go.jp/press/press_03475.html"
+    },
+    {
       "from": "practice/idfa-targeting",
       "type": "killed_by",
       "to": "event/apple-att",
@@ -1003,6 +1053,12 @@
       "from": "trend/creator-ad-disclosure",
       "type": "answered_by",
       "to": "practice/creator-ad-disclosure-governance",
+      "derived": true
+    },
+    {
+      "from": "trend/sustainable-fashion-behavior",
+      "type": "answered_by",
+      "to": "practice/fashion-takeback-repair-resale",
       "derived": true
     },
     {
