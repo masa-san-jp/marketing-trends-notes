@@ -517,6 +517,48 @@
       "updated": "2026-08-11",
       "path": "entities/practices/crypto-asset-risk-disclosure.md"
     },
+    "practice/digital-salary-choice-governance": {
+      "id": "practice/digital-salary-choice-governance",
+      "uri": "urn:mtn:practice/digital-salary-choice-governance",
+      "type": "practice",
+      "label_ja": "賃金デジタル払いの選択・同意・保護設計",
+      "label_en": "Digital salary choice, consent, and protection governance",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「賃金デジタル払いの選択・同意・保護設計」「digital salary choice consent governance」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "給与の受取方法を強制せず、指定業者、同意、代替口座、不正補償、給与計算をつなぐ運用"
+      },
+      "saturation": "novel",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024-2026"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/digital-salary-payment",
+          "certainty": "hypothesis",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html"
+        }
+      ],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html",
+        "https://www.mhlw.go.jp/content/11200000/001478565.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/digital-salary-choice-governance.md"
+    },
     "practice/digital-textbook-lesson-integration": {
       "id": "practice/digital-textbook-lesson-integration",
       "uri": "urn:mtn:practice/digital-textbook-lesson-integration",
@@ -949,6 +991,48 @@
       "updated": "2026-08-11",
       "path": "entities/practices/gaming-digital-platform-global-liveops.md"
     },
+    "practice/generative-ai-consumer-safety-design": {
+      "id": "practice/generative-ai-consumer-safety-design",
+      "uri": "urn:mtn:practice/generative-ai-consumer-safety-design",
+      "type": "practice",
+      "label_ja": "生成AIの日常利用の安全・確認設計",
+      "label_en": "Consumer safety and verification design for daily generative AI use",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「生成AIの日常利用の安全・確認設計」「consumer safety and verification design for generative AI」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2026~",
+        "end": "..",
+        "display": "生成AIの検索・相談・文章・学習利用に、確認、人の介入、個人情報保護、相談先を組み込む運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-02"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/generative-ai-daily-life-adoption",
+          "certainty": "hypothesis",
+          "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/004/shiryou/index.html",
+        "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/generative-ai-consumer-safety-design.md"
+    },
     "practice/generative-ai-workflow-governance": {
       "id": "practice/generative-ai-workflow-governance",
       "uri": "urn:mtn:practice/generative-ai-workflow-governance",
@@ -1251,6 +1335,47 @@
       "status": "draft",
       "updated": "2026-08-11",
       "path": "entities/practices/live-experience-journey-design.md"
+    },
+    "practice/multilingual-workforce-onboarding": {
+      "id": "practice/multilingual-workforce-onboarding",
+      "uri": "urn:mtn:practice/multilingual-workforce-onboarding",
+      "type": "practice",
+      "label_ja": "外国人雇用の多言語オンボーディング設計",
+      "label_en": "Multilingual onboarding and retention design for foreign workers",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「外国人雇用の多言語オンボーディング設計」「multilingual workforce onboarding design」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2007~",
+        "end": "..",
+        "display": "採用後の在留資格・給与・安全・業務手順・相談・評価を多言語とやさしい日本語でつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/stf/newpage_68794.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2007-2025"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/foreign-worker-employment-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.mhlw.go.jp/stf/newpage_68794.html"
+        }
+      ],
+      "sources": [
+        "https://www.mhlw.go.jp/stf/newpage_68794.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/multilingual-workforce-onboarding.md"
     },
     "practice/music-content-operations": {
       "id": "practice/music-content-operations",
@@ -1894,6 +2019,89 @@
       "updated": "2026-08-11",
       "path": "entities/practices/recurring-cost-transparency.md"
     },
+    "practice/redelivery-choice-friction-design": {
+      "id": "practice/redelivery-choice-friction-design",
+      "uri": "urn:mtn:practice/redelivery-choice-friction-design",
+      "type": "practice",
+      "label_ja": "再配達抑制・受取選択設計",
+      "label_en": "Redelivery-friction and delivery-choice design",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「再配達抑制・受取選択設計」「redelivery-friction and delivery-choice design」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "再配達が発生しやすい注文に、受取方法・通知・変更手段を先回りして組み込む運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2025"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/redelivery-reduction",
+          "certainty": "hypothesis",
+          "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+        }
+      ],
+      "sources": [
+        "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/redelivery-choice-friction-design.md"
+    },
+    "practice/renovation-lead-to-completion-design": {
+      "id": "practice/renovation-lead-to-completion-design",
+      "uri": "urn:mtn:practice/renovation-lead-to-completion-design",
+      "type": "practice",
+      "label_ja": "リフォーム相談から完工までの一貫設計",
+      "label_en": "Renovation lead-to-completion experience design",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「リフォーム相談から完工までの一貫設計」「renovation lead-to-completion design」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "リフォームの相談・現地調査・見積・補助制度・施工・検査・保守を一つの顧客導線にする運用"
+      },
+      "saturation": "novel",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/report/press/content/002005995.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年度"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/building-renovation-market-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.mlit.go.jp/report/press/joho04_hh_001375.html"
+        }
+      ],
+      "sources": [
+        "https://www.mlit.go.jp/report/press/joho04_hh_001375.html",
+        "https://www.mlit.go.jp/report/press/content/002005995.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/renovation-lead-to-completion-design.md"
+    },
     "practice/retail-media": {
       "id": "practice/retail-media",
       "uri": "urn:mtn:practice/retail-media",
@@ -2025,6 +2233,48 @@
       "status": "draft",
       "updated": "2026-08-11",
       "path": "entities/practices/school-generative-ai-policy-training-evaluation.md"
+    },
+    "practice/senior-inclusive-service-design": {
+      "id": "practice/senior-inclusive-service-design",
+      "uri": "urn:mtn:practice/senior-inclusive-service-design",
+      "type": "practice",
+      "label_ja": "高齢就業者を含むサービス設計",
+      "label_en": "Service design for senior workers and customers",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「高齢就業者を含むサービス設計」「service design for senior workers and customers」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2004~",
+        "end": "..",
+        "display": "働く高齢者の時間・身体・所得条件を分けて、商品・サービスと職場運用を設計する型"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2004-2024"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/senior-employment-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.stat.go.jp/data/topics/topi1460.html",
+        "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/practices/senior-inclusive-service-design.md"
     },
     "practice/service-ecommerce-experience-design": {
       "id": "practice/service-ecommerce-experience-design",
@@ -6278,6 +6528,13 @@
       "source": "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html"
     },
     {
+      "from": "practice/digital-salary-choice-governance",
+      "type": "responds_to",
+      "to": "trend/digital-salary-payment",
+      "certainty": "hypothesis",
+      "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html"
+    },
+    {
       "from": "practice/digital-textbook-lesson-integration",
       "type": "responds_to",
       "to": "trend/digital-textbook-practical-adoption",
@@ -6348,6 +6605,13 @@
       "source": "https://www.cesa.or.jp/action/industry-research/2025/"
     },
     {
+      "from": "practice/generative-ai-consumer-safety-design",
+      "type": "responds_to",
+      "to": "trend/generative-ai-daily-life-adoption",
+      "certainty": "hypothesis",
+      "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf"
+    },
+    {
       "from": "practice/generative-ai-workflow-governance",
       "type": "responds_to",
       "to": "trend/generative-ai-business-adoption",
@@ -6395,6 +6659,13 @@
       "to": "trend/live-entertainment-experience-expansion",
       "certainty": "hypothesis",
       "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html"
+    },
+    {
+      "from": "practice/multilingual-workforce-onboarding",
+      "type": "responds_to",
+      "to": "trend/foreign-worker-employment-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.mhlw.go.jp/stf/newpage_68794.html"
     },
     {
       "from": "practice/music-content-operations",
@@ -6493,6 +6764,20 @@
       "source": "https://www.boj.or.jp/research/o_survey/ishiki2507.htm"
     },
     {
+      "from": "practice/redelivery-choice-friction-design",
+      "type": "responds_to",
+      "to": "trend/redelivery-reduction",
+      "certainty": "hypothesis",
+      "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+    },
+    {
+      "from": "practice/renovation-lead-to-completion-design",
+      "type": "responds_to",
+      "to": "trend/building-renovation-market-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.mlit.go.jp/report/press/joho04_hh_001375.html"
+    },
+    {
       "from": "practice/retail-media",
       "type": "responds_to",
       "to": "trend/tracking-restrictions",
@@ -6519,6 +6804,13 @@
       "to": "trend/school-generative-ai-governance",
       "certainty": "hypothesis",
       "source": "https://www.mext.go.jp/zyoukatsu/ai/about.html"
+    },
+    {
+      "from": "practice/senior-inclusive-service-design",
+      "type": "responds_to",
+      "to": "trend/senior-employment-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf"
     },
     {
       "from": "practice/service-ecommerce-experience-design",
@@ -6652,6 +6944,12 @@
       "derived": true
     },
     {
+      "from": "trend/digital-salary-payment",
+      "type": "answered_by",
+      "to": "practice/digital-salary-choice-governance",
+      "derived": true
+    },
+    {
       "from": "trend/digital-textbook-practical-adoption",
       "type": "answered_by",
       "to": "practice/digital-textbook-lesson-integration",
@@ -6712,6 +7010,12 @@
       "derived": true
     },
     {
+      "from": "trend/generative-ai-daily-life-adoption",
+      "type": "answered_by",
+      "to": "practice/generative-ai-consumer-safety-design",
+      "derived": true
+    },
+    {
       "from": "trend/generative-ai-business-adoption",
       "type": "answered_by",
       "to": "practice/generative-ai-workflow-governance",
@@ -6751,6 +7055,12 @@
       "from": "trend/live-entertainment-experience-expansion",
       "type": "answered_by",
       "to": "practice/live-experience-journey-design",
+      "derived": true
+    },
+    {
+      "from": "trend/foreign-worker-employment-expansion",
+      "type": "answered_by",
+      "to": "practice/multilingual-workforce-onboarding",
       "derived": true
     },
     {
@@ -6832,6 +7142,18 @@
       "derived": true
     },
     {
+      "from": "trend/redelivery-reduction",
+      "type": "answered_by",
+      "to": "practice/redelivery-choice-friction-design",
+      "derived": true
+    },
+    {
+      "from": "trend/building-renovation-market-expansion",
+      "type": "answered_by",
+      "to": "practice/renovation-lead-to-completion-design",
+      "derived": true
+    },
+    {
       "from": "trend/tracking-restrictions",
       "type": "answered_by",
       "to": "practice/retail-media",
@@ -6853,6 +7175,12 @@
       "from": "trend/school-generative-ai-governance",
       "type": "answered_by",
       "to": "practice/school-generative-ai-policy-training-evaluation",
+      "derived": true
+    },
+    {
+      "from": "trend/senior-employment-expansion",
+      "type": "answered_by",
+      "to": "practice/senior-inclusive-service-design",
       "derived": true
     },
     {

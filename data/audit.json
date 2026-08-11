@@ -1,35 +1,4 @@
 {
   "as_of": "2026-08-12",
-  "findings": [
-    {
-      "kind": "unanswered",
-      "about": "trend/building-renovation-market-expansion",
-      "text": "建築物リフォーム・リニューアル需要の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/digital-salary-payment",
-      "text": "賃金デジタル払いの制度化 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/foreign-worker-employment-expansion",
-      "text": "外国人雇用の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/generative-ai-daily-life-adoption",
-      "text": "生成AIの日常利用の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/redelivery-reduction",
-      "text": "宅配便の再配達削減 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/senior-employment-expansion",
-      "text": "高齢者就業の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    }
-  ]
+  "findings": []
 }
