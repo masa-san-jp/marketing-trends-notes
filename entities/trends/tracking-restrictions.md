@@ -34,6 +34,7 @@ evidence:
   - {field: stage, source: "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/", certainty: attested, retrieved: primary, as_of: "2023-12"}
   - {field: stage, source: "https://webkit.org/tracking-prevention/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
   - {field: stage, source: "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", certainty: attested, retrieved: primary, as_of: "2025-04-22"}
+  - {field: stage, source: "https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf", certainty: independent, retrieved: primary, as_of: "2023-04"}
 predictions:
   - {claim: "2027年末までに、日本の主要広告主の間で計測の主軸がユーザー単位のトラッキングからMMM・インクリメンタリティ計測側へ寄る（業界団体・独立調査でその旨が確認できる）", by: "2027-12", resolved: null, outcome: null}
 relations: []
@@ -44,6 +45,7 @@ sources:
   - https://webkit.org/blog/10247/new-webkit-features-in-safari-13-1/
   - https://privacysandbox.google.com/blog/privacy-sandbox-next-steps
   - https://privacysandbox.google.com/cookies/prepare/overview
+  - https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf
 status: draft
 updated: 2026-08-11
 ---
@@ -80,6 +82,13 @@ Chromeは、第三者Cookieを一律に廃止する方針へ一直線に進ん�
 [第三者Cookie移行ガイド](https://privacysandbox.google.com/cookies/prepare/overview)、2026-08-11 実読）。
 したがって、ブラウザ側の制約は常態化しているが、実装はブラウザごとに異なると記録する。
 
+ATTの許可率に近い第三者測定として、Kraft・Skiera・Koschella（2023）は、19か国・数十億件規模の広告
+インプレッションを使い、米国のApple向け追跡可能トラフィックがATT前の74%からATT後の17%へ下がったと報告した。
+2023年4月の986アプリ・19か国の分析では、追跡率は18.26%〜38.71%、平均28.18%だった。これはユーザー個人の
+単純な許可率ではなく、広告インプレッションで重み付けした「追跡可能トラフィック」の割合であり、データは
+DSPの独自データを含むため、全iOSユーザー・全アプリの現在値には一般化しない（[研究論文PDF](https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf)、
+2026-08-11 実読）。
+
 ## kind と stage の判定
 
 **kind: regulation-driven とした。** 判定表の第1問「規制・制度の施行日・条文を指せるか」に対し、
@@ -93,8 +102,9 @@ tech-enabled（技術が可能にした変化）ではない——技術的に�
 一般化している。Safari/WebKitでは第三者Cookieのデフォルトブロックが出荷挙動として定着し、Chromeでは
 一律廃止からユーザー選択へ方針が調整された。したがって「制約が無い状態に戻った」とは言えないが、
 ブラウザ横断で同一の制約が適用されているわけでもない。独立した許可率・クッキー同期率の推移はなく、
-**この stage 判定は定性による**。
-**未確認**: 定量の裏づけ。再検証時（2027-02まで）に許可率・対応済み広告主比率の独立調査を探す。
+ATTについては、追跡可能トラフィックの第三者研究が定量的な裏づけになる。ただし、広告インプレッション
+ベースであり、国・アプリ・プロンプト表示条件による差があるため、**この stage 判定は定量と定性を
+併用したもの**とする。Safari・Chromeを含むブラウザ横断の許可率・クッキー同期率は未確認である。
 
 ## 時間
 
@@ -119,6 +129,7 @@ ATT（2021）でモバイルアプリ側に波及した。以降も第三者提�
 ## 未着手
 
 - Safari・Chromeのバージョン別挙動と、サイト側の対応状況を同じ定義で追跡する
-- ATT 許可率の独立した実測を探す（ベンダー数字しか無い可能性が高い——その場合は vendor と明記して置く）
+- ATTの2024年以降の独立測定と、日本のアプリ・カテゴリ別の追跡率を探す。今回の研究は2023年4月までで、
+  DSPデータによる追跡可能トラフィックの測定である
 - 応答する practice の整理: MMM 回帰・リテールメディア（[practice/retail-media](../practices/retail-media.md)）・
   ファーストパーティデータ活用を responds_to で繋ぐ
