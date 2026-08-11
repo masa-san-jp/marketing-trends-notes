@@ -1,4 +1,10 @@
 {
   "as_of": "2026-08-11",
-  "findings": []
+  "findings": [
+    {
+      "kind": "unanswered",
+      "about": "trend/cashless-payment-expansion",
+      "text": "国内キャッシュレス決済の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    }
+  ]
 }
