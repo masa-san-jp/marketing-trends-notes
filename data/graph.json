@@ -243,6 +243,49 @@
       "updated": "2026-08-11",
       "path": "entities/practices/fashion-takeback-repair-resale.md"
     },
+    "practice/generative-ai-workflow-governance": {
+      "id": "practice/generative-ai-workflow-governance",
+      "uri": "urn:mtn:practice/generative-ai-workflow-governance",
+      "type": "practice",
+      "label_ja": "生成AIの業務プロセス組み込み・利用ガバナンス",
+      "label_en": "Generative AI workflow integration and usage governance",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「生成AIの業務プロセス組み込み・利用ガバナンス」「generative AI workflow governance」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2024~",
+        "end": "..",
+        "display": "企業の生成AI導入・試験利用が広がり、組織実装と管理を設計する2020年代"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年度"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/generative-ai-business-adoption",
+          "certainty": "hypothesis",
+          "source": "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.ipa.go.jp/digital/chousa/dx-trend/dx-trend-2026.html",
+        "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf",
+        "https://www.ipa.go.jp/pressrelease/2026/press20260515.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/generative-ai-workflow-governance.md"
+    },
     "practice/idfa-targeting": {
       "id": "practice/idfa-targeting",
       "uri": "urn:mtn:practice/idfa-targeting",
@@ -1157,6 +1200,13 @@
       "source": "https://www.env.go.jp/press/press_03475.html"
     },
     {
+      "from": "practice/generative-ai-workflow-governance",
+      "type": "responds_to",
+      "to": "trend/generative-ai-business-adoption",
+      "certainty": "hypothesis",
+      "source": "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf"
+    },
+    {
       "from": "practice/idfa-targeting",
       "type": "killed_by",
       "to": "event/apple-att",
@@ -1247,6 +1297,12 @@
       "from": "trend/sustainable-fashion-behavior",
       "type": "answered_by",
       "to": "practice/fashion-takeback-repair-resale",
+      "derived": true
+    },
+    {
+      "from": "trend/generative-ai-business-adoption",
+      "type": "answered_by",
+      "to": "practice/generative-ai-workflow-governance",
       "derived": true
     },
     {
