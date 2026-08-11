@@ -724,6 +724,72 @@
       "updated": "2026-08-11",
       "path": "entities/trends/japan-btoc-ec-expansion.md"
     },
+    "trend/plastic-resource-circulation": {
+      "id": "trend/plastic-resource-circulation",
+      "uri": "urn:mtn:trend/plastic-resource-circulation",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "growing",
+      "market": "consumer-goods",
+      "geo": "japan",
+      "label_ja": "プラスチック資源循環対応の制度化",
+      "label_en": "Institutionalization of plastic resource circulation in Japan",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「プラスチック資源循環法」「plastic resource circulation regulation」を確認したが、日本の制度化が事業・消費者の対応を変える現象そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "2022年4月のプラスチック資源循環法施行以降、設計・提供・回収・再資源化へ制度が具体化する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "プラスチック資源循環",
+        "note": "「プラスチック資源循環対応の制度化」は、法律・手引き・認定制度の展開をconsumer-goodsの事業変化として要約する記述的なラベル。消費者や事業者がこの複合語を自称するかは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.env.go.jp/recycle/plastic/circulation.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2022-04-01"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2023-04-19"
+        },
+        {
+          "field": "time",
+          "source": "https://www.env.go.jp/recycle/plastic/circulation.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2022-04-01"
+        }
+      ],
+      "predictions": [],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.env.go.jp/recycle/plastic/circulation.html",
+        "https://plastic-circulation.env.go.jp/",
+        "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html",
+        "https://www.env.go.jp/recycle/yoki/c_2_research/research_R06.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/plastic-resource-circulation.md"
+    },
     "trend/short-video-mainstream": {
       "id": "trend/short-video-mainstream",
       "uri": "urn:mtn:trend/short-video-mainstream",
