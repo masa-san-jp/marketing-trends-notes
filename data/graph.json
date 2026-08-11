@@ -739,6 +739,72 @@
       "updated": "2026-08-11",
       "path": "entities/trends/creator-ad-disclosure.md"
     },
+    "trend/food-loss-reduction-institutionalization": {
+      "id": "trend/food-loss-reduction-institutionalization",
+      "uri": "urn:mtn:trend/food-loss-reduction-institutionalization",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "growing",
+      "market": "food-beverage",
+      "geo": "japan",
+      "label_ja": "食品ロス削減対応の制度化",
+      "label_en": "Institutionalization of food-loss reduction in Japan",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「食品ロス削減」「food loss reduction in Japan」を確認したが、日本の法制度・目標・事業者対応が連動する現象そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2019~",
+        "end": "..",
+        "display": "2019年の食品ロス削減推進法施行以降、目標・ガイドライン・事業者対応が具体化する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "食品ロス削減",
+        "note": "「食品ロス削減対応の制度化」は、食品ロス量の推計と法制度・目標・ガイドラインの展開をfood-beverageの事業変化として要約する記述的なラベル。生活者や事業者がこの複合語を自称するかは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2019-10-01"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-03-25"
+        },
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2019-10-01"
+        }
+      ],
+      "predictions": [],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/",
+        "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf",
+        "https://www.env.go.jp/press/press_00002.html",
+        "https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/index.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/food-loss-reduction-institutionalization.md"
+    },
     "trend/generative-ai-business-adoption": {
       "id": "trend/generative-ai-business-adoption",
       "uri": "urn:mtn:trend/generative-ai-business-adoption",
