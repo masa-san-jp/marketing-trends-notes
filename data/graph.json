@@ -286,6 +286,50 @@
       "updated": "2026-08-11",
       "path": "entities/practices/food-loss-demand-forecast-markdown-donation.md"
     },
+    "practice/functional-food-evidence-safety-withdrawal": {
+      "id": "practice/functional-food-evidence-safety-withdrawal",
+      "uri": "urn:mtn:practice/functional-food-evidence-safety-withdrawal",
+      "type": "practice",
+      "label_ja": "機能性表示食品の根拠・健康被害情報・撤回管理",
+      "label_en": "Evidence, adverse-health-information, and withdrawal governance for foods with function claims",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「機能性表示食品の根拠・健康被害情報・撤回管理」「evidence safety withdrawal governance for foods with function claims」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2024~",
+        "end": "..",
+        "display": "2024年の制度見直し後、届出前後の根拠・安全情報・表示変更をつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-08-30"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/functional-food-safety-governance",
+          "certainty": "hypothesis",
+          "source": "https://www.caa.go.jp/notice/entry/038499/"
+        }
+      ],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/food_labeling/foods_with_function_claims",
+        "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf",
+        "https://www.caa.go.jp/notice/entry/041585/",
+        "https://www.caa.go.jp/notice/entry/043728/"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/functional-food-evidence-safety-withdrawal.md"
+    },
     "practice/generative-ai-workflow-governance": {
       "id": "practice/generative-ai-workflow-governance",
       "uri": "urn:mtn:practice/generative-ai-workflow-governance",
@@ -1382,6 +1426,13 @@
       "source": "https://www.env.go.jp/press/press_00002.html"
     },
     {
+      "from": "practice/functional-food-evidence-safety-withdrawal",
+      "type": "responds_to",
+      "to": "trend/functional-food-safety-governance",
+      "certainty": "hypothesis",
+      "source": "https://www.caa.go.jp/notice/entry/038499/"
+    },
+    {
       "from": "practice/generative-ai-workflow-governance",
       "type": "responds_to",
       "to": "trend/generative-ai-business-adoption",
@@ -1485,6 +1536,12 @@
       "from": "trend/food-loss-reduction-institutionalization",
       "type": "answered_by",
       "to": "practice/food-loss-demand-forecast-markdown-donation",
+      "derived": true
+    },
+    {
+      "from": "trend/functional-food-safety-governance",
+      "type": "answered_by",
+      "to": "practice/functional-food-evidence-safety-withdrawal",
       "derived": true
     },
     {
