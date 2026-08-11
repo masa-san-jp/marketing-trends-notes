@@ -45,6 +45,7 @@
 | Mohamed et al. — ATTention Please! An Investigation of the App Tracking Transparency Permission | 4,000件のiOSアプリと114人のユーザー調査。ATT許諾アラートのダークパターンと理解への影響 | https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf | **確認済み**（2026-08-11 実読） |
 | Delaney et al. — Differentially Private Ad Conversion Measurement | 差分プライバシーの広告コンバージョン測定を形式化し、アトリビューションとプライバシー保証のトレードオフを分析 | https://petsymposium.org/popets/2024/popets-2024-0044.pdf | **確認済み**（2026-08-11 実読） |
 | JICDAQ — デジタル広告課題意識調査2024 | 広告主・広告会社・媒体社など309社の無効トラフィック、アドフラウド、ブランドセーフティの認知・対策。会員団体加盟社が対象 | https://www.jicdaq.or.jp/release/press-release20241202/ | **確認済み**（2026-08-11 実読） |
+| JIAA — 個人情報保護委員会ヒアリング資料（2024-12-05） | トラッキング制限の代替として共通ID、コンテキストターゲティング、Privacy Sandbox、First Party Dataを整理。業界団体の説明資料 | https://www.ppc.go.jp/files/pdf/241205_hearing_material-3.pdf | **確認済み**（2026-08-11 実読） |
 
 ## 層4: プラットフォーム・ベンダーの公式発表（`vendor`）
 
@@ -61,6 +62,8 @@
 | Google Privacy Sandbox — Next steps for tracking protections in Chrome | Chromeの第三者Cookieに関するユーザー選択方針（2025-04-22） | https://privacysandbox.google.com/blog/privacy-sandbox-next-steps | **確認済み**（2026-08-11 実読） |
 | Google Privacy Sandbox — Third-party cookie restrictions | 第三者Cookieなしを前提にした監査・テスト・移行ガイド | https://privacysandbox.google.com/cookies/prepare/overview | **確認済み**（2026-08-11 実読） |
 | Google Privacy Sandbox — Attribution Reporting full system overview | クリック・表示からコンバージョンまでをイベントレベル／集計レポートで測るAPIとAggregation Service | https://privacysandbox.google.com/private-advertising/attribution-reporting/system-overview | **確認済み**（2026-08-11 実読） |
+| Google Privacy Sandbox — SMN Protected Audienceテスト事例 | 日本のソニー系DSPがSSP・日本企業3社とPrivacy Sandboxの実環境テストを行った事例。市場全体の導入率とは区別する | https://privacysandbox.google.com/resources/case-studies/smn | **確認済み**（2026-08-11 実読） |
+| i-mobile — SKAdNetwork対応発表 | 自社ネットワークのiOSアプリ総リクエストの約90%を対応とする一社の在庫指標。市場全体の導入率とは区別する | https://prtimes.jp/main/html/rd/p/000000482.000007821.html | **確認済み**（2026-08-11 実読） |
 | Adjust・Sensor Tower — モバイルアプリトレンド2024：日本版 | 日本のATTオプトイン率・ゲーム等カテゴリ別指標。計測ベンダー由来のため独立統計とは区別する | https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/ | **確認済み**（2026-08-11 実読） |
 | サイカ・インテージ — 日本国内MMM利用実態調査（2024年5月） | 年商100億円以上企業の係長以上409人。MMM導入中7.2%、認知・導入・関心30.4%。サイカ主催のため独立統計とは区別する | https://markezine.jp/article/detail/46696 | **確認済み**（2026-08-11 実読） |
 | 各種ツールベンダーの「◯◯トレンドレポート」 | kind: vendor-pushed の一次資料としては優秀（命名の証拠）。規模の典拠にはしない | （個別に記録） | — |
