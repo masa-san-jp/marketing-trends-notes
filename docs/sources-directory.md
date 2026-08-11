@@ -29,6 +29,8 @@
 |---|---|---|---|
 | Apple Developer — User Privacy and Data Use | ATT の仕様（トラッキングの定義・許可の要件） | https://developer.apple.com/app-store/user-privacy-and-data-use/ | **確認済み**（2026-08-10 実読） |
 | Apple Developer — AppTrackingTransparency | ATT フレームワークの技術文書 | https://developer.apple.com/documentation/apptrackingtransparency | **確認済み**（2026-08-10 到達確認） |
+| Apple Developer — AdAttributionKit / Ad attribution | ATTの許可を要求せず、個人・端末を横断追跡しないアプリ広告効果測定。閾値付きポストバックとコンバージョン値 | https://developer.apple.com/app-store/ad-attribution/ | **確認済み**（2026-08-11 実読） |
+| Apple Developer — Meet privacy-preserving ad attribution（WWDC21） | SKAdNetworkとPrivate Click Measurementによるプライバシー保護型広告アトリビューション | https://developer.apple.com/videos/play/wwdc2021/10033/ | **確認済み**（2026-08-11 到達・内容確認） |
 | EUR-Lex — Regulation (EU) 2016/679（GDPR） | 個人データ処理の適法根拠、同意、ダイレクトマーケティングへの異議申立て、適用日 | https://eur-lex.europa.eu/eli/reg/2016/679/oj | **確認済み**（2026-08-11 実読） |
 | 個人情報保護委員会 — 第三者提供時の確認・記録義務編 | 個人データの第三者提供における取得経緯の確認・記録義務 | https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/ | **確認済み**（2026-08-11 実読） |
 | 各社の決算・IR（EDINET／各社IRページ） | 事業セグメントの数字。トレンドの規模の傍証 | https://disclosure2.edinet-fsa.go.jp/ | **未確認**（執筆環境から到達できず） |
@@ -41,6 +43,7 @@
 | Ehrenberg-Bass Institute | マーケティングサイエンスの実証研究（CEP・ダブルジョパディ） | https://marketingscience.info/ | **未確認**（同上） |
 | Kraft・Skiera・Koschella — Economic Impact of Opt-in versus Opt-out Requirements for Personal Data Usage | 19か国の広告インプレッションを用いたATT後の追跡可能トラフィック。DSP独自データを含むためユーザー全体の許可率とは区別する | https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf | **確認済み**（2026-08-11 実読） |
 | Mohamed et al. — ATTention Please! An Investigation of the App Tracking Transparency Permission | 4,000件のiOSアプリと114人のユーザー調査。ATT許諾アラートのダークパターンと理解への影響 | https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf | **確認済み**（2026-08-11 実読） |
+| Delaney et al. — Differentially Private Ad Conversion Measurement | 差分プライバシーの広告コンバージョン測定を形式化し、アトリビューションとプライバシー保証のトレードオフを分析 | https://petsymposium.org/popets/2024/popets-2024-0044.pdf | **確認済み**（2026-08-11 実読） |
 
 ## 層4: プラットフォーム・ベンダーの公式発表（`vendor`）
 
@@ -56,6 +59,7 @@
 | WebKit — WebKit Features in Safari 13.1 | Safari 13.1の第三者Cookie全面ブロック・Webサイトデータ期限 | https://webkit.org/blog/10247/new-webkit-features-in-safari-13-1/ | **確認済み**（2026-08-11 実読） |
 | Google Privacy Sandbox — Next steps for tracking protections in Chrome | Chromeの第三者Cookieに関するユーザー選択方針（2025-04-22） | https://privacysandbox.google.com/blog/privacy-sandbox-next-steps | **確認済み**（2026-08-11 実読） |
 | Google Privacy Sandbox — Third-party cookie restrictions | 第三者Cookieなしを前提にした監査・テスト・移行ガイド | https://privacysandbox.google.com/cookies/prepare/overview | **確認済み**（2026-08-11 実読） |
+| Google Privacy Sandbox — Attribution Reporting full system overview | クリック・表示からコンバージョンまでをイベントレベル／集計レポートで測るAPIとAggregation Service | https://privacysandbox.google.com/private-advertising/attribution-reporting/system-overview | **確認済み**（2026-08-11 実読） |
 | Adjust・Sensor Tower — モバイルアプリトレンド2024：日本版 | 日本のATTオプトイン率・ゲーム等カテゴリ別指標。計測ベンダー由来のため独立統計とは区別する | https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/ | **確認済み**（2026-08-11 実読） |
 | 各種ツールベンダーの「◯◯トレンドレポート」 | kind: vendor-pushed の一次資料としては優秀（命名の証拠）。規模の典拠にはしない | （個別に記録） | — |
 
