@@ -116,6 +116,48 @@
       "updated": "2026-08-10",
       "path": "entities/players/bytedance.md"
     },
+    "practice/cashless-checkout-design": {
+      "id": "practice/cashless-checkout-design",
+      "uri": "urn:mtn:practice/cashless-checkout-design",
+      "type": "practice",
+      "label_ja": "キャッシュレス対応のチェックアウト設計",
+      "label_en": "Cashless checkout design",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「キャッシュレス対応のチェックアウト設計」「cashless checkout design」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2018~",
+        "end": "..",
+        "display": "2018年のキャッシュレス・ビジョン策定以降"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/mono_info_service/cashless/index.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2018-04"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/cashless-payment-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.meti.go.jp/policy/mono_info_service/cashless/index.html"
+        }
+      ],
+      "sources": [
+        "https://www.meti.go.jp/policy/mono_info_service/cashless/index.html",
+        "https://www.meti.go.jp/files/000001765.xlsx"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/cashless-checkout-design.md"
+    },
     "practice/creator-ad-disclosure-governance": {
       "id": "practice/creator-ad-disclosure-governance",
       "uri": "urn:mtn:practice/creator-ad-disclosure-governance",
@@ -798,6 +840,13 @@
       "source": null
     },
     {
+      "from": "practice/cashless-checkout-design",
+      "type": "responds_to",
+      "to": "trend/cashless-payment-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.meti.go.jp/policy/mono_info_service/cashless/index.html"
+    },
+    {
       "from": "practice/creator-ad-disclosure-governance",
       "type": "responds_to",
       "to": "trend/creator-ad-disclosure",
@@ -870,6 +919,12 @@
       "from": "source/apple-user-privacy-page",
       "type": "documents",
       "to": "event/apple-att",
+      "derived": true
+    },
+    {
+      "from": "trend/cashless-payment-expansion",
+      "type": "answered_by",
+      "to": "practice/cashless-checkout-design",
       "derived": true
     },
     {
