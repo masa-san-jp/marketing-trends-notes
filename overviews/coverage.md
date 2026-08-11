@@ -12,38 +12,40 @@ depends_on: []
 受け入れ条件の閾値も同じファイルに置いてある（issue #1 と対応）。
 
 <!-- generated:coverage:start -->
-データの最新日: 2026-08-10 — `python3 tools/build_graph.py` が生成（手で書き換えない）
+データの最新日: 2026-08-11 — `python3 tools/build_graph.py` が生成（手で書き換えない）
 
-trend **3** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 0}
+trend **4** 件（stub 0件は不算入）／内訳 {'draft': 4, 'stub': 0, 'verified': 0}
 
-| カテゴリ | 2018 | 2020 | 2021 | 年代不明 | 計 |
-|---|---|---|---|---|---|
-| consumer-goods（消費財・日用品） |  |  |  |  | 0 |
-| retail-commerce（小売・EC） |  |  |  |  | 0 |
-| entertainment-content（エンタメ・コンテンツ） |  | 1 |  |  | 1 |
-| creator-economy（クリエイターエコノミー） |  |  |  |  | 0 |
-| saas-b2b（SaaS・B2B） |  |  |  |  | 0 |
-| food-beverage（食品・飲料・外食） |  |  |  |  | 0 |
-| fashion-beauty（ファッション・美容） |  |  |  |  | 0 |
-| health-wellness（ヘルスケア・ウェルネス） |  |  |  |  | 0 |
-| gaming（ゲーム） |  |  |  |  | 0 |
-| finance（金融） |  |  |  |  | 0 |
-| education（教育） |  |  |  |  | 0 |
-| cross-category（カテゴリ横断） | 1 |  | 1 |  | 2 |
+| カテゴリ | 2018 | 2020 | 2021 | 2022 | 年代不明 | 計 |
+|---|---|---|---|---|---|---|
+| consumer-goods（消費財・日用品） |  |  |  |  |  | 0 |
+| retail-commerce（小売・EC） |  |  |  | 1 |  | 1 |
+| entertainment-content（エンタメ・コンテンツ） |  | 1 |  |  |  | 1 |
+| creator-economy（クリエイターエコノミー） |  |  |  |  |  | 0 |
+| saas-b2b（SaaS・B2B） |  |  |  |  |  | 0 |
+| food-beverage（食品・飲料・外食） |  |  |  |  |  | 0 |
+| fashion-beauty（ファッション・美容） |  |  |  |  |  | 0 |
+| health-wellness（ヘルスケア・ウェルネス） |  |  |  |  |  | 0 |
+| gaming（ゲーム） |  |  |  |  |  | 0 |
+| finance（金融） |  |  |  |  |  | 0 |
+| education（教育） |  |  |  |  |  | 0 |
+| cross-category（カテゴリ横断） | 1 |  | 1 |  |  | 2 |
+
+**原典を実読していない**（`retrieved: primary` の根拠が1本も無い）: trend/japan-btoc-ec-expansion
 
 受け入れ条件の達成度:
 
-- trend_total: 3/60（stub 0件は不算入）
+- trend_total: 4/60（stub 0件は不算入）
 - vendor_only_ratio: 0.00（上限 0.2）
-- primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
+- primary_read_ratio: 0.75（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
 - self_measured: 0/10 件が measured の根拠を持つ
 - per_category_min: 1/12 カテゴリが 2件以上
-- stale_ratio: 0.00（上限 0.15・as_of=2026-08-10 時点）
+- stale_ratio: 0.00（上限 0.15・as_of=2026-08-11 時点）
 - practice_linked: 2/3 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 0/5 件の予測が答え合わせ済み
 
-関係を持たない trend: trend/anxiety-multiplication
+関係を持たない trend: trend/anxiety-multiplication, trend/japan-btoc-ec-expansion
 <!-- generated:coverage:end -->
 
 ## 空欄の読み方
@@ -69,6 +71,7 @@ trend **3** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'ver
 <!-- generated:audit:start -->
 **応答なきトレンド**
 - 不安の多重化 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- 国内BtoC-ECの拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
 <!-- generated:audit:end -->
 
 ## 需要から決める（探されたが無かった語）
