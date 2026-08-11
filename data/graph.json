@@ -243,6 +243,49 @@
       "updated": "2026-08-11",
       "path": "entities/practices/fashion-takeback-repair-resale.md"
     },
+    "practice/food-loss-demand-forecast-markdown-donation": {
+      "id": "practice/food-loss-demand-forecast-markdown-donation",
+      "uri": "urn:mtn:practice/food-loss-demand-forecast-markdown-donation",
+      "type": "practice",
+      "label_ja": "食品ロス削減の需要予測・値引き・寄附連携",
+      "label_en": "Food-loss reduction through demand forecasting, markdowns, and donation",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「食品ロス削減の需要予測・値引き・寄附連携」「food-loss demand forecasting markdown donation」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2019~",
+        "end": "..",
+        "display": "食品ロス削減推進法施行後、需要・在庫・寄附・持ち帰りをつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2019-10-01"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/food-loss-reduction-institutionalization",
+          "certainty": "hypothesis",
+          "source": "https://www.env.go.jp/press/press_00002.html"
+        }
+      ],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/",
+        "https://www.env.go.jp/press/press_00002.html",
+        "https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/index.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/food-loss-demand-forecast-markdown-donation.md"
+    },
     "practice/generative-ai-workflow-governance": {
       "id": "practice/generative-ai-workflow-governance",
       "uri": "urn:mtn:practice/generative-ai-workflow-governance",
@@ -1266,6 +1309,13 @@
       "source": "https://www.env.go.jp/press/press_03475.html"
     },
     {
+      "from": "practice/food-loss-demand-forecast-markdown-donation",
+      "type": "responds_to",
+      "to": "trend/food-loss-reduction-institutionalization",
+      "certainty": "hypothesis",
+      "source": "https://www.env.go.jp/press/press_00002.html"
+    },
+    {
       "from": "practice/generative-ai-workflow-governance",
       "type": "responds_to",
       "to": "trend/generative-ai-business-adoption",
@@ -1363,6 +1413,12 @@
       "from": "trend/sustainable-fashion-behavior",
       "type": "answered_by",
       "to": "practice/fashion-takeback-repair-resale",
+      "derived": true
+    },
+    {
+      "from": "trend/food-loss-reduction-institutionalization",
+      "type": "answered_by",
+      "to": "practice/food-loss-demand-forecast-markdown-donation",
       "derived": true
     },
     {
