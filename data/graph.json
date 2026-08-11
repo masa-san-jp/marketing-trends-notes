@@ -1084,6 +1084,20 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2024"
+        },
+        {
+          "field": "saturation",
+          "source": "https://markezine.jp/article/detail/46696",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2024-05"
+        },
+        {
+          "field": "saturation",
+          "source": "https://www.jicdaq.or.jp/release/press-release20241202/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-07"
         }
       ],
       "relations": [
@@ -1099,7 +1113,10 @@
         "https://developer.apple.com/videos/play/wwdc2021/10033/",
         "https://developer.apple.com/videos/play/wwdc2024/10060/",
         "https://privacysandbox.google.com/private-advertising/attribution-reporting/system-overview",
-        "https://petsymposium.org/popets/2024/popets-2024-0044.pdf"
+        "https://petsymposium.org/popets/2024/popets-2024-0044.pdf",
+        "https://xica.net/en/action/marketing-mix-modeling/",
+        "https://markezine.jp/article/detail/46696",
+        "https://www.jicdaq.or.jp/release/press-release20241202/"
       ],
       "status": "draft",
       "updated": "2026-08-11",

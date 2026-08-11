@@ -44,6 +44,7 @@
 | Kraft・Skiera・Koschella — Economic Impact of Opt-in versus Opt-out Requirements for Personal Data Usage | 19か国の広告インプレッションを用いたATT後の追跡可能トラフィック。DSP独自データを含むためユーザー全体の許可率とは区別する | https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf | **確認済み**（2026-08-11 実読） |
 | Mohamed et al. — ATTention Please! An Investigation of the App Tracking Transparency Permission | 4,000件のiOSアプリと114人のユーザー調査。ATT許諾アラートのダークパターンと理解への影響 | https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf | **確認済み**（2026-08-11 実読） |
 | Delaney et al. — Differentially Private Ad Conversion Measurement | 差分プライバシーの広告コンバージョン測定を形式化し、アトリビューションとプライバシー保証のトレードオフを分析 | https://petsymposium.org/popets/2024/popets-2024-0044.pdf | **確認済み**（2026-08-11 実読） |
+| JICDAQ — デジタル広告課題意識調査2024 | 広告主・広告会社・媒体社など309社の無効トラフィック、アドフラウド、ブランドセーフティの認知・対策。会員団体加盟社が対象 | https://www.jicdaq.or.jp/release/press-release20241202/ | **確認済み**（2026-08-11 実読） |
 
 ## 層4: プラットフォーム・ベンダーの公式発表（`vendor`）
 
@@ -61,6 +62,7 @@
 | Google Privacy Sandbox — Third-party cookie restrictions | 第三者Cookieなしを前提にした監査・テスト・移行ガイド | https://privacysandbox.google.com/cookies/prepare/overview | **確認済み**（2026-08-11 実読） |
 | Google Privacy Sandbox — Attribution Reporting full system overview | クリック・表示からコンバージョンまでをイベントレベル／集計レポートで測るAPIとAggregation Service | https://privacysandbox.google.com/private-advertising/attribution-reporting/system-overview | **確認済み**（2026-08-11 実読） |
 | Adjust・Sensor Tower — モバイルアプリトレンド2024：日本版 | 日本のATTオプトイン率・ゲーム等カテゴリ別指標。計測ベンダー由来のため独立統計とは区別する | https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/ | **確認済み**（2026-08-11 実読） |
+| サイカ・インテージ — 日本国内MMM利用実態調査（2024年5月） | 年商100億円以上企業の係長以上409人。MMM導入中7.2%、認知・導入・関心30.4%。サイカ主催のため独立統計とは区別する | https://markezine.jp/article/detail/46696 | **確認済み**（2026-08-11 実読） |
 | 各種ツールベンダーの「◯◯トレンドレポート」 | kind: vendor-pushed の一次資料としては優秀（命名の証拠）。規模の典拠にはしない | （個別に記録） | — |
 
 ## 層5: 個別の投稿・記事・事例（`anecdotal`）

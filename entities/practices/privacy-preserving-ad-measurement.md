@@ -16,6 +16,8 @@ evidence:
   - {field: time, source: "https://developer.apple.com/videos/play/wwdc2021/10033/", certainty: attested, retrieved: primary, as_of: "2021-06"}
   - {field: time, source: "https://developer.apple.com/videos/play/wwdc2024/10060/", certainty: attested, retrieved: primary, as_of: "2024-06"}
   - {field: time, source: "https://petsymposium.org/popets/2024/popets-2024-0044.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
+  - {field: saturation, source: "https://markezine.jp/article/detail/46696", certainty: vendor, retrieved: primary, as_of: "2024-05"}
+  - {field: saturation, source: "https://www.jicdaq.or.jp/release/press-release20241202/", certainty: attested, retrieved: primary, as_of: "2024-07"}
 relations:
   - {type: responds_to, target: trend/tracking-restrictions, certainty: hypothesis, source: "https://developer.apple.com/app-store/ad-attribution/"}
 sources:
@@ -24,6 +26,9 @@ sources:
   - https://developer.apple.com/videos/play/wwdc2024/10060/
   - https://privacysandbox.google.com/private-advertising/attribution-reporting/system-overview
   - https://petsymposium.org/popets/2024/popets-2024-0044.pdf
+  - https://xica.net/en/action/marketing-mix-modeling/
+  - https://markezine.jp/article/detail/46696
+  - https://www.jicdaq.or.jp/release/press-release20241202/
 status: draft
 updated: 2026-08-11
 ---
@@ -62,14 +67,29 @@ AppleのAdAttributionKitは、他社アプリ間の個人・端末追跡を使�
 （[Differentially Private Ad Conversion Measurement](https://petsymposium.org/popets/2024/popets-2024-0044.pdf)、
 2026-08-11 実読）。
 
+## 日本での実務側の観測
+
+MMMについては、サイカが主催しインテージが実施した2024年5月の調査で、国内年商100億円以上企業に勤める
+係長以上409人のうち、MMMを「知っており、現在導入している」は7.2%、「導入している・知っている・興味がある」の
+合計は30.4%だった。導入経験者の導入時期では2020年6.1%に対して2021年16.3%で、導入の増加時期も確認できる
+（[調査結果の紹介](https://markezine.jp/article/detail/46696)、2026-08-11 実読）。これは対象企業と設問が限定された
+ベンダー主催調査であり、日本企業全体の導入率やプライバシー保護型計測APIの採用率とはみなさない。
+
+広告品質の周辺実務では、JICDAQの2024年調査が、広告主・広告会社・媒体社など309社を対象に、無効トラフィック・
+アドフラウド・ブランドセーフティへの認知と対策状況を確認している。対策は無効トラフィックとアドフラウドで約5〜6割、
+ブランドセーフティで約6〜7割と報告され、広告主ではアドベリフィケーションツール利用の増加も示された。ただし、
+これは広告品質管理の調査であって、MMMやインクリメンタリティの導入率を測ったものではない
+（[JICDAQデジタル広告課題意識調査2024](https://www.jicdaq.or.jp/release/press-release20241202/)、2026-08-11 実読）。
+
 **未実施。** 自分の事業でAdAttributionKit、Attribution Reporting、MMM、インクリメンタリティを組み合わせた
 測定は試していない。導入率、欠測率、ノイズによる誤差、予算配分の改善幅は未確認である。
 
 ## 飽和度の判定
 
 `spreading` とした。Apple・Googleの実装仕様と、プライバシー保護型広告測定の学術研究は確認できる一方、
-日本の広告主・媒体における導入率や標準運用は確認できていない。したがって、普及済み・標準化済みではなく、
-複数の測定方式が実装・検証されている拡大局面として暫定記録する。
+日本のMMM導入調査と広告品質対策の調査は確認できたが、いずれも特定主体・対象に限られ、プライバシー保護型計測APIの
+導入率や標準運用を直接測ってはいない。したがって、普及済み・標準化済みではなく、複数の測定方式が実装・検証されている
+拡大局面として暫定記録する。
 
 ## 自分の事業にどう使うか
 
