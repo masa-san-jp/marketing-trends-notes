@@ -208,6 +208,57 @@
       "updated": "2026-08-11",
       "path": "entities/practices/cloud-service-governance.md"
     },
+    "practice/cosmetics-market-entry-compliance": {
+      "id": "practice/cosmetics-market-entry-compliance",
+      "uri": "urn:mtn:practice/cosmetics-market-entry-compliance",
+      "type": "practice",
+      "label_ja": "化粧品の市場別規制・表示・販売後対応運用",
+      "label_en": "Market-specific cosmetics regulatory, labeling, and post-market operations",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「化粧品の市場別規制・表示・販売後対応運用」「market-specific cosmetics regulatory operations」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "化粧品の海外展開で、国別規制・表示・販売・問い合わせ・回収を一つにつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2020-08"
+        },
+        {
+          "field": "saturation",
+          "source": "https://www.meti.go.jp/meti_lib/report/2024FY/000308.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-03-31"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/cosmetics-overseas-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.meti.go.jp/meti_lib/report/2024FY/000308.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html",
+        "https://www.meti.go.jp/meti_lib/report/2024FY/000308.pdf",
+        "https://www.mhlw.go.jp/stf/newpage_74751.html",
+        "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/cosmetics-market-entry-compliance.md"
+    },
     "practice/creator-ad-disclosure-governance": {
       "id": "practice/creator-ad-disclosure-governance",
       "uri": "urn:mtn:practice/creator-ad-disclosure-governance",
@@ -1268,6 +1319,72 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/cloud-service-adoption.md"
+    },
+    "trend/cosmetics-overseas-expansion": {
+      "id": "trend/cosmetics-overseas-expansion",
+      "uri": "urn:mtn:trend/cosmetics-overseas-expansion",
+      "type": "trend",
+      "kind": "vendor-pushed",
+      "stage": "growing",
+      "market": "fashion-beauty",
+      "geo": "japan",
+      "label_ja": "日本化粧品の海外展開・高付加価値化",
+      "label_en": "Overseas expansion and value enhancement of Japanese cosmetics",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「日本化粧品の海外展開・高付加価値化」「Japanese cosmetics overseas expansion」を確認したが、日本の化粧品産業の政策・企業活動・海外展開支援が連動する現象そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "2020年の化粧品産業ビジョン以降、海外展開・OEM/ODM・原料・日本文化の発信を産業競争力として整理する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "化粧品産業の海外展開",
+        "note": "「日本化粧品の海外展開・高付加価値化」は、経済産業省の化粧品産業政策・調査・検討会を要約する記述的なラベル。消費者がこの複合語を自称するかは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/001_04_00.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-12-08"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2020-08"
+        }
+      ],
+      "predictions": [],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html",
+        "https://www.meti.go.jp/meti_lib/report/2024FY/000308.pdf",
+        "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/001_04_00.pdf",
+        "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/cosmetics-overseas-expansion.md"
     },
     "trend/creator-ad-disclosure": {
       "id": "trend/creator-ad-disclosure",
@@ -2448,6 +2565,13 @@
       "source": "https://www.soumu.go.jp/menu_news/s-news/01tsushin02_02000183.html"
     },
     {
+      "from": "practice/cosmetics-market-entry-compliance",
+      "type": "responds_to",
+      "to": "trend/cosmetics-overseas-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.meti.go.jp/meti_lib/report/2024FY/000308.pdf"
+    },
+    {
       "from": "practice/creator-ad-disclosure-governance",
       "type": "responds_to",
       "to": "trend/creator-ad-disclosure",
@@ -2623,6 +2747,12 @@
       "from": "trend/cloud-service-adoption",
       "type": "answered_by",
       "to": "practice/cloud-service-governance",
+      "derived": true
+    },
+    {
+      "from": "trend/cosmetics-overseas-expansion",
+      "type": "answered_by",
+      "to": "practice/cosmetics-market-entry-compliance",
       "derived": true
     },
     {
