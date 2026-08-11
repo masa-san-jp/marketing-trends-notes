@@ -40,10 +40,8 @@ trend **36** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 - self_measured: 0/10 件が measured の根拠を持つ
 - per_category_min: 12/12 カテゴリが 2件以上
 - stale_ratio: 0.00（上限 0.15・as_of=2026-08-11 時点）
-- practice_linked: 30/31 の practice が responds_to を持つ（下限比率 0.5）
+- practice_linked: 36/37 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 0/5 件の予測が答え合わせ済み
-
-関係を持たない trend: trend/cross-border-ecommerce-expansion, trend/electrified-vehicle-adoption, trend/online-medical-consultation-adoption, trend/outbound-travel-recovery, trend/service-ecommerce-expansion, trend/telework-stabilization
 <!-- generated:coverage:end -->
 
 ## 空欄の読み方
@@ -67,13 +65,7 @@ trend **36** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 形式の検証（`build_graph.py --check`）と違って commit は止めない——次に何を調べるかの材料として出す。
 
 <!-- generated:audit:start -->
-**応答なきトレンド**
-- 越境ECの拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- 乗用車の電動化拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- オンライン診療の制度対応と利用拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- 海外旅行需要の回復 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- サービスECの拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- テレワークの定着 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+食い違い・偏りの指摘はなし。
 <!-- generated:audit:end -->
 
 ## 需要から決める（探されたが無かった語）
