@@ -1,4 +1,35 @@
 {
   "as_of": "2026-08-11",
-  "findings": []
+  "findings": [
+    {
+      "kind": "unanswered",
+      "about": "trend/cross-border-ecommerce-expansion",
+      "text": "越境ECの拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/electrified-vehicle-adoption",
+      "text": "乗用車の電動化拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/online-medical-consultation-adoption",
+      "text": "オンライン診療の制度対応と利用拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/outbound-travel-recovery",
+      "text": "海外旅行需要の回復 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/service-ecommerce-expansion",
+      "text": "サービスECの拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/telework-stabilization",
+      "text": "テレワークの定着 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    }
+  ]
 }
