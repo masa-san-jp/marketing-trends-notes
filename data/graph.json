@@ -2926,6 +2926,13 @@
           "certainty": "attested",
           "retrieved": "primary",
           "as_of": "2025-04-22"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-04"
         }
       ],
       "predictions": [
@@ -2943,7 +2950,8 @@
         "https://webkit.org/tracking-prevention/",
         "https://webkit.org/blog/10247/new-webkit-features-in-safari-13-1/",
         "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps",
-        "https://privacysandbox.google.com/cookies/prepare/overview"
+        "https://privacysandbox.google.com/cookies/prepare/overview",
+        "https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf"
       ],
       "status": "draft",
       "updated": "2026-08-11",

@@ -39,6 +39,7 @@
 |---|---|---|---|
 | JIAA（日本インタラクティブ広告協会） | ネット広告のガイドライン・実態調査 | https://www.jiaa.org/ | **未確認**（同上） |
 | Ehrenberg-Bass Institute | マーケティングサイエンスの実証研究（CEP・ダブルジョパディ） | https://marketingscience.info/ | **未確認**（同上） |
+| Kraft・Skiera・Koschella — Economic Impact of Opt-in versus Opt-out Requirements for Personal Data Usage | 19か国の広告インプレッションを用いたATT後の追跡可能トラフィック。DSP独自データを含むためユーザー全体の許可率とは区別する | https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf | **確認済み**（2026-08-11 実読） |
 
 ## 層4: プラットフォーム・ベンダーの公式発表（`vendor`）
 
