@@ -2245,6 +2245,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/b2b-ecommerce-expansion.md"
     },
+    "trend/care-service-utilization-expansion": {
+      "id": "trend/care-service-utilization-expansion",
+      "uri": "urn:mtn:trend/care-service-utilization-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "health-wellness",
+      "geo": "japan",
+      "label_ja": "介護サービス利用の拡大",
+      "label_en": "Expansion of long-term care service utilization",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「介護サービス利用の拡大」「long-term care service utilization expansion Japan」で検索したが、日本の介護サービス受給者数・費用の変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "介護サービス・介護予防サービスの受給者数と費用額が増加する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "介護サービス受給者数・費用額の増加",
+        "note": "「介護サービス利用の拡大」は、厚生労働省の介護給付費等実態統計を要約する記述的なラベルで、利用者の満足度や供給量を推定するものではない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-02審査分"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-2026-02"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024年度"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の同統計で介護サービス受給者数が2026年2月審査分の482.86万人を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf",
+        "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/care-service-utilization-expansion.md"
+    },
     "trend/cashless-payment-expansion": {
       "id": "trend/cashless-payment-expansion",
       "uri": "urn:mtn:trend/cashless-payment-expansion",
@@ -3080,6 +3151,76 @@
       "updated": "2026-08-11",
       "path": "entities/trends/food-loss-reduction-institutionalization.md"
     },
+    "trend/foodservice-demand-recovery": {
+      "id": "trend/foodservice-demand-recovery",
+      "uri": "urn:mtn:trend/foodservice-demand-recovery",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "food-beverage",
+      "geo": "japan",
+      "label_ja": "外食・飲食サービス需要の回復",
+      "label_en": "Recovery of foodservice demand",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「外食・飲食サービス需要の回復」「foodservice demand recovery Japan」で検索したが、この日本の飲食サービス需要の変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "コロナ禍後に飲食店・飲食サービス業が上昇し、フード・ビジネス全体が3年連続で上昇した局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "飲食店・飲食サービス業の回復と単価上昇",
+        "note": "「外食・飲食サービス需要の回復」は、経済産業省のフード・ビジネス指数分析を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2025年のフード・ビジネス指数が2024年の96.3を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/foodservice-demand-recovery.md"
+    },
     "trend/foodtech-alternative-protein": {
       "id": "trend/foodtech-alternative-protein",
       "uri": "urn:mtn:trend/foodtech-alternative-protein",
@@ -3693,6 +3834,76 @@
       "updated": "2026-08-11",
       "path": "entities/trends/japanese-music-overseas-expansion.md"
     },
+    "trend/live-entertainment-experience-expansion": {
+      "id": "trend/live-entertainment-experience-expansion",
+      "uri": "urn:mtn:trend/live-entertainment-experience-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "entertainment-content",
+      "geo": "japan",
+      "label_ja": "ライブ・体験型エンタメ消費の拡大",
+      "label_en": "Expansion of live and experience-based entertainment spending",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「ライブ・体験型エンタメ消費の拡大」「live experience entertainment spending Japan」で検索したが、この消費構造の変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "コロナ禍後の回復を超えて、ライブ・音楽興行・体験型消費が拡大する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "ライブ・エンタテインメント市場の拡大",
+        "note": "「ライブ・体験型エンタメ消費の拡大」は、経済産業省が整理する第三次産業活動指数とライブ市場調査を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020-2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2019-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の同種のライブ市場調査で、2024年の総動員数約5,940万人を下回らない",
+          "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/live-entertainment-experience-expansion.md"
+    },
     "trend/music-streaming-expansion": {
       "id": "trend/music-streaming-expansion",
       "uri": "urn:mtn:trend/music-streaming-expansion",
@@ -4168,6 +4379,148 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/outbound-travel-recovery.md"
+    },
+    "trend/parcel-delivery-volume-expansion": {
+      "id": "trend/parcel-delivery-volume-expansion",
+      "uri": "urn:mtn:trend/parcel-delivery-volume-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "retail-commerce",
+      "geo": "japan",
+      "label_ja": "宅配便取扱量の拡大",
+      "label_en": "Expansion of parcel-delivery volume",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「宅配便取扱量の拡大」「parcel delivery volume expansion Japan」で検索したが、日本の宅配便取扱個数の変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "EC・生活様式の変化を背景に、宅配便取扱個数が年間50億個規模へ拡大する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "宅配便取扱個数の増加",
+        "note": "「宅配便取扱量の拡大」は、国土交通省の宅配便・メール便取扱実績を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024年度"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-2024年度"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020-2024年度"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2025年度の宅配便取扱個数が2024年度の50億3,147万個を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html",
+        "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/parcel-delivery-volume-expansion.md"
+    },
+    "trend/parental-leave-normalization": {
+      "id": "trend/parental-leave-normalization",
+      "uri": "urn:mtn:trend/parental-leave-normalization",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "growing",
+      "market": "saas-b2b",
+      "geo": "japan",
+      "label_ja": "育児休業取得の制度定着",
+      "label_en": "Normalization of parental-leave uptake",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「育児休業取得の制度定着」「parental leave normalization Japan」で検索したが、日本の取得率上昇と制度改正の組み合わせそのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "産後パパ育休等の制度改正と、男女の育児休業取得率上昇が重なる局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "育児休業取得率の上昇と両立支援制度の拡充",
+        "note": "「育児休業取得の制度定着」は、厚生労働省の制度情報・雇用均等基本調査を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-04-2025-10"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-2024年度"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の雇用均等基本調査で男性の育児休業取得率が2024年度調査の40.5％を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2",
+        "https://www.mhlw.go.jp/stf/wp/hakusyo/kousei/25/backdata/02-01-03-01.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/parental-leave-normalization.md"
     },
     "trend/plastic-resource-circulation": {
       "id": "trend/plastic-resource-circulation",
@@ -5093,6 +5446,77 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/video-distribution-expansion.md"
+    },
+    "trend/women-employment-expansion": {
+      "id": "trend/women-employment-expansion",
+      "uri": "urn:mtn:trend/women-employment-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "cross-category",
+      "geo": "japan",
+      "label_ja": "女性就業の拡大",
+      "label_en": "Expansion of women’s employment",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「女性就業の拡大」「women employment expansion Japan」で検索したが、日本の女性就業者数・就業率の変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "女性就業者数と女性就業率が上昇し、働き方・購買・サービス利用の前提が変化する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "女性就業者数・就業率の上昇",
+        "note": "「女性就業の拡大」は、総務省統計局の労働力調査を要約する記述的なラベルで、就業者の消費行動を一様に推定するものではない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年平均"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020-2025年平均"
+        },
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020-2025年平均"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2026年平均の女性就業者数が2025年の3,126万人を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.stat.go.jp/data/roudou/",
+        "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/women-employment-expansion.md"
     }
   },
   "edges": [
