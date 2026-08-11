@@ -1469,6 +1469,71 @@
       "updated": "2026-08-11",
       "path": "entities/trends/japan-btoc-ec-expansion.md"
     },
+    "trend/music-streaming-expansion": {
+      "id": "trend/music-streaming-expansion",
+      "uri": "urn:mtn:trend/music-streaming-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "entertainment-content",
+      "geo": "japan",
+      "label_ja": "音楽配信・ストリーミングの定着",
+      "label_en": "Mainstreaming of music streaming and digital distribution",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「音楽配信・ストリーミングの定着」「music streaming mainstreaming」を確認したが、日本の音楽消費・売上構成の変化そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2014~",
+        "end": "..",
+        "display": "音楽配信売上が連続して増加し、サブスクリプション・広告収入型ストリーミングを含むデジタル配信が音楽市場の主要な収益経路になる局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "音楽配信の成長",
+        "note": "「音楽配信・ストリーミングの定着」は、日本レコード協会の売上・配信区分を要約するKBラベルであり、利用者が自称する市場名ではない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-05-30"
+        },
+        {
+          "field": "time",
+          "source": "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-05-30"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-03-04"
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf",
+        "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/",
+        "https://www.riaj.or.jp/data/archive/",
+        "https://riaj.or.jp/data/"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/music-streaming-expansion.md"
+    },
     "trend/online-financial-crime-governance": {
       "id": "trend/online-financial-crime-governance",
       "uri": "urn:mtn:trend/online-financial-crime-governance",
