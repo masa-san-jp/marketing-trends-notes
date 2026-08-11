@@ -28,15 +28,17 @@ evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2026-02審査分"}
   - {field: stage, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2025-2026-02"}
   - {field: time, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html", certainty: independent, retrieved: primary, as_of: "2024年度"}
+  - {field: prediction, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2026-03審査分"}
 predictions:
-  - {claim: "次回の同統計で介護サービス受給者数が2026年2月審査分の482.86万人を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "次回の同統計で介護サービス受給者数が2026年2月審査分の482.86万人を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: miss}
 channels: []
 relations: []
 sources:
   - https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf
+  - https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf
   - https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html
 status: verified
-updated: 2026-08-11
+updated: 2026-08-12
 ---
 
 # 介護サービス利用の拡大
@@ -44,6 +46,8 @@ updated: 2026-08-11
 ## 何が変わったか
 
 介護サービスの利用者数と費用額が増加し、本人・家族・自治体・事業者が、在宅・通所・施設・予防を組み合わせて生活を支える前提が大きくなっている。厚生労働省の2026年2月審査分では、介護サービス受給者数は482.86万人で前年同月比1.9％増、介護予防サービスは101.22万人で5.1％増だった。介護サービス費用額は9,874.71億円で2.8％増となっている。
+
+2026年3月審査分の介護サービス受給者数は480.09万人で、2月の482.86万人を下回った。このため、次回統計に対する「482.86万人以上」という予測はmissと判定した。ただし、前年同月比では1.9％増であり、単月の低下を長期的な縮小とは解釈しない。
 
 これは高齢者全体の人数やサービス品質、介護事業者の利益を直接表さない。要介護度、サービス種類、地域、供給制約、家族介護、自己負担、利用継続を分けて観測する必要がある。
 
@@ -71,4 +75,4 @@ updated: 2026-08-11
 
 - 要介護度、サービス種類、在宅・通所・施設、地域、年齢、自己負担を分解する
 - 受給者数、利用日数、費用、供給事業所、人手不足、家族介護を接続する
-- 次回の介護給付費等実態統計で予測を答え合わせする
+- 2026年3月審査分で予測を答え合わせし、480.09万人（482.86万人未満）のmissを記録した

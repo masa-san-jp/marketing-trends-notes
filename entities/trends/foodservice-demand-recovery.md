@@ -28,21 +28,23 @@ evidence:
   - {field: kind, source: "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html", certainty: independent, retrieved: primary, as_of: "2024"}
   - {field: stage, source: "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html", certainty: independent, retrieved: primary, as_of: "2022-2024"}
   - {field: time, source: "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html", certainty: independent, retrieved: primary, as_of: "2022-2024"}
+  - {field: prediction, source: "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20260527_1.html", certainty: independent, retrieved: primary, as_of: "2025"}
 predictions:
-  - {claim: "2025年のフード・ビジネス指数が2024年の96.3を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "2025年のフード・ビジネス指数が2024年の96.3を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: miss}
 channels: []
 relations: []
 sources:
   - https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html
+  - https://www.meti.go.jp/statistics/toppage/report/archive/kako/20260527_1.html
 status: verified
-updated: 2026-08-11
+updated: 2026-08-12
 ---
 
 # 外食・飲食サービス需要の回復
 
 ## 何が変わったか
 
-飲食店・飲食サービス業を含むフード・ビジネスが、コロナ禍の落ち込みから回復し、価格・客単価の上昇も伴う局面にある。経済産業省の2024年分析では、フード・ビジネス指数（FBI）は96.3で前年比0.3％上昇し、3年連続の上昇となった。飲食店・飲食サービス業は前年比3.5％上昇し、FBI全体を押し上げた。
+飲食店・飲食サービス業を含むフード・ビジネスが、コロナ禍の落ち込みから回復した後の高水準にある。経済産業省の2025年分析では、フード・ビジネス指数（FBI）は94.1で前年比2.3％低下し、4年ぶりの低下となった。2024年の96.3を下回ったため、「2025年も96.3以上」という予測はmissと判定した。一方、飲食店・飲食サービス業は上昇しており、食料品流通業・食料品工業の低下と動きが分かれている。
 
 分析では、食堂・レストラン・専門店、パブ・居酒屋、ファーストフードなど業態による寄与が異なり、インバウンド需要や物価上昇も影響している。指数上昇を実質的な来店者数の増加や全業態の繁盛と同一視しない。
 
@@ -70,4 +72,4 @@ updated: 2026-08-11
 
 - 客数、客単価、店舗数、業態、地域、価格要因を分解する
 - 店舗、テイクアウト、配達、予約、外食ECの利用経路を同じ期間で比較する
-- 2025年の指数で予測を答え合わせする
+- 2025年の指数で予測を答え合わせし、94.1（96.3未満）のmissを記録した

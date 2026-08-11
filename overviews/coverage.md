@@ -41,7 +41,7 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 - per_category_min: 12/12 カテゴリが 2件以上
 - stale_ratio: 0.00（上限 0.15・as_of=2026-08-12 時点）
 - practice_linked: 60/61 の practice が responds_to を持つ（下限比率 0.5）
-- resolved_predictions: 0/5 件の予測が答え合わせ済み
+- resolved_predictions: 5/5 件の予測が答え合わせ済み
 <!-- generated:coverage:end -->
 
 ## 空欄の読み方
