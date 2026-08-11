@@ -40,10 +40,8 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 - self_measured: 0/10 件が measured の根拠を持つ
 - per_category_min: 12/12 カテゴリが 2件以上
 - stale_ratio: 0.00（上限 0.15・as_of=2026-08-12 時点）
-- practice_linked: 54/55 の practice が responds_to を持つ（下限比率 0.5）
+- practice_linked: 60/61 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 0/5 件の予測が答え合わせ済み
-
-関係を持たない trend: trend/care-workforce-shortage, trend/fertility-treatment-insurance-access, trend/recurrent-education-institutionalization, trend/tokyo-region-inmigration-persistence, trend/vacant-housing-expansion, trend/workplace-stress-check-institutionalization
 <!-- generated:coverage:end -->
 
 ## 空欄の読み方
@@ -67,13 +65,7 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 形式の検証（`build_graph.py --check`）と違って commit は止めない——次に何を調べるかの材料として出す。
 
 <!-- generated:audit:start -->
-**応答なきトレンド**
-- 介護人材の需給ギャップ拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- 不妊治療の保険アクセス拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- リカレント教育の社会実装 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- 東京圏への転入超過の持続 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- 空き家の増加 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
-- 職場ストレスチェックの制度定着 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+食い違い・偏りの指摘はなし。
 <!-- generated:audit:end -->
 
 ## 需要から決める（探されたが無かった語）
