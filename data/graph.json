@@ -619,6 +619,58 @@
       "updated": "2026-08-11",
       "path": "entities/practices/generative-ai-workflow-governance.md"
     },
+    "practice/giga-device-network-lifecycle": {
+      "id": "practice/giga-device-network-lifecycle",
+      "uri": "urn:mtn:practice/giga-device-network-lifecycle",
+      "type": "practice",
+      "label_ja": "GIGA端末・ネットワーク・学習基盤のライフサイクル運用",
+      "label_en": "GIGA device, network, and learning-platform lifecycle operations",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「GIGA端末・ネットワーク・学習基盤のライフサイクル運用」「GIGA device network and learning-platform lifecycle operations」を確認したが、この自治体・学校向け運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2024~",
+        "end": "..",
+        "display": "GIGA第2期で、端末・ネットワーク・クラウド学習環境を更新し、故障・接続・アカウントの停止を抑えながら継続運用する実務"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        },
+        {
+          "field": "saturation",
+          "source": "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-04-17"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/giga-learning-platform-renewal",
+          "certainty": "hypothesis",
+          "source": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html"
+        }
+      ],
+      "sources": [
+        "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html",
+        "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf",
+        "https://www.mext.go.jp/content/20251020-mxt_syoto02-000045471_14.pdf",
+        "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_02142.html",
+        "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_02734.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/giga-device-network-lifecycle.md"
+    },
     "practice/green-product-governance": {
       "id": "practice/green-product-governance",
       "uri": "urn:mtn:practice/green-product-governance",
@@ -1958,6 +2010,73 @@
       "updated": "2026-08-11",
       "path": "entities/trends/generative-ai-business-adoption.md"
     },
+    "trend/giga-learning-platform-renewal": {
+      "id": "trend/giga-learning-platform-renewal",
+      "uri": "urn:mtn:trend/giga-learning-platform-renewal",
+      "type": "trend",
+      "kind": "tech-enabled",
+      "stage": "growing",
+      "market": "education",
+      "geo": "japan",
+      "label_ja": "GIGAスクール端末・学習基盤の更新運用",
+      "label_en": "Renewal and operationalization of Japan's GIGA school learning platform",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「GIGAスクール端末・学習基盤の更新運用」「renewal and operationalization of Japan's GIGA school learning platform」を確認したが、日本の端末・ネットワーク・クラウド学習環境の更新運用という変化そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2024~",
+        "end": "..",
+        "display": "GIGAスクール構想第2期で、1人1台端末・ネットワーク・クラウド学習環境を導入後の更新・持続運用へ移る局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "GIGAスクール構想第2期",
+        "note": "文部科学省の制度名称を踏まえ、導入後の端末・ネットワーク・クラウド学習環境の更新と持続運用という観測対象をこのKBで要約したラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-04-17"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mext.go.jp/content/20251020-mxt_syoto02-000045471_14.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-10-20"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        }
+      ],
+      "predictions": [],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html",
+        "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf",
+        "https://www.mext.go.jp/content/20251020-mxt_syoto02-000045471_14.pdf",
+        "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_00080.html",
+        "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_02734.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/giga-learning-platform-renewal.md"
+    },
     "trend/green-oriented-consumption": {
       "id": "trend/green-oriented-consumption",
       "uri": "urn:mtn:trend/green-oriented-consumption",
@@ -2871,6 +2990,13 @@
       "source": "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf"
     },
     {
+      "from": "practice/giga-device-network-lifecycle",
+      "type": "responds_to",
+      "to": "trend/giga-learning-platform-renewal",
+      "certainty": "hypothesis",
+      "source": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html"
+    },
+    {
       "from": "practice/green-product-governance",
       "type": "responds_to",
       "to": "trend/green-oriented-consumption",
@@ -3058,6 +3184,12 @@
       "from": "trend/generative-ai-business-adoption",
       "type": "answered_by",
       "to": "practice/generative-ai-workflow-governance",
+      "derived": true
+    },
+    {
+      "from": "trend/giga-learning-platform-renewal",
+      "type": "answered_by",
+      "to": "practice/giga-device-network-lifecycle",
       "derived": true
     },
     {

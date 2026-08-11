@@ -14,7 +14,7 @@ depends_on: []
 <!-- generated:coverage:start -->
 データの最新日: 2026-08-11 — `python3 tools/build_graph.py` が生成（手で書き換えない）
 
-trend **23** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 20}
+trend **24** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 21}
 
 | カテゴリ | 2010 | 2014 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 年代不明 | 計 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -28,19 +28,19 @@ trend **23** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 | health-wellness（ヘルスケア・ウェルネス） |  |  |  |  |  |  |  |  | 2 |  |  | 2 |
 | gaming（ゲーム） |  |  |  |  | 1 |  | 1 |  |  |  |  | 2 |
 | finance（金融） | 1 |  |  |  |  |  |  | 1 |  |  |  | 2 |
-| education（教育） |  |  |  |  |  |  |  | 1 |  |  |  | 1 |
+| education（教育） |  |  |  |  |  |  |  | 1 | 1 |  |  | 2 |
 | cross-category（カテゴリ横断） |  |  | 1 |  |  | 1 |  |  |  |  |  | 2 |
 
 受け入れ条件の達成度:
 
-- trend_total: 23/60（stub 0件は不算入）
+- trend_total: 24/60（stub 0件は不算入）
 - vendor_only_ratio: 0.00（上限 0.2）
 - primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
 - self_measured: 0/10 件が measured の根拠を持つ
-- per_category_min: 11/12 カテゴリが 2件以上
+- per_category_min: 12/12 カテゴリが 2件以上
 - stale_ratio: 0.00（上限 0.15・as_of=2026-08-11 時点）
-- practice_linked: 22/23 の practice が responds_to を持つ（下限比率 0.5）
+- practice_linked: 23/24 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 0/5 件の予測が答え合わせ済み
 <!-- generated:coverage:end -->
 
