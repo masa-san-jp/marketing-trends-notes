@@ -334,6 +334,77 @@
       "updated": "2026-08-10",
       "path": "entities/trends/anxiety-multiplication.md"
     },
+    "trend/japan-btoc-ec-expansion": {
+      "id": "trend/japan-btoc-ec-expansion",
+      "uri": "urn:mtn:trend/japan-btoc-ec-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "retail-commerce",
+      "geo": "japan",
+      "label_ja": "国内BtoC-ECの拡大",
+      "label_en": "Expansion of domestic B2C e-commerce",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「日本 BtoC-EC 市場拡大」「国内電子商取引市場」で検索したが、この現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "2022年以降に公表された経年値で拡大を確認できる局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "BtoC-EC市場の拡大",
+        "note": "「国内BtoC-ECの拡大」は、経済産業省の市場規模・EC化率の統計を要約するための記述的なラベル。消費者がこの語を自称することは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2025年の国内BtoC-EC市場規模が2024年の26.1兆円を下回らない",
+          "by": "2026-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/japan-btoc-ec-expansion.md"
+    },
     "trend/short-video-mainstream": {
       "id": "trend/short-video-mainstream",
       "uri": "urn:mtn:trend/short-video-mainstream",
