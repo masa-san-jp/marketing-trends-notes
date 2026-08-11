@@ -35,6 +35,9 @@ evidence:
   - {field: stage, source: "https://webkit.org/tracking-prevention/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
   - {field: stage, source: "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", certainty: attested, retrieved: primary, as_of: "2025-04-22"}
   - {field: stage, source: "https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf", certainty: independent, retrieved: primary, as_of: "2023-04"}
+  - {field: stage, source: "https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf", certainty: independent, retrieved: primary, as_of: "2024-08-14"}
+  - {field: stage, source: "https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/", certainty: vendor, retrieved: primary, as_of: "2024-Q1"}
+  - {field: stage, source: "https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html", certainty: vendor, retrieved: primary, as_of: "2024-Q1"}
 predictions:
   - {claim: "2027年末までに、日本の主要広告主の間で計測の主軸がユーザー単位のトラッキングからMMM・インクリメンタリティ計測側へ寄る（業界団体・独立調査でその旨が確認できる）", by: "2027-12", resolved: null, outcome: null}
 relations: []
@@ -46,6 +49,9 @@ sources:
   - https://privacysandbox.google.com/blog/privacy-sandbox-next-steps
   - https://privacysandbox.google.com/cookies/prepare/overview
   - https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf
+  - https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf
+  - https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/
+  - https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html
 status: draft
 updated: 2026-08-11
 ---
@@ -89,6 +95,21 @@ ATTの許可率に近い第三者測定として、Kraft・Skiera・Koschella（
 DSPの独自データを含むため、全iOSユーザー・全アプリの現在値には一般化しない（[研究論文PDF](https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf)、
 2026-08-11 実読）。
 
+2024年の独立研究は、許諾率そのものではなく、許諾を求める画面の設計が結果を左右しうることを示す。
+USENIX Security Symposiumの研究は、App Storeの4,000件のiOSアプリを分析し、ATTの許諾アラートの59%に、
+誤解を招く説明、追跡への誘因、分かりにくい用語、目的の欠落など、Appleの指針に反する4種類のダークパターンを
+確認した。114人のユーザー調査でも、許可・拒否が何を意味するかの誤解が観測されている。したがって、
+許諾率の時系列を比較するときは、国・カテゴリだけでなく、表示文言・事前説明・表示対象アプリの構成も交絡要因として
+扱う（[USENIX論文PDF](https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf)、2026-08-11 実読）。
+
+日本のカテゴリ別の近い指標としては、AdjustとSensor Towerの「モバイルアプリトレンド2024：日本版」がある。
+同レポートを紹介した記事では、2024年第1四半期のATTオプトイン率について、ゲーム30%、フード＆ドリンク24%、
+エンターテインメント23%とされ、フード＆ドリンクは前年同期の16%、エンターテインメントは20%から上昇したと報告されている。
+ただし、これは計測ベンダーのデータであり、Kraftらの広告インプレッション加重の追跡可能トラフィックとも、
+独立研究のユーザー許諾率とも同じ系列ではない。日本の独立したカテゴリ別時系列としては未確認である
+（[Adjust/Sensor Towerの公式レポート](https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/)、
+[紹介記事](https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html)、2026-08-11 実読）。
+
 ## kind と stage の判定
 
 **kind: regulation-driven とした。** 判定表の第1問「規制・制度の施行日・条文を指せるか」に対し、
@@ -129,7 +150,7 @@ ATT（2021）でモバイルアプリ側に波及した。以降も第三者提�
 ## 未着手
 
 - Safari・Chromeのバージョン別挙動と、サイト側の対応状況を同じ定義で追跡する
-- ATTの2024年以降の独立測定と、日本のアプリ・カテゴリ別の追跡率を探す。今回の研究は2023年4月までで、
-  DSPデータによる追跡可能トラフィックの測定である
+- ATTの2024年以降の独立した許諾率測定と、日本のアプリ・カテゴリ別の独立時系列を探す。2024年の独立研究は
+  許諾画面のダークパターンを測定し、日本のカテゴリ別数値は現時点ではベンダー資料のみである
 - 応答する practice の整理: MMM 回帰・リテールメディア（[practice/retail-media](../practices/retail-media.md)）・
   ファーストパーティデータ活用を responds_to で繋ぐ

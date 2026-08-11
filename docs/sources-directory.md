@@ -40,6 +40,7 @@
 | JIAA（日本インタラクティブ広告協会） | ネット広告のガイドライン・実態調査 | https://www.jiaa.org/ | **未確認**（同上） |
 | Ehrenberg-Bass Institute | マーケティングサイエンスの実証研究（CEP・ダブルジョパディ） | https://marketingscience.info/ | **未確認**（同上） |
 | Kraft・Skiera・Koschella — Economic Impact of Opt-in versus Opt-out Requirements for Personal Data Usage | 19か国の広告インプレッションを用いたATT後の追跡可能トラフィック。DSP独自データを含むためユーザー全体の許可率とは区別する | https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf | **確認済み**（2026-08-11 実読） |
+| Mohamed et al. — ATTention Please! An Investigation of the App Tracking Transparency Permission | 4,000件のiOSアプリと114人のユーザー調査。ATT許諾アラートのダークパターンと理解への影響 | https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf | **確認済み**（2026-08-11 実読） |
 
 ## 層4: プラットフォーム・ベンダーの公式発表（`vendor`）
 
@@ -55,11 +56,14 @@
 | WebKit — WebKit Features in Safari 13.1 | Safari 13.1の第三者Cookie全面ブロック・Webサイトデータ期限 | https://webkit.org/blog/10247/new-webkit-features-in-safari-13-1/ | **確認済み**（2026-08-11 実読） |
 | Google Privacy Sandbox — Next steps for tracking protections in Chrome | Chromeの第三者Cookieに関するユーザー選択方針（2025-04-22） | https://privacysandbox.google.com/blog/privacy-sandbox-next-steps | **確認済み**（2026-08-11 実読） |
 | Google Privacy Sandbox — Third-party cookie restrictions | 第三者Cookieなしを前提にした監査・テスト・移行ガイド | https://privacysandbox.google.com/cookies/prepare/overview | **確認済み**（2026-08-11 実読） |
+| Adjust・Sensor Tower — モバイルアプリトレンド2024：日本版 | 日本のATTオプトイン率・ゲーム等カテゴリ別指標。計測ベンダー由来のため独立統計とは区別する | https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/ | **確認済み**（2026-08-11 実読） |
 | 各種ツールベンダーの「◯◯トレンドレポート」 | kind: vendor-pushed の一次資料としては優秀（命名の証拠）。規模の典拠にはしない | （個別に記録） | — |
 
 ## 層5: 個別の投稿・記事・事例（`anecdotal`）
 
 存在の証拠にはなる。規模の証拠にはならない。「バズっている」を規模の出典にしない。
+
+| ITmedia マーケティング — 日本のモバイルアプリ市場のATTオプトイン率紹介 | Adjust・Sensor Towerのベンダー資料に基づく日本のカテゴリ別数値の紹介。独立調査とは扱わない | https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html | **確認済み**（2026-08-11 実読） |
 
 ## このカタログの育て方
 
