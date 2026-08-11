@@ -50,6 +50,10 @@
 | 電通「日本の広告費」 | 業界の標準指標だが、発行元は広告を売る側。市場の定義変更で系列が切れることがある | https://www.dentsu.co.jp/knowledge/ad_cost/ | **未確認**（同上） |
 | TikTok Newsroom | 機能ローンチ日は attested、利用者数・効果の主張は vendor | https://newsroom.tiktok.com/ja-jp | **未確認**（同上） |
 | Google / YouTube 公式ブログ・ヘルプ | 同上の使い分け | https://support.google.com/youtube/ | **未確認**（同上） |
+| WebKit — Tracking Prevention in WebKit | Safari/WebKitの第三者Cookie、リファラ、ストレージ、ITPの出荷挙動 | https://webkit.org/tracking-prevention/ | **確認済み**（2026-08-11 実読） |
+| WebKit — WebKit Features in Safari 13.1 | Safari 13.1の第三者Cookie全面ブロック・Webサイトデータ期限 | https://webkit.org/blog/10247/new-webkit-features-in-safari-13-1/ | **確認済み**（2026-08-11 実読） |
+| Google Privacy Sandbox — Next steps for tracking protections in Chrome | Chromeの第三者Cookieに関するユーザー選択方針（2025-04-22） | https://privacysandbox.google.com/blog/privacy-sandbox-next-steps | **確認済み**（2026-08-11 実読） |
+| Google Privacy Sandbox — Third-party cookie restrictions | 第三者Cookieなしを前提にした監査・テスト・移行ガイド | https://privacysandbox.google.com/cookies/prepare/overview | **確認済み**（2026-08-11 実読） |
 | 各種ツールベンダーの「◯◯トレンドレポート」 | kind: vendor-pushed の一次資料としては優秀（命名の証拠）。規模の典拠にはしない | （個別に記録） | — |
 
 ## 層5: 個別の投稿・記事・事例（`anecdotal`）
