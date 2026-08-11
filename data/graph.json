@@ -1429,6 +1429,76 @@
       "updated": "2026-08-10",
       "path": "entities/trends/anxiety-multiplication.md"
     },
+    "trend/b2b-ecommerce-expansion": {
+      "id": "trend/b2b-ecommerce-expansion",
+      "uri": "urn:mtn:trend/b2b-ecommerce-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "saas-b2b",
+      "geo": "japan",
+      "label_ja": "BtoB電子商取引の拡大",
+      "label_en": "Expansion of B2B e-commerce",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「BtoB電子商取引の拡大」「B2B e-commerce Japan market」で検索したが、この現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "2022年以降の国内BtoB-EC市場規模・EC化率の拡大局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "国内BtoB-EC市場の拡大",
+        "note": "「BtoB電子商取引の拡大」は、経済産業省の市場規模・EC化率を要約するための記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2025年の国内BtoB-EC市場規模が2024年の514.4兆円を下回らない",
+          "by": "2026-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/b2b-ecommerce-expansion.md"
+    },
     "trend/cashless-payment-expansion": {
       "id": "trend/cashless-payment-expansion",
       "uri": "urn:mtn:trend/cashless-payment-expansion",
@@ -1774,6 +1844,147 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/creator-rights-compensation-transparency.md"
+    },
+    "trend/domestic-travel-consumption-expansion": {
+      "id": "trend/domestic-travel-consumption-expansion",
+      "uri": "urn:mtn:trend/domestic-travel-consumption-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "cross-category",
+      "geo": "japan",
+      "label_ja": "国内旅行消費の拡大",
+      "label_en": "Expansion of domestic travel consumption",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「国内旅行消費の拡大」「domestic travel consumption expansion」で検索したが、この現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "2022年以降の国内旅行消費額の回復・拡大局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "日本人の国内旅行消費額の増加",
+        "note": "「国内旅行消費の拡大」は、観光庁の旅行・観光消費動向調査を要約するための記述的なラベル。旅行者の自称ではない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mlit.go.jp/kankocho/news02_00074.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mlit.go.jp/kankocho/content/001981888.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/kankocho/content/001981888.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2016-2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2026年の日本人国内旅行消費額が2025年の26兆7,746億円を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mlit.go.jp/kankocho/news02_00074.html",
+        "https://www.mlit.go.jp/kankocho/content/001981888.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/domestic-travel-consumption-expansion.md"
+    },
+    "trend/food-ecommerce-expansion": {
+      "id": "trend/food-ecommerce-expansion",
+      "uri": "urn:mtn:trend/food-ecommerce-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "food-beverage",
+      "geo": "japan",
+      "label_ja": "食品・飲料・酒類ECの拡大",
+      "label_en": "Expansion of food, beverage, and alcohol e-commerce",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「食品・飲料・酒類ECの拡大」「food e-commerce Japan market」で検索したが、この現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "2022年以降の食品・飲料・酒類BtoC-EC市場規模の拡大局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "食品、飲料、酒類のBtoC-EC市場拡大",
+        "note": "「食品・飲料・酒類ECの拡大」は、経済産業省の分野別市場規模を要約するための記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2025年の食品・飲料・酒類BtoC-EC市場規模が2024年の3兆1,163億円を下回らない",
+          "by": "2026-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/food-ecommerce-expansion.md"
     },
     "trend/food-loss-reduction-institutionalization": {
       "id": "trend/food-loss-reduction-institutionalization",
@@ -2241,6 +2452,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/green-oriented-consumption.md"
     },
+    "trend/inbound-tourism-demand-expansion": {
+      "id": "trend/inbound-tourism-demand-expansion",
+      "uri": "urn:mtn:trend/inbound-tourism-demand-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "cross-category",
+      "geo": "japan",
+      "label_ja": "訪日観光需要の拡大",
+      "label_en": "Expansion of inbound tourism demand",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「訪日観光需要の拡大」「inbound tourism demand expansion」で検索したが、この現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2019~",
+        "end": "..",
+        "display": "2019年を基準に回復・拡大が進み、2025年に過去最高を更新した局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "訪日外国人旅行者数・訪日旅行消費額の増加",
+        "note": "「訪日観光需要の拡大」は、観光庁の旅行者数と旅行消費額を要約するための記述的なラベル。訪日客がこの語を自称することは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mlit.go.jp/kankocho/page01_00056.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mlit.go.jp/kankocho/page01_00056.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2026年の訪日外国人旅行者数が2025年の4,268万人を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mlit.go.jp/kankocho/page01_00056.html",
+        "https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/inbound-tourism-demand-expansion.md"
+    },
     "trend/japan-btoc-ec-expansion": {
       "id": "trend/japan-btoc-ec-expansion",
       "uri": "urn:mtn:trend/japan-btoc-ec-expansion",
@@ -2642,6 +2924,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/plastic-resource-circulation.md"
     },
+    "trend/reuse-c2c-market-expansion": {
+      "id": "trend/reuse-c2c-market-expansion",
+      "uri": "urn:mtn:trend/reuse-c2c-market-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "retail-commerce",
+      "geo": "japan",
+      "label_ja": "リユース・CtoC市場の拡大",
+      "label_en": "Expansion of reuse and C2C markets",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「リユース・CtoC市場の拡大」「reuse C2C market Japan」で検索したが、この現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "2022年以降のCtoC-EC・リユース関連市場の拡大局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "リユース市場・CtoC-EC市場の拡大",
+        "note": "「リユース・CtoC市場の拡大」は、環境省の調査報告書が整理するCtoC-ECとリユース市場の数字を要約するための記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.env.go.jp/content/000327691.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.env.go.jp/content/000327691.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023"
+        },
+        {
+          "field": "time",
+          "source": "https://www.env.go.jp/content/000327691.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2023"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回公表されるCtoC-EC推計市場規模が2023年の2兆4,817億円を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.env.go.jp/recycle/circul/reuse/",
+        "https://www.env.go.jp/content/000327691.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/reuse-c2c-market-expansion.md"
+    },
     "trend/school-generative-ai-governance": {
       "id": "trend/school-generative-ai-governance",
       "uri": "urn:mtn:trend/school-generative-ai-governance",
@@ -2785,6 +3138,76 @@
       "status": "draft",
       "updated": "2026-08-10",
       "path": "entities/trends/short-video-mainstream.md"
+    },
+    "trend/single-person-household-expansion": {
+      "id": "trend/single-person-household-expansion",
+      "uri": "urn:mtn:trend/single-person-household-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "consumer-goods",
+      "geo": "japan",
+      "label_ja": "単独世帯の拡大",
+      "label_en": "Expansion of single-person households",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「単独世帯の拡大」「single-person household expansion」で検索したが、この現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2005~",
+        "end": "..",
+        "display": "2005年から2020年にかけて単独世帯数と構成比が上昇した局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "単独世帯の増加",
+        "note": "「単独世帯の拡大」は、国勢調査の家族類型別世帯数を要約するための記述的なラベル。世帯主がこの語を自称することは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2005-2020"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020"
+        },
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2005-2020"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2025年国勢調査の家族類型別集計でも単独世帯の構成比が2020年の38.1%を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/single-person-household-expansion.md"
     },
     "trend/sleep-rest-health-management": {
       "id": "trend/sleep-rest-health-management",
