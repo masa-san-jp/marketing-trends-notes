@@ -28,16 +28,24 @@ evidence:
   - {field: kind, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/", certainty: attested, retrieved: primary, as_of: "2026-08-10"}
   - {field: kind, source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj", certainty: attested, retrieved: primary, as_of: "2018-05-25"}
   - {field: kind, source: "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/", certainty: attested, retrieved: primary, as_of: "2023-12"}
+  - {field: kind, source: "https://webkit.org/tracking-prevention/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
+  - {field: kind, source: "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", certainty: attested, retrieved: primary, as_of: "2025-04-22"}
   - {field: time, source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj", certainty: attested, retrieved: primary, as_of: "2018-05-25"}
   - {field: stage, source: "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/", certainty: attested, retrieved: primary, as_of: "2023-12"}
+  - {field: stage, source: "https://webkit.org/tracking-prevention/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
+  - {field: stage, source: "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", certainty: attested, retrieved: primary, as_of: "2025-04-22"}
 predictions:
   - {claim: "2027年末までに、日本の主要広告主の間で計測の主軸がユーザー単位のトラッキングからMMM・インクリメンタリティ計測側へ寄る（業界団体・独立調査でその旨が確認できる）", by: "2027-12", resolved: null, outcome: null}
 relations: []
 sources:
   - https://developer.apple.com/app-store/user-privacy-and-data-use/
   - https://developer.apple.com/documentation/apptrackingtransparency
+  - https://webkit.org/tracking-prevention/
+  - https://webkit.org/blog/10247/new-webkit-features-in-safari-13-1/
+  - https://privacysandbox.google.com/blog/privacy-sandbox-next-steps
+  - https://privacysandbox.google.com/cookies/prepare/overview
 status: draft
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 # 広告トラッキング制約の常態化
@@ -58,8 +66,19 @@ updated: 2026-08-10
 紐づけ（トラッキング）とIDFAアクセスにユーザーの明示的許可が必要になった（[Apple 開発者文書](https://developer.apple.com/app-store/user-privacy-and-data-use/)、
 2026-08-11 実読）。許可が無い場合のIDFA値、ハッシュ化メール等の代替識別子、第三者SDKにも適用範囲が及ぶことが明記されている。
 
-**未確認**: Safari ITPの段階的な制約と、Chromeのサードパーティクッキー方針・その転換は、この作業では
-一次資料まで追えていない。したがって、ブラウザ側の制約がモバイル側と同じ強さ・速度で進んだとは断定しない。
+Safari側では、WebKitが現在の出荷挙動として、ITPによる第三者Cookieのデフォルト全面ブロック、第三者
+リファラのoriginへの縮小、リンク装飾に対するCookie有効期限の制限、スクリプト書き込み可能なストレージの
+7日間上限などを説明している（[WebKit Tracking Prevention](https://webkit.org/tracking-prevention/)、
+2026-08-11 実読）。Safari 13.1の公式リリース資料でも、第三者Cookieの全面ブロックと非CookieのWebサイト
+データの期限を説明している（[WebKit Features in Safari 13.1](https://webkit.org/blog/10247/new-webkit-features-in-safari-13-1/)、
+2026-08-11 実読）。
+
+Chromeは、第三者Cookieを一律に廃止する方針へ一直線に進んだとはいえない。Googleは2025年4月、ユーザーが
+第三者Cookieの扱いを選べる現在の方式を維持し、新しい単独プロンプトは導入しないと説明した。一方で、
+シークレットモードでは第三者Cookieをデフォルトでブロックし、公式移行ガイドでは第三者Cookieが無い前提で
+監査・破損テスト・Privacy Sandbox等への移行を案内している（[Chromeの方針更新](https://privacysandbox.google.com/blog/privacy-sandbox-next-steps)、
+[第三者Cookie移行ガイド](https://privacysandbox.google.com/cookies/prepare/overview)、2026-08-11 実読）。
+したがって、ブラウザ側の制約は常態化しているが、実装はブラウザごとに異なると記録する。
 
 ## kind と stage の判定
 
@@ -71,8 +90,10 @@ tech-enabled（技術が可能にした変化）ではない——技術的に�
 制度がそれを止めた。
 
 **stage: peak とした。** 制約は撤回されず追加される方向で推移し、業界の標準的な前提として
-一般化している。ただし peak の判定表が求める「数字の高原状態」を示す独立した定量（例: 許可率・
-クッキー同期率の推移）は執筆環境から取れておらず、**この stage 判定は定性による**。
+一般化している。Safari/WebKitでは第三者Cookieのデフォルトブロックが出荷挙動として定着し、Chromeでは
+一律廃止からユーザー選択へ方針が調整された。したがって「制約が無い状態に戻った」とは言えないが、
+ブラウザ横断で同一の制約が適用されているわけでもない。独立した許可率・クッキー同期率の推移はなく、
+**この stage 判定は定性による**。
 **未確認**: 定量の裏づけ。再検証時（2027-02まで）に許可率・対応済み広告主比率の独立調査を探す。
 
 ## 時間
@@ -90,14 +111,14 @@ ATT（2021）でモバイルアプリ側に波及した。以降も第三者提�
 
 - これが「常態化」でなく一時的な振れなら、**主要プラットフォームのどれかが制約を実質的に
   巻き戻し**、ユーザー単位トラッキングの可用性が2018年以前の水準に戻る動きが観測されるはず。
-  Chrome のクッキー廃止撤回（未確認）がこの反証の部分的な成立である可能性があり、再検証時に
-  「撤回された制約」と「残った制約」を仕分ける必要がある
+  Chromeの2025年方針変更は一律廃止の反証側にあたるため、再検証時にも「撤回された制約」と
+  「残った制約」を仕分ける必要がある
 - 制約が実務に効いていないなら、**広告主側の計測手法の構成が変わっていない**はず（MMM・
   コンバージョンAPI・クリーンルームへの移行が起きない）。移行が観測されれば効いている
 
 ## 未着手
 
-- Safari ITP・Chromeのサードパーティクッキー方針と転換の一次確認（ブラウザ側の制約の整理）
+- Safari・Chromeのバージョン別挙動と、サイト側の対応状況を同じ定義で追跡する
 - ATT 許可率の独立した実測を探す（ベンダー数字しか無い可能性が高い——その場合は vendor と明記して置く）
 - 応答する practice の整理: MMM 回帰・リテールメディア（[practice/retail-media](../practices/retail-media.md)）・
   ファーストパーティデータ活用を responds_to で繋ぐ
