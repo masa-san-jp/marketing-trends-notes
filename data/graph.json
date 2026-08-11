@@ -1116,6 +1116,71 @@
       "updated": "2026-08-11",
       "path": "entities/trends/creator-ad-disclosure.md"
     },
+    "trend/creator-rights-compensation-transparency": {
+      "id": "trend/creator-rights-compensation-transparency",
+      "uri": "urn:mtn:trend/creator-rights-compensation-transparency",
+      "type": "trend",
+      "kind": "tech-enabled",
+      "stage": "growing",
+      "market": "creator-economy",
+      "geo": "japan",
+      "label_ja": "クリエイターの権利・対価情報の透明化",
+      "label_en": "Increasing transparency of creator rights and compensation information",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「クリエイターの権利・対価情報の透明化」「creator rights and compensation transparency」を確認したが、日本のデジタルプラットフォームにおける権利・対価情報の制度変化そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2021~",
+        "end": "..",
+        "display": "デジタルプラットフォームで作品が利用・収益化される中、契約・再生・料率・権利情報をクリエイターが確認できる仕組みを整える動き"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "クリエイターへの適切な対価還元",
+        "note": "文化庁の調査・政策資料で扱われる論点を参照したKBラベルであり、クリエイター全体が自称する市場名ではない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-12-24"
+        },
+        {
+          "field": "time",
+          "source": "https://www.bunka.go.jp/tokei_hakusho_shuppan/tokeichosa/chosakuken/index.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-12-24"
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/seisaku/r06_04/",
+        "https://www.bunka.go.jp/tokei_hakusho_shuppan/tokeichosa/chosakuken/index.html",
+        "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html",
+        "https://www.bunka.go.jp/seisaku/chosakuken/"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/creator-rights-compensation-transparency.md"
+    },
     "trend/food-loss-reduction-institutionalization": {
       "id": "trend/food-loss-reduction-institutionalization",
       "uri": "urn:mtn:trend/food-loss-reduction-institutionalization",
