@@ -1,35 +1,4 @@
 {
   "as_of": "2026-08-11",
-  "findings": [
-    {
-      "kind": "unanswered",
-      "about": "trend/b2b-ecommerce-expansion",
-      "text": "BtoB電子商取引の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/domestic-travel-consumption-expansion",
-      "text": "国内旅行消費の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/food-ecommerce-expansion",
-      "text": "食品・飲料・酒類ECの拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/inbound-tourism-demand-expansion",
-      "text": "訪日観光需要の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/reuse-c2c-market-expansion",
-      "text": "リユース・CtoC市場の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    },
-    {
-      "kind": "unanswered",
-      "about": "trend/single-person-household-expansion",
-      "text": "単独世帯の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
-    }
-  ]
+  "findings": []
 }

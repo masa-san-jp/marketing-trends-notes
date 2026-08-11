@@ -116,6 +116,47 @@
       "updated": "2026-08-10",
       "path": "entities/players/bytedance.md"
     },
+    "practice/b2b-digital-procurement-governance": {
+      "id": "practice/b2b-digital-procurement-governance",
+      "uri": "urn:mtn:practice/b2b-digital-procurement-governance",
+      "type": "practice",
+      "label_ja": "BtoB取引の電子化・受発注運用",
+      "label_en": "Digital procurement and order-management operations for B2B transactions",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「BtoB取引の電子化・受発注運用」「B2B digital procurement governance」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "BtoB-ECの拡大に対応して受発注・権限・証憑・障害対応を管理する運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/b2b-ecommerce-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/b2b-digital-procurement-governance.md"
+    },
     "practice/cashless-checkout-design": {
       "id": "practice/cashless-checkout-design",
       "uri": "urn:mtn:practice/cashless-checkout-design",
@@ -352,6 +393,48 @@
       "updated": "2026-08-11",
       "path": "entities/practices/creator-rights-governance.md"
     },
+    "practice/domestic-travel-experience-distribution": {
+      "id": "practice/domestic-travel-experience-distribution",
+      "uri": "urn:mtn:practice/domestic-travel-experience-distribution",
+      "type": "practice",
+      "label_ja": "国内旅行の地域分散・体験商品設計",
+      "label_en": "Regional distribution and experience design for domestic travel",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「国内旅行の地域分散・体験商品設計」「domestic travel experience distribution」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "国内旅行消費の回復・拡大に合わせて地域と体験を組み合わせる運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/kankocho/news02_00074.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/domestic-travel-consumption-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.mlit.go.jp/kankocho/news02_00074.html"
+        }
+      ],
+      "sources": [
+        "https://www.mlit.go.jp/kankocho/news02_00074.html",
+        "https://www.mlit.go.jp/kankocho/content/001981888.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/domestic-travel-experience-distribution.md"
+    },
     "practice/fashion-takeback-repair-resale": {
       "id": "practice/fashion-takeback-repair-resale",
       "uri": "urn:mtn:practice/fashion-takeback-repair-resale",
@@ -394,6 +477,47 @@
       "status": "draft",
       "updated": "2026-08-11",
       "path": "entities/practices/fashion-takeback-repair-resale.md"
+    },
+    "practice/food-ecommerce-fulfillment-retention": {
+      "id": "practice/food-ecommerce-fulfillment-retention",
+      "uri": "urn:mtn:practice/food-ecommerce-fulfillment-retention",
+      "type": "practice",
+      "label_ja": "食品ECの配送・定期購入・受取体験運用",
+      "label_en": "Delivery, subscription, and receiving-experience operations for food e-commerce",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「食品ECの配送・定期購入・受取体験運用」「food e-commerce fulfillment retention」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "食品・飲料・酒類ECの拡大に対応して配送・受取・継続購入を管理する運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/food-ecommerce-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/food-ecommerce-fulfillment-retention.md"
     },
     "practice/food-loss-demand-forecast-markdown-donation": {
       "id": "practice/food-loss-demand-forecast-markdown-donation",
@@ -753,6 +877,48 @@
       "status": "draft",
       "updated": "2026-08-10",
       "path": "entities/practices/idfa-targeting.md"
+    },
+    "practice/inbound-tourism-localization": {
+      "id": "practice/inbound-tourism-localization",
+      "uri": "urn:mtn:practice/inbound-tourism-localization",
+      "type": "practice",
+      "label_ja": "訪日客向け地域・多言語体験設計",
+      "label_en": "Localized and multilingual experience design for inbound visitors",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「訪日客向け地域・多言語体験設計」「inbound tourism localization」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2025~",
+        "end": "..",
+        "display": "訪日客数と消費額の拡大に対して、地域・言語・滞在目的に合わせて体験を設計する運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/kankocho/page01_00056.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/inbound-tourism-demand-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.mlit.go.jp/kankocho/page01_00056.html"
+        }
+      ],
+      "sources": [
+        "https://www.mlit.go.jp/kankocho/page01_00056.html",
+        "https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/inbound-tourism-localization.md"
     },
     "practice/music-content-operations": {
       "id": "practice/music-content-operations",
@@ -1235,6 +1401,48 @@
       "updated": "2026-08-11",
       "path": "entities/practices/retail-media.md"
     },
+    "practice/reuse-c2c-trust-operations": {
+      "id": "practice/reuse-c2c-trust-operations",
+      "uri": "urn:mtn:practice/reuse-c2c-trust-operations",
+      "type": "practice",
+      "label_ja": "リユース・CtoCの検品・真贋・配送・返品運用",
+      "label_en": "Inspection, authenticity, delivery, and returns operations for reuse and C2C",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「リユース・CtoCの検品・真贋・配送・返品運用」「reuse C2C trust operations」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "リユース・CtoC取引の拡大に対応して品質と取引安全を管理する運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.env.go.jp/content/000327691.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/reuse-c2c-market-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.env.go.jp/content/000327691.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.env.go.jp/recycle/circul/reuse/",
+        "https://www.env.go.jp/content/000327691.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/reuse-c2c-trust-operations.md"
+    },
     "practice/school-generative-ai-policy-training-evaluation": {
       "id": "practice/school-generative-ai-policy-training-evaluation",
       "uri": "urn:mtn:practice/school-generative-ai-policy-training-evaluation",
@@ -1277,6 +1485,47 @@
       "status": "draft",
       "updated": "2026-08-11",
       "path": "entities/practices/school-generative-ai-policy-training-evaluation.md"
+    },
+    "practice/single-person-service-design": {
+      "id": "practice/single-person-service-design",
+      "uri": "urn:mtn:practice/single-person-service-design",
+      "type": "practice",
+      "label_ja": "単独世帯向け小容量・個別配送・継続利用設計",
+      "label_en": "Small-pack, individual-delivery, and retention design for single-person households",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「単独世帯向け小容量・個別配送・継続利用設計」「single-person service design」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "単独世帯の増加を前提に、容量・配送・契約単位を個人生活に合わせる運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/single-person-household-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/single-person-service-design.md"
     },
     "practice/sleep-health-check-intervention": {
       "id": "practice/sleep-health-check-intervention",
@@ -3527,6 +3776,13 @@
       "source": null
     },
     {
+      "from": "practice/b2b-digital-procurement-governance",
+      "type": "responds_to",
+      "to": "trend/b2b-ecommerce-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+    },
+    {
       "from": "practice/cashless-checkout-design",
       "type": "responds_to",
       "to": "trend/cashless-payment-expansion",
@@ -3562,11 +3818,25 @@
       "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/seisaku/r06_04/"
     },
     {
+      "from": "practice/domestic-travel-experience-distribution",
+      "type": "responds_to",
+      "to": "trend/domestic-travel-consumption-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.mlit.go.jp/kankocho/news02_00074.html"
+    },
+    {
       "from": "practice/fashion-takeback-repair-resale",
       "type": "responds_to",
       "to": "trend/sustainable-fashion-behavior",
       "certainty": "hypothesis",
       "source": "https://www.env.go.jp/press/press_03475.html"
+    },
+    {
+      "from": "practice/food-ecommerce-fulfillment-retention",
+      "type": "responds_to",
+      "to": "trend/food-ecommerce-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
     },
     {
       "from": "practice/food-loss-demand-forecast-markdown-donation",
@@ -3623,6 +3893,13 @@
       "to": "event/apple-att",
       "certainty": "attested",
       "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/"
+    },
+    {
+      "from": "practice/inbound-tourism-localization",
+      "type": "responds_to",
+      "to": "trend/inbound-tourism-demand-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.mlit.go.jp/kankocho/page01_00056.html"
     },
     {
       "from": "practice/music-content-operations",
@@ -3700,11 +3977,25 @@
       "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html"
     },
     {
+      "from": "practice/reuse-c2c-trust-operations",
+      "type": "responds_to",
+      "to": "trend/reuse-c2c-market-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.env.go.jp/content/000327691.pdf"
+    },
+    {
       "from": "practice/school-generative-ai-policy-training-evaluation",
       "type": "responds_to",
       "to": "trend/school-generative-ai-governance",
       "certainty": "hypothesis",
       "source": "https://www.mext.go.jp/zyoukatsu/ai/about.html"
+    },
+    {
+      "from": "practice/single-person-service-design",
+      "type": "responds_to",
+      "to": "trend/single-person-household-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf"
     },
     {
       "from": "practice/sleep-health-check-intervention",
@@ -3742,6 +4033,12 @@
       "derived": true
     },
     {
+      "from": "trend/b2b-ecommerce-expansion",
+      "type": "answered_by",
+      "to": "practice/b2b-digital-procurement-governance",
+      "derived": true
+    },
+    {
       "from": "trend/cashless-payment-expansion",
       "type": "answered_by",
       "to": "practice/cashless-checkout-design",
@@ -3772,9 +4069,21 @@
       "derived": true
     },
     {
+      "from": "trend/domestic-travel-consumption-expansion",
+      "type": "answered_by",
+      "to": "practice/domestic-travel-experience-distribution",
+      "derived": true
+    },
+    {
       "from": "trend/sustainable-fashion-behavior",
       "type": "answered_by",
       "to": "practice/fashion-takeback-repair-resale",
+      "derived": true
+    },
+    {
+      "from": "trend/food-ecommerce-expansion",
+      "type": "answered_by",
+      "to": "practice/food-ecommerce-fulfillment-retention",
       "derived": true
     },
     {
@@ -3823,6 +4132,12 @@
       "from": "event/apple-att",
       "type": "killed",
       "to": "practice/idfa-targeting",
+      "derived": true
+    },
+    {
+      "from": "trend/inbound-tourism-demand-expansion",
+      "type": "answered_by",
+      "to": "practice/inbound-tourism-localization",
       "derived": true
     },
     {
@@ -3886,9 +4201,21 @@
       "derived": true
     },
     {
+      "from": "trend/reuse-c2c-market-expansion",
+      "type": "answered_by",
+      "to": "practice/reuse-c2c-trust-operations",
+      "derived": true
+    },
+    {
       "from": "trend/school-generative-ai-governance",
       "type": "answered_by",
       "to": "practice/school-generative-ai-policy-training-evaluation",
+      "derived": true
+    },
+    {
+      "from": "trend/single-person-household-expansion",
+      "type": "answered_by",
+      "to": "practice/single-person-service-design",
       "derived": true
     },
     {
