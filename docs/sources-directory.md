@@ -29,6 +29,8 @@
 |---|---|---|---|
 | Apple Developer — User Privacy and Data Use | ATT の仕様（トラッキングの定義・許可の要件） | https://developer.apple.com/app-store/user-privacy-and-data-use/ | **確認済み**（2026-08-10 実読） |
 | Apple Developer — AppTrackingTransparency | ATT フレームワークの技術文書 | https://developer.apple.com/documentation/apptrackingtransparency | **確認済み**（2026-08-10 到達確認） |
+| EUR-Lex — Regulation (EU) 2016/679（GDPR） | 個人データ処理の適法根拠、同意、ダイレクトマーケティングへの異議申立て、適用日 | https://eur-lex.europa.eu/eli/reg/2016/679/oj | **確認済み**（2026-08-11 実読） |
+| 個人情報保護委員会 — 第三者提供時の確認・記録義務編 | 個人データの第三者提供における取得経緯の確認・記録義務 | https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/ | **確認済み**（2026-08-11 実読） |
 | 各社の決算・IR（EDINET／各社IRページ） | 事業セグメントの数字。トレンドの規模の傍証 | https://disclosure2.edinet-fsa.go.jp/ | **未確認**（執筆環境から到達できず） |
 
 ## 層3: 業界団体・学術（`independent`）
