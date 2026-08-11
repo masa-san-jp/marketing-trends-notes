@@ -760,6 +760,78 @@
       "updated": "2026-08-10",
       "path": "entities/trends/short-video-mainstream.md"
     },
+    "trend/sustainable-fashion-behavior": {
+      "id": "trend/sustainable-fashion-behavior",
+      "uri": "urn:mtn:trend/sustainable-fashion-behavior",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "emerging",
+      "market": "fashion-beauty",
+      "geo": "japan",
+      "label_ja": "サステナブルファッションへの関心・循環行動",
+      "label_en": "Interest in and circular behavior around sustainable fashion",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「サステナブルファッション」「sustainable fashion behavior」を確認したが、日本の生活者の関心・循環行動の変化そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2025~",
+        "end": "..",
+        "display": "環境省の令和7年度調査と2025年版衣類マテリアルフローで観測できる局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "サステナブルファッション",
+        "note": "「サステナブルファッションへの関心・循環行動」は、環境省の調査項目と衣類の循環フローを要約するための記述的なラベル。生活者がこの複合語を自称するかは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-09-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.env.go.jp/policy/sustainable_fashion/about/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.env.go.jp/policy/sustainable_fashion/about/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        },
+        {
+          "field": "time",
+          "source": "https://www.env.go.jp/content/000389225.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の同テーマ独立調査で、サステナブルファッションの認知・関心層が2025年調査の約6割・約4割を大きく下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.env.go.jp/policy/sustainable_fashion/about/",
+        "https://www.env.go.jp/content/000389225.pdf",
+        "https://www.env.go.jp/press/press_03475.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/sustainable-fashion-behavior.md"
+    },
     "trend/tracking-restrictions": {
       "id": "trend/tracking-restrictions",
       "uri": "urn:mtn:trend/tracking-restrictions",
