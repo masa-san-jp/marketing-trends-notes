@@ -28,6 +28,30 @@
       "updated": "2026-08-10",
       "path": "entities/channels/tiktok.md"
     },
+    "channel/x": {
+      "id": "channel/x",
+      "uri": "urn:mtn:channel/x",
+      "type": "channel",
+      "label_ja": "X",
+      "label_en": "X",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "X の項目は確認していない（観測チャネルとして記録）"
+      },
+      "time": {
+        "start": "2006~",
+        "end": "..",
+        "display": "X（旧Twitter）の公開会話チャネル"
+      },
+      "relations": [],
+      "sources": [
+        "https://help.x.com/en/using-x/x-trending-faqs",
+        "https://help.x.com/en/resources/recommender-systems/trends-recommendations"
+      ],
+      "status": "draft",
+      "updated": "2026-08-12",
+      "path": "entities/channels/x.md"
+    },
     "channel/youtube": {
       "id": "channel/youtube",
       "uri": "urn:mtn:channel/youtube",
