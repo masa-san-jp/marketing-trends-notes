@@ -24,6 +24,7 @@ config/            markets.yaml = カテゴリ12・地理6バケットと受け�
 docs/
   schema.md              型・必須項目・関係語彙・evidence・鮮度。書く前に読む
   investigation-task.md  1件の調査の手順（Sonnet が単独で1件を終えられる粒度）
+  local-environment.md   X APIをローカルで使うための環境準備
   freshness.md           鮮度と再検証の運用（このKB固有の肝）
   sources-directory.md   出典カタログ（層別。確認済みと未確認を分けてある）
   for-other-personas.md  読み手向けの入口。引用してよい記述の区別
@@ -70,6 +71,7 @@ python3 tools/build_graph.py             # 検証 + グラフ・被覆マップ�
 python3 tools/audit.py                   # 鮮度切れ・食い違い → 次に調べること
 python3 tools/observe_social.py --check  # SNS空気感ログの形式検証
 python3 tools/observe_social.py --summary # SNS空気感ログの集計
+python3 tools/check_x_env.py --require-token # ローカルX API環境の確認
 python3 tools/audit.py --dry-run --now $(date +%F)   # 生きた時計で鮮度を見る
 python3 tools/bundle.py --search リテールメディア     # 語で探す（IDを知らなくていい）
 python3 tools/bundle.py trend/<slug>                 # 1件とその周辺を1文書で

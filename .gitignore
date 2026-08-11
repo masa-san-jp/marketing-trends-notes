@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+
+# Local credentials and environment overrides. Keep the shareable template below.
+.env
+.env.*
+!.env.example

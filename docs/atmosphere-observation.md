@@ -109,3 +109,5 @@ X はトレンド判定に投稿本文、投稿者の情報や文脈、継続時
 
 ログの既定位置は `data/social-observations.jsonl`。観測者は必要に応じて手動記録や承認済みの
 APIエクスポートを取り込めるが、このリポジトリはXの取得認証やスクレイピングを自動化しない。
+
+APIを使うローカル環境の準備は [local-environment.md](local-environment.md) を参照する。
