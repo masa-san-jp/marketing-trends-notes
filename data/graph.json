@@ -157,6 +157,48 @@
       "updated": "2026-08-11",
       "path": "entities/practices/b2b-digital-procurement-governance.md"
     },
+    "practice/care-service-family-coordination": {
+      "id": "practice/care-service-family-coordination",
+      "uri": "urn:mtn:practice/care-service-family-coordination",
+      "type": "practice",
+      "label_ja": "介護サービスの本人・家族・事業者連携",
+      "label_en": "Client, family, and provider coordination for care services",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「介護サービスの本人・家族・事業者連携」「care service client family provider coordination」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "介護サービス利用の拡大に合わせて、本人・家族・ケアマネジャー・事業者の情報と選択をつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-02審査分"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/care-service-utilization-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf",
+        "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/care-service-family-coordination.md"
+    },
     "practice/cashless-checkout-design": {
       "id": "practice/cashless-checkout-design",
       "uri": "urn:mtn:practice/cashless-checkout-design",
@@ -728,6 +770,47 @@
       "updated": "2026-08-11",
       "path": "entities/practices/food-loss-demand-forecast-markdown-donation.md"
     },
+    "practice/foodservice-omnichannel-menu-design": {
+      "id": "practice/foodservice-omnichannel-menu-design",
+      "uri": "urn:mtn:practice/foodservice-omnichannel-menu-design",
+      "type": "practice",
+      "label_ja": "外食の店内・持ち帰り・配達横断設計",
+      "label_en": "Cross-channel menu and service design for foodservice",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「外食の店内・持ち帰り・配達横断設計」「foodservice cross-channel menu design」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "外食需要の回復局面で、店内・持ち帰り・配達・予約を業態と価格に合わせて組み合わせる運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/foodservice-demand-recovery",
+          "certainty": "hypothesis",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html"
+        }
+      ],
+      "sources": [
+        "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/foodservice-omnichannel-menu-design.md"
+    },
     "practice/foodtech-safety-label-acceptance": {
       "id": "practice/foodtech-safety-label-acceptance",
       "uri": "urn:mtn:practice/foodtech-safety-label-acceptance",
@@ -1128,6 +1211,47 @@
       "updated": "2026-08-11",
       "path": "entities/practices/japanese-music-overseas-localization.md"
     },
+    "practice/live-experience-journey-design": {
+      "id": "practice/live-experience-journey-design",
+      "uri": "urn:mtn:practice/live-experience-journey-design",
+      "type": "practice",
+      "label_ja": "ライブ参加前後の体験・物販設計",
+      "label_en": "Pre- and post-event experience and merchandise design",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「ライブ参加前後の体験・物販設計」「live event journey and merchandise design」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "ライブ・体験型エンタメ消費の拡大に合わせて、チケット・会場・物販・配信・ファン接点をつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/live-entertainment-experience-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html"
+        }
+      ],
+      "sources": [
+        "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/live-experience-journey-design.md"
+    },
     "practice/music-content-operations": {
       "id": "practice/music-content-operations",
       "uri": "urn:mtn:practice/music-content-operations",
@@ -1502,6 +1626,89 @@
       "status": "draft",
       "updated": "2026-08-11",
       "path": "entities/practices/outbound-travel-package-design.md"
+    },
+    "practice/parcel-receiving-choice-design": {
+      "id": "practice/parcel-receiving-choice-design",
+      "uri": "urn:mtn:practice/parcel-receiving-choice-design",
+      "type": "practice",
+      "label_ja": "宅配の受取方法・再配達削減設計",
+      "label_en": "Delivery-choice and redelivery-reduction design",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「宅配の受取方法・再配達削減設計」「parcel delivery choice redelivery reduction design」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "宅配取扱量の拡大に合わせて、宅配ボックス・置き配・日時指定・店舗受取を選びやすくする運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-04"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/parcel-delivery-volume-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+        }
+      ],
+      "sources": [
+        "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html",
+        "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/parcel-receiving-choice-design.md"
+    },
+    "practice/parental-leave-workflow-governance": {
+      "id": "practice/parental-leave-workflow-governance",
+      "uri": "urn:mtn:practice/parental-leave-workflow-governance",
+      "type": "practice",
+      "label_ja": "育児休業・復職の業務フロー管理",
+      "label_en": "Parental-leave and return-to-work workflow governance",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「育児休業・復職の業務フロー管理」「parental leave return-to-work workflow governance」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "育児休業の取得前・取得中・復職後を、勤怠・引継ぎ・評価・柔軟な勤務とつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/parental-leave-normalization",
+          "certainty": "hypothesis",
+          "source": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2"
+        }
+      ],
+      "sources": [
+        "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/parental-leave-workflow-governance.md"
     },
     "practice/plastic-circular-design-takeback": {
       "id": "practice/plastic-circular-design-takeback",
@@ -2074,6 +2281,48 @@
       "status": "draft",
       "updated": "2026-08-11",
       "path": "entities/practices/video-rights-data-sharing.md"
+    },
+    "practice/women-worklife-service-design": {
+      "id": "practice/women-worklife-service-design",
+      "uri": "urn:mtn:practice/women-worklife-service-design",
+      "type": "practice",
+      "label_ja": "就業・家事・子育て制約別のサービス設計",
+      "label_en": "Service design for employment, household, and parenting constraints",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「就業・家事・子育て制約別のサービス設計」「service design for working women household constraints」で検索したが、この運用の型そのもののWikidata項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "女性就業の拡大に合わせて、時間・移動・家事・子育て制約を前提に商品・サービスを設計する運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年平均"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/women-employment-expansion",
+          "certainty": "hypothesis",
+          "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.stat.go.jp/data/roudou/",
+        "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/women-worklife-service-design.md"
     },
     "source/apple-user-privacy-page": {
       "id": "source/apple-user-privacy-page",
@@ -5549,6 +5798,13 @@
       "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
     },
     {
+      "from": "practice/care-service-family-coordination",
+      "type": "responds_to",
+      "to": "trend/care-service-utilization-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf"
+    },
+    {
       "from": "practice/cashless-checkout-design",
       "type": "responds_to",
       "to": "trend/cashless-payment-expansion",
@@ -5640,6 +5896,13 @@
       "source": "https://www.env.go.jp/press/press_00002.html"
     },
     {
+      "from": "practice/foodservice-omnichannel-menu-design",
+      "type": "responds_to",
+      "to": "trend/foodservice-demand-recovery",
+      "certainty": "hypothesis",
+      "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html"
+    },
+    {
       "from": "practice/foodtech-safety-label-acceptance",
       "type": "responds_to",
       "to": "trend/foodtech-alternative-protein",
@@ -5703,6 +5966,13 @@
       "source": "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf"
     },
     {
+      "from": "practice/live-experience-journey-design",
+      "type": "responds_to",
+      "to": "trend/live-entertainment-experience-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html"
+    },
+    {
       "from": "practice/music-content-operations",
       "type": "responds_to",
       "to": "trend/music-streaming-expansion",
@@ -5762,6 +6032,20 @@
       "to": "trend/outbound-travel-recovery",
       "certainty": "hypothesis",
       "source": "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf"
+    },
+    {
+      "from": "practice/parcel-receiving-choice-design",
+      "type": "responds_to",
+      "to": "trend/parcel-delivery-volume-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+    },
+    {
+      "from": "practice/parental-leave-workflow-governance",
+      "type": "responds_to",
+      "to": "trend/parental-leave-normalization",
+      "certainty": "hypothesis",
+      "source": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2"
     },
     {
       "from": "practice/plastic-circular-design-takeback",
@@ -5855,6 +6139,13 @@
       "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/"
     },
     {
+      "from": "practice/women-worklife-service-design",
+      "type": "responds_to",
+      "to": "trend/women-employment-expansion",
+      "certainty": "hypothesis",
+      "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf"
+    },
+    {
       "from": "trend/short-video-mainstream",
       "type": "originated_on",
       "to": "channel/tiktok"
@@ -5886,6 +6177,12 @@
       "from": "trend/b2b-ecommerce-expansion",
       "type": "answered_by",
       "to": "practice/b2b-digital-procurement-governance",
+      "derived": true
+    },
+    {
+      "from": "trend/care-service-utilization-expansion",
+      "type": "answered_by",
+      "to": "practice/care-service-family-coordination",
       "derived": true
     },
     {
@@ -5967,6 +6264,12 @@
       "derived": true
     },
     {
+      "from": "trend/foodservice-demand-recovery",
+      "type": "answered_by",
+      "to": "practice/foodservice-omnichannel-menu-design",
+      "derived": true
+    },
+    {
       "from": "trend/foodtech-alternative-protein",
       "type": "answered_by",
       "to": "practice/foodtech-safety-label-acceptance",
@@ -6021,6 +6324,12 @@
       "derived": true
     },
     {
+      "from": "trend/live-entertainment-experience-expansion",
+      "type": "answered_by",
+      "to": "practice/live-experience-journey-design",
+      "derived": true
+    },
+    {
       "from": "trend/music-streaming-expansion",
       "type": "answered_by",
       "to": "practice/music-content-operations",
@@ -6066,6 +6375,18 @@
       "from": "trend/outbound-travel-recovery",
       "type": "answered_by",
       "to": "practice/outbound-travel-package-design",
+      "derived": true
+    },
+    {
+      "from": "trend/parcel-delivery-volume-expansion",
+      "type": "answered_by",
+      "to": "practice/parcel-receiving-choice-design",
+      "derived": true
+    },
+    {
+      "from": "trend/parental-leave-normalization",
+      "type": "answered_by",
+      "to": "practice/parental-leave-workflow-governance",
       "derived": true
     },
     {
@@ -6144,6 +6465,12 @@
       "from": "trend/video-distribution-expansion",
       "type": "answered_by",
       "to": "practice/video-rights-data-sharing",
+      "derived": true
+    },
+    {
+      "from": "trend/women-employment-expansion",
+      "type": "answered_by",
+      "to": "practice/women-worklife-service-design",
       "derived": true
     }
   ]
