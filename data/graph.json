@@ -321,6 +321,49 @@
       "updated": "2026-08-10",
       "path": "entities/practices/organic-post-boosting.md"
     },
+    "practice/plastic-circular-design-takeback": {
+      "id": "practice/plastic-circular-design-takeback",
+      "uri": "urn:mtn:practice/plastic-circular-design-takeback",
+      "type": "practice",
+      "label_ja": "プラスチック製品の循環設計・自主回収・再資源化連携",
+      "label_en": "Circular plastic design, take-back, and recycling integration",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「プラスチック製品の循環設計・自主回収・再資源化連携」「circular plastic product design take-back recycling」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "プラスチック資源循環法の施行以降に制度対応として具体化する運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.env.go.jp/recycle/plastic/circulation.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2022-04-01"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/plastic-resource-circulation",
+          "certainty": "hypothesis",
+          "source": "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html"
+        }
+      ],
+      "sources": [
+        "https://www.env.go.jp/recycle/plastic/circulation.html",
+        "https://plastic-circulation.env.go.jp/",
+        "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/plastic-circular-design-takeback.md"
+    },
     "practice/recurring-cost-transparency": {
       "id": "practice/recurring-cost-transparency",
       "uri": "urn:mtn:practice/recurring-cost-transparency",
@@ -1061,6 +1104,13 @@
       "to": "channel/tiktok"
     },
     {
+      "from": "practice/plastic-circular-design-takeback",
+      "type": "responds_to",
+      "to": "trend/plastic-resource-circulation",
+      "certainty": "hypothesis",
+      "source": "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html"
+    },
+    {
       "from": "practice/recurring-cost-transparency",
       "type": "responds_to",
       "to": "trend/anxiety-multiplication",
@@ -1137,6 +1187,12 @@
       "from": "trend/short-video-mainstream",
       "type": "answered_by",
       "to": "practice/organic-post-boosting",
+      "derived": true
+    },
+    {
+      "from": "trend/plastic-resource-circulation",
+      "type": "answered_by",
+      "to": "practice/plastic-circular-design-takeback",
       "derived": true
     },
     {
