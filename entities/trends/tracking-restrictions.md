@@ -22,10 +22,14 @@ naming:
   original_label: クッキーレス／ポストクッキー
   note: "業界内で自然発生的に定着した呼称で、当事者（広告主・媒体・代理店）自身が使う。初出の特定は未確認。「クッキーレス」はブラウザ側、ATT はアプリ側と、指す範囲が呼称ごとに微妙に違う点に注意"
 freshness:
-  valid_as_of: "2026-08-10"
+  valid_as_of: "2026-08-11"
   recheck_by: "2027-02-10"
 evidence:
   - {field: kind, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/", certainty: attested, retrieved: primary, as_of: "2026-08-10"}
+  - {field: kind, source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj", certainty: attested, retrieved: primary, as_of: "2018-05-25"}
+  - {field: kind, source: "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/", certainty: attested, retrieved: primary, as_of: "2023-12"}
+  - {field: time, source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj", certainty: attested, retrieved: primary, as_of: "2018-05-25"}
+  - {field: stage, source: "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/", certainty: attested, retrieved: primary, as_of: "2023-12"}
 predictions:
   - {claim: "2027年末までに、日本の主要広告主の間で計測の主軸がユーザー単位のトラッキングからMMM・インクリメンタリティ計測側へ寄る（業界団体・独立調査でその旨が確認できる）", by: "2027-12", resolved: null, outcome: null}
 relations: []
@@ -44,20 +48,25 @@ updated: 2026-08-10
 広告の前提だったこの手法が、規制とプラットフォームの制度変更で段階的に制約され、**制約がある状態が
 例外ではなく常態**になった。
 
-確定分として一次確認できているのは Apple の ATT（[event/apple-att](../events/apple-att.md)）:
-iOS 14.5 以降、他社データとの紐づけ（トラッキング）と IDFA アクセスにユーザーの明示的許可が必須
-（[Apple 開発者文書](https://developer.apple.com/app-store/user-privacy-and-data-use/)、2026-08-10 実読）。
+2018年5月25日に適用されたEU GDPRは、個人データ処理の適法根拠を定め、ダイレクトマーケティングに
+関係するプロファイリングを含む処理への異議申立てを明文化している（[EUR-Lexの規則本文](https://eur-lex.europa.eu/eli/reg/2016/679/oj)、
+2026-08-11 実読）。日本でも、個人情報保護委員会が個人データの第三者提供について、取得経緯の確認・
+記録などの義務をガイドラインで具体化している（[第三者提供時の確認・記録義務編](https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/)、
+2026-08-11 実読）。
 
-**未確認**: GDPR（2018年適用）・改正個人情報保護法・Safari ITP・Chrome のサードパーティクッキー
-廃止方針とその転換（2024年に廃止を撤回したとされる）は、執筆環境から一次情報に到達できず未確認。
-この trend の全体像はこれらを併せて描く必要があり、現状は ATT の一点でしか裏が取れていない。
+さらに Apple の ATT（[event/apple-att](../events/apple-att.md)）では、iOS 14.5以降、他社データとの
+紐づけ（トラッキング）とIDFAアクセスにユーザーの明示的許可が必要になった（[Apple 開発者文書](https://developer.apple.com/app-store/user-privacy-and-data-use/)、
+2026-08-11 実読）。許可が無い場合のIDFA値、ハッシュ化メール等の代替識別子、第三者SDKにも適用範囲が及ぶことが明記されている。
+
+**未確認**: Safari ITPの段階的な制約と、Chromeのサードパーティクッキー方針・その転換は、この作業では
+一次資料まで追えていない。したがって、ブラウザ側の制約がモバイル側と同じ強さ・速度で進んだとは断定しない。
 
 ## kind と stage の判定
 
 **kind: regulation-driven とした。** 判定表の第1問「規制・制度の施行日・条文を指せるか」に対し、
 ATT はプラットフォームの規約であって行政規制ではない——ここに迷いがある。だが事業者から見れば
 「外部から強制された制度変更で、応答の選択肢がない」という構造は行政規制と同じ側にあり、
-GDPR・個人情報保護法という本来の行政規制も同じ束に入るため、regulation-driven を採る。
+GDPR・個人情報保護法の第三者提供ルールという行政側の制約も同じ束に入るため、regulation-driven を採る。
 tech-enabled（技術が可能にした変化）ではない——技術的には従来の手法のほうが「可能」で、
 制度がそれを止めた。
 
@@ -68,8 +77,9 @@ tech-enabled（技術が可能にした変化）ではない——技術的に�
 
 ## 時間
 
-始点は `2018~`（およそ）。GDPR 適用（2018年5月とされる・未確認）を起点の目安とし、ATT（2021）で
-モバイルアプリ側に波及、以降も制約が積み増される。終点は `..`（継続中）。
+始点は、GDPRが適用された `2018~` とした。GDPRの適用日（2018年5月25日）は規則本文で確認でき、
+ATT（2021）でモバイルアプリ側に波及した。以降も第三者提供、アプリ識別子、SDK、ブラウザの扱いが
+別々の制度・仕様で更新されているため、終点は `..`（継続中）とする。
 
 ## チャネルと伝播
 
@@ -87,7 +97,7 @@ tech-enabled（技術が可能にした変化）ではない——技術的に�
 
 ## 未着手
 
-- GDPR・改正個情法・ITP・Chrome の方針転換の一次確認（この trend の本体。ATT 以外が全部未確認）
+- Safari ITP・Chromeのサードパーティクッキー方針と転換の一次確認（ブラウザ側の制約の整理）
 - ATT 許可率の独立した実測を探す（ベンダー数字しか無い可能性が高い——その場合は vendor と明記して置く）
 - 応答する practice の整理: MMM 回帰・リテールメディア（[practice/retail-media](../practices/retail-media.md)）・
   ファーストパーティデータ活用を responds_to で繋ぐ

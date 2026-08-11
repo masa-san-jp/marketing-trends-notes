@@ -2860,7 +2860,7 @@
         "note": "業界内で自然発生的に定着した呼称で、当事者（広告主・媒体・代理店）自身が使う。初出の特定は未確認。「クッキーレス」はブラウザ側、ATT はアプリ側と、指す範囲が呼称ごとに微妙に違う点に注意"
       },
       "freshness": {
-        "valid_as_of": "2026-08-10",
+        "valid_as_of": "2026-08-11",
         "recheck_by": "2027-02-10"
       },
       "evidence": [
@@ -2870,6 +2870,34 @@
           "certainty": "attested",
           "retrieved": "primary",
           "as_of": "2026-08-10"
+        },
+        {
+          "field": "kind",
+          "source": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2018-05-25"
+        },
+        {
+          "field": "kind",
+          "source": "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2023-12"
+        },
+        {
+          "field": "time",
+          "source": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2018-05-25"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2023-12"
         }
       ],
       "predictions": [
