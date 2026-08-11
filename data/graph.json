@@ -499,6 +499,57 @@
       "updated": "2026-08-11",
       "path": "entities/practices/online-financial-crime-controls.md"
     },
+    "practice/online-marketplace-governance": {
+      "id": "practice/online-marketplace-governance",
+      "uri": "urn:mtn:practice/online-marketplace-governance",
+      "type": "practice",
+      "label_ja": "オンラインモールの規約・手数料・出品停止・異議対応運用",
+      "label_en": "Marketplace governance for terms, fees, listing suspension, and appeals",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「オンラインモールの規約・手数料・出品停止・異議対応運用」「marketplace governance terms fees suspension appeals」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "オンラインモールの取引透明化に対応し、出店条件の説明から変更通知・異議対応・影響記録までをつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.online-mall.meti.go.jp/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        },
+        {
+          "field": "saturation",
+          "source": "https://www.online-mall.meti.go.jp/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/online-marketplace-transparency",
+          "certainty": "hypothesis",
+          "source": "https://www.online-mall.meti.go.jp/"
+        }
+      ],
+      "sources": [
+        "https://www.online-mall.meti.go.jp/",
+        "https://www.meti.go.jp/policy/mono_info_service/digitalplatform/provider.html",
+        "https://www.meti.go.jp/press/2025/12/20251217001/20251217001.html",
+        "https://www.meti.go.jp/press/2026/06/20260612004/20260612004.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/online-marketplace-governance.md"
+    },
     "practice/organic-post-boosting": {
       "id": "practice/organic-post-boosting",
       "uri": "urn:mtn:practice/organic-post-boosting",
@@ -1859,6 +1910,13 @@
       "source": "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html"
     },
     {
+      "from": "practice/online-marketplace-governance",
+      "type": "responds_to",
+      "to": "trend/online-marketplace-transparency",
+      "certainty": "hypothesis",
+      "source": "https://www.online-mall.meti.go.jp/"
+    },
+    {
       "from": "practice/organic-post-boosting",
       "type": "responds_to",
       "to": "trend/short-video-mainstream",
@@ -1985,6 +2043,12 @@
       "from": "trend/online-financial-crime-governance",
       "type": "answered_by",
       "to": "practice/online-financial-crime-controls",
+      "derived": true
+    },
+    {
+      "from": "trend/online-marketplace-transparency",
+      "type": "answered_by",
+      "to": "practice/online-marketplace-governance",
       "derived": true
     },
     {
