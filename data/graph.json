@@ -848,6 +848,72 @@
       "updated": "2026-08-11",
       "path": "entities/trends/food-loss-reduction-institutionalization.md"
     },
+    "trend/functional-food-safety-governance": {
+      "id": "trend/functional-food-safety-governance",
+      "uri": "urn:mtn:trend/functional-food-safety-governance",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "growing",
+      "market": "health-wellness",
+      "geo": "japan",
+      "label_ja": "機能性表示食品の安全・表示管理強化",
+      "label_en": "Strengthening safety and claims governance for foods with function claims",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「機能性表示食品の安全・表示管理強化」「safety and claims governance for foods with function claims」を確認したが、この制度対応の変化そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2024~",
+        "end": "..",
+        "display": "紅麹関連事案を受けた2024年以降の制度見直し"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "機能性表示食品の制度見直し",
+        "note": "消費者が自称する呼称ではなく、消費者庁の制度改正・届出管理の動きをこのKBでまとめた名称"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.caa.go.jp/notice/entry/038499/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-06-27"
+        },
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-08-30"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.caa.go.jp/notice/entry/043728/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-10-01"
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/food_labeling/foods_with_function_claims",
+        "https://www.caa.go.jp/notice/entry/038499/",
+        "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf",
+        "https://www.caa.go.jp/notice/entry/041585/",
+        "https://www.caa.go.jp/notice/entry/043728/"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/functional-food-safety-governance.md"
+    },
     "trend/generative-ai-business-adoption": {
       "id": "trend/generative-ai-business-adoption",
       "uri": "urn:mtn:trend/generative-ai-business-adoption",
