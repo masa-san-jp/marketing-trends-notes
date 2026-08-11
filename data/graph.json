@@ -1167,6 +1167,71 @@
       "updated": "2026-08-11",
       "path": "entities/trends/plastic-resource-circulation.md"
     },
+    "trend/school-generative-ai-governance": {
+      "id": "trend/school-generative-ai-governance",
+      "uri": "urn:mtn:trend/school-generative-ai-governance",
+      "type": "trend",
+      "kind": "regulation-driven",
+      "stage": "growing",
+      "market": "education",
+      "geo": "japan",
+      "label_ja": "学校教育における生成AI利用の制度化",
+      "label_en": "Institutionalization of generative AI use in school education",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「学校教育における生成AI利用の制度化」「institutionalization of generative AI use in school education」を確認したが、この政策・運用の変化そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "2023年の暫定ガイドラインから2024年12月のVer.2.0改訂以降"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "学校現場における生成AIの利活用",
+        "note": "学校関係者が自称する市場カテゴリではなく、文部科学省のガイドラインと実証事業の積み上がりをこのKBでまとめた名称"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mext.go.jp/a_menu/other/mext_02412.html?s=03",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-12-26"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-12-26"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mext.go.jp/zyoukatsu/ai/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mext.go.jp/zyoukatsu/ai/",
+        "https://www.mext.go.jp/zyoukatsu/ai/about.html",
+        "https://www.mext.go.jp/a_menu/other/mext_02412.html?s=03",
+        "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/school-generative-ai-governance.md"
+    },
     "trend/short-video-mainstream": {
       "id": "trend/short-video-mainstream",
       "uri": "urn:mtn:trend/short-video-mainstream",
