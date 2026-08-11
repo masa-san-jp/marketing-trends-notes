@@ -1,4 +1,35 @@
 {
   "as_of": "2026-08-11",
-  "findings": []
+  "findings": [
+    {
+      "kind": "unanswered",
+      "about": "trend/care-service-utilization-expansion",
+      "text": "介護サービス利用の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/foodservice-demand-recovery",
+      "text": "外食・飲食サービス需要の回復 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/live-entertainment-experience-expansion",
+      "text": "ライブ・体験型エンタメ消費の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/parcel-delivery-volume-expansion",
+      "text": "宅配便取扱量の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/parental-leave-normalization",
+      "text": "育児休業取得の制度定着 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/women-employment-expansion",
+      "text": "女性就業の拡大 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）"
+    }
+  ]
 }
