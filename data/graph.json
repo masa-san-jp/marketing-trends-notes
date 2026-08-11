@@ -583,6 +583,49 @@
       "updated": "2026-08-11",
       "path": "entities/practices/retail-media.md"
     },
+    "practice/school-generative-ai-policy-training-evaluation": {
+      "id": "practice/school-generative-ai-policy-training-evaluation",
+      "uri": "urn:mtn:practice/school-generative-ai-policy-training-evaluation",
+      "type": "practice",
+      "label_ja": "学校向け生成AIの利用方針・研修・出力確認・評価設計",
+      "label_en": "School generative AI policy, training, output review, and evaluation design",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「学校向け生成AIの利用方針・研修・出力確認・評価設計」「school generative AI policy training evaluation」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "学校教育向けの生成AIガイドライン公表後、利用条件と学習・校務の評価をつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-12-26"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/school-generative-ai-governance",
+          "certainty": "hypothesis",
+          "source": "https://www.mext.go.jp/zyoukatsu/ai/about.html"
+        }
+      ],
+      "sources": [
+        "https://www.mext.go.jp/zyoukatsu/ai/",
+        "https://www.mext.go.jp/zyoukatsu/ai/about.html",
+        "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/school-generative-ai-policy-training-evaluation.md"
+    },
     "source/apple-user-privacy-page": {
       "id": "source/apple-user-privacy-page",
       "uri": "urn:mtn:source/apple-user-privacy-page",
@@ -1552,6 +1595,13 @@
       "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html"
     },
     {
+      "from": "practice/school-generative-ai-policy-training-evaluation",
+      "type": "responds_to",
+      "to": "trend/school-generative-ai-governance",
+      "certainty": "hypothesis",
+      "source": "https://www.mext.go.jp/zyoukatsu/ai/about.html"
+    },
+    {
       "from": "trend/short-video-mainstream",
       "type": "originated_on",
       "to": "channel/tiktok"
@@ -1649,6 +1699,12 @@
       "from": "trend/japan-btoc-ec-expansion",
       "type": "answered_by",
       "to": "practice/retail-media",
+      "derived": true
+    },
+    {
+      "from": "trend/school-generative-ai-governance",
+      "type": "answered_by",
+      "to": "practice/school-generative-ai-policy-training-evaluation",
       "derived": true
     }
   ]
