@@ -200,6 +200,57 @@
       "updated": "2026-08-11",
       "path": "entities/practices/creator-ad-disclosure-governance.md"
     },
+    "practice/creator-rights-governance": {
+      "id": "practice/creator-rights-governance",
+      "uri": "urn:mtn:practice/creator-rights-governance",
+      "type": "practice",
+      "label_ja": "クリエイター契約・権利情報・収益分配・異議対応運用",
+      "label_en": "Creator contract, rights information, revenue-sharing, and dispute operations",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「クリエイター契約・権利情報・収益分配・異議対応運用」「creator contract rights revenue sharing dispute operations」を確認したが、この運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2021~",
+        "end": "..",
+        "display": "デジタルプラットフォームでの作品利用に対応し、契約・権利情報・許諾・明細・収益分配・異議対応を一つの運用にする"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://www.bunka.go.jp/tokei_hakusho_shuppan/tokeichosa/chosakuken/index.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        },
+        {
+          "field": "saturation",
+          "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/seisaku/r06_04/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-01-20"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/creator-rights-compensation-transparency",
+          "certainty": "hypothesis",
+          "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/seisaku/r06_04/"
+        }
+      ],
+      "sources": [
+        "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/seisaku/r06_04/",
+        "https://www.bunka.go.jp/tokei_hakusho_shuppan/tokeichosa/chosakuken/index.html",
+        "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html",
+        "https://www.bunka.go.jp/seisaku/chosakuken/"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/creator-rights-governance.md"
+    },
     "practice/fashion-takeback-repair-resale": {
       "id": "practice/fashion-takeback-repair-resale",
       "uri": "urn:mtn:practice/fashion-takeback-repair-resale",
@@ -2158,6 +2209,13 @@
       "source": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/"
     },
     {
+      "from": "practice/creator-rights-governance",
+      "type": "responds_to",
+      "to": "trend/creator-rights-compensation-transparency",
+      "certainty": "hypothesis",
+      "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/seisaku/r06_04/"
+    },
+    {
       "from": "practice/fashion-takeback-repair-resale",
       "type": "responds_to",
       "to": "trend/sustainable-fashion-behavior",
@@ -2312,6 +2370,12 @@
       "from": "trend/creator-ad-disclosure",
       "type": "answered_by",
       "to": "practice/creator-ad-disclosure-governance",
+      "derived": true
+    },
+    {
+      "from": "trend/creator-rights-compensation-transparency",
+      "type": "answered_by",
+      "to": "practice/creator-rights-governance",
       "derived": true
     },
     {
