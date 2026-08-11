@@ -14,7 +14,7 @@ depends_on: []
 <!-- generated:coverage:start -->
 データの最新日: 2026-08-11 — `python3 tools/build_graph.py` が生成（手で書き換えない）
 
-trend **12** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 9}
+trend **13** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 10}
 
 | カテゴリ | 2010 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 年代不明 | 計 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -26,14 +26,14 @@ trend **12** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 | food-beverage（食品・飲料・外食） |  |  | 1 |  |  |  |  |  |  |  | 1 |
 | fashion-beauty（ファッション・美容） |  |  |  |  |  |  |  |  | 1 |  | 1 |
 | health-wellness（ヘルスケア・ウェルネス） |  |  |  |  |  |  |  | 1 |  |  | 1 |
-| gaming（ゲーム） |  |  |  |  |  |  |  |  |  |  | 0 |
+| gaming（ゲーム） |  |  |  | 1 |  |  |  |  |  |  | 1 |
 | finance（金融） | 1 |  |  |  |  |  |  |  |  |  | 1 |
 | education（教育） |  |  |  |  |  |  | 1 |  |  |  | 1 |
 | cross-category（カテゴリ横断） |  | 1 |  |  | 1 |  |  |  |  |  | 2 |
 
 受け入れ条件の達成度:
 
-- trend_total: 12/60（stub 0件は不算入）
+- trend_total: 13/60（stub 0件は不算入）
 - vendor_only_ratio: 0.00（上限 0.2）
 - primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
@@ -42,6 +42,8 @@ trend **12** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 - stale_ratio: 0.00（上限 0.15・as_of=2026-08-11 時点）
 - practice_linked: 11/12 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 0/5 件の予測が答え合わせ済み
+
+関係を持たない trend: trend/gaming-digital-global-expansion
 <!-- generated:coverage:end -->
 
 ## 空欄の読み方
@@ -65,7 +67,8 @@ trend **12** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 形式の検証（`build_graph.py --check`）と違って commit は止めない——次に何を調べるかの材料として出す。
 
 <!-- generated:audit:start -->
-食い違い・偏りの指摘はなし。
+**応答なきトレンド**
+- ゲーム市場のデジタル・グローバル化 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
 <!-- generated:audit:end -->
 
 ## 需要から決める（探されたが無かった語）
