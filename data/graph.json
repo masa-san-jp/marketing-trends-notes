@@ -387,6 +387,57 @@
       "updated": "2026-08-11",
       "path": "entities/practices/food-loss-demand-forecast-markdown-donation.md"
     },
+    "practice/foodtech-safety-label-acceptance": {
+      "id": "practice/foodtech-safety-label-acceptance",
+      "uri": "urn:mtn:practice/foodtech-safety-label-acceptance",
+      "type": "practice",
+      "label_ja": "次世代食品の安全・表示・受容性検証",
+      "label_en": "Safety, labeling, and acceptance validation for next-generation foods",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「次世代食品の安全・表示・受容性検証」「next-generation food safety labeling acceptance validation」を確認したが、この検証運用の型そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "フードテックによる新食品の研究・実証・販売を、安全性・表示・消費者理解の確認と一つにつなぐ運用"
+      },
+      "saturation": "spreading",
+      "evidence": [
+        {
+          "field": "time",
+          "source": "https://food-tech.maff.go.jp/about/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2020-10"
+        },
+        {
+          "field": "saturation",
+          "source": "https://www.maff.go.jp/j/shokusan/sosyutu/itaku.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        }
+      ],
+      "channels": [],
+      "relations": [
+        {
+          "type": "responds_to",
+          "target": "trend/foodtech-alternative-protein",
+          "certainty": "hypothesis",
+          "source": "https://food-tech.maff.go.jp/about/"
+        }
+      ],
+      "sources": [
+        "https://food-tech.maff.go.jp/about/",
+        "https://www.maff.go.jp/j/shokusan/sosyutu/itaku.html",
+        "https://www.maff.go.jp/j/shokusan/sosyutu/backnumber.html",
+        "https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html"
+      ],
+      "status": "draft",
+      "updated": "2026-08-11",
+      "path": "entities/practices/foodtech-safety-label-acceptance.md"
+    },
     "practice/functional-food-evidence-safety-withdrawal": {
       "id": "practice/functional-food-evidence-safety-withdrawal",
       "uri": "urn:mtn:practice/functional-food-evidence-safety-withdrawal",
@@ -1420,6 +1471,72 @@
       "updated": "2026-08-11",
       "path": "entities/trends/food-loss-reduction-institutionalization.md"
     },
+    "trend/foodtech-alternative-protein": {
+      "id": "trend/foodtech-alternative-protein",
+      "uri": "urn:mtn:trend/foodtech-alternative-protein",
+      "type": "trend",
+      "kind": "tech-enabled",
+      "stage": "emerging",
+      "market": "food-beverage",
+      "geo": "japan",
+      "label_ja": "フードテックによる新たなたんぱく質源の事業化",
+      "label_en": "Commercialization of food-tech protein alternatives in Japan",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "Wikidataで「フードテックによる新たなたんぱく質源の事業化」「food-tech protein alternatives commercialization」を確認したが、日本での研究・事業化・受容性検討が連動する現象そのものの項目は確認できない"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "2020年のフードテック官民協議会設立以降、新たなたんぱく質源を含む食品技術の事業化・安全性・表示・受容性が検討される局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "フードテック",
+        "note": "「フードテックによる新たなたんぱく質源の事業化」は、農林水産省の官民協議会と委託事業の対象領域を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-09-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://food-tech.maff.go.jp/about/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.maff.go.jp/j/shokusan/sosyutu/itaku.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08-11"
+        },
+        {
+          "field": "time",
+          "source": "https://food-tech.maff.go.jp/about/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2020-10"
+        }
+      ],
+      "predictions": [],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://food-tech.maff.go.jp/about/",
+        "https://www.maff.go.jp/j/shokusan/sosyutu/itaku.html",
+        "https://www.maff.go.jp/j/shokusan/sosyutu/backnumber.html",
+        "https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/foodtech-alternative-protein.md"
+    },
     "trend/functional-food-safety-governance": {
       "id": "trend/functional-food-safety-governance",
       "uri": "urn:mtn:trend/functional-food-safety-governance",
@@ -2359,6 +2476,13 @@
       "source": "https://www.env.go.jp/press/press_00002.html"
     },
     {
+      "from": "practice/foodtech-safety-label-acceptance",
+      "type": "responds_to",
+      "to": "trend/foodtech-alternative-protein",
+      "certainty": "hypothesis",
+      "source": "https://food-tech.maff.go.jp/about/"
+    },
+    {
       "from": "practice/functional-food-evidence-safety-withdrawal",
       "type": "responds_to",
       "to": "trend/functional-food-safety-governance",
@@ -2523,6 +2647,12 @@
       "from": "trend/food-loss-reduction-institutionalization",
       "type": "answered_by",
       "to": "practice/food-loss-demand-forecast-markdown-donation",
+      "derived": true
+    },
+    {
+      "from": "trend/foodtech-alternative-protein",
+      "type": "answered_by",
+      "to": "practice/foodtech-safety-label-acceptance",
       "derived": true
     },
     {
