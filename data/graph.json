@@ -2413,6 +2413,147 @@
       "updated": "2026-08-11",
       "path": "entities/trends/cross-border-ecommerce-expansion.md"
     },
+    "trend/crypto-asset-user-expansion": {
+      "id": "trend/crypto-asset-user-expansion",
+      "uri": "urn:mtn:trend/crypto-asset-user-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "finance",
+      "geo": "japan",
+      "label_ja": "暗号資産利用者の拡大",
+      "label_en": "Expansion of crypto-asset users",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「暗号資産利用者の拡大」「crypto-asset user expansion Japan」で検索したが、日本の口座数・取引規模の変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2020~",
+        "end": "..",
+        "display": "国内の暗号資産口座数・取引規模が拡大し、利用者保護の制度論点が再整理される局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "暗号資産の国内口座数・取引規模の拡大",
+        "note": "「暗号資産利用者の拡大」は、金融庁の金融審議会議事録に示された国内口座数・取引金額を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024-06"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024-06-2024-08"
+        },
+        {
+          "field": "time",
+          "source": "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020-2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の金融庁または業界横断の公的資料で、国内暗号資産口座数が2024年6月の約1,040万口座を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/crypto-asset-user-expansion.md"
+    },
+    "trend/digital-textbook-practical-adoption": {
+      "id": "trend/digital-textbook-practical-adoption",
+      "uri": "urn:mtn:trend/digital-textbook-practical-adoption",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "growing",
+      "market": "education",
+      "geo": "japan",
+      "label_ja": "デジタル教科書の実用化",
+      "label_en": "Practical adoption of digital textbooks",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「デジタル教科書の実用化」「practical adoption of digital textbooks Japan」で検索したが、日本の学校現場での導入・活用変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2019~",
+        "end": "..",
+        "display": "2019年の段階導入から、2024年度以降に英語等を全小中学校へ提供する実用化局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "学習者用デジタル教科書の段階導入・活用拡大",
+        "note": "「デジタル教科書の実用化」は、文部科学省の導入方針と活用調査を要約するための記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025年度"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf",
+          "certainty": "independent",
+          "retrieved": "summary",
+          "as_of": "2024年度"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2019-2025年度"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の文部科学省調査で、教師の学習者用デジタル教科書の使用頻度が2024年度の水準を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html",
+        "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/digital-textbook-practical-adoption.md"
+    },
     "trend/domestic-travel-consumption-expansion": {
       "id": "trend/domestic-travel-consumption-expansion",
       "uri": "urn:mtn:trend/domestic-travel-consumption-expansion",
@@ -3233,6 +3374,77 @@
       "updated": "2026-08-11",
       "path": "entities/trends/japan-btoc-ec-expansion.md"
     },
+    "trend/japanese-music-overseas-expansion": {
+      "id": "trend/japanese-music-overseas-expansion",
+      "uri": "urn:mtn:trend/japanese-music-overseas-expansion",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "emerging",
+      "market": "creator-economy",
+      "geo": "global",
+      "label_ja": "日本音楽の海外収入・売上の可視化",
+      "label_en": "Visibility of overseas revenue and sales for Japanese music",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「日本音楽の海外収入・売上の可視化」「Japanese music overseas revenue and sales」で検索したが、この産業全体の海外収入・売上を可視化する現象そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2024",
+        "end": "..",
+        "display": "日本音楽産業の海外収入・海外売上を産業横断で初めて推計し、継続把握の基盤を整える段階"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "日本音楽産業の海外展開データ把握",
+        "note": "「日本音楽の海外収入・売上の可視化」は、経済産業省の2024年調査結果を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-09-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        },
+        {
+          "field": "time",
+          "source": "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2025年以降も日本音楽産業の海外収入・海外売上が同じ定義で再推計される",
+          "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.meti.go.jp/policy/mono_info_service/contents/2026/260326.html",
+        "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/japanese-music-overseas-expansion.md"
+    },
     "trend/music-streaming-expansion": {
       "id": "trend/music-streaming-expansion",
       "uri": "urn:mtn:trend/music-streaming-expansion",
@@ -3567,6 +3779,76 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/online-medical-consultation-adoption.md"
+    },
+    "trend/online-news-platform-dependence": {
+      "id": "trend/online-news-platform-dependence",
+      "uri": "urn:mtn:trend/online-news-platform-dependence",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "emerging",
+      "market": "entertainment-content",
+      "geo": "japan",
+      "label_ja": "オンラインニュースプラットフォーム依存の可視化",
+      "label_en": "Emerging dependence on online news platforms",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「オンラインニュースプラットフォーム依存の可視化」「online news platform dependence Japan」で検索したが、この利用経路の変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2023~",
+        "end": "..",
+        "display": "紙媒体からニュースポータル・検索等のオンライン経路へ接点が移り、取引条件の実態調査が始まった段階"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "ニュースコンテンツのオンライン流通・利用増加",
+        "note": "「オンラインニュースプラットフォーム依存の可視化」は、文化庁・公正取引委員会の実態調査の説明を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-09-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-03"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-03"
+        },
+        {
+          "field": "time",
+          "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-03"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の公正取引委員会または文化庁の実態調査で、ニュースポータル・検索・媒体サイトの利用経路と取引条件が再整理される",
+          "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/online-news-platform-dependence.md"
     },
     "trend/outbound-travel-recovery": {
       "id": "trend/outbound-travel-recovery",
@@ -4134,6 +4416,76 @@
       "updated": "2026-08-11",
       "path": "entities/trends/sleep-rest-health-management.md"
     },
+    "trend/sports-participation-plateau": {
+      "id": "trend/sports-participation-plateau",
+      "uri": "urn:mtn:trend/sports-participation-plateau",
+      "type": "trend",
+      "kind": "demand-shift",
+      "stage": "peak",
+      "market": "health-wellness",
+      "geo": "japan",
+      "label_ja": "スポーツ実施率の高原化と世代差",
+      "label_en": "Plateauing sports participation with generational gaps",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「スポーツ実施率の高原化と世代差」「sports participation plateau Japan」で検索したが、日本の実施率の横ばいと世代差の組み合わせそのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2022~",
+        "end": "..",
+        "display": "週1日以上のスポーツ実施率が約52％で横ばいとなり、働き盛り世代・男女差が残る局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "成人スポーツ実施率の横ばいと実施格差",
+        "note": "「スポーツ実施率の高原化と世代差」は、スポーツ庁の世論調査を要約する記述的なラベルで、参加者が自称する名称ではない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2027-02-10"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年度"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2025年度"
+        },
+        {
+          "field": "time",
+          "source": "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-2025年度"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回のスポーツ庁調査で20歳以上の週1日以上のスポーツ実施率が2025年度の51.7％を下回らない",
+          "by": "2028-03",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/sports-participation-plateau.md"
+    },
     "trend/sustainable-fashion-behavior": {
       "id": "trend/sustainable-fashion-behavior",
       "uri": "urn:mtn:trend/sustainable-fashion-behavior",
@@ -4423,6 +4775,76 @@
       "status": "draft",
       "updated": "2026-08-11",
       "path": "entities/trends/tracking-restrictions.md"
+    },
+    "trend/video-distribution-expansion": {
+      "id": "trend/video-distribution-expansion",
+      "uri": "urn:mtn:trend/video-distribution-expansion",
+      "type": "trend",
+      "kind": "tech-enabled",
+      "stage": "growing",
+      "market": "entertainment-content",
+      "geo": "japan",
+      "label_ja": "映像配信市場の拡大",
+      "label_en": "Expansion of video distribution",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「映像配信市場の拡大」「video distribution market Japan」で検索したが、日本の映像配信市場の構造変化そのもののWikidata項目は確認できない（2026-08-11検索実施）"
+      },
+      "time": {
+        "start": "2016~",
+        "end": "..",
+        "display": "SVOD・TVOD・EST・AVOD等の映像配信市場が拡大する局面"
+      },
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "映像作品配信市場の拡大",
+        "note": "「映像配信市場の拡大」は、文化庁の審議会で示された配信市場の時系列を要約する記述的なラベル"
+      },
+      "freshness": {
+        "valid_as_of": "2026-08-11",
+        "recheck_by": "2026-11-11"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2021"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2016-2021"
+        },
+        {
+          "field": "time",
+          "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2016-2021"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "次回の公的なコンテンツ市場調査で、映像配信市場規模が2021年の約4,230億円を下回らない",
+          "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/"
+      ],
+      "status": "verified",
+      "updated": "2026-08-11",
+      "path": "entities/trends/video-distribution-expansion.md"
     }
   },
   "edges": [

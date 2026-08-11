@@ -1,11 +1,11 @@
 {
   "as_of": "2026-08-11",
-  "trend_total": 36,
+  "trend_total": 42,
   "trend_stub_excluded": 0,
   "by_status": {
     "draft": 3,
     "stub": 0,
-    "verified": 33
+    "verified": 39
   },
   "grid": {
     "cross-category": {
@@ -23,6 +23,7 @@
     },
     "finance": {
       "2010": 1,
+      "2020": 1,
       "2023": 1
     },
     "fashion-beauty": {
@@ -31,11 +32,17 @@
     },
     "creator-economy": {
       "2023": 1,
-      "2021": 1
+      "2021": 1,
+      "2024": 1
     },
     "retail-commerce": {
       "2022": 3,
       "2020": 1,
+      "2023": 1
+    },
+    "education": {
+      "2019": 1,
+      "2024": 1,
       "2023": 1
     },
     "consumer-goods": {
@@ -50,33 +57,32 @@
       "2020": 1
     },
     "health-wellness": {
-      "2024": 3
+      "2024": 3,
+      "2022": 1
     },
     "gaming": {
       "2020": 1,
       "2022": 1
     },
-    "education": {
-      "2024": 1,
-      "2023": 1
-    },
     "entertainment-content": {
       "2014": 1,
-      "2020": 1
+      "2023": 1,
+      "2020": 1,
+      "2016": 1
     }
   },
   "per_category": {
     "consumer-goods": 4,
     "retail-commerce": 5,
-    "entertainment-content": 2,
-    "creator-economy": 2,
+    "entertainment-content": 4,
+    "creator-economy": 3,
     "saas-b2b": 4,
     "food-beverage": 3,
     "fashion-beauty": 2,
-    "health-wellness": 3,
+    "health-wellness": 4,
     "gaming": 2,
-    "finance": 2,
-    "education": 2,
+    "finance": 3,
+    "education": 3,
     "cross-category": 5
   },
   "stale": [],
@@ -84,10 +90,17 @@
   "searched": {},
   "unread": [],
   "hearsay": [],
-  "isolated": [],
+  "isolated": [
+    "trend/crypto-asset-user-expansion",
+    "trend/digital-textbook-practical-adoption",
+    "trend/japanese-music-overseas-expansion",
+    "trend/online-news-platform-dependence",
+    "trend/sports-participation-plateau",
+    "trend/video-distribution-expansion"
+  ],
   "measured": [],
   "progress": {
-    "trend_total": "36/60（stub 0件は不算入）",
+    "trend_total": "42/60（stub 0件は不算入）",
     "vendor_only_ratio": "0.00（上限 0.2）",
     "primary_read_ratio": "1.00（下限 0.3・原典を実読した根拠を持つ trend）",
     "independent_ratio": "1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）",
