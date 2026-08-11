@@ -11,6 +11,11 @@ if ! python3 tools/build_graph.py --check; then
   exit 1
 fi
 
+if ! python3 tools/observe_social.py --check; then
+  echo "✋ SNS空気感ログの形式検証に失敗しました。" >&2
+  exit 1
+fi
+
 # 生成物が古いまま commit されるのも防ぐ（entities を変えたのに graph / audit を更新していない場合）。
 # audit.py も走らせる——build_graph だけだと data/audit.json と coverage.md の監査ブロックが
 # 前回のままでも diff が出ず、CI（audit.py まで回して diff を取る）とローカルの保証がずれる。

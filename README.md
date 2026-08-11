@@ -32,10 +32,12 @@ tools/
   new_entity.py      必須項目が入った雛形を作る
   build_graph.py     検証 → data/graph.json・data/coverage.json・被覆マップ更新
   audit.py           噛み合っていないか（鮮度切れ・vendor単独・未判定の予測…）→ 次に調べること
+  observe_social.py SNS上の高い引力を持つ空気感ログを検証・集計（世論推定ではない）
   bundle.py          知識のまとまりを1文書として取り出す
   linkcheck.py       出典URLの死活確認（ネットワークに出るので別枠）
   record_searched.py 調べたが該当が無かったカテゴリを1行残す（空欄と区別する）
-data/              生成物（graph.json / coverage.json / audit.json）と追記ログ（queries.jsonl / searched.jsonl）
+data/              生成物（graph.json / coverage.json / audit.json）と追記ログ（queries.jsonl / searched.jsonl /
+                  social-observations.jsonl）
 ```
 
 ## 3軸をどう持っているか
@@ -66,6 +68,8 @@ python3 tools/new_entity.py trend <slug> --ja "<名前>" --stage growing
 python3 tools/build_graph.py --check     # 検証だけ（CI 用）
 python3 tools/build_graph.py             # 検証 + グラフ・被覆マップの生成
 python3 tools/audit.py                   # 鮮度切れ・食い違い → 次に調べること
+python3 tools/observe_social.py --check  # SNS空気感ログの形式検証
+python3 tools/observe_social.py --summary # SNS空気感ログの集計
 python3 tools/audit.py --dry-run --now $(date +%F)   # 生きた時計で鮮度を見る
 python3 tools/bundle.py --search リテールメディア     # 語で探す（IDを知らなくていい）
 python3 tools/bundle.py trend/<slug>                 # 1件とその周辺を1文書で

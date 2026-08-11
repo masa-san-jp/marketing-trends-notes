@@ -16,6 +16,8 @@ jobs:
       - run: pip install pyyaml
       - name: 形式の検証（壊れていないか）
         run: python3 tools/build_graph.py --check
+      - name: SNS空気感ログの形式検証
+        run: python3 tools/observe_social.py --check
       - name: 生成物が最新か（entities と graph がずれていないか）
         run: |
           python3 tools/build_graph.py
