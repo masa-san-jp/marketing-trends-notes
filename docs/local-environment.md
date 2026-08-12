@@ -22,6 +22,13 @@ python tools/observe_social.py --check
 python tools/audit.py
 ```
 
+空気感観測に関係する検証を一括で確認する場合は、次のdry-runを使う。既定ではネットワークへ出ず、
+Xトークンがない場合もスキップとして続行する。
+
+```bash
+python tools/run_atmosphere_pipeline.py --dry-run --skip-rss
+```
+
 Xトークンがない場合でも、公開検索関心の代理観測はGoogle Trends Japan RSSで実行できる。
 これはSNS投稿や世論を取得するものではなく、HTTP取得時刻・キャッシュ指示・上位検索語と、
 前回スナップショットとの差分を保存するための補助面である。
@@ -32,6 +39,18 @@ python tools/observe_google_trends.py \
   --compare /path/to/current.json \
   --output /path/to/next.json --summary
 ```
+
+検証とRSS取得を一度に行い、結果をDrive配下へ蓄積する場合は、保存先を明示して実行する。
+`--collect-rss`を付けない限り、パイプラインはRSSへ接続しない。
+
+```bash
+python tools/run_atmosphere_pipeline.py --collect-rss \
+  --output-dir "/Users/masa/マイドライブ/AI-Agent-Pipeline/Agentic-Art-Output/marketing-atmosphere/02_evidence" \
+  --compare "/path/to/previous.json" --summary
+```
+
+このランナーが更新するのは、指定したRSSスナップショットと任意の実行レポートだけである。
+Driveのevidence ledgerや観測判断は自動生成せず、RSSの内容を確認してから記録する。
 
 `--compare` は同じRSS範囲の前回JSONを指定する。結果は「検索関心の時間帯別の回転」を見るために使い、
 SNS上の会話量、感情の方向、社会全体の代表性へ変換しない。

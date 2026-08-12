@@ -19,6 +19,8 @@ jobs:
         run: python3 tools/build_graph.py --check
       - name: SNS空気感ログの形式検証
         run: python3 tools/observe_social.py --check
+      - name: 空気感観測パイプラインのdry-run
+        run: python3 tools/run_atmosphere_pipeline.py --dry-run --skip-rss
       - name: 生成物が最新か（entities と graph がずれていないか）
         run: |
           python3 tools/build_graph.py
