@@ -5,11 +5,30 @@ X APIの認証情報はリポジトリに保存しない。共有するのは [`
 
 ## 初回セットアップ
 
+リポジトリの検証ツールは `requirements.txt` に記載したPython依存関係を使う。まず仮想環境を作り、
+依存関係をインストールする。
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+グラフと監査の検証を実行する。
+
+```bash
+python tools/build_graph.py --check
+python tools/observe_social.py --check
+python tools/audit.py
+```
+
+その後、X APIを使う場合だけ `.env` を準備する。
+
 ```bash
 cp .env.example .env
 chmod 600 .env
 $EDITOR .env
-python3 tools/check_x_env.py
+python tools/check_x_env.py
 ```
 
 `.env` の `X_BEARER_TOKEN` に、X Developer Console の App の Keys and tokens で発行した

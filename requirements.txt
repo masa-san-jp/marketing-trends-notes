@@ -1,0 +1,2 @@
+# Dependencies used by the validation and graph-generation tools.
+PyYAML==6.0.3

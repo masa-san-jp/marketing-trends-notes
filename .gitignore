@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+.venv/
 
 # Local credentials and environment overrides. Keep the shareable template below.
 .env
