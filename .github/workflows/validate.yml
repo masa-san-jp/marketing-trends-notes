@@ -13,7 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pyyaml
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
       - name: 形式の検証（壊れていないか）
         run: python3 tools/build_graph.py --check
       - name: SNS空気感ログの形式検証

@@ -64,7 +64,13 @@ data/              生成物（graph.json / coverage.json / audit.json）と追�
 
 ## 使う
 
+初回は [ローカル環境の準備](docs/local-environment.md) に従って仮想環境と依存関係を用意する。
+
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+
 python3 tools/new_entity.py trend <slug> --ja "<名前>" --stage growing
 python3 tools/build_graph.py --check     # 検証だけ（CI 用）
 python3 tools/build_graph.py             # 検証 + グラフ・被覆マップの生成
