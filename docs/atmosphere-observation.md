@@ -112,3 +112,12 @@ APIエクスポートを取り込めるが、このリポジトリはXの取得�
 
 APIを使うローカル環境の準備は [local-environment.md](local-environment.md) を参照する。
 トークンがない場合はXのリサーチをスキップし、他の調査や手動観測を続けられる。
+
+## Google Trends RSSを補助面として使う
+
+Xの観測が欠測でも、公開検索関心の時間帯別の入口を別面として記録できる。
+`tools/observe_google_trends.py` は日本向けDaily Search Trends RSSから、取得時刻、HTTP Date、
+キャッシュ指示、上位検索語をJSONで保存し、前回スナップショットとの差分を計算する。
+
+これはSNS空気感の直接観測ではない。短時間に反復する検索入口と、時間帯で回転する入口を分ける
+補助信号としてのみ扱い、`atmosphere_signal` や社会全体の世論へ自動昇格させない。

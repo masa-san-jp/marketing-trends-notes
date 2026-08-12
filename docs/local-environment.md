@@ -22,6 +22,20 @@ python tools/observe_social.py --check
 python tools/audit.py
 ```
 
+Xトークンがない場合でも、公開検索関心の代理観測はGoogle Trends Japan RSSで実行できる。
+これはSNS投稿や世論を取得するものではなく、HTTP取得時刻・キャッシュ指示・上位検索語と、
+前回スナップショットとの差分を保存するための補助面である。
+
+```bash
+python tools/observe_google_trends.py --output /path/to/current.json --summary
+python tools/observe_google_trends.py \
+  --compare /path/to/current.json \
+  --output /path/to/next.json --summary
+```
+
+`--compare` は同じRSS範囲の前回JSONを指定する。結果は「検索関心の時間帯別の回転」を見るために使い、
+SNS上の会話量、感情の方向、社会全体の代表性へ変換しない。
+
 その後、X APIを使う場合だけ `.env` を準備する。
 
 ```bash
