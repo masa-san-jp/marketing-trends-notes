@@ -35,6 +35,7 @@ tools/
   audit.py           噛み合っていないか（鮮度切れ・vendor単独・未判定の予測…）→ 次に調べること
   observe_social.py SNS上の高い引力を持つ空気感ログを検証・集計（世論推定ではない）
   observe_google_trends.py Google Trends Japan RSSの公開検索関心を取得・比較（SNS推定ではない）
+  run_atmosphere_pipeline.py 空気感観測の検証・X環境確認・任意のRSS取得を一括実行
   bundle.py          知識のまとまりを1文書として取り出す
   linkcheck.py       出典URLの死活確認（ネットワークに出るので別枠）
   record_searched.py 調べたが該当が無かったカテゴリを1行残す（空欄と区別する）
@@ -84,6 +85,10 @@ python3 tools/observe_google_trends.py \
   --output /path/to/current.json --summary # 前回との差分付き保存
 python3 tools/check_x_env.py                 # X未設定ならスキップして続行
 python3 tools/audit.py --dry-run --now $(date +%F)   # 生きた時計で鮮度を見る
+python3 tools/run_atmosphere_pipeline.py --dry-run --skip-rss # CIと同じローカル総合検証
+python3 tools/run_atmosphere_pipeline.py --collect-rss \
+  --output-dir /path/to/Agentic-Art-Output/marketing-atmosphere \
+  --compare /path/to/previous.json --summary # RSS取得と比較を含む実行
 python3 tools/bundle.py --search リテールメディア     # 語で探す（IDを知らなくていい）
 python3 tools/bundle.py trend/<slug>                 # 1件とその周辺を1文書で
 python3 tools/bundle.py --category entertainment-content
