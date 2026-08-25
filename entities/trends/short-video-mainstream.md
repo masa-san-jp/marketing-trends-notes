@@ -41,7 +41,7 @@ sources:
   - https://www.soumu.go.jp/iicp/research/results/media_usage-time.html
   - https://newsroom.tiktok.com/ja-jp
 status: draft
-updated: 2026-08-10
+updated: 2026-08-25
 ---
 
 # ショート動画視聴の主流化
@@ -116,7 +116,7 @@ updated: 2026-08-10
 - 形式別（ショート／ロング）の視聴時間内訳を持つ独立した出典。**この trend の名前が主張していることを
   直接に測った出典が、まだ1本も無い**
 - 総務省調査の集計表（xlsx）から TikTok 利用率の経年推移を取り、stage を利用率の軸でも判定する
-- 応答する practice（ショート動画運用・ショート広告）を responds_to で繋ぐ——現状この trend は
-  打ち手に落ちていない（audit が指摘する状態のまま）
+- 応答する practice として organic-post-boosting を `responds_to` で接続済み。ショート動画運用・
+  ショート広告の採用効果や、他の打ち手との因果は未確認である
 - channel/instagram（Reels）の追加と伝播の記録
 - 「発見の主導権がレコメンドに移った」ことを独立に示す出典

@@ -46,7 +46,7 @@ sources:
   - https://survey.gov-online.go.jp/assets/r07/r07-life/h13-2.csv
   - https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv
 status: draft
-updated: 2026-08-10
+updated: 2026-08-25
 ---
 
 # 不安の多重化
@@ -134,5 +134,5 @@ updated: 2026-08-10
   内閣府「消費動向調査」の消費者態度指数（月次）は年1回の穴を埋められる可能性がある。
   どちらも未読
 - 令和3年より前の長期系列
-- **この trend に応答する practice が1件も無い。** 金銭不安の増加に供給側がどう応答しているかは、
-  まだこのKBに載っていない
+- **この trend に応答する practice として、recurring-cost-transparency を接続済み。**
+  金銭不安の増加に対するその施策の採用効果や、他の供給側の応答は未確認である
