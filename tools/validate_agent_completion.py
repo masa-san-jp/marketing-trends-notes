@@ -167,6 +167,8 @@ def main(argv: list[str] | None = None) -> int:
     issue_group = parser.add_mutually_exclusive_group(required=True)
     issue_group.add_argument("--issue-body", type=Path)
     issue_group.add_argument("--issue", type=int)
+    parser.add_argument("--expected-issue", type=int,
+                        help="入力本文を使う場合に、Closes #N の期待値を指定する")
     parser.add_argument("--verify-report", type=Path, required=True)
     parser.add_argument("--pr-metadata", type=Path)
     parser.add_argument("--repo")
@@ -190,7 +192,8 @@ def main(argv: list[str] | None = None) -> int:
             issue_body = fetch_json(command).get("body") or ""
         report = json.loads(args.verify_report.read_text(encoding="utf-8"))
         metadata = json.loads(args.pr_metadata.read_text(encoding="utf-8")) if args.pr_metadata else None
-        result = validate(pr_body, issue_body, report, args.issue, metadata)
+        expected_issue = args.expected_issue if args.expected_issue is not None else args.issue
+        result = validate(pr_body, issue_body, report, expected_issue, metadata)
     except (OSError, RuntimeError, ValueError, json.JSONDecodeError) as exc:
         payload = {"schema_version": SCHEMA_VERSION, "valid": False, "violations": [], "error": str(exc)}
         if json_requested:

@@ -53,7 +53,7 @@ jobs:
             --issue-body issue-body.md \
             --verify-report verify-report.json \
             --pr-metadata pr.json \
-            --issue "$ISSUE_NUMBER" \
+            --expected-issue "$ISSUE_NUMBER" \
             --json > completion.json
           status=$?
           cat completion.json
@@ -64,7 +64,7 @@ jobs:
         run: |
           gh issue reopen "$ISSUE_NUMBER" --repo "$GH_REPO"
           gh issue edit "$ISSUE_NUMBER" --repo "$GH_REPO" --add-label agent-completion-invalid --remove-label agent-completion-pending --remove-label agent-ready
-          details="$(jq -r '.violations[]? | "- \(.code): \(.message)"' completion.json)"
+          details="$(jq -r '([.violations[]? | "- \(.code): \(.message)"] + [if .error then "- error: \(.error)" else empty end]) | join("\n")' completion.json)"
           body="<!-- agent-close-guard:v1 -->
           完了契約を満たしていないため自動Reopenしました。
 

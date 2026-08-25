@@ -72,6 +72,7 @@ class AgentCompletionTests(unittest.TestCase):
                    "--pr-body", str(FIXTURES / "valid-pr.md"),
                    "--issue-body", str(FIXTURES / "valid-issue.md"),
                    "--verify-report", str(FIXTURES / "passed-agent-verify.json"),
+                   "--expected-issue", "900",
                    "--json"]
         result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
