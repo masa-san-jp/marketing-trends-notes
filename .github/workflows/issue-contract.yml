@@ -31,8 +31,22 @@ jobs:
           gh label create agent-blocked --repo "$GH_REPO" --color "D93F0B" --description "Issue is blocked with an explicit reason" --force
           gh label create agent-completion-pending --repo "$GH_REPO" --color "FBCA04" --description "Completion evidence is pending close guard" --force
           gh label create agent-completion-invalid --repo "$GH_REPO" --color "B60205" --description "Completion evidence failed close guard" --force
+      - name: Read issue state
+        id: issue_state
+        run: |
+          closed="$(gh issue view "$ISSUE_NUMBER" --repo "$GH_REPO" --json state --jq '.state == "CLOSED"')"
+          echo "closed=$closed" >> "$GITHUB_OUTPUT"
+      - name: Clear execution labels from Closed issue
+        if: steps.issue_state.outputs.closed == 'true'
+        run: |
+          gh issue edit "$ISSUE_NUMBER" --repo "$GH_REPO" \
+            --remove-label agent-ready \
+            --remove-label agent-contract-invalid \
+            --remove-label agent-completion-pending \
+            --remove-label agent-completion-invalid
       - name: Validate issue contract
         id: contract
+        if: steps.issue_state.outputs.closed != 'true'
         run: |
           set +e
           python3 tools/validate_agent_issue.py --issue "$ISSUE_NUMBER" --repo "$GH_REPO" --json > validation.json
@@ -42,7 +56,7 @@ jobs:
           echo "completion_pending=$(jq -r '.completion_pending // false' validation.json)" >> "$GITHUB_OUTPUT"
           exit 0
       - name: Set contract-invalid state
-        if: steps.contract.outputs.exit_code == '2'
+        if: steps.issue_state.outputs.closed != 'true' && steps.contract.outputs.exit_code == '2'
         run: |
           gh issue edit "$ISSUE_NUMBER" --repo "$GH_REPO" --add-label agent-contract-invalid --remove-label agent-ready
           existing="$(gh api "repos/$GH_REPO/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | select(.body | contains("<!-- agent-contract-feedback:v1 -->")) | .id' | head -n 1)"
@@ -57,13 +71,13 @@ jobs:
             gh issue comment "$ISSUE_NUMBER" --repo "$GH_REPO" --body "$body"
           fi
       - name: Fail when contract validation was not possible
-        if: steps.contract.outputs.exit_code == '3'
+        if: steps.issue_state.outputs.closed != 'true' && steps.contract.outputs.exit_code == '3'
         run: |
           echo "issue contract の検証を実行できませんでした。GitHub取得または入力を確認してください。"
           exit 1
       - name: Set agent-ready state
-        if: steps.contract.outputs.exit_code == '0' && steps.contract.outputs.completion_pending != 'true'
+        if: steps.issue_state.outputs.closed != 'true' && steps.contract.outputs.exit_code == '0' && steps.contract.outputs.completion_pending != 'true'
         run: gh issue edit "$ISSUE_NUMBER" --repo "$GH_REPO" --add-label agent-ready --remove-label agent-contract-invalid
       - name: Set completion-pending state
-        if: steps.contract.outputs.exit_code == '0' && steps.contract.outputs.completion_pending == 'true'
+        if: steps.issue_state.outputs.closed != 'true' && steps.contract.outputs.exit_code == '0' && steps.contract.outputs.completion_pending == 'true'
         run: gh issue edit "$ISSUE_NUMBER" --repo "$GH_REPO" --add-label agent-completion-pending --remove-label agent-ready --remove-label agent-contract-invalid
