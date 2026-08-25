@@ -32,6 +32,9 @@ Contract: agent-task/v1
 起票時点では、`## 完了条件` に少なくとも1件の `- [ ] ...` が必要である。各項目は、ファイル、コマンド終了コード、状態、URL、件数などの観測可能な完了結果を表す。抽象的な「よくする」「対応する」だけの項目は不適合とする。
 
 完了時に全項目を `[x]` にすることと、完了証跡へ実行結果を書くことは、後続の completion validator が検査する。
+全項目をチェックしてからClosedにするまでの短い遷移では、本文に
+`<!-- agent-completion-pending:v1 -->` を置く。このmarkerがある本文はvalidatorが完了待ちとして扱い、
+`agent-ready`には戻さない。
 
 ## 検証コマンドの規則
 
@@ -46,6 +49,7 @@ Contract: agent-task/v1
 - `agent-task`: この契約の対象
 - `agent-ready`: 契約適合、依存解決済み、実行可能
 - `agent-contract-invalid`: 契約不適合。実行対象外
+- `agent-completion-pending`: 完了条件と証跡をclose guardが検証中
 
 `agent-ready` と `agent-contract-invalid` は validator workflow が導出する。エージェントは本文を読まずにラベルだけを信頼してはならず、取得時に validator を再実行する。
 

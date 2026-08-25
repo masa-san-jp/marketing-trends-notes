@@ -1,0 +1,80 @@
+name: agent-close-guard
+
+on:
+  issues:
+    types: [closed]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+jobs:
+  guard:
+    if: contains(github.event.issue.labels.*.name, 'agent-task')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Fetch issue, merged PR, and verifier report
+        id: source
+        env:
+          TZ: Asia/Tokyo
+        run: |
+          gh issue view "$ISSUE_NUMBER" --repo "$GH_REPO" --json body --jq .body > issue-body.md
+          pr_number="$(python3 -c 'import re; b=open("issue-body.md",encoding="utf-8").read(); m=re.findall(r"https://github\.com/[^/]+/[^/]+/pull/(\d+)",b); print(m[-1] if m else "")')"
+          if [ -n "$pr_number" ]; then
+            gh pr view "$pr_number" --repo "$GH_REPO" --json body,state,mergedAt,mergeCommit,url > pr.json || echo '{}' > pr.json
+            gh pr view "$pr_number" --repo "$GH_REPO" --json body --jq .body > pr-body.md || :
+          else
+            echo '{}' > pr.json
+            : > pr-body.md
+          fi
+          echo "pr_number=$pr_number" >> "$GITHUB_OUTPUT"
+      - name: Run current agent verifier
+        continue-on-error: true
+        env:
+          TZ: Asia/Tokyo
+        run: python3 tools/agent_verify.py --issue-body issue-body.md --now "$(date +%F)" --json > verify-report.json
+      - name: Validate close contract
+        id: completion
+        run: |
+          set +e
+          python3 tools/validate_agent_completion.py \
+            --pr-body pr-body.md \
+            --issue-body issue-body.md \
+            --verify-report verify-report.json \
+            --pr-metadata pr.json \
+            --issue "$ISSUE_NUMBER" \
+            --json > completion.json
+          status=$?
+          cat completion.json
+          echo "exit_code=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Reopen incomplete issue
+        if: steps.completion.outputs.exit_code != '0'
+        run: |
+          gh issue reopen "$ISSUE_NUMBER" --repo "$GH_REPO"
+          gh issue edit "$ISSUE_NUMBER" --repo "$GH_REPO" --add-label agent-completion-invalid --remove-label agent-completion-pending --remove-label agent-ready
+          details="$(jq -r '.violations[]? | "- \(.code): \(.message)"' completion.json)"
+          body="<!-- agent-close-guard:v1 -->
+          完了契約を満たしていないため自動Reopenしました。
+
+          $details"
+          existing="$(gh api "repos/$GH_REPO/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | select(.body | contains("<!-- agent-close-guard:v1 -->")) | .id' | head -n 1)"
+          if [ -n "$existing" ]; then
+            gh api --method PATCH "repos/$GH_REPO/issues/comments/$existing" -f body="$body"
+          else
+            gh issue comment "$ISSUE_NUMBER" --repo "$GH_REPO" --body "$body"
+          fi
+          exit 1
+      - name: Clear completion-pending state
+        run: gh issue edit "$ISSUE_NUMBER" --repo "$GH_REPO" --remove-label agent-completion-pending --remove-label agent-completion-invalid

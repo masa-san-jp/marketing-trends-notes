@@ -14,6 +14,7 @@ from typing import Any
 
 SCHEMA_VERSION = "agent-task-validation/v1"
 CONTRACT = "Contract: agent-task/v1"
+COMPLETION_PENDING_MARKER = "<!-- agent-completion-pending:v1 -->"
 SECTIONS = (
     "目的", "現状", "スコープ", "非スコープ", "実装要件", "変更対象",
     "完了条件", "検証コマンド", "完了証跡", "依存関係",
@@ -85,9 +86,10 @@ def validate_body(body: str, *, labels: list[str] | None = None, state: str | No
     completion = sections.get("完了条件", "")
     completion_items = CHECKBOX_RE.findall(completion)
     unchecked_items = UNCHECKED_RE.findall(completion)
+    completion_pending = COMPLETION_PENDING_MARKER in semantic_body
     if not completion_items:
         violations.append(violation("completion-checkbox", "完了条件に checkbox が1件以上必要です", "完了条件"))
-    if not unchecked_items:
+    if not unchecked_items and not completion_pending:
         violations.append(violation("open-completion-checkbox", "起票時点では未チェックの完了条件が1件以上必要です", "完了条件"))
     for item in completion_items:
         if len(item.strip()) < 8 or re.fullmatch(r"対応する|改善する|よくする", item.strip()):
@@ -117,6 +119,7 @@ def validate_body(body: str, *, labels: list[str] | None = None, state: str | No
         "schema_version": SCHEMA_VERSION,
         "valid": not violations,
         "violations": violations,
+        "completion_pending": completion_pending,
     }
 
 

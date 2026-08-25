@@ -1,0 +1,16 @@
+{
+  "schema_version": "agent-verify/v1",
+  "source_commit": "abcdef1234567",
+  "now": "2026-08-25",
+  "status": "passed",
+  "checks": [
+    {"name":"issue-contract","required":true,"status":"passed","exit_code":0,"summary":"ok"},
+    {"name":"graph-and-acceptance","required":true,"status":"passed","exit_code":0,"summary":"ok"},
+    {"name":"regression-tests","required":true,"status":"passed","exit_code":0,"summary":"ok"},
+    {"name":"social-observation-schema","required":true,"status":"passed","exit_code":0,"summary":"ok"},
+    {"name":"strict-live-audit","required":true,"status":"passed","exit_code":0,"summary":"ok"},
+    {"name":"export-contract","required":true,"status":"passed","exit_code":0,"summary":"ok"},
+    {"name":"generated-artifacts","required":true,"status":"passed","exit_code":0,"summary":"ok"},
+    {"name":"worktree-preservation","required":true,"status":"passed","exit_code":0,"summary":"ok"}
+  ]
+}

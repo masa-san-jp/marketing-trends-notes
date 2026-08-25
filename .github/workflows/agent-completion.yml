@@ -1,0 +1,57 @@
+name: agent-completion
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+
+jobs:
+  completion:
+    if: github.event.pull_request.base.ref == 'main'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Fetch PR body and closing issue
+        id: target
+        run: |
+          gh pr view "$PR_NUMBER" --repo "$GH_REPO" --json body --jq .body > pr-body.md
+          issue_number="$(python3 -c 'import re,sys; b=open("pr-body.md",encoding="utf-8").read(); m=re.findall(r"(?im)^\s*closes\s+#(\d+)\b",b); print(m[0] if len(m)==1 else "")')"
+          if [ -z "$issue_number" ]; then
+            echo "closing issueがちょうど1件必要です" >&2
+            exit 1
+          fi
+          echo "issue_number=$issue_number" >> "$GITHUB_OUTPUT"
+          gh issue view "$issue_number" --repo "$GH_REPO" --json body --jq .body > issue-body.md
+      - name: Run agent verifier on PR base state
+        env:
+          TZ: Asia/Tokyo
+          ISSUE_NUMBER: ${{ steps.target.outputs.issue_number }}
+        run: python3 tools/agent_verify.py --issue "$ISSUE_NUMBER" --repo "$GH_REPO" --now "$(date +%F)" --json > verify-report.json
+      - name: Validate completion contract
+        run: |
+          python3 tools/validate_agent_completion.py \
+            --pr-body pr-body.md \
+            --issue-body issue-body.md \
+            --verify-report verify-report.json \
+            --issue "${{ steps.target.outputs.issue_number }}" \
+            --json
+      - name: Upload verifier report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-verify-${{ github.event.pull_request.number }}
+          path: verify-report.json
+          if-no-files-found: ignore

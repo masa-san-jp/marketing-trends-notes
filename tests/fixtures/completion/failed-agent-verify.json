@@ -1,0 +1,9 @@
+{
+  "schema_version": "agent-verify/v1",
+  "source_commit": "abcdef1234567",
+  "now": "2026-08-25",
+  "status": "failed",
+  "checks": [
+    {"name":"graph-and-acceptance","required":true,"status":"failed","exit_code":2,"summary":"bad"}
+  ]
+}

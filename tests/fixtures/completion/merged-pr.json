@@ -1,0 +1,6 @@
+{
+  "state": "MERGED",
+  "mergedAt": "2026-08-25T12:00:00Z",
+  "mergeCommit": {"oid": "abcdef1234567"},
+  "url": "https://github.com/example/repo/pull/900"
+}

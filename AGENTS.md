@@ -12,6 +12,7 @@
 6. 鮮度の変更は [docs/freshness.md](docs/freshness.md)、環境や認証は [docs/local-environment.md](docs/local-environment.md) を読む。
 7. `agent-task` issue の契約は [docs/agent-task-contract.md](docs/agent-task-contract.md) を読む。
 8. issue の発見・claim・block・release は [docs/agent-task-state.md](docs/agent-task-state.md) と `tools/agent_task.py` のJSON結果を使う。
+9. PRの完了契約とClosed guardは [`.github/pull_request_template.md`](.github/pull_request_template.md)、`tools/validate_agent_completion.py`、`.github/workflows/agent-completion.yml`、`.github/workflows/agent-close-guard.yml` を正本として使う。
 
 ## 作業契約
 
@@ -23,6 +24,19 @@
 - `data/` と `overviews/coverage.md` の生成ブロックを手で編集しない。入力を直し、生成コマンドを実行する。
 - 調査内容は出典URL、certainty、retrieved、as_of を正しく記録する。確定できないことは推測せず `未確認` として残す。
 - X token やその他の秘密をリポジトリ、issue、PR、ログに書かない。
+
+## PR完了とClosedの手順
+
+通常の `agent-task` は、次の順に完了させる。
+
+1. PR本文に `Closes #N` を1件だけ書き、テンプレートの4節を埋める。
+2. issue本文に `agent-completion-pending:v1` marker、checked済みの完了条件、PR URL、検証 run URL、`agent-verify/v1 status=passed` を記録する。merge commit SHAはmerge後に追記する。
+3. PRの `agent-completion / completion` check と通常のCIが成功してからmergeする。
+4. merge後にissueの完了証跡へmerge commit SHAを追記してClosedにする。close guardが再検証し、不足時はReopenする。
+
+branch protectionでは、`main` に対してPR必須、required status check `agent-completion / completion`、通常の `validate / validate` を設定する。設定はRepository Settings > Branches > Branch protection rules（またはRulesets）で行い、このリポジトリからAPI設定を自動変更しない。
+
+ハーネス導入時にmainへ直接実装済みのbootstrap issue #79〜#84だけは、移行期間の証跡として `agent-manual-completion:v1` markerとcommit SHA、成功run URLを使える。新規issueでこのmarkerを使ってはならない。
 
 ## 開始・実装・検証
 
@@ -63,5 +77,5 @@ make agent-verify ISSUE_BODY=tests/fixtures/issues/valid.md NOW=2026-08-25
 
 - 完了条件を1項目ずつ確認し、実行したコマンドと終了コードを記録する。
 - 生成物、テスト、CIの結果を記録する。
-- issueを自己判断でClosedにしない。完了証跡を残し、PRのmergeとclose guardに委ねる。
+- issueを自己判断でClosedにしない。完了証跡を残し、通常はPRのmergeとclose guardに委ねる。bootstrap issueの移行処理ではvalidatorの許可条件を満たした後だけClosedにする。
 - GitHubや外部サービスへ書き込めない場合、書き込んだふりをせず、必要な操作と理由を報告する。
