@@ -27,6 +27,8 @@ jobs:
         run: |
           gh label create agent-ready --repo "$GH_REPO" --color "0E8A16" --description "Contract-valid issue ready for an agent" --force
           gh label create agent-contract-invalid --repo "$GH_REPO" --color "B60205" --description "Issue contract is invalid" --force
+          gh label create agent-in-progress --repo "$GH_REPO" --color "1D76DB" --description "Issue is claimed by an agent" --force
+          gh label create agent-blocked --repo "$GH_REPO" --color "D93F0B" --description "Issue is blocked with an explicit reason" --force
       - name: Validate issue contract
         id: contract
         run: |

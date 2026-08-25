@@ -1,0 +1,10 @@
+[
+  {"number": 101, "state": "OPEN", "labels": ["agent-task", "agent-ready"], "assignees": [], "comments": []},
+  {"number": 102, "state": "CLOSED", "labels": ["agent-task"], "assignees": [], "comments": []},
+  {"number": 103, "state": "OPEN", "labels": ["agent-task", "agent-ready"], "assignees": [], "comments": [], "depends_on": [104]},
+  {"number": 104, "state": "OPEN", "labels": ["agent-task", "agent-ready"], "assignees": [], "comments": []},
+  {"number": 105, "state": "OPEN", "labels": ["agent-task", "agent-contract-invalid"], "assignees": [], "comments": []},
+  {"number": 106, "state": "OPEN", "labels": ["agent-task", "agent-blocked"], "assignees": [], "comments": []},
+  {"number": 107, "state": "OPEN", "labels": ["agent-task", "agent-in-progress"], "assignees": ["alice"], "comments": [{"id": 1, "body": "<!-- agent-claim:v1 -->\nactor: alice"}]},
+  {"number": 108, "state": "CLOSED", "labels": [], "assignees": [], "comments": []}
+]
