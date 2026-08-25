@@ -2959,7 +2959,10 @@
       "sources": [
         "https://survey.gov-online.go.jp/living/202509/r07/r07-life/index.html",
         "https://survey.gov-online.go.jp/assets/r07/r07-life/h13-2.csv",
-        "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv"
+        "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv",
+        "https://www.boj.or.jp/research/o_survey/index.htm",
+        "https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi",
+        "https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi_notice.html"
       ],
       "status": "draft",
       "updated": "2026-08-25",
