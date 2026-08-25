@@ -69,10 +69,15 @@
       },
       "relations": [],
       "sources": [
-        "https://support.google.com/youtube/"
+        "https://blog.youtube/news-and-events/building-youtube-shorts/",
+        "https://support.google.com/youtube/answer/13363900?hl=en",
+        "https://support.google.com/youtube/answer/16089387?hl=en",
+        "https://support.google.com/youtube/answer/11914225?co=YOUTUBE._YTVideoType%3Dshorts&hl=en-GB",
+        "https://support.google.com/youtube/answer/12504220?hl=en",
+        "https://blog.youtube/news-and-events/tall-updates-coming-to-shorts/"
       ],
-      "status": "stub",
-      "updated": "2026-08-10",
+      "status": "draft",
+      "updated": "2026-08-25",
       "path": "entities/channels/youtube.md"
     },
     "event/apple-att": {
