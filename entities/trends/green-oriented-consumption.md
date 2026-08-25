@@ -28,6 +28,11 @@ evidence:
   - {field: kind, source: "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html", certainty: independent, retrieved: primary, as_of: "2025-06-26"}
   - {field: time, source: "https://www.caa.go.jp/notice/entry/044090/", certainty: independent, retrieved: primary, as_of: "2025-11-06"}
   - {field: stage, source: "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html", certainty: independent, retrieved: primary, as_of: "2025-06-26"}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告媒体や販売プラットフォームから発生した変化ではなく、商品・パッケージの認証ラベル、店頭・ECの商品説明、買い物・使用・廃棄の
+    行動、消費者教育、行政の啓発を通じて伝わる需要変化である。複数の商品カテゴリと接点にまたがるため、`channels` は張らない。
 channels: []
 relations: []
 sources:

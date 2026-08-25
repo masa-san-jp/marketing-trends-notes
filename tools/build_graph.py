@@ -8,7 +8,8 @@
 役割・確度／EDTF 違反／解釈系の関係で certainty・source の欠落／verified なのに項目ごとの根拠がない・
 根拠が vendor / anecdotal だけ／trend の market・geo・stage・kind・naming・freshness の欠落／
 freshness.recheck_by が stage と食い違う／trend 本文に反証の見出しが無い／predictions の形式違反／
-本文の相対リンク切れ／俯瞰の依存先が更新されたのに as_of が古い（STALE）。
+本文の相対リンク切れ／channel_scope の不整合／practice・case の本文型欠落／俯瞰の依存先が更新されたのに
+as_of が古い（STALE）／issue #1 の受け入れ条件未達。
 """
 
 import json
@@ -17,7 +18,7 @@ import sys
 
 import yaml
 
-from kb import (CERTAINTIES, CHANNEL_ROLES, DIR_FOR_TYPE, ENTITIES,
+from kb import (CERTAINTIES, CHANNEL_ROLES, CHANNEL_SCOPE_STATUSES, DIR_FOR_TYPE, ENTITIES,
                 EVIDENCE_FIELDS_FOR_VERIFIED, INTERPRETIVE_RELATIONS, PREDICTION_OUTCOMES,
                 RELATION_TARGET_TYPES, RELATIONS, RETRIEVEDS, ROOT, SATURATIONS, SEARCHED_FIELDS,
                 STAGES, STATUSES,
@@ -32,6 +33,14 @@ MARK_END = "<!-- generated:coverage:end -->"
 
 # 反証の見出し。書けないならそれはトレンドではなく感想（docs/schema.md「本文の型」）
 REFUTATION_HEADING = "## 反証"
+PRACTICE_HEADINGS = (
+    "## 何をするか", "## どのトレンドへの応答か", "## 成立条件・失敗条件",
+    "## 飽和度の判定", "## 利用上の注意", "## 未着手",
+)
+CASE_HEADINGS = (
+    "## 事実", "## 当事者自身の言葉", "## どう成立しているか", "## 数字",
+    "## 外部事例から得られる示唆",
+)
 
 
 def find_todos(value, path=""):
@@ -91,6 +100,16 @@ def validate(entities, records, cfg, errors):
 
         if etype == "trend":
             validate_trend(meta, body, cfg, err)
+        if etype == "practice":
+            for heading in PRACTICE_HEADINGS:
+                if heading not in body:
+                    err(f"practice 本文に {heading} が無い")
+        if etype == "case":
+            for heading in CASE_HEADINGS:
+                if heading not in body:
+                    err(f"case 本文に {heading} が無い")
+        if etype in ("practice", "case") and "## 自分の事業にどう使うか" in body:
+            err("旧見出し「## 自分の事業にどう使うか」が残っている（新しい本文型へ移行する）")
         if etype == "practice" and meta.get("saturation") is not None \
                 and meta["saturation"] not in SATURATIONS:
             err(f"saturation は {sorted(SATURATIONS)} のどれか（今: {meta['saturation']}）")
@@ -127,7 +146,13 @@ def validate(entities, records, cfg, errors):
                     err(f"{rtype} は certainty が必須（{sorted(CERTAINTIES)}／今: {r.get('certainty')}）")
                 if not r.get("source"):
                     err(f"{rtype} は source が必須（解釈を含む関係）")
-        for c in meta.get("channels") or []:
+        channel_rows = meta.get("channels") if isinstance(meta.get("channels"), list) else []
+        if meta.get("channels") is not None and not isinstance(meta.get("channels"), list):
+            err("channels は配列にする")
+        for c in channel_rows:
+            if not isinstance(c, dict):
+                err(f"channels の各項目はマップにする（今: {c!r}）")
+                continue
             role = c.get("role")
             if role not in CHANNEL_ROLES:
                 err(f"未知の channels role: {role}")
@@ -153,6 +178,36 @@ def validate(entities, records, cfg, errors):
                 errors.append(f"{path.relative_to(ROOT)}: 本文のリンク先が無い {rel_link}")
 
 
+def channel_scope_errors(meta):
+    """チャネル軸の移行状態を機械的に検証する。"""
+    errors = []
+    scope = meta.get("channel_scope")
+    channels = meta.get("channels")
+    if not isinstance(scope, dict):
+        return ["channel_scope は status / note を持つマップにする"]
+    status = scope.get("status")
+    if status not in CHANNEL_SCOPE_STATUSES:
+        errors.append(f"channel_scope.status は {sorted(CHANNEL_SCOPE_STATUSES)} のどれか（今: {status!r}）")
+    note = scope.get("note")
+    if note is not None and not isinstance(note, str):
+        errors.append("channel_scope.note は文字列または null にする")
+    if not isinstance(channels, list):
+        errors.append("trend の channels は配列にする")
+        channels = []
+    if status == "mapped" and not channels:
+        errors.append("channel_scope.status=mapped なら channels を1件以上持つ")
+    if status == "mapped" and note is not None:
+        errors.append("channel_scope.status=mapped なら note は null にする")
+    if status in ("not-applicable", "unresolved"):
+        if channels:
+            errors.append(f"channel_scope.status={status} なら channels は空配列にする")
+        if not isinstance(note, str) or not note.strip():
+            errors.append(f"channel_scope.status={status} なら note に理由を書く")
+    if status == "unresolved" and meta.get("status") != "stub":
+        errors.append("channel_scope.status=unresolved は trend の status=stub に限る")
+    return errors
+
+
 def validate_trend(meta, body, cfg, err):
     """trend 固有の必須項目。kind（成因）と stage（ライフサイクル）は独立に動く。"""
     if meta.get("kind") not in TREND_KINDS:
@@ -163,6 +218,8 @@ def validate_trend(meta, body, cfg, err):
         err(f"trend は market が必須（config/markets.yaml の categories／今: {meta.get('market')}）")
     if meta.get("geo") not in cfg["geographies"]:
         err(f"trend は geo が必須（config/markets.yaml の geographies／今: {meta.get('geo')}）")
+    for message in channel_scope_errors(meta):
+        err(message)
 
     naming = meta.get("naming")
     if not isinstance(naming, dict) or "self_identified" not in naming:
@@ -275,6 +332,35 @@ def check_overview_freshness(entities, errors):
                     f"overviews/{path.name}: STALE — {dep} が {target['updated']} に更新（as_of={as_of}）")
 
 
+def acceptance_checks(total, vendor_only_count, unread_count, hearsay_count, per_cat,
+                     stale_count, practice_count, linked_practices, resolved_predictions, thresholds):
+    """issue #1 の受け入れ条件を、表示用文字列から独立した機械値で評価する。"""
+    ratio = lambda numerator, denominator: numerator / denominator if denominator else 0
+    checks = {
+        "trend_total": {"actual": total, "operator": ">=", "threshold": thresholds["trend_total"]},
+        "vendor_only_ratio": {"actual": ratio(vendor_only_count, total), "operator": "<=",
+                               "threshold": thresholds["vendor_only_max_ratio"]},
+        "independent_ratio": {"actual": ratio(total - hearsay_count, total), "operator": ">=",
+                               "threshold": thresholds["independent_min_ratio"]},
+        "primary_read_ratio": {"actual": ratio(total - unread_count, total), "operator": ">=",
+                                "threshold": thresholds["primary_read_min_ratio"]},
+        "per_category_min": {"actual": min(per_cat.values()) if per_cat else 0, "operator": ">=",
+                              "threshold": thresholds["per_category_min"]},
+        "stale_ratio": {"actual": ratio(stale_count, total), "operator": "<=",
+                         "threshold": thresholds["stale_max_ratio"]},
+        "practice_linked_ratio": {"actual": ratio(linked_practices, practice_count), "operator": ">=",
+                                   "threshold": thresholds["practice_linked_ratio"]},
+        "resolved_predictions": {"actual": resolved_predictions, "operator": ">=",
+                                  "threshold": thresholds["resolved_prediction_min"]},
+    }
+    for check in checks.values():
+        if check["operator"] == ">=":
+            check["passed"] = check["actual"] >= check["threshold"]
+        else:
+            check["passed"] = check["actual"] <= check["threshold"]
+    return {"passed": all(c["passed"] for c in checks.values()), "checks": checks}
+
+
 def coverage(entities, cfg):
     """trend × カテゴリ × 開始年の被覆と、受け入れ条件の達成度。
 
@@ -318,9 +404,6 @@ def coverage(entities, cfg):
         if tid not in edge_ends:
             isolated.append(tid)
 
-    measured_ids = sorted(
-        i for i, m in entities.items()
-        if any(c.get("certainty") == "measured" for c in m.get("evidence") or []))
     resolved_predictions = sum(
         1 for m in entities.values() for p in m.get("predictions") or [] if p.get("resolved"))
     practices = {i: m for i, m in entities.items()
@@ -330,6 +413,15 @@ def coverage(entities, cfg):
         if any(r.get("type") == "responds_to" for r in m.get("relations") or []))
 
     total = len(counted)
+    channel_scope = {status: [] for status in sorted(CHANNEL_SCOPE_STATUSES)}
+    for tid, meta in counted.items():
+        status = (meta.get("channel_scope") or {}).get("status")
+        if status in channel_scope:
+            channel_scope[status].append(tid)
+    acceptance = acceptance_checks(
+        total, len(vendor_only), len(unread), len(hearsay), per_cat, len(stale),
+        len(practices), linked_practices, resolved_predictions, th)
+    checks = acceptance["checks"]
     return {
         "as_of": as_of,
         "trend_total": total,
@@ -344,25 +436,18 @@ def coverage(entities, cfg):
         "unread": sorted(unread),
         "hearsay": sorted(hearsay),
         "isolated": sorted(isolated),
-        "measured": measured_ids,
+        "channel_scope": {status: {"count": len(ids), "ids": sorted(ids)}
+                          for status, ids in channel_scope.items()},
+        "acceptance": acceptance,
         "progress": {
-            "trend_total": f"{total}/{th['trend_total']}（stub {len(trends) - total}件は不算入）",
-            "vendor_only_ratio": f"{(len(vendor_only) / total if total else 0):.2f}"
-                                 f"（上限 {th['vendor_only_max_ratio']}）",
-            "primary_read_ratio": f"{((total - len(unread)) / total if total else 0):.2f}"
-                                  f"（下限 {th['primary_read_min_ratio']}・原典を実読した根拠を持つ trend）",
-            "independent_ratio": f"{((total - len(hearsay)) / total if total else 0):.2f}"
-                                 f"（下限 {th['independent_min_ratio']}・"
-                                 f"independent / attested / measured の根拠を持つ trend）",
-            "self_measured": f"{len(measured_ids)}/{th['self_measured_min']} 件が measured の根拠を持つ",
-            "per_category_min": f"{sum(1 for n in per_cat.values() if n >= th['per_category_min'])}"
-                                f"/{len(cats)} カテゴリが {th['per_category_min']}件以上",
-            "stale_ratio": f"{(len(stale) / total if total else 0):.2f}"
-                           f"（上限 {th['stale_max_ratio']}・as_of={as_of} 時点）",
-            "practice_linked": f"{linked_practices}/{len(practices)} の practice が"
-                               f" responds_to を持つ（下限比率 {th['practice_linked_ratio']}）",
-            "resolved_predictions": f"{resolved_predictions}/{th['resolved_prediction_min']} 件の"
-                                    "予測が答え合わせ済み",
+            "trend_total": f"{checks['trend_total']['actual']}/{checks['trend_total']['threshold']}（stub {len(trends) - total}件は不算入）",
+            "vendor_only_ratio": f"{checks['vendor_only_ratio']['actual']:.2f}（上限 {checks['vendor_only_ratio']['threshold']}）",
+            "primary_read_ratio": f"{checks['primary_read_ratio']['actual']:.2f}（下限 {checks['primary_read_ratio']['threshold']}・原典を実読した根拠を持つ trend）",
+            "independent_ratio": f"{checks['independent_ratio']['actual']:.2f}（下限 {checks['independent_ratio']['threshold']}・independent / attested / measured の根拠を持つ trend）",
+            "per_category_min": f"{sum(1 for n in per_cat.values() if n >= th['per_category_min'])}/{len(cats)} カテゴリが {th['per_category_min']}件以上",
+            "stale_ratio": f"{checks['stale_ratio']['actual']:.2f}（上限 {checks['stale_ratio']['threshold']}・as_of={as_of} 時点）",
+            "practice_linked": f"{linked_practices}/{len(practices)} の practice が responds_to を持つ（下限比率 {checks['practice_linked_ratio']['threshold']}）",
+            "resolved_predictions": f"{resolved_predictions}/{th['resolved_prediction_min']} 件の予測が答え合わせ済み",
         },
     }
 
@@ -421,6 +506,16 @@ def render_coverage(cov, cfg, entities):
 
     lines += ["", "受け入れ条件の達成度:", ""]
     lines += [f"- {k}: {v}" for k, v in cov["progress"].items()]
+    lines += ["", "チャネル軸の移行状態:"]
+    for status, row in cov["channel_scope"].items():
+        lines.append(f"- {status}: {row['count']}件")
+    if cov["acceptance"]["passed"]:
+        lines += ["", "受け入れ条件: **全項目達成**"]
+    else:
+        lines += ["", "受け入れ条件: **未達**"]
+        for name, check in cov["acceptance"]["checks"].items():
+            if not check["passed"]:
+                lines.append(f"- {name}: actual={check['actual']} {check['operator']} threshold={check['threshold']}")
     if cov["isolated"]:
         lines += ["", f"関係を持たない trend: {', '.join(cov['isolated'])}"]
     return "\n".join(lines)
@@ -463,6 +558,13 @@ def main():
     edges = build_edges(entities)
     cov = coverage(entities, cfg)
     if check_only:
+        if not cov["acceptance"]["passed"]:
+            print("✗ 受け入れ条件未達:", file=sys.stderr)
+            for name, check in cov["acceptance"]["checks"].items():
+                if not check["passed"]:
+                    print(f"  - {name}: actual={check['actual']} {check['operator']} threshold={check['threshold']}",
+                          file=sys.stderr)
+            return 1
         print(f"✓ {len(entities)} エンティティ / {len(edges)} 関係 — 問題なし")
         return 0
 

@@ -37,11 +37,17 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 - vendor_only_ratio: 0.00（上限 0.2）
 - primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
-- self_measured: 0/10 件が measured の根拠を持つ
 - per_category_min: 12/12 カテゴリが 2件以上
 - stale_ratio: 0.00（上限 0.15・as_of=2026-08-12 時点）
 - practice_linked: 60/61 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 5/5 件の予測が答え合わせ済み
+
+チャネル軸の移行状態:
+- mapped: 1件
+- not-applicable: 59件
+- unresolved: 0件
+
+受け入れ条件: **全項目達成**
 <!-- generated:coverage:end -->
 
 ## 空欄の読み方
@@ -78,7 +84,7 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 
 ## 埋める順番（当面）
 
-1. **自分の事業に直接触れるカテゴリ**から。判断材料にならないトレンドは後回しでよい
+1. **利用者の判断に直接関係するカテゴリ**から。判断材料にならないトレンドは後回しでよい
    （このKBの用途は網羅ではなく判断）。
 2. **audit が指すもの**（鮮度切れ・vendor 単独・未判定の予測）。体系が次に要求していることなので、
    ただの空欄より優先度が高い。

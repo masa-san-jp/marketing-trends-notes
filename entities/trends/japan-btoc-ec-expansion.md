@@ -30,6 +30,11 @@ evidence:
   - {field: time, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024"}
 predictions:
   - {claim: "2025年の国内BtoC-EC市場規模が2024年の26.1兆円を下回らない", by: "2026-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定のプラットフォームや媒体が発生チャネルだとは置かない。ここで観測しているのは、商取引全体に占める電子取引の構成変化である。
+    モール、ブランド直販、SNS経由などの内訳は、報告書を実読してから分ける。
 channels: []
 relations: []
 sources:

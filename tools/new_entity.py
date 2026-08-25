@@ -30,7 +30,7 @@ time:
   start: null            # EDTF: 2016 / 202X（2020年代）/ 2020~（およそ）/ null
   end: null              # 継続中は ".."
   display: null          # 原表記（「コロナ禍以降」等）をそのまま残す
-{extra}channels: []            # 例 [{{role: originated_on, target: channel/tiktok}}]
+{extra}{channel_scope}channels: []              # trend は channel_scope と併記する
 relations: []
 sources:
   - TODO: 出典URLを1本以上
@@ -40,7 +40,8 @@ updated: {today}
 
 # {ja}
 
-TODO: 本文。型ごとの見出しは docs/schema.md の「本文の型」に従う。
+TODO: 本文。型ごとの見出しは docs/schema.md の「本文の型」に従う。practice は外部事例・適用条件・
+効果未確認を、trend はチャネル軸の適用範囲を記録し、書き手自身の実施有無や自社数値は記録しない。
 """
 
 TREND_EXTRA = """kind: {kind}             # {kinds}
@@ -77,12 +78,14 @@ def main():
 
     today = date.today().isoformat()
     extra = ""
+    channel_scope = ""
     if a.type == "trend":
         recheck = recheck_deadline(a.stage, today) if a.stage else None
         extra = TREND_EXTRA.format(
             kind=a.kind or "TODO", kinds=" / ".join(sorted(TREND_KINDS)),
             stage=a.stage or "TODO", stages=" / ".join(sorted(STAGES)),
             ja=a.ja, today=today, recheck=recheck or "null")
+        channel_scope = "channel_scope:\n  status: unresolved       # mapped / not-applicable / unresolved\n  note: TODO               # 未確定の理由。mapped は null\n"
     if a.type == "practice":
         extra = PRACTICE_EXTRA.format(sats=" / ".join(sorted(SATURATIONS)))
 
@@ -93,7 +96,7 @@ def main():
         return 1
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(COMMON.format(eid=eid, uri=URI_PREFIX + eid, etype=a.type, ja=a.ja, en=a.en,
-                                  extra=extra, today=today), encoding="utf-8")
+                                  extra=extra, channel_scope=channel_scope, today=today), encoding="utf-8")
     print(f"✓ {path.relative_to(path.parents[2])} を作った。TODO を埋めて "
           f"`python3 tools/build_graph.py --check` を通す")
     return 0

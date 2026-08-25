@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.enecho.meti.go.jp/about/special/johoteikyo/xev_cev_2024.html?ui_medium=lpene", certainty: independent, retrieved: primary, as_of: "2023年度-2024"}
 predictions:
   - {claim: "次回の資源エネルギー庁または自動車関連公的統計で、乗用車新車販売に占める電動車比率が2024年の57％を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告媒体が発生チャネルだとは置かない。車両価格、補助金、燃費・航続距離、充電インフラ、販売店・整備網、法人車両更新、環境意識が購入構成に影響する。
 channels: []
 relations: []
 sources:

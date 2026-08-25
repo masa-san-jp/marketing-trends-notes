@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.env.go.jp/content/000327691.pdf", certainty: independent, retrieved: primary, as_of: "2022-2023"}
 predictions:
   - {claim: "次回公表されるCtoC-EC推計市場規模が2023年の2兆4,817億円を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    フリマアプリ、ネットオークション、リユースショップなどが取引接点になる。環境省は、CtoC-ECの推計にはフリマアプリとネットオークションが含まれると説明しているが、アプリ別のシェアや利用者属性まではこの資料からは言えない。
 channels: []
 relations: []
 sources:

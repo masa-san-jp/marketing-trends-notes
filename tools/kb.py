@@ -31,8 +31,8 @@ STAGES = {"emerging", "growing", "peak", "declining", "dead"}
 SATURATIONS = {"novel", "spreading", "commoditized", "negative"}
 STATUSES = {"stub", "draft", "verified"}
 
-# 確度＝「誰が測ったか・利害があるか」。美術史の attested/scholarly をここに差し替えた。
-#   measured     自分で測った数字（自社GA・売上・投稿インプレッション）
+# 確度＝「誰が出したか・利害があるか」。美術史の attested/scholarly をここに差し替えた。
+#   measured     再現可能な外部観測（公開された計測・統計・ログ）
 #   independent  利害のない第三者（官公庁統計・学術研究・査読論文）
 #   attested     当事者の一次言明（仕様・規約・決算開示。自分に不利でも成り立つ事実）
 #   vendor       その主張で儲かる側が出す市場の数字・効果の主張（ベンダーレポート・代理店調査）
@@ -70,6 +70,7 @@ RELATIONS = {**STRUCTURAL_RELATIONS, **INTERPRETIVE_RELATIONS}
 
 # 空間軸に当たるのはチャネル。トレンドの「発生地」は物理座標ではなくチャネルとカテゴリ
 CHANNEL_ROLES = {"originated_on", "spread_to", "commoditized_on", "observed_on"}
+CHANNEL_SCOPE_STATUSES = {"mapped", "not-applicable", "unresolved"}
 
 # 関係が指してよい相手の型。意味的に壊れた配線（killed_by が channel を指す等）を落とすため。
 RELATION_TARGET_TYPES = {

@@ -28,6 +28,11 @@ evidence:
   - {field: kind, source: "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html", certainty: attested, retrieved: primary, as_of: "2025-12-24"}
   - {field: time, source: "https://www.bunka.go.jp/tokei_hakusho_shuppan/tokeichosa/chosakuken/index.html", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
   - {field: stage, source: "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html", certainty: attested, retrieved: primary, as_of: "2025-12-24"}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定のSNSや動画プラットフォームから発生した変化ではなく、契約、配信・投稿サービスの利用明細、権利情報データベース、著作権相談・裁定手続、
+    業界団体・行政の調査を通じて伝わる制度・取引条件の変化である。そのため `channels` は張らない。
 channels: []
 relations: []
 sources:

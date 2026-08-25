@@ -30,6 +30,11 @@ evidence:
   - {field: time, source: "https://www.mhlw.go.jp/stf/newpage_66279.html", certainty: independent, retrieved: primary, as_of: "2025-12-02"}
 predictions:
   - {claim: "次回の国民健康・栄養調査で、睡眠で休養がとれている者の年齢調整値が2024年の78.5%を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    健康診断・保健指導、職場の健康経営、自治体の普及啓発、医療・保健専門職、睡眠ガイド、ウェアラブル・アプリなどを通じて伝わる。どの接点が睡眠改善の
+    実行、受診、商品購入に結び付くかは未確認のため、`channels` は張らない。
 channels: []
 relations: []
 sources:

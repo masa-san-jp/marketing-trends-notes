@@ -28,6 +28,12 @@ evidence:
   - {field: kind, source: "https://www.caa.go.jp/notice/entry/038499/", certainty: attested, retrieved: primary, as_of: "2024-06-27"}
   - {field: time, source: "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf", certainty: attested, retrieved: primary, as_of: "2024-08-30"}
   - {field: stage, source: "https://www.caa.go.jp/notice/entry/043728/", certainty: attested, retrieved: primary, as_of: "2025-10-01"}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告媒体から広がった変化ではなく、食品表示、商品ページ、届出データベース、品質保証、顧客相談、行政への報告を通じて伝わる
+    制度対応である。そのため `channels` は張らない。**未確認**: 店頭、EC、定期購入、専門家経由など、消費者が安全・表示管理の変化をどの接点で
+    認識し、商品選択を変えたか。
 channels: []
 relations: []
 sources:

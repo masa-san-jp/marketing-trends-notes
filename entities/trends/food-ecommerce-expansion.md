@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2023-2024"}
 predictions:
   - {claim: "2025年の食品・飲料・酒類BtoC-EC市場規模が2024年の3兆1,163億円を下回らない", by: "2026-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    ECモール、食品宅配、メーカー直販、オンラインスーパーなど複数の取引接点が含まれうるが、資料は個別チャネル別の寄与を示していない。チャネル別の成長要因は別調査で確認する。
 channels: []
 relations: []
 sources:

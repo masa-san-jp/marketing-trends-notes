@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2016-2021"}
 predictions:
   - {claim: "次回の公的なコンテンツ市場調査で、映像配信市場規模が2021年の約4,230億円を下回らない", by: "2028-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    定額配信、都度課金、買い切り、広告型配信、動画共有プラットフォーム、スマートフォン、テレビ接続機器などを通じて広がる。資料は個別サービスが需要を発生させた因果を特定していない。
 channels: []
 relations: []
 sources:

@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03"}
 predictions:
   - {claim: "次回の公正取引委員会または文化庁の実態調査で、ニュースポータル・検索・媒体サイトの利用経路と取引条件が再整理される", by: "2028-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    ニュースポータル、検索、媒体サイト、SNS、動画、メール・アプリ通知など複数の経路がある。検索・ポータルの抜粋閲覧で終わるのか、媒体サイトへ送客されるのか、広告・購読へ転換するのかは経路ごとに異なる。
 channels: []
 relations: []
 sources:

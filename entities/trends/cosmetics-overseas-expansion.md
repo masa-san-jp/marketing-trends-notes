@@ -29,6 +29,11 @@ evidence:
   - {field: stage, source: "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/001_04_00.pdf", certainty: attested, retrieved: primary, as_of: "2025-12-08"}
   - {field: time, source: "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html", certainty: attested, retrieved: primary, as_of: "2020-08"}
 predictions: []
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の消費者向け広告から広がる変化ではなく、産業ビジョン、企業ヒアリング、輸出支援、OEM/ODM・原料供給、現地の小売・EC・代理店、
+    各国の規制対応を通じて伝わる。国ごとの販売接点やインバウンドと越境ECの寄与は資料上で分離できていないため、`channels` は張らない。
 channels: []
 relations: []
 sources:

@@ -31,6 +31,10 @@ evidence:
   - {field: prediction, source: "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20260527_1.html", certainty: independent, retrieved: primary, as_of: "2025"}
 predictions:
   - {claim: "2025年のフード・ビジネス指数が2024年の96.3を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: miss}
+channel_scope:
+  status: not-applicable
+  note: >-
+    店舗、テイクアウト、配達、予約、外食モール、インバウンド、ファーストフード、レストラン、居酒屋など複数の接点がある。業態別の来店・注文経路の因果は未確認である。
 channels: []
 relations: []
 sources:

@@ -30,6 +30,12 @@ evidence:
   - {field: time, source: "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/", certainty: attested, retrieved: primary, as_of: "2023-10-01"}
 predictions:
   - {claim: "次回以降の消費者庁調査または同等の独立調査で、インフルエンサー投稿の広告表示を見た経験と、表示を信頼判断に使う割合が再計測される", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定のプラットフォームの機能ではなく、インフルエンサー等の第三者投稿に横断的に適用される表示要件なので、
+    発生・伝播チャネルは特定しない。消費者庁の説明もSNS投稿だけでなく、レビュー投稿、テレビ、新聞、ラジオ、
+    雑誌等を対象に含めている。
 channels: []
 relations: []
 sources:

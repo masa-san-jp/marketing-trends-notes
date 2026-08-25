@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf", certainty: independent, retrieved: primary, as_of: "2026-02"}
 predictions:
   - {claim: "次回同種の生成AI利用者調査で、日常生活での毎日利用者が2026年調査の約20％を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    スマートフォン、検索、SNS・動画の推薦、文章作成、相談、学習、商品選択、カスタマーサポートを通じて、情報接触と意思決定へ伝わる。日常利用が購買、学習成果、対人関係を改善する因果は未確認である。
 channels: []
 relations: []
 sources:

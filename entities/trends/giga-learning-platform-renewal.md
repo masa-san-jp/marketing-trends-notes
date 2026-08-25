@@ -29,6 +29,10 @@ evidence:
   - {field: stage, source: "https://www.mext.go.jp/content/20251020-mxt_syoto02-000045471_14.pdf", certainty: attested, retrieved: primary, as_of: "2025-10-20"}
   - {field: time, source: "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
 predictions: []
+channel_scope:
+  status: not-applicable
+  note: >-
+    文部科学省の補助・仕様・計画、自治体の調達と更新計画、学校のICT支援、端末管理・校内ネットワーク・クラウド学習サービスの運用を通じて伝わる。学校現場では教員研修、故障・問い合わせ対応、児童生徒のアカウント更新、授業でのデジタル教材利用が接点になるが、どの接点が更新判断や利用継続を左右するかは未確認のため、`channels` は張らない。
 channels: []
 relations: []
 sources:

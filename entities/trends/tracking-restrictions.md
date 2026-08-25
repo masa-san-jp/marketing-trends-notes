@@ -40,6 +40,12 @@ evidence:
   - {field: stage, source: "https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html", certainty: vendor, retrieved: primary, as_of: "2024-Q1"}
 predictions:
   - {claim: "2027年末までに、日本の主要広告主の間で計測の主軸がユーザー単位のトラッキングからMMM・インクリメンタリティ計測側へ寄る（業界団体・独立調査でその旨が確認できる）", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    この trend は特定チャネル発ではない（規制・制度の側から来ている）ので、`channels` は張っていない。
+    影響はチャネル横断に及ぶ——だから `market: cross-category`。
+channels: []
 relations: []
 sources:
   - https://developer.apple.com/app-store/user-privacy-and-data-use/

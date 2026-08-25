@@ -29,6 +29,11 @@ evidence:
   - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf", certainty: attested, retrieved: primary, as_of: "2025-03-25"}
   - {field: time, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/", certainty: attested, retrieved: primary, as_of: "2019-10-01"}
 predictions: []
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告・SNSチャネルから広がる変化ではなく、法律、基本方針、行政ガイドライン、食品事業者・自治体の連携を通じて伝わるため、
+    `channels` は張らない。**未確認**: 小売、外食、食品製造、家庭それぞれで、どの販売・提供接点が削減行動を変えたか。
 channels: []
 relations: []
 sources:

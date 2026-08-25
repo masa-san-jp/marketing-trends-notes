@@ -100,13 +100,140 @@
   "unread": [],
   "hearsay": [],
   "isolated": [],
-  "measured": [],
+  "channel_scope": {
+    "mapped": {
+      "count": 1,
+      "ids": [
+        "trend/short-video-mainstream"
+      ]
+    },
+    "not-applicable": {
+      "count": 59,
+      "ids": [
+        "trend/anxiety-multiplication",
+        "trend/b2b-ecommerce-expansion",
+        "trend/building-renovation-market-expansion",
+        "trend/care-service-utilization-expansion",
+        "trend/care-workforce-shortage",
+        "trend/cashless-payment-expansion",
+        "trend/cloud-service-adoption",
+        "trend/cosmetics-overseas-expansion",
+        "trend/creator-ad-disclosure",
+        "trend/creator-rights-compensation-transparency",
+        "trend/cross-border-ecommerce-expansion",
+        "trend/crypto-asset-user-expansion",
+        "trend/digital-salary-payment",
+        "trend/digital-textbook-practical-adoption",
+        "trend/domestic-travel-consumption-expansion",
+        "trend/electrified-vehicle-adoption",
+        "trend/fertility-treatment-insurance-access",
+        "trend/food-ecommerce-expansion",
+        "trend/food-loss-reduction-institutionalization",
+        "trend/foodservice-demand-recovery",
+        "trend/foodtech-alternative-protein",
+        "trend/foreign-worker-employment-expansion",
+        "trend/functional-food-safety-governance",
+        "trend/gaming-digital-global-expansion",
+        "trend/generative-ai-business-adoption",
+        "trend/generative-ai-daily-life-adoption",
+        "trend/giga-learning-platform-renewal",
+        "trend/green-oriented-consumption",
+        "trend/inbound-tourism-demand-expansion",
+        "trend/japan-btoc-ec-expansion",
+        "trend/japanese-music-overseas-expansion",
+        "trend/live-entertainment-experience-expansion",
+        "trend/music-streaming-expansion",
+        "trend/online-financial-crime-governance",
+        "trend/online-game-spending-protection",
+        "trend/online-marketplace-transparency",
+        "trend/online-medical-consultation-adoption",
+        "trend/online-news-platform-dependence",
+        "trend/outbound-travel-recovery",
+        "trend/parcel-delivery-volume-expansion",
+        "trend/parental-leave-normalization",
+        "trend/plastic-resource-circulation",
+        "trend/recurrent-education-institutionalization",
+        "trend/redelivery-reduction",
+        "trend/reuse-c2c-market-expansion",
+        "trend/school-generative-ai-governance",
+        "trend/senior-employment-expansion",
+        "trend/service-ecommerce-expansion",
+        "trend/single-person-household-expansion",
+        "trend/sleep-rest-health-management",
+        "trend/sports-participation-plateau",
+        "trend/sustainable-fashion-behavior",
+        "trend/telework-stabilization",
+        "trend/tokyo-region-inmigration-persistence",
+        "trend/tracking-restrictions",
+        "trend/vacant-housing-expansion",
+        "trend/video-distribution-expansion",
+        "trend/women-employment-expansion",
+        "trend/workplace-stress-check-institutionalization"
+      ]
+    },
+    "unresolved": {
+      "count": 0,
+      "ids": []
+    }
+  },
+  "acceptance": {
+    "passed": true,
+    "checks": {
+      "trend_total": {
+        "actual": 60,
+        "operator": ">=",
+        "threshold": 60,
+        "passed": true
+      },
+      "vendor_only_ratio": {
+        "actual": 0.0,
+        "operator": "<=",
+        "threshold": 0.2,
+        "passed": true
+      },
+      "independent_ratio": {
+        "actual": 1.0,
+        "operator": ">=",
+        "threshold": 0.5,
+        "passed": true
+      },
+      "primary_read_ratio": {
+        "actual": 1.0,
+        "operator": ">=",
+        "threshold": 0.3,
+        "passed": true
+      },
+      "per_category_min": {
+        "actual": 2,
+        "operator": ">=",
+        "threshold": 2,
+        "passed": true
+      },
+      "stale_ratio": {
+        "actual": 0.0,
+        "operator": "<=",
+        "threshold": 0.15,
+        "passed": true
+      },
+      "practice_linked_ratio": {
+        "actual": 0.9836065573770492,
+        "operator": ">=",
+        "threshold": 0.5,
+        "passed": true
+      },
+      "resolved_predictions": {
+        "actual": 5,
+        "operator": ">=",
+        "threshold": 5,
+        "passed": true
+      }
+    }
+  },
   "progress": {
     "trend_total": "60/60（stub 0件は不算入）",
     "vendor_only_ratio": "0.00（上限 0.2）",
     "primary_read_ratio": "1.00（下限 0.3・原典を実読した根拠を持つ trend）",
     "independent_ratio": "1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）",
-    "self_measured": "0/10 件が measured の根拠を持つ",
     "per_category_min": "12/12 カテゴリが 2件以上",
     "stale_ratio": "0.00（上限 0.15・as_of=2026-08-12 時点）",
     "practice_linked": "60/61 の practice が responds_to を持つ（下限比率 0.5）",

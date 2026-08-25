@@ -29,6 +29,11 @@ evidence:
   - {field: stage, source: "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html", certainty: attested, retrieved: primary, as_of: "2023-04-19"}
   - {field: time, source: "https://www.env.go.jp/recycle/plastic/circulation.html", certainty: attested, retrieved: primary, as_of: "2022-04-01"}
 predictions: []
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告・販売チャネルから広がる変化ではなく、法律、設計指針、行政の手引き、認定制度を通じて事業者へ伝わるため、
+    `channels` は張らない。容器包装や家庭ごみの実態調査は、制度の対象となる廃棄・回収側の観測資料として扱う。
 channels: []
 relations: []
 sources:

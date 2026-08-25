@@ -30,6 +30,12 @@ evidence:
   - {field: time, source: "https://www.meti.go.jp/files/000001765.xlsx", certainty: independent, retrieved: primary, as_of: "2010-2025"}
 predictions:
   - {claim: "経済産業省の次回年次公表で、国内指標のキャッシュレス決済比率が2025年の58.0％を下回らない", by: "2027-03", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定のメディアやプラットフォームが発生チャネルではないため、`channels` は張らない。クレジットカード、デビットカード、
+    電子マネー、コード決済は支払手段の内訳であり、伝播チャネルとは分けて扱う。**未確認**: 店舗規模・業種・地域別の導入率と、
+    オンライン／実店舗別の利用差。
 channels: []
 relations: []
 sources:

@@ -2939,6 +2939,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "`channels` は空にした。これは媒体の上で発生・伝播する形式ではなく、世論調査で観測される 需要側の状態なので、`originated_on` を特定できない。**特定できないものは書かない**という規律に従う。\n**未確認**: SNS 上での現れ方。金銭不安の増加が投稿としてどう出るか（節約・副業・投資の語の増減など）は、 独立した出典では測られていない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3011,6 +3015,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "企業間の受発注、調達、販売管理などの取引接点にまたがる。特定のクラウドサービスや業界を発生源とは置かず、業種別・取引段階別の内訳は資料の範囲を超えて断定しない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3081,6 +3089,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "リフォーム会社、工務店、管理組合、住宅設備、ホームセンター、金融・補助制度、賃貸管理、建物管理を通じて、建築ストックと消費財・サービスへ伝わる。受注増が個人の可処分所得や住み替え意向をどう変えるかは未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3159,6 +3171,10 @@
           "outcome": "miss"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "在宅介護、訪問、通所、施設、介護予防、ケアマネジメント、自治体、家族、福祉用具、見守り、オンライン相談など複数の接点がある。利用増加を生む個別の紹介・選択経路は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3231,6 +3247,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "介護事業所の採用、入門研修、資格取得、給与・勤務シフト、外国人材、介護ロボット、ICT、家族支援を通じて、介護サービスの供給能力へ伝わる。職員数の増加が利用者のアウトカムを改善する因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3302,6 +3322,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のメディアやプラットフォームが発生チャネルではないため、`channels` は張らない。クレジットカード、デビットカード、 電子マネー、コード決済は支払手段の内訳であり、伝播チャネルとは分けて扱う。**未確認**: 店舗規模・業種・地域別の導入率と、 オンライン／実店舗別の利用差。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3374,6 +3398,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告やSNSから広がる変化ではなく、業務システムの更新、テレワーク・拠点間共有、データ保管、外部サービスとの連携を通じて企業内に 広がる。導入経路としてクラウド事業者、既存の業務ソフト、SIer、社内IT部門などが関わりうるが、どの経路が利用率の上昇を説明するかは この調査だけでは特定できないため、`channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3439,6 +3467,10 @@
         }
       ],
       "predictions": [],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の消費者向け広告から広がる変化ではなく、産業ビジョン、企業ヒアリング、輸出支援、OEM/ODM・原料供給、現地の小売・EC・代理店、 各国の規制対応を通じて伝わる。国ごとの販売接点やインバウンドと越境ECの寄与は資料上で分離できていないため、`channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3512,6 +3544,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のプラットフォームの機能ではなく、インフルエンサー等の第三者投稿に横断的に適用される表示要件なので、 発生・伝播チャネルは特定しない。消費者庁の説明もSNS投稿だけでなく、レビュー投稿、テレビ、新聞、ラジオ、 雑誌等を対象に含めている。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3575,6 +3611,10 @@
           "as_of": "2025-12-24"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のSNSや動画プラットフォームから発生した変化ではなく、契約、配信・投稿サービスの利用明細、権利情報データベース、著作権相談・裁定手続、 業界団体・行政の調査を通じて伝わる制度・取引条件の変化である。そのため `channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3648,6 +3688,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "越境ECモール、国内事業者の越境対応サイト、海外マーケットプレイス、SNS・検索、決済、国際物流など複数の接点が関係する。ただし、調査は個別チャネルの寄与を特定していない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3718,6 +3762,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "暗号資産交換業者、アプリ、取引所、ウォレット、広告・SNS、銀行・決済との接続を通じて広がる。利用開始と継続、投資勧誘、詐欺被害の経路は同じではないため、チャネル別の因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3795,6 +3843,10 @@
           "outcome": "miss"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "給与計算、労務管理、労使協定、スマートフォン決済、資金移動業者、金融教育、福利厚生を通じて、雇用と決済の接点へ伝わる。給与のデジタル受取が消費額や家計管理を変える因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3874,6 +3926,10 @@
           "outcome": "hit"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告媒体が発生チャネルだとは置かない。国の提供方針、学校の端末・通信環境、教員研修、教科書の機能、紙との併用、児童生徒の学習上の配慮が活用頻度に影響する。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -3946,6 +4002,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の旅行予約サイトや広告媒体が発生チャネルだとは置かない。宿泊旅行、日帰り旅行、交通、飲食、買物、娯楽などの支出が合算された需要指標である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4017,6 +4077,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告媒体が発生チャネルだとは置かない。車両価格、補助金、燃費・航続距離、充電インフラ、販売店・整備網、法人車両更新、環境意識が購入構成に影響する。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4088,6 +4152,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "医療機関、診療報酬、自治体相談、患者支援、職場の休暇・両立支援、医療情報提供を通じて、治療へのアクセスと意思決定へ伝わる。保険アクセスの拡大が出生や就業継続を改善する因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4159,6 +4227,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "ECモール、食品宅配、メーカー直販、オンラインスーパーなど複数の取引接点が含まれうるが、資料は個別チャネル別の寄与を示していない。チャネル別の成長要因は別調査で確認する。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4222,6 +4294,10 @@
         }
       ],
       "predictions": [],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告・SNSチャネルから広がる変化ではなく、法律、基本方針、行政ガイドライン、食品事業者・自治体の連携を通じて伝わるため、 `channels` は張らない。**未確認**: 小売、外食、食品製造、家庭それぞれで、どの販売・提供接点が削減行動を変えたか。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4302,6 +4378,10 @@
           "outcome": "miss"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "店舗、テイクアウト、配達、予約、外食モール、インバウンド、ファーストフード、レストラン、居酒屋など複数の接点がある。業態別の来店・注文経路の因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4366,6 +4446,10 @@
         }
       ],
       "predictions": [],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告やSNSから広がる変化ではなく、官民協議会の作業部会、研究開発、事業化支援、食品メーカー・スタートアップとの実証、学校・料理人・ 消費者への説明を通じて伝わる。どの技術がどの食品カテゴリ・価格帯・販売接点で定着するかは未確認のため、`channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4440,6 +4524,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "求人媒体、職業紹介、在留資格手続、給与・勤怠、翻訳・研修、社内コミュニケーション、店舗・現場接客を通じて、雇用とサービス提供へ伝わる。外国人雇用の増加が消費行動や生産性をどう変えるかは未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4502,6 +4590,10 @@
           "as_of": "2025-10-01"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告媒体から広がった変化ではなく、食品表示、商品ページ、届出データベース、品質保証、顧客相談、行政への報告を通じて伝わる 制度対応である。そのため `channels` は張らない。**未確認**: 店頭、EC、定期購入、専門家経由など、消費者が安全・表示管理の変化をどの接点で 認識し、商品選択を変えたか。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4568,6 +4660,10 @@
           "as_of": "2025-12-15"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のSNSや広告媒体から発生した変化ではなく、モバイルアプリストア、PCゲームプラットフォーム、家庭用ゲーム機のオンラインストア、動画・配信、 海外販売・ローカライズを通じて伝わる市場構造の変化である。現在の資料だけでは、どのチャネルが需要を発生させたかを一つに特定できないため、 `channels` は張らない。**未確認**: プラットフォーム別の新規獲得、継続率、配信・動画視聴からの送客、海外地域別の購入経路。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4640,6 +4736,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告・SNSチャネルから広がる変化ではなく、企業の業務導入、試験利用、部門・全社システムへの組み込みで観測されるため、 `channels` は張らない。**未確認**: SaaSの契約形態、部門別の導入経路、社内での利用ルールが導入率と定着率に与える差。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4712,6 +4812,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "スマートフォン、検索、SNS・動画の推薦、文章作成、相談、学習、商品選択、カスタマーサポートを通じて、情報接触と意思決定へ伝わる。日常利用が購買、学習成果、対人関係を改善する因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4776,6 +4880,10 @@
         }
       ],
       "predictions": [],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "文部科学省の補助・仕様・計画、自治体の調達と更新計画、学校のICT支援、端末管理・校内ネットワーク・クラウド学習サービスの運用を通じて伝わる。学校現場では教員研修、故障・問い合わせ対応、児童生徒のアカウント更新、授業でのデジタル教材利用が接点になるが、どの接点が更新判断や利用継続を左右するかは未確認のため、`channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4842,6 +4950,10 @@
           "as_of": "2025-06-26"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告媒体や販売プラットフォームから発生した変化ではなく、商品・パッケージの認証ラベル、店頭・ECの商品説明、買い物・使用・廃棄の 行動、消費者教育、行政の啓発を通じて伝わる需要変化である。複数の商品カテゴリと接点にまたがるため、`channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4915,6 +5027,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告媒体が発生チャネルだとは置かない。航空便、国・地域別の旅行需要、滞在日数、観光コンテンツ、地方誘客などが複合して旅行者数と消費額に反映される。観光庁は欧米豪・中東などからの旅行者増加や平均泊数の増加を要因として挙げている。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -4986,6 +5102,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のプラットフォームや媒体が発生チャネルだとは置かない。ここで観測しているのは、商取引全体に占める電子取引の構成変化である。 モール、ブランド直販、SNS経由などの内訳は、報告書を実読してから分ける。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5057,6 +5177,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "音楽配信、UGCプラットフォーム、海外公演、音楽ソフト、著作権・ライセンス、ファンクラブ、マーチャンダイズ、訪日外国人の国内消費など複数の取引経路がある。経路別の因果や新規顧客獲得は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5128,6 +5252,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "会場、チケット販売、ファンクラブ、SNS・動画、物販、配信、観光・交通、海外アーティスト公演など複数の接点がある。どの接点が購入を発生させたかの因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5190,6 +5318,10 @@
           "as_of": "2026-03-04"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "サブスクリプション型ストリーミング、広告収入型ストリーミング、ダウンロード、音楽ビデオなど複数の配信形式を通じて伝わるが、これらは市場の 収益・提供区分であり、特定の発生チャネルとは分けて扱う。そのため `channels` は張らない。**未確認**: 利用者が新曲を発見する経路、SNS・動画・ ライブとの相互送客、配信サービス別の利用時間と継続率。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5255,6 +5387,10 @@
           "as_of": "2026-04-16"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "被害の入口は、警察庁が2025年に確認したバナー広告やSNSのダイレクトメッセージ、金融機関の資料が示すメール・SMS・メッセージツール経由の フィッシングなど複数にまたがる。一方、このtrendの伝播は特定の広告媒体ではなく、ログイン認証、取引監視、顧客通知、口座停止、金融機関間の 情報共有、警察・業界の啓発を通じて起きる制度対応である。そのため `channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5322,6 +5458,10 @@
         }
       ],
       "predictions": [],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "ゲーム内の価格表示・有料無料の境界、年齢確認、アプリストア・決済、保護者への説明、学校・家庭の消費者教育、相談窓口を通じて伝わる。動画配信や コミュニティで課金が促される経路もあるが、どの経路が相談・事故・支出に与える影響かは未確認のため、`channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5388,6 +5528,10 @@
           "as_of": "2026-06-12"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告媒体から広がった変化ではなく、オンラインモールの出店規約・取引条件、運営者の開示、相談窓口、利用事業者アンケート、行政の評価・ モニタリングを通じて伝わる制度対応である。そのため `channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5462,6 +5606,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のアプリや広告媒体が発生チャネルだとは置かない。医療機関の予約・診療体制、患者の通院負担、対象疾患、本人確認、通信環境、診療報酬・法令・指針が組み合わさって利用に影響する。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5533,6 +5681,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "ニュースポータル、検索、媒体サイト、SNS、動画、メール・アプリ通知など複数の経路がある。検索・ポータルの抜粋閲覧で終わるのか、媒体サイトへ送客されるのか、広告・購読へ転換するのかは経路ごとに異なる。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5604,6 +5756,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告媒体が発生チャネルだとは置かない。航空便、渡航費、為替、休暇、訪問先の安全認識、旅行会社・予約サービスなどの複合要因が出国者数に反映される。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5675,6 +5831,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "EC、店舗受取、宅配ボックス、置き配、日時指定、食品宅配、返品、配送追跡、ラストマイルを通じて購買体験へ伝わる。取扱個数を生む注文経路の因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5746,6 +5906,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "人事・勤怠・給与、上司・同僚、採用・評価、保育、在宅勤務、短時間勤務、フレックス、復職支援、社内相談を通じて職場へ伝わる。制度利用率と職場文化の因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5810,6 +5974,10 @@
         }
       ],
       "predictions": [],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告・販売チャネルから広がる変化ではなく、法律、設計指針、行政の手引き、認定制度を通じて事業者へ伝わるため、 `channels` は張らない。容器包装や家庭ごみの実態調査は、制度の対象となる廃棄・回収側の観測資料として扱う。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5883,6 +6051,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "大学・専門学校、企業研修、職業訓練、オンライン講座、学習履歴、資格、求人、転職支援、地域産学官連携を通じて、学習と就業の接点へ伝わる。学習履歴の可視化が採用・配置・賃金を変える因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -5954,6 +6126,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "ECの注文画面、配送通知、日時指定、宅配ボックス、置き配、店舗受取、配送先変更、返品受付を通じて、購入後の受取体験へ伝わる。再配達率の低下が購入頻度や顧客満足を改善する因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6024,6 +6200,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "フリマアプリ、ネットオークション、リユースショップなどが取引接点になる。環境省は、CtoC-ECの推計にはフリマアプリとネットオークションが含まれると説明しているが、アプリ別のシェアや利用者属性まではこの資料からは言えない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6087,6 +6267,10 @@
           "as_of": "2026-08-11"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定の広告・SNSチャネルから広がった変化ではなく、文部科学省のガイドライン、教育委員会向け通知、パイロット校、教員研修、授業・校務の 実証を通じて伝わる。したがって `channels` は張らない。**未確認**: 学校向けサービスの選定、教員コミュニティ、教材・研修事業者、保護者への 説明など、どの接点が実際の導入判断に影響したか。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6167,6 +6351,10 @@
           "outcome": "hit"
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "再雇用・継続雇用、短時間勤務、パート・アルバイト、地域就業、職場研修、健康・移動支援を通じて、雇用と生活サービスへ伝わる。就業継続が特定カテゴリの購買額をどの程度押し上げるかは未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6239,6 +6427,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "予約サイト、チケット販売、事業者直販、アプリ、決済サービスなど複数の取引接点が含まれうるが、調査は個別チャネル別の寄与を示していない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6308,6 +6500,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "mapped",
+        "note": null
+      },
       "channels": [
         {
           "role": "originated_on",
@@ -6388,6 +6584,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定チャネルから発生した変化ではない。家族形成、人口構成、居住形態などの社会構造が、食品、日用品、住居、金融、外食などの需要単位に影響しうる。ただし、カテゴリ別の影響は別の統計で確認する必要がある。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6458,6 +6658,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "健康診断・保健指導、職場の健康経営、自治体の普及啓発、医療・保健専門職、睡眠ガイド、ウェアラブル・アプリなどを通じて伝わる。どの接点が睡眠改善の 実行、受診、商品購入に結び付くかは未確認のため、`channels` は張らない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6532,6 +6736,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "ジム・教室・競技場、学校・職場、家庭内運動、動画・アプリ、地域イベント、スポーツ観戦など複数の接点がある。実施率の差を生むチャネル別の因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6602,6 +6810,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のSNS・EC・店舗が発生チャネルではなく、生活者調査と衣類の循環フローで観測される変化なので、`channels` は張らない。 **未確認**: サステナブル情報が、検索、商品タグ、店頭回収、リユースショップ、フリマアプリなどのどの接点で行動に変わるか。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6675,6 +6887,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のツールや広告媒体が発生チャネルだとは置かない。雇用制度、職種の遠隔可能性、オフィス方針、通勤時間、上司・同僚との協働、通信・業務ソフトの整備が組み合わさって実施率に表れる。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6745,6 +6961,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "就職・転職、進学、住宅、通勤、店舗、医療、教育、行政、物流を通じて地域別の需要へ伝わる。転入超過が一人当たり消費や生活満足を直接押し上げる因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -6886,6 +7106,11 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "この trend は特定チャネル発ではない（規制・制度の側から来ている）ので、`channels` は張っていない。 影響はチャネル横断に及ぶ——だから `market: cross-category`。"
+      },
+      "channels": [],
       "relations": [],
       "sources": [
         "https://developer.apple.com/app-store/user-privacy-and-data-use/",
@@ -6964,6 +7189,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "相続、自治体の空き家対策、不動産仲介、賃貸、リフォーム、解体、住宅ローン、地域交通、見守りを通じて、住宅と地域サービスへ伝わる。空き家の解消が地域の人口回復や不動産価格を改善する因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -7035,6 +7264,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "定額配信、都度課金、買い切り、広告型配信、動画共有プラットフォーム、スマートフォン、テレビ接続機器などを通じて広がる。資料は個別サービスが需要を発生させた因果を特定していない。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -7105,6 +7338,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "雇用、通勤、保育・介護、勤務時間、在宅勤務、家事・外食、金融、教育、住宅、購買など生活の複数接点へ伝わる。女性就業と特定市場の需要の因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [
@@ -7176,6 +7413,10 @@
           "outcome": null
         }
       ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "人事・労務、産業医、衛生委員会、職場調査、勤怠・労働時間、相談窓口、組織開発を通じて、職場環境と健康支援へ伝わる。実施率が離職、欠勤、医療利用、業績を改善する因果は未確認である。"
+      },
       "channels": [],
       "relations": [],
       "sources": [

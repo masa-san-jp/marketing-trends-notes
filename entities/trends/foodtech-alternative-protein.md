@@ -29,6 +29,11 @@ evidence:
   - {field: stage, source: "https://www.maff.go.jp/j/shokusan/sosyutu/", certainty: attested, retrieved: primary, as_of: "2026-06-24"}
   - {field: time, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2020-10"}
 predictions: []
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告やSNSから広がる変化ではなく、官民協議会の作業部会、研究開発、事業化支援、食品メーカー・スタートアップとの実証、学校・料理人・
+    消費者への説明を通じて伝わる。どの技術がどの食品カテゴリ・価格帯・販売接点で定着するかは未確認のため、`channels` は張らない。
 channels: []
 relations: []
 sources:

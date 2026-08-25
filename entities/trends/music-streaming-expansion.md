@@ -28,6 +28,12 @@ evidence:
   - {field: kind, source: "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf", certainty: attested, retrieved: primary, as_of: "2025-05-30"}
   - {field: time, source: "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf", certainty: attested, retrieved: primary, as_of: "2025-05-30"}
   - {field: stage, source: "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/", certainty: attested, retrieved: primary, as_of: "2026-03-04"}
+channel_scope:
+  status: not-applicable
+  note: >-
+    サブスクリプション型ストリーミング、広告収入型ストリーミング、ダウンロード、音楽ビデオなど複数の配信形式を通じて伝わるが、これらは市場の
+    収益・提供区分であり、特定の発生チャネルとは分けて扱う。そのため `channels` は張らない。**未確認**: 利用者が新曲を発見する経路、SNS・動画・
+    ライブとの相互送客、配信サービス別の利用時間と継続率。
 channels: []
 relations: []
 sources:

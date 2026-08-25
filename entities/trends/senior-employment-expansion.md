@@ -31,6 +31,10 @@ evidence:
   - {field: prediction, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2025"}
 predictions:
   - {claim: "次回公表される65歳以上の就業者数が2024年の930万人を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: hit}
+channel_scope:
+  status: not-applicable
+  note: >-
+    再雇用・継続雇用、短時間勤務、パート・アルバイト、地域就業、職場研修、健康・移動支援を通じて、雇用と生活サービスへ伝わる。就業継続が特定カテゴリの購買額をどの程度押し上げるかは未確認である。
 channels: []
 relations: []
 sources:

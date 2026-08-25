@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html", certainty: independent, retrieved: primary, as_of: "2020-2025年度"}
 predictions:
   - {claim: "次回の同調査でテレワーク実施率が2025年度の16.8％を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定のツールや広告媒体が発生チャネルだとは置かない。雇用制度、職種の遠隔可能性、オフィス方針、通勤時間、上司・同僚との協働、通信・業務ソフトの整備が組み合わさって実施率に表れる。
 channels: []
 relations: []
 sources:

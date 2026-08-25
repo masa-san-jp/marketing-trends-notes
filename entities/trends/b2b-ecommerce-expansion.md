@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2022-2024"}
 predictions:
   - {claim: "2025年の国内BtoB-EC市場規模が2024年の514.4兆円を下回らない", by: "2026-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    企業間の受発注、調達、販売管理などの取引接点にまたがる。特定のクラウドサービスや業界を発生源とは置かず、業種別・取引段階別の内訳は資料の範囲を超えて断定しない。
 channels: []
 relations: []
 sources:

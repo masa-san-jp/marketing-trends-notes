@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2022-2024"}
 predictions:
   - {claim: "2025年のサービス系BtoC-EC市場規模が2024年の8兆2,256億円を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    予約サイト、チケット販売、事業者直販、アプリ、決済サービスなど複数の取引接点が含まれうるが、調査は個別チャネル別の寄与を示していない。
 channels: []
 relations: []
 sources:

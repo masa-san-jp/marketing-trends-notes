@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2022-2024"}
 predictions:
   - {claim: "2025年の中国消費者による日本事業者からの越境EC購入額が2024年の2兆6,372億円を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    越境ECモール、国内事業者の越境対応サイト、海外マーケットプレイス、SNS・検索、決済、国際物流など複数の接点が関係する。ただし、調査は個別チャネルの寄与を特定していない。
 channels: []
 relations: []
 sources:

@@ -17,6 +17,8 @@ jobs:
         run: python -m pip install -r requirements.txt
       - name: 形式の検証（壊れていないか）
         run: python3 tools/build_graph.py --check
+      - name: 回帰テスト
+        run: python3 -m unittest discover -s tests -v
       - name: SNS空気感ログの形式検証
         run: python3 tools/observe_social.py --check
       - name: 空気感観測パイプラインのdry-run

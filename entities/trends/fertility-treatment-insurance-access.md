@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html", certainty: independent, retrieved: primary, as_of: "2022-2024"}
 predictions:
   - {claim: "次回公表される保険適用不妊治療の実患者数が2022年度の約37万人を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    医療機関、診療報酬、自治体相談、患者支援、職場の休暇・両立支援、医療情報提供を通じて、治療へのアクセスと意思決定へ伝わる。保険アクセスの拡大が出生や就業継続を改善する因果は未確認である。
 channels: []
 relations: []
 sources:

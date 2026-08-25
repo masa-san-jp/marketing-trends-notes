@@ -30,6 +30,11 @@ evidence:
   - {field: time, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2024-2025年度"}
 predictions:
   - {claim: "IPAの次回DX動向で、企業の生成AI導入率が2025年度の44.0%を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告・SNSチャネルから広がる変化ではなく、企業の業務導入、試験利用、部門・全社システムへの組み込みで観測されるため、
+    `channels` は張らない。**未確認**: SaaSの契約形態、部門別の導入経路、社内での利用ルールが導入率と定着率に与える差。
 channels: []
 relations: []
 sources:

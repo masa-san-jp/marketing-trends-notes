@@ -30,6 +30,11 @@ evidence:
   - {field: time, source: "https://www.env.go.jp/content/000389225.pdf", certainty: independent, retrieved: primary, as_of: "2025"}
 predictions:
   - {claim: "次回の同テーマ独立調査で、サステナブルファッションの認知・関心層が2025年調査の約6割・約4割を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定のSNS・EC・店舗が発生チャネルではなく、生活者調査と衣類の循環フローで観測される変化なので、`channels` は張らない。
+    **未確認**: サステナブル情報が、検索、商品タグ、店頭回収、リユースショップ、フリマアプリなどのどの接点で行動に変わるか。
 channels: []
 relations: []
 sources:

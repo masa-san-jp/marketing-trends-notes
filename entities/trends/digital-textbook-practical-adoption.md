@@ -31,6 +31,10 @@ evidence:
   - {field: prediction, source: "https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf", certainty: independent, retrieved: primary, as_of: "2025年度"}
 predictions:
   - {claim: "次回の文部科学省調査で、教師の学習者用デジタル教科書の使用頻度が2024年度の水準を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: hit}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告媒体が発生チャネルだとは置かない。国の提供方針、学校の端末・通信環境、教員研修、教科書の機能、紙との併用、児童生徒の学習上の配慮が活用頻度に影響する。
 channels: []
 relations: []
 sources:

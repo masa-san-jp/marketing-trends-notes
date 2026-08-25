@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度-2026-04"}
 predictions:
   - {claim: "次回の厚生労働省調査または同等の公的調査で、患者のオンライン診療経験率と医療機関の実施割合が再計測される", by: "2028-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定のアプリや広告媒体が発生チャネルだとは置かない。医療機関の予約・診療体制、患者の通院負担、対象疾患、本人確認、通信環境、診療報酬・法令・指針が組み合わさって利用に影響する。
 channels: []
 relations: []
 sources:

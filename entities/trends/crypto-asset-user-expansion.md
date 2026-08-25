@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html", certainty: independent, retrieved: primary, as_of: "2020-2024"}
 predictions:
   - {claim: "次回の金融庁または業界横断の公的資料で、国内暗号資産口座数が2024年6月の約1,040万口座を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    暗号資産交換業者、アプリ、取引所、ウォレット、広告・SNS、銀行・決済との接続を通じて広がる。利用開始と継続、投資勧誘、詐欺被害の経路は同じではないため、チャネル別の因果は未確認である。
 channels: []
 relations: []
 sources:

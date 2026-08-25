@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html", certainty: independent, retrieved: primary, as_of: "2019-2024"}
 predictions:
   - {claim: "次回の同種のライブ市場調査で、2024年の総動員数約5,940万人を下回らない", by: "2028-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    会場、チケット販売、ファンクラブ、SNS・動画、物販、配信、観光・交通、海外アーティスト公演など複数の接点がある。どの接点が購入を発生させたかの因果は未確認である。
 channels: []
 relations: []
 sources:

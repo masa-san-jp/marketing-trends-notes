@@ -31,6 +31,10 @@ evidence:
   - {field: prediction, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html", certainty: independent, retrieved: primary, as_of: "2026-07-01"}
 predictions:
   - {claim: "指定資金移動業者の数が2025年3月31日時点の83事業者を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: miss}
+channel_scope:
+  status: not-applicable
+  note: >-
+    給与計算、労務管理、労使協定、スマートフォン決済、資金移動業者、金融教育、福利厚生を通じて、雇用と決済の接点へ伝わる。給与のデジタル受取が消費額や家計管理を変える因果は未確認である。
 channels: []
 relations: []
 sources:

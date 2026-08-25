@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
 predictions:
   - {claim: "2025年以降も日本音楽産業の海外収入・海外売上が同じ定義で再推計される", by: "2028-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    音楽配信、UGCプラットフォーム、海外公演、音楽ソフト、著作権・ライセンス、ファンクラブ、マーチャンダイズ、訪日外国人の国内消費など複数の取引経路がある。経路別の因果や新規顧客獲得は未確認である。
 channels: []
 relations: []
 sources:

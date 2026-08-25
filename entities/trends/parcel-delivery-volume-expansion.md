@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html", certainty: independent, retrieved: primary, as_of: "2020-2024年度"}
 predictions:
   - {claim: "2025年度の宅配便取扱個数が2024年度の50億3,147万個を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    EC、店舗受取、宅配ボックス、置き配、日時指定、食品宅配、返品、配送追跡、ラストマイルを通じて購買体験へ伝わる。取扱個数を生む注文経路の因果は未確認である。
 channels: []
 relations: []
 sources:

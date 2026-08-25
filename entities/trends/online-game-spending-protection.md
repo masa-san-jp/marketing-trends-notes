@@ -29,6 +29,11 @@ evidence:
   - {field: stage, source: "https://www.kportal.caa.go.jp/teaching-material/001514/", certainty: attested, retrieved: primary, as_of: "2025"}
   - {field: time, source: "https://www.caa.go.jp/notice/entry/029257/", certainty: independent, retrieved: primary, as_of: "2022-06-29"}
 predictions: []
+channel_scope:
+  status: not-applicable
+  note: >-
+    ゲーム内の価格表示・有料無料の境界、年齢確認、アプリストア・決済、保護者への説明、学校・家庭の消費者教育、相談窓口を通じて伝わる。動画配信や
+    コミュニティで課金が促される経路もあるが、どの経路が相談・事故・支出に与える影響かは未確認のため、`channels` は張らない。
 channels: []
 relations: []
 sources:

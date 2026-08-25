@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf", certainty: independent, retrieved: primary, as_of: "2020-2025年平均"}
 predictions:
   - {claim: "2026年平均の女性就業者数が2025年の3,126万人を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    雇用、通勤、保育・介護、勤務時間、在宅勤務、家事・外食、金融、教育、住宅、購買など生活の複数接点へ伝わる。女性就業と特定市場の需要の因果は未確認である。
 channels: []
 relations: []
 sources:

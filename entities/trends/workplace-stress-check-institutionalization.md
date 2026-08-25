@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mhlw.go.jp/toukei/list/r06-46-50d.html", certainty: independent, retrieved: primary, as_of: "2015-2024"}
 predictions:
   - {claim: "次回同種調査のストレスチェック実施率が2024年の75.4％を下回らず、集団分析実施率が58.0％を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    人事・労務、産業医、衛生委員会、職場調査、勤怠・労働時間、相談窓口、組織開発を通じて、職場環境と健康支援へ伝わる。実施率が離職、欠勤、医療利用、業績を改善する因果は未確認である。
 channels: []
 relations: []
 sources:

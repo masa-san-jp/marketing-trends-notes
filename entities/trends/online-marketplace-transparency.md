@@ -28,6 +28,11 @@ evidence:
   - {field: kind, source: "https://www.online-mall.meti.go.jp/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
   - {field: time, source: "https://www.meti.go.jp/press/2025/12/20251217001/20251217001.html", certainty: attested, retrieved: summary, as_of: "2025-12-17"}
   - {field: stage, source: "https://www.meti.go.jp/press/2026/06/20260612004/20260612004.html", certainty: attested, retrieved: summary, as_of: "2026-06-12"}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告媒体から広がった変化ではなく、オンラインモールの出店規約・取引条件、運営者の開示、相談窓口、利用事業者アンケート、行政の評価・
+    モニタリングを通じて伝わる制度対応である。そのため `channels` は張らない。
 channels: []
 relations: []
 sources:

@@ -31,6 +31,10 @@ evidence:
   - {field: prediction, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2026-03審査分"}
 predictions:
   - {claim: "次回の同統計で介護サービス受給者数が2026年2月審査分の482.86万人を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: miss}
+channel_scope:
+  status: not-applicable
+  note: >-
+    在宅介護、訪問、通所、施設、介護予防、ケアマネジメント、自治体、家族、福祉用具、見守り、オンライン相談など複数の接点がある。利用増加を生む個別の紹介・選択経路は未確認である。
 channels: []
 relations: []
 sources:

@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mhlw.go.jp/stf/newpage_68794.html", certainty: independent, retrieved: primary, as_of: "2007-2025"}
 predictions:
   - {claim: "次回公表される外国人労働者数が2025年10月末の2,571,037人を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    求人媒体、職業紹介、在留資格手続、給与・勤怠、翻訳・研修、社内コミュニケーション、店舗・現場接客を通じて、雇用とサービス提供へ伝わる。外国人雇用の増加が消費行動や生産性をどう変えるかは未確認である。
 channels: []
 relations: []
 sources:

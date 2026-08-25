@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm", certainty: independent, retrieved: primary, as_of: "2022-2027年度"}
 predictions:
   - {claim: "文部科学省のリカレント教育・リスキリング関連の支援事業が次年度も複数の目的別施策として掲載される", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    大学・専門学校、企業研修、職業訓練、オンライン講座、学習履歴、資格、求人、転職支援、地域産学官連携を通じて、学習と就業の接点へ伝わる。学習履歴の可視化が採用・配置・賃金を変える因果は未確認である。
 channels: []
 relations: []
 sources:

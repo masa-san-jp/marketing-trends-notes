@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf", certainty: independent, retrieved: primary, as_of: "1954-2025"}
 predictions:
   - {claim: "2026年の東京圏における日本人移動者が転入超過となり、2025年の11万2738人を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    就職・転職、進学、住宅、通勤、店舗、医療、教育、行政、物流を通じて地域別の需要へ伝わる。転入超過が一人当たり消費や生活満足を直接押し上げる因果は未確認である。
 channels: []
 relations: []
 sources:

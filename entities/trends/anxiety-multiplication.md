@@ -31,6 +31,14 @@ evidence:
 predictions:
   - {claim: "令和8年の同調査で、悩みや不安の内容の計（M.T.）が令和7年の379.8を下回らない", by: "2026-12", resolved: null, outcome: null}
   - {claim: "令和8年の同調査で、『現在の収入や資産について』が令和7年の47.9％を下回らない", by: "2026-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    `channels` は空にした。これは媒体の上で発生・伝播する形式ではなく、世論調査で観測される
+    需要側の状態なので、`originated_on` を特定できない。**特定できないものは書かない**という規律に従う。
+
+    **未確認**: SNS 上での現れ方。金銭不安の増加が投稿としてどう出るか（節約・副業・投資の語の増減など）は、
+    独立した出典では測られていない。
 channels: []
 relations: []
 sources:

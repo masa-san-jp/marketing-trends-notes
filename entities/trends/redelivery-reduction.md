@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2022-2025"}
 predictions:
   - {claim: "2026年10月の宅配便再配達率が2025年4月の8.4％を上回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    ECの注文画面、配送通知、日時指定、宅配ボックス、置き配、店舗受取、配送先変更、返品受付を通じて、購入後の受取体験へ伝わる。再配達率の低下が購入頻度や顧客満足を改善する因果は未確認である。
 channels: []
 relations: []
 sources:

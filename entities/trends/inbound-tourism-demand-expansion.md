@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html", certainty: independent, retrieved: primary, as_of: "2025"}
 predictions:
   - {claim: "2026年の訪日外国人旅行者数が2025年の4,268万人を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告媒体が発生チャネルだとは置かない。航空便、国・地域別の旅行需要、滞在日数、観光コンテンツ、地方誘客などが複合して旅行者数と消費額に反映される。観光庁は欧米豪・中東などからの旅行者増加や平均泊数の増加を要因として挙げている。
 channels: []
 relations: []
 sources:

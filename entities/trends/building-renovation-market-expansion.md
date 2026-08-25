@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mlit.go.jp/report/press/joho04_hh_001375.html", certainty: independent, retrieved: primary, as_of: "2008-2025年度"}
 predictions:
   - {claim: "次回公表される建築物リフォーム・リニューアル工事の合計受注高が2025年度の16兆4,104億円を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    リフォーム会社、工務店、管理組合、住宅設備、ホームセンター、金融・補助制度、賃貸管理、建物管理を通じて、建築ストックと消費財・サービスへ伝わる。受注増が個人の可処分所得や住み替え意向をどう変えるかは未確認である。
 channels: []
 relations: []
 sources:

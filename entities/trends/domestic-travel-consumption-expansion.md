@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mlit.go.jp/kankocho/content/001981888.pdf", certainty: independent, retrieved: primary, as_of: "2016-2025"}
 predictions:
   - {claim: "2026年の日本人国内旅行消費額が2025年の26兆7,746億円を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の旅行予約サイトや広告媒体が発生チャネルだとは置かない。宿泊旅行、日帰り旅行、交通、飲食、買物、娯楽などの支出が合算された需要指標である。
 channels: []
 relations: []
 sources:

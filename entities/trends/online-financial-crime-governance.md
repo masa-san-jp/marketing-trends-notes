@@ -28,6 +28,12 @@ evidence:
   - {field: kind, source: "https://www.fsa.go.jp/news/r6/20250627/01.pdf", certainty: attested, retrieved: primary, as_of: "2025-06-27"}
   - {field: time, source: "https://www.fsa.go.jp/news/r7/ginkou/20260630.html", certainty: independent, retrieved: primary, as_of: "2026-06-30"}
   - {field: stage, source: "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html", certainty: attested, retrieved: primary, as_of: "2026-04-16"}
+channel_scope:
+  status: not-applicable
+  note: >-
+    被害の入口は、警察庁が2025年に確認したバナー広告やSNSのダイレクトメッセージ、金融機関の資料が示すメール・SMS・メッセージツール経由の
+    フィッシングなど複数にまたがる。一方、このtrendの伝播は特定の広告媒体ではなく、ログイン認証、取引監視、顧客通知、口座停止、金融機関間の
+    情報共有、警察・業界の啓発を通じて起きる制度対応である。そのため `channels` は張らない。
 channels: []
 relations: []
 sources:

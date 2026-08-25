@@ -37,8 +37,12 @@ SOURCE_REPOSITORY = "marketing-trends"
 # このKBの certainty 語彙 → 境界の evidence kind
 EVIDENCE_KIND = {
     "independent": "primary",
+    "attested": "primary",
+    "measured": "primary",
     "vendor": "secondary",
     "anecdotal": "anecdotal",
+    "hypothesis": "unknown",
+    # 旧データとの互換。現在のKB語彙には含めない。
     "self-reported": "secondary",
 }
 

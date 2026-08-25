@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf", certainty: independent, retrieved: primary, as_of: "2019-2025"}
 predictions:
   - {claim: "2026年の日本人海外旅行者数が2025年の1,473万人を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告媒体が発生チャネルだとは置かない。航空便、渡航費、為替、休暇、訪問先の安全認識、旅行会社・予約サービスなどの複合要因が出国者数に反映される。
 channels: []
 relations: []
 sources:

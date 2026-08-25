@@ -8,6 +8,7 @@
     python3 tools/audit.py                    # 検査して data/audit.json を書き、被覆マップに反映
     python3 tools/audit.py --dry-run          # 表示だけ
     python3 tools/audit.py --dry-run --now 2027-01-01   # 生きた時計で鮮度を見る（書き込みなし）
+    python3 tools/audit.py --dry-run --fail-on-findings  # findings があれば終了コード2
 
 生成物を決定的に保つため、既定の「いま」は時計ではなくデータの最新日（updated の最大値）。
 --now は表示専用（--dry-run が必須）。理由は docs/freshness.md。
@@ -75,7 +76,7 @@ def check_vendor_only(entities, findings):
         if rows and all(c.get("certainty") == "vendor" for c in rows):
             findings.append({"kind": "vendor-only", "about": tid,
                              "text": f"{meta['label_ja']} の根拠が vendor だけ。官公庁統計・決算・"
-                                     "自分の計測のどれかで裏を取るか、kind: vendor-pushed を疑う"})
+                                     "公開された計測・官公庁統計・決算のどれかで裏を取るか、kind: vendor-pushed を疑う"})
 
 
 def check_unresolved_predictions(entities, now, findings):
@@ -109,6 +110,8 @@ def check_unanswered_trends(entities, edges, findings):
 def check_single_channel(entities, findings):
     """1つの channel でしか観測していない trend。プラットフォーム内現象と世の中の変化の混同を疑う。"""
     for tid, meta in sorted(counted_trends(entities).items()):
+        if (meta.get("channel_scope") or {}).get("status") != "mapped":
+            continue
         targets = {c.get("target") for c in meta.get("channels") or []}
         if len(targets) == 1:
             findings.append({"kind": "single-channel", "about": tid,
@@ -189,9 +192,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--now", help="鮮度判定に使う日付（YYYY-MM-DD）。--dry-run のときだけ有効")
+    ap.add_argument("--fail-on-findings", action="store_true",
+                    help="dry-run の結果に findings があれば終了コード2")
     a = ap.parse_args()
     if a.now and not a.dry_run:
         print("--now は --dry-run と一緒に使う（生成物は時計に依存させない）", file=sys.stderr)
+        return 1
+    if a.fail_on_findings and not a.dry_run:
+        print("--fail-on-findings は --dry-run と一緒に使う", file=sys.stderr)
         return 1
 
     entities, _ = load_entities()
@@ -209,6 +217,8 @@ def main():
     check_unexplained_death(entities, findings)
 
     print(render(findings))
+    if a.fail_on_findings and findings:
+        return 2
     if not a.dry_run:
         OUT.parent.mkdir(exist_ok=True)
         OUT.write_text(json.dumps({"as_of": now, "findings": findings},

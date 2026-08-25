@@ -38,7 +38,6 @@ thresholds:            # issue #1 の受け入れ条件の機械化。数値の�
   vendor_only_max_ratio: 0.20    # 根拠が vendor だけの trend の上限（鵜呑みにしない）
   independent_min_ratio: 0.50    # independent / attested / measured の根拠を持つ trend の下限（伝聞の集積にしない）
   primary_read_min_ratio: 0.30   # retrieved: primary の根拠を持つ trend の下限（読まずに出典を付けない）
-  self_measured_min: 10          # measured の根拠を持つエンティティの最低数（自分で測る）
   per_category_min: 2
   stale_max_ratio: 0.15          # recheck_by 超過の上限（腐らせない）
   practice_linked_ratio: 0.50    # responds_to を持つ practice の下限比率（打ち手はトレンドに繋ぐ）

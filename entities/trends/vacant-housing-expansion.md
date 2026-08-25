@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "1978-2023"}
 predictions:
   - {claim: "次回の住宅・土地統計調査で空き家率が2023年の13.8％を下回らない", by: "2029-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    相続、自治体の空き家対策、不動産仲介、賃貸、リフォーム、解体、住宅ローン、地域交通、見守りを通じて、住宅と地域サービスへ伝わる。空き家の解消が地域の人口回復や不動産価格を改善する因果は未確認である。
 channels: []
 relations: []
 sources:

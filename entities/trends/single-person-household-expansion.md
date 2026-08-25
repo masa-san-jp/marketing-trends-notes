@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf", certainty: independent, retrieved: primary, as_of: "2005-2020"}
 predictions:
   - {claim: "2025年国勢調査の家族類型別集計でも単独世帯の構成比が2020年の38.1%を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定チャネルから発生した変化ではない。家族形成、人口構成、居住形態などの社会構造が、食品、日用品、住居、金融、外食などの需要単位に影響しうる。ただし、カテゴリ別の影響は別の統計で確認する必要がある。
 channels: []
 relations: []
 sources:

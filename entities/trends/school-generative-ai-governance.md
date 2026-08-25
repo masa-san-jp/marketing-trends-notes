@@ -28,6 +28,12 @@ evidence:
   - {field: kind, source: "https://www.mext.go.jp/a_menu/other/mext_02412.html?s=03", certainty: attested, retrieved: primary, as_of: "2024-12-26"}
   - {field: time, source: "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf", certainty: attested, retrieved: primary, as_of: "2024-12-26"}
   - {field: stage, source: "https://www.mext.go.jp/zyoukatsu/ai/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告・SNSチャネルから広がった変化ではなく、文部科学省のガイドライン、教育委員会向け通知、パイロット校、教員研修、授業・校務の
+    実証を通じて伝わる。したがって `channels` は張らない。**未確認**: 学校向けサービスの選定、教員コミュニティ、教材・研修事業者、保護者への
+    説明など、どの接点が実際の導入判断に影響したか。
 channels: []
 relations: []
 sources:

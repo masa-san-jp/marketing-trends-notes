@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html", certainty: independent, retrieved: primary, as_of: "2022-2025年度"}
 predictions:
   - {claim: "次回のスポーツ庁調査で20歳以上の週1日以上のスポーツ実施率が2025年度の51.7％を下回らない", by: "2028-03", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    ジム・教室・競技場、学校・職場、家庭内運動、動画・アプリ、地域イベント、スポーツ観戦など複数の接点がある。実施率の差を生むチャネル別の因果は未確認である。
 channels: []
 relations: []
 sources:

@@ -30,6 +30,12 @@ evidence:
   - {field: time, source: "https://www.e-stat.go.jp/stat-search/files?collect_area=000&page=1&toukei=00200356&tstat=000001243701", certainty: independent, retrieved: primary, as_of: "2026-05-29"}
 predictions:
   - {claim: "次回の通信利用動向調査で、企業のクラウドサービス利用率が2025年の8割超を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定の広告やSNSから広がる変化ではなく、業務システムの更新、テレワーク・拠点間共有、データ保管、外部サービスとの連携を通じて企業内に
+    広がる。導入経路としてクラウド事業者、既存の業務ソフト、SIer、社内IT部門などが関わりうるが、どの経路が利用率の上昇を説明するかは
+    この調査だけでは特定できないため、`channels` は張らない。
 channels: []
 relations: []
 sources:

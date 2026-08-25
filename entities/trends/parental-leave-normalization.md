@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2", certainty: independent, retrieved: primary, as_of: "2022-2025"}
 predictions:
   - {claim: "次回の雇用均等基本調査で男性の育児休業取得率が2024年度調査の40.5％を下回らない", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    人事・勤怠・給与、上司・同僚、採用・評価、保育、在宅勤務、短時間勤務、フレックス、復職支援、社内相談を通じて職場へ伝わる。制度利用率と職場文化の因果は未確認である。
 channels: []
 relations: []
 sources:

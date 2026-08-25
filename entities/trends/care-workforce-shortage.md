@@ -30,6 +30,10 @@ evidence:
   - {field: time, source: "https://www.mhlw.go.jp/content/12004000/001274765.pdf", certainty: independent, retrieved: primary, as_of: "2022-2040年度"}
 predictions:
   - {claim: "2026年度の介護職員必要数が第9期推計の約240万人となり、2022年度の約215万人を上回る", by: "2027-12", resolved: null, outcome: null}
+channel_scope:
+  status: not-applicable
+  note: >-
+    介護事業所の採用、入門研修、資格取得、給与・勤務シフト、外国人材、介護ロボット、ICT、家族支援を通じて、介護サービスの供給能力へ伝わる。職員数の増加が利用者のアウトカムを改善する因果は未確認である。
 channels: []
 relations: []
 sources:

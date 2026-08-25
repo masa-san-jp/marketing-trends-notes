@@ -50,7 +50,7 @@ data/              生成物（graph.json / coverage.json / audit.json）と追�
   **`freshness`**（いつ確認したか・いつまでに再検証するか）。期限は stage から機械が導出する。
 - **チャネル** — `channels` に役割付きの参照（`originated_on` / `spread_to` / `commoditized_on` /
   `observed_on`）。「TikTok 発の形式が Shorts に伝播した」を後から引ける。カテゴリ（`market`）と
-  地理（`geo`）は `config/markets.yaml` のバケット。
+  地理（`geo`）は `config/markets.yaml` のバケット。trend の適用範囲は `channel_scope` で明示する。
 - **関係** — 閉じた語彙。**`responds_to`（施策→トレンド）が背骨**で、**`killed_by`（→イベント）が
   マーケ固有**（ATT が何を殺したかを機械可読に持つ）。解釈を含む関係は確度と出典が必須。
 
@@ -58,7 +58,7 @@ data/              生成物（graph.json / coverage.json / audit.json）と追�
 成因を、`stage` で段階を、独立に持つ。名付けの来歴は `naming` で分けて持つ——名前の存在と現象の
 存在を混同しないため。
 
-**出典は2つの独立した軸で持つ。** `certainty` ＝ 誰が測ったか・利害があるか（`measured` /
+**出典は2つの独立した軸で持つ。** `certainty` ＝ 誰が出したか・利害があるか（`measured` /
 `independent` / `attested` / `vendor` / `anecdotal` / `hypothesis`）、`retrieved` ＝ **自分が原典を
 開いたか**（`primary` / `summary`）。権威あるURLは読まずにも貼れるので、後者が無いと未読の資料が
 出典付きのまま入る。**verified を名乗るには vendor 以外の根拠が1本、かつ `retrieved: primary` の
@@ -123,8 +123,8 @@ git config core.hooksPath .githooks
 - 出典URLを本文に置く。手元の知識だけで書いた行は書かない。
 - **ベンダー発の数字は `vendor` と明記し、断定に使わない。** その主張で儲かる側の数字は
   「調査レポート」の顔で来る。
-- **自分で測った数字を最優先する**（一次情報の最上位は自分の計測）。
-- **試していない施策は「未実施」と明記する。**
+- **公開された外部観測を最優先する。** 書き手自身の実施有無や自社数値はこのKBに記録しない。
+- **外部資料で効果が確認できない施策は「効果未確認」と明記する。**
 - 確定できないことは `**未確認**:` として残す。空欄で隠さない。
 - **トレンドには反証を書く**——「これが偽なら何が観測されるか」を最低1つ。書けないなら、
   それはトレンドではなく感想（検証が見出しの存在を落とす）。

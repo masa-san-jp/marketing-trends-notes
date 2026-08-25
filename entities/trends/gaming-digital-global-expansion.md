@@ -28,6 +28,12 @@ evidence:
   - {field: kind, source: "https://www.cesa.or.jp/action/industry-research/2024/", certainty: independent, retrieved: primary, as_of: "2024-12-20"}
   - {field: time, source: "https://www.cesa.or.jp/action/industry-research/2024/", certainty: independent, retrieved: primary, as_of: "2024-12-20"}
   - {field: stage, source: "https://www.cesa.or.jp/uploads/2025/release_game_industry_report2025.pdf", certainty: independent, retrieved: primary, as_of: "2025-12-15"}
+channel_scope:
+  status: not-applicable
+  note: >-
+    特定のSNSや広告媒体から発生した変化ではなく、モバイルアプリストア、PCゲームプラットフォーム、家庭用ゲーム機のオンラインストア、動画・配信、
+    海外販売・ローカライズを通じて伝わる市場構造の変化である。現在の資料だけでは、どのチャネルが需要を発生させたかを一つに特定できないため、
+    `channels` は張らない。**未確認**: プラットフォーム別の新規獲得、継続率、配信・動画視聴からの送客、海外地域別の購入経路。
 channels: []
 relations: []
 sources:
