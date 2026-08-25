@@ -21,3 +21,15 @@ jobs:
         run: python3 tools/agent_verify.py --issue-body tests/fixtures/issues/valid.md --now "$(date +%F)" --json
       - name: 空気感観測パイプラインのdry-run
         run: python3 tools/run_atmosphere_pipeline.py --dry-run --skip-rss
+
+  agent-harness-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Offline agent harness certification
+        run: python3 tools/certify_agent_harness.py --now "$(date +%F)" --actor fixture-agent --json

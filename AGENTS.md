@@ -13,6 +13,7 @@
 7. `agent-task` issue の契約は [docs/agent-task-contract.md](docs/agent-task-contract.md) を読む。
 8. issue の発見・claim・block・release は [docs/agent-task-state.md](docs/agent-task-state.md) と `tools/agent_task.py` のJSON結果を使う。
 9. PRの完了契約とClosed guardは [`.github/pull_request_template.md`](.github/pull_request_template.md)、`tools/validate_agent_completion.py`、`.github/workflows/agent-completion.yml`、`.github/workflows/agent-close-guard.yml` を正本として使う。
+10. ハーネス全体の責務、状態、JSON、権限、復旧は [docs/agent-harness.md](docs/agent-harness.md) を正本として使う。
 
 ## 作業契約
 
