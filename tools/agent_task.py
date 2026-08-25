@@ -128,7 +128,7 @@ class GitHubAdapter:
 
 def resolve_repo(explicit: str | None = None, environ: dict[str, str] | None = None,
                  remote_url: str | None = None) -> str:
-    env = environ or os.environ
+    env = os.environ if environ is None else environ
     if explicit:
         return explicit
     if env.get("GITHUB_REPOSITORY"):
