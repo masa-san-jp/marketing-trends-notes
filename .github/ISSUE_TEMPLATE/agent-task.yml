@@ -1,0 +1,90 @@
+name: Agent task
+description: 実行エージェントが単独で完了できるSSOT issue
+title: "[agent-task] "
+labels:
+  - agent-task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Contract: agent-task/v1
+        このフォームは docs/agent-task-contract.md に従う。完了条件は観測可能な形で書く。
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: この変更で何を実現するか。1つのissueで1つの成果にする。
+      placeholder: "実行エージェントが...できるようにする。"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 現状
+      description: 現在の挙動と、目的との差分を具体的に書く。
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: スコープ
+      description: このissueで変更してよい成果物と境界を書く。
+    validations:
+      required: true
+  - type: textarea
+    id: non_scope
+    attributes:
+      label: 非スコープ
+      description: このissueで変更しないものを書く。
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 実装要件
+      description: 実行エージェントが判断せず実装できる具体的な規則を書く。
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: 変更対象
+      description: 変更を許可するファイルまたはディレクトリを書く。
+    validations:
+      required: true
+  - type: textarea
+    id: completion
+    attributes:
+      label: 完了条件
+      description: 必ず `- [ ]` の観測可能なチェック項目を1件以上書く。
+      placeholder: |
+        - [ ] `path/to/file` が追加される
+        - [ ] `python3 ...` が終了コード0になる
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: 検証コマンド
+      description: bash fenced code block内に、成功条件が終了コードで分かるコマンドを書く。
+      placeholder: |
+        ```bash
+        python3 -m unittest discover -s tests -v
+        ```
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 完了証跡
+      description: 完了時に記録するcommit、PR、コマンド、CI URLを明記する。
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 依存関係
+      description: 依存がなければ「なし」。あれば `- #123` または issue URL を1行ずつ書く。
+      placeholder: "なし"
+    validations:
+      required: true

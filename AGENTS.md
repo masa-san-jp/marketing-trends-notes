@@ -10,6 +10,7 @@
 4. [docs/schema.md](docs/schema.md) を読み、エンティティを変更する場合は必須項目と本文型に従う。
 5. 調査タスクは [docs/investigation-task.md](docs/investigation-task.md) を1件分の手順として使う。
 6. 鮮度の変更は [docs/freshness.md](docs/freshness.md)、環境や認証は [docs/local-environment.md](docs/local-environment.md) を読む。
+7. `agent-task` issue の契約は [docs/agent-task-contract.md](docs/agent-task-contract.md) を読む。
 
 ## 作業契約
 
