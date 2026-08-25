@@ -15,19 +15,9 @@ jobs:
           python-version: "3.14"
       - name: Install Python dependencies
         run: python -m pip install -r requirements.txt
-      - name: 形式の検証（壊れていないか）
-        run: python3 tools/build_graph.py --check
-      - name: 回帰テスト
-        run: python3 -m unittest discover -s tests -v
-      - name: SNS空気感ログの形式検証
-        run: python3 tools/observe_social.py --check
+      - name: issue-driven agent verifier
+        env:
+          TZ: Asia/Tokyo
+        run: python3 tools/agent_verify.py --issue-body tests/fixtures/issues/valid.md --now "$(date +%F)" --json
       - name: 空気感観測パイプラインのdry-run
         run: python3 tools/run_atmosphere_pipeline.py --dry-run --skip-rss
-      - name: 生成物が最新か（entities と graph がずれていないか）
-        run: |
-          python3 tools/build_graph.py
-          python3 tools/audit.py
-          git diff --exit-code -- data/ overviews/coverage.md \
-            || (echo "::error::生成物が古い。python3 tools/build_graph.py && python3 tools/audit.py を実行して commit してください" && exit 1)
-      - name: 体系の食い違い（落とさず表示）
-        run: python3 tools/audit.py --dry-run

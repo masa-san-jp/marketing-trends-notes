@@ -100,7 +100,8 @@ python3 tools/bundle.py --category entertainment-content
 
 `make preflight` はネットワークへ接続せず、Python、固定依存、git、hooksPath を検査する。
 GitHub issueを扱う作業で `gh` を必須にする場合は `python3 tools/preflight.py --require-gh` を使う。
-`make agent-verify` は issue #82 完了後に統合完了ゲートとして有効になる。
+`make agent-verify` は issue 契約、KB検証、strict audit、export契約、生成物整合性、
+worktree不変性をまとめて判定する読み取り専用の統合完了ゲートである。
 
 1件の調査は [docs/investigation-task.md](docs/investigation-task.md) の手順だけで終わる
 （判定に迷わないよう kind・stage・certainty の判定表がそこにある）。

@@ -41,7 +41,11 @@ python3 tools/build_graph.py --check
 python3 tools/audit.py --dry-run --now YYYY-MM-DD --fail-on-findings
 ```
 
-`YYYY-MM-DD` は検証対象日へ置き換える。#82 完了後は issue 契約を含む `make agent-verify` を最終ゲートにする。
+`YYYY-MM-DD` は検証対象日へ置き換える。issue 契約を含む `make agent-verify` を最終ゲートにする。
+
+```bash
+make agent-verify ISSUE_BODY=tests/fixtures/issues/valid.md NOW=2026-08-25
+```
 
 実装中に外部調査を行う場合は、[docs/investigation-task.md](docs/investigation-task.md) の1件手順に従い、手元の記憶で空欄を埋めない。
 

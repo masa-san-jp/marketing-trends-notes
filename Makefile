@@ -15,11 +15,17 @@ preflight:
 test:
 	"$(VENV_PYTHON)" -m unittest discover -s tests -v
 
-# #82で実装する統合ゲートの予約入口。未実装期間も、誤って成功扱いにしない。
+# issue契約・KB検証・生成物整合性をまとめた読み取り専用の統合ゲート。
 agent-verify:
 	@if test -x "$(VENV_PYTHON)" && test -f tools/agent_verify.py; then \
-		"$(VENV_PYTHON)" tools/agent_verify.py $(ARGS); \
+		if test -n "$(ISSUE)" && test -n "$(ISSUE_BODY)"; then echo "ISSUE と ISSUE_BODY は同時指定できません" >&2; exit 3; fi; \
+		if test -z "$(NOW)"; then echo "NOW=YYYY-MM-DD が必要です" >&2; exit 3; fi; \
+		args="--now $(NOW) $(ARGS)"; \
+		if test -n "$(ISSUE)"; then args="--issue $(ISSUE) $$args"; \
+		elif test -n "$(ISSUE_BODY)"; then args="--issue-body $(ISSUE_BODY) $$args"; \
+		else echo "ISSUE または ISSUE_BODY が必要です" >&2; exit 3; fi; \
+		"$(VENV_PYTHON)" tools/agent_verify.py $$args; \
 	else \
-		echo "agent-verify は #82 の実装後に利用できます。" >&2; \
+		echo "agent-verify の実行環境がありません。先に make setup を実行してください。" >&2; \
 		exit 3; \
 	fi
