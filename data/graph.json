@@ -22,10 +22,14 @@
         }
       ],
       "sources": [
-        "https://newsroom.tiktok.com/ja-jp"
+        "https://newsroom.tiktok.com/dong-hua-komiyuniteiapuritiktokga2017app-ape-awardde-forbes-japanshang-woshou-shang?lang=ja-JP",
+        "https://newsroom.tiktok.com/how-tiktok-recommends-videos-for-you",
+        "https://newsroom.tiktok.com/tiktok-new-for-you-feed/?lang=ja-JP",
+        "https://support.tiktok.com/ja/business-and-creator/tiktok-creator-fund-us",
+        "https://newsroom.tiktok.com/creativity-program-beta?lang=ja-JP"
       ],
       "status": "draft",
-      "updated": "2026-08-10",
+      "updated": "2026-08-25",
       "path": "entities/channels/tiktok.md"
     },
     "channel/x": {
