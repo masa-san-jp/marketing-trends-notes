@@ -139,14 +139,16 @@
       "time": {
         "start": "2012",
         "end": "..",
-        "display": null
+        "display": "ByteDance の創立（2012年）から"
       },
       "relations": [],
       "sources": [
-        "https://newsroom.tiktok.com/ja-jp"
+        "https://www.bytedance.com/",
+        "https://www.bytedance.com/en/products/",
+        "https://newsroom.tiktok.com/regarding-tiktoks-data-governance?from_seo_redirect=1&lang=ja-JP"
       ],
-      "status": "stub",
-      "updated": "2026-08-10",
+      "status": "draft",
+      "updated": "2026-08-25",
       "path": "entities/players/bytedance.md"
     },
     "practice/b2b-digital-procurement-governance": {
