@@ -2,6 +2,9 @@
 
 マーケティング・トレンドのナレッジベース。事業と制作の**判断材料**として書き、積む。
 
+エージェントが作業するときは、まず [AGENTS.md](AGENTS.md) を読む。KBの要件正本は issue #1、
+repository-side agent harness の正本は issue #78。ローカル環境の基準Pythonは `.python-version` に定める。
+
 **要件の正本は issue #1。**
 この README は現状の説明であって、要件ではない。食い違ったら issue を正とする。
 
@@ -39,6 +42,8 @@ tools/
   bundle.py          知識のまとまりを1文書として取り出す
   linkcheck.py       出典URLの死活確認（ネットワークに出るので別枠）
   record_searched.py 調べたが該当が無かったカテゴリを1行残す（空欄と区別する）
+Makefile             setup / preflight / test の安定した入口
+AGENTS.md            実行エージェントの入口と停止条件
 data/              生成物（graph.json / coverage.json / audit.json）と追記ログ（queries.jsonl / searched.jsonl /
                   social-observations.jsonl）
 ```
@@ -69,9 +74,8 @@ data/              生成物（graph.json / coverage.json / audit.json）と追�
 初回は [ローカル環境の準備](docs/local-environment.md) に従って仮想環境と依存関係を用意する。
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
+make setup
+make preflight
 
 python3 tools/new_entity.py trend <slug> --ja "<名前>" --stage growing
 python3 tools/build_graph.py --check     # 検証だけ（CI 用）
@@ -93,6 +97,10 @@ python3 tools/bundle.py --search リテールメディア     # 語で探す（I
 python3 tools/bundle.py trend/<slug>                 # 1件とその周辺を1文書で
 python3 tools/bundle.py --category entertainment-content
 ```
+
+`make preflight` はネットワークへ接続せず、Python、固定依存、git、hooksPath を検査する。
+GitHub issueを扱う作業で `gh` を必須にする場合は `python3 tools/preflight.py --require-gh` を使う。
+`make agent-verify` は issue #82 完了後に統合完了ゲートとして有効になる。
 
 1件の調査は [docs/investigation-task.md](docs/investigation-task.md) の手順だけで終わる
 （判定に迷わないよう kind・stage・certainty の判定表がそこにある）。

@@ -5,13 +5,23 @@ X APIの認証情報はリポジトリに保存しない。共有するのは [`
 
 ## 初回セットアップ
 
-リポジトリの検証ツールは `requirements.txt` に記載したPython依存関係を使う。まず仮想環境を作り、
-依存関係をインストールする。
+リポジトリの基準Pythonは `.python-version` に記載し、GitHub Actions と一致させる。依存関係は
+`requirements.txt` の固定バージョンを使う。通常は Makefile の入口を使う。
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
+make setup
+make preflight
+```
+
+`make setup` は `.venv` を作成し、固定依存を導入する。`make preflight` はネットワークへ接続せず、
+Python、依存、git、hooksPathを検査する。GitHub issueを操作するタスクでは、追加で
+`python3 tools/preflight.py --require-gh` を実行する。X token は任意であり、未設定でもpreflightは失敗しない。
+
+Makefileを使わない場合の同等手順は次のとおり。
+
+```bash
+python3.14 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
 ```
 
 グラフと監査の検証を実行する。
