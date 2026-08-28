@@ -1,8 +1,8 @@
 name: live-audit
 
+# エージェント本体はローカルのハーネスで実行する。定期監査は不要なため、
+# 課金対象になり得る schedule は使わず、必要時の手動確認だけ許可する。
 on:
-  schedule:
-    - cron: "15 15 * * *" # 00:15 JST
   workflow_dispatch:
 
 permissions:
