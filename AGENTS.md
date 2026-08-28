@@ -35,7 +35,7 @@
 3. PRの `agent-completion / completion` check と通常のCIが成功してからmergeする。
 4. merge後にissueの完了証跡へmerge commit SHAを追記してClosedにする。close guardが再検証し、不足時はReopenする。
 
-branch protectionでは、`main` に対してPR必須、required status check `agent-completion / completion`、通常の `validate / validate` を設定する。設定はRepository Settings > Branches > Branch protection rules（またはRulesets）で行い、このリポジトリからAPI設定を自動変更しない。
+branch protectionでは、`main` に対してPR必須、required status check `agent-completion / completion`、`validate / check`、`validate / agent-harness-e2e` を設定する。設定はRepository Settings > Branches > Branch protection rules（またはRulesets）で行い、このリポジトリからAPI設定を自動変更しない。
 
 ハーネス導入時にmainへ直接実装済みのbootstrap issue #79〜#84だけは、移行期間の証跡として `agent-manual-completion:v1` markerとcommit SHA、成功run URLを使える。新規issueでこのmarkerを使ってはならない。
 
@@ -52,8 +52,8 @@ git status --short --branch
 
 ```bash
 make test
-python3 tools/build_graph.py --check
-python3 tools/audit.py --dry-run --now YYYY-MM-DD --fail-on-findings
+.venv/bin/python tools/build_graph.py --check
+.venv/bin/python tools/audit.py --dry-run --now YYYY-MM-DD --fail-on-findings
 ```
 
 `YYYY-MM-DD` は検証対象日へ置き換える。issue 契約を含む `make agent-verify` を最終ゲートにする。

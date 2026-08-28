@@ -5,8 +5,9 @@ X APIの認証情報はリポジトリに保存しない。共有するのは [`
 
 ## 初回セットアップ
 
-リポジトリの基準Pythonは `.python-version` に記載し、GitHub Actions と一致させる。依存関係は
-`requirements.txt` の固定バージョンを使う。通常は Makefile の入口を使う。
+リポジトリの基準Pythonは `.python-version` に記載する。依存関係は `requirements.txt` の固定
+バージョンを使い、ローカルの `.venv` に入れる。GitHub Actionsは補助的な検証であり、日常の利用や
+エージェント実行には必要ない。通常は Makefile の入口を使う。
 
 ```bash
 make setup
@@ -15,7 +16,7 @@ make preflight
 
 `make setup` は `.venv` を作成し、固定依存を導入する。`make preflight` はネットワークへ接続せず、
 Python、依存、git、hooksPathを検査する。GitHub issueを操作するタスクでは、追加で
-`python3 tools/preflight.py --require-gh` を実行する。X token は任意であり、未設定でもpreflightは失敗しない。
+`.venv/bin/python tools/preflight.py --require-gh` を実行する。X token は任意であり、未設定でもpreflightは失敗しない。
 
 Makefileを使わない場合の同等手順は次のとおり。
 
@@ -27,16 +28,16 @@ python3.14 -m venv .venv
 グラフと監査の検証を実行する。
 
 ```bash
-python tools/build_graph.py --check
-python tools/observe_social.py --check
-python tools/audit.py
+.venv/bin/python tools/build_graph.py --check
+.venv/bin/python tools/observe_social.py --check
+.venv/bin/python tools/audit.py
 ```
 
 空気感観測に関係する検証を一括で確認する場合は、次のdry-runを使う。既定ではネットワークへ出ず、
 Xトークンがない場合もスキップとして続行する。
 
 ```bash
-python tools/run_atmosphere_pipeline.py --dry-run --skip-rss
+.venv/bin/python tools/run_atmosphere_pipeline.py --dry-run --skip-rss
 ```
 
 Xトークンがない場合でも、公開検索関心の代理観測はGoogle Trends Japan RSSで実行できる。
@@ -44,8 +45,8 @@ Xトークンがない場合でも、公開検索関心の代理観測はGoogle 
 前回スナップショットとの差分を保存するための補助面である。
 
 ```bash
-python tools/observe_google_trends.py --output /path/to/current.json --summary
-python tools/observe_google_trends.py \
+.venv/bin/python tools/observe_google_trends.py --output /path/to/current.json --summary
+.venv/bin/python tools/observe_google_trends.py \
   --compare /path/to/current.json \
   --output /path/to/next.json --summary
 ```
@@ -54,7 +55,7 @@ python tools/observe_google_trends.py \
 `--collect-rss`を付けない限り、パイプラインはRSSへ接続しない。
 
 ```bash
-python tools/run_atmosphere_pipeline.py --collect-rss \
+.venv/bin/python tools/run_atmosphere_pipeline.py --collect-rss \
   --output-dir "/Users/masa/マイドライブ/AI-Agent-Pipeline/Agentic-Art-Output/marketing-atmosphere/02_evidence" \
   --compare "/path/to/previous.json" --summary
 ```
@@ -71,7 +72,7 @@ SNS上の会話量、感情の方向、社会全体の代表性へ変換しな�
 cp .env.example .env
 chmod 600 .env
 $EDITOR .env
-python tools/check_x_env.py
+.venv/bin/python tools/check_x_env.py
 ```
 
 `.env` の `X_BEARER_TOKEN` に、X Developer Console の App の Keys and tokens で発行した
@@ -83,7 +84,7 @@ Bearer Tokenを設定する。公開データを読むX API v2のアプリ専用
 トークンがない状態で `tools/check_x_env.py` を実行すると、エラーにせず
 `SKIP: X_BEARER_TOKEN がないため、Xリサーチをスキップして続行します` と表示して終了する。
 X以外の調査・検証を止めないための既定動作である。X APIを必須にする作業だけは
-`python3 tools/check_x_env.py --require-token` を使う。
+`.venv/bin/python tools/check_x_env.py --require-token` を使う。
 
 ## 変数
 

@@ -1,6 +1,10 @@
 # Repository-side agent harness
 
-この文書は、GitHub issueを実行可能なSSOT taskとして投入し、claim、実装、検証、PR完了、Closed判定までを一つの閉ループとして扱うための最終仕様である。調査対象のKBデータや外部サイトの品質評価はこのハーネスの責務ではない。
+この文書は、GitHub issueを実行可能なSSOT taskとして投入し、claim、実装、検証、PR完了、Closed判定までを一つの閉ループとして扱うための仕様である。調査対象のKBデータや外部サイトの品質評価はこのハーネスの責務ではない。
+
+エージェントの実行主体はローカルのCLIであり、GitHub Actionsや常駐プロセスではない。Actionsは利用可能な
+場合のCI・完了保護に限られ、日次のバックグラウンド監査は行わない。ローカルの `make` と `.venv/bin/python`
+だけで、タスク発見から検証までを実行できる。
 
 ## 責務境界
 
@@ -36,11 +40,11 @@ Closed + completion違反 ───────────────> Open + 
 ```bash
 make setup
 make preflight
-python3 tools/agent_task.py next --json
-python3 tools/agent_task.py claim --issue N --actor ACTOR --json
+.venv/bin/python tools/agent_task.py next --json
+.venv/bin/python tools/agent_task.py claim --issue N --actor ACTOR --json
 make agent-verify ISSUE=N NOW=YYYY-MM-DD
-python3 tools/validate_agent_completion.py --pr N --issue N --verify-report report.json --json
-python3 tools/certify_agent_harness.py --now YYYY-MM-DD --actor ACTOR --json
+.venv/bin/python tools/validate_agent_completion.py --pr N --issue N --verify-report report.json --json
+.venv/bin/python tools/certify_agent_harness.py --now YYYY-MM-DD --actor ACTOR --json
 ```
 
 task CLIは、正常終了0、契約・状態不適合2、環境・引数不足3、claim競合4、所有者違反5を返す。`agent-verify`は、全required check成功0、検証失敗2、開始不能3を返す。completion validatorとcertificationも、適合0、契約不適合2、開始不能3で固定する。

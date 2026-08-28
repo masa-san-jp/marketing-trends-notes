@@ -1,16 +1,48 @@
 # marketing-trends-notes
 
-マーケティング・トレンドのナレッジベース。事業と制作の**判断材料**として書き、積む。
+外部のマーケティング・トレンドと施策を、時間・チャネル・関係の3軸で蓄積する
+Markdown + Git のナレッジベースです。自社の計測値や施策実績を保存するリポジトリではありません。
 
-エージェントが作業するときは、まず [AGENTS.md](AGENTS.md) を読む。KBの要件正本は issue #1、
-repository-side agent harness の正本は issue #78。ローカル環境の基準Pythonは `.python-version` に定める。
+## まずこれだけ
 
-**要件の正本は issue #1。**
-この README は現状の説明であって、要件ではない。食い違ったら issue を正とする。
+### 初回セットアップ
 
-**俯瞰と細部を同じ形式で持ち、時間・チャネル・関係の3軸で構造化する。** トレンドの箇条書きだけでは
-「その変化がどの段階で、どこで起きていて、どの打ち手がそれに応答しているか」が見えない。
-だから3軸を最初から持つ。
+```bash
+make setup
+make preflight
+make test
+```
+
+基準Pythonは [`.python-version`](.python-version) に従います。依存関係は `.venv` に入り、以後の
+検証は `.venv/bin/python` を使うため、シェルのPython環境に左右されません。
+
+### 読む
+
+```bash
+.venv/bin/python tools/bundle.py --search リテールメディア
+.venv/bin/python tools/bundle.py trend/<slug>
+```
+
+全体の空白・鮮度・出典未読は [overviews/coverage.md](overviews/coverage.md) と
+`data/coverage.json` を見ます。
+
+### エージェントとして動かす
+
+1. [AGENTS.md](AGENTS.md) を読む
+2. GitHub issue の契約を確認する
+3. `.venv/bin/python tools/agent_task.py next --json` で次の issue を探す
+4. `claim` → 実装 → `make agent-verify ISSUE=N NOW=YYYY-MM-DD` の順に進める
+5. 完了証跡を issue / PR に残す
+
+このハーネスはローカルで動作し、エージェントモデル自身を起動しません。GitHub Actions は補助的な
+CI・issue契約・完了保護であり、エージェント実行の前提ではありません。定期 `live-audit` は停止済みで、
+バックグラウンドで調査やRSS取得を始める処理はありません。
+
+**要件の正本は issue #1、repository-side agent harness の正本は issue #78 です。**
+この README は現状の説明であり、要件と食い違う場合は issue を正とします。
+
+**俯瞰と細部を同じ形式で持ち、時間・チャネル・関係の3軸で構造化します。** トレンドの箇条書きだけでは
+「その変化がどの段階で、どこで起きていて、どの打ち手がそれに応答しているか」が見えないためです。
 
 構造は [art-history-notes](https://github.com/masa-san-jp/art-history-notes) のフォーク。ただし
 **美術史の事実は固まるが、マーケティングの事実は腐る**——この一点のために、鮮度（`freshness`）・
@@ -69,56 +101,45 @@ data/              生成物（graph.json / coverage.json / audit.json）と追�
 出典付きのまま入る。**verified を名乗るには vendor 以外の根拠が1本、かつ `retrieved: primary` の
 根拠が1本**——どちらも検証が強制する。
 
-## 使う
+## 日常操作
 
-初回は [ローカル環境の準備](docs/local-environment.md) に従って仮想環境と依存関係を用意する。
+エンティティを追加・更新するときは、入力のMarkdownを直してから生成物を更新する。
+`data/` と `overviews/coverage.md` の生成ブロックは手で編集しない。
 
 ```bash
-make setup
-make preflight
-
-python3 tools/new_entity.py trend <slug> --ja "<名前>" --stage growing
-python3 tools/build_graph.py --check     # 検証だけ（CI 用）
-python3 tools/build_graph.py             # 検証 + グラフ・被覆マップの生成
-python3 tools/audit.py                   # 鮮度切れ・食い違い → 次に調べること
-python3 tools/observe_social.py --check  # SNS空気感ログの形式検証
-python3 tools/observe_social.py --summary # SNS空気感ログの集計
-python3 tools/observe_google_trends.py --summary # Google Trends RSSの現時点スナップショット
-python3 tools/observe_google_trends.py \
-  --compare /path/to/previous.json \
-  --output /path/to/current.json --summary # 前回との差分付き保存
-python3 tools/check_x_env.py                 # X未設定ならスキップして続行
-python3 tools/audit.py --dry-run --now $(date +%F)   # 生きた時計で鮮度を見る
-python3 tools/run_atmosphere_pipeline.py --dry-run --skip-rss # CIと同じローカル総合検証
-python3 tools/run_atmosphere_pipeline.py --collect-rss \
-  --output-dir /path/to/Agentic-Art-Output/marketing-atmosphere \
-  --compare /path/to/previous.json --summary # RSS取得と比較を含む実行
-python3 tools/bundle.py --search リテールメディア     # 語で探す（IDを知らなくていい）
-python3 tools/bundle.py trend/<slug>                 # 1件とその周辺を1文書で
-python3 tools/bundle.py --category entertainment-content
+.venv/bin/python tools/new_entity.py trend <slug> --ja "<名前>" --stage growing
+.venv/bin/python tools/build_graph.py             # 検証 + グラフ・被覆マップの生成
+.venv/bin/python tools/audit.py                   # 次に調べることを出す
+.venv/bin/python tools/observe_social.py --check  # SNS空気感ログの形式検証
+.venv/bin/python tools/observe_social.py --summary
+.venv/bin/python tools/bundle.py --search リテールメディア
+.venv/bin/python tools/bundle.py trend/<slug>
 ```
 
-`make preflight` はネットワークへ接続せず、Python、固定依存、git、hooksPath を検査する。
-GitHub issueを扱う作業で `gh` を必須にする場合は `python3 tools/preflight.py --require-gh` を使う。
-`make agent-verify` は issue 契約、KB検証、strict audit、export契約、生成物整合性、
-worktree不変性をまとめて判定する読み取り専用の統合完了ゲートである。
-issue投入からClosedまでのrepository-side agent harness全体は [docs/agent-harness.md](docs/agent-harness.md) にまとまっている。
+外部の公開検索関心やSNSを観測するときだけ、対応する観測コマンドを実行する。X tokenが無い場合は
+X観測をスキップできる。RSS取得は `--collect-rss` を明示したときだけ行われる。
 
-1件の調査は [docs/investigation-task.md](docs/investigation-task.md) の手順だけで終わる
-（判定に迷わないよう kind・stage・certainty の判定表がそこにある）。
+`make preflight` はネットワークへ接続せず、Python、固定依存、git、hooksPathを検査する。
+GitHub issueを扱う作業で `gh` を必須にする場合は `.venv/bin/python tools/preflight.py --require-gh` を使う。
+`make agent-verify` は issue契約、KB検証、strict audit、export契約、生成物整合性、worktree不変性を
+まとめて判定する読み取り専用の統合完了ゲートである。
 
-**他の人格（アイコたち）が読むときは [docs/for-other-personas.md](docs/for-other-personas.md) から。**
-引用してよい記述とだめな記述（特に**鮮度切れ**と**ベンダー数字**）の区別がそこに書いてある。
+1件の調査は [docs/investigation-task.md](docs/investigation-task.md) の手順だけで進める。
+読み手向けの入口は [docs/for-other-personas.md](docs/for-other-personas.md) にまとめている。
 
-## 検証が自動で走る
+## 検証
 
 検査は2層。**`build_graph.py --check` は「壊れているか」**（必須項目・参照先・語彙・EDTF・
 鮮度の整合・反証見出し）を見て commit を止める。**`audit.py` は「噛み合っていないか」**
 （鮮度切れ・vendor 単独根拠・答え合わせしていない予測・応答なきトレンド・単一チャネル観測）を見て、
 止めずに**次に調べることとして出す**。形が正しいだけの体系は、機械が黙っているうちに静かに腐る。
 
-`.githooks/pre-commit` が commit のたびに `build_graph.py --check` を走らせ、通らないものを止める。
+`.githooks/pre-commit` が commit のたびに `build_graph.py --check` と生成物の整合性を検査し、通らないものを止める。
 生成物（`data/` と被覆マップ）が古いままの commit も止める。
+
+GitHub Actionsはエージェントモデルを起動しない。push / pull request / issueイベントに対する検証と
+完了保護だけを行い、エージェントの実行にはローカルのコマンドを使う。日次 `live-audit` は停止済みで、
+バックグラウンドの調査・RSS取得は行わない。
 
 **clone した直後に1回だけ**（これをしないとフックは動かない）:
 
