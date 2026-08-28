@@ -8,6 +8,19 @@ repository-side agent harness の正本は issue #78。ローカル環境の基�
 **要件の正本は issue #1。**
 この README は現状の説明であって、要件ではない。食い違ったら issue を正とする。
 
+## まず何ができるか
+
+このリポジトリは公開情報を、時間・チャネル・関係の3軸で整理するKBです。自社の計測値、顧客の個人情報、世論の断定、未確認の効果を保存する場所ではありません。
+
+| したいこと | 入口 |
+| --- | --- |
+| トレンドや施策を読む | [`overviews/coverage.md`](overviews/coverage.md)、[`tools/bundle.py`](tools/bundle.py) |
+| 1件を追加する | [`docs/investigation-task.md`](docs/investigation-task.md)、[`docs/schema.md`](docs/schema.md) |
+| 鮮度と根拠を確認する | [`docs/freshness.md`](docs/freshness.md)、[`tools/audit.py`](tools/audit.py) |
+| 外部Agentとして作業する | [`AGENTS.md`](AGENTS.md)、[`docs/agent-harness.md`](docs/agent-harness.md) |
+
+XやGoogle Trendsの観測は明示したコマンドでだけ実行し、トークンがない場合に推測で補いません。トレンドの鮮度、出典の利害、反証、未確認事項は結果に残します。
+
 **俯瞰と細部を同じ形式で持ち、時間・チャネル・関係の3軸で構造化する。** トレンドの箇条書きだけでは
 「その変化がどの段階で、どこで起きていて、どの打ち手がそれに応答しているか」が見えない。
 だから3軸を最初から持つ。
