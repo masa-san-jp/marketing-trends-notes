@@ -49,6 +49,27 @@ CI・issue契約・完了保護であり、エージェント実行の前提で�
 出典の利害（`certainty: vendor`）・反証と予測の答え合わせを一級市民にしている。詳しくは
 [docs/schema.md](docs/schema.md) と [docs/freshness.md](docs/freshness.md)。
 
+## 関連リポジトリと関係性
+
+このリポジトリは、マーケティングの外部情報を蓄積する「入力ナレッジベース」です。兄弟リポジトリを
+submoduleや実行時依存として取り込まず、他repoのデータを自動で同期もしません。連携が必要な場合は、
+[tools/export_signals.py](tools/export_signals.py) が出力する `research-signal-export/v1` のような、
+明示された境界契約を使います。
+
+| リポジトリ | 役割 | このrepoとの関係 |
+|---|---|---|
+| [art-history-notes](https://github.com/masa-san-jp/art-history-notes) | 美術史の入力KB | 構造とスキーマの先行例。このrepoはマーケティング向けに分岐した独立KBで、データを共有する依存先ではない。 |
+| [self-model-notes](https://github.com/masa-san-jp/self-model-notes) | 自己モデルの入力KB | 別領域の並列KB。根拠・claims・パターンの正本は独立しており、このrepoの必須依存ではない。 |
+| [viewer-response-notes](https://github.com/masa-san-jp/viewer-response-notes) | 視聴者反応の入力KB | 隣接する研究入力。反応データをこのrepoのトレンド事実へ自動で混ぜず、必要な連携は契約経由で行う。 |
+| [agentic-art-research](https://github.com/masa-san-jp/agentic-art-research) | research runtime | 入力KBの根拠を研究要件・判断・出力へ扱う下流の実行系。このrepoのマーケティング事実の正本ではない。 |
+| [agentic-art-production](https://github.com/masa-san-jp/agentic-art-production) | production runtime | research側のproduction handoffを受けて制作・実行・結果を扱う。マーケティングKBの更新や事実認定は担わない。 |
+| [agentic-art-orchestration](https://github.com/masa-san-jp/agentic-art-orchestration) | control plane | 兄弟repoの関係、契約、quality gateを束ねる調整系。このrepoのデータ置き場でも実行時の必須依存でもない。 |
+| [Thug-Fugu](https://github.com/masa-san-jp/Thug-Fugu) | 任意のローカルLLM実行基盤 | ローカルLLMの役割分担・並列実行を担う別repo。このrepoはモデルやThug-Fuguを自動起動せず、必須依存にもしていない。 |
+
+関係を一言で言えば、`marketing-trends-notes` は「根拠付きのマーケティング入力」を持ち、research / production / orchestration
+系が必要なときだけ境界契約を通じて利用します。したがって、利用者がこのrepoだけをcloneしてもKBの閲覧・編集・ローカル検証は完結し、
+兄弟repoやGitHub Actionsへの登録を追加で要求されません。
+
 ## 構造
 
 ```
