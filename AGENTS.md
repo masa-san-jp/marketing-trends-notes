@@ -31,11 +31,11 @@
 通常の `agent-task` は、次の順に完了させる。
 
 1. PR本文に `Closes #N` を1件だけ書き、テンプレートの4節を埋める。
-2. issue本文に `agent-completion-pending:v1` marker、checked済みの完了条件、PR URL、検証 run URL、`agent-verify/v1 status=passed` を記録する。merge commit SHAはmerge後に追記する。
-3. PRの `agent-completion / completion` check と通常のCIが成功してからmergeする。
-4. merge後にissueの完了証跡へmerge commit SHAを追記してClosedにする。close guardが再検証し、不足時はReopenする。
+2. issue本文に `agent-completion-pending:v1` marker、checked済みの完了条件、PR URL、検証結果、`agent-verify/v1 status=passed` を記録する。Actionsを有効にした運用では検証 run URLも記録し、ローカル専用運用では実行コマンドと終了コードまたはreport pathを記録する。merge commit SHAはmerge後に追記する。
+3. `make agent-verify` とローカルの completion validator が成功してからmergeする。Actionsを有効にした運用では `agent-completion / completion` check と通常のCIも確認する。
+4. merge後にissueの完了証跡へmerge commit SHAを追記してClosedにする。close guardを有効にした運用では再検証し、不足時はReopenする。
 
-branch protectionでは、`main` に対してPR必須、required status check `agent-completion / completion`、`validate / check`、`validate / agent-harness-e2e` を設定する。設定はRepository Settings > Branches > Branch protection rules（またはRulesets）で行い、このリポジトリからAPI設定を自動変更しない。
+Actionsを有効にした運用のbranch protectionでは、`main` に対してPR必須、required status check `agent-completion / completion`、`validate / check`、`validate / agent-harness-e2e` を設定する。設定はRepository Settings > Branches > Branch protection rules（またはRulesets）で行い、このリポジトリからAPI設定を自動変更しない。現在のローカル専用運用ではActionsとbranch protectionを完了条件にしない。
 
 ハーネス導入時にmainへ直接実装済みのbootstrap issue #79〜#84だけは、移行期間の証跡として `agent-manual-completion:v1` markerとcommit SHA、成功run URLを使える。新規issueでこのmarkerを使ってはならない。
 
@@ -77,6 +77,6 @@ make agent-verify ISSUE_BODY=tests/fixtures/issues/valid.md NOW=2026-08-25
 ## 完了報告
 
 - 完了条件を1項目ずつ確認し、実行したコマンドと終了コードを記録する。
-- 生成物、テスト、CIの結果を記録する。
+- 生成物、テスト、ローカル検証の結果を記録する。Actionsを有効にした場合だけCIの結果も記録する。
 - issueを自己判断でClosedにしない。完了証跡を残し、通常はPRのmergeとclose guardに委ねる。bootstrap issueの移行処理ではvalidatorの許可条件を満たした後だけClosedにする。
 - GitHubや外部サービスへ書き込めない場合、書き込んだふりをせず、必要な操作と理由を報告する。

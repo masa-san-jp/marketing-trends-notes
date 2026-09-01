@@ -3,8 +3,8 @@
 この文書は、GitHub issueを実行可能なSSOT taskとして投入し、claim、実装、検証、PR完了、Closed判定までを一つの閉ループとして扱うための仕様である。調査対象のKBデータや外部サイトの品質評価はこのハーネスの責務ではない。
 
 エージェントの実行主体はローカルのCLIであり、GitHub Actionsや常駐プロセスではない。Actionsは利用可能な
-場合のCI・完了保護に限られ、日次のバックグラウンド監査は行わない。ローカルの `make` と `.venv/bin/python`
-だけで、タスク発見から検証までを実行できる。
+場合の補助的なCI・完了保護に限られる。現在このリポジトリでは全workflowを `disabled_manually` にしており、
+ローカルの `make` と `.venv/bin/python` だけで、タスク発見から検証までを実行できる。
 
 ## 責務境界
 
@@ -60,9 +60,9 @@ JSONモードではstdoutにJSON以外を出さない。検証対象日`--now`�
 
 ## GitHub permissionsと設定
 
-workflowはファイル内で権限を宣言する。通常CIは`contents: read`、PR completionは`contents: read`、`issues: read`、`pull-requests: read`、Close guardは`contents: read`、`pull-requests: read`、`issues: write`だけを使う。branch protectionのAPI変更はハーネスの責務外である。
+workflowを再有効化する場合も、ファイル内で最小権限を宣言する。通常CIは`contents: read`、PR completionは`contents: read`、`issues: read`、`pull-requests: read`、Close guardは`contents: read`、`pull-requests: read`、`issues: write`だけを使う。現在はworkflowが無効なのでrunnerは起動しない。branch protectionのAPI変更はハーネスの責務外である。
 
-mainにはPR必須、`agent-completion / completion`、`validate / check`、`validate / agent-harness-e2e`をrequired status checkとして設定する。設定場所はRepository Settings > Branches > Branch protection rules（またはRulesets）である。
+Actionsを再有効化してGitHub側で運用する場合に限り、mainへPR必須、`agent-completion / completion`、`validate / check`、`validate / agent-harness-e2e`をrequired status checkとして設定する。設定場所はRepository Settings > Branches > Branch protection rules（またはRulesets）である。ローカル専用運用ではこれらを設定しない。
 
 ## 障害時の復旧
 

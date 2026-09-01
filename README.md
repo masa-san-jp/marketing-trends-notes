@@ -34,9 +34,9 @@ make test
 4. `claim` → 実装 → `make agent-verify ISSUE=N NOW=YYYY-MM-DD` の順に進める
 5. 完了証跡を issue / PR に残す
 
-このハーネスはローカルで動作し、エージェントモデル自身を起動しません。GitHub Actions は補助的な
-CI・issue契約・完了保護であり、エージェント実行の前提ではありません。定期 `live-audit` は停止済みで、
-バックグラウンドで調査やRSS取得を始める処理はありません。
+このハーネスはローカルで動作し、エージェントモデル自身を起動しません。GitHub Actions は補助機能であり、
+エージェント実行の前提ではありません。現在は全 workflow を `disabled_manually` にしているため、push・PR・
+issueイベントでrunnerや課金対象処理は起動しません。バックグラウンドで調査やRSS取得を始める処理もありません。
 
 **要件の正本は issue #1、repository-side agent harness の正本は issue #78 です。**
 この README は現状の説明であり、要件と食い違う場合は issue を正とします。
@@ -158,9 +158,10 @@ GitHub issueを扱う作業で `gh` を必須にする場合は `.venv/bin/pytho
 `.githooks/pre-commit` が commit のたびに `build_graph.py --check` と生成物の整合性を検査し、通らないものを止める。
 生成物（`data/` と被覆マップ）が古いままの commit も止める。
 
-GitHub Actionsはエージェントモデルを起動しない。push / pull request / issueイベントに対する検証と
-完了保護だけを行い、エージェントの実行にはローカルのコマンドを使う。日次 `live-audit` は停止済みで、
-バックグラウンドの調査・RSS取得は行わない。
+GitHub Actionsのworkflow定義は補助機能として残しているが、現在はすべて自動実行を無効にしている。
+必要な検証と完了判定は、エージェントがローカルで `make agent-verify` と
+`.venv/bin/python tools/validate_agent_completion.py` を実行して行う。workflowを再有効化しない限り、
+GitHub Actions、GitHub Actionsへの登録、GitHubの課金設定は不要である。
 
 **clone した直後に1回だけ**（これをしないとフックは動かない）:
 
