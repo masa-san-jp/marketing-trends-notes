@@ -62,6 +62,31 @@ def valid_body(dependency=None):
     return body
 
 
+class CrossRepositoryDependencyTests(unittest.TestCase):
+    def test_closed_local_issue_cannot_satisfy_open_external_dependency(self):
+        url = "https://github.com/masa-san-jp/agentic-art-orchestration/issues/196"
+        issue = {"number": 86, "body": valid_body().replace("なし\n", "- " + url + "\n"),
+                 "state": "OPEN", "labels": ["agent-task", READY], "assignees": [], "comments": []}
+        adapter = MemoryAdapter([issue, {"number": 196, "state": "CLOSED"}])
+        calls = []
+        def get_dependency(reference):
+            calls.append(reference)
+            return {"state": "OPEN", "url": reference}
+        adapter.get_dependency = get_dependency
+        manager = TaskManager(adapter)
+        self.assertEqual("dependency-blocked", manager.state(issue).name)
+        with self.assertRaises(TaskError): manager.claim(86, "fixture-agent")
+        self.assertEqual([url, url], calls)
+        self.assertEqual([], adapter.write_calls)
+
+    def test_adapter_without_external_lookup_fails_closed(self):
+        issue = {"number": 86, "body": valid_body().replace("なし\n", "- https://github.com/other/repo/issues/196\n"),
+                 "state": "OPEN", "labels": ["agent-task", READY], "assignees": [], "comments": []}
+        adapter = MemoryAdapter([issue, {"number": 196, "state": "CLOSED"}])
+        self.assertEqual("dependency-blocked", TaskManager(adapter).state(issue).name)
+        self.assertEqual([], adapter.write_calls)
+
+
 def load_issues():
     rows = json.loads((ROOT / "tests/fixtures/github/issues.json").read_text(encoding="utf-8"))
     issues = []
