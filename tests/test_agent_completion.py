@@ -67,6 +67,16 @@ class AgentCompletionTests(unittest.TestCase):
         self.assertFalse(result["valid"])
         self.assertIn("actions-run-url", {row["code"] for row in result["violations"]})
 
+    def test_local_only_completion_requires_command_success_and_real_report(self):
+        local = "- Local verification: `.venv/bin/python tools/agent_verify.py --issue-body issue.md --json`; exit_code=0; report=`verify.json`"
+        issue = self.read("valid-issue.md").replace(
+            "- Actions: https://github.com/example/repo/actions/runs/900", local)
+        result = validate(self.read("valid-pr.md"), issue, self.report(), 900)
+        self.assertTrue(result["valid"], result)
+        for invalid in (issue.replace("exit_code=0", "exit_code=2"), issue.replace("report=`verify.json`", "")):
+            self.assertFalse(validate(self.read("valid-pr.md"), invalid, self.report(), 900)["valid"])
+        self.assertFalse(validate(self.read("valid-pr.md"), issue, self.report("failed-agent-verify.json"), 900)["valid"])
+
     def test_cli_json_and_exit_codes(self):
         command = [sys.executable, str(ROOT / "tools/validate_agent_completion.py"),
                    "--pr-body", str(FIXTURES / "valid-pr.md"),

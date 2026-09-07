@@ -7,7 +7,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from agent_task import (BLOCKED, CLAIM_MARKER, IN_PROGRESS, READY, TaskError, TaskManager,
-                        dependency_numbers, resolve_repo)  # noqa: E402
+                        dependency_numbers, resolve_repo, normalize_issue)  # noqa: E402
+
+
+class GitHubIdentityTests(unittest.TestCase):
+    def test_assignees_use_login_never_mutable_display_name(self):
+        raw = {"number": 86, "labels": [{"name": "agent-in-progress"}],
+               "assignees": [{"name": "Same display name", "login": "actor-one"},
+                             {"name": "Same display name", "login": "actor-two"}]}
+        issue = normalize_issue(raw)
+        self.assertEqual(["actor-one", "actor-two"], issue["assignees"])
+        raw["assignees"][0]["name"] = "Renamed"
+        self.assertEqual(issue["assignees"], normalize_issue(raw)["assignees"])
+        self.assertEqual(["agent-in-progress"], issue["labels"])
+
+    def test_missing_login_does_not_authorize_display_name(self):
+        self.assertEqual([], normalize_issue({"number": 86, "assignees": [{"name": "actor-one"}]})["assignees"])
 
 
 class MemoryAdapter:

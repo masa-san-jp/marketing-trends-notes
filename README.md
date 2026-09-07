@@ -189,3 +189,7 @@ git config core.hooksPath .githooks
 
 `python3 tools/build_graph.py` の出力が正確な現在地（件数をここに書き写すと必ず古くなる）。
 空白の全体像は [overviews/coverage.md](overviews/coverage.md)。
+
+## Research観測の保存と再利用
+
+AAK-07の候補取込・履歴・鮮度再検証・明示knowledge snapshotからのexportは[research-knowledge-intake](docs/research-knowledge-intake.md)を参照。既存のnative schema/validatorを使用し、code checkoutとowner知識Gitを分離する。

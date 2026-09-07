@@ -339,3 +339,7 @@ slug を変えたときは旧 id を `aliases: [trend/old-slug]` に残す。旧
 relations / channels は**ビルドが実IDに解決して**生成物（graph・派生エッジ・audit・bundle）に
 載せるので、参照側の書き換えは急がなくてよい。検証は alias と既存 id の衝突、複数エンティティに
 またがる alias の重複を落とし、`bundle.py` は alias でも引ける。
+
+## Research候補の改訂境界
+
+AAK-07の `market-observation/v1` はnative frontmatter/本文を包むowner revision境界であり、entity型を増やさない。[契約とCLI](research-knowledge-intake.md)、[閉じたJSONフィールド](../config/market-observation.schema.json)を参照。

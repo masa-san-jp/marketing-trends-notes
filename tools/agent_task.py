@@ -52,16 +52,16 @@ class IssueAdapter(Protocol):
 
 
 def normalize_issue(raw: dict[str, Any]) -> dict[str, Any]:
-    def names(rows: list[dict[str, Any]] | None) -> list[str]:
-        return sorted(row.get("name") or row.get("login") for row in rows or [])
+    def names(rows: list[dict[str, Any]] | None, key: str) -> list[str]:
+        return sorted(row[key] for row in rows or [] if isinstance(row.get(key), str) and row[key])
 
     return {
         "number": int(raw["number"]),
         "title": raw.get("title", ""),
         "body": raw.get("body") or "",
         "state": raw.get("state", "OPEN"),
-        "labels": names(raw.get("labels")),
-        "assignees": names(raw.get("assignees")),
+        "labels": names(raw.get("labels"), "name"),
+        "assignees": names(raw.get("assignees"), "login"),
         "comments": raw.get("comments") or [],
         "url": raw.get("url"),
     }

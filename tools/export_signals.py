@@ -175,12 +175,42 @@ def main() -> int:
     ap.add_argument("--entity", help="1件だけ出す（例: trend/anxiety-multiplication）")
     ap.add_argument("--limit", type=int, default=0, help="0 なら全件")
     ap.add_argument("--output", help="書き出し先。省略時は標準出力")
+    ap.add_argument("--knowledge-store",type=Path,help="Explicit owner Git observation store")
+    ap.add_argument("--creator")
+    ap.add_argument("--collection")
+    ap.add_argument("--geo")
+    ap.add_argument("--channel",action="append",default=[])
+    ap.add_argument("--knowledge-snapshot")
+    ap.add_argument("--now",help="Explicit test/replay clock; otherwise actual current time")
     args = ap.parse_args()
+    if args.knowledge_store:
+        if not all((args.creator,args.collection,args.geo)) or args.purpose != 'artistic-research':
+            ap.error('knowledge export requires creator, collection, geo and artistic-research purpose')
+        from research_intake import export, IntakeError
+        try:
+            payload=export(args.knowledge_store,creator=args.creator,collection=args.collection,
+                           geo=args.geo,channels=args.channel,snapshot=args.knowledge_snapshot,
+                           now=args.now or datetime.now(timezone.utc).isoformat())
+            records=[r for r in payload['signals'] if not args.entity or r['entity_id']==args.entity]
+            if args.entity and not records:
+                raise IntakeError('ENTITY_NOT_APPLICABLE')
+            if args.limit:records=records[:args.limit]
+            payload.update(signals=records,signal_count=len(records),stale_count=sum(r['freshness']['status']=='stale' for r in records))
+            text=json.dumps(payload,ensure_ascii=False,indent=2,sort_keys=True)+'\n'
+            if args.output:Path(args.output).write_text(text,encoding='utf-8')
+            else:sys.stdout.write(text)
+            return 0
+        except (ValueError,OSError,KeyError,TypeError):
+            print('ERROR: invalid knowledge store, scope or snapshot',file=sys.stderr)
+            return 2
+    if any((args.creator,args.collection,args.geo,args.channel,args.knowledge_snapshot)):
+        ap.error('knowledge options require --knowledge-store')
 
     loaded = load_entities()
     entities = loaded[0] if isinstance(loaded, tuple) else loaded
     commit = _head_commit()
-    now = datetime.now(timezone(timedelta(hours=9))).replace(microsecond=0)
+    now = datetime.fromisoformat(args.now.replace('Z','+00:00')) if args.now else datetime.now(timezone(timedelta(hours=9))).replace(microsecond=0)
+    if now.tzinfo is None:ap.error('--now requires a timezone')
 
     if args.entity and args.entity not in entities:
         print(f"ERROR: そのIDは無い: {args.entity}", file=sys.stderr)

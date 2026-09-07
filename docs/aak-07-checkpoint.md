@@ -1,3 +1,7 @@
+# AAK-07 active checkpoint — 2026-09-08
+
+親PR201はmainへ `f3dbc46d49861dd3c77b8cb387e25ff4414e974c` として統合済み。Issue196の5 synthetic ACとmerge証跡を同期しCLOSEDを確認。実Issue86の本文・ラベル・stateと依存をvalidatorで確認後、正規claim済み（actor `masa-san-jp`、branch `agent/aak-07-research-intake`）。display nameではなくloginでclaim所有者を確認する修復を実施し、native再試行はexit 0。state tests 11 PASS。取込機能は実装中、AAK07 AC1..5は最終検証前。以下は過去の停止記録。
+
 # AAK-07 checkpoint — 2026-09-05
 
 Issue: https://github.com/masa-san-jp/marketing-trends-notes/issues/86
