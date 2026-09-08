@@ -1,0 +1,65 @@
+{
+  "schema_version": "agent-verify/v1",
+  "issue": "/private/tmp/aak07-issue-body.md",
+  "source_commit": "7be3d5ff495a91f3ce75159c96e9fc0ec383aa57",
+  "now": "2026-09-05",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "issue-contract",
+      "required": true,
+      "status": "passed",
+      "exit_code": 0,
+      "summary": "  \"violations\": [], /   \"completion_pending\": false / }"
+    },
+    {
+      "name": "graph-and-acceptance",
+      "required": true,
+      "status": "passed",
+      "exit_code": 0,
+      "summary": "✓ 127 エンティティ / 133 関係 — 問題なし"
+    },
+    {
+      "name": "regression-tests",
+      "required": true,
+      "status": "passed",
+      "exit_code": 0,
+      "summary": "Ran 57 tests in 13.794s /  / OK (skipped=6)"
+    },
+    {
+      "name": "social-observation-schema",
+      "required": true,
+      "status": "passed",
+      "exit_code": 0,
+      "summary": "✓ 0 件: /private/tmp/aak07-resume-20260908/data/social-observations.jsonl"
+    },
+    {
+      "name": "strict-live-audit",
+      "required": true,
+      "status": "passed",
+      "exit_code": 0,
+      "summary": "食い違い・偏りの指摘はなし。"
+    },
+    {
+      "name": "export-contract",
+      "required": true,
+      "status": "passed",
+      "exit_code": 0,
+      "summary": "research-signal-export/v1: 60 signals, stale_count=0"
+    },
+    {
+      "name": "generated-artifacts",
+      "required": true,
+      "status": "passed",
+      "exit_code": 0,
+      "summary": "generated artifacts match a clean temporary regeneration"
+    },
+    {
+      "name": "worktree-preservation",
+      "required": true,
+      "status": "passed",
+      "exit_code": 0,
+      "summary": "作業ツリーは不変です"
+    }
+  ]
+}

@@ -29,6 +29,10 @@ blocked ──手動でblock解除 + validator──> ready または pending
 
 `claim` は更新直前と直後に issue を再取得する。assignee、ラベル、claim marker が期待値と違えば成功を返さず、競合として終了コード4を返す。GitHub APIにトランザクションがないため、再取得で確認できない状態は成功扱いにしない。
 
+依存URLはrepositoryを含む識別子として取得する。同一番号の別repositoryのClosed issueで依存を満たさない。横断取得を実装していないadapterは実行不可を返す。
+
+AAK-07は親DAGのcandidate証拠も確認するが、現行native claimのClosed条件を満たしたこととは区別する。未マージcandidateを受け入れる新たなclaim経路は本修正では追加しない。
+
 ## marker comment
 
 - claim: `<!-- agent-claim:v1 -->`

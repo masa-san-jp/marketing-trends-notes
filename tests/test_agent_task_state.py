@@ -7,7 +7,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from agent_task import (BLOCKED, CLAIM_MARKER, IN_PROGRESS, READY, TaskError, TaskManager,
-                        dependency_numbers, resolve_repo)  # noqa: E402
+                        dependency_numbers, resolve_repo, normalize_issue)  # noqa: E402
+
+
+class GitHubIdentityTests(unittest.TestCase):
+    def test_assignees_use_login_never_mutable_display_name(self):
+        raw = {"number": 86, "labels": [{"name": "agent-in-progress"}],
+               "assignees": [{"name": "Same display name", "login": "actor-one"},
+                             {"name": "Same display name", "login": "actor-two"}]}
+        issue = normalize_issue(raw)
+        self.assertEqual(["actor-one", "actor-two"], issue["assignees"])
+        raw["assignees"][0]["name"] = "Renamed"
+        self.assertEqual(issue["assignees"], normalize_issue(raw)["assignees"])
+        self.assertEqual(["agent-in-progress"], issue["labels"])
+
+    def test_missing_login_does_not_authorize_display_name(self):
+        self.assertEqual([], normalize_issue({"number": 86, "assignees": [{"name": "actor-one"}]})["assignees"])
 
 
 class MemoryAdapter:
@@ -60,6 +75,31 @@ def valid_body(dependency=None):
     if dependency is not None:
         body = body.replace("なし\n", f"- #{dependency}\n")
     return body
+
+
+class CrossRepositoryDependencyTests(unittest.TestCase):
+    def test_closed_local_issue_cannot_satisfy_open_external_dependency(self):
+        url = "https://github.com/masa-san-jp/agentic-art-orchestration/issues/196"
+        issue = {"number": 86, "body": valid_body().replace("なし\n", "- " + url + "\n"),
+                 "state": "OPEN", "labels": ["agent-task", READY], "assignees": [], "comments": []}
+        adapter = MemoryAdapter([issue, {"number": 196, "state": "CLOSED"}])
+        calls = []
+        def get_dependency(reference):
+            calls.append(reference)
+            return {"state": "OPEN", "url": reference}
+        adapter.get_dependency = get_dependency
+        manager = TaskManager(adapter)
+        self.assertEqual("dependency-blocked", manager.state(issue).name)
+        with self.assertRaises(TaskError): manager.claim(86, "fixture-agent")
+        self.assertEqual([url, url], calls)
+        self.assertEqual([], adapter.write_calls)
+
+    def test_adapter_without_external_lookup_fails_closed(self):
+        issue = {"number": 86, "body": valid_body().replace("なし\n", "- https://github.com/other/repo/issues/196\n"),
+                 "state": "OPEN", "labels": ["agent-task", READY], "assignees": [], "comments": []}
+        adapter = MemoryAdapter([issue, {"number": 196, "state": "CLOSED"}])
+        self.assertEqual("dependency-blocked", TaskManager(adapter).state(issue).name)
+        self.assertEqual([], adapter.write_calls)
 
 
 def load_issues():

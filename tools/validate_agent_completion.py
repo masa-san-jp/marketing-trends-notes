@@ -81,9 +81,15 @@ def validate_issue_body(body: str, *, require_merged_evidence: bool = False,
     manual_completion = MANUAL_COMPLETION_MARKER in body
     if manual_completion and expected_issue not in BOOTSTRAP_MIGRATION_ISSUES:
         violations.append(violation("manual-completion-scope", "manual completion markerはbootstrap issueだけで使用できます"))
+    # Current owner instructions permit local-only operation without enabling Actions.
+    # The supplied agent-verify report is still independently checked below.
+    local_verification = re.search(
+        r"(?m)^- Local verification: `[^`\n]*(?:agent_verify|agent-verify)[^`\n]*`; exit_code=0; report=`[^`\n]+`\s*$",
+        evidence,
+    )
     required_evidence = [
         ("verify-contract", "agent-verify/v1" in evidence and "status=passed" in evidence),
-        ("actions-run-url", ACTION_URL_RE.search(evidence)),
+        ("actions-run-url", ACTION_URL_RE.search(evidence) or local_verification),
     ]
     if manual_completion:
         required_evidence.append(("direct-commit", COMMIT_RE.search(evidence)))

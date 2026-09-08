@@ -52,16 +52,16 @@ class IssueAdapter(Protocol):
 
 
 def normalize_issue(raw: dict[str, Any]) -> dict[str, Any]:
-    def names(rows: list[dict[str, Any]] | None) -> list[str]:
-        return sorted(row.get("name") or row.get("login") for row in rows or [])
+    def names(rows: list[dict[str, Any]] | None, key: str) -> list[str]:
+        return sorted(row[key] for row in rows or [] if isinstance(row.get(key), str) and row[key])
 
     return {
         "number": int(raw["number"]),
         "title": raw.get("title", ""),
         "body": raw.get("body") or "",
         "state": raw.get("state", "OPEN"),
-        "labels": names(raw.get("labels")),
-        "assignees": names(raw.get("assignees")),
+        "labels": names(raw.get("labels"), "name"),
+        "assignees": names(raw.get("assignees"), "login"),
         "comments": raw.get("comments") or [],
         "url": raw.get("url"),
     }
@@ -87,6 +87,13 @@ class GitHubAdapter:
 
     def get_issue(self, number: int) -> dict[str, Any]:
         row = self.run(["issue", "view", str(number), "--repo", self.repo,
+                        "--json", "number,title,body,state,labels,assignees,comments,url"])
+        return normalize_issue(row)
+
+    def get_dependency(self, reference: str) -> dict[str, Any]:
+        if reference.startswith("#"):
+            return self.get_issue(int(reference[1:]))
+        row = self.run(["issue", "view", reference,
                         "--json", "number,title,body,state,labels,assignees,comments,url"])
         return normalize_issue(row)
 
@@ -157,6 +164,18 @@ def dependency_numbers(body: str) -> list[int]:
     return sorted(set(values))
 
 
+def dependency_references(body: str) -> list[str]:
+    """Preserve repository identity; #196 and another repository's #196 differ."""
+    match = DEPENDENCY_RE.search(body)
+    if not match:
+        return []
+    section = body[match.end():]
+    end = HEADING_RE.search(section)
+    if end:
+        section = section[:end.start()]
+    return sorted(set(re.findall(r"https://github\.com/[^/\s]+/[^/\s]+/issues/\d+|#\d+", section)))
+
+
 def marker_comment(issue: dict[str, Any], marker: str) -> dict[str, Any] | None:
     return next((comment for comment in issue.get("comments", [])
                  if marker in (comment.get("body") or "")), None)
@@ -185,13 +204,18 @@ class TaskManager:
                              state=issue.get("state"))
 
     def dependencies_ready(self, issue: dict[str, Any]) -> tuple[bool, str]:
-        for number in dependency_numbers(issue.get("body") or ""):
+        for reference in dependency_references(issue.get("body") or ""):
             try:
-                dependency = self.adapter.get_issue(number)
+                if reference.startswith("#"):
+                    dependency = self.adapter.get_issue(int(reference[1:]))
+                elif hasattr(self.adapter, "get_dependency"):
+                    dependency = self.adapter.get_dependency(reference)
+                else:
+                    return False, f"横断依存を検証できません: {reference}"
             except AdapterError as exc:
-                return False, f"依存 issue #{number} を取得できません: {exc}"
+                return False, f"依存 issue {reference} を取得できません: {exc}"
             if str(dependency.get("state", "")).upper() != "CLOSED":
-                return False, f"依存 issue #{number} がClosedではありません"
+                return False, f"依存 issue {reference} がClosedではありません"
         return True, "依存 issue はすべてClosedです"
 
     def state(self, issue: dict[str, Any]) -> State:
