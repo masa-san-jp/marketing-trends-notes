@@ -56,6 +56,8 @@ submoduleや実行時依存として取り込まず、他repoのデータを自�
 [tools/export_signals.py](tools/export_signals.py) が出力する `research-signal-export/v1` のような、
 明示された境界契約を使います。
 
+Agentic Art全体の8リポジトリの関係図と、各repoの正本・受け渡し・公開境界は、親repoの [repository map](https://github.com/masa-san-jp/agentic-art-orchestration/blob/main/docs/repository-map.md) にまとめています。ここではMarketing Trendsから見た接続だけを説明します。
+
 | リポジトリ | 役割 | このrepoとの関係 |
 |---|---|---|
 | [art-history-notes](https://github.com/masa-san-jp/art-history-notes) | 美術史の入力KB | 構造とスキーマの先行例。このrepoはマーケティング向けに分岐した独立KBで、データを共有する依存先ではない。 |
@@ -64,11 +66,12 @@ submoduleや実行時依存として取り込まず、他repoのデータを自�
 | [agentic-art-research](https://github.com/masa-san-jp/agentic-art-research) | research runtime | 入力KBの根拠を研究要件・判断・出力へ扱う下流の実行系。このrepoのマーケティング事実の正本ではない。 |
 | [agentic-art-production](https://github.com/masa-san-jp/agentic-art-production) | production runtime | research側のproduction handoffを受けて制作・実行・結果を扱う。マーケティングKBの更新や事実認定は担わない。 |
 | [agentic-art-orchestration](https://github.com/masa-san-jp/agentic-art-orchestration) | control plane | 兄弟repoの関係、契約、quality gateを束ねる調整系。このrepoのデータ置き場でも実行時の必須依存でもない。 |
+| [agentic-art-project](https://github.com/masa-san-jp/agentic-art-project) | 公開制作プラン、作品、制作記録のカタログ | Marketing Trends本文を直接公開せず、検証済みの制作成果だけをOrchestration経由で受け取る。 |
 | [Thug-Fugu](https://github.com/masa-san-jp/Thug-Fugu) | 任意のローカルLLM実行基盤 | ローカルLLMの役割分担・並列実行を担う別repo。このrepoはモデルやThug-Fuguを自動起動せず、必須依存にもしていない。 |
 
 関係を一言で言えば、`marketing-trends-notes` は「根拠付きのマーケティング入力」を持ち、research / production / orchestration
 系が必要なときだけ境界契約を通じて利用します。したがって、利用者がこのrepoだけをcloneしてもKBの閲覧・編集・ローカル検証は完結し、
-兄弟repoやGitHub Actionsへの登録を追加で要求されません。
+兄弟repoやGitHub Actionsへの登録を追加で要求されません。Thug-FuguはAgentic Artの8リポジトリには含まれない任意の実行基盤です。
 
 ## 構造
 
