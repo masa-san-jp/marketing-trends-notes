@@ -146,7 +146,7 @@ def build_record(meta: dict, commit: str, now: datetime, purpose: str) -> dict |
             "stale を current として扱わない",
             "vendor 由来の主張を独立した検証済みの事実へ昇格させない",
         ],
-        "validity": {"status": "valid" if status != "stale" else "expired",
+        "validity": {"status": "valid" if status != "stale" else "stale",
                      "checked_at": _to_stamp(valid_as_of, now)},
         "freshness": {
             "status": status,
