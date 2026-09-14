@@ -22,12 +22,13 @@ naming:
   original_label: null
   note: "「クリエイター広告表示の可視化」は、規制と消費者調査で観測される変化を要約するための記述的なラベル。原資料の固有名称ではない"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-14"
+  recheck_by: "2026-10-14"
 evidence:
   - {field: kind, source: "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/", certainty: attested, retrieved: primary, as_of: "2023-10-01"}
   - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf", certainty: independent, retrieved: primary, as_of: "2023-11"}
   - {field: time, source: "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/", certainty: attested, retrieved: primary, as_of: "2023-10-01"}
+  - {field: current-status, source: "https://www.caa.go.jp/about_us/about/caa_pamphlet/jp_2026_012.html", certainty: attested, retrieved: primary, as_of: "2026-09-14"}
 predictions:
   - {claim: "次回以降の消費者庁調査または同等の独立調査で、インフルエンサー投稿の広告表示を見た経験と、表示を信頼判断に使う割合が再計測される", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
@@ -42,7 +43,7 @@ sources:
   - https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/
   - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf
 status: verified
-updated: 2026-08-12
+updated: 2026-09-14
 ---
 
 # クリエイター広告表示の可視化
@@ -93,7 +94,7 @@ updated: 2026-08-12
 
 ## 未着手
 
-- 2026年8月12日時点の消費者庁の現行ページを確認したが、同じ設問による新しい独立調査は確認できず、2023年調査の基準値を維持する
+- 2026年9月14日に消費者庁の現行案内を再確認した。ステマ規制の説明は継続して掲載されているが、同じ設問による新しい独立調査は確認できず、2023年調査の基準値を維持する
 - 令和6年度・令和7年度の消費者庁調査で同じ設問が継続されているかを確認し、経年変化を取る
 - 規制施行後の行政処分・情報提供件数と、事業者側の表示管理の実務を一次資料で確認する
 - プラットフォームごとの表示機能・審査・保存要件は、各社の一次仕様を読んでから分ける

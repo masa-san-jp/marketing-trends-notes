@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-25",
+  "as_of": "2026-09-14",
   "trend_total": 60,
   "trend_stub_excluded": 0,
   "by_status": {
@@ -94,7 +94,17 @@
     "education": 4,
     "cross-category": 10
   },
-  "stale": [],
+  "stale": [
+    "trend/digital-salary-payment",
+    "trend/fertility-treatment-insurance-access",
+    "trend/foodtech-alternative-protein",
+    "trend/generative-ai-daily-life-adoption",
+    "trend/japanese-music-overseas-expansion",
+    "trend/online-medical-consultation-adoption",
+    "trend/online-news-platform-dependence",
+    "trend/recurrent-education-institutionalization",
+    "trend/sustainable-fashion-behavior"
+  ],
   "vendor_only": [],
   "searched": {
     "entertainment-content": [
@@ -225,7 +235,7 @@
         "passed": true
       },
       "stale_ratio": {
-        "actual": 0.0,
+        "actual": 0.15,
         "operator": "<=",
         "threshold": 0.15,
         "passed": true
@@ -250,7 +260,7 @@
     "primary_read_ratio": "1.00（下限 0.3・原典を実読した根拠を持つ trend）",
     "independent_ratio": "1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）",
     "per_category_min": "12/12 カテゴリが 2件以上",
-    "stale_ratio": "0.00（上限 0.15・as_of=2026-08-25 時点）",
+    "stale_ratio": "0.15（上限 0.15・as_of=2026-09-14 時点）",
     "practice_linked": "60/61 の practice が responds_to を持つ（下限比率 0.5）",
     "resolved_predictions": "5/5 件の予測が答え合わせ済み"
   }
