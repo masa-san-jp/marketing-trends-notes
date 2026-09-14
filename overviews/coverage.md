@@ -12,7 +12,7 @@ depends_on: []
 受け入れ条件の閾値も同じファイルに置いてある（issue #1 と対応）。
 
 <!-- generated:coverage:start -->
-データの最新日: 2026-08-25 — `python3 tools/build_graph.py` が生成（手で書き換えない）
+データの最新日: 2026-09-14 — `python3 tools/build_graph.py` が生成（手で書き換えない）
 
 trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 57}
 
@@ -31,6 +31,8 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 | education（教育） |  |  |  |  |  |  |  |  |  |  | 1 |  |  | 1 | 1 | 1 |  |  |  | 4 |
 | cross-category（カテゴリ横断） |  | 1 | 1 |  | 1 |  |  |  |  | 1 | 1 | 2 | 1 | 1 |  |  |  | 1 |  | 10 |
 
+**鮮度切れ**（recheck_by < 2026-09-14）: trend/digital-salary-payment, trend/fertility-treatment-insurance-access, trend/foodtech-alternative-protein, trend/generative-ai-daily-life-adoption, trend/japanese-music-overseas-expansion, trend/online-medical-consultation-adoption, trend/online-news-platform-dependence, trend/recurrent-education-institutionalization, trend/sustainable-fashion-behavior
+
 **調査したが該当が無かった**（空欄との区別。`tools/record_searched.py` の記録）:
 - entertainment-content: 2020年以降の日本における短尺動画と長尺動画の視聴時間・利用率を形式別に分解した独立調査（総務省・政府統計・研究論文を確認）（2026-08-25・aiko-pr／出典 3本）
 
@@ -41,7 +43,7 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 - primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
 - per_category_min: 12/12 カテゴリが 2件以上
-- stale_ratio: 0.00（上限 0.15・as_of=2026-08-25 時点）
+- stale_ratio: 0.15（上限 0.15・as_of=2026-09-14 時点）
 - practice_linked: 60/61 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 5/5 件の予測が答え合わせ済み
 
@@ -74,7 +76,16 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 形式の検証（`build_graph.py --check`）と違って commit は止めない——次に何を調べるかの材料として出す。
 
 <!-- generated:audit:start -->
-食い違い・偏りの指摘はなし。
+**鮮度切れ**
+- 賃金デジタル払いの制度化（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- 不妊治療の保険アクセス拡大（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- フードテックによる新たなたんぱく質源の事業化（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- 生成AIの日常利用の拡大（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- 日本音楽の海外収入・売上の可視化（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- オンライン診療の制度対応と利用拡大（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- オンラインニュースプラットフォーム依存の可視化（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- リカレント教育の社会実装（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- サステナブルファッションへの関心・循環行動（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
 <!-- generated:audit:end -->
 
 ## 需要から決める（探されたが無かった語）

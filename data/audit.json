@@ -1,4 +1,50 @@
 {
-  "as_of": "2026-08-25",
-  "findings": []
+  "as_of": "2026-09-14",
+  "findings": [
+    {
+      "kind": "stale",
+      "about": "trend/digital-salary-payment",
+      "text": "賃金デジタル払いの制度化（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/fertility-treatment-insurance-access",
+      "text": "不妊治療の保険アクセス拡大（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/foodtech-alternative-protein",
+      "text": "フードテックによる新たなたんぱく質源の事業化（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/generative-ai-daily-life-adoption",
+      "text": "生成AIの日常利用の拡大（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/japanese-music-overseas-expansion",
+      "text": "日本音楽の海外収入・売上の可視化（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/online-medical-consultation-adoption",
+      "text": "オンライン診療の制度対応と利用拡大（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/online-news-platform-dependence",
+      "text": "オンラインニュースプラットフォーム依存の可視化（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/recurrent-education-institutionalization",
+      "text": "リカレント教育の社会実装（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/sustainable-fashion-behavior",
+      "text": "サステナブルファッションへの関心・循環行動（emerging）の再検証期限 2026-09-12 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    }
+  ]
 }

@@ -3524,8 +3524,8 @@
         "note": "「クリエイター広告表示の可視化」は、規制と消費者調査で観測される変化を要約するための記述的なラベル。原資料の固有名称ではない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-14",
+        "recheck_by": "2026-10-14"
       },
       "evidence": [
         {
@@ -3548,6 +3548,13 @@
           "certainty": "attested",
           "retrieved": "primary",
           "as_of": "2023-10-01"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.caa.go.jp/about_us/about/caa_pamphlet/jp_2026_012.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-09-14"
         }
       ],
       "predictions": [
@@ -3569,7 +3576,7 @@
         "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-14",
       "path": "entities/trends/creator-ad-disclosure.md"
     },
     "trend/creator-rights-compensation-transparency": {
