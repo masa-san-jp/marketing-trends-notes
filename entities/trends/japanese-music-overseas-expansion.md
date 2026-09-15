@@ -22,12 +22,13 @@ naming:
   original_label: 日本音楽産業の海外展開データ把握
   note: "「日本音楽の海外収入・売上の可視化」は、経済産業省の2024年調査結果を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-15"
+  recheck_by: "2026-10-15"
 evidence:
   - {field: kind, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
   - {field: stage, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
   - {field: time, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
+  - {field: current-status, source: "https://www.meti.go.jp/shingikai/mono_info_service/entertainment_creative/pdf/20250624_1.pdf", certainty: independent, retrieved: summary, as_of: "2025-06-24"}
 predictions:
   - {claim: "2025年以降も日本音楽産業の海外収入・海外売上が同じ定義で再推計される", by: "2028-12", resolved: null, outcome: null}
 channel_scope:
@@ -40,7 +41,7 @@ sources:
   - https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/260430.html
   - https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf
 status: verified
-updated: 2026-08-12
+updated: 2026-09-15
 ---
 
 # 日本音楽の海外収入・売上の可視化
@@ -73,7 +74,7 @@ updated: 2026-08-12
 
 ## 未着手
 
-- 2026年8月12日時点の経済産業省のコンテンツ産業ページを確認したが、2025年以降の同一定義による再推計は未確認
+- 2026年9月15日時点で再確認したが、2025年以降の同一定義による再推計は依然として未公表。2025年6月24日付「エンタメ・クリエイティブ産業戦略（海外売上高20兆円に向けた5ヵ年アクションプラン）」を新たに確認したが、これは政策目標文書であり、2024年調査と同一定義の実績再推計ではない
 - 2025年以降の同一定義の推計と、2024年との比較可能性を確認する
 - 国・地域、作品、配信、ライブ、権利、物販別に需要・収入・売上を分解する
 - 推計対象企業、回答率、未観測取引、再現性を報告書の次版で確認する

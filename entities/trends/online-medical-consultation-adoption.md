@@ -22,12 +22,13 @@ naming:
   original_label: オンライン診療の実施・制度整備
   note: "「オンライン診療の制度対応と利用拡大」は、厚生労働省の制度資料と調査結果をまとめるための記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-15"
+  recheck_by: "2026-10-15"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: primary, as_of: "2026-04-01"}
   - {field: stage, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度"}
   - {field: time, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度-2026-04"}
+  - {field: current-status, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: summary, as_of: "2026-09-15"}
 predictions:
   - {claim: "次回の厚生労働省調査または同等の公的調査で、患者のオンライン診療経験率と医療機関の実施割合が再計測される", by: "2028-12", resolved: null, outcome: null}
 channel_scope:
@@ -40,7 +41,7 @@ sources:
   - https://www.mhlw.go.jp/stf/index_0024_00004.html
   - https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html
 status: verified
-updated: 2026-08-12
+updated: 2026-09-15
 ---
 
 # オンライン診療の制度対応と利用拡大
@@ -76,6 +77,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月15日に再確認。制度運用（2026年4月施行の医療法規定・指針、令和8年3月版の自治体導入事例集）は継続中だが、2024年度調査（患者経験率3.5%等）を更新する新しい一次数値は見つからなかった。社会保障審議会医療部会の関連PDF（001642125.pdf）に新しい実施状況データがある可能性があるが、この環境ではPDF内容を確認できなかった
 - 診療科、疾患、年齢、地域、医療機関規模ごとの利用差を確認する
 - オンライン診療の継続率、対面への切替、患者負担、医療安全の指標を同じ定義で追う
 - 2026年施行後の指針運用・監査・事例を一次資料で確認する

@@ -22,12 +22,13 @@ naming:
   original_label: フードテック
   note: "「フードテックによる新たなたんぱく質源の事業化」は、農林水産省の官民協議会と委託事業の対象領域を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-15"
+  recheck_by: "2026-10-15"
 evidence:
   - {field: kind, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
   - {field: stage, source: "https://www.maff.go.jp/j/shokusan/sosyutu/", certainty: attested, retrieved: primary, as_of: "2026-06-24"}
   - {field: time, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2020-10"}
+  - {field: current-status, source: "https://www.nttdata-strategy.com/newsrelease/news/251001/", certainty: vendor, retrieved: summary, as_of: "2025-10-01"}
 predictions: []
 channel_scope:
   status: not-applicable
@@ -43,7 +44,7 @@ sources:
   - https://www.maff.go.jp/j/shokusan/sosyutu/backnumber.html
   - https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html
 status: verified
-updated: 2026-08-12
+updated: 2026-09-15
 ---
 
 # フードテックによる新たなたんぱく質源の事業化
@@ -88,6 +89,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月15日に再確認。フードテック官民協議会の総会・参加人数（約1,900人）に更新なし。令和8年度「フードテックビジネス実証事業」の公募開始と、令和7年度「フードテックビジネスコンテスト」（代替たんぱく質活用等がテーマ）の実施を確認したが、事業化支援の継続を示すのみで、代替たんぱく質・細胞性食品の具体的な上市事例や新規消費者調査は確認できなかった
 - 植物性食品、細胞性食品、精密発酵、発酵菌食品を分け、研究・実証・上市・継続販売の段階を確認する
 - 食品安全、アレルゲン、原材料・製造工程、表示、環境負荷、価格、味覚の評価を製品間で同じ定義にそろえる
 - 小売・外食・学校給食など販売・提供接点別に、試食、採用、継続購入、廃棄、問い合わせの実績を探す

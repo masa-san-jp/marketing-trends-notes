@@ -22,12 +22,13 @@ naming:
   original_label: 生成AI利用者の日常利用
   note: "「生成AIの日常利用の拡大」は、消費者委員会の生成AI利用者調査を要約する記述的なラベル。調査対象者が生成AI利用者に限定される点を含む"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-15"
+  recheck_by: "2026-10-15"
 evidence:
   - {field: kind, source: "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf", certainty: independent, retrieved: primary, as_of: "2026-02"}
   - {field: stage, source: "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf", certainty: independent, retrieved: primary, as_of: "2026-02"}
   - {field: time, source: "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf", certainty: independent, retrieved: primary, as_of: "2026-02"}
+  - {field: current-status, source: "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/009/shiryou/index.html", certainty: independent, retrieved: summary, as_of: "2026-09-09"}
 predictions:
   - {claim: "次回同種の生成AI利用者調査で、日常生活での毎日利用者が2026年調査の約20％を下回らない", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
@@ -40,7 +41,7 @@ sources:
   - https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/004/shiryou/index.html
   - https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf
 status: verified
-updated: 2026-08-12
+updated: 2026-09-15
 ---
 
 # 生成AIの日常利用の拡大
@@ -73,6 +74,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月15日に消費者委員会の専門調査会を再確認した。第9回（2026-09-09）まで継続開催されているが、同じ設問による新しい利用頻度・利用目的の定量調査は公表されておらず、2026年2月調査の基準値を維持する
 - 全人口ベースの利用率と、生成AI利用者ベースの頻度を分けて追う
 - 年代、性別、端末、用途、利用頻度、リスク理解を同じ定義で比較する
 - 生成結果の確認、個人情報入力、依存、不利益、購買・学習成果の実測を行う

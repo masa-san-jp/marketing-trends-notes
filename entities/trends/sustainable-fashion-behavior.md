@@ -22,12 +22,13 @@ naming:
   original_label: サステナブルファッション
   note: "「サステナブルファッションへの関心・循環行動」は、環境省の調査項目と衣類の循環フローを要約するための記述的なラベル。生活者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-15"
+  recheck_by: "2026-10-15"
 evidence:
   - {field: kind, source: "https://www.env.go.jp/policy/sustainable_fashion/about/", certainty: independent, retrieved: primary, as_of: "2025"}
   - {field: stage, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-03"}
   - {field: time, source: "https://www.env.go.jp/content/000389225.pdf", certainty: independent, retrieved: primary, as_of: "2025"}
+  - {field: current-status, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-09-15"}
 predictions:
   - {claim: "次回の同テーマ独立調査で、サステナブルファッションの認知・関心層が2025年調査の約6割・約4割を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
@@ -43,7 +44,7 @@ sources:
   - https://www.env.go.jp/content/000389225.pdf
   - https://www.env.go.jp/press/press_03475.html
 status: verified
-updated: 2026-08-12
+updated: 2026-09-15
 ---
 
 # サステナブルファッションへの関心・循環行動
@@ -96,6 +97,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月15日に環境省のページを再確認したが、令和7年度調査（認知層約6割・関心層約4割）が引き続き最新で、令和8年度の同テーマ独立調査はまだ公開されていない。2026年3月のアクションプランにも進捗報告スケジュールの追記はなかった
 - 調査の標本・設問・「実施」と「今後取り組みたい」の分解を原票で確認する
 - 令和2年度以降の同種調査・マテリアルフローを並べ、関心と実績の経年変化をそろえる
 - 新品購入、リユース、回収、リペアの各接点で、行動意向から実績への転換率を確認する
