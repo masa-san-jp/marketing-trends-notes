@@ -22,12 +22,13 @@ naming:
   original_label: 不妊治療の保険適用
   note: "「不妊治療の保険アクセス拡大」は、厚生労働省の保険適用説明と診療報酬実績を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-15"
+  recheck_by: "2026-10-15"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html", certainty: independent, retrieved: primary, as_of: "2022-04"}
   - {field: stage, source: "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html", certainty: independent, retrieved: primary, as_of: "2022年度"}
   - {field: time, source: "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html", certainty: independent, retrieved: primary, as_of: "2022-2024"}
+  - {field: current-status, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html", certainty: independent, retrieved: summary, as_of: "2026-09-15"}
 predictions:
   - {claim: "次回公表される保険適用不妊治療の実患者数が2022年度の約37万人を下回らない", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
@@ -40,7 +41,7 @@ sources:
   - https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html
   - https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html
 status: verified
-updated: 2026-08-12
+updated: 2026-09-15
 ---
 
 # 不妊治療の保険アクセス拡大
@@ -73,6 +74,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月15日に厚生労働省の説明ページとWebSearchを再確認したが、2022年度を更新する2023・2024年度の同一定義の実患者数・レセプト件数は見つからなかった。中央社会保険医療協議会の関連資料PDFは本文抽出ができず、内容未確認のまま残っている
 - 保険・先進医療・自由診療、年齢、地域、治療段階別に費用と件数を分ける
 - 実患者数、治療継続、出生、仕事との両立、相談支援を同じ定義で追う
 - 次回の診療報酬・学会データで予測を答え合わせする

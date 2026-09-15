@@ -22,13 +22,14 @@ naming:
   original_label: 資金移動業者口座への賃金支払い
   note: "「賃金デジタル払いの制度化」は、厚生労働省が説明する制度と導入手続を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-15"
+  recheck_by: "2026-10-15"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html", certainty: independent, retrieved: primary, as_of: "2024-08"}
   - {field: stage, source: "https://www.mhlw.go.jp/content/11200000/001478565.pdf", certainty: independent, retrieved: primary, as_of: "2025-03-31"}
   - {field: time, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html", certainty: independent, retrieved: primary, as_of: "2024-2026"}
   - {field: prediction, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html", certainty: independent, retrieved: primary, as_of: "2026-07-01"}
+  - {field: current-status, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html", certainty: independent, retrieved: primary, as_of: "2026-09-15"}
 predictions:
   - {claim: "指定資金移動業者の数が2025年3月31日時点の83事業者を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: miss}
 channel_scope:
@@ -42,7 +43,7 @@ sources:
   - https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html
   - https://www.mhlw.go.jp/content/11200000/001478565.pdf
 status: verified
-updated: 2026-08-12
+updated: 2026-09-15
 ---
 
 # 賃金デジタル払いの制度化
@@ -75,6 +76,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月15日に指定資金移動業者一覧を再確認した。指定業者数は4社（PayPay、リクルートMUFGビジネス、楽天Edy、auフィナンシャルサービス）のまま変化なし。5社目の新規指定情報も確認できなかった
 - 指定業者数の減少後に、指定取消・申請・導入企業数・個別同意率・利用額がどう推移するかを同じ定義で追う
 - 給与計算・同意取得・不正補償・解約時の実務負担を比較する
 - 事業者と労働者の属性別に、銀行振込との使い分けを確認する

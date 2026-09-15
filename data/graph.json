@@ -3823,8 +3823,8 @@
         "note": "「賃金デジタル払いの制度化」は、厚生労働省が説明する制度と導入手続を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-15",
+        "recheck_by": "2026-10-15"
       },
       "evidence": [
         {
@@ -3854,6 +3854,13 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2026-07-01"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-09-15"
         }
       ],
       "predictions": [
@@ -3876,7 +3883,7 @@
         "https://www.mhlw.go.jp/content/11200000/001478565.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-15",
       "path": "entities/trends/digital-salary-payment.md"
     },
     "trend/digital-textbook-practical-adoption": {
@@ -4139,8 +4146,8 @@
         "note": "「不妊治療の保険アクセス拡大」は、厚生労働省の保険適用説明と診療報酬実績を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-15",
+        "recheck_by": "2026-10-15"
       },
       "evidence": [
         {
@@ -4163,6 +4170,13 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2022-2024"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html",
+          "certainty": "independent",
+          "retrieved": "summary",
+          "as_of": "2026-09-15"
         }
       ],
       "predictions": [
@@ -4184,7 +4198,7 @@
         "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-15",
       "path": "entities/trends/fertility-treatment-insurance-access.md"
     },
     "trend/food-ecommerce-expansion": {
@@ -4440,8 +4454,8 @@
         "note": "「フードテックによる新たなたんぱく質源の事業化」は、農林水産省の官民協議会と委託事業の対象領域を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-15",
+        "recheck_by": "2026-10-15"
       },
       "evidence": [
         {
@@ -4464,6 +4478,13 @@
           "certainty": "attested",
           "retrieved": "primary",
           "as_of": "2020-10"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.nttdata-strategy.com/newsrelease/news/251001/",
+          "certainty": "vendor",
+          "retrieved": "summary",
+          "as_of": "2025-10-01"
         }
       ],
       "predictions": [],
@@ -4481,7 +4502,7 @@
         "https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-15",
       "path": "entities/trends/foodtech-alternative-protein.md"
     },
     "trend/foreign-worker-employment-expansion": {
@@ -4799,8 +4820,8 @@
         "note": "「生成AIの日常利用の拡大」は、消費者委員会の生成AI利用者調査を要約する記述的なラベル。調査対象者が生成AI利用者に限定される点を含む"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-15",
+        "recheck_by": "2026-10-15"
       },
       "evidence": [
         {
@@ -4823,6 +4844,13 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2026-02"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/009/shiryou/index.html",
+          "certainty": "independent",
+          "retrieved": "summary",
+          "as_of": "2026-09-09"
         }
       ],
       "predictions": [
@@ -4844,7 +4872,7 @@
         "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-15",
       "path": "entities/trends/generative-ai-daily-life-adoption.md"
     },
     "trend/giga-learning-platform-renewal": {
@@ -5164,8 +5192,8 @@
         "note": "「日本音楽の海外収入・売上の可視化」は、経済産業省の2024年調査結果を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-15",
+        "recheck_by": "2026-10-15"
       },
       "evidence": [
         {
@@ -5188,6 +5216,13 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2024"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.meti.go.jp/shingikai/mono_info_service/entertainment_creative/pdf/20250624_1.pdf",
+          "certainty": "independent",
+          "retrieved": "summary",
+          "as_of": "2025-06-24"
         }
       ],
       "predictions": [
@@ -5209,7 +5244,7 @@
         "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-15",
       "path": "entities/trends/japanese-music-overseas-expansion.md"
     },
     "trend/live-entertainment-experience-expansion": {
@@ -5593,8 +5628,8 @@
         "note": "「オンライン診療の制度対応と利用拡大」は、厚生労働省の制度資料と調査結果をまとめるための記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-15",
+        "recheck_by": "2026-10-15"
       },
       "evidence": [
         {
@@ -5617,6 +5652,13 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2024年度-2026-04"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/stf/index_0024_00004.html",
+          "certainty": "attested",
+          "retrieved": "summary",
+          "as_of": "2026-09-15"
         }
       ],
       "predictions": [
@@ -5638,7 +5680,7 @@
         "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-15",
       "path": "entities/trends/online-medical-consultation-adoption.md"
     },
     "trend/online-news-platform-dependence": {
@@ -5668,8 +5710,8 @@
         "note": "「オンラインニュースプラットフォーム依存の可視化」は、文化庁・公正取引委員会の実態調査の説明を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-15",
+        "recheck_by": "2026-10-15"
       },
       "evidence": [
         {
@@ -5692,6 +5734,13 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2023-03"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.jftc.go.jp/houdou/teirei/2026/260708.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-07-08"
         }
       ],
       "predictions": [
@@ -5710,10 +5759,12 @@
       "relations": [],
       "sources": [
         "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
-        "https://www.jftc.go.jp/houdou/pressrelease/cyosa/cyosa-platformer/index.html"
+        "https://www.jftc.go.jp/houdou/pressrelease/cyosa/cyosa-platformer/index.html",
+        "https://www.pressnet.or.jp/statement/broadcasting/231005_15169.html",
+        "https://www.jftc.go.jp/houdou/teirei/2026/260708.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-15",
       "path": "entities/trends/online-news-platform-dependence.md"
     },
     "trend/outbound-travel-recovery": {
@@ -6038,8 +6089,8 @@
         "note": "「リカレント教育の社会実装」は、文部科学省の事業・調査研究・支援制度を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-15",
+        "recheck_by": "2026-10-15"
       },
       "evidence": [
         {
@@ -6062,6 +6113,13 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2022-2027年度"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-09-02"
         }
       ],
       "predictions": [
@@ -6083,7 +6141,7 @@
         "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-15",
       "path": "entities/trends/recurrent-education-institutionalization.md"
     },
     "trend/redelivery-reduction": {
@@ -6797,8 +6855,8 @@
         "note": "「サステナブルファッションへの関心・循環行動」は、環境省の調査項目と衣類の循環フローを要約するための記述的なラベル。生活者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-09-12"
+        "valid_as_of": "2026-09-15",
+        "recheck_by": "2026-10-15"
       },
       "evidence": [
         {
@@ -6821,6 +6879,13 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2025"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.env.go.jp/policy/sustainable_fashion/resources/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-09-15"
         }
       ],
       "predictions": [
@@ -6844,7 +6909,7 @@
         "https://www.env.go.jp/press/press_03475.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-15",
       "path": "entities/trends/sustainable-fashion-behavior.md"
     },
     "trend/telework-stabilization": {

@@ -22,12 +22,13 @@ naming:
   original_label: ニュースコンテンツのオンライン流通・利用増加
   note: "「オンラインニュースプラットフォーム依存の可視化」は、文化庁・公正取引委員会の実態調査の説明を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-15"
+  recheck_by: "2026-10-15"
 evidence:
   - {field: kind, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03"}
   - {field: stage, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03"}
   - {field: time, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03"}
+  - {field: current-status, source: "https://www.jftc.go.jp/houdou/teirei/2026/260708.html", certainty: independent, retrieved: primary, as_of: "2026-07-08"}
 predictions:
   - {claim: "次回の公正取引委員会または文化庁の実態調査で、ニュースポータル・検索・媒体サイトの利用経路と取引条件が再整理される", by: "2028-12", resolved: null, outcome: null}
 channel_scope:
@@ -39,8 +40,10 @@ relations: []
 sources:
   - https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/
   - https://www.jftc.go.jp/houdou/pressrelease/cyosa/cyosa-platformer/index.html
+  - https://www.pressnet.or.jp/statement/broadcasting/231005_15169.html
+  - https://www.jftc.go.jp/houdou/teirei/2026/260708.html
 status: verified
-updated: 2026-08-12
+updated: 2026-09-15
 ---
 
 # オンラインニュースプラットフォーム依存の可視化
@@ -50,6 +53,8 @@ updated: 2026-08-12
 ニュースの接点が紙媒体だけでなく、ニュースポータル、検索結果、オンライン媒体などへ移り、ニュースメディアとプラットフォームの取引条件が競争・著作権政策の調査対象になっている。文化庁の2023年審議会では、新聞・雑誌など既存の紙媒体の利用が減る一方、インターネット上のニュースプラットフォーム利用が増えていると説明された。
 
 公正取引委員会は、ニュースポータルや検索の表示・抜粋・リンク、ライセンス対価、表示順位、メディアへの送客などを実態調査の論点としている。利用が増えたことと、プラットフォームがニュース事業者の収益を改善することは別の命題であり、依存度・送客・対価・広告収入を分けて観測する必要がある。
+
+公正取引委員会は令和5年（2023年）9月に「ニュースコンテンツ配信分野に関する実態調査報告書」を公表済みである。さらに2026年7月8日、同委員会は令和7年12月から実施しているフォローアップ調査を明らかにした。日本新聞協会・日本雑誌協会・日本民間放送連盟の加盟社など約370社を対象に、前回報告書が指摘した課題への取組状況に加え、AI検索サービスによるニュースコンテンツの無許諾利用（AI Overview等）への対応状況も新たに調査対象に含めている。ただし、これは調査の実施・対象範囲の更新であり、ニュース利用経路別のシェアや対価水準そのものの新しい数値ではない。
 
 ## kind と stage の判定
 
@@ -73,7 +78,7 @@ updated: 2026-08-12
 
 ## 未着手
 
-- 2026年8月12日時点の公正取引委員会のデジタルプラットフォーム実態調査ページを確認したが、ニュース利用経路・取引条件の結果公表は未確認
+- 2026年9月15日に再確認し、前回「結果公表は未確認」とした記述を訂正した。公正取引委員会の実態調査報告書は2023年9月に公表済みで、2026年7月8日には約370社を対象にAI検索サービスの影響も含むフォローアップ調査の実施が明らかになっている。フォローアップ調査自体の結果（利用経路別シェア・対価水準の更新値）はまだ公表されていない
 - ニュースポータル、検索、媒体サイト、SNS、動画別の利用率・滞在・送客を比較する
 - ライセンス、抜粋、表示順位、広告、購読、対価還元を媒体規模別に分解する
-- 公正取引委員会の実態調査結果と、その後の取引条件の変化を確認する
+- 公正取引委員会のフォローアップ調査結果と、AI検索サービスへの対応状況、その後の取引条件の変化を確認する

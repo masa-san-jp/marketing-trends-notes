@@ -22,12 +22,13 @@ naming:
   original_label: リカレント教育の社会実装
   note: "「リカレント教育の社会実装」は、文部科学省の事業・調査研究・支援制度を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-09-12"
+  valid_as_of: "2026-09-15"
+  recheck_by: "2026-10-15"
 evidence:
   - {field: kind, source: "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm", certainty: independent, retrieved: primary, as_of: "2026-2027年度"}
   - {field: stage, source: "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html", certainty: independent, retrieved: primary, as_of: "2022-2024"}
   - {field: time, source: "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm", certainty: independent, retrieved: primary, as_of: "2022-2027年度"}
+  - {field: current-status, source: "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm", certainty: independent, retrieved: primary, as_of: "2026-09-02"}
 predictions:
   - {claim: "文部科学省のリカレント教育・リスキリング関連の支援事業が次年度も複数の目的別施策として掲載される", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
@@ -40,7 +41,7 @@ sources:
   - https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm
   - https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html
 status: verified
-updated: 2026-08-12
+updated: 2026-09-15
 ---
 
 # リカレント教育の社会実装
@@ -73,6 +74,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月15日に再確認。文部科学省のリカレント教育案内は2026年9月2日付通知で継続更新中で、支援事業8件・目的別施策4種類の掲載が続いている。調査研究の成果報告書は2024年4月付の既存2件から増えておらず、受講率・学習成果の新しい定量データは確認できなかった
 - 講座数ではなく、社会人の受講、修了、学習成果、就業成果を同じ定義で追う
 - 年齢、職種、企業規模、雇用形態、費用、時間、オンライン利用の差を比較する
 - 次年度の施策一覧と成果報告書で予測を答え合わせする
