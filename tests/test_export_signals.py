@@ -41,7 +41,7 @@ class ExportSignalsTests(unittest.TestCase):
     def test_all_trends_are_exported(self) -> None:
         payload = self.run_export()
 
-        self.assertEqual(payload["signal_count"], 60)
+        self.assertEqual(payload["signal_count"], 65)
         self.assertEqual(payload["signal_count"], len(payload["signals"]))
         self.assertEqual(payload["stale_count"], 0)
         self.assertTrue(all(signal["entity_id"].startswith("trend/") for signal in payload["signals"]))

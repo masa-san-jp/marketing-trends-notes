@@ -12,9 +12,9 @@ depends_on: []
 受け入れ条件の閾値も同じファイルに置いてある（issue #1 と対応）。
 
 <!-- generated:coverage:start -->
-データの最新日: 2026-09-15 — `python3 tools/build_graph.py` が生成（手で書き換えない）
+データの最新日: 2026-09-16 — `python3 tools/build_graph.py` が生成（手で書き換えない）
 
-trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 'verified': 57}
+trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 'verified': 59}
 
 | カテゴリ | 1993 | 1995 | 2004 | 2005 | 2007 | 2010 | 2014 | 2015 | 2016 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | 年代不明 | 計 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -29,30 +29,39 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 | gaming（ゲーム） |  |  |  |  |  |  |  |  |  |  |  | 1 |  | 1 |  |  |  |  |  | 2 |
 | finance（金融） |  |  |  |  |  | 1 |  |  |  |  |  | 1 |  |  | 2 |  |  |  |  | 4 |
 | education（教育） |  |  |  |  |  |  |  |  |  |  | 1 |  |  | 1 | 1 | 1 |  |  |  | 4 |
-| cross-category（カテゴリ横断） |  | 1 | 1 |  | 1 |  |  |  |  | 1 | 1 | 2 | 1 | 1 |  |  |  | 1 |  | 10 |
+| cross-category（カテゴリ横断） |  | 1 | 1 |  | 1 |  |  |  |  | 1 | 1 | 2 | 1 | 1 |  |  | 3 | 3 |  | 15 |
 
 **調査したが該当が無かった**（空欄との区別。`tools/record_searched.py` の記録）:
 - entertainment-content: 2020年以降の日本における短尺動画と長尺動画の視聴時間・利用率を形式別に分解した独立調査（総務省・政府統計・研究論文を確認）（2026-08-25・aiko-pr／出典 3本）
 
+**探されたが無かった語**（需要のシグナル。多い順）:
+
+- 資産形成 — 1回
+- 貯蓄 — 1回
+
+探された当時は無く、いまは入っている語: デジタルデトックス, 本物, 静け
+
 受け入れ条件の達成度:
 
-- trend_total: 60/60（stub 0件は不算入）
+- trend_total: 65/60（stub 0件は不算入）
 - vendor_only_ratio: 0.00（上限 0.2）
 - primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
 - per_category_min: 12/12 カテゴリが 2件以上
-- stale_ratio: 0.00（上限 0.15・as_of=2026-09-15 時点）
+- stale_ratio: 0.00（上限 0.15・as_of=2026-09-16 時点）
 - practice_linked: 60/61 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 5/5 件の予測が答え合わせ済み
-- forward_stated_ratio: 0.00（下限 0.0・第一節とpredictionsを持つtrend）
-- intended_evidence_ratio: 0.00（下限 0.0・tense: intendedの根拠を持つtrend）
+- forward_stated_ratio: 0.08（下限 0.0・第一節とpredictionsを持つtrend）
+- intended_evidence_ratio: 0.08（下限 0.0・tense: intendedの根拠を持つtrend）
 
 チャネル軸の移行状態:
 - mapped: 1件
-- not-applicable: 59件
+- not-applicable: 64件
 - unresolved: 0件
 
 受け入れ条件: **全項目達成**
+
+関係を持たない trend: trend/ai-visual-trust-expectation, trend/algorithmic-trust-erosion, trend/calm-minimalism-mood, trend/digital-disengagement-intention, trend/specificity-over-relatability-expectation
 <!-- generated:coverage:end -->
 
 ## 空欄の読み方
@@ -76,7 +85,12 @@ trend **60** 件（stub 0件は不算入）／内訳 {'draft': 3, 'stub': 0, 've
 形式の検証（`build_graph.py --check`）と違って commit は止めない——次に何を調べるかの材料として出す。
 
 <!-- generated:audit:start -->
-食い違い・偏りの指摘はなし。
+**未来向きの未着手**
+- AI表現に人間的文脈と倫理的信頼を求める視線 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- おすすめ表示・アルゴリズムへの不信感の高まり に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- 静けさ・簡素さを求める気分の高まり（Pantone Color of the Year 2026） に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- デジタル利用からの距離を求める意識と実践のギャップ に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- 「共感できる」一般性より具体性・個別性を求める視線 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
 <!-- generated:audit:end -->
 
 ## 需要から決める（探されたが無かった語）

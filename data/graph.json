@@ -151,6 +151,56 @@
       "updated": "2026-08-25",
       "path": "entities/players/bytedance.md"
     },
+    "player/getty-images": {
+      "id": "player/getty-images",
+      "uri": "urn:mtn:player/getty-images",
+      "type": "player",
+      "label_ja": "ゲッティイメージズ",
+      "label_en": "Getty Images",
+      "authority": {
+        "wikidata": "Q1520122",
+        "none_reason": null
+      },
+      "time": {
+        "start": "1995",
+        "end": "..",
+        "display": "ストックフォト・映像素材のライセンス提供企業として設立"
+      },
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1520122",
+        "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking"
+      ],
+      "status": "draft",
+      "updated": "2026-09-16",
+      "path": "entities/players/getty-images.md"
+    },
+    "player/pantone": {
+      "id": "player/pantone",
+      "uri": "urn:mtn:player/pantone",
+      "type": "player",
+      "label_ja": "パントン",
+      "label_en": "Pantone",
+      "authority": {
+        "wikidata": "Q2050040",
+        "none_reason": null
+      },
+      "time": {
+        "start": "1963",
+        "end": "..",
+        "display": "色見本・カラーマッチングシステムの提供企業として設立"
+      },
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2050040",
+        "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer"
+      ],
+      "status": "draft",
+      "updated": "2026-09-16",
+      "path": "entities/players/pantone.md"
+    },
     "practice/b2b-digital-procurement-governance": {
       "id": "practice/b2b-digital-procurement-governance",
       "uri": "urn:mtn:practice/b2b-digital-procurement-governance",
@@ -2883,6 +2933,177 @@
       "updated": "2026-08-10",
       "path": "entities/sources/apple-user-privacy-page.md"
     },
+    "trend/ai-visual-trust-expectation": {
+      "id": "trend/ai-visual-trust-expectation",
+      "uri": "urn:mtn:trend/ai-visual-trust-expectation",
+      "type": "trend",
+      "label_ja": "AI表現に人間的文脈と倫理的信頼を求める視線",
+      "label_en": "Expectation for human-contextualized, trustworthy AI imagery",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「AI表現への信頼要求」「AI imagery trust expectation 2026」で検索したが、この視線そのもののWikidata項目は確認できない（2026-09-16検索実施）"
+      },
+      "time": {
+        "start": "2026~",
+        "end": "..",
+        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年9月14日）で示される局面"
+      },
+      "kind": "vendor-pushed",
+      "stage": "emerging",
+      "market": "cross-category",
+      "geo": "global",
+      "naming": {
+        "self_identified": false,
+        "named_by": "player/getty-images",
+        "named_when": "2026-01-28",
+        "original_label": "トレンド1: AIは概念から人間の文脈へ移行する",
+        "note": "ゲッティイメージズのVisualGPSチームが年次レポートで示した3トレンドの1つ。視聴者・受け手自身がこの視線を自称する調査ではなく、素材販売企業が自社のリサーチとして提示している"
+      },
+      "freshness": {
+        "valid_as_of": "2026-09-16",
+        "recheck_by": "2026-10-16"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2026-01-28",
+          "tense": "intended"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2026-01-28",
+          "tense": "intended"
+        },
+        {
+          "field": "time",
+          "source": "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-01-28",
+          "tense": "completed"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "ゲッティイメージズ（VisualGPSチーム）が2027年前後に発表する次年度のクリエイティブトレンドレポートでも、AI表現における「信頼・プライバシー・データ倫理への感受性」への言及が主要テーマとして継続する",
+          "by": "2027-06-30",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のSNS・広告媒体が発生チャネルではなく、ゲッティイメージズという素材販売企業が検索・ 利用動向をもとに毎年発表するレポートそのものであり、`channels` は張らない。 **未確認**: この視線が、実際の広告クリエイティブ・企業のAI活用発表の描写にどう波及するか。"
+      },
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+        "https://www.wikidata.org/wiki/Q1520122"
+      ],
+      "status": "draft",
+      "updated": "2026-09-16",
+      "path": "entities/trends/ai-visual-trust-expectation.md"
+    },
+    "trend/algorithmic-trust-erosion": {
+      "id": "trend/algorithmic-trust-erosion",
+      "uri": "urn:mtn:trend/algorithmic-trust-erosion",
+      "type": "trend",
+      "label_ja": "おすすめ表示・アルゴリズムへの不信感の高まり",
+      "label_en": "Rising distrust in algorithmic content curation",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「アルゴリズム不信」「algorithmic curation distrust Japan」で検索したが、この生活者の意識そのもののWikidata項目は確認できない（2026-09-16検索実施）"
+      },
+      "time": {
+        "start": "2025~",
+        "end": "..",
+        "display": "消費者庁 令和7年度消費者意識基本調査（2025年11月調査、2026年6月公表）で観測できる局面"
+      },
+      "kind": "demand-shift",
+      "stage": "emerging",
+      "market": "cross-category",
+      "geo": "japan",
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "インターネットの表示に関する意識",
+        "note": "「おすすめ表示・アルゴリズムへの不信感の高まり」は、消費者庁の設問「インターネット上では、あなた向けの情報が優先的に表示されたり、『おすすめ』が表示されたりします」への回答を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-09-16",
+        "recheck_by": "2026-10-16"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-11",
+          "tense": "intended"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-11",
+          "tense": "intended"
+        },
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_14.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-11",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-06-12",
+          "tense": "completed"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "消費者庁の次回（令和8年度）消費者意識基本調査で、「関心を引くために根拠のない情報、虚偽の情報が混ざっていると感じる」に当てはまると回答する割合が、令和7年度調査の68.6%を大きく下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "同調査で、「自分の情報が必要以上に収集されていると感じる」に当てはまると回答する割合が、令和7年度調査の56.1%を大きく下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "検索・SNS・EC・動画などインターネット上のあらゆる「おすすめ」表示・パーソナライズ機能が対象で、 特定のチャネルの発生現象ではないため `channels` は張らない。 **未確認**: この不信感が、特定のプラットフォーム（検索・SNS・EC）でどう違うか。"
+      },
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/",
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_14.pdf",
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-09-16",
+      "path": "entities/trends/algorithmic-trust-erosion.md"
+    },
     "trend/anxiety-multiplication": {
       "id": "trend/anxiety-multiplication",
       "uri": "urn:mtn:trend/anxiety-multiplication",
@@ -3116,6 +3337,84 @@
       "status": "verified",
       "updated": "2026-08-12",
       "path": "entities/trends/building-renovation-market-expansion.md"
+    },
+    "trend/calm-minimalism-mood": {
+      "id": "trend/calm-minimalism-mood",
+      "uri": "urn:mtn:trend/calm-minimalism-mood",
+      "type": "trend",
+      "label_ja": "静けさ・簡素さを求める気分の高まり（Pantone Color of the Year 2026）",
+      "label_en": "Rising mood for calm and simplicity (Pantone Color of the Year 2026)",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「静けさを求める気分」「calm minimalism mood 2026」で検索したが、この気分そのもののWikidata項目は確認できない（2026-09-16検索実施）。色そのもの（PANTONE 11-4201）の項目は未確認"
+      },
+      "time": {
+        "start": "2025~",
+        "end": "..",
+        "display": "Pantone Color of the Year 2026「Cloud Dancer」の発表（2025年12月4日）を起点とする局面"
+      },
+      "kind": "vendor-pushed",
+      "stage": "emerging",
+      "market": "cross-category",
+      "geo": "global",
+      "naming": {
+        "self_identified": false,
+        "named_by": "player/pantone",
+        "named_when": "2025-12-04",
+        "original_label": "PANTONE 11-4201 Cloud Dancer",
+        "note": "パントンが毎年発表する「Pantone Color of the Year」の2026年版。生活者自身がこの気分を「静けさ・簡素さ」と自称する調査は無く、パントンという一企業の解説文がこのラベル付けの起点である"
+      },
+      "freshness": {
+        "valid_as_of": "2026-09-16",
+        "recheck_by": "2026-10-16"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2025-12-04",
+          "tense": "intended"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2025-12-04",
+          "tense": "intended"
+        },
+        {
+          "field": "time",
+          "source": "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-12-04",
+          "tense": "completed"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "Pantone（色彩研究所）が2026年12月頃に発表するPantone Color of the Year 2027の解説文でも、2026年のCloud Dancerと同様に「静けさ」「簡素化」「内省」「過剰からの解放」に類する語が用いられる（同社が毎年同種の意味づけを与え続けているかを確認できる）",
+          "by": "2026-12-31",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のSNS・EC・店舗が発生チャネルではなく、パントンという色彩研究機関が毎年発表する年次企画 そのものであり、`channels` は張らない。 **未確認**: この色・気分づけが、ファッション・インテリア・パッケージデザインなどの実際の 商品化にどう波及するか。"
+      },
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer",
+        "https://www.wikidata.org/wiki/Q2050040"
+      ],
+      "status": "draft",
+      "updated": "2026-09-16",
+      "path": "entities/trends/calm-minimalism-mood.md"
     },
     "trend/care-service-utilization-expansion": {
       "id": "trend/care-service-utilization-expansion",
@@ -3795,6 +4094,99 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/crypto-asset-user-expansion.md"
+    },
+    "trend/digital-disengagement-intention": {
+      "id": "trend/digital-disengagement-intention",
+      "uri": "urn:mtn:trend/digital-disengagement-intention",
+      "type": "trend",
+      "label_ja": "デジタル利用からの距離を求める意識と実践のギャップ",
+      "label_en": "Intention-behavior gap in digital disengagement",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「デジタルデトックス意識」「digital disengagement intention Japan」で検索したが、この生活者の意識と行動のギャップそのもののWikidata項目は確認できない（2026-09-16検索実施）"
+      },
+      "time": {
+        "start": "2025~",
+        "end": "..",
+        "display": "消費者庁 令和7年度消費者意識基本調査（2025年11月調査、2026年6月公表）で観測できる局面"
+      },
+      "kind": "demand-shift",
+      "stage": "emerging",
+      "market": "cross-category",
+      "geo": "japan",
+      "naming": {
+        "self_identified": false,
+        "named_by": null,
+        "named_when": null,
+        "original_label": "デジタルデトックスに関する意識",
+        "note": "「デジタル利用からの距離を求める意識と実践のギャップ」は、消費者庁の設問「デジタルデトックスによってインターネットから離れることに関する、あなたの考えや行動」を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
+      },
+      "freshness": {
+        "valid_as_of": "2026-09-16",
+        "recheck_by": "2026-10-16"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-11",
+          "tense": "intended"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-11",
+          "tense": "intended"
+        },
+        {
+          "field": "time",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_14.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-11",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-06-12",
+          "tense": "completed"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "消費者庁の次回（令和8年度）消費者意識基本調査で、インターネット利用者のうち「デジタルデトックスは心身の健康に良いと思う」に当てはまると回答する割合が、令和7年度調査の71.2%を大きく下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "同調査で、「意識的にスマートフォンやインターネットから離れる時間をつくるようにしている」に当てはまると回答する割合（令和7年度調査で100%−69.7%＝30.3%相当）が、10ポイント以上は改善しない（＝意識と実践のギャップが大きくは縮まらない）",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のSNS・アプリ・広告媒体が発生チャネルではなく、消費者庁の生活者調査で観測される意識・行動の ギャップなので、`channels` は張らない。 **未確認**: この意識が、デジタルウェルビーイング機能の利用、スクリーンタイム制限アプリの導入、 SNS利用時間の実際の減少など、どの具体的な接点で行動に変わるか。"
+      },
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/",
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_14.pdf",
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf"
+      ],
+      "status": "verified",
+      "updated": "2026-09-16",
+      "path": "entities/trends/digital-disengagement-intention.md"
     },
     "trend/digital-salary-payment": {
       "id": "trend/digital-salary-payment",
@@ -6753,6 +7145,84 @@
       "status": "verified",
       "updated": "2026-08-11",
       "path": "entities/trends/sleep-rest-health-management.md"
+    },
+    "trend/specificity-over-relatability-expectation": {
+      "id": "trend/specificity-over-relatability-expectation",
+      "uri": "urn:mtn:trend/specificity-over-relatability-expectation",
+      "type": "trend",
+      "label_ja": "「共感できる」一般性より具体性・個別性を求める視線",
+      "label_en": "Shift from broad relatability to specific, individual authenticity",
+      "authority": {
+        "wikidata": null,
+        "none_reason": "「具体性を求める視線」「specificity over relatability visual trend」で検索したが、この視線そのもののWikidata項目は確認できない（2026-09-16検索実施）"
+      },
+      "time": {
+        "start": "2026~",
+        "end": "..",
+        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年9月14日）で示される局面"
+      },
+      "kind": "vendor-pushed",
+      "stage": "emerging",
+      "market": "cross-category",
+      "geo": "global",
+      "naming": {
+        "self_identified": false,
+        "named_by": "player/getty-images",
+        "named_when": "2026-01-28",
+        "original_label": "トレンド2: 本物であることは今や具体性にこそある",
+        "note": "ゲッティイメージズのVisualGPSチームが年次レポートで示した3トレンドの1つ。視聴者・受け手自身がこの視線を自称する調査ではなく、素材販売企業が自社のリサーチとして提示している"
+      },
+      "freshness": {
+        "valid_as_of": "2026-09-16",
+        "recheck_by": "2026-10-16"
+      },
+      "evidence": [
+        {
+          "field": "kind",
+          "source": "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2026-01-28",
+          "tense": "intended"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2026-01-28",
+          "tense": "intended"
+        },
+        {
+          "field": "time",
+          "source": "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-01-28",
+          "tense": "completed"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "ゲッティイメージズ（VisualGPSチーム）が2027年前後に発表する次年度のクリエイティブトレンドレポートでも、「広く共感できる一般的なビジュアル」ではなく「具体性・個別性のあるビジュアル」を推奨する主張が継続する",
+          "by": "2027-06-30",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
+      "channel_scope": {
+        "status": "not-applicable",
+        "note": "特定のSNS・広告媒体が発生チャネルではなく、ゲッティイメージズという素材販売企業が検索・ 利用動向をもとに毎年発表するレポートそのものであり、`channels` は張らない。 **未確認**: この視線が、実際の広告クリエイティブ・ブランドの表現手法にどう波及するか。"
+      },
+      "channels": [],
+      "relations": [],
+      "sources": [
+        "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+        "https://www.wikidata.org/wiki/Q1520122"
+      ],
+      "status": "draft",
+      "updated": "2026-09-16",
+      "path": "entities/trends/specificity-over-relatability-expectation.md"
     },
     "trend/sports-participation-plateau": {
       "id": "trend/sports-participation-plateau",

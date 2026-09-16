@@ -1,4 +1,35 @@
 {
-  "as_of": "2026-09-15",
-  "findings": []
+  "as_of": "2026-09-16",
+  "findings": [
+    {
+      "kind": "unanswered",
+      "about": "trend/ai-visual-trust-expectation",
+      "text": "AI表現に人間的文脈と倫理的信頼を求める視線 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）",
+      "advisory": true
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/algorithmic-trust-erosion",
+      "text": "おすすめ表示・アルゴリズムへの不信感の高まり に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）",
+      "advisory": true
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/calm-minimalism-mood",
+      "text": "静けさ・簡素さを求める気分の高まり（Pantone Color of the Year 2026） に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）",
+      "advisory": true
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/digital-disengagement-intention",
+      "text": "デジタル利用からの距離を求める意識と実践のギャップ に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）",
+      "advisory": true
+    },
+    {
+      "kind": "unanswered",
+      "about": "trend/specificity-over-relatability-expectation",
+      "text": "「共感できる」一般性より具体性・個別性を求める視線 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）",
+      "advisory": true
+    }
+  ]
 }
