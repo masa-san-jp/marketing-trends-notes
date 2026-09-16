@@ -40,8 +40,42 @@ updated: {today}
 
 # {ja}
 
-TODO: 本文。型ごとの見出しは docs/schema.md の「本文の型」に従う。practice は外部事例・適用条件・
+{body}
+"""
+
+DEFAULT_BODY = """TODO: 本文。型ごとの見出しは docs/schema.md の「本文の型」に従う。practice は外部事例・適用条件・
 効果未確認を、trend はチャネル軸の適用範囲を記録し、書き手自身の実施有無や自社数値は記録しない。
+"""
+
+# trend 本文の型（issue #96 D1）。見出し文字列は docs/schema.md と完全一致させる。
+TREND_BODY = """## 見出している未来（何に向かって動いているか）
+
+TODO: 対象となる人々が何を期待・準備・回避・希求しているかを、出典付きで書く（他者の志向の記録。
+書き手の推測を書かない）。根拠付きで書けない場合は「**未確認**: 」で始まる1行だけにする
+
+## 足元の根拠（完了した事実）
+
+TODO: 見出している未来の足元にある、完了した事実（統計・実績・施行済み制度）を書く
+
+## kind と stage の判定
+
+TODO: なぜこの kind・この stage としたか
+
+## 時間
+
+TODO: 始点・終点の根拠
+
+## チャネルと伝播
+
+TODO: どのチャネルで観測され、どう伝播するか（channel_scope と対応させる）
+
+## 反証（これが偽なら何が観測されるか）
+
+TODO: これが偽なら何が観測されるはずか
+
+## 未着手
+
+TODO: まだ確認していないこと
 """
 
 TREND_EXTRA = """kind: {kind}             # {kinds}
@@ -57,8 +91,10 @@ naming:
 freshness:
   valid_as_of: {today}   # 最後に実データで確認した日
   recheck_by: {recheck}  # stage から自動導出。stage を変えたら build_graph が再計算を要求する
-evidence: []             # verified を名乗るとき time / kind / stage の根拠が要る
-predictions: []          # 任意 [{{claim: ..., by: EDTF, resolved: null, outcome: null}}]
+evidence:                # verified を名乗るとき time / kind / stage の根拠が要る。tense は completed / intended
+  - {{field: TODO, source: TODO, certainty: TODO, retrieved: TODO, as_of: TODO, tense: completed}}
+predictions:             # 未来向き必須（updated が forward_required_from 以降）なら1件以上要る
+  - {{claim: TODO, by: TODO, resolved: null, outcome: null}}
 """
 
 PRACTICE_EXTRA = """saturation: null        # 任意: {sats}
@@ -79,6 +115,7 @@ def main():
     today = date.today().isoformat()
     extra = ""
     channel_scope = ""
+    body = DEFAULT_BODY
     if a.type == "trend":
         recheck = recheck_deadline(a.stage, today) if a.stage else None
         extra = TREND_EXTRA.format(
@@ -86,6 +123,7 @@ def main():
             stage=a.stage or "TODO", stages=" / ".join(sorted(STAGES)),
             ja=a.ja, today=today, recheck=recheck or "null")
         channel_scope = "channel_scope:\n  status: unresolved       # mapped / not-applicable / unresolved\n  note: TODO               # 未確定の理由。mapped は null\n"
+        body = TREND_BODY
     if a.type == "practice":
         extra = PRACTICE_EXTRA.format(sats=" / ".join(sorted(SATURATIONS)))
 
@@ -96,7 +134,8 @@ def main():
         return 1
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(COMMON.format(eid=eid, uri=URI_PREFIX + eid, etype=a.type, ja=a.ja, en=a.en,
-                                  extra=extra, channel_scope=channel_scope, today=today), encoding="utf-8")
+                                  extra=extra, channel_scope=channel_scope, today=today, body=body),
+                    encoding="utf-8")
     print(f"✓ {path.relative_to(path.parents[2])} を作った。TODO を埋めて "
           f"`python3 tools/build_graph.py --check` を通す")
     return 0

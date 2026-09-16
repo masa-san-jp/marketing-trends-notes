@@ -48,6 +48,12 @@ VERIFIABLE_CERTAINTIES = {"measured", "independent", "attested"}
 # 権威あるURLは、読まずにも貼れてしまう。この軸が無いと未読の資料が出典付きで体系に入る。
 RETRIEVEDS = {"primary", "summary"}
 
+# certainty・retrieved と独立した第3の軸。「もう起きたことを数えているか、これからのことを
+# 答えているか」。completed が第二節（足元の根拠）、intended が第一節（見出している未来）を支える。
+#   completed  完了した事実（統計・実績・施行済み制度）
+#   intended   意向・期待・準備・予測（意向調査の「今後」設問、検索関心、SNS空気感、専門機関の予測）
+TENSES = {"completed", "intended"}
+
 # stage → 再検証までの月数。emerging ほど早く腐る。dead は再検証しない（確定した過去）
 RECHECK_MONTHS = {"emerging": 1, "growing": 3, "peak": 6, "declining": 6, "dead": None}
 
@@ -131,6 +137,18 @@ def recheck_deadline(stage, valid_as_of):
     except ValueError:  # 月末の桁あふれ（1/31 + 1ヶ月）は月末に丸める
         import calendar
         return datetime.date(year, month, calendar.monthrange(year, month)[1]).isoformat()
+
+
+def is_forward_required(meta, cfg):
+    """未来向き必須の trend か（issue #96 D2）。
+
+    status が draft/verified で、updated が forward_required_from 以降のもの。
+    build_graph.py と audit.py の両方がこの1つの関数を使い、判定を二重実装しない。
+    """
+    if meta.get("status") not in ("draft", "verified"):
+        return False
+    gate = str((cfg or {}).get("forward_required_from") or "9999-12-31")
+    return str(meta.get("updated") or "") >= gate
 
 
 def data_as_of(entities):

@@ -42,3 +42,10 @@ thresholds:            # issue #1 の受け入れ条件の機械化。数値の�
   stale_max_ratio: 0.15          # recheck_by 超過の上限（腐らせない）
   practice_linked_ratio: 0.50    # responds_to を持つ practice の下限比率（打ち手はトレンドに繋ぐ）
   resolved_prediction_min: 5     # 答え合わせ済みの予測の最低数（外したと記録する）
+  forward_stated_ratio_min: 0.0  # 第一節＋predictionsを持つ trend の下限比率（issue #96 D5。F15で1.0）
+  intended_evidence_ratio_min: 0.0  # tense: intended の根拠を持つ trend の下限比率（issue #96 D5。F15で0.3）
+
+# 未来向き必須の日付ゲート（issue #96 D2）。status が draft/verified で updated がこの日付以降の
+# trend にだけ、第一節「見出している未来」・第二節「足元の根拠」・predictions・evidence の tense を
+# 機械検証で要求する。移行前の既存 trend（updated がこの日付より前）は従来どおり検証する。
+forward_required_from: "2026-10-01"

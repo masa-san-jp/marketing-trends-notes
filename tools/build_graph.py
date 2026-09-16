@@ -22,10 +22,10 @@ from kb import (CERTAINTIES, CHANNEL_ROLES, CHANNEL_SCOPE_STATUSES, DIR_FOR_TYPE
                 EVIDENCE_FIELDS_FOR_VERIFIED, INTERPRETIVE_RELATIONS, PREDICTION_OUTCOMES,
                 RELATION_TARGET_TYPES, RELATIONS, RETRIEVEDS, ROOT, SATURATIONS, SEARCHED_FIELDS,
                 STAGES, STATUSES,
-                TREND_KINDS, TYPES, URI_PREFIX, VERIFIABLE_CERTAINTIES, alias_map, build_edges,
-                data_as_of, edtf_ok, edtf_year_range, load_config, load_entities,
-                read_frontmatter, read_queries, read_searched, recheck_deadline, resolve,
-                search_entities)
+                TENSES, TREND_KINDS, TYPES, URI_PREFIX, VERIFIABLE_CERTAINTIES, alias_map,
+                build_edges, data_as_of, edtf_ok, edtf_year_range, is_forward_required,
+                load_config, load_entities, read_frontmatter, read_queries, read_searched,
+                recheck_deadline, resolve, search_entities)
 
 OVERVIEWS = ROOT / "overviews"
 MARK_START = "<!-- generated:coverage:start -->"
@@ -33,6 +33,9 @@ MARK_END = "<!-- generated:coverage:end -->"
 
 # 反証の見出し。書けないならそれはトレンドではなく感想（docs/schema.md「本文の型」）
 REFUTATION_HEADING = "## 反証"
+# 未来向き必須（issue #96 D1・D2）の第一節・第二節。REFUTATION_HEADING と同じ本文部分一致で判定する。
+FORWARD_HEADING = "## 見出している未来"
+GROUND_HEADING = "## 足元の根拠"
 PRACTICE_HEADINGS = (
     "## 何をするか", "## どのトレンドへの応答か", "## 成立条件・失敗条件",
     "## 飽和度の判定", "## 利用上の注意", "## 未着手",
@@ -263,6 +266,22 @@ def validate_trend(meta, body, cfg, err):
         err(f"trend の本文に「{REFUTATION_HEADING}（これが偽なら何が観測されるか）」の見出しが無い"
             "（書けないなら、それはトレンドではなく感想）")
 
+    # 未来向き必須（issue #96 D2）。updated が forward_required_from 以降の draft/verified trend にだけ
+    # 第一節・第二節・predictions・evidence の tense を要求する。移行前の既存 trend は落とさない。
+    if is_forward_required(meta, cfg):
+        if FORWARD_HEADING not in body:
+            err(f"未来向き必須の trend は本文に「{FORWARD_HEADING}（何に向かって動いているか）」"
+                "の見出しが要る（issue #96 D1・D2）")
+        if GROUND_HEADING not in body:
+            err(f"未来向き必須の trend は本文に「{GROUND_HEADING}（完了した事実）」の見出しが要る"
+                "（issue #96 D1・D2）")
+        if len(meta.get("predictions") or []) < 1:
+            err("未来向き必須の trend は predictions が1件以上要る（issue #96 D2・D4）")
+        rows = meta.get("evidence") or []
+        if not rows or not all(c.get("tense") in TENSES for c in rows):
+            err(f"未来向き必須の trend は evidence 全行に tense（{sorted(TENSES)}）が要る"
+                "（issue #96 D2・D3）")
+
 
 def validate_evidence(meta, err):
     """evidence（主張ごとの根拠）と、verified の2つの関門。
@@ -283,6 +302,9 @@ def validate_evidence(meta, err):
                 f"（{sorted(RETRIEVEDS)}／原典を開いていないなら summary）")
         if not c.get("as_of"):
             err(f"evidence の {c.get('field')} に as_of（いつ時点の数字か）が無い")
+        if "tense" in c and c.get("tense") not in TENSES:
+            err(f"evidence の {c.get('field')} の tense が語彙外: {c.get('tense')}"
+                f"（{sorted(TENSES)}）")
 
     if meta.get("status") == "verified":
         need = EVIDENCE_FIELDS_FOR_VERIFIED.get(meta.get("type"), set())
@@ -333,7 +355,8 @@ def check_overview_freshness(entities, errors):
 
 
 def acceptance_checks(total, vendor_only_count, unread_count, hearsay_count, per_cat,
-                     stale_count, practice_count, linked_practices, resolved_predictions, thresholds):
+                     stale_count, practice_count, linked_practices, resolved_predictions, thresholds,
+                     forward_stated_count=0, intended_evidence_count=0, forward_total=0):
     """issue #1 の受け入れ条件を、表示用文字列から独立した機械値で評価する。"""
     ratio = lambda numerator, denominator: numerator / denominator if denominator else 0
     checks = {
@@ -352,6 +375,10 @@ def acceptance_checks(total, vendor_only_count, unread_count, hearsay_count, per
                                    "threshold": thresholds["practice_linked_ratio"]},
         "resolved_predictions": {"actual": resolved_predictions, "operator": ">=",
                                   "threshold": thresholds["resolved_prediction_min"]},
+        "forward_stated_ratio": {"actual": ratio(forward_stated_count, forward_total), "operator": ">=",
+                                  "threshold": thresholds.get("forward_stated_ratio_min", 0.0)},
+        "intended_evidence_ratio": {"actual": ratio(intended_evidence_count, forward_total), "operator": ">=",
+                                     "threshold": thresholds.get("intended_evidence_ratio_min", 0.0)},
     }
     for check in checks.values():
         if check["operator"] == ">=":
@@ -361,12 +388,15 @@ def acceptance_checks(total, vendor_only_count, unread_count, hearsay_count, per
     return {"passed": all(c["passed"] for c in checks.values()), "checks": checks}
 
 
-def coverage(entities, cfg):
+def coverage(entities, cfg, records=None):
     """trend × カテゴリ × 開始年の被覆と、受け入れ条件の達成度。
 
     **stub は実績に数えない。** 枠だけのファイルで件数を満たせてしまうと、受け入れ条件が意味を失う。
     鮮度は時計ではなくデータの最新日（as_of）に対して測る——生成物を決定的に保つため
     （生きた時計での鮮度は audit.py --now で見る）。
+
+    `records`（(path, meta, body) のリスト）を渡すと、未来向き比率（issue #96 D5）の判定に本文を使う。
+    省略時は `meta["path"]` からディスク上のファイルを読む（本番の呼び出し・単体テストのどちらでもよい）。
     """
     as_of = data_as_of(entities)
     trends = {i: m for i, m in entities.items() if m.get("type") == "trend"}
@@ -382,6 +412,19 @@ def coverage(entities, cfg):
     all_edges = build_edges(entities)
     edge_ends = {e["from"] for e in all_edges} | {e["to"] for e in all_edges}
 
+    bodies = {}
+    if records is not None:
+        for _path, meta, body in records:
+            if meta.get("id"):
+                bodies[meta["id"]] = body
+    else:
+        for tid, meta in trends.items():
+            try:
+                bodies[tid] = read_frontmatter(ROOT / meta["path"])[1]
+            except Exception:
+                bodies[tid] = ""
+
+    forward_total = forward_stated = intended_evidence = 0
     for tid, meta in counted.items():
         cat = meta.get("market") if meta.get("market") in cats else "market-unknown"
         lo, _hi = edtf_year_range((meta.get("time") or {}).get("start"))
@@ -404,6 +447,14 @@ def coverage(entities, cfg):
         if tid not in edge_ends:
             isolated.append(tid)
 
+        # 未来向き比率（issue #96 D5）。分母は draft/verified かつ stage != dead
+        if meta.get("stage") != "dead":
+            forward_total += 1
+            if FORWARD_HEADING in bodies.get(tid, "") and len(meta.get("predictions") or []) >= 1:
+                forward_stated += 1
+            if any(c.get("tense") == "intended" for c in rows):
+                intended_evidence += 1
+
     resolved_predictions = sum(
         1 for m in entities.values() for p in m.get("predictions") or [] if p.get("resolved"))
     practices = {i: m for i, m in entities.items()
@@ -420,7 +471,9 @@ def coverage(entities, cfg):
             channel_scope[status].append(tid)
     acceptance = acceptance_checks(
         total, len(vendor_only), len(unread), len(hearsay), per_cat, len(stale),
-        len(practices), linked_practices, resolved_predictions, th)
+        len(practices), linked_practices, resolved_predictions, th,
+        forward_stated_count=forward_stated, intended_evidence_count=intended_evidence,
+        forward_total=forward_total)
     checks = acceptance["checks"]
     return {
         "as_of": as_of,
@@ -448,6 +501,8 @@ def coverage(entities, cfg):
             "stale_ratio": f"{checks['stale_ratio']['actual']:.2f}（上限 {checks['stale_ratio']['threshold']}・as_of={as_of} 時点）",
             "practice_linked": f"{linked_practices}/{len(practices)} の practice が responds_to を持つ（下限比率 {checks['practice_linked_ratio']['threshold']}）",
             "resolved_predictions": f"{resolved_predictions}/{th['resolved_prediction_min']} 件の予測が答え合わせ済み",
+            "forward_stated_ratio": f"{checks['forward_stated_ratio']['actual']:.2f}（下限 {checks['forward_stated_ratio']['threshold']}・第一節とpredictionsを持つtrend）",
+            "intended_evidence_ratio": f"{checks['intended_evidence_ratio']['actual']:.2f}（下限 {checks['intended_evidence_ratio']['threshold']}・tense: intendedの根拠を持つtrend）",
         },
     }
 
@@ -556,7 +611,7 @@ def main():
         return 1
 
     edges = build_edges(entities)
-    cov = coverage(entities, cfg)
+    cov = coverage(entities, cfg, records)
     if check_only:
         if not cov["acceptance"]["passed"]:
             print("✗ 受け入れ条件未達:", file=sys.stderr)

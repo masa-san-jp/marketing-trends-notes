@@ -22,10 +22,12 @@ def markdown(meta,body='## 反証\nSynthetic fixture: reversed participation wou
 
 
 def candidate(revision=1,as_of='2026-08',checked='2026-09-05',retrieved='primary',certainty='independent',kind='trend'):
-    meta=dict(id=kind+'/synthetic-observation',uri='urn:mtn:'+kind+'/synthetic-observation',type=kind,label_ja='合成観測',label_en='Synthetic observation',sources=[SOURCE],status='draft',updated=checked,authority={'none_reason':'Synthetic fixture; no real authority asserted.'},geo='japan',channels=[{'target':'channel/synthetic-channel','role':'originated_on'}],counterevidence=['A reversed synthetic count would refute the claim.'],relations=[],evidence=[dict(field=field,source=SOURCE,certainty=certainty,retrieved=retrieved,as_of=as_of) for field in ('kind','stage','time')])
-    body='## 反証\nSynthetic evidence only; no real observation or source access claimed.\n'
+    meta=dict(id=kind+'/synthetic-observation',uri='urn:mtn:'+kind+'/synthetic-observation',type=kind,label_ja='合成観測',label_en='Synthetic observation',sources=[SOURCE],status='draft',updated=checked,authority={'none_reason':'Synthetic fixture; no real authority asserted.'},geo='japan',channels=[{'target':'channel/synthetic-channel','role':'originated_on'}],counterevidence=['A reversed synthetic count would refute the claim.'],relations=[],evidence=[dict(field=field,source=SOURCE,certainty=certainty,retrieved=retrieved,as_of=as_of,tense='completed') for field in ('kind','stage','time')])
+    # 未来向き必須（issue #96 D2）の日付ゲートを跨いでも検証が通るよう、trend の合成フィクスチャは
+    # 常に第一節・第二節・predictions を持たせる（build_graph.validate_native が本番と同じ検証をする）。
+    body='## 見出している未来（何に向かって動いているか）\n**未確認**: Synthetic fixture; no forward-looking claim asserted.\n\n## 足元の根拠（完了した事実）\n## 反証\nSynthetic evidence only; no real observation or source access claimed.\n'
     if kind=='trend':
-        meta.update(kind='demand-shift',stage='emerging',market='cross-category',naming={'self_identified':False,'note':'Synthetic description'},channel_scope={'status':'mapped','note':None},freshness={'valid_as_of':checked,'recheck_by':intake.recheck_deadline('emerging',checked)})
+        meta.update(kind='demand-shift',stage='emerging',market='cross-category',naming={'self_identified':False,'note':'Synthetic description'},channel_scope={'status':'mapped','note':None},freshness={'valid_as_of':checked,'recheck_by':intake.recheck_deadline('emerging',checked)},predictions=[dict(claim='Synthetic prediction for regression coverage.',by='2027-12',resolved=None,outcome=None)])
     elif kind=='practice':
         from build_graph import PRACTICE_HEADINGS
         body='\n'.join(heading+'\nSynthetic; effect unconfirmed.' for heading in PRACTICE_HEADINGS)
