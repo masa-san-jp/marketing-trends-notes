@@ -29,6 +29,7 @@ class AcceptanceAndScopeTests(unittest.TestCase):
         self.assertEqual(set(result["checks"]), {
             "trend_total", "vendor_only_ratio", "independent_ratio", "primary_read_ratio",
             "per_category_min", "stale_ratio", "practice_linked_ratio", "resolved_predictions",
+            "forward_stated_ratio", "intended_evidence_ratio",
         })
 
         failed = acceptance_checks(59, 13, 43, 29, {"a": 1, "b": 3}, 10, 10, 4, 4, thresholds)

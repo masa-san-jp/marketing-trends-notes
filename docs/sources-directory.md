@@ -9,6 +9,21 @@
 大半の外部サイトに到達できなかったため、未確認が多い。`python3 tools/linkcheck.py` を制限のない
 環境で回し、確認できたものからこの表を昇格させる。
 
+## 層0: 意向・期待・予測（`tense: intended`）
+
+**このKBが記録する対象は、今生きている人々が未来に見出しているもの**（issue #96）。
+第一節「見出している未来」の主根拠はここから探す。完了した実績・統計は層1〜5に置き、
+`tense: completed` として第二節「足元の根拠」を支える。
+
+| 情報源 | 何が取れるか | URL | 確認状況 |
+|---|---|---|---|
+| 内閣府「国民生活に関する世論調査」 | 「今後の生活の見通し」「今後、力を入れたいこと」等の意向設問（independent） | https://survey.gov-online.go.jp/state/ | **確認済み**（2026-09-16 実読。最新は令和5年11月調査 https://survey.gov-online.go.jp/r05/r05-life/ 。素の curl は403、ブラウザUAで200。ページ内に「今後の生活」の語が複数出現） |
+| 消費者庁「消費者意識基本調査」 | 消費者の意識・行動の「今後」を問う設問（independent） | https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/ | **確認済み**（2026-09-16 到達確認、200。令和2〜7年度の報告書一覧を掲載。個別の「今後」設問は各年度の報告書PDF内を別途確認する） |
+| Google Trends Japan RSS | 検索急上昇語（`tools/observe_google_trends.py` の `DEFAULT_URL`。measured） | https://trends.google.com/trending/rss?geo=JP&hl=ja-JP&tz=540 | **確認済み**（2026-09-16 到達確認、200） |
+| Pantone Color of the Year | 「来年はこの気分を求める」という専門機関の予測（vendor） | https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer | **確認済み**（2026-09-16 到達確認、200） |
+| Getty Images VisualGPS Creative Trends | 「人々は次にこれを求める」というビジュアルトレンド予測（vendor） | https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking | **確認済み**（2026-09-16 到達確認。302で日本語版 https://www.gettyimages.co.jp/visualgps/... へリダイレクトし200） |
+| SNS 空気感ログ | `data/social-observations.jsonl`。個別クラスタで観測された引力・参加衝動（anecdotal） | `data/social-observations.jsonl` | **確認済み**（2026-09-16。ファイルは存在し `tools/observe_social.py --check` が0件で通過。まだ観測行が無い＝空のログとして確認） |
+
 ## 層1: 官公庁統計・公的調査（`independent`）
 
 利害がなく、n と取り方が公開されている。日本のトレンドの規模の主張はまずここで裏を取る。

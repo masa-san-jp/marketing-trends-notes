@@ -77,7 +77,7 @@ freshness:                    # trend 必須（stage: dead を除く）
   valid_as_of: "2026-08-10"   # 最後に実データで確認した日
   recheck_by: "2027-02-10"    # stage から導出。手計算しない（--stage 付き new_entity.py が埋める）
 evidence:                     # verified を名乗るときは time / kind / stage に必要
-  - {field: stage, source: "https://...", certainty: independent, retrieved: primary, as_of: "2026-06"}
+  - {field: stage, source: "https://...", certainty: independent, retrieved: primary, as_of: "2026-06", tense: completed}
 predictions:                  # 任意。答え合わせをするための予測
   - {claim: "...", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
@@ -191,6 +191,23 @@ Apple が「ATT は許可を必須にする」と書く開発者文書は attest
 見ていないなら `summary`。「たぶん書いてある」は `summary`。原典を開いたが目的の数字が
 見つからなかった場合も `summary`（読めたのは別の部分なので）。
 
+### `tense` — 3つ目の軸。**もう起きたことか、これからのことか**
+
+`certainty`（誰が出したか）・`retrieved`（自分が読んだか）と独立した第3の軸（issue #96 D3）。
+未来向き必須の trend（`updated` が `forward_required_from` 以降の draft/verified。下記
+「未来向き必須の trend」参照）では全 evidence 行に必須。それ以外の trend・practice では任意。
+
+| `tense` | 意味 |
+|---|---|
+| `completed` | 完了した事実（統計・実績・施行済み制度）。第二節「足元の根拠」を支える |
+| `intended` | 意向・期待・準備・予測（意向調査の「今後」設問、検索関心、SNS空気感、専門機関の予測）。第一節「見出している未来」を支える |
+
+判定は1行で決まる: **その出典は、もう起きたことを数えているか、これからのことを答えているか。**
+統計の実績値・施行済みの制度は `completed`。「今後力を入れたいこと」を問う設問、Pantone の
+「来年はこの気分を求める」という主張は `intended`。専門機関（vendor）の予測を使うときは、
+発表日・名称そのものの事実（`attested, completed`）と、その発表が含む主張（`vendor, intended`）
+を分けて別の evidence 行にする。
+
 ## SNS上の空気感観測
 
 トレンドの裏付けとは別に、特定プラットフォームで人を強く惹きつける話題、感情、言い回し、
@@ -199,14 +216,17 @@ Apple が「ATT は許可を必須にする」と書く開発者文書は attest
 Xの観測範囲やサンプル、文化的なフックを記録する形式と検証方法は
 [atmosphere-observation.md](atmosphere-observation.md) に定める。
 
-### `status: verified` の2つの関門
+### `status: verified` の関門
 
-**両方を満たさないと verified を名乗れない**（どちらも検証が強制する）。
+**次を満たさないと verified を名乗れない**（検証が強制する）。
 
 1. `measured` / `independent` / `attested` の根拠が最低1本——vendor と anecdotal をいくら重ねても
    verified にならない（**誰が出したか**）
 2. `retrieved: primary` の根拠が最低1本——原典を1本も開いていない主張は verified にしない
    （**自分が読んだか**）
+3. **未来向き必須の trend に限り**、`predictions` が1件以上（issue #96 D4）。未来向き必須でない
+   trend（`updated` が `forward_required_from` より前）は1・2のみで verified を名乗れる——既存の
+   trend を全件この3条件目で縛ると、移行前の記述が一律 verified を失うため
 
 verified に evidence が要る field は trend が `time` / `kind` / `stage`、practice が `time`。
 各行は `as_of`（いつ時点の数字か）が必須——数字の鮮度は記述の鮮度と別に動く。
@@ -279,9 +299,11 @@ predictions:
 
 ## 本文の型
 
-検証が trend の反証見出しの存在を確認する。他は規律として固定する。
+検証が trend の反証見出しの存在を確認する。未来向き必須の trend はさらに第一節・第二節の見出しも
+検証が確認する（下記「未来向き必須の trend」）。他は規律として固定する。
 
-- **trend**: `## 何が変わったか` → `## kind と stage の判定` → `## 時間` → `## チャネルと伝播` →
+- **trend**: `## 見出している未来（何に向かって動いているか）` → `## 足元の根拠（完了した事実）` →
+  `## kind と stage の判定` → `## 時間` → `## チャネルと伝播` →
   `## 反証（これが偽なら何が観測されるか）` → `## 未着手`
 - **practice**: `## 何をするか` → `## どのトレンドへの応答か` → `## 成立条件・失敗条件` →
   `## 飽和度の判定` → `## 利用上の注意` → `## 未着手`
@@ -294,6 +316,23 @@ predictions:
 **`## 反証` はこのKBの心臓部。** トレンドの主張は「これから◯◯になる」という規範的な形を取りがちで、
 反証条件の無い主張は外れたことにすら気づけない。「これが偽なら何が観測されるか」を最低1つ書く。
 書けないなら、それはトレンドではなく感想であり、draft に上げる段階にない。
+
+### 未来向き必須の trend（issue #96 D1・D2）
+
+このKBが記録する対象は、**今生きている人々が未来に見出しているもの**である（issue #96）。
+`status` が `draft` または `verified` で、`updated` が `config/markets.yaml` の
+`forward_required_from` 以降の trend を「未来向き必須」とし、次を検証が要求する。
+
+- 本文に `## 見出している未来（何に向かって動いているか）` を含む——対象となる人々が何を期待・
+  準備・回避・希求しているかを、出典付きで書く。書き手の推測を書かない。根拠付きで書けない場合は
+  `**未確認**:` で始まる1行だけにする（空欄にしない）
+- 本文に `## 足元の根拠（完了した事実）` を含む——既存の `## 何が変わったか` に当たる内容
+- `predictions` が1件以上——最低1件は主体（誰が）・行動または意向（何を）・観測時点と出典
+  （いつ・どこで確認できるか）を含む。「次回調査で数字が下回らない」型だけにしない
+- evidence 全行に `tense`（`completed` / `intended`）がある
+
+`updated` が `forward_required_from` より前の trend（移行前の既存記述）はこの4条件を要求されない
+——**触っていない限り検証は通り続ける。** 日付を進めた瞬間（＝手を入れた瞬間）から適用される。
 
 ## 書くときの規律
 
@@ -323,9 +362,10 @@ python3 tools/linkcheck.py               # 出典URLの死活（ネットワー�
 検証が落とすもの: 必須項目の欠落／雛形の TODO 残り／ID・URI とパスの不一致／ID 重複／
 存在しない参照／語彙外の型・関係・役割・確度／**関係とチャネルが指す相手の型違反**／EDTF 違反／
 解釈系の関係の `certainty`・`source` 欠落／**verified なのに根拠が vendor・anecdotal だけ**／
-evidence の `as_of` 欠落／trend の `market`・`geo`・`stage`・`kind`・`naming`・`freshness` 欠落／
-**`recheck_by` が stage の導出期限より遅い**／**trend 本文に反証見出しが無い**／predictions の
-形式違反／本文の相対リンク切れ／俯瞰の STALE／alias と id の衝突。
+evidence の `as_of` 欠落／evidence の `tense` が語彙外／trend の `market`・`geo`・`stage`・`kind`・
+`naming`・`freshness` 欠落／**`recheck_by` が stage の導出期限より遅い**／**trend 本文に反証見出しが
+無い**／**未来向き必須の trend に第一節・第二節・predictions・evidence 全行の `tense` が無い**／
+predictions の形式違反／本文の相対リンク切れ／俯瞰の STALE／alias と id の衝突。
 
 ### 件数の数え方
 

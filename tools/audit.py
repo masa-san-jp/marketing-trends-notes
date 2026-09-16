@@ -24,7 +24,11 @@
   7. 時間の逆行 — 派生元より先に始まっている／命名年が対象の開始より前
   8. 説明なき死 — stage: dead なのに killed_by が無い（何が殺したか不明のまま）
 
-これらは commit を止めない（壊れてはいないので）。**次に何を調べるかの材料として出す。**
+1〜8 は commit を止めない（壊れてはいないので）。**次に何を調べるかの材料として出す。**
+
+未来向き必須の trend（issue #96 D2）だけを対象にした advisory（`--fail-on-findings` を素通りする）:
+  9. 未来向きの未着手 — 第一節「見出している未来」が `**未確認**:` の1行だけ
+  10. 意向の根拠なし — evidence に `tense: intended` の行が1本も無い
 """
 
 import argparse
@@ -34,7 +38,9 @@ from collections import defaultdict
 
 import yaml
 
-from kb import (ROOT, build_edges, data_as_of, edtf_year_range, load_config, load_entities)
+from build_graph import FORWARD_HEADING
+from kb import (ROOT, build_edges, data_as_of, edtf_year_range, is_forward_required, load_config,
+                load_entities)
 
 OVERVIEWS = ROOT / "overviews"
 OUT = ROOT / "data" / "audit.json"
@@ -169,8 +175,47 @@ def check_unexplained_death(entities, findings):
                                      "何が殺したのか（規制・代替・飽和）を event で特定する"})
 
 
+def check_forward_unstated(entities, records, cfg, findings):
+    """未来向き必須の trend で、第一節が `**未確認**:` の1行だけ（advisory）。"""
+    bodies = {m["id"]: body for _path, m, body in records if m.get("id")}
+    for tid, meta in sorted(counted_trends(entities).items()):
+        if not is_forward_required(meta, cfg):
+            continue
+        body = bodies.get(tid, "")
+        idx = body.find(FORWARD_HEADING)
+        if idx == -1:
+            continue  # 見出し自体の欠落は build_graph.py --check が落とす
+        content_lines = []
+        for line in body[idx:].splitlines()[1:]:
+            if line.startswith("## "):
+                break
+            if line.strip():
+                content_lines.append(line.strip())
+        if len(content_lines) == 1 and content_lines[0].startswith("**未確認**:"):
+            findings.append({
+                "kind": "forward-unstated", "about": tid, "advisory": True,
+                "text": f"{meta['label_ja']} の「見出している未来」が未着手（**未確認**: のみ）。"
+                        "層0の出典を探して書く",
+            })
+
+
+def check_no_intended_evidence(entities, cfg, findings):
+    """未来向き必須の trend で、tense: intended の根拠が0本（advisory）。"""
+    for tid, meta in sorted(counted_trends(entities).items()):
+        if not is_forward_required(meta, cfg):
+            continue
+        rows = meta.get("evidence") or []
+        if not any(c.get("tense") == "intended" for c in rows):
+            findings.append({
+                "kind": "no-intended-evidence", "about": tid, "advisory": True,
+                "text": f"{meta['label_ja']} に tense: intended の根拠が無い。層0から意向・期待の出典を探す",
+            })
+
+
 def render(findings):
-    if not findings:
+    core = [f for f in findings if not f.get("advisory")]
+    advisory = [f for f in findings if f.get("advisory")]
+    if not core and not advisory:
         return "食い違い・偏りの指摘はなし。"
     order = ["stale", "vendor-only", "unresolved-prediction", "unanswered", "single-channel",
              "kind-bias", "time-order", "unexplained-death"]
@@ -180,11 +225,15 @@ def render(findings):
              "time-order": "時間の矛盾", "unexplained-death": "説明なき死"}
     lines = []
     for k in order:
-        rows = [f for f in findings if f["kind"] == k]
+        rows = [f for f in core if f["kind"] == k]
         if rows:
             lines.append(f"**{label[k]}**")
             lines += [f"- {f['text']}" for f in rows]
             lines.append("")
+    if advisory:
+        lines.append("**未来向きの未着手**")
+        lines += [f"- {f['text']}" for f in advisory]
+        lines.append("")
     return "\n".join(lines).rstrip()
 
 
@@ -202,8 +251,9 @@ def main():
         print("--fail-on-findings は --dry-run と一緒に使う", file=sys.stderr)
         return 1
 
-    entities, _ = load_entities()
+    entities, records = load_entities()
     edges = build_edges(entities)
+    cfg = load_config()
     now = a.now or data_as_of(entities)
     findings = []
 
@@ -215,9 +265,12 @@ def main():
     check_kind_bias(entities, findings)
     check_time_order(entities, edges, findings)
     check_unexplained_death(entities, findings)
+    check_forward_unstated(entities, records, cfg, findings)
+    check_no_intended_evidence(entities, cfg, findings)
 
     print(render(findings))
-    if a.fail_on_findings and findings:
+    core_findings = [f for f in findings if not f.get("advisory")]
+    if a.fail_on_findings and core_findings:
         return 2
     if not a.dry_run:
         OUT.parent.mkdir(exist_ok=True)

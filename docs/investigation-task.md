@@ -37,6 +37,8 @@ python3 tools/new_entity.py practice <slug> --ja "<日本語名>"
 
 **[sources-directory.md](sources-directory.md) の層の順に当たる。** 上の層で取れたら下は補助に回す。
 
+0. **意向・期待・予測**（`tense: intended`）— 内閣府・消費者庁の「今後」設問、Google Trends、
+   Pantone・Getty Images の予測、SNS空気感ログ。第一節「見出している未来」の主根拠
 1. **官公庁統計・公的調査**（`independent`）— 総務省・経産省・e-Stat
 2. **決算・IR・規約・仕様**（`attested`）— 当事者の一次言明。数字の主張ではなく事実の言明
 3. **業界団体・学術**（`independent`）
@@ -75,7 +77,8 @@ curl -s -H "User-Agent: marketing-trends-notes/0.1" \
 | `time.start` / `end` | EDTF。`2021` / `202X`（2020年代）/ `2020~`（およそ）/ `..`（継続中）/ `null`（不明） |
 | `time.display` | 原表記（「コロナ禍以降」等）をそのまま |
 | `channels` | `originated_on`（発生チャネル）を最優先で特定。特定できないなら**書かない** |
-| `evidence` | `verified` を名乗るときだけ必須。`{field, source, certainty, retrieved, as_of}`。**`retrieved` は書くなら全行必須** |
+| `evidence` | `verified` を名乗るときだけ必須。`{field, source, certainty, retrieved, as_of, tense}`。**`retrieved` は書くなら全行必須** |
+| `evidence[].tense` | `completed`（完了した事実）/ `intended`（意向・期待・予測）。未来向き必須の trend（`updated` が `forward_required_from` 以降）は全行必須 |
 | `status` | `stub`（枠だけ）/ `draft`（書いたが根拠が薄い）/ `verified`（利害のない根拠で裏が取れた） |
 
 #### kind の判定表（上から順に当てる。最初に当たったものを採る）
@@ -159,7 +162,8 @@ grep -n "<探す語>" /tmp/src.txt
 
 見出しは固定（`docs/schema.md` の「本文の型」）。trend は:
 
-`## 何が変わったか` → `## kind と stage の判定` → `## 時間` → `## チャネルと伝播` →
+`## 見出している未来（何に向かって動いているか）` → `## 足元の根拠（完了した事実）` →
+`## kind と stage の判定` → `## 時間` → `## チャネルと伝播` →
 `## 反証（これが偽なら何が観測されるか）` → `## 未着手`
 
 - **出典URLを本文に置く。** 手元の知識だけで書いた行は書かない
@@ -172,6 +176,20 @@ grep -n "<探す語>" /tmp/src.txt
   置いた」等は書かない。判断の根拠は主題の事実として書く（✗「vendor-pushed が必要だったので」→
   ○「命名者は◯◯を販売する□□社で、需要側の独立した数字は2026-08時点で見つからない」）
 
+**第一節「見出している未来」の規律**（issue #96 D1・D2。未来向き必須の trend は検証が見出しの
+存在を落とす）:
+
+- 対象となる人々が何を期待・準備・回避・希求しているかを、**出典付きで、他者の志向として**書く。
+  書き手自身の推測・予測を書かない
+- 各文は `tense: intended` の evidence 行か、本文中の出典URLを持つ。出典の無い文は書かない
+- 根拠付きで書けない場合は、空欄にせず `**未確認**:` で始まる1行だけにする（どの層0出典に
+  当たって見つからなかったかを `## 未着手` にも残す）
+
+**`predictions` の品質規律**（issue #96 D4。機械検証は1件以上の存在だけを見るが、内容の質は
+書く側が担保する）: 最低1件は、**主体（誰が）・行動または意向（何を）・観測時点と出典
+（いつ・どこで確認できるか）**を含む。「次回調査で数字が下回らない」型の予測だけを置くのは
+不十分——それは補助的な答え合わせにしかならず、第一節の主張そのものの答え合わせにならない。
+
 ### 6. 検証を通す
 
 ```bash
@@ -183,7 +201,10 @@ python3 tools/build_graph.py             # 通ったらグラフと被覆マッ�
 `geo` 未設定／`recheck_by` が stage と食い違う／EDTF の形式違反／解釈系の関係に `certainty` か
 `source` が無い／参照先のエンティティが存在しない／trend 本文に `## 反証` が無い／
 evidence 行に `retrieved` が無い（`primary` か `summary`）／`verified` なのに
-`retrieved: primary` の根拠が1本も無い。
+`retrieved: primary` の根拠が1本も無い／**evidence 行の `tense` が語彙外**（`completed` /
+`intended` のどちらでもない）／**未来向き必須の trend（`updated` が `forward_required_from` 以降）
+に `## 見出している未来` か `## 足元の根拠` が無い**／**未来向き必須の trend に `predictions` が
+0件**／**未来向き必須の trend の evidence に `tense` の無い行がある**。
 
 **`retrieved: yes` と書くと YAML が真偽値として読むので語彙外で落ちる。** `primary` / `summary` の
 どちらかをそのまま書く。
