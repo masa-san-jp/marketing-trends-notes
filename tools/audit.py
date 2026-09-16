@@ -38,7 +38,7 @@ from collections import defaultdict
 
 import yaml
 
-from build_graph import FORWARD_HEADING
+from build_graph import FORWARD_HEADING, GROUND_HEADING
 from kb import (ROOT, build_edges, data_as_of, edtf_year_range, is_forward_required, load_config,
                 load_entities)
 
@@ -101,16 +101,30 @@ def check_unresolved_predictions(entities, now, findings):
                                          "unresolvable を記録する"})
 
 
-def check_unanswered_trends(entities, edges, findings):
-    """practice が1つも応答していない trend。観測しただけで打ち手に落ちていない。"""
+def check_unanswered_trends(entities, edges, findings, records=None):
+    """practice が1つも応答していない trend。観測しただけで打ち手に落ちていない。
+
+    構造的に未来向きの体裁が整っている trend（本文に第一節・第二節の見出しが両方あり、
+    predictions が1件以上）は、生まれた直後は必ず無応答になる——F2（主線の新規 trend 作成）は
+    practice を作らない非スコープのため。この場合だけ advisory にする（issue #96 決定12）。
+    それ以外の trend（既存の移行前60件を含む）は従来どおり非advisory のまま。
+    """
+    bodies = {m["id"]: body for _path, m, body in (records or []) if m.get("id")}
     answered = {e["to"] for e in edges
                 if e["type"] == "responds_to" and not e.get("derived")
                 and (entities.get(e["from"]) or {}).get("type") == "practice"}
     for tid, meta in sorted(counted_trends(entities).items()):
         if tid not in answered:
-            findings.append({"kind": "unanswered", "about": tid,
-                             "text": f"{meta['label_ja']} に応答する practice が無い。"
-                                     "打ち手に落ちていない（判断材料として未完成）"})
+            body = bodies.get(tid, "")
+            structurally_forward = (
+                FORWARD_HEADING in body and GROUND_HEADING in body
+                and len(meta.get("predictions") or []) >= 1)
+            finding = {"kind": "unanswered", "about": tid,
+                      "text": f"{meta['label_ja']} に応答する practice が無い。"
+                              "打ち手に落ちていない（判断材料として未完成）"}
+            if structurally_forward:
+                finding["advisory"] = True
+            findings.append(finding)
 
 
 def check_single_channel(entities, findings):
@@ -260,7 +274,7 @@ def main():
     check_stale(entities, now, findings)
     check_vendor_only(entities, findings)
     check_unresolved_predictions(entities, now, findings)
-    check_unanswered_trends(entities, edges, findings)
+    check_unanswered_trends(entities, edges, findings, records)
     check_single_channel(entities, findings)
     check_kind_bias(entities, findings)
     check_time_order(entities, edges, findings)

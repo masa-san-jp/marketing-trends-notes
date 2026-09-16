@@ -17,11 +17,11 @@
 
 | 情報源 | 何が取れるか | URL | 確認状況 |
 |---|---|---|---|
-| 内閣府「国民生活に関する世論調査」 | 「今後の生活の見通し」「今後、力を入れたいこと」等の意向設問（independent） | https://survey.gov-online.go.jp/state/ | **確認済み**（2026-09-16 実読。最新は令和5年11月調査 https://survey.gov-online.go.jp/r05/r05-life/ 。素の curl は403、ブラウザUAで200。ページ内に「今後の生活」の語が複数出現） |
-| 消費者庁「消費者意識基本調査」 | 消費者の意識・行動の「今後」を問う設問（independent） | https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/ | **確認済み**（2026-09-16 到達確認、200。令和2〜7年度の報告書一覧を掲載。個別の「今後」設問は各年度の報告書PDF内を別途確認する） |
-| Google Trends Japan RSS | 検索急上昇語（`tools/observe_google_trends.py` の `DEFAULT_URL`。measured） | https://trends.google.com/trending/rss?geo=JP&hl=ja-JP&tz=540 | **確認済み**（2026-09-16 到達確認、200） |
-| Pantone Color of the Year | 「来年はこの気分を求める」という専門機関の予測（vendor） | https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer | **確認済み**（2026-09-16 到達確認、200） |
-| Getty Images VisualGPS Creative Trends | 「人々は次にこれを求める」というビジュアルトレンド予測（vendor） | https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking | **確認済み**（2026-09-16 到達確認。302で日本語版 https://www.gettyimages.co.jp/visualgps/... へリダイレクトし200） |
+| 内閣府「国民生活に関する世論調査」 | 「今後の生活の見通し」「今後、力を入れたいこと」「自由時間が増えた場合にしたいこと」等の意向設問（independent） | https://survey.gov-online.go.jp/state/ | **確認済み・使用済み**（2026-09-16。令和5年11月調査 https://survey.gov-online.go.jp/r05/r05-life/ の集計表CSV（問10・12・13等）を実読。素の curl は403、ブラウザUAで200） |
+| 消費者庁「消費者意識基本調査」 | 消費者の意識・行動の「今後」を問う設問、デジタルデトックス意識、パーソナライズ表示への意識（independent） | https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/ | **確認済み・使用済み**（2026-09-16。令和7年度調査（2025年11月10日〜26日実施、2026年6月12日公表）「2 調査結果の概要」PDFを実読し、`trend/digital-disengagement-intention`・`trend/algorithmic-trust-erosion` の一次根拠に使用） |
+| Google Trends Japan RSS | 検索急上昇語（`tools/observe_google_trends.py` の `DEFAULT_URL`。measured） | https://trends.google.com/trending/rss?geo=JP&hl=ja-JP&tz=540 | **確認済み**（2026-09-16 到達確認、200。今回の5件では未使用） |
+| Pantone Color of the Year | 「来年はこの気分を求める」という専門機関の予測（vendor） | https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer | **確認済み・使用済み**（2026-09-16 実読。`trend/calm-minimalism-mood` の一次根拠に使用） |
+| Getty Images VisualGPS Creative Trends | 「人々は次にこれを求める」というビジュアルトレンド予測（vendor） | https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking | **確認済み・使用済み**（2026-09-16 実読。302で日本語版へリダイレクトし200。`trend/ai-visual-trust-expectation`・`trend/specificity-over-relatability-expectation` の一次根拠に使用） |
 | SNS 空気感ログ | `data/social-observations.jsonl`。個別クラスタで観測された引力・参加衝動（anecdotal） | `data/social-observations.jsonl` | **確認済み**（2026-09-16。ファイルは存在し `tools/observe_social.py --check` が0件で通過。まだ観測行が無い＝空のログとして確認） |
 
 ## 層1: 官公庁統計・公的調査（`independent`）

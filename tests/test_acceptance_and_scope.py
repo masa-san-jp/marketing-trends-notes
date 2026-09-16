@@ -60,7 +60,7 @@ class AcceptanceAndScopeTests(unittest.TestCase):
 
     def test_current_migration_is_complete(self):
         trends = sorted((ROOT / "entities" / "trends").glob("*.md"))
-        self.assertEqual(len(trends), 60)
+        self.assertEqual(len(trends), 65)
         mapped = []
         not_applicable = []
         for path in trends:
@@ -77,7 +77,7 @@ class AcceptanceAndScopeTests(unittest.TestCase):
                 self.assertEqual(meta["channels"], [])
                 self.assertTrue(meta["channel_scope"]["note"].strip())
         self.assertEqual(mapped, ["trend/short-video-mainstream"])
-        self.assertEqual(len(not_applicable), 59)
+        self.assertEqual(len(not_applicable), 64)
 
         for path in (ROOT / "entities" / "practices").glob("*.md"):
             text = path.read_text(encoding="utf-8")
