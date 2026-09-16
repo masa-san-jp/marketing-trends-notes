@@ -25,9 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html", certainty: independent, retrieved: primary, as_of: "2025-06-26"}
-  - {field: time, source: "https://www.caa.go.jp/notice/entry/044090/", certainty: independent, retrieved: primary, as_of: "2025-11-06"}
-  - {field: stage, source: "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html", certainty: independent, retrieved: primary, as_of: "2025-06-26"}
+  - {field: kind, source: "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html", certainty: independent, retrieved: primary, as_of: "2025-06-26", tense: completed}
+  - {field: time, source: "https://www.caa.go.jp/notice/entry/044090/", certainty: independent, retrieved: primary, as_of: "2025-11-06", tense: completed}
+  - {field: stage, source: "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html", certainty: independent, retrieved: primary, as_of: "2025-06-26", tense: completed}
+  - {field: current-status, source: "https://www.caa.go.jp/notice/assets/consumer_research_cms201_241107_01.pdf", certainty: independent, retrieved: primary, as_of: "2024-10", tense: intended}
+predictions:
+  - {claim: "消費者庁の次回の消費生活意識調査（エシカル消費テーマ）で、エシカル消費につながる商品を「今後購入したい」と回答する割合が令和6年度調査の約6割を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "同調査で、エシカル消費につながる行動を実践していると回答する割合が令和6年度調査の36.1%を大きく下回らない（令和5年度27.4%からの増加傾向が続くか）", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -40,21 +44,41 @@ sources:
   - https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html
   - https://www.caa.go.jp/policies/policy/consumer_education/consumer_education/subcommittee/effrots_001
   - https://www.ethical.caa.go.jp/ethical-consumption.html
+  - https://www.caa.go.jp/notice/entry/039947/
+  - https://www.caa.go.jp/notice/assets/consumer_research_cms201_241107_01.pdf
 status: verified
-updated: 2026-08-11
+updated: 2026-09-16
 ---
 
 # 日用品を含むグリーン志向消費の拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+消費者は、実際に取り組んでいる割合以上に、エシカル消費につながる商品を今後購入したいという
+意向を持っている。消費者庁「令和6年度消費生活意識調査（第3回）」（2024年10月実施、全国15歳
+以上の男女5,000人対象、2024年11月7日公表）では、エシカル消費につながる商品を「今後購入した
+い」と回答した人は約6割に上ると報告されている。この約6割の人に、エシカル消費につながる商品
+がどの程度なら割高であっても購入したいか尋ねたところ、最も許容度が高かったのは「食料品」で
+77.0％、最も低かったのは「自動車」で60.5％だった。
+
+一方、同調査でエシカル消費の認知度（「言葉と内容の両方を知っている」または「言葉は知っている
+が内容は知らない」の合計）は27.4％で、令和5年度の29.3％からやや減少している。「今後購入した
+い」という意向は、エシカル消費という言葉の認知度とは独立に、6割という高い水準で保たれている。
+
+## 足元の根拠（完了した事実）
 
 環境・社会課題に配慮した商品やサービスを、単に「エコ」と訴求するのではなく、認証ラベル、商品の生産・製造工程、環境負荷、長く使う・
 リユースする方法などを理解したうえで選ぶ消費行動が、政策・調査・事業者の行動変容支援の対象になっている。消費者庁は2025年の消費者月間で
 「グリーン志向の消費行動」を取り上げ、日用品・雑貨を含む商品選択、3R商品、省エネ家電、リユース容器、過剰包装を断る行動などを例示した。
 
-環境省の2025年の紹介資料では、気候変動や地球環境問題に関心がある人は約7割、エシカル消費につながる商品・サービスを購入したい人は約5割、
-その行動を実践している人は約3人に1人と整理されている。この差は、関心がそのまま日用品の購入や継続利用に変わったことを意味しない。価格、
-性能、入手しやすさ、表示の分かりやすさ、手間などが、関心から実践への移行条件として残っている。
+消費者庁「令和6年度消費生活意識調査（第3回）」では、エシカル消費につながる行動を実践していると回答した人（「よく実践している」または
+「時々実践している」）の割合は36.1％で、令和5年度の27.4％から増加した。年代別では70歳代以上の実践度が最も高い。実践している人に理由を
+尋ねると、「同じようなものを購入するなら環境や社会に貢献できるものを選びたい」（53.3％）が最多で、次いで「節約につながる」（50.4％）、
+「環境問題や社会問題を解決したい」（49.2％）だった。実践していない人の理由は、「どれがエシカル消費につながる商品やサービスか分からな
+い」（23.0％）、「経済的余裕がない」（20.1％）が上位だった。
+
+「今後購入したい」約6割と「実践している」36.1％の差は、関心・意向がそのまま日用品の購入や継続利用に変わったことを意味しない。価格、
+性能、入手しやすさ、表示の分かりやすさ、手間などが、意向から実践への移行条件として残っている。
 
 したがって、このtrendはすべての消費者が環境配慮商品へ移行したという主張ではなく、商品選択・使い切り・修理・リユース・リサイクルを含む
 消費行動が、企業や行政の情報設計によって変わり得るものとして観測される局面を記録する。
@@ -87,7 +111,8 @@ updated: 2026-08-11
 
 ## 未着手
 
-- 2025年の消費生活意識調査の設問・選択肢を確認し、関心、購入意向、実践、商品カテゴリ別の差を同じ定義で整理する
+- 2026年9月16日、消費者庁「令和6年度消費生活意識調査（第3回）」（2024年11月7日公表）のPDFを実読し、「今後購入したい約6割」「実践36.1％」の一次数値を確認して見出している未来を追記した。旧本文にあった「関心約7割・購入意向約5割・実践3人に1人」（環境省の紹介資料の画像に基づく記載）は、この一次資料の直接確認により「今後購入したい約6割・実践36.1％」に更新した
 - 日用品・雑貨で、認証ラベル、再生材、詰め替え、長期利用、修理、リユース、過剰包装回避のどれが購入・継続利用に結び付くかを確認する
 - 価格、性能、入手性、表示理解、環境負荷情報の提示方法が、グリーン志向商品の選択に与える影響を独立調査で比較する
 - このtrendに応答するpractice（環境負荷情報・認証表示・長期利用・回収をつなぐ商品設計と販売運用）の採用率と実績を整理する
+- 「今後購入したい」約6割のうち、実際に次回調査までに購入行動へ転換する割合を追跡する

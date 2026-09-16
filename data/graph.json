@@ -3299,27 +3299,44 @@
           "source": "https://www.mlit.go.jp/report/press/joho04_hh_001375.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025年度"
+          "as_of": "2025年度",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mlit.go.jp/report/press/content/002005995.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024-2025年度"
+          "as_of": "2024-2025年度",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mlit.go.jp/report/press/joho04_hh_001375.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2008-2025年度"
+          "as_of": "2008-2025年度",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://j-reform.com/publish/pdf/jitsurei-R7-c.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回公表される建築物リフォーム・リニューアル工事の合計受注高が2025年度の16兆4,104億円を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "住宅リフォーム推進協議会の次回（第18回）検討者調査で、リフォーム予定時期を「1年以内」と回答する割合が今回調査の水準を大きく下回らない",
+          "by": "2027-03",
           "resolved": null,
           "outcome": null
         }
@@ -3332,10 +3349,11 @@
       "relations": [],
       "sources": [
         "https://www.mlit.go.jp/report/press/joho04_hh_001375.html",
-        "https://www.mlit.go.jp/report/press/content/002005995.pdf"
+        "https://www.mlit.go.jp/report/press/content/002005995.pdf",
+        "https://j-reform.com/publish/pdf/jitsurei-R7-c.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-16",
       "path": "entities/trends/building-renovation-market-expansion.md"
     },
     "trend/calm-minimalism-mood": {
@@ -4472,27 +4490,44 @@
           "source": "https://www.enecho.meti.go.jp/about/special/johoteikyo/xev_cev_2024.html?ui_medium=lpene",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2024-06-24"
+          "as_of": "2024-06-24",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-3.html",
           "certainty": "independent",
           "retrieved": "summary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.enecho.meti.go.jp/about/special/johoteikyo/xev_cev_2024.html?ui_medium=lpene",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023年度-2024"
+          "as_of": "2023年度-2024",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.jama.or.jp/release/news_release/2026/3582/",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-09",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回の資源エネルギー庁または自動車関連公的統計で、乗用車新車販売に占める電動車比率が2024年の57％を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "日本自動車工業会の次回（2026年度）乗用車市場動向調査で、次期購入車として電動車（HEV・PHEV・BEV・FCEV）を希望する割合が2025年度調査の「4割台半ば」を大きく下回らない",
+          "by": "2027-06",
           "resolved": null,
           "outcome": null
         }
@@ -4505,10 +4540,11 @@
       "relations": [],
       "sources": [
         "https://www.enecho.meti.go.jp/about/special/johoteikyo/xev_cev_2024.html?ui_medium=lpene",
-        "https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-3.html"
+        "https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-3.html",
+        "https://www.jama.or.jp/release/news_release/2026/3582/"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-16",
       "path": "entities/trends/electrified-vehicle-adoption.md"
     },
     "trend/fertility-treatment-insurance-access": {
@@ -5374,21 +5410,46 @@
           "source": "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-06-26"
+          "as_of": "2025-06-26",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.caa.go.jp/notice/entry/044090/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-11-06"
+          "as_of": "2025-11-06",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-06-26"
+          "as_of": "2025-06-26",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.caa.go.jp/notice/assets/consumer_research_cms201_241107_01.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024-10",
+          "tense": "intended"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "消費者庁の次回の消費生活意識調査（エシカル消費テーマ）で、エシカル消費につながる商品を「今後購入したい」と回答する割合が令和6年度調査の約6割を大きく下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "同調査で、エシカル消費につながる行動を実践していると回答する割合が令和6年度調査の36.1%を大きく下回らない（令和5年度27.4%からの増加傾向が続くか）",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -5401,10 +5462,12 @@
         "https://www.caa.go.jp/notice/entry/044090/",
         "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html",
         "https://www.caa.go.jp/policies/policy/consumer_education/consumer_education/subcommittee/effrots_001",
-        "https://www.ethical.caa.go.jp/ethical-consumption.html"
+        "https://www.ethical.caa.go.jp/ethical-consumption.html",
+        "https://www.caa.go.jp/notice/entry/039947/",
+        "https://www.caa.go.jp/notice/assets/consumer_research_cms201_241107_01.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-16",
       "path": "entities/trends/green-oriented-consumption.md"
     },
     "trend/inbound-tourism-demand-expansion": {
@@ -6420,24 +6483,42 @@
           "source": "https://www.env.go.jp/recycle/plastic/circulation.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2022-04-01"
+          "as_of": "2022-04-01",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2023-04-19"
+          "as_of": "2023-04-19",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.env.go.jp/recycle/plastic/circulation.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2022-04-01"
+          "as_of": "2022-04-01",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://survey.gov-online.go.jp/hutai/r04/r04-plastic/table/PR0403105.csv",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2022-09",
+          "tense": "intended"
         }
       ],
-      "predictions": [],
+      "predictions": [
+        {
+          "claim": "内閣府の次回同種世論調査で、「今後新たに取り組んでみたいことはない」と回答する割合が令和4年度調査の3.4%を大きく上回らない（＝新たな取組意向が大きくは失われない）",
+          "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
       "channel_scope": {
         "status": "not-applicable",
         "note": "特定の広告・販売チャネルから広がる変化ではなく、法律、設計指針、行政の手引き、認定制度を通じて事業者へ伝わるため、 `channels` は張らない。容器包装や家庭ごみの実態調査は、制度の対象となる廃棄・回収側の観測資料として扱う。"
@@ -6448,10 +6529,12 @@
         "https://www.env.go.jp/recycle/plastic/circulation.html",
         "https://plastic-circulation.env.go.jp/",
         "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html",
-        "https://www.env.go.jp/recycle/yoki/c_2_research/research_R06.html"
+        "https://www.env.go.jp/recycle/yoki/c_2_research/research_R06.html",
+        "https://survey.gov-online.go.jp/hutai/r04/r04-plastic/",
+        "https://survey.gov-online.go.jp/hutai/r04/r04-plastic/table/PR0403105.csv"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-16",
       "path": "entities/trends/plastic-resource-circulation.md"
     },
     "trend/recurrent-education-institutionalization": {
@@ -7030,26 +7113,43 @@
           "source": "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2005-2020"
+          "as_of": "2005-2020",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2020"
+          "as_of": "2020",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2005-2020"
+          "as_of": "2005-2020",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2021",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2025年国勢調査の家族類型別集計でも単独世帯の構成比が2020年の38.1%を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "国立社会保障・人口問題研究所の次回（第17回）出生動向基本調査で、18〜34歳未婚者のうち「一生結婚するつもりはない」と回答する割合が第16回調査（2021年、男性17.3%・女性14.6%）を下回らない",
           "by": "2027-12",
           "resolved": null,
           "outcome": null
@@ -7062,10 +7162,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf"
+        "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf",
+        "https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-16",
       "path": "entities/trends/single-person-household-expansion.md"
     },
     "trend/sleep-rest-health-management": {
@@ -7720,26 +7821,43 @@
           "source": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023"
+          "as_of": "2023",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "1993-2023"
+          "as_of": "1993-2023",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "1978-2023"
+          "as_of": "1978-2023",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mlit.go.jp/report/press/content/001907491.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回の住宅・土地統計調査で空き家率が2023年の13.8％を下回らない",
+          "by": "2029-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "国土交通省の次回の空き家所有者実態調査で、使用目的のない空き家の所有世帯のうち「空き家として所有しておく」意向の割合が令和6年調査の約41%を大きく下回らない",
           "by": "2029-12",
           "resolved": null,
           "outcome": null
@@ -7753,10 +7871,11 @@
       "relations": [],
       "sources": [
         "https://www.stat.go.jp/data/jyutaku/index.htm",
-        "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf"
+        "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf",
+        "https://www.mlit.go.jp/report/press/content/001907491.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-16",
       "path": "entities/trends/vacant-housing-expansion.md"
     },
     "trend/video-distribution-expansion": {
