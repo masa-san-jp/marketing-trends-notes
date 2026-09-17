@@ -51,8 +51,8 @@ trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 've
 - stale_ratio: 0.00（上限 0.15・as_of=2026-09-17 時点）
 - practice_linked: 60/61 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 5/5 件の予測が答え合わせ済み
-- forward_stated_ratio: 0.28（下限 0.0・第一節とpredictionsを持つtrend）
-- intended_evidence_ratio: 0.26（下限 0.0・tense: intendedの根拠を持つtrend）
+- forward_stated_ratio: 0.35（下限 0.0・第一節とpredictionsを持つtrend）
+- intended_evidence_ratio: 0.34（下限 0.0・tense: intendedの根拠を持つtrend）
 
 チャネル軸の移行状態:
 - mapped: 1件

@@ -25,12 +25,14 @@ freshness:
   valid_as_of: "2026-09-15"
   recheck_by: "2026-10-15"
 evidence:
-  - {field: kind, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03"}
-  - {field: stage, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03"}
-  - {field: time, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03"}
-  - {field: current-status, source: "https://www.jftc.go.jp/houdou/teirei/2026/260708.html", certainty: independent, retrieved: primary, as_of: "2026-07-08"}
+  - {field: kind, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03", tense: completed}
+  - {field: stage, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03", tense: completed}
+  - {field: time, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2023-03", tense: completed}
+  - {field: current-status, source: "https://www.jftc.go.jp/houdou/teirei/2026/260708.html", certainty: independent, retrieved: primary, as_of: "2026-07-08", tense: completed}
+  - {field: current-status, source: "https://www.pressnet.or.jp/statement/copyright/260420_16248.html", certainty: attested, retrieved: primary, as_of: "2026-04-20", tense: intended}
 predictions:
   - {claim: "次回の公正取引委員会または文化庁の実態調査で、ニュースポータル・検索・媒体サイトの利用経路と取引条件が再整理される", by: "2028-12", resolved: null, outcome: null}
+  - {claim: "日本新聞協会が2026年4月20日の声明で求めた「AI検索サービスでのコンテンツ利用における権利者許諾の原則化」「オプトアウトの仕組みの早期導入」について、2027年末までに国・Googleいずれかから制度的対応が公表される", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -42,13 +44,31 @@ sources:
   - https://www.jftc.go.jp/houdou/pressrelease/cyosa/cyosa-platformer/index.html
   - https://www.pressnet.or.jp/statement/broadcasting/231005_15169.html
   - https://www.jftc.go.jp/houdou/teirei/2026/260708.html
+  - https://www.pressnet.or.jp/statement/copyright/260420_16248.html
 status: verified
-updated: 2026-09-15
+updated: 2026-09-17
 ---
 
 # オンラインニュースプラットフォーム依存の可視化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+新聞業界は、AI検索サービスによるニュースコンテンツの無断利用に対して、権利者の許諾を原則とする
+制度整備を国に求めている。日本新聞協会は2026年4月20日、「AI検索サービスに関する声明」を発表し、
+生成AIが検索拡張生成（RAG）技術で報道コンテンツを無断利用するケースが広がっているとして、
+「AI検索サービスでのコンテンツ利用についても権利者の許諾を得ることが原則であり、国において
+事態の深刻さを踏まえた制度整備を早急に進めるよう求める」とした。特にGoogleのAI検索
+（「AIによる概要」「AI Mode」）について、通常検索とAI検索のクローラー制御が同一であるため
+権利者が実質的に利用拒否を選べない状態にあるとし、独占禁止法上の「優越的地位の濫用」の疑いを
+指摘したうえで、権利者が利用を拒否できる「オプトアウト」の仕組みを日本で早期に導入するよう
+Googleに求めている。
+
+この声明は業界団体自身の要求であり、国やGoogleが実際にどう対応するかは未定である。既存の
+足元の根拠（下記）にある公正取引委員会のフォローアップ調査（AI検索サービスの無許諾利用への
+対応状況を含む）と合わせて読むと、ニュース業界とプラットフォームの取引条件をめぐる論点が、
+検索・ポータルの表示・対価から、AI検索での無断利用・対価還元へと広がっていることが分かる。
+
+## 足元の根拠（完了した事実）
 
 ニュースの接点が紙媒体だけでなく、ニュースポータル、検索結果、オンライン媒体などへ移り、ニュースメディアとプラットフォームの取引条件が競争・著作権政策の調査対象になっている。文化庁の2023年審議会では、新聞・雑誌など既存の紙媒体の利用が減る一方、インターネット上のニュースプラットフォーム利用が増えていると説明された。
 
@@ -79,6 +99,8 @@ updated: 2026-09-15
 ## 未着手
 
 - 2026年9月15日に再確認し、前回「結果公表は未確認」とした記述を訂正した。公正取引委員会の実態調査報告書は2023年9月に公表済みで、2026年7月8日には約370社を対象にAI検索サービスの影響も含むフォローアップ調査の実施が明らかになっている。フォローアップ調査自体の結果（利用経路別シェア・対価水準の更新値）はまだ公表されていない
+- 2026年9月17日、日本新聞協会「AI検索サービスに関する声明」（2026年4月20日）を実読して見出している未来を追記した
 - ニュースポータル、検索、媒体サイト、SNS、動画別の利用率・滞在・送客を比較する
 - ライセンス、抜粋、表示順位、広告、購読、対価還元を媒体規模別に分解する
 - 公正取引委員会のフォローアップ調査結果と、AI検索サービスへの対応状況、その後の取引条件の変化を確認する
+- 日本新聞協会の声明に対する国・Googleの対応（オプトアウト導入、制度整備）の進捗を追う

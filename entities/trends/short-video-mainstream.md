@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-10"
   recheck_by: "2027-02-10"
 evidence:
-  - {field: stage, source: "https://www.soumu.go.jp/main_content/001079136.pdf", certainty: independent, retrieved: primary, as_of: "2025-12"}
-  - {field: stage, source: "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html", certainty: independent, retrieved: primary, as_of: "2025-12"}
+  - {field: stage, source: "https://www.soumu.go.jp/main_content/001079136.pdf", certainty: independent, retrieved: primary, as_of: "2025-12", tense: completed}
+  - {field: stage, source: "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html", certainty: independent, retrieved: primary, as_of: "2025-12", tense: completed}
+  - {field: current-status, source: "https://www.cyberagent.co.jp/news/detail/id=33050", certainty: vendor, retrieved: primary, as_of: "2026-03-09", tense: intended}
 predictions:
   - {claim: "2027年末時点でも、国内若年層の動画視聴でショート形式が支配的であり続ける（総務省調査系の利用率が前年割れしない）", by: "2027-12", resolved: null, outcome: null}
   - {claim: "令和8年度調査（2026年12月実施・2027年6月公表見込み）で TikTok の10代利用率が67.9％を下回らない", by: "2027-07", resolved: null, outcome: null}
+  - {claim: "サイバーエージェント・デジタルインファクトの次回同種調査で、縦型動画広告市場規模が2026年見込み値（2,771億円）を下回らない", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: mapped
   note: null
@@ -40,13 +42,26 @@ relations: []
 sources:
   - https://www.soumu.go.jp/iicp/research/results/media_usage-time.html
   - https://newsroom.tiktok.com/ja-jp
+  - https://www.cyberagent.co.jp/news/detail/id=33050
 status: draft
-updated: 2026-08-25
+updated: 2026-09-17
 ---
 
 # ショート動画視聴の主流化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+広告主は、縦型（ショート）動画フォーマットへの出稿を今後さらに拡大する方向へ向かっている。
+サイバーエージェントとデジタルインファクトが共同実施した「国内動画広告の市場調査」
+（12回目、2026年3月9日発表）は、縦型動画広告の需要が動画広告市場の成長をけん引していると
+し、2025年の縦型動画広告市場規模（2,049億円、前年比155.9％）が、2026年に2,771億円、2029年
+には5,648億円（スマートフォン向け動画広告全体の42.5％）に達すると予測している。
+
+これは広告主・広告代理店側の投資予測であり、視聴者自身が「今後ショート動画をもっと見たい」
+と回答した意向調査ではない。広告予算の拡大は、プラットフォーム側が視聴を継続的に集められる
+という前提のもとで行われている。
+
+## 足元の根拠（完了した事実）
 
 60秒前後の縦型動画を、フォローではなくレコメンドで連続視聴する形式が、若年層を起点に動画視聴の
 主要な形式になった。視聴の単位が「番組・作品を選んで見る」から「フィードを流し見る」に変わり、
@@ -113,6 +128,8 @@ updated: 2026-08-25
 
 ## 未着手
 
+- 2026年9月17日、サイバーエージェント・デジタルインファクトの動画広告市場調査を実読して見出している未来を追記した。これは広告主側の投資予測であり、視聴者自身の意向調査ではない点に注意する
+- 視聴者自身が「今後ショート動画をもっと見たいか」と回答した意向調査を探す
 - 形式別（ショート／ロング）の視聴時間内訳を持つ独立した出典。**この trend の名前が主張していることを
   直接に測った出典が、まだ1本も無い**
 - 総務省調査の集計表（xlsx）から TikTok 利用率の経年推移を取り、stage を利用率の軸でも判定する

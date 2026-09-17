@@ -5759,27 +5759,44 @@
           "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2020-2024"
+          "as_of": "2020-2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2019-2024"
+          "as_of": "2019-2024",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://corporate.pia.jp/news/detail_live_enta_market20260617.html",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2026-06-17",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回の同種のライブ市場調査で、2024年の総動員数約5,940万人を下回らない",
           "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "ぴあ総研が発表する将来予測（2035年に市場規模が初の1兆円台）に向けて、2030年時点の同社発表値が2025年実績（8,564億円）を下回らない",
+          "by": "2031-06",
           "resolved": null,
           "outcome": null
         }
@@ -5791,10 +5808,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html"
+        "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html",
+        "https://corporate.pia.jp/news/detail_live_enta_market20260617.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/live-entertainment-experience-expansion.md"
     },
     "trend/music-streaming-expansion": {
@@ -5833,21 +5851,40 @@
           "source": "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-05-30"
+          "as_of": "2025-05-30",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-05-30"
+          "as_of": "2025-05-30",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-03-04"
+          "as_of": "2026-03-04",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.jmrlsi.co.jp/trend/mranking/05-it/mranking441.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-03-26",
+          "tense": "intended"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "JMR生活総合研究所の次回同種調査（サブスクリプションサービス消費者調査）で、音楽配信サービスが動画配信サービスを上回って「再利用意向」ランキング上位を維持する",
+          "by": "2027-06",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -5860,10 +5897,11 @@
         "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf",
         "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/",
         "https://www.riaj.or.jp/data/archive/",
-        "https://riaj.or.jp/data/"
+        "https://riaj.or.jp/data/",
+        "https://www.jmrlsi.co.jp/trend/mranking/05-it/mranking441.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/music-streaming-expansion.md"
     },
     "trend/online-financial-crime-governance": {
@@ -6215,34 +6253,52 @@
           "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-03"
+          "as_of": "2023-03",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-03"
+          "as_of": "2023-03",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-03"
+          "as_of": "2023-03",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.jftc.go.jp/houdou/teirei/2026/260708.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-07-08"
+          "as_of": "2026-07-08",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.pressnet.or.jp/statement/copyright/260420_16248.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-04-20",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回の公正取引委員会または文化庁の実態調査で、ニュースポータル・検索・媒体サイトの利用経路と取引条件が再整理される",
           "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "日本新聞協会が2026年4月20日の声明で求めた「AI検索サービスでのコンテンツ利用における権利者許諾の原則化」「オプトアウトの仕組みの早期導入」について、2027年末までに国・Googleいずれかから制度的対応が公表される",
+          "by": "2027-12",
           "resolved": null,
           "outcome": null
         }
@@ -6257,10 +6313,11 @@
         "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
         "https://www.jftc.go.jp/houdou/pressrelease/cyosa/cyosa-platformer/index.html",
         "https://www.pressnet.or.jp/statement/broadcasting/231005_15169.html",
-        "https://www.jftc.go.jp/houdou/teirei/2026/260708.html"
+        "https://www.jftc.go.jp/houdou/teirei/2026/260708.html",
+        "https://www.pressnet.or.jp/statement/copyright/260420_16248.html"
       ],
       "status": "verified",
-      "updated": "2026-09-15",
+      "updated": "2026-09-17",
       "path": "entities/trends/online-news-platform-dependence.md"
     },
     "trend/outbound-travel-recovery": {
@@ -7142,14 +7199,24 @@
           "source": "https://www.soumu.go.jp/main_content/001079136.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-12"
+          "as_of": "2025-12",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-12"
+          "as_of": "2025-12",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.cyberagent.co.jp/news/detail/id=33050",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2026-03-09",
+          "tense": "intended"
         }
       ],
       "predictions": [
@@ -7162,6 +7229,12 @@
         {
           "claim": "令和8年度調査（2026年12月実施・2027年6月公表見込み）で TikTok の10代利用率が67.9％を下回らない",
           "by": "2027-07",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "サイバーエージェント・デジタルインファクトの次回同種調査で、縦型動画広告市場規模が2026年見込み値（2,771億円）を下回らない",
+          "by": "2027-06",
           "resolved": null,
           "outcome": null
         }
@@ -7183,10 +7256,11 @@
       "relations": [],
       "sources": [
         "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html",
-        "https://newsroom.tiktok.com/ja-jp"
+        "https://newsroom.tiktok.com/ja-jp",
+        "https://www.cyberagent.co.jp/news/detail/id=33050"
       ],
       "status": "draft",
-      "updated": "2026-08-25",
+      "updated": "2026-09-17",
       "path": "entities/trends/short-video-mainstream.md"
     },
     "trend/single-person-household-expansion": {
@@ -8026,27 +8100,44 @@
           "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2021"
+          "as_of": "2021",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2016-2021"
+          "as_of": "2016-2021",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2016-2021"
+          "as_of": "2016-2021",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://ictr.co.jp/report/20250423.html/",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2025-04-23",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回の公的なコンテンツ市場調査で、映像配信市場規模が2021年の約4,230億円を下回らない",
           "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "ICT総研の次回同種調査で、有料動画配信サービス利用者数が2027年予測値（4,120万人）に向けて増加を続け、2026年時点で2024年末実績（3,450万人）を下回らない",
+          "by": "2027-06",
           "resolved": null,
           "outcome": null
         }
@@ -8058,10 +8149,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/"
+        "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/",
+        "https://ictr.co.jp/report/20250423.html/"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/video-distribution-expansion.md"
     },
     "trend/women-employment-expansion": {
