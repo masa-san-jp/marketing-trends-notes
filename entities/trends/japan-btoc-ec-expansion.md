@@ -25,9 +25,9 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024"}
-  - {field: stage, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024"}
-  - {field: time, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024"}
+  - {field: kind, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
+  - {field: stage, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
+  - {field: time, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
 predictions:
   - {claim: "2025年の国内BtoC-EC市場規模が2024年の26.1兆円を下回らない", by: "2026-12", resolved: null, outcome: null}
 channel_scope:
@@ -41,12 +41,16 @@ sources:
   - https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html
   - https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf
 status: verified
-updated: 2026-08-11
+updated: 2026-09-17
 ---
 
 # 国内BtoC-ECの拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+**未確認**: 生活者が「今後ネット通販の利用・支出を増やしたいか」を直接問う独立調査に到達できていない（総務省「家計消費状況調査」は実績のみ、PwC「日本の消費者調査」は分析者自身の見通しで消費者本人の意向調査ではない）。
+
+## 足元の根拠（完了した事実）
 
 日本国内の消費者向け商取引で、電子商取引の金額と比率が拡大している。
 
@@ -85,6 +89,7 @@ ECそのものの始まりを2022年と主張しているわけではない。�
 
 ## 未着手
 
+- 2026年9月17日、生活者の「今後ネット通販を増やしたいか」という意向を測る独立調査を探したが見つからなかった（**未確認**の理由）。EC拡大を裏づける消費者意向調査（総務省・消費者庁・業界団体等）を継続して探す
 - 経済産業省の報告書PDFを取得して、分野別内訳・調査方法・分母の変更を実読確認する
 - 物販系・サービス系・デジタル系の内訳と、各分野のEC化率を確認する
 - 2025年公表予定の次回調査で予測を答え合わせする

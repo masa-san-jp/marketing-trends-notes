@@ -25,9 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.online-mall.meti.go.jp/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
-  - {field: time, source: "https://www.meti.go.jp/press/2025/12/20251217001/20251217001.html", certainty: attested, retrieved: summary, as_of: "2025-12-17"}
-  - {field: stage, source: "https://www.meti.go.jp/press/2026/06/20260612004/20260612004.html", certainty: attested, retrieved: summary, as_of: "2026-06-12"}
+  - {field: kind, source: "https://www.online-mall.meti.go.jp/", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: time, source: "https://www.meti.go.jp/press/2025/12/20251217001/20251217001.html", certainty: attested, retrieved: summary, as_of: "2025-12-17", tense: completed}
+  - {field: stage, source: "https://www.meti.go.jp/press/2026/06/20260612004/20260612004.html", certainty: attested, retrieved: summary, as_of: "2026-06-12", tense: completed}
+  - {field: current-status, source: "https://www.meti.go.jp/press/2026/06/20260612004/20260612004.html", certainty: attested, retrieved: primary, as_of: "2026-06-12", tense: intended}
+predictions:
+  - {claim: "2027年度に、eBay Japan・Qoo10が経済産業省の総合物販オンラインモール分野モニタリング・レビューの対象として初めて評価される", by: "2028-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -41,13 +44,33 @@ sources:
   - https://www.meti.go.jp/press/2026/06/20260612004/20260612004.html
   - https://www.meti.go.jp/policy/mono_info_service/digitalplatform/pdf/2025_hyouka1.pdf
   - https://www.online-mall.meti.go.jp/
+  - https://www.meti.go.jp/files/900016748.pdf
 status: verified
-updated: 2026-08-11
+updated: 2026-09-17
 ---
 
 # オンラインモール取引透明化の制度化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+経済産業省は、透明化法の規制対象を今後さらに広げ、対象事業者に将来の報告・評価義務を課す
+方向へ向かっている。2026年6月12日、同省はeBay Japan合同会社とQoo10（キューテン）を総合
+物販オンラインモール分野の「特定デジタルプラットフォーム提供者」として新たに指定した。
+指定と同時に、「2027年度以降は、毎年度、実施した措置について、自己評価を付した報告書を
+提出することが義務付けられるほか、特定デジタルプラットフォームの透明性及び公正性を評価する
+プロセス（モニタリング・レビュー）の対象となります」と明記されている。これは、まだ発生して
+いない将来の義務・評価プロセスへの組み入れを、指定と同時に確定させたものである。
+
+既存の対象事業者（Amazon.co.jp、楽天市場、Yahoo!ショッピング）に対する2024年度評価報告書
+では、経済産業省が「期待する取組み」として、開示範囲の拡充、異議申立て対応の明確化、検索
+順位の決定基準の説明などを繰り返し示しており、次回以降の評価で改善が反映されることを求めて
+いる。
+
+これは経済産業省という規制官庁自身が示す将来方針であり、対象プラットフォーム事業者や出店
+事業者自身が「今後こうしたい」と述べた意向調査ではない。出店事業者側の将来期待を独立に測った
+調査は今回見つかっていない。
+
+## 足元の根拠（完了した事実）
 
 オンラインモールの運営は、出店者が個別に規約を読むだけの関係から、取引条件の開示、手続・体制の整備、利用事業者との相互理解、相談窓口、
 モニタリング・レビューを組み合わせて、透明性と公正性を継続的に確認する制度運用へ移っている。経済産業省は、特定デジタルプラットフォーム
@@ -88,7 +111,9 @@ eBay Japanも規制対象に指定され、2027年度以降の報告書提出と
 
 ## 未着手
 
+- 2026年9月17日、経済産業省のeBay Japan・Qoo10指定プレスリリースと2024年度評価報告書（案）を実読して見出している未来を追記した。出店事業者自身の将来期待を独立に測った意識調査は今回見つけられていない
 - 2025年度評価のオンラインモール分野で、開示、検索順位、手数料、出品停止、データ利用、苦情処理に関する指摘と改善状況を項目別に比較する
 - 利用事業者アンケートと相談窓口の公表資料から、出店者が感じる透明性・公正性、相談内容、解決状況を同じ定義で追う
 - 出店者への説明・異議申立て・アカウント停止対応が、販売継続、広告投資、顧客対応に与える影響を確認する
 - このtrendに応答するpractice（規約・手数料・検索・出品停止・データ利用の説明と異議対応をつなぐ運用）の採用率と実績を整理する
+- eBay Japan・Qoo10が2027年度以降に実際にモニタリング・レビュー対象となり、報告書を提出するかを追う（predictions参照）
