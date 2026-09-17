@@ -4001,26 +4001,43 @@
           "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-2024"
+          "as_of": "2023-2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2024"
+          "as_of": "2022-2024",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://beenos.com/news-center/detail/20230907_bcr_pr/",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2023-07",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2025年の中国消費者による日本事業者からの越境EC購入額が2024年の2兆6,372億円を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "BEENOSグループの次回同種調査で、訪日後の旅アト・リピート購入経験がない海外顧客のうち、越境ECの利用意志があると回答する割合が2023年調査の43.7%を大きく下回らない",
           "by": "2027-12",
           "resolved": null,
           "outcome": null
@@ -4033,10 +4050,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+        "https://beenos.com/news-center/detail/20230907_bcr_pr/"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/cross-border-ecommerce-expansion.md"
     },
     "trend/crypto-asset-user-expansion": {
@@ -5581,21 +5599,24 @@
           "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -5617,7 +5638,7 @@
         "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/japan-btoc-ec-expansion.md"
     },
     "trend/japanese-music-overseas-expansion": {
@@ -6022,21 +6043,40 @@
           "source": "https://www.online-mall.meti.go.jp/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-11"
+          "as_of": "2026-08-11",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/press/2025/12/20251217001/20251217001.html",
           "certainty": "attested",
           "retrieved": "summary",
-          "as_of": "2025-12-17"
+          "as_of": "2025-12-17",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/press/2026/06/20260612004/20260612004.html",
           "certainty": "attested",
           "retrieved": "summary",
-          "as_of": "2026-06-12"
+          "as_of": "2026-06-12",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.meti.go.jp/press/2026/06/20260612004/20260612004.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-06-12",
+          "tense": "intended"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "2027年度に、eBay Japan・Qoo10が経済産業省の総合物販オンラインモール分野モニタリング・レビューの対象として初めて評価される",
+          "by": "2028-06",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -6050,10 +6090,11 @@
         "https://www.meti.go.jp/press/2025/12/20251217001/20251217001.html",
         "https://www.meti.go.jp/press/2026/06/20260612004/20260612004.html",
         "https://www.meti.go.jp/policy/mono_info_service/digitalplatform/pdf/2025_hyouka1.pdf",
-        "https://www.online-mall.meti.go.jp/"
+        "https://www.online-mall.meti.go.jp/",
+        "https://www.meti.go.jp/files/900016748.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/online-marketplace-transparency.md"
     },
     "trend/online-medical-consultation-adoption": {
@@ -6333,27 +6374,44 @@
           "source": "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024年度"
+          "as_of": "2024年度",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-2024年度"
+          "as_of": "2023-2024年度",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2020-2024年度"
+          "as_of": "2020-2024年度",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.jcer.or.jp/research-report/20201117-2.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020-11",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2025年度の宅配便取扱個数が2024年度の50億3,147万個を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "国土交通省の宅配便取扱実績が、日本経済研究センターの予測（2035年度に88億個）と整合する経路で増加を続け、2030年度時点で60億個を下回らない",
+          "by": "2031-03",
           "resolved": null,
           "outcome": null
         }
@@ -6366,10 +6424,11 @@
       "relations": [],
       "sources": [
         "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html",
-        "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+        "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
+        "https://www.jcer.or.jp/research-report/20201117-2.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/parcel-delivery-volume-expansion.md"
     },
     "trend/parental-leave-normalization": {
@@ -6655,27 +6714,44 @@
           "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-04"
+          "as_of": "2025-04",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-10-2025-04"
+          "as_of": "2022-10-2025-04",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2025"
+          "as_of": "2022-2025",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mlit.go.jp/seisakutokatsu/freight/content/001993236.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-03-31",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2026年10月の宅配便再配達率が2025年4月の8.4％を上回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "政府の「総合物流施策大綱（2026年度〜2030年度）」の中間年（2028年度前後）の進捗確認で、「多様な受取方法の利用率」が2025年2月時点の25.6%から2030年度目標50%程度に向けて上昇している",
+          "by": "2029-03",
           "resolved": null,
           "outcome": null
         }
@@ -6687,10 +6763,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html"
+        "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
+        "https://www.mlit.go.jp/seisakutokatsu/freight/content/001993236.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-17",
       "path": "entities/trends/redelivery-reduction.md"
     },
     "trend/reuse-c2c-market-expansion": {
@@ -6729,26 +6806,43 @@
           "source": "https://www.env.go.jp/content/000327691.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023"
+          "as_of": "2023",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.env.go.jp/content/000327691.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023"
+          "as_of": "2023",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.env.go.jp/content/000327691.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2023"
+          "as_of": "2022-2023",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.env.go.jp/content/000327691.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-01",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回公表されるCtoC-EC推計市場規模が2023年の2兆4,817億円を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "環境省の次回リユース市場規模調査で、「書籍」の中古品購入意向（今後新たに必要になったとき購入しても良いと考える割合）が令和6年度調査の63.5%を大きく下回らない",
           "by": "2027-12",
           "resolved": null,
           "outcome": null
@@ -6765,7 +6859,7 @@
         "https://www.env.go.jp/content/000327691.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/reuse-c2c-market-expansion.md"
     },
     "trend/school-generative-ai-governance": {
@@ -6956,27 +7050,44 @@
           "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-2024"
+          "as_of": "2023-2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2024"
+          "as_of": "2022-2024",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.recruit.co.jp/newsroom/pressrelease/assets/20250403_travel_01.pdf",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2025-02",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2025年のサービス系BtoC-EC市場規模が2024年の8兆2,256億円を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "じゃらんリサーチセンターの次回同時期調査（2027年春）で、当該期間に「旅行に行く予定である」または「まだ予定はないが、旅行に行きたい」と回答する合計割合が2025年春調査（合計39.7%）を大きく下回らない",
+          "by": "2027-06",
           "resolved": null,
           "outcome": null
         }
@@ -6988,10 +7099,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+        "https://www.recruit.co.jp/newsroom/pressrelease/assets/20250403_travel_01.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/service-ecommerce-expansion.md"
     },
     "trend/short-video-mainstream": {

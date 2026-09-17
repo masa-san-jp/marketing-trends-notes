@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-12"
   recheck_by: "2026-11-12"
 evidence:
-  - {field: kind, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2025-04"}
-  - {field: stage, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2022-10-2025-04"}
-  - {field: time, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2022-2025"}
+  - {field: kind, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2025-04", tense: completed}
+  - {field: stage, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2022-10-2025-04", tense: completed}
+  - {field: time, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2022-2025", tense: completed}
+  - {field: current-status, source: "https://www.mlit.go.jp/seisakutokatsu/freight/content/001993236.pdf", certainty: attested, retrieved: primary, as_of: "2026-03-31", tense: intended}
 predictions:
   - {claim: "2026年10月の宅配便再配達率が2025年4月の8.4％を上回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "政府の「総合物流施策大綱（2026年度〜2030年度）」の中間年（2028年度前後）の進捗確認で、「多様な受取方法の利用率」が2025年2月時点の25.6%から2030年度目標50%程度に向けて上昇している", by: "2029-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -38,13 +40,27 @@ channels: []
 relations: []
 sources:
   - https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html
+  - https://www.mlit.go.jp/seisakutokatsu/freight/content/001993236.pdf
 status: verified
-updated: 2026-08-12
+updated: 2026-09-17
 ---
 
 # 宅配便の再配達削減
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+政府は、消費者が宅配ボックス・置き配など多様な受取方法を選ぶ状態を、2030年度までに現在の
+2倍近くまで広げる数値目標を掲げている。2026年3月31日に閣議決定された「総合物流施策大綱
+（2026年度〜2030年度）」は、「多様な受取方法の利用率」（大手宅配事業者3社ベース）を2025年
+2月時点の25.6％から2030年度に50％程度へ引き上げる目標を明記した。また、「宅配便の受け取り
+前に自ら受取方法を選択・指定している消費者の割合」も、2025年9月時点の34.9％から2030年度に
+50％程度へ引き上げる目標が併記されている。
+
+これは政府の政策目標であり、個々の消費者が「今後こうしたい」と回答した意向調査ではない。
+目標達成のために、標準宅配便運送約款の改正や、宅配ボックス・置き配のトラブル対応ガイドライン
+策定などの具体的な施策が計画されている。
+
+## 足元の根拠（完了した事実）
 
 宅配便の取扱量が大きいまま、受取方法を多様化して再配達を減らすことが、物流の持続可能性と購買体験の両方の課題になっている。国土交通省は宅配ボックスや置き配などを推進し、2025年4月の再配達率は8.4％となった。2024年10月の9.0％、2022年10月の10.6％から低下している。
 
@@ -72,6 +88,8 @@ ECの注文画面、配送通知、日時指定、宅配ボックス、置き配
 
 ## 未着手
 
+- 2026年9月17日、「総合物流施策大綱（2026年度〜2030年度）」を実読して見出している未来を追記した。数値目標の中間確認スケジュール（年次かどうか）は本文からは確認できていない
 - 受取方法、注文導線、住宅条件、配送地域別に再配達率を比較する
 - 再配達削減と配送費、返品、顧客満足、購入継続の関係を確認する
 - 2026年以降の4月・10月調査で予測を答え合わせする
+- 「多様な受取方法の利用率」25.6%→50%の目標に対する進捗を、次回以降の宅配便再配達率サンプル調査で追う（predictions参照）
