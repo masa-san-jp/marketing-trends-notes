@@ -25,10 +25,10 @@ freshness:
   valid_as_of: "2026-09-14"
   recheck_by: "2026-10-14"
 evidence:
-  - {field: kind, source: "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/", certainty: attested, retrieved: primary, as_of: "2023-10-01"}
-  - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf", certainty: independent, retrieved: primary, as_of: "2023-11"}
-  - {field: time, source: "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/", certainty: attested, retrieved: primary, as_of: "2023-10-01"}
-  - {field: current-status, source: "https://www.caa.go.jp/about_us/about/caa_pamphlet/jp_2026_012.html", certainty: attested, retrieved: primary, as_of: "2026-09-14"}
+  - {field: kind, source: "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/", certainty: attested, retrieved: primary, as_of: "2023-10-01", tense: completed}
+  - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf", certainty: independent, retrieved: primary, as_of: "2023-11", tense: completed}
+  - {field: time, source: "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/", certainty: attested, retrieved: primary, as_of: "2023-10-01", tense: completed}
+  - {field: current-status, source: "https://www.caa.go.jp/about_us/about/caa_pamphlet/jp_2026_012.html", certainty: attested, retrieved: primary, as_of: "2026-09-14", tense: completed}
 predictions:
   - {claim: "次回以降の消費者庁調査または同等の独立調査で、インフルエンサー投稿の広告表示を見た経験と、表示を信頼判断に使う割合が再計測される", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
@@ -43,12 +43,16 @@ sources:
   - https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/
   - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf
 status: verified
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # クリエイター広告表示の可視化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+**未確認**: 消費者・広告主・業界団体が「今後、広告表示をどう変えたいか」を直接問う独立調査に到達できていない（JIAA「広告掲載基準の策定及び運用に関するガイドライン」の2026年4月改定は明示事項を強化したが、これは業界団体の完了済み対応であり、意向調査ではない）。
+
+## 足元の根拠（完了した事実）
 
 インフルエンサーや著名人の投稿を広告として扱うとき、広告であることを隠さず、受け手が広告主の関与を
 判別できるようにすることが、クリエイターを使ったマーケティングの実務要件として浮上した。
@@ -94,6 +98,7 @@ updated: 2026-09-14
 
 ## 未着手
 
+- 2026年9月17日、消費者・広告主・業界団体の「今後の広告表示への意向」を測る独立調査を探したが見つからなかった（**未確認**の理由）。JIAAの2026年4月ガイドライン改定は確認したが、業界団体の完了済み対応で意向調査ではない
 - 2026年9月14日に消費者庁の現行案内を再確認した。ステマ規制の説明は継続して掲載されているが、同じ設問による新しい独立調査は確認できず、2023年調査の基準値を維持する
 - 令和6年度・令和7年度の消費者庁調査で同じ設問が継続されているかを確認し、経年変化を取る
 - 規制施行後の行政処分・情報提供件数と、事業者側の表示管理の実務を一次資料で確認する

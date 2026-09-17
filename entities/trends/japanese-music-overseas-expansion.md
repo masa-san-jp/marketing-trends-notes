@@ -25,12 +25,13 @@ freshness:
   valid_as_of: "2026-09-15"
   recheck_by: "2026-10-15"
 evidence:
-  - {field: kind, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
-  - {field: stage, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
-  - {field: time, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
-  - {field: current-status, source: "https://www.meti.go.jp/shingikai/mono_info_service/entertainment_creative/pdf/20250624_1.pdf", certainty: independent, retrieved: summary, as_of: "2025-06-24"}
+  - {field: kind, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
+  - {field: stage, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
+  - {field: time, source: "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
+  - {field: current-status, source: "https://www.meti.go.jp/shingikai/mono_info_service/entertainment_creative/pdf/20250624_1.pdf", certainty: attested, retrieved: primary, as_of: "2025-06", tense: intended}
 predictions:
   - {claim: "2025年以降も日本音楽産業の海外収入・海外売上が同じ定義で再推計される", by: "2028-12", resolved: null, outcome: null}
+  - {claim: "経済産業省「エンタメ・クリエイティブ産業戦略」が掲げるコンテンツ産業全体の海外売上高目標（2033年に20兆円）に向けて、2030年時点の同産業全体の海外売上高が2023年実績（約5.8兆円）を下回らない", by: "2031-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -41,12 +42,30 @@ sources:
   - https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/260430.html
   - https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf
 status: verified
-updated: 2026-09-15
+updated: 2026-09-17
 ---
 
 # 日本音楽の海外収入・売上の可視化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+経済産業省は、コンテンツ産業全体（音楽を含む）の海外売上高を2033年に20兆円とする目標を掲げ、
+その実現に向けた5ヵ年アクションプランを示している。「エンタメ・クリエイティブ産業戦略〜
+コンテンツ産業の海外売上高20兆円に向けた5ヵ年アクションプラン〜」（2025年6月、経済産業省）
+は、我が国発コンテンツの海外売上がこの10年で約3倍に成長し2023年に約5.8兆円に達したことを
+踏まえ、「新たなクールジャパン戦略」（2024年6月）で定めた2033年20兆円目標の実現方策を
+具体化している。同戦略は音楽を含む10分野に個別のアクションを設定しており、音楽分野の
+【アクション①】では「海外市場から得られる売上・利益の規模の把握とそれらを踏まえた将来の
+目標値の設定が必要であるが、業界全体で共有される海外展開（輸出）データが存在しないため、
+早急な状況の改善が必要」と課題を明示し、産業界と連携した継続的なデータ把握体制の構築を
+今後のアクションとして掲げている。
+
+これは、既存の足元の根拠（下記）にある2024年の経済産業省による初回の産業横断推計（海外
+収入448.6億円・海外売上1,239.5億円）が、まさにこの「データが存在しない」という課題への
+第一歩だったことを示す。音楽分野に特化した具体的な数値目標はまだ設定されておらず、
+継続的なデータ把握の仕組みが先に整備される段階にある。
+
+## 足元の根拠（完了した事実）
 
 日本音楽産業の海外展開が、個別アーティストや作品の成功談ではなく、権利収入、音楽ソフト、配信、ライブ、その他を合算した産業統計として推計され始めた。経済産業省の調査では、2024年の海外収入は448.6億円、海外売上は1,239.5億円だった。訪日外国人による消費を含めると、それぞれ725.8億円、1,516.7億円となる。
 
@@ -74,7 +93,9 @@ updated: 2026-09-15
 
 ## 未着手
 
-- 2026年9月15日時点で再確認したが、2025年以降の同一定義による再推計は依然として未公表。2025年6月24日付「エンタメ・クリエイティブ産業戦略（海外売上高20兆円に向けた5ヵ年アクションプラン）」を新たに確認したが、これは政策目標文書であり、2024年調査と同一定義の実績再推計ではない
+- 2026年9月15日時点で再確認したが、2025年以降の同一定義による再推計は依然として未公表
+- 2026年9月17日、「エンタメ・クリエイティブ産業戦略」本文を実読し、音楽分野に特化したアクションプランの内容から見出している未来を追記した。この戦略は政策目標文書であり、2024年調査と同一定義の実績再推計ではない点は変わらないが、コンテンツ産業全体の将来目標（2033年20兆円）と、音楽分野のデータ整備方針という2つの未来向きの事実が含まれることを確認した
+- 音楽分野に特化した数値目標（現時点では未設定）が今後策定されるかを確認する
 - 2025年以降の同一定義の推計と、2024年との比較可能性を確認する
 - 国・地域、作品、配信、ライブ、権利、物販別に需要・収入・売上を分解する
 - 推計対象企業、回答率、未観測取引、再現性を報告書の次版で確認する

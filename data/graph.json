@@ -3850,28 +3850,32 @@
           "source": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2023-10-01"
+          "as_of": "2023-10-01",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-11"
+          "as_of": "2023-11",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2023-10-01"
+          "as_of": "2023-10-01",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.caa.go.jp/about_us/about/caa_pamphlet/jp_2026_012.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-09-14"
+          "as_of": "2026-09-14",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -3893,7 +3897,7 @@
         "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-14",
+      "updated": "2026-09-17",
       "path": "entities/trends/creator-ad-disclosure.md"
     },
     "trend/creator-rights-compensation-transparency": {
@@ -3932,21 +3936,40 @@
           "source": "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-12-24"
+          "as_of": "2025-12-24",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.bunka.go.jp/tokei_hakusho_shuppan/tokeichosa/chosakuken/index.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-11"
+          "as_of": "2026-08-11",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-12-24"
+          "as_of": "2025-12-24",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-12-24",
+          "tense": "intended"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "未管理著作物裁定制度が2026年度中に実際に運用開始され、文化庁が最初の裁定件数を公表する",
+          "by": "2027-03",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -3962,7 +3985,7 @@
         "https://www.bunka.go.jp/seisaku/chosakuken/"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-17",
       "path": "entities/trends/creator-rights-compensation-transparency.md"
     },
     "trend/cross-border-ecommerce-expansion": {
@@ -5677,34 +5700,44 @@
           "source": "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.meti.go.jp/shingikai/mono_info_service/entertainment_creative/pdf/20250624_1.pdf",
-          "certainty": "independent",
-          "retrieved": "summary",
-          "as_of": "2025-06-24"
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-06",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2025年以降も日本音楽産業の海外収入・海外売上が同じ定義で再推計される",
           "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "経済産業省「エンタメ・クリエイティブ産業戦略」が掲げるコンテンツ産業全体の海外売上高目標（2033年に20兆円）に向けて、2030年時点の同産業全体の海外売上高が2023年実績（約5.8兆円）を下回らない",
+          "by": "2031-03",
           "resolved": null,
           "outcome": null
         }
@@ -5720,7 +5753,7 @@
         "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-15",
+      "updated": "2026-09-17",
       "path": "entities/trends/japanese-music-overseas-expansion.md"
     },
     "trend/live-entertainment-experience-expansion": {
