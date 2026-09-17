@@ -25,9 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf", certainty: attested, retrieved: primary, as_of: "2025-05-30"}
-  - {field: time, source: "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf", certainty: attested, retrieved: primary, as_of: "2025-05-30"}
-  - {field: stage, source: "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/", certainty: attested, retrieved: primary, as_of: "2026-03-04"}
+  - {field: kind, source: "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf", certainty: attested, retrieved: primary, as_of: "2025-05-30", tense: completed}
+  - {field: time, source: "https://adm.riaj.or.jp/sites/default/files/2025-05/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%94%A3%E6%A5%AD2025%E5%B9%B4%E7%89%88.pdf", certainty: attested, retrieved: primary, as_of: "2025-05-30", tense: completed}
+  - {field: stage, source: "https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/", certainty: attested, retrieved: primary, as_of: "2026-03-04", tense: completed}
+  - {field: current-status, source: "https://www.jmrlsi.co.jp/trend/mranking/05-it/mranking441.html", certainty: independent, retrieved: primary, as_of: "2026-03-26", tense: intended}
+predictions:
+  - {claim: "JMR生活総合研究所の次回同種調査（サブスクリプションサービス消費者調査）で、音楽配信サービスが動画配信サービスを上回って「再利用意向」ランキング上位を維持する", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -41,13 +44,28 @@ sources:
   - https://www.riaj.or.jp/news/press/94d112e4-697a-4990-9f80-a721d1f5a921/
   - https://www.riaj.or.jp/data/archive/
   - https://riaj.or.jp/data/
+  - https://www.jmrlsi.co.jp/trend/mranking/05-it/mranking441.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-17
 ---
 
 # 音楽配信・ストリーミングの定着
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+音楽配信サービスの利用者は、動画配信サービスよりも強い継続利用の意向を持っている。JMR生活
+総合研究所「消費者調査データNo.441 サブスクリプションサービス（2026年3月版）」（公表2026年
+3月26日、音楽・動画等24ブランドを対象、6項目調査）では、「利用経験者における今後の利用意向
+（再利用意向）」のランキングで、音楽配信世界最大手の「Spotify」が全24ブランド中1位となった。
+認知率・利用経験率など他の5項目では動画配信サービス（Amazonプライム・ビデオ、Netflix）が
+上位を占めたが、再利用意向の上位には「YouTube Music」（4位）、「Apple Music」（5位）と
+音楽配信サービスが複数ランクインしている。
+
+これは、音楽配信サービス利用者が「一度使うと離れにくい」という継続志向を持っていることを
+示す。ただし、この調査は登録会員向けの詳細データが有料であり、各サービスの具体的な再利用
+意向率（パーセンテージ）までは今回確認できていない。
+
+## 足元の根拠（完了した事実）
 
 音楽コンテンツの収益経路で、CDなどの物理ソフトだけでなく、ダウンロード、サブスクリプション型ストリーミング、広告収入型ストリーミングが
 継続的に計測・評価されるようになっている。日本レコード協会の「日本のレコード産業2025」では、2024年の音楽配信売上は前年比106％の
@@ -87,7 +105,9 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月17日、JMR生活総合研究所の消費者調査データを実読して見出している未来を追記した。各サービスの再利用意向率の具体的な数値は有料会員限定データのため確認できていない
 - RIAJの音楽配信売上実績と新しい市場推計を、会員社実績・非会員社推計の範囲をそろえて時系列化する
 - 音楽メディアユーザー実態調査等から、年齢別・利用サービス別の聴取時間、課金、広告視聴、解約・継続を確認する
 - ストリーミングでの発見、SNS・動画・ライブ・物販への送客、アーティストや権利者への分配の関係を確認する
 - このtrendに応答するpractice（配信・短尺動画・ライブ・ファンコミュニティをつなぐ音楽コンテンツ運用）の採用率と実績を整理する
+- 音楽配信サービスの再利用意向率の具体的な数値を、有料データまたは別の独立調査で確認する

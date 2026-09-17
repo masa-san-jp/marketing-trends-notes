@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2021"}
-  - {field: stage, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2016-2021"}
-  - {field: time, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2016-2021"}
+  - {field: kind, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2021", tense: completed}
+  - {field: stage, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2016-2021", tense: completed}
+  - {field: time, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2016-2021", tense: completed}
+  - {field: current-status, source: "https://ictr.co.jp/report/20250423.html/", certainty: vendor, retrieved: primary, as_of: "2025-04-23", tense: intended}
 predictions:
   - {claim: "次回の公的なコンテンツ市場調査で、映像配信市場規模が2021年の約4,230億円を下回らない", by: "2028-12", resolved: null, outcome: null}
+  - {claim: "ICT総研の次回同種調査で、有料動画配信サービス利用者数が2027年予測値（4,120万人）に向けて増加を続け、2026年時点で2024年末実績（3,450万人）を下回らない", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -38,13 +40,26 @@ channels: []
 relations: []
 sources:
   - https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/
+  - https://ictr.co.jp/report/20250423.html/
 status: verified
-updated: 2026-08-11
+updated: 2026-09-17
 ---
 
 # 映像配信市場の拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+有料動画配信サービスの利用者数は、今後も増加を続けると見込まれている。株式会社ICT総研が
+2025年4月23日に発表した「2025年有料動画配信サービス利用動向に関する調査」では、有料動画
+配信サービス利用者数が2020年末の2,630万人から2022年末3,390万人、2024年末3,450万人へ増加
+してきた実績を踏まえ、2025年に3,890万人、2027年には4,120万人へ拡大すると予測している。
+このうち定額制サービスの利用者は2027年に3,830万人に達する見通しとされている。
+
+これはICT総研という市場調査会社自身の予測であり（`vendor`）、視聴者自身が「今後も契約を
+続けたいか」と回答した意向調査ではない。同調査では、無料動画サービスのみを利用する層が
+65.2％を占め、動画配信サービスを一切利用しない層も16.0％存在することも報告されている。
+
+## 足元の根拠（完了した事実）
 
 映像作品の視聴・流通が、放送・劇場・パッケージだけでなく、定額配信（SVOD）、都度払い（TVOD）、買い切り型（EST）、広告型（AVOD）などの配信サービスへ広がっている。文化庁の審議会資料では、映像作品の配信市場は2016年の約1,630億円から2021年の約4,230億円へ拡大したと説明されている。
 
@@ -72,6 +87,8 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月17日、ICT総研の2025年調査プレスリリースを実読して見出している未来を追記した。視聴者自身の継続利用意向を直接問う調査は今回探せていない
 - SVOD、TVOD、EST、AVOD、UGCを分けた市場規模・利用者・継続率を確認する
 - 作品ジャンル、年齢、デバイス、配信経路別に視聴・課金を比較する
 - 2022年以降の同一定義の公的または独立調査で予測を答え合わせする
+- ICT総研の2027年予測（4,120万人）に対する進捗を、次回以降の同種調査で確認する

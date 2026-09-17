@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html", certainty: independent, retrieved: primary, as_of: "2024"}
-  - {field: stage, source: "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html", certainty: independent, retrieved: primary, as_of: "2020-2024"}
-  - {field: time, source: "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html", certainty: independent, retrieved: primary, as_of: "2019-2024"}
+  - {field: kind, source: "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
+  - {field: stage, source: "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html", certainty: independent, retrieved: primary, as_of: "2020-2024", tense: completed}
+  - {field: time, source: "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html", certainty: independent, retrieved: primary, as_of: "2019-2024", tense: completed}
+  - {field: current-status, source: "https://corporate.pia.jp/news/detail_live_enta_market20260617.html", certainty: vendor, retrieved: primary, as_of: "2026-06-17", tense: intended}
 predictions:
   - {claim: "次回の同種のライブ市場調査で、2024年の総動員数約5,940万人を下回らない", by: "2028-12", resolved: null, outcome: null}
+  - {claim: "ぴあ総研が発表する将来予測（2035年に市場規模が初の1兆円台）に向けて、2030年時点の同社発表値が2025年実績（8,564億円）を下回らない", by: "2031-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -38,13 +40,27 @@ channels: []
 relations: []
 sources:
   - https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html
+  - https://corporate.pia.jp/news/detail_live_enta_market20260617.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-17
 ---
 
 # ライブ・体験型エンタメ消費の拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+ぴあ総研（ぴあ株式会社の調査機関）は、国内ライブ・エンタテインメント市場が2035年に初めて
+1兆円台に達するとの見通しを示している（2026年6月17日発表「ライブ・エンタメ市場規模は、
+過去最高の8千5百億円超え。2035年には1兆円台に」）。2025年の市場規模は8,564億円（前年比
+12.6%増、3年連続の過去最高）で、動員1人あたりの単価が9,286円（同4.5%増）まで上昇して
+おり、公演回数の増加よりも「興行規模の大型化」と「単価上昇」が市場成長の主因に移っている
+と分析している。
+
+これはぴあという興行チケット販売企業自身の調査・予測であり（`vendor`）、独立した第三者に
+よる長期予測ではない。ぴあ総研は、今後は一人ひとりの観客が得る体験価値を高める「高付加価値化」
+が市場成長の鍵になると位置づけている。
+
+## 足元の根拠（完了した事実）
 
 ライブ、演劇、音楽興行など、現地参加を伴う体験型エンターテインメントへの消費が拡大している。経済産業省の分析では、第三次産業活動指数の「音楽・芸術等興行」は2020年の36.0から2024年の196.6へ上昇し、「娯楽業」全体も2024年に122.7となってコロナ禍前と同水準になった。
 
@@ -72,6 +88,8 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月17日、ぴあ総研のプレスリリースを実読して見出している未来を追記した。2035年予測の詳細な年平均成長率は本文取得の範囲では確認できなかった
 - ジャンル、地域、会場規模、国内外、チケット単価、物販、配信を分けて比較する
 - 「推し活」・体験型消費・ファンクラブ・再参加が売上に与える寄与を独立データで確認する
 - 次回の市場調査で予測を答え合わせする
+- 独立した調査機関による中長期のライブ市場予測を探し、ぴあ総研の予測と比較する
