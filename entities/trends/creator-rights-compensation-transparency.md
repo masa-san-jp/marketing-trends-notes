@@ -25,9 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html", certainty: attested, retrieved: primary, as_of: "2025-12-24"}
-  - {field: time, source: "https://www.bunka.go.jp/tokei_hakusho_shuppan/tokeichosa/chosakuken/index.html", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
-  - {field: stage, source: "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html", certainty: attested, retrieved: primary, as_of: "2025-12-24"}
+  - {field: kind, source: "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html", certainty: attested, retrieved: primary, as_of: "2025-12-24", tense: completed}
+  - {field: time, source: "https://www.bunka.go.jp/tokei_hakusho_shuppan/tokeichosa/chosakuken/index.html", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: stage, source: "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html", certainty: attested, retrieved: primary, as_of: "2025-12-24", tense: completed}
+  - {field: current-status, source: "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html", certainty: attested, retrieved: primary, as_of: "2025-12-24", tense: intended}
+predictions:
+  - {claim: "未管理著作物裁定制度が2026年度中に実際に運用開始され、文化庁が最初の裁定件数を公表する", by: "2027-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -41,12 +44,27 @@ sources:
   - https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html
   - https://www.bunka.go.jp/seisaku/chosakuken/
 status: verified
-updated: 2026-08-11
+updated: 2026-09-17
 ---
 
 # クリエイターの権利・対価情報の透明化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+文化庁は、権利者の所在が分からない著作物を、より低いハードルで適法に利用できる制度を
+2026年度から新たに動かそうとしている。文化庁著作権課著作物流通推進室は「『未管理著作物
+裁定制度』が2026年度から始まります」（2025年12月24日、文化庁広報誌「ぶんかる」）で、
+2023年の著作権法改正で設けられたこの制度について「2026年4月からの運用開始に向けて現在
+準備を進めています」と説明している。この制度は、権利者の意思確認手続を経て文化庁長官の
+裁定を受け、通常の使用料相当額の補償金を支払うことで、最長3年間著作物を適法に利用できる
+ようにするもので、権利者が後から名乗り出れば補償金を受け取れる仕組みも備える。
+
+これは、休眠著作物・権利者不明作品の利用機会を広げると同時に、権利者にとっては「使われて
+いるが対価が届いていない」状態を補償金という形で可視化する制度でもある。文化庁自身の
+準備段階の発表であり、実際に何件の裁定が行われ、補償金がどの程度権利者に届くかは、制度
+開始後に確認する必要がある。
+
+## 足元の根拠（完了した事実）
 
 個人が動画、音楽、イラスト、文章、ゲームなどをデジタルプラットフォームで発信・収益化できる一方、契約条件、利用範囲、再生数、料率、
 広告・サブスクリプション収入の算定、権利情報がクリエイターから見えにくいという課題が、制度・調査の対象として継続的に扱われている。
@@ -88,6 +106,7 @@ commoditizedとは判定しない。
 
 ## 未着手
 
+- 2026年9月17日、文化庁「ぶんかるNews 019」を実読して見出している未来を追記した。未管理著作物裁定制度の登録確認機関（CRIC）の実際の運用開始後の裁定件数はまだ確認できていない
 - 文化庁の個人クリエイター権利情報集約調査・対価還元調査から、対象分野、権利情報項目、利用状況、未解決課題を比較する
 - プラットフォーム・管理事業者・クリエイター団体の契約・明細・監査・異議対応を確認し、開示範囲と算定方法を分野別に整理する
 - 権利情報の登録・検索・更新が、利用許諾、二次利用、収益分配、作品の発見・再利用に与える影響を確認する
