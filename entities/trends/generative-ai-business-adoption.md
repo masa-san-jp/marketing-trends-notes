@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2025年度"}
-  - {field: stage, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2024-2025年度"}
-  - {field: time, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2024-2025年度"}
+  - {field: kind, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2025年度", tense: completed}
+  - {field: stage, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2024-2025年度", tense: completed}
+  - {field: time, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2024-2025年度", tense: completed}
+  - {field: current-status, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2025年度", tense: intended}
 predictions:
   - {claim: "IPAの次回DX動向で、企業の生成AI導入率が2025年度の44.0%を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "IPAの次回DX動向調査で、DXに取組んでいない企業のうちAI導入に「関心はあるがまだ特に予定はない」と回答する潜在層の一部が、実際の導入・試験利用へ転換し、2025年度調査の水準（DX非取組企業の40.8%）から潜在層の割合が縮小する", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -42,12 +44,26 @@ sources:
   - https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf
   - https://www.ipa.go.jp/pressrelease/2026/press20260515.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-19
 ---
 
 # 企業の生成AI導入拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+DXに積極的に取組んでいない企業や小規模な企業ほど、AI導入に対する「関心はあるが具体的な予定は
+まだない」という潜在的な意向を強く持っている。IPA「DX動向2026」（企業のAI導入状況をDX取組
+状況別・従業員規模別に集計）では、DXに「取組んでいない」企業でAIの導入状況を尋ねたところ、
+「関心はあるがまだ特に予定はない」が40.8％と最も高い回答だった。従業員規模別でも、「100人
+以下」の企業で同回答が34.6％と高い水準を占めている。一方、生成AIの導入状況を経年で見ると、
+「導入している」の回答率は2024年度の22.6％から2025年度の44.0％へ急激に伸び、逆に「関心は
+あるがまだ特に予定はない」は大きく減少している。
+
+これは、DXに取組む大企業を中心に「関心→導入」への転換が急速に進む一方、DXに消極的な企業や
+小規模企業では、まだ導入に至らない「関心」の段階にとどまる層が相対的に厚く残っていることを
+示す。この潜在層が今後どの程度実際の導入に転換するかは、次回以降の調査で確認する必要がある。
+
+## 足元の根拠（完了した事実）
 
 日本企業で生成AIを導入する割合が上がり、生成AIが一部の実験ではなく、業務で検討・利用する対象になっている。
 一方で、導入の広がりと全社的な業務プロセスへの組み込みは同じではない。
@@ -87,6 +103,7 @@ AIサービス事業者が売り込む市場カテゴリそのものではない
 
 ## 未着手
 
+- 2026年9月19日、IPA「DX動向2026」の同一資料からDX取組状況別・企業規模別のAI導入意向データを実読して見出している未来を追記した
 - 次回IPA調査で、生成AI導入率44.0％、個人利用63.3％、部署プロセス11.9％、全社サービス18.6％の経年変化を確認する
 - 企業規模・業種別に、導入率と組織実装率の差を整理する
 - 生成AIの利用規程、データ管理、リスクマネジメントの整備率と導入・効果の関係を確認する

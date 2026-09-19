@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html", certainty: independent, retrieved: primary, as_of: "2025年度"}
-  - {field: stage, source: "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html", certainty: independent, retrieved: primary, as_of: "2025年度"}
-  - {field: time, source: "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html", certainty: independent, retrieved: primary, as_of: "2020-2025年度"}
+  - {field: kind, source: "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html", certainty: independent, retrieved: primary, as_of: "2025年度", tense: completed}
+  - {field: stage, source: "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html", certainty: independent, retrieved: primary, as_of: "2025年度", tense: completed}
+  - {field: time, source: "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html", certainty: independent, retrieved: primary, as_of: "2020-2025年度", tense: completed}
+  - {field: current-status, source: "https://www.mlit.go.jp/report/press/content/001878996.pdf", certainty: independent, retrieved: primary, as_of: "令和6年度", tense: intended}
 predictions:
   - {claim: "次回の同調査でテレワーク実施率が2025年度の16.8％を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "国土交通省の次回テレワーク人口実態調査で、継続意向のある雇用型テレワーカーのうち週3日以上を希望する割合が今回調査の「半数以上」を下回らない", by: "2027-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -38,13 +40,27 @@ channels: []
 relations: []
 sources:
   - https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html
+  - https://www.mlit.go.jp/report/press/content/001878996.pdf
 status: verified
-updated: 2026-08-11
+updated: 2026-09-19
 ---
 
 # テレワークの定着
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+テレワークを続けたいと考えている雇用型テレワーカーは、現状よりも高い頻度での実施を望んで
+いる。国土交通省「令和6年度テレワーク人口実態調査」（令和7年3月公表）は、テレワーク継続
+意向のある雇用型テレワーカーを対象に、実施を希望する頻度を尋ねている。その結果、「継続
+意向のある雇用型テレワーカーの実施希望頻度は、現状よりも高い」とし、希望頻度は週2日が
+最も多く、半数以上が週3日以上を希望、7割以上が週1日以上の出社と組み合わせたハイブリッド
+ワークを希望していると報告している。
+
+これは、テレワークを続けたい人が現状に満足しているのではなく、より多くテレワークをしたい
+という上振れの意向を持っていることを示す。実際にこの希望頻度がどこまで実現するかは、
+雇用主側の制度・オフィス方針にも左右されるため、次回以降の調査で確認する必要がある。
+
+## 足元の根拠（完了した事実）
 
 テレワークは感染症流行期の一時的な働き方から、実施率が一定水準で続く業務設計上の選択肢へ移っている。国土交通省の2025年度調査では、直近1年間のテレワーク実施率は16.8％で、2024年度から1.2ポイント上昇した。雇用型テレワーカーの割合も25.2％で、0.6ポイント上昇している。
 
@@ -72,6 +88,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月19日、国土交通省「令和6年度テレワーク人口実態調査」の詳細資料を実読して見出している未来を追記した。「継続意向あり」の正確な割合（％）は今回の抽出範囲では確認できず、希望頻度に関する記述のみを採用した
 - 業種・企業規模・地域・頻度別に実施率を分解する
 - テレワーク継続と業務ツール費用、採用、離職、成果指標の関係を独立データで確認する
 - 次回調査で予測を答え合わせする
