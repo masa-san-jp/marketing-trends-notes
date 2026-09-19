@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.soumu.go.jp/menu_news/s-news/01tsushin02_02000183.html", certainty: independent, retrieved: primary, as_of: "2026-05-29"}
-  - {field: stage, source: "https://www.soumu.go.jp/menu_news/s-news/01tsushin02_02000183.html", certainty: independent, retrieved: primary, as_of: "2026-05-29"}
-  - {field: time, source: "https://www.e-stat.go.jp/stat-search/files?collect_area=000&page=1&toukei=00200356&tstat=000001243701", certainty: independent, retrieved: primary, as_of: "2026-05-29"}
+  - {field: kind, source: "https://www.soumu.go.jp/menu_news/s-news/01tsushin02_02000183.html", certainty: independent, retrieved: primary, as_of: "2026-05-29", tense: completed}
+  - {field: stage, source: "https://www.soumu.go.jp/menu_news/s-news/01tsushin02_02000183.html", certainty: independent, retrieved: primary, as_of: "2026-05-29", tense: completed}
+  - {field: time, source: "https://www.e-stat.go.jp/stat-search/files?collect_area=000&page=1&toukei=00200356&tstat=000001243701", certainty: independent, retrieved: primary, as_of: "2026-05-29", tense: completed}
+  - {field: current-status, source: "https://www.yano.co.jp/press-release/show/press_id/4055", certainty: vendor, retrieved: primary, as_of: "2026-03-16", tense: intended}
 predictions:
   - {claim: "次回の通信利用動向調査で、企業のクラウドサービス利用率が2025年の8割超を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "矢野経済研究所の次回同種調査で、クラウド基盤（IaaS/PaaS）サービス市場規模が2029年予測値（5兆2,200億円）に向けた拡大経路を維持し、2026年時点で2025年実績（2兆7,100億円）を下回らない", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -42,13 +44,27 @@ sources:
   - https://www.soumu.go.jp/menu_news/s-news/01tsushin02_02000183.html
   - https://www.soumu.go.jp/johotsusintokei/statistics/statistics05.html
   - https://www.e-stat.go.jp/stat-search/files?collect_area=000&page=1&toukei=00200356&tstat=000001243701
+  - https://www.yano.co.jp/press-release/show/press_id/4055
 status: verified
-updated: 2026-08-11
+updated: 2026-09-19
 ---
 
 # 企業のクラウドサービス利用定着
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+クラウド基盤サービスの市場は、AIの本番稼働フェーズへの移行を主因として、今後も拡大が続くと
+予測されている。矢野経済研究所「クラウド基盤（IaaS/PaaS）サービス市場に関する調査」
+（2026年3月16日発表）は、同市場（事業者売上高ベース）が2029年に5兆2,200億円に達すると予測
+し、2023年から2029年のCAGRを18.0％としている。同社は、2025年時点ではAI活用がPoC（概念
+実証）段階にとどまる企業が多いが「今後は実用化・本番稼働フェーズへの移行が進む見込み」と
+説明し、大手クラウド事業者のAI関連サービス拡充がさらに市場規模を押し上げると見込んでいる。
+
+これは矢野経済研究所という市場調査会社自身の予測であり（`vendor`）、企業自身が「今後クラウド
+利用を拡大したいか」と回答した意向調査ではない。オンプレミス回帰を選ぶ企業の増加も抑制要因
+として同時に指摘されている。
+
+## 足元の根拠（完了した事実）
 
 日本企業でクラウドサービスを利用する割合が、単発の導入ではなく、複数年にわたって上昇している。総務省の「通信利用動向調査」では、
 企業のクラウドサービス利用率は2019年の約65％から2025年の8割超まで上がった。2025年調査でも前年から上昇しており、クラウドを使うことが
@@ -86,6 +102,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月19日、矢野経済研究所のプレスリリースを実読して見出している未来を追記した。企業自身の「今後の利用拡大意向」を測る調査は今回探せていない
 - 令和7年調査の企業規模・業種別に、クラウド利用率と全社利用・一部利用の差を確認する
 - クラウドサービスの用途別利用率を時系列で整理し、保存・共有、業務アプリ、基盤利用のどこが伸びたかを確認する
 - 導入前後の移行費用、運用負荷、障害、セキュリティ管理、解約・オンプレミス回帰を同じ定義で追える独立資料を探す
