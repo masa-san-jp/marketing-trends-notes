@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-12"
   recheck_by: "2026-11-12"
 evidence:
-  - {field: kind, source: "https://www.mhlw.go.jp/content/12004000/001274765.pdf", certainty: independent, retrieved: primary, as_of: "2022-2040年度"}
-  - {field: stage, source: "https://www.mhlw.go.jp/stf/newpage_02977.html", certainty: independent, retrieved: primary, as_of: "2022-2040年度"}
-  - {field: time, source: "https://www.mhlw.go.jp/content/12004000/001274765.pdf", certainty: independent, retrieved: primary, as_of: "2022-2040年度"}
+  - {field: kind, source: "https://www.mhlw.go.jp/content/12004000/001274765.pdf", certainty: independent, retrieved: primary, as_of: "2022-2040年度", tense: completed}
+  - {field: stage, source: "https://www.mhlw.go.jp/stf/newpage_02977.html", certainty: independent, retrieved: primary, as_of: "2022-2040年度", tense: completed}
+  - {field: time, source: "https://www.mhlw.go.jp/content/12004000/001274765.pdf", certainty: independent, retrieved: primary, as_of: "2022-2040年度", tense: completed}
+  - {field: current-status, source: "https://www.mhlw.go.jp/stf/newpage_02977.html", certainty: attested, retrieved: primary, as_of: "2024-07-12", tense: intended}
 predictions:
   - {claim: "2026年度の介護職員必要数が第9期推計の約240万人となり、2022年度の約215万人を上回る", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "厚生労働省の次回公表で、「参入促進」「資質の向上」「労働環境・処遇の改善」の3方針に基づく対策（入門的研修、認証評価制度、多様な働き方支援等）の実施が継続して確認される", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -40,12 +42,26 @@ sources:
   - https://www.mhlw.go.jp/stf/newpage_02977.html
   - https://www.mhlw.go.jp/content/12004000/001274765.pdf
 status: verified
-updated: 2026-08-12
+updated: 2026-09-20
 ---
 
 # 介護人材の需給ギャップ拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+厚生労働省は、介護人材を量と質の両面で確保するため、国と地域が「参入促進」「資質の向上」
+「労働環境・処遇の改善」を進めるための対策に総合的・計画的に取り組むとしている。同省の
+ページ（2024年7月12日公表内容を掲載）は、2026年度に約240万人（2022年度比＋約25万人）、
+2040年度に約272万人（同＋約57万人）の介護職員を「確保する必要がある」と推計し、この
+必要数を対策の根拠としている。具体策として、介護未経験者向けの入門的研修、人材育成に
+取り組む介護事業者の認証評価制度、多様な働き方の支援、介護の仕事の魅力発信などを進める
+としている。
+
+これは厚生労働省が自ら掲げた方針・推計であり（`attested`）、介護職員本人や介護事業者が
+「今後どう働きたいか」に答えた意向調査ではない。必要数の推計が対策の実施や採用実績に
+つながっているかどうかは、既存の足元の根拠にある必要数の推計値以上のことを示すものではない。
+
+## 足元の根拠（完了した事実）
 
 介護サービスの見込み量に対して必要な職員数が増え、利用者数の増加だけでなく、採用、育成、定着、外国人材、業務分担、テクノロジー活用を同時に設計する必要が高まっている。厚生労働省の第9期介護保険事業計画に基づく推計では、介護職員は2022年度の約215万人に対し、2026年度に約240万人、2040年度に約272万人が必要となる。
 
@@ -73,6 +89,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月20日、既存sourcesにあった厚生労働省「介護人材確保に向けた取組」ページ（newpage_02977.html）を実読し、「参入促進」「資質の向上」「労働環境・処遇の改善」の方針を見出している未来として追記した
 - 必要数、現有人材、求人、採用、離職、賃金、サービス休止を地域・職種別に追う
 - 研修、外国人材、業務分担、ICT導入が定着と品質に与える影響を比較する
 - 第10期介護保険事業計画で推計と実績を答え合わせする

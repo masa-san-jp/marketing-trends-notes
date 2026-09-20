@@ -25,9 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.caa.go.jp/notice/entry/038499/", certainty: attested, retrieved: primary, as_of: "2024-06-27"}
-  - {field: time, source: "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf", certainty: attested, retrieved: primary, as_of: "2024-08-30"}
-  - {field: stage, source: "https://www.caa.go.jp/notice/entry/043728/", certainty: attested, retrieved: primary, as_of: "2025-10-01"}
+  - {field: kind, source: "https://www.caa.go.jp/notice/entry/038499/", certainty: attested, retrieved: primary, as_of: "2024-06-27", tense: completed}
+  - {field: time, source: "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf", certainty: attested, retrieved: primary, as_of: "2024-08-30", tense: completed}
+  - {field: stage, source: "https://www.caa.go.jp/notice/entry/043728/", certainty: attested, retrieved: primary, as_of: "2025-10-01", tense: completed}
+  - {field: current-status, source: "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf", certainty: attested, retrieved: primary, as_of: "2024-08-30", tense: intended}
+predictions:
+  - {claim: "厚生労働省の次回公表で、都道府県知事等に提供された機能性表示食品等の健康被害情報の集約結果と食品衛生法上の措置の要否検討が定期的に継続されている", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -43,12 +46,25 @@ sources:
   - https://www.caa.go.jp/notice/entry/041585/
   - https://www.caa.go.jp/notice/entry/043728/
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # 機能性表示食品の安全・表示管理強化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+消費者庁・厚生労働省は、機能性表示食品等の届出者に健康被害情報の収集・報告を恒常的な義務として
+課し、行政側も情報を集約し続ける運用を今後の前提としている。両省庁の説明資料（2024年8月30日）は、
+「情報提供を受けた厚生労働省の対応」として、「都道府県知事等に提供された健康被害の事例については、
+引き続き、厚生労働省に集約し、食品衛生法上の措置の要否につき検討を行った上で、定期的に結果を
+公表する」としている。届出者には、健康被害と疑われる情報を収集し、因果関係が不明な段階でも
+速やかに都道府県知事等・消費者庁長官へ提供することが遵守事項として明記された。
+
+これは消費者庁・厚生労働省が自ら掲げた運用方針であり（`attested`）、事業者や消費者が「今後どう
+対応したいか」に答えた意向調査ではない。実際に定期公表がどの頻度・形式で継続されているかは、
+既存の足元の根拠にある2024〜2025年の制度改正以上のことをまだ示していない。
+
+## 足元の根拠（完了した事実）
 
 機能性表示食品は、事業者の責任で安全性・機能性の科学的根拠などを消費者庁長官に届け出て表示する制度であり、特定保健用食品と
 異なり、消費者庁による個別審査を経ない。紅麹関連製品の事案を受け、消費者庁は2024年6月に食品表示基準の改正を諮問し、制度の
@@ -91,6 +107,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月21日、既存sourcesにあった消費者庁・厚生労働省の説明資料（food_labelling_cms_240903_01.pdf）を実読し、厚生労働省の定期公表方針を見出している未来として追記した。定期公表の実施実績はまだ確認できていない
 - 2025年以降の届出データベースで、新規届出・変更・撤回・販売状況更新の件数を同じ定義で確認する
 - 事業者が根拠資料の再検証、健康被害情報の収集、表示変更・撤回をどの程度実装しているかを商品カテゴリ別に整理する
 - 制度見直し前後で、機能性表示食品に対する消費者の認知、表示確認、信頼、購買・継続利用がどう変わったかを独立調査で確認する

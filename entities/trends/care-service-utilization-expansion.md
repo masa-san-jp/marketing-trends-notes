@@ -25,10 +25,10 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2026-02審査分"}
-  - {field: stage, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2025-2026-02"}
-  - {field: time, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html", certainty: independent, retrieved: primary, as_of: "2024年度"}
-  - {field: prediction, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2026-03審査分"}
+  - {field: kind, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2026-02審査分", tense: completed}
+  - {field: stage, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2025-2026-02", tense: completed}
+  - {field: time, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html", certainty: independent, retrieved: primary, as_of: "2024年度", tense: completed}
+  - {field: prediction, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2026-03審査分", tense: completed}
 predictions:
   - {claim: "次回の同統計で介護サービス受給者数が2026年2月審査分の482.86万人を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: miss}
 channel_scope:
@@ -42,12 +42,16 @@ sources:
   - https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf
   - https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html
 status: verified
-updated: 2026-08-12
+updated: 2026-09-21
 ---
 
 # 介護サービス利用の拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+**未確認**: `docs/sources-directory.md` 層0の出典（内閣府「国民生活に関する世論調査」の調査票・集計表一覧、消費者庁「消費者意識基本調査」、Pantone、Getty Images、Google Trends、SNS空気感ログ）を確認したが、介護サービスの利用者・家族が今後の利用について何を意向・期待しているかを直接示す設問・記述は見つからなかった。厚生労働省の関連ページ（介護人材確保の方針）は職員確保の必要数についての記述であり、利用者側の意向データではない。
+
+## 足元の根拠（完了した事実）
 
 介護サービスの利用者数と費用額が増加し、本人・家族・自治体・事業者が、在宅・通所・施設・予防を組み合わせて生活を支える前提が大きくなっている。厚生労働省の2026年2月審査分では、介護サービス受給者数は482.86万人で前年同月比1.9％増、介護予防サービスは101.22万人で5.1％増だった。介護サービス費用額は9,874.71億円で2.8％増となっている。
 
@@ -77,6 +81,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月21日、層0出典（内閣府世論調査、消費者庁調査、Pantone、Getty Images、Google Trends、SNS空気感ログ）を確認したが、介護サービス利用者・家族の今後の利用意向を示す一次資料が見つからず、第一節を`**未確認**:`とした
 - 要介護度、サービス種類、在宅・通所・施設、地域、年齢、自己負担を分解する
 - 受給者数、利用日数、費用、供給事業所、人手不足、家族介護を接続する
 - 2026年3月審査分で予測を答え合わせし、480.09万人（482.86万人未満）のmissを記録した

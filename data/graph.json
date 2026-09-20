@@ -3473,28 +3473,32 @@
           "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-02審査分"
+          "as_of": "2026-02審査分",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-2026-02"
+          "as_of": "2025-2026-02",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024年度"
+          "as_of": "2024年度",
+          "tense": "completed"
         },
         {
           "field": "prediction",
           "source": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-03審査分"
+          "as_of": "2026-03審査分",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -3517,7 +3521,7 @@
         "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-21",
       "path": "entities/trends/care-service-utilization-expansion.md"
     },
     "trend/care-workforce-shortage": {
@@ -3556,26 +3560,43 @@
           "source": "https://www.mhlw.go.jp/content/12004000/001274765.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2040年度"
+          "as_of": "2022-2040年度",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mhlw.go.jp/stf/newpage_02977.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2040年度"
+          "as_of": "2022-2040年度",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mhlw.go.jp/content/12004000/001274765.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2040年度"
+          "as_of": "2022-2040年度",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/stf/newpage_02977.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-07-12",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2026年度の介護職員必要数が第9期推計の約240万人となり、2022年度の約215万人を上回る",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "厚生労働省の次回公表で、「参入促進」「資質の向上」「労働環境・処遇の改善」の3方針に基づく対策（入門的研修、認証評価制度、多様な働き方支援等）の実施が継続して確認される",
           "by": "2027-12",
           "resolved": null,
           "outcome": null
@@ -3592,7 +3613,7 @@
         "https://www.mhlw.go.jp/content/12004000/001274765.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-20",
       "path": "entities/trends/care-workforce-shortage.md"
     },
     "trend/cashless-payment-expansion": {
@@ -4663,28 +4684,32 @@
           "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-04"
+          "as_of": "2022-04",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022年度"
+          "as_of": "2022年度",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2024"
+          "as_of": "2022-2024",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html",
           "certainty": "independent",
           "retrieved": "summary",
-          "as_of": "2026-09-15"
+          "as_of": "2026-09-15",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -4706,7 +4731,7 @@
         "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html"
       ],
       "status": "verified",
-      "updated": "2026-09-15",
+      "updated": "2026-09-21",
       "path": "entities/trends/fertility-treatment-insurance-access.md"
     },
     "trend/food-ecommerce-expansion": {
@@ -5202,21 +5227,40 @@
           "source": "https://www.caa.go.jp/notice/entry/038499/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2024-06-27"
+          "as_of": "2024-06-27",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2024-08-30"
+          "as_of": "2024-08-30",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.caa.go.jp/notice/entry/043728/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-10-01"
+          "as_of": "2025-10-01",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-08-30",
+          "tense": "intended"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "厚生労働省の次回公表で、都道府県知事等に提供された機能性表示食品等の健康被害情報の集約結果と食品衛生法上の措置の要否検討が定期的に継続されている",
+          "by": "2027-06",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -5233,7 +5277,7 @@
         "https://www.caa.go.jp/notice/entry/043728/"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/functional-food-safety-governance.md"
     },
     "trend/gaming-digital-global-expansion": {
@@ -6339,28 +6383,40 @@
           "source": "https://www.mhlw.go.jp/stf/index_0024_00004.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-04-01"
+          "as_of": "2026-04-01",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024年度"
+          "as_of": "2024年度",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024年度-2026-04"
+          "as_of": "2024年度-2026-04",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.mhlw.go.jp/stf/index_0024_00004.html",
           "certainty": "attested",
           "retrieved": "summary",
-          "as_of": "2026-09-15"
+          "as_of": "2026-09-15",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/content/10800000/001233107.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2023-06",
+          "tense": "intended"
         }
       ],
       "predictions": [
@@ -6379,10 +6435,11 @@
       "relations": [],
       "sources": [
         "https://www.mhlw.go.jp/stf/index_0024_00004.html",
-        "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html"
+        "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html",
+        "https://www.mhlw.go.jp/content/10800000/001233107.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-15",
+      "updated": "2026-09-21",
       "path": "entities/trends/online-medical-consultation-adoption.md"
     },
     "trend/online-news-platform-dependence": {
@@ -7577,27 +7634,44 @@
           "source": "https://www.mhlw.go.jp/content/10900000/001603146.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-12-02"
+          "as_of": "2025-12-02",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/index.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2024-09-18"
+          "as_of": "2024-09-18",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mhlw.go.jp/stf/newpage_66279.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-12-02"
+          "as_of": "2025-12-02",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kenkounippon21_00006.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-09-21",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回の国民健康・栄養調査で、睡眠で休養がとれている者の年齢調整値が2024年の78.5%を大きく下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "健康日本21（第三次）の中間評価で、睡眠で休養がとれている者の割合が2035年度目標の80%、適切な睡眠時間を確保できている者の割合が同60%に向けて改善傾向にある",
+          "by": "2030-03",
           "resolved": null,
           "outcome": null
         }
@@ -7616,7 +7690,7 @@
         "https://www.mhlw.go.jp/web/t_doc?dataId=00012990&dataType=0&pageNo=1"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/sleep-rest-health-management.md"
     },
     "trend/specificity-over-relatability-expectation": {
@@ -7733,27 +7807,44 @@
           "source": "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025年度"
+          "as_of": "2025年度",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2025年度"
+          "as_of": "2022-2025年度",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2025年度"
+          "as_of": "2022-2025年度",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mext.go.jp/sports/content/000021299_20220316_1.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2022-03-25",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回のスポーツ庁調査で20歳以上の週1日以上のスポーツ実施率が2025年度の51.7％を下回らない",
           "by": "2028-03",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "第3期スポーツ基本計画の計画期間終了（2026年度）までに、成人の週1回以上のスポーツ実施率が目標の70%程度に向けて2025年度の51.7%を上回る",
+          "by": "2027-06",
           "resolved": null,
           "outcome": null
         }
@@ -7765,10 +7856,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html"
+        "https://www.mext.go.jp/sports/b_menu/houdou/jsa_00234.html",
+        "https://www.mext.go.jp/sports/content/000021299_20220316_1.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/sports-participation-plateau.md"
     },
     "trend/sustainable-fashion-behavior": {
@@ -8489,26 +8581,43 @@
           "source": "https://www.mhlw.go.jp/content/11303000/001681620.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mhlw.go.jp/content/11303000/001681620.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mhlw.go.jp/toukei/list/r06-46-50d.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2015-2024"
+          "as_of": "2015-2024",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/content/11200000/001287207.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2023-06-30",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回同種調査のストレスチェック実施率が2024年の75.4％を下回らず、集団分析実施率が58.0％を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "第14次労働災害防止計画の目標年（2027年）までに、メンタルヘルス対策に取り組む事業場の割合が80%以上、50人未満事業場のストレスチェック実施割合が50%以上に達する",
           "by": "2027-12",
           "resolved": null,
           "outcome": null
@@ -8522,10 +8631,11 @@
       "relations": [],
       "sources": [
         "https://www.mhlw.go.jp/toukei/list/r06-46-50d.html",
-        "https://www.mhlw.go.jp/content/11303000/001681620.pdf"
+        "https://www.mhlw.go.jp/content/11303000/001681620.pdf",
+        "https://www.mhlw.go.jp/content/11200000/001287207.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-21",
       "path": "entities/trends/workplace-stress-check-institutionalization.md"
     }
   },
