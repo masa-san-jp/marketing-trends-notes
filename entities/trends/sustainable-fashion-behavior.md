@@ -25,12 +25,14 @@ freshness:
   valid_as_of: "2026-09-15"
   recheck_by: "2026-10-15"
 evidence:
-  - {field: kind, source: "https://www.env.go.jp/policy/sustainable_fashion/about/", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: stage, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-03"}
-  - {field: time, source: "https://www.env.go.jp/content/000389225.pdf", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: current-status, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-09-15"}
+  - {field: kind, source: "https://www.env.go.jp/policy/sustainable_fashion/about/", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: stage, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-03", tense: completed}
+  - {field: time, source: "https://www.env.go.jp/content/000389225.pdf", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: current-status, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-09-15", tense: completed}
+  - {field: current-status, source: "https://www.env.go.jp/content/000389225.pdf", certainty: attested, retrieved: primary, as_of: "2026-03", tense: intended}
 predictions:
   - {claim: "次回の同テーマ独立調査で、サステナブルファッションの認知・関心層が2025年調査の約6割・約4割を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "環境省の次回フォローアップで、フリマアプリ・リユースショップ等を介したリユース取引量が2020年度比30%拡大という達成イメージに向けた進捗が示される", by: "2028-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -44,12 +46,32 @@ sources:
   - https://www.env.go.jp/content/000389225.pdf
   - https://www.env.go.jp/press/press_03475.html
 status: verified
-updated: 2026-09-15
+updated: 2026-09-20
 ---
 
 # サステナブルファッションへの関心・循環行動
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+政府は、家庭から廃棄される衣類を2030年度までに2020年度比25％削減する目標を掲げ、生活者が
+衣類の回収・リユース・長期使用にどう関わることを見込んでいるかを具体的な行動として示している。
+環境省「サステナブルファッションの推進に向けたアクションプラン」（2026年3月公表、参考資料12）
+は、25％削減（約13万トン）の内訳として、行政回収の拡大で約3.5万トン、民間回収の拡大で約2.5
+万トン、フリマアプリやリユースショップを介したリユース取引量を2020年度比30％拡大させることで
+約3〜7万トン、稼働率向上・寿命延長（リデュース）で約4万トンの効果を見込むとしている。
+
+同アクションプランは、生活者に期待するアクションとして、「お住まいの地域での行政回収・民間
+回収への協力」「使用しない衣類をフリマアプリやリユースショップ、親族・友人等への譲渡により
+有効活用」「必要以上の衣類の購入を控え、シェアリングやレンタル等のサービスを積極的に利用」
+「衣類が壊れた際は自らリペアを行う、またはリペアサービスを活用」「リサイクル繊維等を使用した
+環境配慮製品の価値を認識し、購入時に選択（エシカル消費）」を挙げている。
+
+これは環境省が自ら掲げた2030年度目標であり（`attested`）、生活者自身が「今後どこまで行動を
+変えたいか」に答えた意向調査ではない。既存の足元の根拠にある令和7年度調査の関心層（約4割）や
+リユース・リペアの実施意向（複数項目で6〜8割）と重なる部分はあるが、目標達成に必要な行動変容
+の規模（リユース取引量30％拡大等）は、現在の生活者の意向水準を上回ることを前提にしている。
+
+## 足元の根拠（完了した事実）
 
 衣類を買う・使う・手放すときに、必要量、長期使用、回収、リユース、リペアを考慮する生活者の関心と意向が、
 環境省の2025年調査でまとまった形で観測されている。
@@ -97,6 +119,7 @@ updated: 2026-09-15
 
 ## 未着手
 
+- 2026年9月20日、環境省「サステナブルファッションの推進に向けたアクションプラン」（000389225.pdf、2026年3月公表）を実読し、2030年度25％削減目標の内訳と生活者に期待するアクションを見出している未来として追記した。目標に対する年次進捗の公式な中間報告はまだ確認できていない
 - 2026年9月15日に環境省のページを再確認したが、令和7年度調査（認知層約6割・関心層約4割）が引き続き最新で、令和8年度の同テーマ独立調査はまだ公開されていない。2026年3月のアクションプランにも進捗報告スケジュールの追記はなかった
 - 調査の標本・設問・「実施」と「今後取り組みたい」の分解を原票で確認する
 - 令和2年度以降の同種調査・マテリアルフローを並べ、関心と実績の経年変化をそろえる
