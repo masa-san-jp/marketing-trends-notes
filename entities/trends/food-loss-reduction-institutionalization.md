@@ -25,10 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/", certainty: attested, retrieved: primary, as_of: "2019-10-01"}
-  - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf", certainty: attested, retrieved: primary, as_of: "2025-03-25"}
-  - {field: time, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/", certainty: attested, retrieved: primary, as_of: "2019-10-01"}
-predictions: []
+  - {field: kind, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/", certainty: attested, retrieved: primary, as_of: "2019-10-01", tense: completed}
+  - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf", certainty: attested, retrieved: primary, as_of: "2025-03-25", tense: completed}
+  - {field: time, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/", certainty: attested, retrieved: primary, as_of: "2019-10-01", tense: completed}
+  - {field: current-status, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf", certainty: attested, retrieved: primary, as_of: "2025-03-25", tense: intended}
+predictions:
+  - {claim: "農林水産省・環境省の次回推計で、事業系食品ロス量が2030年度目標（219万トン）に向けた減少経路にあり、令和6年度実績（237万トン）を上回らない", by: "2027-06", resolved: null, outcome: null}
+  - {claim: "消費者庁の次回調査で、食品ロス問題を認知して削減に取り組む消費者の割合が2030年度目標（80%）に向けて上昇を続ける", by: "2028-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -42,12 +45,25 @@ sources:
   - https://www.env.go.jp/press/press_00002.html
   - https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/index.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-20
 ---
 
 # 食品ロス削減対応の制度化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+政府は、食品ロスを2030年度までに大きく削減する数値目標を掲げている。消費者庁の第2次基本
+方針は、家庭系食品ロスを2000年度比で2030年度までに半減（216万トン）、事業系食品ロスを
+60％削減（219万トン）する目標を置き、あわせて食品ロス問題を認知して削減に取り組む消費者の
+割合を80％とする目標も設定している。既存の足元の根拠（下記）にある令和5年度推計（食品ロス
+計約464万トン）、令和6年度の事業系食品ロス（237万トン、前年度より6万トン増）と比べると、
+目標達成までにはまだ距離がある。
+
+これは政府が自ら掲げた削減目標であり、事業者や消費者自身が「今後どこまで削減したいか」と
+回答した意向調査ではない。事業系食品ロスが前年度より増加したことは、目標に向けた進捗が
+一様ではないことを示している。
+
+## 足元の根拠（完了した事実）
 
 食品ロスの削減が、個別の啓発キャンペーンだけでなく、法律、政府目標、事業者向けガイドライン、自治体・消費者との連携を
 通じて継続的に対応する領域になっている。
@@ -88,6 +104,7 @@ commoditizedとは判定しない。
 
 ## 未着手
 
+- 2026年9月20日、既存evidenceの一次資料（消費者庁の第2次基本方針）から2030年度目標を見出している未来として整理した。目標に対する年次進捗の公式な中間報告はまだ確認できていない
 - 家庭系・事業系の推計方法と年度をそろえ、2030年目標に対する進捗を時系列で確認する
 - 小売・外食・食品製造別に、売れ残り・食べ残し・寄附・再生利用・値引き販売の実装率を整理する
 - 食品寄附・食べ残し持ち帰り・フードシェアリングの利用率と安全・品質管理上の条件を確認する

@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-09-15"
   recheck_by: "2026-10-15"
 evidence:
-  - {field: kind, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
-  - {field: stage, source: "https://www.maff.go.jp/j/shokusan/sosyutu/", certainty: attested, retrieved: primary, as_of: "2026-06-24"}
-  - {field: time, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2020-10"}
-  - {field: current-status, source: "https://www.nttdata-strategy.com/newsrelease/news/251001/", certainty: vendor, retrieved: summary, as_of: "2025-10-01"}
-predictions: []
+  - {field: kind, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: stage, source: "https://www.maff.go.jp/j/shokusan/sosyutu/", certainty: attested, retrieved: primary, as_of: "2026-06-24", tense: completed}
+  - {field: time, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2020-10", tense: completed}
+  - {field: current-status, source: "https://www.nttdata-strategy.com/newsrelease/news/251001/", certainty: vendor, retrieved: summary, as_of: "2025-10-01", tense: completed}
+  - {field: current-status, source: "https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html", certainty: independent, retrieved: primary, as_of: "2020-12", tense: intended}
+predictions:
+  - {claim: "農林水産省または同等の独立調査が代替肉の食用意向を再計測した場合、「積極的に食べたい」「少しは食べたい」の合計が令和2年度調査の55.6%を大きく下回らない", by: "2029-12", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -44,12 +46,26 @@ sources:
   - https://www.maff.go.jp/j/shokusan/sosyutu/backnumber.html
   - https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html
 status: verified
-updated: 2026-09-15
+updated: 2026-09-20
 ---
 
 # フードテックによる新たなたんぱく質源の事業化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+生活者の過半数は、2050年頃に普及・活用が期待されるフードテック食材を「食べたい」という
+意向を既に持っている。農林水産省は、令和32（2050）年の市場規模を算出する資料を得る目的で
+令和2（2020）年12月にアンケート調査を実施した（令和2年度食育白書）。「令和32年頃に普及・
+活用が期待されるフードテック食材について食べたいと思うか」という設問に対し、「植物性の
+タンパク質から作られた大豆ミートなどの代替肉」は「積極的に食べたいと思う」または「少しは
+食べたいと思う」と回答した人が55.6％で半数以上を占めた。また、「長期間食材・食品の
+美味しさを変化させずに保存できる特殊冷凍技術」については64.0％が活用したいと回答している。
+
+これは2020年時点の1回限りの意向調査であり、その後の技術進展・商品化・価格・味の変化を
+反映した最新の受容性を示すものではない。約30年先を見据えた意向という点で、既存の足元の
+根拠にある事業化・安全性検討の進捗（下記）とは時間軸が大きく異なる。
+
+## 足元の根拠（完了した事実）
 
 食品技術を、研究室の技術開発だけでなく、新たなたんぱく質源の生産・加工・販売、食料安全保障、環境負荷、消費者理解をつなぐ事業化の課題として
 扱う枠組みが整ってきた。農林水産省のフードテック官民協議会は2020年10月に設立され、植物性食品、細胞性食品・精密発酵、発酵菌食品などを含む
@@ -89,6 +105,7 @@ updated: 2026-09-15
 
 ## 未着手
 
+- 2026年9月20日、令和2年度食育白書のフードテック意向調査を実読し、見出している未来として本文に昇格させた。2020年調査から更新された同種の消費者意向調査は今回も見つけられていない
 - 2026年9月15日に再確認。フードテック官民協議会の総会・参加人数（約1,900人）に更新なし。令和8年度「フードテックビジネス実証事業」の公募開始と、令和7年度「フードテックビジネスコンテスト」（代替たんぱく質活用等がテーマ）の実施を確認したが、事業化支援の継続を示すのみで、代替たんぱく質・細胞性食品の具体的な上市事例や新規消費者調査は確認できなかった
 - 植物性食品、細胞性食品、精密発酵、発酵菌食品を分け、研究・実証・上市・継続販売の段階を確認する
 - 食品安全、アレルゲン、原材料・製造工程、表示、環境負荷、価格、味覚の評価を製品間で同じ定義にそろえる

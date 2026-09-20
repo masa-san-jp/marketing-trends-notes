@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2024"}
-  - {field: stage, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2023-2024"}
-  - {field: time, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2023-2024"}
+  - {field: kind, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
+  - {field: stage, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2023-2024", tense: completed}
+  - {field: time, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2023-2024", tense: completed}
+  - {field: current-status, source: "https://prtimes.jp/main/html/rd/p/000004474.000001594.html", certainty: vendor, retrieved: primary, as_of: "2023-08", tense: intended}
 predictions:
   - {claim: "2025年の食品・飲料・酒類BtoC-EC市場規模が2024年の3兆1,163億円を下回らない", by: "2026-12", resolved: null, outcome: null}
+  - {claim: "LINEリサーチの次回同種調査で、ネットスーパーの「今後の利用意向」がある女性の割合が2023年調査の56%を大きく下回らない", by: "2028-08", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -38,13 +40,27 @@ channels: []
 relations: []
 sources:
   - https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf
+  - https://prtimes.jp/main/html/rd/p/000004474.000001594.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-20
 ---
 
 # 食品・飲料・酒類ECの拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+女性生活者の過半数が、ネットスーパーを今後利用したいという意向を持っている。LINEリサーチ
+（LINE株式会社）が実施した「今と近未来の流行予想調査（第二十六弾・ネットスーパー編）」
+（2023年8月22日発表、調査時期2023年7月18日〜20日、18〜59歳の女性1,045人対象）では、
+ネットスーパーの認知率は女性全体で9割超、「今後の利用意向」（「ぜひ利用してみたいと思う」
+または「機会があれば利用してみたいと思う」の合計）は56％で、前回調査から4.7ポイント増加
+した。年代別でも10〜20代、30〜50代ともに増加傾向が見られている。
+
+これはLINEという同サービスを含む生活プラットフォームを運営する企業自身の調査であり
+（`vendor`）、独立した第三者調査ではない。認知率が9割を超える一方で利用意向は5割台に
+とどまることから、認知から利用意向への転換にはまだ差がある。
+
+## 足元の根拠（完了した事実）
 
 食品、飲料、酒類の消費者向け電子商取引の市場規模が拡大している。
 経済産業省の令和6年度電子商取引市場調査では、2024年の同分野のBtoC-EC市場規模は3兆1,163億円で、2023年の2兆9,299億円から前年比6.36％増となった。EC化率は4.52％で、2023年の4.29％から上昇している。
@@ -73,6 +89,7 @@ ECモール、食品宅配、メーカー直販、オンラインスーパーな
 
 ## 未着手
 
+- 2026年9月20日、LINEリサーチのプレスリリース（2023年8月）を実読して見出している未来を追記した。より新しい同種調査は今回探せておらず、2023年時点のデータであることに留意する
 - 2025年公表値で予測を答え合わせする
 - 食品、飲料、酒類を分けた市場規模とEC化率を確認する
 - 食品ECの利用者属性、購買頻度、配送・店舗受取などの行動変化を独立調査で補う

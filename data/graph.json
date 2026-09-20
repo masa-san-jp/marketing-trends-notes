@@ -4727,27 +4727,44 @@
           "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-2024"
+          "as_of": "2023-2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-2024"
+          "as_of": "2023-2024",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://prtimes.jp/main/html/rd/p/000004474.000001594.html",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2023-08",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2025年の食品・飲料・酒類BtoC-EC市場規模が2024年の3兆1,163億円を下回らない",
           "by": "2026-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "LINEリサーチの次回同種調査で、ネットスーパーの「今後の利用意向」がある女性の割合が2023年調査の56%を大きく下回らない",
+          "by": "2028-08",
           "resolved": null,
           "outcome": null
         }
@@ -4759,10 +4776,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+        "https://prtimes.jp/main/html/rd/p/000004474.000001594.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-20",
       "path": "entities/trends/food-ecommerce-expansion.md"
     },
     "trend/food-loss-reduction-institutionalization": {
@@ -4801,24 +4819,48 @@
           "source": "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2019-10-01"
+          "as_of": "2019-10-01",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-03-25"
+          "as_of": "2025-03-25",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2019-10-01"
+          "as_of": "2019-10-01",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2025-03-25",
+          "tense": "intended"
         }
       ],
-      "predictions": [],
+      "predictions": [
+        {
+          "claim": "農林水産省・環境省の次回推計で、事業系食品ロス量が2030年度目標（219万トン）に向けた減少経路にあり、令和6年度実績（237万トン）を上回らない",
+          "by": "2027-06",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "消費者庁の次回調査で、食品ロス問題を認知して削減に取り組む消費者の割合が2030年度目標（80%）に向けて上昇を続ける",
+          "by": "2028-03",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
       "channel_scope": {
         "status": "not-applicable",
         "note": "特定の広告・SNSチャネルから広がる変化ではなく、法律、基本方針、行政ガイドライン、食品事業者・自治体の連携を通じて伝わるため、 `channels` は張らない。**未確認**: 小売、外食、食品製造、家庭それぞれで、どの販売・提供接点が削減行動を変えたか。"
@@ -4832,7 +4874,7 @@
         "https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/index.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-20",
       "path": "entities/trends/food-loss-reduction-institutionalization.md"
     },
     "trend/foodservice-demand-recovery": {
@@ -4871,28 +4913,40 @@
           "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2024"
+          "as_of": "2022-2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20250722_1.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2024"
+          "as_of": "2022-2024",
+          "tense": "completed"
         },
         {
           "field": "prediction",
           "source": "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20260527_1.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.fuji-keizai.co.jp/press/detail.html?cid=25077&la=ja&la=ja",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2025",
+          "tense": "intended"
         }
       ],
       "predictions": [
@@ -4901,6 +4955,12 @@
           "by": "2027-12",
           "resolved": "2026-08-12",
           "outcome": "miss"
+        },
+        {
+          "claim": "富士経済の予測どおり、2026年の外食産業国内市場規模が2019年実績（26兆2,687億円）を上回る",
+          "by": "2027-06",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -4914,7 +4974,7 @@
         "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20260527_1.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-20",
       "path": "entities/trends/foodservice-demand-recovery.md"
     },
     "trend/foodtech-alternative-protein": {
@@ -4953,31 +5013,50 @@
           "source": "https://food-tech.maff.go.jp/about/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-11"
+          "as_of": "2026-08-11",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.maff.go.jp/j/shokusan/sosyutu/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-06-24"
+          "as_of": "2026-06-24",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://food-tech.maff.go.jp/about/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2020-10"
+          "as_of": "2020-10",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.nttdata-strategy.com/newsrelease/news/251001/",
           "certainty": "vendor",
           "retrieved": "summary",
-          "as_of": "2025-10-01"
+          "as_of": "2025-10-01",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2020-12",
+          "tense": "intended"
         }
       ],
-      "predictions": [],
+      "predictions": [
+        {
+          "claim": "農林水産省または同等の独立調査が代替肉の食用意向を再計測した場合、「積極的に食べたい」「少しは食べたい」の合計が令和2年度調査の55.6%を大きく下回らない",
+          "by": "2029-12",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
       "channel_scope": {
         "status": "not-applicable",
         "note": "特定の広告やSNSから広がる変化ではなく、官民協議会の作業部会、研究開発、事業化支援、食品メーカー・スタートアップとの実証、学校・料理人・ 消費者への説明を通じて伝わる。どの技術がどの食品カテゴリ・価格帯・販売接点で定着するかは未確認のため、`channels` は張らない。"
@@ -4992,7 +5071,7 @@
         "https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html"
       ],
       "status": "verified",
-      "updated": "2026-09-15",
+      "updated": "2026-09-20",
       "path": "entities/trends/foodtech-alternative-protein.md"
     },
     "trend/foreign-worker-employment-expansion": {
