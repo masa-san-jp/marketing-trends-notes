@@ -3801,24 +3801,42 @@
           "source": "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-11"
+          "as_of": "2026-08-11",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/001_04_00.pdf",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-12-08"
+          "as_of": "2025-12-08",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2020-08"
+          "as_of": "2020-08",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf",
+          "certainty": "vendor",
+          "retrieved": "primary",
+          "as_of": "2026-01-26",
+          "tense": "intended"
         }
       ],
-      "predictions": [],
+      "predictions": [
+        {
+          "claim": "化粧品産業競争力強化検討会の次回会合資料で、J-Beauty構想がASEAN・EUを起点とする海外市場拡大方針として具体的な実行計画（拠点設置、認証制度等）に進む",
+          "by": "2027-06",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
       "channel_scope": {
         "status": "not-applicable",
         "note": "特定の消費者向け広告から広がる変化ではなく、産業ビジョン、企業ヒアリング、輸出支援、OEM/ODM・原料供給、現地の小売・EC・代理店、 各国の規制対応を通じて伝わる。国ごとの販売接点やインバウンドと越境ECの寄与は資料上で分離できていないため、`channels` は張らない。"
@@ -3832,7 +3850,7 @@
         "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-20",
       "path": "entities/trends/cosmetics-overseas-expansion.md"
     },
     "trend/creator-ad-disclosure": {
@@ -7789,34 +7807,52 @@
           "source": "https://www.env.go.jp/policy/sustainable_fashion/about/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.env.go.jp/policy/sustainable_fashion/resources/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-03"
+          "as_of": "2026-03",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.env.go.jp/content/000389225.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.env.go.jp/policy/sustainable_fashion/resources/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-09-15"
+          "as_of": "2026-09-15",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.env.go.jp/content/000389225.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-03",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回の同テーマ独立調査で、サステナブルファッションの認知・関心層が2025年調査の約6割・約4割を大きく下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "環境省の次回フォローアップで、フリマアプリ・リユースショップ等を介したリユース取引量が2020年度比30%拡大という達成イメージに向けた進捗が示される",
+          "by": "2028-03",
           "resolved": null,
           "outcome": null
         }
@@ -7834,7 +7870,7 @@
         "https://www.env.go.jp/press/press_03475.html"
       ],
       "status": "verified",
-      "updated": "2026-09-15",
+      "updated": "2026-09-20",
       "path": "entities/trends/sustainable-fashion-behavior.md"
     },
     "trend/telework-stabilization": {

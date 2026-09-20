@@ -25,10 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
-  - {field: stage, source: "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/001_04_00.pdf", certainty: attested, retrieved: primary, as_of: "2025-12-08"}
-  - {field: time, source: "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html", certainty: attested, retrieved: primary, as_of: "2020-08"}
-predictions: []
+  - {field: kind, source: "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: stage, source: "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/001_04_00.pdf", certainty: attested, retrieved: primary, as_of: "2025-12-08", tense: completed}
+  - {field: time, source: "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html", certainty: attested, retrieved: primary, as_of: "2020-08", tense: completed}
+  - {field: current-status, source: "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf", certainty: vendor, retrieved: primary, as_of: "2026-01-26", tense: intended}
+predictions:
+  - {claim: "化粧品産業競争力強化検討会の次回会合資料で、J-Beauty構想がASEAN・EUを起点とする海外市場拡大方針として具体的な実行計画（拠点設置、認証制度等）に進む", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -42,12 +44,27 @@ sources:
   - https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/001_04_00.pdf
   - https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf
 status: verified
-updated: 2026-08-11
+updated: 2026-09-20
 ---
 
 # 日本化粧品の海外展開・高付加価値化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+化粧品産業の一部は、日本の化粧品・美容関連産業を「生活文化の輸出産業化」として再構築し、
+海外市場、とりわけASEANとEU（欧州連合）を起点に拡大する構想を持っている。経済産業省の
+化粧品産業競争力強化検討会に2026年1月26日付で提出された資料（羽田未来総合研究所代表取締役
+社長執行役員による「J-Beauty」提案）は、「J-Beautyの海外市場拡大は、まずASEANおよびEU
+（欧州連合）を起点として開始することが望ましい」とし、その理由として日本文化への関心の高さ、
+フランス・イタリアなど富裕層コミュニティの存在、EU経由での中東展開の可能性を挙げている。
+同資料は、現地パートナーの確保、各国の薬事法・成分表示規制への対応、認証・商標・輸出
+オペレーション基盤の整備を「海外進出に必要な事項」として提示している。
+
+これは検討会に提出された1企業（羽田未来総合研究所）の提案資料であり（`vendor`）、経済産業省
+または業界全体が採択した方針ではない。検討会でこの提案がどこまで採用されたか、他の委員・
+企業がどう反応したかは今回確認できていない。
+
+## 足元の根拠（完了した事実）
 
 日本の化粧品産業で、国内販売だけでなく、海外市場、OEM/ODM、原料製造、現地規制対応、日本文化の発信を組み合わせて競争力を考える
 政策・産業活動が継続している。経済産業省は2020年の化粧品産業ビジョン以降、産業の持続的発展、OEM/ODM・原料製造の市場動向と海外展開、
@@ -84,6 +101,7 @@ OEM/ODM、原料、ブランドを競争力の政策課題としてまとめる�
 
 ## 未着手
 
+- 2026年9月20日、既存sourcesにあった羽田未来総合研究所「J-Beauty」提案資料（002_04_00.pdf）を実読し、見出している未来として本文に昇格させた。1企業の提案であり、検討会でどこまで採択されたかの続報はまだ確認できていない
 - 化粧品、OEM/ODM、原料、物流・小売を分け、海外展開の目的、売上、取引先、規制対応費用を整理する
 - 中国、北米、欧州、韓国、東南アジアなど市場別に、輸出・現地生産・越境EC・代理店の経路を確認する
 - 海外向け表示・成分規制・認証・ハラル・環境要求が商品設計、発売期間、返品・回収に与える影響を同じ定義で追う
