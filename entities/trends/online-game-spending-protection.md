@@ -25,10 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_022", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
-  - {field: stage, source: "https://www.kportal.caa.go.jp/teaching-material/001514/", certainty: attested, retrieved: primary, as_of: "2025"}
-  - {field: time, source: "https://www.caa.go.jp/notice/entry/029257/", certainty: independent, retrieved: primary, as_of: "2022-06-29"}
-predictions: []
+  - {field: kind, source: "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_022", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: stage, source: "https://www.kportal.caa.go.jp/teaching-material/001514/", certainty: attested, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: time, source: "https://www.caa.go.jp/notice/entry/029257/", certainty: independent, retrieved: primary, as_of: "2022-06-29", tense: completed}
+  - {field: current-status, source: "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_022", certainty: attested, retrieved: primary, as_of: "2026-09-21", tense: intended}
+predictions:
+  - {claim: "消費者庁の次回更新で、オンラインゲーム課金トラブルの注意喚起ページに関係省庁・機関、ゲーム関連業界団体の取組の追加・更新が確認される", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -43,12 +45,24 @@ sources:
   - https://www.kportal.caa.go.jp/teaching-material/001514/
   - https://www.kportal.caa.go.jp/teaching-material/000509/
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # オンラインゲーム課金・未成年者保護の運用強化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+消費者庁は、オンラインゲームの課金トラブルに関する注意喚起ページを今後も随時更新し、関係省庁・
+機関やゲーム関連業界団体の自主的な普及啓発の取組を含めて幅広く情報提供を続けるとしている。
+同庁のページは「消費者被害の予防・啓発の一環として、このページを随時更新し、ゲーム関連業界団体
+において自主的に推進している普及啓発の取組等を含め、幅広く情報提供を行うこととしています」と
+している。
+
+これは消費者庁が自ら掲げた運用方針であり（`attested`）、利用者や保護者が「今後どう対応したいか」
+に答えた意向調査ではない。実際にページ更新や業界団体の取組がどの頻度・内容で継続しているかは、
+既存の足元の根拠にある2022〜2025年の資料以上のことをまだ示していない。
+
+## 足元の根拠（完了した事実）
 
 オンラインゲームの課金が、利用者個人の注意だけでなく、事業者の表示・年齢確認・決済・保護者向け説明・相談対応、学校や家庭の消費者教育を
 組み合わせて扱う継続課題になっている。消費者庁は2022年にオンラインゲームに関する消費生活相談対応マニュアルを公表し、相談の増加傾向、
@@ -84,6 +98,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月21日、既存sourcesにあった消費者庁の注意喚起ページ（caution_022）を再読し、随時更新・幅広い情報提供の方針を見出している未来として追記した
 - オンラインゲーム相談の年齢、契約者、課金額、決済手段、ゲーム内表示、解決状況を同じ定義で時系列化する
 - ゲーム事業者・プラットフォーム別に、年齢確認、保護者承認、支出上限、返金・相談窓口、課金表示の実装状況を確認する
 - ダークパターンやゲーム内通貨の表示が、課金理解・支出・継続利用・相談行動に与える影響を独立調査で確認する

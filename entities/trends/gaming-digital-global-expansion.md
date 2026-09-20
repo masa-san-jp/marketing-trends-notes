@@ -25,9 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.cesa.or.jp/action/industry-research/2024/", certainty: independent, retrieved: primary, as_of: "2024-12-20"}
-  - {field: time, source: "https://www.cesa.or.jp/action/industry-research/2024/", certainty: independent, retrieved: primary, as_of: "2024-12-20"}
-  - {field: stage, source: "https://www.cesa.or.jp/uploads/2025/release_game_industry_report2025.pdf", certainty: independent, retrieved: primary, as_of: "2025-12-15"}
+  - {field: kind, source: "https://www.cesa.or.jp/action/industry-research/2024/", certainty: independent, retrieved: primary, as_of: "2024-12-20", tense: completed}
+  - {field: time, source: "https://www.cesa.or.jp/action/industry-research/2024/", certainty: independent, retrieved: primary, as_of: "2024-12-20", tense: completed}
+  - {field: stage, source: "https://www.cesa.or.jp/uploads/2025/release_game_industry_report2025.pdf", certainty: independent, retrieved: primary, as_of: "2025-12-15", tense: completed}
+  - {field: current-status, source: "https://www.cesa.or.jp/uploads/2025/release_game_industry_report2025.pdf", certainty: vendor, retrieved: primary, as_of: "2025-12-15", tense: intended}
+predictions:
+  - {claim: "CESAの次回ゲーム産業レポートで、Switch2の発売を受けて2025年の国内家庭用ゲーム人口が2024年の2,951万人を上回る", by: "2026-12", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -41,12 +44,23 @@ sources:
   - https://www.cesa.or.jp/action/industry-research/2025/
   - https://www.cesa.or.jp/uploads/2025/release_game_industry_report2025.pdf
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # ゲーム市場のデジタル・グローバル化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+CESAは、Switch2の発売により国内の家庭用ゲーム利用者数が再び増加することを見込んでいる。
+『CESA ゲーム産業レポート2025』（2025年12月15日発刊のプレスリリース）は、2024年の家庭用
+ゲーム人口が2,951万人で前年比0.7％減とほぼ横ばいだったことを述べたうえで、「2025年はSwitch2の
+発売により、再びユーザー数の増大が期待されます」としている。
+
+これはゲーム産業の業界団体であるCESAの見立てであり（`vendor`）、生活者自身が「今後どれだけ
+ゲームをしたいか」に答えた意向調査ではない。既存の足元の根拠にある2024年の国内ゲーム人口の
+微減傾向（5,475万人）に対し、この見立てが実際にどの程度反転させるかはこの記録では確認できない。
+
+## 足元の根拠（完了した事実）
 
 CESAのゲーム産業レポート2025では、2024年のグローバルなゲームコンテンツ市場を31兆42億円、前年比5.0％増としている。プラットフォーム別では、
 モバイルゲームが18兆4,334億円で前年比6.0％増、全体の6割近くを占める。PCゲームは過去4年間で59.7％増と各プラットフォームで最も拡大し、
@@ -88,6 +102,7 @@ PCゲーム人口は1,452万人で0.5％増、家庭用ゲーム人口は2,951�
 
 ## 未着手
 
+- 2026年9月21日、既存sourcesにあったCESA『ゲーム産業レポート2025』のプレスリリース（release_game_industry_report2025.pdf）を実読し、Switch2発売によるユーザー数増大への期待を見出している未来として追記した
 - デジタル販売、パッケージ販売、基本無料・買い切り・継続課金などを同じ定義で分けた国内市場時系列を確認する
 - モバイル、PC、家庭用、配信・動画経由の新規獲得・継続率・課金率を比較できる独立データを探す
 - 日本発タイトルの地域別売上、ローカライズ、コミュニティ運用、広告・インフルエンサー施策の寄与を事例ごとに分解する
