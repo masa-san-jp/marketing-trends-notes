@@ -25,10 +25,10 @@ freshness:
   valid_as_of: "2026-09-15"
   recheck_by: "2026-10-15"
 evidence:
-  - {field: kind, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html", certainty: independent, retrieved: primary, as_of: "2022-04"}
-  - {field: stage, source: "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html", certainty: independent, retrieved: primary, as_of: "2022年度"}
-  - {field: time, source: "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html", certainty: independent, retrieved: primary, as_of: "2022-2024"}
-  - {field: current-status, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html", certainty: independent, retrieved: summary, as_of: "2026-09-15"}
+  - {field: kind, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html", certainty: independent, retrieved: primary, as_of: "2022-04", tense: completed}
+  - {field: stage, source: "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html", certainty: independent, retrieved: primary, as_of: "2022年度", tense: completed}
+  - {field: time, source: "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html", certainty: independent, retrieved: primary, as_of: "2022-2024", tense: completed}
+  - {field: current-status, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html", certainty: independent, retrieved: summary, as_of: "2026-09-15", tense: completed}
 predictions:
   - {claim: "次回公表される保険適用不妊治療の実患者数が2022年度の約37万人を下回らない", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
@@ -41,12 +41,16 @@ sources:
   - https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html
   - https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html
 status: verified
-updated: 2026-09-15
+updated: 2026-09-21
 ---
 
 # 不妊治療の保険アクセス拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+**未確認**: `docs/sources-directory.md` 層0の出典（内閣府「国民生活に関する世論調査」、消費者庁「消費者意識基本調査」、Pantone、Getty Images、Google Trends、SNS空気感ログ）と、厚生労働省の不妊治療関連ページを再確認したが、患者・夫婦が不妊治療の保険アクセスについて今後何を期待・希望しているかを直接示す一次資料は見つからなかった。同ページの記述は2022年の制度開始経緯の説明が中心で、先進医療の追加検討は継続審議中としか書かれておらず、対象者の意向を示すものではない。
+
+## 足元の根拠（完了した事実）
 
 人工授精などの一般不妊治療、体外受精・顕微授精などの生殖補助医療について、基本的な診療が保険適用となり、治療費、相談、医療機関の情報提供、仕事との両立を一体で考える必要が高まった。厚生労働省の説明では、2022年度の保険適用不妊治療は医療費約895億円、レセプト約125万件、実患者数約37万人だった。
 
@@ -74,6 +78,7 @@ updated: 2026-09-15
 
 ## 未着手
 
+- 2026年9月21日、層0出典と厚生労働省の不妊治療関連ページを確認したが、患者・夫婦の今後の意向を示す一次資料が見つからず、第一節を`**未確認**:`とした
 - 2026年9月15日に厚生労働省の説明ページとWebSearchを再確認したが、2022年度を更新する2023・2024年度の同一定義の実患者数・レセプト件数は見つからなかった。中央社会保険医療協議会の関連資料PDFは本文抽出ができず、内容未確認のまま残っている
 - 保険・先進医療・自由診療、年齢、地域、治療段階別に費用と件数を分ける
 - 実患者数、治療継続、出生、仕事との両立、相談支援を同じ定義で追う

@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.mhlw.go.jp/content/10900000/001603146.pdf", certainty: independent, retrieved: primary, as_of: "2025-12-02"}
-  - {field: stage, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/index.html", certainty: attested, retrieved: primary, as_of: "2024-09-18"}
-  - {field: time, source: "https://www.mhlw.go.jp/stf/newpage_66279.html", certainty: independent, retrieved: primary, as_of: "2025-12-02"}
+  - {field: kind, source: "https://www.mhlw.go.jp/content/10900000/001603146.pdf", certainty: independent, retrieved: primary, as_of: "2025-12-02", tense: completed}
+  - {field: stage, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/index.html", certainty: attested, retrieved: primary, as_of: "2024-09-18", tense: completed}
+  - {field: time, source: "https://www.mhlw.go.jp/stf/newpage_66279.html", certainty: independent, retrieved: primary, as_of: "2025-12-02", tense: completed}
+  - {field: current-status, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kenkounippon21_00006.html", certainty: attested, retrieved: primary, as_of: "2026-09-21", tense: intended}
 predictions:
   - {claim: "次回の国民健康・栄養調査で、睡眠で休養がとれている者の年齢調整値が2024年の78.5%を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "健康日本21（第三次）の中間評価で、睡眠で休養がとれている者の割合が2035年度目標の80%、適切な睡眠時間を確保できている者の割合が同60%に向けて改善傾向にある", by: "2030-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -44,19 +46,31 @@ sources:
   - https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kenkounippon21_00006.html
   - https://www.mhlw.go.jp/web/t_doc?dataId=00012990&dataType=0&pageNo=1
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # 睡眠・休養の健康管理ニーズの可視化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+厚生労働省は、国民の睡眠による休養感と睡眠時間を2035年度までに引き上げる数値目標を掲げている。
+健康日本21（第三次）は2024年度から2035年度までを計画期間とし、「睡眠で休養がとれている者の
+割合」を80％、「適切な睡眠時間を確保できている者の割合」を60％とする目標を置いている。既存の
+足元の根拠にある令和6年国民健康・栄養調査の実績（睡眠で休養がとれている者79.6％・年齢調整値
+78.5％、適切な睡眠時間を確保できている者56.0％・年齢調整値56.9％）と比べると、後者の睡眠時間の
+指標では目標との距離がまだ大きい。
+
+これは厚生労働省が自ら掲げた2035年度目標であり（`attested`）、生活者自身が「今後どれだけ睡眠を
+改善したいか」に答えた意向調査ではない。目標の達成に向けた中間評価の時期や方法はこの記録からは
+確認できていない。
+
+## 足元の根拠（完了した事実）
 
 睡眠や休養が、個人の生活習慣の助言だけでなく、健康づくりの指標、職域・自治体の支援、生活改善の対象として測定されるようになっている。
 厚生労働省の令和6年国民健康・栄養調査では、20歳以上で「睡眠で休養がとれている」者は79.6％（年齢調整値78.5％）だった。20～59歳では73.0％で、
 1日の平均睡眠時間が基準範囲にある者は56.0％（年齢調整値56.9％）だった。
 
-健康日本21（第三次）は2024年度から2035年度までを計画期間とし、睡眠で休養がとれている者の割合80％、適切な睡眠時間を確保できている者の割合60％を
-目標に置いている。厚生労働省は「健康づくりのための睡眠ガイド2023」や支援ツールも公開している。ただし、調査で睡眠不足・休養不足が確認されたことと、
+厚生労働省は「健康づくりのための睡眠ガイド2023」や支援ツールも公開している。ただし、調査で睡眠不足・休養不足が確認されたことと、
 睡眠関連商品・アプリ・サービスの購入が増えたこと、個々の介入で健康状態が改善したことは別の事実として扱う。
 
 ## kind と stage の判定
@@ -86,6 +100,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月21日、既存sourcesにあった健康日本21（第三次）のページを再確認し、2035年度目標（80%・60%）を見出している未来として本文に昇格させた。中間評価のスケジュールはまだ確認できていない
 - 2024年調査の年齢・就業・地域別に、休養感、睡眠時間、日中の眠気、就寝・起床時刻を確認する
 - 健康診断、職域、自治体、医療、アプリ・ウェアラブルの支援接点ごとに、利用率・継続率・改善指標を同じ定義で整理する
 - 睡眠支援の利用と、受診、服薬、労働時間、事故、学習、生活満足度との因果関係を確認する

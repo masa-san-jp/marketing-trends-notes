@@ -25,10 +25,11 @@ freshness:
   valid_as_of: "2026-09-15"
   recheck_by: "2026-10-15"
 evidence:
-  - {field: kind, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: primary, as_of: "2026-04-01"}
-  - {field: stage, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度"}
-  - {field: time, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度-2026-04"}
-  - {field: current-status, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: summary, as_of: "2026-09-15"}
+  - {field: kind, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: primary, as_of: "2026-04-01", tense: completed}
+  - {field: stage, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度", tense: completed}
+  - {field: time, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度-2026-04", tense: completed}
+  - {field: current-status, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: summary, as_of: "2026-09-15", tense: completed}
+  - {field: current-status, source: "https://www.mhlw.go.jp/content/10800000/001233107.pdf", certainty: attested, retrieved: primary, as_of: "2023-06", tense: intended}
 predictions:
   - {claim: "次回の厚生労働省調査または同等の公的調査で、患者のオンライン診療経験率と医療機関の実施割合が再計測される", by: "2028-12", resolved: null, outcome: null}
 channel_scope:
@@ -40,13 +41,27 @@ relations: []
 sources:
   - https://www.mhlw.go.jp/stf/index_0024_00004.html
   - https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html
+  - https://www.mhlw.go.jp/content/10800000/001233107.pdf
 status: verified
-updated: 2026-09-15
+updated: 2026-09-21
 ---
 
 # オンライン診療の制度対応と利用拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+厚生労働省は、オンライン診療その他の遠隔医療が幅広く適正に推進されることを目指している。
+同省「オンライン診療その他の遠隔医療の推進に向けた基本方針」（2023年6月策定）は、新型コロナ
+対応等で徐々に活用が進んだものの「必ずしも幅広く普及が進んでいるとは言えない状況」を課題として
+挙げ、国・都道府県・市町村を中心とする関係者の望ましい取組みの方向性を提示することで、遠隔医療の
+導入のための環境整備を進め、「オンライン診療その他の遠隔医療の適正かつ幅広い普及に資すること」を
+目的として策定されたとしている。
+
+これは厚生労働省が自ら掲げた方針であり（`attested`）、患者や医療機関が「今後どこまで利用したいか」に
+答えた意向調査ではない。既存の足元の根拠にある2024年度の患者経験率3.5%という低い水準と、この
+方針が目指す「幅広い普及」との間にはまだ大きな距離がある。
+
+## 足元の根拠（完了した事実）
 
 オンライン診療は、限定的な利用にとどまりながら、制度と提供体制の整備が続く段階にある。厚生労働省の検討会資料では、2024年度の調査でオンライン診療を受けた経験がある患者は3.5％だった。医療機関側では、外来診療の1割超をオンラインで行う施設が18.6％、5割超の施設が5.4％で、いずれも2年前より増えたと説明されている。
 
@@ -77,6 +92,7 @@ updated: 2026-09-15
 
 ## 未着手
 
+- 2026年9月21日、厚生労働省「オンライン診療その他の遠隔医療の推進に向けた基本方針」（2023年6月）を実読し、「幅広い普及」を目指す方針を見出している未来として追記した
 - 2026年9月15日に再確認。制度運用（2026年4月施行の医療法規定・指針、令和8年3月版の自治体導入事例集）は継続中だが、2024年度調査（患者経験率3.5%等）を更新する新しい一次数値は見つからなかった。社会保障審議会医療部会の関連PDF（001642125.pdf）に新しい実施状況データがある可能性があるが、この環境ではPDF内容を確認できなかった
 - 診療科、疾患、年齢、地域、医療機関規模ごとの利用差を確認する
 - オンライン診療の継続率、対面への切替、患者負担、医療安全の指標を同じ定義で追う
