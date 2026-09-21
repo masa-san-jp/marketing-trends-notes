@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.meti.go.jp/files/000001765.xlsx", certainty: independent, retrieved: primary, as_of: "2010-2025"}
-  - {field: stage, source: "https://www.meti.go.jp/files/000001765.xlsx", certainty: independent, retrieved: primary, as_of: "2010-2025"}
-  - {field: time, source: "https://www.meti.go.jp/files/000001765.xlsx", certainty: independent, retrieved: primary, as_of: "2010-2025"}
+  - {field: kind, source: "https://www.meti.go.jp/files/000001765.xlsx", certainty: independent, retrieved: primary, as_of: "2010-2025", tense: completed}
+  - {field: stage, source: "https://www.meti.go.jp/files/000001765.xlsx", certainty: independent, retrieved: primary, as_of: "2010-2025", tense: completed}
+  - {field: time, source: "https://www.meti.go.jp/files/000001765.xlsx", certainty: independent, retrieved: primary, as_of: "2010-2025", tense: completed}
+  - {field: current-status, source: "https://www.meti.go.jp/press/2025/03/20260331006/20260331006.html", certainty: attested, retrieved: primary, as_of: "2026-03-31", tense: intended}
 predictions:
   - {claim: "経済産業省の次回年次公表で、国内指標のキャッシュレス決済比率が2025年の58.0％を下回らない", by: "2027-03", resolved: null, outcome: null}
+  - {claim: "経済産業省の中間目標年である2030年に、国内指標のキャッシュレス決済比率が65%に向けて2025年の58.0%を上回り続ける", by: "2031-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -43,12 +45,25 @@ sources:
   - https://www.meti.go.jp/files/000001765.xlsx
   - https://www.meti.go.jp/policy/mono_info_service/cashless/index.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # 国内キャッシュレス決済の拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+経済産業省は、キャッシュレス決済比率を将来的に80％（国内指標）へ、2030年までに中間目標として
+65％へ引き上げることを目指している。同省の発表（2026年3月31日公表、2026年6月18日更新）は、
+「将来的な目標（キャッシュレス決済比率80%）」と「2030年までに65%にするという中間目標」の
+達成に向け、関係省庁と連携しつつキャッシュレス決済の推進に取り組んでいるとしている。2025年
+までに4割程度とする従来の政府目標は既に達成し、2025年12月のキャッシュレス推進検討会とりまとめで
+新たな目標（2030年65%、将来的に80%）が示された。
+
+これは経済産業省が自ら掲げた目標であり（`attested`）、生活者や事業者自身が「今後どこまで
+キャッシュレス決済を使いたいか」に答えた意向調査ではない。既存の足元の根拠にある2025年実績
+58.0％は、2030年目標65%に向けて上昇を続けている段階にある。
+
+## 足元の根拠（完了した事実）
 
 現金を使わずに支払う決済が、国内の消費支出に占める比率を継続的に高めている。経済産業省の2025年公表の
 公式Excelにある「国内指標」では、キャッシュレス決済比率は2010年の16.6％から、2020年37.3％、2022年44.0％、
@@ -91,6 +106,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月21日、既存sourcesにあった経済産業省の発表（20260331006.html）を実読し、2030年65%・将来的に80%という目標を見出している未来として追記した
 - キャッシュレス決済件数と利用者頻度を、金額比率とは別の独立指標で確認する
 - 業種・店舗規模・地域・オンライン／実店舗別の差を確認する
 - 国内指標と国際比較指標の定義差を、2025年以降の公表資料で継続確認する
