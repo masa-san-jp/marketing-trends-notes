@@ -3652,27 +3652,44 @@
           "source": "https://www.meti.go.jp/files/000001765.xlsx",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2010-2025"
+          "as_of": "2010-2025",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.meti.go.jp/files/000001765.xlsx",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2010-2025"
+          "as_of": "2010-2025",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.meti.go.jp/files/000001765.xlsx",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2010-2025"
+          "as_of": "2010-2025",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.meti.go.jp/press/2025/03/20260331006/20260331006.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-03-31",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "経済産業省の次回年次公表で、国内指標のキャッシュレス決済比率が2025年の58.0％を下回らない",
           "by": "2027-03",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "経済産業省の中間目標年である2030年に、国内指標のキャッシュレス決済比率が65%に向けて2025年の58.0%を上回り続ける",
+          "by": "2031-03",
           "resolved": null,
           "outcome": null
         }
@@ -3689,7 +3706,7 @@
         "https://www.meti.go.jp/policy/mono_info_service/cashless/index.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/cashless-payment-expansion.md"
     },
     "trend/cloud-service-adoption": {
@@ -4176,27 +4193,44 @@
           "source": "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024-06"
+          "as_of": "2024-06",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024-06-2024-08"
+          "as_of": "2024-06-2024-08",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2020-2024"
+          "as_of": "2020-2024",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.fsa.go.jp/common/diet/221/02/03.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-04",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回の金融庁または業界横断の公的資料で、国内暗号資産口座数が2024年6月の約1,040万口座を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "次回の同種調査で、国内機関投資家のうち暗号資産を分散投資の機会と捉え投資意欲が高いとする割合が、2026年4月の金融庁説明資料が示す水準を下回らない",
+          "by": "2028-03",
           "resolved": null,
           "outcome": null
         }
@@ -4208,10 +4242,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html"
+        "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html",
+        "https://www.fsa.go.jp/common/diet/221/02/03.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/crypto-asset-user-expansion.md"
     },
     "trend/digital-disengagement-intention": {
@@ -4343,35 +4378,48 @@
           "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024-08"
+          "as_of": "2024-08",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mhlw.go.jp/content/11200000/001478565.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-03-31"
+          "as_of": "2025-03-31",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024-2026"
+          "as_of": "2024-2026",
+          "tense": "completed"
         },
         {
           "field": "prediction",
           "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-07-01"
+          "as_of": "2026-07-01",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-09-15"
+          "as_of": "2026-09-15",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/content/11200000/001690304.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-03",
+          "tense": "intended"
         }
       ],
       "predictions": [
@@ -4380,6 +4428,12 @@
           "by": "2027-12",
           "resolved": "2026-08-12",
           "outcome": "miss"
+        },
+        {
+          "claim": "厚生労働省の次回同種調査で、労働者の賃金デジタル払い「今後利用したい」割合が令和7年度調査の13.8%を大きく下回らない",
+          "by": "2028-03",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -4391,10 +4445,11 @@
       "sources": [
         "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/newpage_55437.html",
         "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html",
-        "https://www.mhlw.go.jp/content/11200000/001478565.pdf"
+        "https://www.mhlw.go.jp/content/11200000/001478565.pdf",
+        "https://www.mhlw.go.jp/content/11200000/001690304.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-15",
+      "updated": "2026-09-21",
       "path": "entities/trends/digital-salary-payment.md"
     },
     "trend/digital-textbook-practical-adoption": {
@@ -6171,21 +6226,40 @@
           "source": "https://www.fsa.go.jp/news/r6/20250627/01.pdf",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-06-27"
+          "as_of": "2025-06-27",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.fsa.go.jp/news/r7/ginkou/20260630.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-06-30"
+          "as_of": "2026-06-30",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-04-16"
+          "as_of": "2026-04-16",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-04-16",
+          "tense": "intended"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "金融庁の次回公表で、インターネットバンキング犯罪・SNS型投資詐欺の被害発生件数・被害額が金融機関の対策強化を受けて2026年3月末時点の水準を上回り続けることはない",
+          "by": "2027-06",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -6202,7 +6276,7 @@
         "https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/260213/03.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/online-financial-crime-governance.md"
     },
     "trend/online-game-spending-protection": {

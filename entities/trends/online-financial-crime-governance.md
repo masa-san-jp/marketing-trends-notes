@@ -25,9 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.fsa.go.jp/news/r6/20250627/01.pdf", certainty: attested, retrieved: primary, as_of: "2025-06-27"}
-  - {field: time, source: "https://www.fsa.go.jp/news/r7/ginkou/20260630.html", certainty: independent, retrieved: primary, as_of: "2026-06-30"}
-  - {field: stage, source: "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html", certainty: attested, retrieved: primary, as_of: "2026-04-16"}
+  - {field: kind, source: "https://www.fsa.go.jp/news/r6/20250627/01.pdf", certainty: attested, retrieved: primary, as_of: "2025-06-27", tense: completed}
+  - {field: time, source: "https://www.fsa.go.jp/news/r7/ginkou/20260630.html", certainty: independent, retrieved: primary, as_of: "2026-06-30", tense: completed}
+  - {field: stage, source: "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html", certainty: attested, retrieved: primary, as_of: "2026-04-16", tense: completed}
+  - {field: current-status, source: "https://www.fsa.go.jp/news/r7/sonota/20260416/20260416.html", certainty: attested, retrieved: primary, as_of: "2026-04-16", tense: intended}
+predictions:
+  - {claim: "金融庁の次回公表で、インターネットバンキング犯罪・SNS型投資詐欺の被害発生件数・被害額が金融機関の対策強化を受けて2026年3月末時点の水準を上回り続けることはない", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -43,12 +46,26 @@ sources:
   - https://www.fsa.go.jp/status/higaijyoukyou/index.html
   - https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/260213/03.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # オンライン金融犯罪対策の高度化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+金融庁は、金融機関に対しインターネットバンキング対策の強化や不正検知時の顧客確認・出金停止等の
+迅速化を継続的に求めており、あわせて顧客となる国民にも理解・協力を求めている。同庁の2026年4月
+16日付発表は、「金融庁は金融機関に対し、預貯金口座の不正利用等防止の観点から、インターネット
+バンキングに係る対策の強化や、不正等のおそれを検知した取引に係る顧客への確認、出金停止・凍結・
+解約の措置の迅速化など、様々な対策を求めています」としたうえで、「対策を実施し、その効果を
+一層高めるためには...顧客側の理解・協力も必要」だとして、警察庁・業界団体と連携した広報動画を
+制作したと説明している。
+
+これは金融庁が金融機関・国民の双方に求めている対応であり（`attested`）、金融機関や顧客自身が
+「今後どう対応したいか」に答えた意向調査ではない。既存の足元の根拠にある被害の増加傾向に対し、
+この要請と広報活動がどの程度効果を上げているかはこの記録では確認できていない。
+
+## 足元の根拠（完了した事実）
 
 フィッシング、不正送金、SNS型投資・ロマンス詐欺の増加を受け、オンライン金融犯罪への対応が、個別の注意喚起だけでなく、金融機関の
 認証、なりすましサイト・メール対策、異常取引の検知、取引限度額、顧客への確認、口座の停止・凍結・解約、金融機関間の情報共有までを
@@ -93,6 +110,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月21日、既存sourcesにあった金融庁の2026年4月16日付発表を再読し、金融機関・国民双方への要請を見出している未来として追記した
 - 金融機関ごとの多要素認証・パスキー、DMARC等のなりすまし対策、異常取引検知、取引限度額、口座停止・凍結、金融機関間の情報共有の実装率を確認する
 - 金融庁の資料にある不正送金件数・被害額を、報告期間と定義をそろえた時系列として整理する
 - 顧客確認による被害抑止と、ログイン・決済の摩擦、誤検知、補償・回復のバランスを確認する
