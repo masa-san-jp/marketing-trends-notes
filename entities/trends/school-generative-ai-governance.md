@@ -25,9 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.mext.go.jp/a_menu/other/mext_02412.html?s=03", certainty: attested, retrieved: primary, as_of: "2024-12-26"}
-  - {field: time, source: "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf", certainty: attested, retrieved: primary, as_of: "2024-12-26"}
-  - {field: stage, source: "https://www.mext.go.jp/zyoukatsu/ai/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
+  - {field: kind, source: "https://www.mext.go.jp/a_menu/other/mext_02412.html?s=03", certainty: attested, retrieved: primary, as_of: "2024-12-26", tense: completed}
+  - {field: time, source: "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf", certainty: attested, retrieved: primary, as_of: "2024-12-26", tense: completed}
+  - {field: stage, source: "https://www.mext.go.jp/zyoukatsu/ai/", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: current-status, source: "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf", certainty: attested, retrieved: primary, as_of: "2024-12-26", tense: intended}
+predictions:
+  - {claim: "文部科学省が、技術の進展や学校現場の取組状況を踏まえてガイドラインVer.2.0の次回改訂を公表する", by: "2028-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -42,12 +45,23 @@ sources:
   - https://www.mext.go.jp/a_menu/other/mext_02412.html?s=03
   - https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # 学校教育における生成AI利用の制度化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+文部科学省は、技術の進展や学校現場の取組状況を踏まえ、ガイドラインを今後も必要に応じて改訂して
+いくことを想定している。「初等中等教育段階における生成AIの利活用に関するガイドライン（Ver.2.0）」
+（2024年12月26日改訂）は、「今後の技術の進展や学校現場での取組等の状況を踏まえ、必要に応じて
+改訂を行うことを想定している」としている。ガイドラインのウェブページも、パイロット校をはじめとした
+実証事業の成果や実践事例、関連リンク等について「随時情報を更新していきます」としている。
+
+これは文部科学省が自ら示した方針であり（`attested`）、教職員や児童生徒自身が「今後どう生成AIを
+使いたいか」に答えた意向調査ではない。次回改訂の時期や内容はこの記録では確認できていない。
+
+## 足元の根拠（完了した事実）
 
 文部科学省は2023年7月に初等中等教育段階の生成AI利用に関する暫定的なガイドラインを公表し、2024年12月26日にVer.2.0へ改訂した。
 Ver.2.0は、生成AIを一律に禁止・義務付けるものではなく、人間中心の利活用と情報活用能力の育成強化を基本に、教職員の校務利用、
@@ -90,6 +104,7 @@ commoditizedとは判定しない。
 
 ## 未着手
 
+- 2026年9月21日、既存sourcesにあったガイドラインVer.2.0本体を実読し、「必要に応じて改訂を行うことを想定している」という方針を見出している未来として追記した
 - 2024年度以降の生成AIパイロット校と教育分野特化の実証事業を、自治体・校種・用途別に整理する
 - 学校・教育委員会の生成AI利用方針、教員研修、児童生徒の学習利用、保護者説明の実装率を同じ定義で確認する
 - 学習成果、教員負担、情報モラル、個人情報・著作権に関するインシデントを、導入前後で比較できる独立評価を探す

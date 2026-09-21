@@ -25,10 +25,12 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf", certainty: attested, retrieved: primary, as_of: "2024-04-17"}
-  - {field: stage, source: "https://www.mext.go.jp/content/20251020-mxt_syoto02-000045471_14.pdf", certainty: attested, retrieved: primary, as_of: "2025-10-20"}
-  - {field: time, source: "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
-predictions: []
+  - {field: kind, source: "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf", certainty: attested, retrieved: primary, as_of: "2024-04-17", tense: completed}
+  - {field: stage, source: "https://www.mext.go.jp/content/20251020-mxt_syoto02-000045471_14.pdf", certainty: attested, retrieved: primary, as_of: "2025-10-20", tense: completed}
+  - {field: time, source: "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: current-status, source: "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf", certainty: attested, retrieved: primary, as_of: "2024-04-17", tense: intended}
+predictions:
+  - {claim: "文部科学省の次回公表で、GIGA第2期の令和6年度〜令和10年度の整備事業計画に基づく端末整備・更新が都道府県・市町村で計画どおり進捗している", by: "2029-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -42,12 +44,26 @@ sources:
   - https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_00080.html
   - https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_02734.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # GIGAスクール端末・学習基盤の更新運用
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+文部科学省は、都道府県・市町村が令和6年度から令和10年度（GIGA第2期）にかけて、予備機を含む
+1人1台端末の計画的な更新を完了することを見込んでいる。同省の調達等ガイドライン（2024年4月17日）
+は、「国策であるGIGAスクール構想の第2期を見据え、予備機を含む1人1台端末の計画的な更新を行う」
+という令和5年11月閣議決定の方針を踏まえ、都道府県・市町村に令和6年度から令和10年度までの
+各年度における端末整備・更新予定台数を記載した整備事業計画の策定を求めている。共同調達に
+あたっては、「1人1台端末をはじめとするICT環境によって実現を目指す学びの姿」を各調達設置者が
+計画に記載したうえで、それを踏まえた端末の在り方を検討することが期待されるとしている。
+
+これは文部科学省が示した多年度の整備計画・期待であり（`attested`）、教員や児童生徒自身が
+「今後どう端末を使いたいか」に答えた意向調査ではない。令和10年度（2028年度）までの整備完了に
+向けて、都道府県・市町村ごとの進捗はこの記録では確認できていない。
+
+## 足元の根拠（完了した事実）
 
 GIGAスクール構想の第1期で整備された1人1台端末、高速ネットワーク、クラウドを使う学習環境が、初期導入の段階から計画的な更新と持続運用の段階へ移っている。文部科学省は第2期に向けて、端末の整備・更新計画、ネットワーク計画、学校DX計画、1人1台端末の利活用計画、更新・再利用・廃棄の取組を一体で整理するよう求めている。
 
@@ -79,6 +95,7 @@ GIGAスクール構想の第1期で整備された1人1台端末、高速ネッ�
 
 ## 未着手
 
+- 2026年9月21日、既存sourcesにあった文部科学省の調達等ガイドライン（20240417-mxt_jogai02-000033777_5.pdf）を実読し、令和10年度までの整備事業計画を見出している未来として追記した
 - 自治体・学校別の端末更新計画、更新完了、予備機、修理・返却・再利用・リサイクルの実装状況を整理する
 - 学校ネットワークの実測帯域、同時接続時の遅延・停止、校内無線、クラウド接続、デジタル教科書・MEXCBTの利用状況を同じ定義で確認する
 - 端末・MDM・アカウント・クラウドサービスの更新、データ移行、情報セキュリティ、ICT支援員・教員の運用負荷を追跡する

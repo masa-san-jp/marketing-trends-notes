@@ -4488,28 +4488,40 @@
           "source": "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025年度"
+          "as_of": "2025年度",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf",
           "certainty": "independent",
           "retrieved": "summary",
-          "as_of": "2024年度"
+          "as_of": "2024年度",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2019-2025年度"
+          "as_of": "2019-2025年度",
+          "tense": "completed"
         },
         {
           "field": "prediction",
           "source": "https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025年度"
+          "as_of": "2025年度",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mext.go.jp/b_menu/activity/detail/2026/20260407.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-04-07",
+          "tense": "intended"
         }
       ],
       "predictions": [
@@ -4518,6 +4530,12 @@
           "by": "2027-12",
           "resolved": "2026-08-12",
           "outcome": "hit"
+        },
+        {
+          "claim": "「学校教育法等の一部を改正する法律案」が国会で成立し、デジタルな形態を含む教科書が紙の教科書と同様に検定・採択・無償給与の対象となる",
+          "by": "2027-06",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -4529,10 +4547,11 @@
       "sources": [
         "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html",
         "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf",
-        "https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf"
+        "https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf",
+        "https://www.mext.go.jp/b_menu/activity/detail/2026/20260407.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-21",
       "path": "entities/trends/digital-textbook-practical-adoption.md"
     },
     "trend/domestic-travel-consumption-expansion": {
@@ -5633,24 +5652,42 @@
           "source": "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2024-04-17"
+          "as_of": "2024-04-17",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mext.go.jp/content/20251020-mxt_syoto02-000045471_14.pdf",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-10-20"
+          "as_of": "2025-10-20",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_01736.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-11"
+          "as_of": "2026-08-11",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-04-17",
+          "tense": "intended"
         }
       ],
-      "predictions": [],
+      "predictions": [
+        {
+          "claim": "文部科学省の次回公表で、GIGA第2期の令和6年度〜令和10年度の整備事業計画に基づく端末整備・更新が都道府県・市町村で計画どおり進捗している",
+          "by": "2029-03",
+          "resolved": null,
+          "outcome": null
+        }
+      ],
       "channel_scope": {
         "status": "not-applicable",
         "note": "文部科学省の補助・仕様・計画、自治体の調達と更新計画、学校のICT支援、端末管理・校内ネットワーク・クラウド学習サービスの運用を通じて伝わる。学校現場では教員研修、故障・問い合わせ対応、児童生徒のアカウント更新、授業でのデジタル教材利用が接点になるが、どの接点が更新判断や利用継続を左右するかは未確認のため、`channels` は張らない。"
@@ -5665,7 +5702,7 @@
         "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_02734.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/giga-learning-platform-renewal.md"
     },
     "trend/green-oriented-consumption": {
@@ -7043,33 +7080,51 @@
           "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-2027年度"
+          "as_of": "2026-2027年度",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2024"
+          "as_of": "2022-2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2027年度"
+          "as_of": "2022-2027年度",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-09-02"
+          "as_of": "2026-09-02",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/content/11801500/001728125.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-07-31",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "文部科学省のリカレント教育・リスキリング関連の支援事業が次年度も複数の目的別施策として掲載される",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "厚生労働省の次回能力開発基本調査で、労働者の主体的なキャリア形成に向けて「自己啓発に対する支援」を今後実施したいとする企業の割合が令和7年度調査の30.3%を大きく下回らない",
           "by": "2027-12",
           "resolved": null,
           "outcome": null
@@ -7083,10 +7138,11 @@
       "relations": [],
       "sources": [
         "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm",
-        "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html"
+        "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html",
+        "https://www.mhlw.go.jp/content/11801500/001728125.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-15",
+      "updated": "2026-09-21",
       "path": "entities/trends/recurrent-education-institutionalization.md"
     },
     "trend/redelivery-reduction": {
@@ -7309,21 +7365,40 @@
           "source": "https://www.mext.go.jp/a_menu/other/mext_02412.html?s=03",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2024-12-26"
+          "as_of": "2024-12-26",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2024-12-26"
+          "as_of": "2024-12-26",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mext.go.jp/zyoukatsu/ai/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-11"
+          "as_of": "2026-08-11",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-12-26",
+          "tense": "intended"
+        }
+      ],
+      "predictions": [
+        {
+          "claim": "文部科学省が、技術の進展や学校現場の取組状況を踏まえてガイドラインVer.2.0の次回改訂を公表する",
+          "by": "2028-03",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -7339,7 +7414,7 @@
         "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/school-generative-ai-governance.md"
     },
     "trend/senior-employment-expansion": {
