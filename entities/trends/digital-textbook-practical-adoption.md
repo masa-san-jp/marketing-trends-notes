@@ -25,12 +25,14 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html", certainty: attested, retrieved: primary, as_of: "2025年度"}
-  - {field: stage, source: "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf", certainty: independent, retrieved: summary, as_of: "2024年度"}
-  - {field: time, source: "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html", certainty: attested, retrieved: primary, as_of: "2019-2025年度"}
-  - {field: prediction, source: "https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf", certainty: independent, retrieved: primary, as_of: "2025年度"}
+  - {field: kind, source: "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html", certainty: attested, retrieved: primary, as_of: "2025年度", tense: completed}
+  - {field: stage, source: "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf", certainty: independent, retrieved: summary, as_of: "2024年度", tense: completed}
+  - {field: time, source: "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html", certainty: attested, retrieved: primary, as_of: "2019-2025年度", tense: completed}
+  - {field: prediction, source: "https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf", certainty: independent, retrieved: primary, as_of: "2025年度", tense: completed}
+  - {field: current-status, source: "https://www.mext.go.jp/b_menu/activity/detail/2026/20260407.html", certainty: attested, retrieved: primary, as_of: "2026-04-07", tense: intended}
 predictions:
   - {claim: "次回の文部科学省調査で、教師の学習者用デジタル教科書の使用頻度が2024年度の水準を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: hit}
+  - {claim: "「学校教育法等の一部を改正する法律案」が国会で成立し、デジタルな形態を含む教科書が紙の教科書と同様に検定・採択・無償給与の対象となる", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -41,13 +43,30 @@ sources:
   - https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html
   - https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf
   - https://www.mext.go.jp/content/20260518-mxt-kyokasyo-000049761_1.pdf
+  - https://www.mext.go.jp/b_menu/activity/detail/2026/20260407.html
 status: verified
-updated: 2026-08-12
+updated: 2026-09-21
 ---
 
 # デジタル教科書の実用化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+文部科学省は、デジタルな形態を含む教科書を紙の教科書と同様に「教科書」として位置づけ、使用義務・
+検定・採択・無償給与の対象とすることを目指している。同省は2026年4月7日、「学校教育法等の一部を
+改正する法律案」が閣議決定されたと発表し、現行のデジタル教科書（教科書代替教材）が紙の教科書の
+内容をそのまま表示するにとどまっている状況を変え、動画や音声などデジタルの良さを取り入れることを
+可能にするとしている。松本大臣は閣議後の会見で、「教科書にデジタルの良さを取り入れて…学習効果を
+高めたり…質の保証も図ることができる」と期待を示し、「紙・デジタルそれぞれの良さを生かした
+教科書作りができるようにしたい」と述べた。あわせて、指針検討会議を初等中等教育局長の下に設置し、
+秋ごろまでの取りまとめを目指すとしている。
+
+これは文部科学省・大臣が自ら示した期待と法案であり（`attested`）、教師や児童生徒自身が「今後
+デジタル教科書をどう使いたいか」に答えた意向調査ではない。法律案は国会でこれから審議される段階で
+あり、既存の足元の根拠にある教師の使用頻度上昇（28.4%）とは別に、制度上の位置づけ自体はまだ
+決まっていない。
+
+## 足元の根拠（完了した事実）
 
 学習者用デジタル教科書は、試行的な実証から学校で日常的に使う実用段階へ移っている。文部科学省は2019年4月から段階導入を進め、2024年度から小学校5年生から中学校3年生までの英語について、全ての小中学校等を対象に提供を開始した。2025年度も英語等一部教科を広く提供し、普及促進の実証を続けている。
 
@@ -75,6 +94,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月21日、文部科学省の2026年4月7日発表（学校教育法等改正法律案の閣議決定）を実読し、大臣の期待表明と法案の内容を見出している未来として追記した。国会審議の進捗はまだ確認できていない
 - 教科、学年、学校規模、自治体、端末環境ごとの活用頻度を比較する
 - 紙との併用比率、教員研修、授業準備時間、学習成果を同じ定義で追う
 - 2025年度の実証報告で予測を答え合わせし、28.4％（2024年度22.7％以上）のhitを記録した
