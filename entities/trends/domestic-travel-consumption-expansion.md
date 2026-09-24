@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.mlit.go.jp/kankocho/news02_00074.html", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: stage, source: "https://www.mlit.go.jp/kankocho/content/001981888.pdf", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: time, source: "https://www.mlit.go.jp/kankocho/content/001981888.pdf", certainty: independent, retrieved: primary, as_of: "2016-2025"}
+  - {field: kind, source: "https://www.mlit.go.jp/kankocho/news02_00074.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: stage, source: "https://www.mlit.go.jp/kankocho/content/001981888.pdf", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: time, source: "https://www.mlit.go.jp/kankocho/content/001981888.pdf", certainty: independent, retrieved: primary, as_of: "2016-2025", tense: completed}
+  - {field: current-status, source: "https://www.mlit.go.jp/kankocho/news02_00077.html", certainty: attested, retrieved: primary, as_of: "2026-03-27", tense: intended}
 predictions:
   - {claim: "2026年の日本人国内旅行消費額が2025年の26兆7,746億円を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "第5次観光立国推進基本計画の計画期間（2026〜2030年度）で、休暇の分散・旅行需要の平準化等の施策により地方部における延べ宿泊者数が拡大方向で推移する", by: "2030-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -39,13 +41,27 @@ relations: []
 sources:
   - https://www.mlit.go.jp/kankocho/news02_00074.html
   - https://www.mlit.go.jp/kankocho/content/001981888.pdf
+  - https://www.mlit.go.jp/kankocho/news02_00077.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # 国内旅行消費の拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+国は、休暇の分散や旅行需要の平準化を通じて、国内交流（国内旅行）をさらに拡大させることを2026年度
+からの5年間の政策方針としている。2026年3月27日に閣議決定された「観光立国推進基本計画」（第5次、
+計画期間2026〜2030年度）は、施策の柱の一つとして「国内交流・アウトバウンド拡大（休暇の分散・
+旅行需要の平準化などによる国内交流拡大...等）」を掲げ、地方誘客をより一層進めるため、地方部への
+訪問意欲の高いリピーターや地方部における延べ宿泊者数に関する目標を新たに定めるとしている。
+
+これは国土交通省・観光庁が示した政策方針であり（`attested`）、旅行者自身が「今後どこまで国内旅行を
+したいか」に答えた意向調査ではない。既存の足元の根拠にある2025年の消費額26兆7,746億円は、旧計画
+（観光ビジョン）の2030年目標22兆円を既に上回っており、新計画の具体的な数値目標（地方部延べ宿泊者数等）
+はこの記録ではまだ確認できていない。
+
+## 足元の根拠（完了した事実）
 
 日本人の国内旅行に使われる金額が、2022年以降の回復局面を経て拡大している。
 観光庁の2025年年間速報では、日本人の国内旅行消費額は26兆7,746億円で前年比6.4％増、延べ旅行者数は5億5,366万人で前年比2.5％増、旅行単価は48,359円で前年比3.8％増だった。消費額と旅行単価は暦年で過去最高とされている。
@@ -74,6 +90,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月21日、観光庁「観光立国推進基本計画」（第5次、2026年3月27日閣議決定）の報道発表を実読し、国内交流拡大の政策方針を見出している未来として追記した。地方部延べ宿泊者数等の具体的な数値目標はまだ確認できていない
 - 旅行目的、地域、宿泊・日帰り、交通・宿泊・飲食・買物の内訳を時系列で分解する
 - 価格上昇と旅行回数・旅行者数の寄与を分けて確認する
 - 2026年の年間速報で予測を答え合わせする

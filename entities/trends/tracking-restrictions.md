@@ -25,21 +25,23 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2027-02-10"
 evidence:
-  - {field: kind, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/", certainty: attested, retrieved: primary, as_of: "2026-08-10"}
-  - {field: kind, source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj", certainty: attested, retrieved: primary, as_of: "2018-05-25"}
-  - {field: kind, source: "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/", certainty: attested, retrieved: primary, as_of: "2023-12"}
-  - {field: kind, source: "https://webkit.org/tracking-prevention/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
-  - {field: kind, source: "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", certainty: attested, retrieved: primary, as_of: "2025-04-22"}
-  - {field: time, source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj", certainty: attested, retrieved: primary, as_of: "2018-05-25"}
-  - {field: stage, source: "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/", certainty: attested, retrieved: primary, as_of: "2023-12"}
-  - {field: stage, source: "https://webkit.org/tracking-prevention/", certainty: attested, retrieved: primary, as_of: "2026-08-11"}
-  - {field: stage, source: "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", certainty: attested, retrieved: primary, as_of: "2025-04-22"}
-  - {field: stage, source: "https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf", certainty: independent, retrieved: primary, as_of: "2023-04"}
-  - {field: stage, source: "https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf", certainty: independent, retrieved: primary, as_of: "2024-08-14"}
-  - {field: stage, source: "https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/", certainty: vendor, retrieved: primary, as_of: "2024-Q1"}
-  - {field: stage, source: "https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html", certainty: vendor, retrieved: primary, as_of: "2024-Q1"}
+  - {field: kind, source: "https://developer.apple.com/app-store/user-privacy-and-data-use/", certainty: attested, retrieved: primary, as_of: "2026-08-10", tense: completed}
+  - {field: kind, source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj", certainty: attested, retrieved: primary, as_of: "2018-05-25", tense: completed}
+  - {field: kind, source: "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/", certainty: attested, retrieved: primary, as_of: "2023-12", tense: completed}
+  - {field: kind, source: "https://webkit.org/tracking-prevention/", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: kind, source: "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", certainty: attested, retrieved: primary, as_of: "2025-04-22", tense: completed}
+  - {field: time, source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj", certainty: attested, retrieved: primary, as_of: "2018-05-25", tense: completed}
+  - {field: stage, source: "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/", certainty: attested, retrieved: primary, as_of: "2023-12", tense: completed}
+  - {field: stage, source: "https://webkit.org/tracking-prevention/", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: stage, source: "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", certainty: attested, retrieved: primary, as_of: "2025-04-22", tense: completed}
+  - {field: stage, source: "https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf", certainty: independent, retrieved: primary, as_of: "2023-04", tense: completed}
+  - {field: stage, source: "https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf", certainty: independent, retrieved: primary, as_of: "2024-08-14", tense: completed}
+  - {field: stage, source: "https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/", certainty: vendor, retrieved: primary, as_of: "2024-Q1", tense: completed}
+  - {field: stage, source: "https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html", certainty: vendor, retrieved: primary, as_of: "2024-Q1", tense: completed}
+  - {field: current-status, source: "https://www.ppc.go.jp/files/pdf/01-1_seidokaiseihousin.pdf", certainty: attested, retrieved: primary, as_of: "2026-01-09", tense: intended}
 predictions:
   - {claim: "2027年末までに、日本の主要広告主の間で計測の主軸がユーザー単位のトラッキングからMMM・インクリメンタリティ計測側へ寄る（業界団体・独立調査でその旨が確認できる）", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "個人情報保護委員会の2026年1月9日付制度改正方針に基づく法律案が国会に提出され、特定の個人に対する働きかけが可能な個人関連情報の不適正利用・不正取得の禁止規定が法制化される", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -58,13 +60,28 @@ sources:
   - https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf
   - https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/
   - https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html
+  - https://www.ppc.go.jp/files/pdf/01-1_seidokaiseihousin.pdf
 status: draft
-updated: 2026-08-25
+updated: 2026-09-22
 ---
 
 # 広告トラッキング制約の常態化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+日本の個人情報保護委員会は、特定の個人に対する働きかけ（ターゲティング広告等）が可能となる
+個人関連情報（Cookie・端末識別子等）について、不適正利用・不正取得の禁止を法制化する方針を
+示している。同委員会「個人情報保護法 いわゆる3年ごと見直しの制度改正方針」（2026年1月9日公表）
+は、「特定の個人に対する働きかけが可能となる個人関連情報等について、不適正利用及び不正取得を
+禁止する」としたほか、16歳未満の者が本人である場合は法定代理人（保護者）を同意取得・通知等の
+対象とすることを明文化し、未成年者の個人情報等の取扱いについて本人の最善の利益を優先する責務
+規定を設けるとしている。
+
+これは個人情報保護委員会が自ら示した制度改正方針であり（`attested`）、広告主・生活者本人が
+「今後どこまでトラッキングを許容したいか」に答えた意向調査ではない。この方針に基づく法律案の
+国会審議の進捗、成立・公布・施行の状況はこの記録では確認できていない。
+
+## 足元の根拠（完了した事実）
 
 ユーザー・端末を横断して行動を追跡し、精密なターゲティングと効果測定を行う——2010年代のデジタル
 広告の前提だったこの手法が、規制とプラットフォームの制度変更で段階的に制約され、**制約がある状態が
@@ -155,6 +172,7 @@ ATT（2021）でモバイルアプリ側に波及した。以降も第三者提�
 
 ## 未着手
 
+- 2026年9月22日、個人情報保護委員会「個人情報保護法 いわゆる3年ごと見直しの制度改正方針」（2026年1月9日）を実読し、個人関連情報の不適正利用・不正取得禁止の方針を見出している未来として追記した。法律案の国会審議・成立状況はまだ確認できていない
 - Safari・Chromeのバージョン別挙動と、サイト側の対応状況を同じ定義で追跡する
 - ATTの2024年以降の独立した許諾率測定と、日本のアプリ・カテゴリ別の独立時系列を探す。2024年の独立研究は
   許諾画面のダークパターンを測定し、日本のカテゴリ別数値は現時点ではベンダー資料のみである
