@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.mlit.go.jp/kankocho/page01_00056.html", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: stage, source: "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: time, source: "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf", certainty: independent, retrieved: primary, as_of: "2019-2025"}
+  - {field: kind, source: "https://www.mlit.go.jp/kankocho/page01_00056.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: stage, source: "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: time, source: "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf", certainty: independent, retrieved: primary, as_of: "2019-2025", tense: completed}
+  - {field: current-status, source: "https://www.mlit.go.jp/kankocho/news02_00077.html", certainty: attested, retrieved: primary, as_of: "2026-03-27", tense: intended}
 predictions:
   - {claim: "2026年の日本人海外旅行者数が2025年の1,473万人を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "第5次観光立国推進基本計画の計画期間（2026〜2030年度）で、パスポート手数料の引下げ等の施策を受けて日本人海外旅行者数が2025年の1,473万人を上回る方向で推移する", by: "2028-12", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -39,13 +41,26 @@ relations: []
 sources:
   - https://www.mlit.go.jp/kankocho/page01_00056.html
   - https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf
+  - https://www.mlit.go.jp/kankocho/news02_00077.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # 海外旅行需要の回復
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+国は、パスポート手数料の引下げなどを通じて、日本人の海外旅行（アウトバウンド）需要をさらに拡大
+させることを2026年度からの政策方針としている。2026年3月27日に閣議決定された「観光立国推進基本
+計画」（第5次、計画期間2026〜2030年度）は、施策の柱の一つとして「国内交流・アウトバウンド拡大
+（休暇の分散・旅行需要の平準化などによる国内交流拡大、パスポート手数料の引下げなどによるアウト
+バウンド拡大 等）」を掲げている。
+
+これは国土交通省・観光庁が示した政策方針であり（`attested`）、旅行者自身が「今後どこまで海外旅行を
+したいか」に答えた意向調査ではない。既存の足元の根拠にある2025年の出国日本人数1,473万人は
+2019年の約7割にとどまっており、この施策がどの程度回復を加速させるかはこの記録では確認できていない。
+
+## 足元の根拠（完了した事実）
 
 日本人の海外旅行者数が、コロナ禍による落ち込みから回復している。観光庁の資料では、出国日本人数は2019年の2,008万人から2023年962万人、2024年1,301万人、2025年1,473万人へ増えた。
 
@@ -73,6 +88,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月21日、観光庁「観光立国推進基本計画」（第5次、2026年3月27日閣議決定）の報道発表を実読し、パスポート手数料引下げ等のアウトバウンド拡大施策を見出している未来として追記した
 - 方面別、年齢別、旅行目的別に回復速度を分解する
 - 出国者数と旅行消費額、航空座席供給、平均旅行費用を同じ期間で比較する
 - 2026年の公的統計で予測を答え合わせする

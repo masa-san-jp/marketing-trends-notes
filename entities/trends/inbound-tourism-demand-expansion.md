@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.mlit.go.jp/kankocho/page01_00056.html", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: stage, source: "https://www.mlit.go.jp/kankocho/page01_00056.html", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: time, source: "https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html", certainty: independent, retrieved: primary, as_of: "2025"}
+  - {field: kind, source: "https://www.mlit.go.jp/kankocho/page01_00056.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: stage, source: "https://www.mlit.go.jp/kankocho/page01_00056.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: time, source: "https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: current-status, source: "https://www.mlit.go.jp/kankocho/news02_00077.html", certainty: attested, retrieved: primary, as_of: "2026-03-27", tense: intended}
 predictions:
   - {claim: "2026年の訪日外国人旅行者数が2025年の4,268万人を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "第5次観光立国推進基本計画の目標年である2030年に、訪日外国人旅行者数が6,000万人、訪日外国人旅行消費額が15兆円に向けて2025年実績（約4,268万人・約9.5兆円）を上回り続ける", by: "2030-12", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -39,13 +41,27 @@ relations: []
 sources:
   - https://www.mlit.go.jp/kankocho/page01_00056.html
   - https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html
+  - https://www.mlit.go.jp/kankocho/news02_00077.html
 status: verified
-updated: 2026-08-11
+updated: 2026-09-21
 ---
 
 # 訪日観光需要の拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+国は、2030年までに訪日外国人旅行者数6,000万人、訪日外国人旅行消費額15兆円という目標の達成を
+目指している。2026年3月27日に閣議決定された「観光立国推進基本計画」（第5次、計画期間2026〜
+2030年度）は、「2030年訪日外国人旅行者数6,000万人、訪日外国人旅行消費額15兆円等の目標は
+据え置きつつ、地方誘客をより一層進めるため、地方部への訪問意欲の高いリピーターや、地方部における
+延べ宿泊者数に関する目標を定めます」としている。あわせて、インバウンドの戦略的な誘客と住民生活の
+質の確保との両立（オーバーツーリズム対策の強化等）も施策の柱としている。
+
+これは国土交通省・観光庁が示した政策目標であり（`attested`）、訪日客自身が「今後どこまで日本を
+訪れたいか」に答えた意向調査ではない。既存の足元の根拠にある2025年実績（約4,268万人・約9.5兆円）
+は2030年目標（6,000万人・15兆円）に向けた途上にある。
+
+## 足元の根拠（完了した事実）
 
 訪日外国人の人数と旅行消費額が、コロナ禍前の水準を回復した後も拡大している。
 観光庁によると、2025年の訪日外国人旅行者数は約4,268万人で、初めて4,000万人を超え、過去最高となった。
@@ -76,6 +92,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月21日、観光庁「観光立国推進基本計画」（第5次、2026年3月27日閣議決定）の報道発表を実読し、2030年目標（6,000万人・15兆円）を見出している未来として追記した
 - 国・地域別、目的別、訪問地別の消費構成を同じ定義で時系列比較する
 - 訪日需要の増加が小売・飲食・宿泊の各業態にどの程度波及したかを独立統計で分解する
 - 2026年の公的統計で予測を答え合わせする

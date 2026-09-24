@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-12"
   recheck_by: "2026-11-12"
 evidence:
-  - {field: kind, source: "https://www.mhlw.go.jp/stf/newpage_68794.html", certainty: independent, retrieved: primary, as_of: "2025-10"}
-  - {field: stage, source: "https://www.mhlw.go.jp/stf/newpage_68794.html", certainty: independent, retrieved: primary, as_of: "2007-2025"}
-  - {field: time, source: "https://www.mhlw.go.jp/stf/newpage_68794.html", certainty: independent, retrieved: primary, as_of: "2007-2025"}
+  - {field: kind, source: "https://www.mhlw.go.jp/stf/newpage_68794.html", certainty: independent, retrieved: primary, as_of: "2025-10", tense: completed}
+  - {field: stage, source: "https://www.mhlw.go.jp/stf/newpage_68794.html", certainty: independent, retrieved: primary, as_of: "2007-2025", tense: completed}
+  - {field: time, source: "https://www.mhlw.go.jp/stf/newpage_68794.html", certainty: independent, retrieved: primary, as_of: "2007-2025", tense: completed}
+  - {field: current-status, source: "https://www.moj.go.jp/isa/applications/ssw/2024.03.29.kakugikettei.html", certainty: attested, retrieved: primary, as_of: "2024-03-29", tense: intended}
 predictions:
   - {claim: "次回公表される外国人労働者数が2025年10月末の2,571,037人を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "特定技能の受入れ見込数の運用期間（令和6年4月〜令和11年3月）中に、1号特定技能外国人の在留者数が拡大再設定された見込数に向けて増加を続ける", by: "2029-03", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -38,13 +40,28 @@ channels: []
 relations: []
 sources:
   - https://www.mhlw.go.jp/stf/newpage_68794.html
+  - https://www.moj.go.jp/isa/applications/ssw/2024.03.29.kakugikettei.html
 status: verified
-updated: 2026-08-12
+updated: 2026-09-21
 ---
 
 # 外国人雇用の拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+政府は、特定技能制度の受入れ見込数（1号特定技能外国人の受入れ上限）を令和6年4月から向こう5年間
+（令和11年3月まで）にわたって拡大再設定し、対象分野も拡大している。出入国在留管理庁の発表
+（2024年3月29日閣議決定）は、「特定技能制度では、受入れ分野ごとに5年間の受入れ見込数を設定し...
+1号特定技能外国人の受入れの上限として運用しております」としたうえで、令和6年4月から向こう5年間の
+各分野の受入れ見込数を再設定し、「自動車運送業」「鉄道」「林業」「木材産業」の4分野を新たに追加した
+としている。受入れ見込数の拡大に伴い、地域における外国人との共生社会の実現が受入れ企業の責務で
+あることも基本方針に明記したとしている。
+
+これは政府が閣議決定した受入れ上限の再設定であり（`attested`）、外国人労働者本人や企業が「今後
+どこまで雇用・就労したいか」に答えた意向調査ではない。既存の足元の根拠にある2025年10月末の
+外国人労働者数257万人超のうち、特定技能に基づく増加分がどの程度かはこの記録では確認できていない。
+
+## 足元の根拠（完了した事実）
 
 日本で働く外国人と、外国人を雇用する事業所が増え、採用、在留資格確認、労務管理、教育、現場コミュニケーション、顧客対応を分けずに設計する必要が高まっている。厚生労働省によると、2025年10月末の外国人労働者数は2,571,037人で前年比11.7％増、外国人を雇用する事業所数は371,215所で前年比8.5％増となり、いずれも届出義務化以降で過去最多だった。
 
@@ -72,6 +89,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月21日、出入国在留管理庁の閣議決定発表（2024年3月29日）を実読し、特定技能受入れ見込数の拡大再設定を見出している未来として追記した
 - 国籍、在留資格、職種、地域、企業規模別に雇用の増加を分解する
 - 採用、入社後教育、翻訳、勤怠、評価、定着の実務負担を比較する
 - 次回の外国人雇用状況届出で予測を答え合わせする

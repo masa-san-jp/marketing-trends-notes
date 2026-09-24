@@ -3140,21 +3140,32 @@
           "source": "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-08"
+          "as_of": "2025-08",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-08"
+          "as_of": "2025-08",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://survey.gov-online.go.jp/assets/r07/r07-life/h13-2.csv",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-08"
+          "as_of": "2025-08",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://survey.gov-online.go.jp/living/202509/r07/r07-life/index.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-08",
+          "tense": "intended"
         }
       ],
       "predictions": [
@@ -3166,6 +3177,12 @@
         },
         {
           "claim": "令和8年の同調査で、『現在の収入や資産について』が令和7年の47.9％を下回らない",
+          "by": "2026-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "令和8年の同調査で、『今後の生活の力点』のうち『資産・貯蓄』『所得・収入』を挙げる割合が令和7年の39.9%・33.4%を大きく下回らない",
           "by": "2026-12",
           "resolved": null,
           "outcome": null
@@ -3186,7 +3203,7 @@
         "https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi_notice.html"
       ],
       "status": "draft",
-      "updated": "2026-08-25",
+      "updated": "2026-09-21",
       "path": "entities/trends/anxiety-multiplication.md"
     },
     "trend/b2b-ecommerce-expansion": {
@@ -4590,27 +4607,44 @@
           "source": "https://www.mlit.go.jp/kankocho/news02_00074.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mlit.go.jp/kankocho/content/001981888.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mlit.go.jp/kankocho/content/001981888.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2016-2025"
+          "as_of": "2016-2025",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mlit.go.jp/kankocho/news02_00077.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-03-27",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2026年の日本人国内旅行消費額が2025年の26兆7,746億円を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "第5次観光立国推進基本計画の計画期間（2026〜2030年度）で、休暇の分散・旅行需要の平準化等の施策により地方部における延べ宿泊者数が拡大方向で推移する",
+          "by": "2030-06",
           "resolved": null,
           "outcome": null
         }
@@ -4623,10 +4657,11 @@
       "relations": [],
       "sources": [
         "https://www.mlit.go.jp/kankocho/news02_00074.html",
-        "https://www.mlit.go.jp/kankocho/content/001981888.pdf"
+        "https://www.mlit.go.jp/kankocho/content/001981888.pdf",
+        "https://www.mlit.go.jp/kankocho/news02_00077.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/domestic-travel-consumption-expansion.md"
     },
     "trend/electrified-vehicle-adoption": {
@@ -5227,27 +5262,44 @@
           "source": "https://www.mhlw.go.jp/stf/newpage_68794.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025-10"
+          "as_of": "2025-10",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mhlw.go.jp/stf/newpage_68794.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2007-2025"
+          "as_of": "2007-2025",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mhlw.go.jp/stf/newpage_68794.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2007-2025"
+          "as_of": "2007-2025",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.moj.go.jp/isa/applications/ssw/2024.03.29.kakugikettei.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2024-03-29",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回公表される外国人労働者数が2025年10月末の2,571,037人を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "特定技能の受入れ見込数の運用期間（令和6年4月〜令和11年3月）中に、1号特定技能外国人の在留者数が拡大再設定された見込数に向けて増加を続ける",
+          "by": "2029-03",
           "resolved": null,
           "outcome": null
         }
@@ -5259,10 +5311,11 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.mhlw.go.jp/stf/newpage_68794.html"
+        "https://www.mhlw.go.jp/stf/newpage_68794.html",
+        "https://www.moj.go.jp/isa/applications/ssw/2024.03.29.kakugikettei.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-21",
       "path": "entities/trends/foreign-worker-employment-expansion.md"
     },
     "trend/functional-food-safety-governance": {
@@ -5570,33 +5623,51 @@
           "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-02"
+          "as_of": "2026-02",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-02"
+          "as_of": "2026-02",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-02"
+          "as_of": "2026-02",
+          "tense": "completed"
         },
         {
           "field": "current-status",
           "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/009/shiryou/index.html",
           "certainty": "independent",
           "retrieved": "summary",
-          "as_of": "2026-09-09"
+          "as_of": "2026-09-09",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-02",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "次回同種の生成AI利用者調査で、日常生活での毎日利用者が2026年調査の約20％を下回らない",
+          "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "次回同種調査で、「積極的に活用していきたい」「広く活用していくが過度な利用は避けたい」を合わせた前向きな利用意向が2026年2月調査の約50%（17.9%+31.8%）を大きく下回らない",
           "by": "2027-12",
           "resolved": null,
           "outcome": null
@@ -5613,7 +5684,7 @@
         "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-15",
+      "updated": "2026-09-21",
       "path": "entities/trends/generative-ai-daily-life-adoption.md"
     },
     "trend/giga-learning-platform-renewal": {
@@ -5837,27 +5908,44 @@
           "source": "https://www.mlit.go.jp/kankocho/page01_00056.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mlit.go.jp/kankocho/page01_00056.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mlit.go.jp/kankocho/news02_00077.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-03-27",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2026年の訪日外国人旅行者数が2025年の4,268万人を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "第5次観光立国推進基本計画の目標年である2030年に、訪日外国人旅行者数が6,000万人、訪日外国人旅行消費額が15兆円に向けて2025年実績（約4,268万人・約9.5兆円）を上回り続ける",
+          "by": "2030-12",
           "resolved": null,
           "outcome": null
         }
@@ -5870,10 +5958,11 @@
       "relations": [],
       "sources": [
         "https://www.mlit.go.jp/kankocho/page01_00056.html",
-        "https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html"
+        "https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html",
+        "https://www.mlit.go.jp/kankocho/news02_00077.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/inbound-tourism-demand-expansion.md"
     },
     "trend/japan-btoc-ec-expansion": {
@@ -6729,27 +6818,44 @@
           "source": "https://www.mlit.go.jp/kankocho/page01_00056.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2019-2025"
+          "as_of": "2019-2025",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mlit.go.jp/kankocho/news02_00077.html",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-03-27",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2026年の日本人海外旅行者数が2025年の1,473万人を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "第5次観光立国推進基本計画の計画期間（2026〜2030年度）で、パスポート手数料の引下げ等の施策を受けて日本人海外旅行者数が2025年の1,473万人を上回る方向で推移する",
+          "by": "2028-12",
           "resolved": null,
           "outcome": null
         }
@@ -6762,10 +6868,11 @@
       "relations": [],
       "sources": [
         "https://www.mlit.go.jp/kankocho/page01_00056.html",
-        "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf"
+        "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf",
+        "https://www.mlit.go.jp/kankocho/news02_00077.html"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-21",
       "path": "entities/trends/outbound-travel-recovery.md"
     },
     "trend/parcel-delivery-volume-expansion": {
@@ -7453,28 +7560,40 @@
           "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024"
+          "as_of": "2024",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2004-2024"
+          "as_of": "2004-2024",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2004-2024"
+          "as_of": "2004-2024",
+          "tense": "completed"
         },
         {
           "field": "prediction",
           "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/gaiyou.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www8.cao.go.jp/kourei/whitepaper/w-2025/html/zenbun/s1_3_1.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025",
+          "tense": "intended"
         }
       ],
       "predictions": [
@@ -7483,6 +7602,12 @@
           "by": "2027-12",
           "resolved": "2026-08-12",
           "outcome": "hit"
+        },
+        {
+          "claim": "次回の高齢社会白書の同種調査で、収入を伴う仕事をしている60歳以上のうち「70歳くらいまで」またはそれ以上まで働きたいと考えている割合が8割を大きく下回らない",
+          "by": "2028-06",
+          "resolved": null,
+          "outcome": null
         }
       ],
       "channel_scope": {
@@ -7494,10 +7619,11 @@
       "sources": [
         "https://www.stat.go.jp/data/topics/topi1460.html",
         "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
-        "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/gaiyou.pdf"
+        "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/gaiyou.pdf",
+        "https://www8.cao.go.jp/kourei/whitepaper/w-2025/html/zenbun/s1_3_1.html"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-22",
       "path": "entities/trends/senior-employment-expansion.md"
     },
     "trend/service-ecommerce-expansion": {
@@ -8279,27 +8405,44 @@
           "source": "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025"
+          "as_of": "2025",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "1995-2025"
+          "as_of": "1995-2025",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "1954-2025"
+          "as_of": "1954-2025",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.cas.go.jp/jp/seisaku/digital_denen/pdf/20221223_gaiyou.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2022-12-23",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2026年の東京圏における日本人移動者が転入超過となり、2025年の11万2738人を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "デジタル田園都市国家構想総合戦略の目標年である2027年度に、地方と東京圏との転入・転出が均衡（転入超過ゼロ）に向けて2025年の11万2738人を下回る",
+          "by": "2028-06",
           "resolved": null,
           "outcome": null
         }
@@ -8312,10 +8455,11 @@
       "relations": [],
       "sources": [
         "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html",
-        "https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf"
+        "https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf",
+        "https://www.cas.go.jp/jp/seisaku/digital_denen/pdf/20221223_gaiyou.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-12",
+      "updated": "2026-09-22",
       "path": "entities/trends/tokyo-region-inmigration-persistence.md"
     },
     "trend/tracking-restrictions": {
@@ -8354,97 +8498,124 @@
           "source": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-10"
+          "as_of": "2026-08-10",
+          "tense": "completed"
         },
         {
           "field": "kind",
           "source": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2018-05-25"
+          "as_of": "2018-05-25",
+          "tense": "completed"
         },
         {
           "field": "kind",
           "source": "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2023-12"
+          "as_of": "2023-12",
+          "tense": "completed"
         },
         {
           "field": "kind",
           "source": "https://webkit.org/tracking-prevention/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-11"
+          "as_of": "2026-08-11",
+          "tense": "completed"
         },
         {
           "field": "kind",
           "source": "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-04-22"
+          "as_of": "2025-04-22",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2018-05-25"
+          "as_of": "2018-05-25",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.ppc.go.jp/personalinfo/legal/guidelines_thirdparty/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2023-12"
+          "as_of": "2023-12",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://webkit.org/tracking-prevention/",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-11"
+          "as_of": "2026-08-11",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://privacysandbox.google.com/blog/privacy-sandbox-next-steps",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2025-04-22"
+          "as_of": "2025-04-22",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-04"
+          "as_of": "2023-04",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024-08-14"
+          "as_of": "2024-08-14",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/",
           "certainty": "vendor",
           "retrieved": "primary",
-          "as_of": "2024-Q1"
+          "as_of": "2024-Q1",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html",
           "certainty": "vendor",
           "retrieved": "primary",
-          "as_of": "2024-Q1"
+          "as_of": "2024-Q1",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.ppc.go.jp/files/pdf/01-1_seidokaiseihousin.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-01-09",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2027年末までに、日本の主要広告主の間で計測の主軸がユーザー単位のトラッキングからMMM・インクリメンタリティ計測側へ寄る（業界団体・独立調査でその旨が確認できる）",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "個人情報保護委員会の2026年1月9日付制度改正方針に基づく法律案が国会に提出され、特定の個人に対する働きかけが可能な個人関連情報の不適正利用・不正取得の禁止規定が法制化される",
+          "by": "2027-06",
           "resolved": null,
           "outcome": null
         }
@@ -8465,10 +8636,11 @@
         "https://www.ftc.gov/system/files/ftc_gov/pdf/3-Skiera-Economic-Impact-of-Opt-in-versus-Opt-out-Requirements-for-Personal-Data-Usage.pdf",
         "https://www.usenix.org/system/files/usenixsecurity24-mohamed.pdf",
         "https://www.adjust.com/ja/resources/ebooks/japan-app-trends-2024/",
-        "https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html"
+        "https://marketing.itmedia.co.jp/mm/articles/2409/09/news063.html",
+        "https://www.ppc.go.jp/files/pdf/01-1_seidokaiseihousin.pdf"
       ],
       "status": "draft",
-      "updated": "2026-08-25",
+      "updated": "2026-09-22",
       "path": "entities/trends/tracking-restrictions.md"
     },
     "trend/vacant-housing-expansion": {
@@ -8692,27 +8864,44 @@
           "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2025年平均"
+          "as_of": "2025年平均",
+          "tense": "completed"
         },
         {
           "field": "stage",
           "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2020-2025年平均"
+          "as_of": "2020-2025年平均",
+          "tense": "completed"
         },
         {
           "field": "time",
           "source": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2020-2025年平均"
+          "as_of": "2020-2025年平均",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.gender.go.jp/about_danjo/basic_plans/5th-2/pdf/print.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2023-12-26",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2026年平均の女性就業者数が2025年の3,126万人を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "総務省統計局の次回公表で、25歳から44歳までの女性の就業率が第5次男女共同参画基本計画の2025年目標82%（2019年実績77.7%）に向けて上昇を続けている",
+          "by": "2027-06",
           "resolved": null,
           "outcome": null
         }
@@ -8725,10 +8914,11 @@
       "relations": [],
       "sources": [
         "https://www.stat.go.jp/data/roudou/",
-        "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf"
+        "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf",
+        "https://www.gender.go.jp/about_danjo/basic_plans/5th-2/pdf/print.pdf"
       ],
       "status": "verified",
-      "updated": "2026-08-11",
+      "updated": "2026-09-23",
       "path": "entities/trends/women-employment-expansion.md"
     },
     "trend/workplace-stress-check-institutionalization": {

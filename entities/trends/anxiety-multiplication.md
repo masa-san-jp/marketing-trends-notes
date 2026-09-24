@@ -25,12 +25,14 @@ freshness:
   valid_as_of: "2026-08-10"
   recheck_by: "2026-11-10"
 evidence:
-  - {field: kind, source: "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv", certainty: independent, retrieved: primary, as_of: "2025-08"}
-  - {field: stage, source: "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv", certainty: independent, retrieved: primary, as_of: "2025-08"}
-  - {field: time, source: "https://survey.gov-online.go.jp/assets/r07/r07-life/h13-2.csv", certainty: independent, retrieved: primary, as_of: "2025-08"}
+  - {field: kind, source: "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv", certainty: independent, retrieved: primary, as_of: "2025-08", tense: completed}
+  - {field: stage, source: "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv", certainty: independent, retrieved: primary, as_of: "2025-08", tense: completed}
+  - {field: time, source: "https://survey.gov-online.go.jp/assets/r07/r07-life/h13-2.csv", certainty: independent, retrieved: primary, as_of: "2025-08", tense: completed}
+  - {field: current-status, source: "https://survey.gov-online.go.jp/living/202509/r07/r07-life/index.html", certainty: independent, retrieved: primary, as_of: "2025-08", tense: intended}
 predictions:
   - {claim: "令和8年の同調査で、悩みや不安の内容の計（M.T.）が令和7年の379.8を下回らない", by: "2026-12", resolved: null, outcome: null}
   - {claim: "令和8年の同調査で、『現在の収入や資産について』が令和7年の47.9％を下回らない", by: "2026-12", resolved: null, outcome: null}
+  - {claim: "令和8年の同調査で、『今後の生活の力点』のうち『資産・貯蓄』『所得・収入』を挙げる割合が令和7年の39.9%・33.4%を大きく下回らない", by: "2026-12", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -49,12 +51,26 @@ sources:
   - https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi
   - https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi_notice.html
 status: draft
-updated: 2026-08-25
+updated: 2026-09-21
 ---
 
 # 不安の多重化
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+生活者は、今後の生活の見通しを悲観しつつ、資産・貯蓄や所得・収入といった金銭面に力を入れたいと
+考える割合が増えている。内閣府「国民生活に関する世論調査」（令和7年8月調査）は、「生活は、これから
+先、どうなっていくと思うか」という設問に「悪くなっていく」と答えた者が30.5％、「良くなっていく」が
+8.6％だったとしている。また「今後の生活において、特にどのような側面に力を入れたいと思うか」という
+設問（複数回答）では、「健康」（71.4％）に次いで「食生活」（42.0％、前回38.6％から上昇）、
+「資産・貯蓄」（39.9％）、「所得・収入」（33.4％）が挙げられている。
+
+これは生活者本人が今後の生活について直接答えた意向調査であり（`independent`）、既存の足元の根拠
+にある「悩みや不安の内容」の計（M.T.）の増加（362.3→379.8）や金銭3項目の上昇（現在の収入・
+今後の見通し・老後）と方向性が一致する。ただし「今後の生活の力点」は不安そのものを問う設問ではなく、
+力を入れたい対象を尋ねる設問であるため、両者を同一指標として合算しない。
+
+## 足元の根拠（完了した事実）
 
 **不安を感じる人の割合は増えていない。増えているのは、一人が同時に抱える不安の種類の数である。**
 
@@ -147,6 +163,7 @@ updated: 2026-08-25
 
 ## 未着手
 
+- 2026年9月21日、同じ内閣府世論調査（令和7年8月調査）の「今後の生活の見通し」「今後の生活の力点」の結果概要を実読し、見出している未来として追記した
 - 標本抽出方法と調査票の実読（stage 判定の暫定を外すため。上記の弱点の第一項）
 - **より高い頻度の独立指標との統合**。日本銀行「生活意識に関するアンケート調査」（四半期）と
   内閣府「消費動向調査」の消費者態度指数（月次）は調査ページと作成方法を一次確認済みだが、

@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-11"
   recheck_by: "2026-11-11"
 evidence:
-  - {field: kind, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf", certainty: independent, retrieved: primary, as_of: "2025年平均"}
-  - {field: stage, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf", certainty: independent, retrieved: primary, as_of: "2020-2025年平均"}
-  - {field: time, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf", certainty: independent, retrieved: primary, as_of: "2020-2025年平均"}
+  - {field: kind, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf", certainty: independent, retrieved: primary, as_of: "2025年平均", tense: completed}
+  - {field: stage, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf", certainty: independent, retrieved: primary, as_of: "2020-2025年平均", tense: completed}
+  - {field: time, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf", certainty: independent, retrieved: primary, as_of: "2020-2025年平均", tense: completed}
+  - {field: current-status, source: "https://www.gender.go.jp/about_danjo/basic_plans/5th-2/pdf/print.pdf", certainty: attested, retrieved: primary, as_of: "2023-12-26", tense: intended}
 predictions:
   - {claim: "2026年平均の女性就業者数が2025年の3,126万人を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "総務省統計局の次回公表で、25歳から44歳までの女性の就業率が第5次男女共同参画基本計画の2025年目標82%（2019年実績77.7%）に向けて上昇を続けている", by: "2027-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -39,13 +41,26 @@ relations: []
 sources:
   - https://www.stat.go.jp/data/roudou/
   - https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf
+  - https://www.gender.go.jp/about_danjo/basic_plans/5th-2/pdf/print.pdf
 status: verified
-updated: 2026-08-11
+updated: 2026-09-23
 ---
 
 # 女性就業の拡大
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+政府は、25歳から44歳までの女性の就業率を2025年までに82%へ引き上げる目標を掲げていた。「第5次
+男女共同参画基本計画」（2020年12月25日閣議決定、2023年12月26日一部変更）は、成果目標として
+「25歳から44歳までの女性の就業率」を2019年の77.7%から2025年に82%とすることを掲げ、あわせて
+「第一子出産前後の女性の継続就業率」を2015年の53.1%から2025年に70%とする目標も置いている。
+
+これは政府が閣議決定した目標であり（`attested`）、女性本人が「今後どこまで働きたいか」に答えた
+意向調査ではない。目標年である2025年は既に経過しており、82%・70%の目標が達成されたかどうかは
+既存の足元の根拠にある2025年平均の女性就業者数・就業率（全年齢計3,126万人、55.1%）からは
+年齢層を絞った数値として確認できていない。
+
+## 足元の根拠（完了した事実）
 
 女性の就業者数と就業率が上昇し、働く人の時間、所得、家庭内役割、通勤、購買、サービス利用の前提が変わっている。総務省統計局の2025年平均労働力調査では、女性就業者数は3,126万人で前年比44万人増、15歳以上女性の就業率は55.1％で0.9ポイント上昇した。就業者数は全体でも5年連続で増加している。
 
@@ -73,6 +88,7 @@ updated: 2026-08-11
 
 ## 未着手
 
+- 2026年9月23日、第5次男女共同参画基本計画（2023年12月一部変更版）を実読し、2025年目標（25-44歳女性就業率82%等）を見出している未来として追記した。目標年経過後の達成状況、および後継計画（第6次計画等）の有無はまだ確認できていない
 - 産業、年齢、雇用形態、労働時間、賃金、世帯、子育て・介護を分解する
 - 女性就業の変化と外食、保育、金融、住宅、EC、学習サービスの利用を接続する
 - 2026年平均の労働力調査で予測を答え合わせする

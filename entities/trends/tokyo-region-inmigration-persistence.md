@@ -25,11 +25,13 @@ freshness:
   valid_as_of: "2026-08-12"
   recheck_by: "2026-11-12"
 evidence:
-  - {field: kind, source: "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html", certainty: independent, retrieved: primary, as_of: "2025"}
-  - {field: stage, source: "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html", certainty: independent, retrieved: primary, as_of: "1995-2025"}
-  - {field: time, source: "https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf", certainty: independent, retrieved: primary, as_of: "1954-2025"}
+  - {field: kind, source: "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
+  - {field: stage, source: "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html", certainty: independent, retrieved: primary, as_of: "1995-2025", tense: completed}
+  - {field: time, source: "https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf", certainty: independent, retrieved: primary, as_of: "1954-2025", tense: completed}
+  - {field: current-status, source: "https://www.cas.go.jp/jp/seisaku/digital_denen/pdf/20221223_gaiyou.pdf", certainty: attested, retrieved: primary, as_of: "2022-12-23", tense: intended}
 predictions:
   - {claim: "2026年の東京圏における日本人移動者が転入超過となり、2025年の11万2738人を下回らない", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "デジタル田園都市国家構想総合戦略の目標年である2027年度に、地方と東京圏との転入・転出が均衡（転入超過ゼロ）に向けて2025年の11万2738人を下回る", by: "2028-06", resolved: null, outcome: null}
 channel_scope:
   status: not-applicable
   note: >-
@@ -39,13 +41,25 @@ relations: []
 sources:
   - https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html
   - https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf
+  - https://www.cas.go.jp/jp/seisaku/digital_denen/pdf/20221223_gaiyou.pdf
 status: verified
-updated: 2026-08-12
+updated: 2026-09-22
 ---
 
 # 東京圏への転入超過の持続
 
-## 何が変わったか
+## 見出している未来（何に向かって動いているか）
+
+政府は、地方と東京圏との転入・転出を2027年度までに均衡させる（転入超過ゼロにする）ことを目指して
+いる。内閣官房デジタル田園都市国家構想実現会議事務局の総合戦略（2022年12月23日公表）は、東京圏
+への過度な一極集中の是正や多極化を図るとし、数値目標として「地方と東京圏との転入・転出：2027年度に
+均衡（2021年度は83,827人の転入超過）」を掲げている。
+
+これは政府が示した是正目標であり（`attested`）、移動者本人が「今後どこに住みたいか」に答えた意向
+調査ではない。既存の足元の根拠にある2025年の東京圏転入超過（11万2738人、30年連続）は、2021年度
+の83,827人よりむしろ拡大しており、2027年度均衡という目標との間に大きな距離がある。
+
+## 足元の根拠（完了した事実）
 
 東京圏への人口移動が一時的な景気や通学の変化だけでなく、長期的な雇用・教育・住宅・サービス配置の前提になっている。2025年の住民基本台帳人口移動報告では、日本人移動者の東京圏は11万2738人の転入超過で、30年連続となった。大阪圏は3年連続の転入超過、名古屋圏は13年連続の転出超過だった。
 
@@ -73,6 +87,7 @@ updated: 2026-08-12
 
 ## 未着手
 
+- 2026年9月22日、デジタル田園都市国家構想総合戦略（2022年12月）を実読し、2027年度均衡目標を見出している未来として追記した。2025年実績は目標達成から遠く、目標自体が見直されたかは未確認
 - 年齢、性別、移動前住所、移動理由、在留資格、就業を分けて追う
 - 東京圏内の自治体差と、大阪圏・地方中核都市とのサービス需要を比較する
 - 次回の住民基本台帳人口移動報告で予測を答え合わせする
