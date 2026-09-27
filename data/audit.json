@@ -30,6 +30,66 @@
       "about": "trend/specificity-over-relatability-expectation",
       "text": "「共感できる」一般性より具体性・個別性を求める視線 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）",
       "advisory": true
+    },
+    {
+      "kind": "forward-unstated",
+      "about": "trend/b2b-ecommerce-expansion",
+      "advisory": true,
+      "text": "BtoB電子商取引の拡大 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く"
+    },
+    {
+      "kind": "forward-unstated",
+      "about": "trend/care-service-utilization-expansion",
+      "advisory": true,
+      "text": "介護サービス利用の拡大 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く"
+    },
+    {
+      "kind": "forward-unstated",
+      "about": "trend/creator-ad-disclosure",
+      "advisory": true,
+      "text": "クリエイター広告表示の可視化 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く"
+    },
+    {
+      "kind": "forward-unstated",
+      "about": "trend/fertility-treatment-insurance-access",
+      "advisory": true,
+      "text": "不妊治療の保険アクセス拡大 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く"
+    },
+    {
+      "kind": "forward-unstated",
+      "about": "trend/japan-btoc-ec-expansion",
+      "advisory": true,
+      "text": "国内BtoC-ECの拡大 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く"
+    },
+    {
+      "kind": "no-intended-evidence",
+      "about": "trend/b2b-ecommerce-expansion",
+      "advisory": true,
+      "text": "BtoB電子商取引の拡大 に tense: intended の根拠が無い。層0から意向・期待の出典を探す"
+    },
+    {
+      "kind": "no-intended-evidence",
+      "about": "trend/care-service-utilization-expansion",
+      "advisory": true,
+      "text": "介護サービス利用の拡大 に tense: intended の根拠が無い。層0から意向・期待の出典を探す"
+    },
+    {
+      "kind": "no-intended-evidence",
+      "about": "trend/creator-ad-disclosure",
+      "advisory": true,
+      "text": "クリエイター広告表示の可視化 に tense: intended の根拠が無い。層0から意向・期待の出典を探す"
+    },
+    {
+      "kind": "no-intended-evidence",
+      "about": "trend/fertility-treatment-insurance-access",
+      "advisory": true,
+      "text": "不妊治療の保険アクセス拡大 に tense: intended の根拠が無い。層0から意向・期待の出典を探す"
+    },
+    {
+      "kind": "no-intended-evidence",
+      "about": "trend/japan-btoc-ec-expansion",
+      "advisory": true,
+      "text": "国内BtoC-ECの拡大 に tense: intended の根拠が無い。層0から意向・期待の出典を探す"
     }
   ]
 }
