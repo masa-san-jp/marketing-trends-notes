@@ -50,8 +50,8 @@ trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 've
 - stale_ratio: 0.00（上限 0.15・as_of=2026-09-23 時点）
 - practice_linked: 60/61 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 5/5 件の予測が答え合わせ済み
-- forward_stated_ratio: 1.00（下限 0.0・第一節とpredictionsを持つtrend）
-- intended_evidence_ratio: 0.92（下限 0.0・tense: intendedの根拠を持つtrend）
+- forward_stated_ratio: 1.00（下限 1.0・第一節とpredictionsを持つtrend）
+- intended_evidence_ratio: 0.92（下限 0.3・tense: intendedの根拠を持つtrend）
 
 チャネル軸の移行状態:
 - mapped: 1件
@@ -90,6 +90,16 @@ trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 've
 - 静けさ・簡素さを求める気分の高まり（Pantone Color of the Year 2026） に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
 - デジタル利用からの距離を求める意識と実践のギャップ に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
 - 「共感できる」一般性より具体性・個別性を求める視線 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
+- BtoB電子商取引の拡大 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く
+- 介護サービス利用の拡大 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く
+- クリエイター広告表示の可視化 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く
+- 不妊治療の保険アクセス拡大 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く
+- 国内BtoC-ECの拡大 の「見出している未来」が未着手（**未確認**: のみ）。層0の出典を探して書く
+- BtoB電子商取引の拡大 に tense: intended の根拠が無い。層0から意向・期待の出典を探す
+- 介護サービス利用の拡大 に tense: intended の根拠が無い。層0から意向・期待の出典を探す
+- クリエイター広告表示の可視化 に tense: intended の根拠が無い。層0から意向・期待の出典を探す
+- 不妊治療の保険アクセス拡大 に tense: intended の根拠が無い。層0から意向・期待の出典を探す
+- 国内BtoC-ECの拡大 に tense: intended の根拠が無い。層0から意向・期待の出典を探す
 <!-- generated:audit:end -->
 
 ## 需要から決める（探されたが無かった語）
