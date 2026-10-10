@@ -27,8 +27,10 @@ from pathlib import Path
 
 try:
     from kb import ROOT, load_entities
+    from card_excerpts import export_card, load_state as load_card_state
 except ModuleNotFoundError:  # tools.export_signals として読まれた場合
     from tools.kb import ROOT, load_entities
+    from tools.card_excerpts import export_card, load_state as load_card_state
 
 CONTRACT = "research-signal-export/v1"
 ADAPTER_VERSION = "1.0.0"
@@ -84,8 +86,13 @@ def _freshness_status(recheck_by: str | None, today: date) -> str:
         return "unknown"
 
 
-def build_record(meta: dict, commit: str, now: datetime, purpose: str) -> dict | None:
-    """1つの trend を境界DTOへ変換する。出典が1本も無いものは出さない。"""
+def build_record(meta: dict, commit: str, now: datetime, purpose: str,
+                 card: list[dict] | None = None) -> dict | None:
+    """1つの trend を境界DTOへ変換する。出典が1本も無いものは出さない。
+
+    `card` は tools/card_excerpts.py が固定 commit の本文と照合済みの抜き書き
+    `[{text, source_locator, source_sha256}]`。無ければ空で出す（受け手が候補から外す）。
+    """
     evidence = meta.get("evidence") or []
     sources = meta.get("sources") or []
     if not sources:
@@ -130,6 +137,8 @@ def build_record(meta: dict, commit: str, now: datetime, purpose: str) -> dict |
         "repository": SOURCE_REPOSITORY,
         "commit": commit,
         "entity_id": meta["id"],
+        "label_ja": meta.get("label_ja"),
+        "card": list(card or []),
         "source_locator": meta["path"],
         "evidence_locator": f"{meta['path']}#evidence",
         "evidence_kind": evidence_kind,
@@ -219,9 +228,11 @@ def main() -> int:
         meta for meta in entities.values() if meta.get("type") == "trend"
     ]
 
+    card_state = load_card_state()
     records = []
     for meta in sorted(targets, key=lambda m: m["id"]):
-        record = build_record(meta, commit, now, args.purpose)
+        card = export_card(meta["id"], meta["path"], commit, card_state)
+        record = build_record(meta, commit, now, args.purpose, card)
         if record:
             records.append(record)
         if args.limit and len(records) >= args.limit:
