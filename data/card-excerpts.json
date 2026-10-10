@@ -1,0 +1,1902 @@
+{
+  "answer_contract": "element-answer/v1",
+  "contract_version": "card-excerpts/v1",
+  "entries": {
+    "trend/ai-visual-trust-expectation": {
+      "body_sha256": "cc44b4fd92be1664ae9c5025c529b1c304a016c6289cfb2db11542c678dde30a",
+      "elements": {
+        "1": {
+          "accepted": "ゲッティイメージズが向かっていると主張する先は、AIを抽象的な象徴として描くのではなく、信頼・プライバシー・データ倫理への配慮を伴う人間中心の文脈で描くことへの期待である。",
+          "accepted_sha256": "fe7bd3209947b0c216fe7d2a01e96cd1ee8f6cab13e5dfbecfe8f42b7636f8be",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "ゲッティイメージズが向かっていると主張する先は、AIを抽象的な象徴として描くのではなく、信頼・プライバシー・データ倫理への配慮を伴う人間中心の文脈で描くことへの期待である。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "テクノロジーが現実の人々、現実の仕事、現実の結論と交差する様子を映し出すイメージ",
+          "accepted_sha256": "e705bca9d8a60c44668857620fc87b6161d5de9016cb5ba32a4f28869c4f8917",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "テクノロジーが現実の人々、現実の仕事、現実の結論と交差する様子を映し出すイメージ"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "37fb11d85d27be9b601b16844d86ac99b9b2234434ae9f1249316c44c29bc9ac"
+    },
+    "trend/algorithmic-trust-erosion": {
+      "body_sha256": "e8d940ca35a6e4aebd4f301334518fccf414f9766b48c14de8ffbf4c02b340f0",
+      "elements": {
+        "1": {
+          "accepted": "透明性の低いアルゴリズム表示から距離を置きたいという方向",
+          "accepted_sha256": "a9b12922d40d051f04aac616fa6fae2fd4b9676093e94f17269ff8df007f6a71",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "透明性の低いアルゴリズム表示から距離を置きたいという方向"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "生活者が今後どのような情報環境を求めるか（透明性、選択の主導権、根拠のある情報）という方向性を示す先行指標として扱う。",
+          "accepted_sha256": "1d7eef685dacad43b9aaaa6b1cc8249339ecb5874fdc5c28f4dac49185b03cd1",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "生活者が今後どのような情報環境を求めるか（透明性、選択の主導権、根拠のある情報）という方向性を示す先行指標として扱う。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "dfa13db621e2db9b32c65da5f2b334b90f57b173f7129e28d117a1c41d7f6d68"
+    },
+    "trend/anxiety-multiplication": {
+      "body_sha256": "0cdaadd82e7fb1da61d6aa9ef0205552f9324ce1edaf805124b3128408c7f5c2",
+      "elements": {
+        "1": {
+          "accepted": "生活者は、今後の生活の見通しを悲観しつつ、資産・貯蓄や所得・収入といった金銭面に力を入れたいと考える割合が増えている。",
+          "accepted_sha256": "7e97138ae5f160b631eefed8ba578adfa80e40fe473ebdf3e0b637350163d34e",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "生活者は、今後の生活の見通しを悲観しつつ、資産・貯蓄や所得・収入といった金銭面に力を入れたいと考える割合が増えている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "増えたのは金銭に関する3項目（現在の収入・今後の見通し・老後）で、健康は横ばい、人間関係と地域はむしろ減っている。",
+          "accepted_sha256": "baade2434c1ccced2cc94ea23ef9481c16a17260ccfe80112c2910382f892091",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "増えたのは金銭に関する3項目（現在の収入・今後の見通し・老後）で、健康は横ばい、人間関係と地域はむしろ減っている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "1bb8f364619b2a6fae02cbdab568839c5a4e327d48a0c41e6e07006cec88ed1b"
+    },
+    "trend/b2b-ecommerce-expansion": {
+      "body_sha256": "4b7fc6a78db2a425646f9cdbc6e2aaae5c8a1cd88f543d5296604bfbe267276e",
+      "elements": {
+        "1": {
+          "accepted": "企業間の商取引で、電子的に行われる金額と比率が拡大している。",
+          "accepted_sha256": "dcde6dff9bec5fdaa82696fbf1eccdcd5f9268caaf13113427d61cc8b5f82985",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "企業間の商取引で、電子的に行われる金額と比率が拡大している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "この統計は企業間取引の電子化を示すが、特定のSaaS、受発注サービス、営業チャネルの採用率を直接示すものではない。",
+          "accepted_sha256": "266efb43a4541a18b5a743377335d99bb1c7a0f93177ce882977680edb48a63d",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [
+                {
+                  "check": "exact_input_excerpt_or_none:body",
+                  "reason": "12〜120字の抜き書きか、「これ以上なし」だけを返してください。"
+                }
+              ],
+              "value": "企業間取引の電子化"
+            },
+            {
+              "attempt": 2,
+              "failures": [],
+              "value": "この統計は企業間取引の電子化を示すが、特定のSaaS、受発注サービス、営業チャネルの採用率を直接示すものではない。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "c3c6675b5f875efb555673b36ac12ef82035db55ef83792c161154f9fe352aef"
+    },
+    "trend/building-renovation-market-expansion": {
+      "body_sha256": "82afd880ac8203c9881199dc01fc6c30a5c6f13e80f503eb7fe4745a326705e9",
+      "elements": {
+        "1": {
+          "accepted": "リフォームを検討している人（潜在需要者）は、実施をより早い時期に前倒しし、省エネ性能の向上を目的に据える方向へ動いている。",
+          "accepted_sha256": "962844911d4502cd0112b9214ea51556c97141c286a1208bbb16f755550939d1",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "リフォームを検討している人（潜在需要者）は、実施をより早い時期に前倒しし、省エネ性能の向上を目的に据える方向へ動いている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "検討者（今後実施を考えている人）が最も多く挙げたのは「省エネ性能を高める」だった。",
+          "accepted_sha256": "1f537c27e6b03db7c0b5761a7c4710083eeaa35a99affc532ab4637f699f5845",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "検討者（今後実施を考えている人）が最も多く挙げたのは「省エネ性能を高める」だった。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "bae161794e0c4ea4eac547f9ae81543c8607ebc560f8de14a51f54bda59d60a8"
+    },
+    "trend/calm-minimalism-mood": {
+      "body_sha256": "1f7f59b9f3ba125dfba4c342d03260ece1470f9c6b039c91444f09f1b11cb2d3",
+      "elements": {
+        "1": {
+          "accepted": "情報過多・刺激過多からの意識的な距離、簡素さ、内省への欲求",
+          "accepted_sha256": "8fc889a7fe36bd975652a381f682ef772d8572128dcffd767f5d1b7c1455acb1",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "情報過多・刺激過多からの意識的な距離、簡素さ、内省への欲求"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "過剰のない未来への私たちの願望",
+          "accepted_sha256": "0b394e1148fec51702d26de8e4da309743654095f4ac896707c936999048205d",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "過剰のない未来への私たちの願望"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "d7c97ace30e7b0cd6b0aebb1273003b2f632806de0296419babf50b185023e9e"
+    },
+    "trend/care-service-utilization-expansion": {
+      "body_sha256": "3cacbf1a29513b1b92c49e8f6a3cad0bbb4c0d948247aae15bf80124c8f8a21e",
+      "elements": {
+        "1": {
+          "accepted": "本人・家族・自治体・事業者が、在宅・通所・施設・予防を組み合わせて生活を支える前提が大きくなっている",
+          "accepted_sha256": "110ea91c4fff497f31010314f85e6a423cd3e139c4eca26f28ae5a1b96af31fd",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "本人・家族・自治体・事業者が、在宅・通所・施設・予防を組み合わせて生活を支える前提が大きくなっている"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "介護サービスの利用者数と費用額が増加し",
+          "accepted_sha256": "e4e4ca361b292418c679d1b1ed07abf48509e1af5d2163e1083b476d23e6e350",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "介護サービスの利用者数と費用額が増加し"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "fd5709caee779726331fdaea42e63840cc6ff4da510d2ec3f3773f9ac06338dc"
+    },
+    "trend/care-workforce-shortage": {
+      "body_sha256": "9152a776f123c7c3f1206782d16636ac323ffb6ae33e5213f2e098537c512fea",
+      "elements": {
+        "1": {
+          "accepted": "厚生労働省は、介護人材を量と質の両面で確保するため、国と地域が「参入促進」「資質の向上」「労働環境・処遇の改善」を進めるための対策に総合的・計画的に取り組むとしている。",
+          "accepted_sha256": "72d8215632f13c3b6517b704acf4547ae8113f04389f6146e35609cd17fcc02e",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "厚生労働省は、介護人材を量と質の両面で確保するため、国と地域が「参入促進」「資質の向上」「労働環境・処遇の改善」を進めるための対策に総合的・計画的に取り組むとしている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "介護サービスの見込み量に対して必要な職員数が増え、利用者数の増加だけでなく、採用、育成、定着、外国人材、業務分担、テクノロジー活用を同時に設計する必要が高まっている。",
+          "accepted_sha256": "0cf7e1421db4ef041bd8c2a5aa065373f01b9e56d2f9ef923f1336f3fea76bef",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "介護サービスの見込み量に対して必要な職員数が増え、利用者数の増加だけでなく、採用、育成、定着、外国人材、業務分担、テクノロジー活用を同時に設計する必要が高まっている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "2360fa1e759e0e49390f063eb38c7d7fe1f7305b8334da497f6ca9b1a207db06"
+    },
+    "trend/cashless-payment-expansion": {
+      "body_sha256": "9b25644fa3246f286567cd8b4a5eae268dfe5f399ae84cbf792cb19985ead575",
+      "elements": {
+        "1": {
+          "accepted": "経済産業省は、キャッシュレス決済比率を将来的に80％（国内指標）へ、2030年までに中間目標として65％へ引き上げることを目指している。",
+          "accepted_sha256": "c64fa216e27da80a9cff2ff995b4d4f0544e62687fc2db1485a48a4d6b8a7073",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "経済産業省は、キャッシュレス決済比率を将来的に80％（国内指標）へ、2030年までに中間目標として65％へ引き上げることを目指している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "既存の足元の根拠にある2025年実績58.0％は、2030年目標65%に向けて上昇を続けている段階にある。",
+          "accepted_sha256": "0850f8f07b84f05237a2374a6dc2c1df051ce34238512f63922ca00aff0b0907",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "既存の足元の根拠にある2025年実績58.0％は、2030年目標65%に向けて上昇を続けている段階にある。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "af4db7016b8ab485614392be79aa5c1f1489e26a9a007f3829008d3404131824"
+    },
+    "trend/cloud-service-adoption": {
+      "body_sha256": "b69ee81ff0154aba67d0138d14e03c51c9e5beb9818840c7cb35e18a8bd227d4",
+      "elements": {
+        "1": {
+          "accepted": "クラウド基盤サービスの市場は、AIの本番稼働フェーズへの移行を主因として、今後も拡大が続くと予測されている。",
+          "accepted_sha256": "891159029938d50586de9461d74ec929d81691485ebed10baad984846c4d059a",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "クラウド基盤サービスの市場は、AIの本番稼働フェーズへの移行を主因として、今後も拡大が続くと予測されている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "企業の業務基盤に組み込まれる方向が続いている",
+          "accepted_sha256": "3c4ea3ad39f141d2caefe61f9e66d5ff69f70f2c5740bf1b5316385af75eb0e6",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "企業の業務基盤に組み込まれる方向が続いている"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "6d5aff7412b362b88d15f4cee78306e4eff5324d0115e35e6e1099755b7423df"
+    },
+    "trend/cosmetics-overseas-expansion": {
+      "body_sha256": "6c01e375591c7764a984eb4aeba7f12edfcf5da9d75de5c3a7c0512a4b97334a",
+      "elements": {
+        "1": {
+          "accepted": "日本の化粧品・美容関連産業を「生活文化の輸出産業化」として再構築し、海外市場、とりわけASEANとEU（欧州連合）を起点に拡大する構想",
+          "accepted_sha256": "4ab4336cdd214567ca0988404dc67afaed2981644a11908f059d2bef4e5a8209",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "日本の化粧品・美容関連産業を「生活文化の輸出産業化」として再構築し、海外市場、とりわけASEANとEU（欧州連合）を起点に拡大する構想"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "J-Beautyの海外市場拡大は、まずASEANおよびEU（欧州連合）を起点として開始することが望ましい",
+          "accepted_sha256": "edb05b46ee4d6be7a03ce1aa76f3ef31eba1bee8d449841d97815fb0cb0caf94",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "J-Beautyの海外市場拡大は、まずASEANおよびEU（欧州連合）を起点として開始することが望ましい"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "9a0af3977195346da1758971fc8ac9b747155a4499d2f16aec88b4cf9f45c30d"
+    },
+    "trend/creator-ad-disclosure": {
+      "body_sha256": "d6ad25c9bc35d8bb8af0d47d8750a39ebd7aad6c7e578f968268062b3a4d79f2",
+      "elements": {
+        "1": {
+          "accepted": "インフルエンサーや著名人の投稿を広告として扱うとき、広告であることを隠さず、受け手が広告主の関与を判別できるようにすることが、クリエイターを使ったマーケティングの実務要件として浮上した。",
+          "accepted_sha256": "2c64fc12c07978af7a5836c6a8f8e16a10d701eb31303b05f89cfc5c2882fb8b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "インフルエンサーや著名人の投稿を広告として扱うとき、広告であることを隠さず、受け手が広告主の関与を判別できるようにすることが、クリエイターを使ったマーケティングの実務要件として浮上した。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "そのうち表示を見た1,941人では、広告であることを明示する投稿者を、明示しない投稿者より信頼できると答えた割合が63.0％だった。",
+          "accepted_sha256": "b3539792c47b10d013ed9778c5a1048b4a531a6ce4a93a05eb66a8abc37f1438",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "そのうち表示を見た1,941人では、広告であることを明示する投稿者を、明示しない投稿者より信頼できると答えた割合が63.0％だった。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "cda5dfe4e0556a6392de7f48af6be3bb0413d7860c775f2ac61dcc86d97bb13c"
+    },
+    "trend/creator-rights-compensation-transparency": {
+      "body_sha256": "91ac39e6c511541a5f15581c9752f61774686a06fc36c10f1228e534a1700fad",
+      "elements": {
+        "1": {
+          "accepted": "権利情報・契約・利用・対価を追える基盤を整える方向",
+          "accepted_sha256": "e42a6bc58c33042d321a77772efbc04b02466b9c4f8f998d475320fd0147fc7f",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "権利情報・契約・利用・対価を追える基盤を整える方向"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "休眠著作物・権利者不明作品の利用機会を広げると同時に、権利者にとっては「使われているが対価が届いていない」状態を補償金という形で可視化する制度でもある",
+          "accepted_sha256": "d2aadec5fe7da6559940fe2dbe795ebc8ba4e7cb52c5ba6eeee6b772b5f65c6f",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "休眠著作物・権利者不明作品の利用機会を広げると同時に、権利者にとっては「使われているが対価が届いていない」状態を補償金という形で可視化する制度でもある"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "dc493c6f1a32a1a7b4a9268c5846a7b7f527f1c29dd22cf315a73b3a07112841"
+    },
+    "trend/cross-border-ecommerce-expansion": {
+      "body_sha256": "b046a3d367773bbdc3a2b1bcaa5ccc30c6d01ee2fa96bd8dfa27c44a520d4218",
+      "elements": {
+        "1": {
+          "accepted": "海外の消費者は、訪日旅行で気に入った日本の商品を、帰国後も越境ECを通じて買い続けたいという意向を持っている。",
+          "accepted_sha256": "db800e51fb7f0d6fdd77e0c3a40355e549dc3906cebc75a5a10150bef80a3faa",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "海外の消費者は、訪日旅行で気に入った日本の商品を、帰国後も越境ECを通じて買い続けたいという意向を持っている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "経験から実践への転換が進んでいる可能性がある。",
+          "accepted_sha256": "a54530346f13ed5fdbf2feb67156a3d9ff98c51e1deae7a92a83e7967f1a52cf",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "経験から実践への転換が進んでいる可能性がある。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "3b4cf668e11985c45e5c971128ce3f82dcce2e9a24d56f29ea27a0b255d31487"
+    },
+    "trend/crypto-asset-user-expansion": {
+      "body_sha256": "8af6afa67bbfd7dec94462f85e6a9d746859caa208e7394842fdd78f08201d77",
+      "elements": {
+        "1": {
+          "accepted": "国内の個人投資家・機関投資家の双方が、暗号資産を長期的な値上がりや分散投資の機会として捉える姿勢を強めている。",
+          "accepted_sha256": "04e5f6e8649ce284136cd6f9b239be28c814d3fb281d5f3ba2e477820cc04288",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "国内の個人投資家・機関投資家の双方が、暗号資産を長期的な値上がりや分散投資の機会として捉える姿勢を強めている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "国内の暗号資産取引は、限られた投資家向けの論点から、口座数・取引規模・事業者保護を含む金融サービスの利用論点へ広がっている。",
+          "accepted_sha256": "ce6a6cc87785231f5b9a37e2d13abc7723a59a35539ecb9af94fcaf14ab1c5df",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "国内の暗号資産取引は、限られた投資家向けの論点から、口座数・取引規模・事業者保護を含む金融サービスの利用論点へ広がっている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "378d60393299f37692748a9fd8f362a569ef58e8585c68a8155de8a98adc9712"
+    },
+    "trend/digital-disengagement-intention": {
+      "body_sha256": "6cea03812e623e7c5eed1d6e001d05ef4da65c6a2991997d47018312bcfc0f12",
+      "elements": {
+        "1": {
+          "accepted": "人々が向かっているのは、デジタル機器・SNSからの意識的な距離であり、その実践はまだ後を追っていない。",
+          "accepted_sha256": "eae5648a49955363c4b360f9787b433c865c9dcdd74dc87225fb5ed84b5d19ad",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "人々が向かっているのは、デジタル機器・SNSからの意識的な距離であり、その実践はまだ後を追っていない。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "インターネットを日常的に利用する生活者の多くが、デジタル機器・SNSから距離を置くことを「心身に良い」と考え、「使いすぎている」という自覚を持っているが、それを実際の行動（意識的に離れる時間をつくること）へはまだ移せていない。",
+          "accepted_sha256": "fd43a494e743c60ee992afba9e3e7a6e44a2b288375c31266dd2b9610d9491d9",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "インターネットを日常的に利用する生活者の多くが、デジタル機器・SNSから距離を置くことを「心身に良い」と考え、「使いすぎている」という自覚を持っているが、それを実際の行動（意識的に離れる時間をつくること）へはまだ移せていない。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "df5a4b132977c4141601e39acab8349971ada14bfba2d498131e812bc5b9699a"
+    },
+    "trend/digital-salary-payment": {
+      "body_sha256": "2ac19e2655c8a5ae97087fa7103c369af0aa07917c0c1abf19d31c820dbea3af",
+      "elements": {
+        "1": {
+          "accepted": "供給側・需要側の双方でまだ利用が広がっていない段階にあることを示している。",
+          "accepted_sha256": "5b7709ab41ed8831c01bef7b56b127209ea7faaa1cfcb99fa5ed098498525d4f",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "供給側・需要側の双方でまだ利用が広がっていない段階にあることを示している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "給与を銀行口座だけでなく、厚生労働大臣が指定する資金移動業者の口座で受け取れる制度が整備され、給与・決済・福利厚生の接点に新しい選択肢が加わっている。",
+          "accepted_sha256": "96e00ebf27a8835712fce9eedf33dbd5616b5c7136f4cc6f6b6aa1e8f54a345a",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "給与を銀行口座だけでなく、厚生労働大臣が指定する資金移動業者の口座で受け取れる制度が整備され、給与・決済・福利厚生の接点に新しい選択肢が加わっている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "f073e00ce665a6108010b7c6d3eb615f6c9bc385ace90f168551408b5f91a82d"
+    },
+    "trend/digital-textbook-practical-adoption": {
+      "body_sha256": "0f2b8ca6f56539c7993ab4195d61edf061854fe7042ddf7f2647d004ec431115",
+      "elements": {
+        "1": {
+          "accepted": "文部科学省は、デジタルな形態を含む教科書を紙の教科書と同様に「教科書」として位置づけ、使用義務・検定・採択・無償給与の対象とすることを目指している。",
+          "accepted_sha256": "a64f4bf327216ab7343f1a50d50c61b16cd5fa7a3045a685aea1f7a7130e4905",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "文部科学省は、デジタルな形態を含む教科書を紙の教科書と同様に「教科書」として位置づけ、使用義務・検定・採択・無償給与の対象とすることを目指している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "学習者用デジタル教科書は、試行的な実証から学校で日常的に使う実用段階へ移っている。",
+          "accepted_sha256": "2cb6f9154e1025d0a0328671c8a1d226e0bddd2ccb2cfc351015fe6ca846bd34",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "学習者用デジタル教科書は、試行的な実証から学校で日常的に使う実用段階へ移っている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "402879dd019ba393b37881f2cc062a4cc673bb66e8acebb97c48d79817aaa678"
+    },
+    "trend/domestic-travel-consumption-expansion": {
+      "body_sha256": "974722bace164ebf93754f003f621069f237bb4a9b537b5aa09d0e546107f423",
+      "elements": {
+        "1": {
+          "accepted": "国内交流（国内旅行）をさらに拡大させること",
+          "accepted_sha256": "39a165cd3de0487c39876dac51c1885d128b46fbeb110b8c1879254fe0c681a6",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "国内交流（国内旅行）をさらに拡大させること"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "地方誘客をより一層進めるため、地方部への訪問意欲の高いリピーターや地方部における延べ宿泊者数に関する目標を新たに定めるとしている。",
+          "accepted_sha256": "afe9f5fe960c84955f29bdb16811787e0fa39cca4ce6f06c0d509ec891da11ae",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "地方誘客をより一層進めるため、地方部への訪問意欲の高いリピーターや地方部における延べ宿泊者数に関する目標を新たに定めるとしている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "81e1cc0b1ccc07567532f75ab66548571524245f6b34c34da0806b98ff743d1d"
+    },
+    "trend/electrified-vehicle-adoption": {
+      "body_sha256": "6b74761185efa0d1af6cf7b53ae7adb6e9a309cf188e5ad7d7548ea8ce48b706",
+      "elements": {
+        "1": {
+          "accepted": "乗用車保有者・購入検討者は、次の車で電動車を選ぶ方向に向かっている。",
+          "accepted_sha256": "ad8830b7abac88d7fabc876ca0c021ce94449b639068ad055a5e9541ce6dc7e6",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "乗用車保有者・購入検討者は、次の車で電動車を選ぶ方向に向かっている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "乗用車の新車販売で、電動車の構成比が高まっている。",
+          "accepted_sha256": "8eed8d0e7c1d138db987f9b3acab9a92738cf1c6c1dc6559c4ebb69ac0891246",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "乗用車の新車販売で、電動車の構成比が高まっている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "0dbe5b36cccfe8165cf3e9bda2dc5afa6312dc13c3769f7e832ae461937d5147"
+    },
+    "trend/fertility-treatment-insurance-access": {
+      "body_sha256": "429ac808b135de54063e4a7601b73f482f90fd7a22e6bbe26b9a1705481caa85",
+      "elements": {
+        "1": {
+          "accepted": "治療費、相談、医療機関の情報提供、仕事との両立を一体で考える必要が高まった。",
+          "accepted_sha256": "dd4f907e2b734ba9de8675b32c4b936876df09d4f3c6970f93c61240b4d723ea",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "治療費、相談、医療機関の情報提供、仕事との両立を一体で考える必要が高まった。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "先進医療の追加検討は継続審議中",
+          "accepted_sha256": "e680324552ae6fdd7cbab7f55cc316f403591a1475db9b39cbc617bbd696e379",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "先進医療の追加検討は継続審議中"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "36efd21ccf19c7741eca08bf5e59de47257c737e3a4262f197613a8bcfd74be1"
+    },
+    "trend/food-ecommerce-expansion": {
+      "body_sha256": "fc4d53d17da770582bef8481de2838325f6fcb240974c029c83570a11be5731e",
+      "elements": {
+        "1": {
+          "accepted": "女性生活者の過半数が、ネットスーパーを今後利用したいという意向を持っている。",
+          "accepted_sha256": "393656f0301fa129399360c3346983bb872f930ffb48ef2f529e2d06f4876724",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "女性生活者の過半数が、ネットスーパーを今後利用したいという意向を持っている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "食品、飲料、酒類の消費者向け電子商取引の市場規模が拡大している。",
+          "accepted_sha256": "bbd8a6fa5c4fae66cac07dd0066243dbda3b1bbb33b8f7f7ba7b4decffd8bfc4",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "食品、飲料、酒類の消費者向け電子商取引の市場規模が拡大している。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "e56adba1c9f979de0be6f2ca3566cd128274135dcdfce74f167fa57b9c36ce47"
+    },
+    "trend/food-loss-reduction-institutionalization": {
+      "body_sha256": "cc9ee0a8d22f01217e8d1e6c653ca27cebadff0520422aeb78ef5ad42fa634be",
+      "elements": {
+        "1": {
+          "accepted": "食品ロスを2030年度までに大きく削減する数値目標",
+          "accepted_sha256": "b7a1302f5c9bc707e79c74b5410edf4b6bf56dd55b70e3635092ca2bfadec9c0",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "食品ロスを2030年度までに大きく削減する数値目標"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "食品ロスの削減が、個別の啓発キャンペーンだけでなく、法律、政府目標、事業者向けガイドライン、自治体・消費者との連携を通じて継続的に対応する領域になっている。",
+          "accepted_sha256": "e41454454b0febafd2f95da8faff3f068606e7f8274e276ec91affbaad710c17",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "食品ロスの削減が、個別の啓発キャンペーンだけでなく、法律、政府目標、事業者向けガイドライン、自治体・消費者との連携を通じて継続的に対応する領域になっている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "49afed603c5e5b1340e7db74012fdccf496c2f584f4bf7edc92cd0685b69fe51"
+    },
+    "trend/foodservice-demand-recovery": {
+      "body_sha256": "d0ed3942fa48ec0372d66ce6c77854870ee6f9bab0f408da7c0c43e165c5e7e9",
+      "elements": {
+        "1": {
+          "accepted": "外食産業の市場規模は、コロナ禍前の水準を2026年に上回るとの見通しが示されている。",
+          "accepted_sha256": "f25166baad13b45bb589f74bead771aa9d63c8f20b941646f4ad35240ac2c7de",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "外食産業の市場規模は、コロナ禍前の水準を2026年に上回るとの見通しが示されている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "に近づき、「2026年には上回る」と予測している。",
+          "accepted_sha256": "b3b30579a68073dd4e81cd64cea247c030258d2043ce5ba278b92a06b6b594b2",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "に近づき、「2026年には上回る」と予測している。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "87d1ff41ccf523bbc3301b587ea241b833204bdfe00775f7bdf9beac05997c91"
+    },
+    "trend/foodtech-alternative-protein": {
+      "body_sha256": "abb1805e9e64f8dd7c5cc644c0e7876c5b6ac687957dfa3a6d11c9c66be72dfb",
+      "elements": {
+        "1": {
+          "accepted": "生活者の過半数は、2050年頃に普及・活用が期待されるフードテック食材を「食べたい」という意向を既に持っている。",
+          "accepted_sha256": "d9accc519d92f8bafc981a22a5f890ae4018e5c1d4d6b1003bad916b6d8c039d",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "生活者の過半数は、2050年頃に普及・活用が期待されるフードテック食材を「食べたい」という意向を既に持っている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "食品技術を、研究室の技術開発だけでなく、新たなたんぱく質源の生産・加工・販売、食料安全保障、環境負荷、消費者理解をつなぐ事業化の課題として扱う枠組みが整ってきた。",
+          "accepted_sha256": "7231a09dcbea7c14d08a0949741b8b61b0b9ad8ec45380227eb01ffabe4d2aef",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "食品技術を、研究室の技術開発だけでなく、新たなたんぱく質源の生産・加工・販売、食料安全保障、環境負荷、消費者理解をつなぐ事業化の課題として扱う枠組みが整ってきた。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "23705cb468018838c4b4dbb3ba96c34fbaf8c232aed815688ac1d87c21a873d8"
+    },
+    "trend/foreign-worker-employment-expansion": {
+      "body_sha256": "9e409844c7c5e89d94f1da4f276187a513fdecfb07c3514c3721c0509b2bbb91",
+      "elements": {
+        "1": {
+          "accepted": "特定技能制度の受入れ見込数（1号特定技能外国人の受入れ上限）を令和6年4月から向こう5年間（令和11年3月まで）にわたって拡大再設定し、対象分野も拡大している。",
+          "accepted_sha256": "10ed1867eb97fc91a5aa4dee459385dd16c361ec8b2a2a6602e3a2a5671b5478",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "特定技能制度の受入れ見込数（1号特定技能外国人の受入れ上限）を令和6年4月から向こう5年間（令和11年3月まで）にわたって拡大再設定し、対象分野も拡大している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "受入れ見込数の拡大に伴い、地域における外国人との共生社会の実現が受入れ企業の責務であることも基本方針に明記したとしている。",
+          "accepted_sha256": "554dc9ed8aa93bd2246ef37d7079abb1ef2b871f27b9b1b3ca049cc5dfe846da",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "受入れ見込数の拡大に伴い、地域における外国人との共生社会の実現が受入れ企業の責務であることも基本方針に明記したとしている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "109090b23ccdee5b20ed07fe9ab0165368fe9f938636e3ba5d11a9ecf67094b9"
+    },
+    "trend/functional-food-safety-governance": {
+      "body_sha256": "c5b2113a4658a0584c95db2c99d9bc38b0d6e39ebf3192d7c5e4710d538e42f8",
+      "elements": {
+        "1": {
+          "accepted": "この変化は、機能性の訴求文を作るだけでなく、根拠資料の再確認、健康被害情報の収集・報告、表示変更・撤回判断までを含む管理運用を販売前後の責任として扱う方向である。",
+          "accepted_sha256": "6c7de8071d03286ba272518d3fe4e7529155a85cc709a2791b8a6a22d9a0ac2e",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "この変化は、機能性の訴求文を作るだけでなく、根拠資料の再確認、健康被害情報の収集・報告、表示変更・撤回判断までを含む管理運用を販売前後の責任として扱う方向である。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "消費者庁・厚生労働省は、機能性表示食品等の届出者に健康被害情報の収集・報告を恒常的な義務として課し、行政側も情報を集約し続ける運用を今後の前提としている。",
+          "accepted_sha256": "5b08bb8901ca0852a86a0ad8a79d9d411ff9bedde4ab4306ea0b9b2e888c6388",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "消費者庁・厚生労働省は、機能性表示食品等の届出者に健康被害情報の収集・報告を恒常的な義務として課し、行政側も情報を集約し続ける運用を今後の前提としている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "3a24e8def36bc7f3ada4e06efcb3b05f60c09b4430466eb4afa528423bf35af6"
+    },
+    "trend/gaming-digital-global-expansion": {
+      "body_sha256": "d4bec57e1769bb8e1e2dd51f90303ca02e96eb140fa26a2849d9c6055c70a792",
+      "elements": {
+        "1": {
+          "accepted": "この構造変化は、ゲームを単発のパッケージ販売だけでなく、デジタル配信、継続的なアップデート、プラットフォーム別のコミュニティ、海外向けのローカライズ・運用を含む事業として設計する前提を広げる。",
+          "accepted_sha256": "d7ef2021db6270a01142c6230539514588e5c08464af10f3a99ed0b5d0e6b6cd",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "この構造変化は、ゲームを単発のパッケージ販売だけでなく、デジタル配信、継続的なアップデート、プラットフォーム別のコミュニティ、海外向けのローカライズ・運用を含む事業として設計する前提を広げる。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "世界市場の拡大、デジタル販売、モバイル・PCへの価値移動、地域をまたぐ販売機会が同時に進んでいることである。",
+          "accepted_sha256": "687890f501810607e08566153310443445039dd7a4e92fd786eb0e8a749b460d",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "世界市場の拡大、デジタル販売、モバイル・PCへの価値移動、地域をまたぐ販売機会が同時に進んでいることである。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "08f9f35c721f7e9a88b2276afec33a87d5fd33d33c95126bb7001ff9419edece"
+    },
+    "trend/generative-ai-business-adoption": {
+      "body_sha256": "2980bdf4306010b1a7012f44f803d6fe89f5bb9f84cbeaa90ecc36630dda3bc0",
+      "elements": {
+        "1": {
+          "accepted": "DXに取組む大企業を中心に「関心→導入」への転換が急速に進む",
+          "accepted_sha256": "a2191c769a8da96382d4009163404aeb0b6f61756cf91ea89a3ccad92f6d1028",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "DXに取組む大企業を中心に「関心→導入」への転換が急速に進む"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "この潜在層が今後どの程度実際の導入に転換するかは、次回以降の調査で確認する必要がある。",
+          "accepted_sha256": "2a2cb7a64d32a9384a5a5c54fa88b1b3c3b87d9acd98648300d59591119ae92b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "この潜在層が今後どの程度実際の導入に転換するかは、次回以降の調査で確認する必要がある。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "8c496d9963461c551e48ed5b4761f4ae41eff91067899f71a32ec6e16ddea5b3"
+    },
+    "trend/generative-ai-daily-life-adoption": {
+      "body_sha256": "ee580096702e36df7a61596097ecd1321ff1875e2530e33890eb88cf57e14554",
+      "elements": {
+        "1": {
+          "accepted": "生成AI利用者の約半数は、今後も利用を広げていきたいと考えている。",
+          "accepted_sha256": "b825780a2e264f427dcd0cd5fcacb2e412dd886a61ef2899efb170abb05a2edc",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "生成AI利用者の約半数は、今後も利用を広げていきたいと考えている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "利用拡大と安全設計が同時に進む局面である。",
+          "accepted_sha256": "97d986d65e877e146e6adeb6aeda1e8f8dd02a8a53170462638c7d76a0685ec3",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "利用拡大と安全設計が同時に進む局面である。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "744ef761ba9261c0ed5975d6639da16f32cf1ac25ffae80cc3965e83eefa78e2"
+    },
+    "trend/giga-learning-platform-renewal": {
+      "body_sha256": "0a8f7c0f032f86bbe2066b2b8f565e1694f7ae23d359262a8ec86a20b99dab7f",
+      "elements": {
+        "1": {
+          "accepted": "端末・ネットワーク・クラウドを学習基盤として切れ目なく維持する変化である",
+          "accepted_sha256": "95297500e4cc846395b1363dc51a2ef562b4a8622b6349c8ab773fec551d206c",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "端末・ネットワーク・クラウドを学習基盤として切れ目なく維持する変化である"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "計画的な更新と持続運用の段階へ移っている",
+          "accepted_sha256": "668afb22f57bc434457919d445ab3239c4e25f3cb12fbf60472facdcd55819d1",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "計画的な更新と持続運用の段階へ移っている"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "509a8237c1c8efbaf92e3f45364686639e07c8a02f833df378e045acbd626476"
+    },
+    "trend/green-oriented-consumption": {
+      "body_sha256": "e8099fb9e2409125a8aea2933865dea52b89b7cf68a32126c540fdc8ce36872d",
+      "elements": {
+        "1": {
+          "accepted": "消費者は、実際に取り組んでいる割合以上に、エシカル消費につながる商品を今後購入したいという意向を持っている。",
+          "accepted_sha256": "92b179601661682f6c82f6f62bd2e3a4cf7252680b462c08ad122e2f0d045acc",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "消費者は、実際に取り組んでいる割合以上に、エシカル消費につながる商品を今後購入したいという意向を持っている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "環境・社会課題に配慮した商品やサービスを、単に「エコ」と訴求するのではなく、認証ラベル、商品の生産・製造工程、環境負荷、長く使う・リユースする方法などを理解したうえで選ぶ消費行動が、政策・調査・事業者の行動変容支援の対象になっている。",
+          "accepted_sha256": "d7e131d3f6c9d84dcaedec759a3325d112447488c7408300fc2c52f81af5bb89",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "環境・社会課題に配慮した商品やサービスを、単に「エコ」と訴求するのではなく、認証ラベル、商品の生産・製造工程、環境負荷、長く使う・リユースする方法などを理解したうえで選ぶ消費行動が、政策・調査・事業者の行動変容支援の対象になっている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "cdb504823d1a0c94e3e7281bfc24d81aab7071dea3e142b7c44d26c1924a4c61"
+    },
+    "trend/inbound-tourism-demand-expansion": {
+      "body_sha256": "d13ce90a4331c03fafd5a90e95f684d31c210cc607e65057e04a8fd1e644cd67",
+      "elements": {
+        "1": {
+          "accepted": "国は、2030年までに訪日外国人旅行者数6,000万人、訪日外国人旅行消費額15兆円という目標の達成を目指している。",
+          "accepted_sha256": "65db772b34b461389fd25b69d3901bd0f4cc1cc5305a744bb3c322a0116b1f74",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "国は、2030年までに訪日外国人旅行者数6,000万人、訪日外国人旅行消費額15兆円という目標の達成を目指している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "既存の足元の根拠にある2025年実績（約4,268万人・約9.5兆円）は2030年目標（6,000万人・15兆円）に向けた途上にある。",
+          "accepted_sha256": "865a58b19a431d6ae709b715e54ff3cf4304aecd55a84c88c59c77ae7f2d8004",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "既存の足元の根拠にある2025年実績（約4,268万人・約9.5兆円）は2030年目標（6,000万人・15兆円）に向けた途上にある。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "42693bde41f1bd9c83c15bf4a1273fd741630e688e20abef2b721bfebd817257"
+    },
+    "trend/japan-btoc-ec-expansion": {
+      "body_sha256": "c518b3ec1f77fea85f28ee047bc176d32ff156d5b6457e7485ef8eac235aebe9",
+      "elements": {
+        "1": {
+          "accepted": "日本国内の消費者向け商取引で、電子商取引の金額と比率が拡大している。",
+          "accepted_sha256": "f58b053adaf7733819123854430c49aa52335a975fa5f8fc8b9e4c34e5b1dd5a",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "日本国内の消費者向け商取引で、電子商取引の金額と比率が拡大している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "BtoC-EC化率は9.8％で、前年比0.4ポイント増とされている。",
+          "accepted_sha256": "fb5ad9f1bab1454bc11bdeb0e41824d169515602b6f5c8b063567d47027c2039",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "BtoC-EC化率は9.8％で、前年比0.4ポイント増とされている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "5ea2b26baa43ddb0e3e75dcd917dd5c8f8fcb1d0a8a8095cbfdb2738ffd574d4"
+    },
+    "trend/japanese-music-overseas-expansion": {
+      "body_sha256": "f2b5fcc028de4d916559ecb0861cb4b895bedfe0f7f61d8c0bdce9d6a40d5b34",
+      "elements": {
+        "1": {
+          "accepted": "コンテンツ産業全体（音楽を含む）の海外売上高を2033年に20兆円とする目標",
+          "accepted_sha256": "27a2fd56a9a8388c208fd2a3c82bb15357c5973a7dbdc3c14b2833b9295476e1",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "コンテンツ産業全体（音楽を含む）の海外売上高を2033年に20兆円とする目標"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "海外需要を測定・運用する基盤が立ち上がったトレンド",
+          "accepted_sha256": "1c2b313d8aaf539b28bce2c2cfca260d8612e51601fc2432ec00b0521110fc3d",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "海外需要を測定・運用する基盤が立ち上がったトレンド"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "e5f2154c9eb7301da53ab7667668ed16f270012b322133212b09f88b15c9fd82"
+    },
+    "trend/live-entertainment-experience-expansion": {
+      "body_sha256": "89832fb7e12a809e5891e717b67209711fcc0a0adb384d1c9ba86e5c9e1aff33",
+      "elements": {
+        "1": {
+          "accepted": "国内ライブ・エンタテインメント市場が2035年に初めて1兆円台に達するとの見通し",
+          "accepted_sha256": "b9f5179fe622c5ee2624c7f8ff372b08e0e154dddbc272c092e1ee09fecd2796",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "国内ライブ・エンタテインメント市場が2035年に初めて1兆円台に達するとの見通し"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "今後は一人ひとりの観客が得る体験価値を高める「高付加価値化」が市場成長の鍵になると位置づけている。",
+          "accepted_sha256": "abdb4810a7687f23d119f4dac9abcd5ea02b0fe03acdfab58d1861edc721841b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "今後は一人ひとりの観客が得る体験価値を高める「高付加価値化」が市場成長の鍵になると位置づけている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "77249c563bbcb72325fcf8392e25f11f810af18de25eec3564cf72f09cd07bf2"
+    },
+    "trend/music-streaming-expansion": {
+      "body_sha256": "ca996db247ec5063b5ae78271aaeb64e1b184759f9cda4276685f39a94149393",
+      "elements": {
+        "1": {
+          "accepted": "音楽配信サービスの利用者は、動画配信サービスよりも強い継続利用の意向を持っている。",
+          "accepted_sha256": "018021317640d9068d43608aed7534f9e5f39c06ae0d9da0d1c39879d4fbfdd4",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "音楽配信サービスの利用者は、動画配信サービスよりも強い継続利用の意向を持っている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "これは、音楽配信サービス利用者が「一度使うと離れにくい」という継続志向を持っていることを示す。",
+          "accepted_sha256": "ed8141473ed9b053a7ac3c649b7144df41949230d9f9f8df0cfa0326894dc90a",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "これは、音楽配信サービス利用者が「一度使うと離れにくい」という継続志向を持っていることを示す。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "f7376b16447fa623967ca67b943d357904eeb283c29117f5cb6d5ace4fd15f1c"
+    },
+    "trend/online-financial-crime-governance": {
+      "body_sha256": "ef13908aa04be3ce9bc3a01ea4d242e7549742417fdebfa80d7e85a039a04637",
+      "elements": {
+        "1": {
+          "accepted": "オンライン金融犯罪への対応が、個別の注意喚起だけでなく、金融機関の認証、なりすましサイト・メール対策、異常取引の検知、取引限度額、顧客への確認、口座の停止・凍結・解約、金融機関間の情報共有までをつなぐ管理運用として扱われるようになっている",
+          "accepted_sha256": "647b22a28be759d74f3525ed17a9d4b3adada6d2535ca3356b2d6d324970ee12",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "オンライン金融犯罪への対応が、個別の注意喚起だけでなく、金融機関の認証、なりすましサイト・メール対策、異常取引の検知、取引限度額、顧客への確認、口座の停止・凍結・解約、金融機関間の情報共有までをつなぐ管理運用として扱われるようになっている"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "金融庁は、金融機関に対しインターネットバンキング対策の強化や不正検知時の顧客確認・出金停止等の迅速化を継続的に求めており、あわせて顧客となる国民にも理解・協力を求めている。",
+          "accepted_sha256": "62bda35a87d43751bff215a85c1910920f3da2eb54d4440a767d7a29a1f65003",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "金融庁は、金融機関に対しインターネットバンキング対策の強化や不正検知時の顧客確認・出金停止等の迅速化を継続的に求めており、あわせて顧客となる国民にも理解・協力を求めている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "f3d7f676f4acf872865fa796f1de93352031772bab975e9d24c83caa0bbf87d6"
+    },
+    "trend/online-game-spending-protection": {
+      "body_sha256": "65ab8cd7088daf8f6bcb174840abad3a781c6dec86b244450a2625fc57c54dab",
+      "elements": {
+        "1": {
+          "accepted": "消費者庁は、オンラインゲームの課金トラブルに関する注意喚起ページを今後も随時更新し、関係省庁・機関やゲーム関連業界団体の自主的な普及啓発の取組を含めて幅広く情報提供を続けるとしている。",
+          "accepted_sha256": "310472818fc3ec275fb3e2948b889c23241634b06cdbc1418b636a22ca6dcbf0",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "消費者庁は、オンラインゲームの課金トラブルに関する注意喚起ページを今後も随時更新し、関係省庁・機関やゲーム関連業界団体の自主的な普及啓発の取組を含めて幅広く情報提供を続けるとしている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "消費者被害の予防・啓発の一環として、このページを随時更新し、ゲーム関連業界団体において自主的に推進している普及啓発の取組等を含め、幅広く情報提供を行うこととしています",
+          "accepted_sha256": "5da61efcea697ff2853f1d7b79122225cb84ca6b535cadb282f4a55a41667c1c",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "消費者被害の予防・啓発の一環として、このページを随時更新し、ゲーム関連業界団体において自主的に推進している普及啓発の取組等を含め、幅広く情報提供を行うこととしています"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "b72fddb67f3e4d06aa4c1d3cbd5a8c1737c997ddb5cd539f68815cb2f289d372"
+    },
+    "trend/online-marketplace-transparency": {
+      "body_sha256": "7e8768a1f2f9f09ddaa0ac1636c418e700613e0980e6f236bc3e5c42c4fca42f",
+      "elements": {
+        "1": {
+          "accepted": "経済産業省は、透明化法の規制対象を今後さらに広げ、対象事業者に将来の報告・評価義務を課す方向へ向かっている。",
+          "accepted_sha256": "0738a2450d4eabef6ea2dc63d1f9db94e1ca384a243b6bb3a2be486701628182",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "経済産業省は、透明化法の規制対象を今後さらに広げ、対象事業者に将来の報告・評価義務を課す方向へ向かっている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "オンラインモールの運営は、出店者が個別に規約を読むだけの関係から、取引条件の開示、手続・体制の整備、利用事業者との相互理解、相談窓口、モニタリング・レビューを組み合わせて、透明性と公正性を継続的に確認する制度運用へ移っている。",
+          "accepted_sha256": "624951df4e46b10871b2d9af300ba5f34a460c6e337e38c481914c47ea0cf19b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "オンラインモールの運営は、出店者が個別に規約を読むだけの関係から、取引条件の開示、手続・体制の整備、利用事業者との相互理解、相談窓口、モニタリング・レビューを組み合わせて、透明性と公正性を継続的に確認する制度運用へ移っている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "cd32eb8eab7af25062d00a8b0e7997c1fb66c2741d1f8e0c798aedb8db79177b"
+    },
+    "trend/online-medical-consultation-adoption": {
+      "body_sha256": "d1c912ddabe9c230e12c398b8944f5ae34c01d65b6ee8bdef85ae4d170a05ae0",
+      "elements": {
+        "1": {
+          "accepted": "厚生労働省は、オンライン診療その他の遠隔医療が幅広く適正に推進されることを目指している。",
+          "accepted_sha256": "8fb9157dafa84bb1cb3124db5094eb737795d626d8e1a51d958a97bbb20ac1c0",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "厚生労働省は、オンライン診療その他の遠隔医療が幅広く適正に推進されることを目指している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "オンライン診療その他の遠隔医療の適正かつ幅広い普及に資すること",
+          "accepted_sha256": "ab719bfbc3b8cc79bfa0202450680904d2fd8382038688dcf58602fc6ab30ad8",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "オンライン診療その他の遠隔医療の適正かつ幅広い普及に資すること"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "00ac936771a662fecdb89618d626c06848391e294602537bf5d6069060fa47a1"
+    },
+    "trend/online-news-platform-dependence": {
+      "body_sha256": "d5256e8d47dff05291a5e27b92edbf4ac390ce72f108dec3daa90a748594c0a4",
+      "elements": {
+        "1": {
+          "accepted": "権利者の許諾を原則とする制度整備を国に求めている",
+          "accepted_sha256": "a4e0d6612e11559db723f8a55cf583b3d528c76ba92348ae9baf0f1ff8d94353",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "権利者の許諾を原則とする制度整備を国に求めている"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "権利者が利用を拒否できる「オプトアウト」の仕組みを日本で早期に導入するようGoogleに求めている",
+          "accepted_sha256": "7281caac693d4c70bd5ff2c5dd1db837a16068a25376da3a70f5a61fc7c975eb",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "権利者が利用を拒否できる「オプトアウト」の仕組みを日本で早期に導入するようGoogleに求めている"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "3902326b18563d16445092692a6238b0f3a07761ec3fbf585d3ff60bb1c88936"
+    },
+    "trend/outbound-travel-recovery": {
+      "body_sha256": "1a866f9d85af81fd6fb963dc955293face4090ca891fe049386d503da09d80db",
+      "elements": {
+        "1": {
+          "accepted": "日本人の海外旅行（アウトバウンド）需要をさらに拡大させることを2026年度からの政策方針としている。",
+          "accepted_sha256": "9874dd2be1f651e22dca143651cfe6f460e14b1c55529ec5e059f2e728edfb0b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "日本人の海外旅行（アウトバウンド）需要をさらに拡大させることを2026年度からの政策方針としている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "2025年は2019年の約7割まで戻ったが、まだ同水準には達していない。",
+          "accepted_sha256": "3a169cb17335e9b36ccb76ed5dd35b7d0ca370cb6907a07b1ba44ebb32ae2db6",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "2025年は2019年の約7割まで戻ったが、まだ同水準には達していない。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "a6d71124523d5f5a0d0097566d3a41510fda6cfb00cdfa4d5dbf2ebca895dae8"
+    },
+    "trend/parcel-delivery-volume-expansion": {
+      "body_sha256": "ae4a28de112ab5358d047109a5625f2bc1029ed26f54a9ce96346252f8e6155c",
+      "elements": {
+        "1": {
+          "accepted": "宅配便取扱個数が2019年度の43億個から2035年度には88億個へ倍増すると予測している",
+          "accepted_sha256": "e3faac75d59e2f722e4e3baa288508ad403ee89f1cfaf336d1f46faeec1190c6",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "宅配便取扱個数が2019年度の43億個から2035年度には88億個へ倍増すると予測している"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "物販系EC化率が2019年度の7％弱から2035年度には約30％に高まると見込んでおり、これがネット通販利用増加を通じて宅配便個数を押し上げる主因だと説明している。",
+          "accepted_sha256": "6b54c08c5cd3e4da15db842dae1121ea614af0dd84edad9de5e5968852ba4be9",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "物販系EC化率が2019年度の7％弱から2035年度には約30％に高まると見込んでおり、これがネット通販利用増加を通じて宅配便個数を押し上げる主因だと説明している。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "7c7f61ff1fa7ec25f80aa4c6d978880a74007a3e21257033fde33f70b51b2433"
+    },
+    "trend/parental-leave-normalization": {
+      "body_sha256": "7513ae30a73365d49773821310166000fc6e1b0ff610a39b31ffd8ef701c052f",
+      "elements": {
+        "1": {
+          "accepted": "政府は、男性の育児休業取得率を今後さらに引き上げる数値目標を掲げている。",
+          "accepted_sha256": "f520ed7e1e63ed9f6087f4e40ca19d50050791b97dea08c5ff3eaf1b6d0a1a29",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "政府は、男性の育児休業取得率を今後さらに引き上げる数値目標を掲げている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "政府目標 令和7（2025）年：50％、令和12（2030）年：85％",
+          "accepted_sha256": "37b84cfb8007911931042fd9f35101d8e34ab072c2ded9cf205d91268a44df77",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "政府目標 令和7（2025）年：50％、令和12（2030）年：85％"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "214ff611461d1ac847981d4609028975bba76fbed6137c6198958f504ac5bf2e"
+    },
+    "trend/plastic-resource-circulation": {
+      "body_sha256": "d400d8f8d18fb0a1d43fd9228ea760c4c7d04a25a38afee5d0567d526c37826c",
+      "elements": {
+        "1": {
+          "accepted": "プラスチック製品の設計、製造・販売、提供・使用、排出、回収、再資源化を、個別企業の環境配慮だけでなく、制度と手引きに沿って対応する必要がある領域として扱う動きが進んでいる。",
+          "accepted_sha256": "0600f979dcb5e2cf0f7e38f7759a208a72adcfa06d3c28dc4d9d9161fe0165a5",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "プラスチック製品の設計、製造・販売、提供・使用、排出、回収、再資源化を、個別企業の環境配慮だけでなく、制度と手引きに沿って対応する必要がある領域として扱う動きが進んでいる。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "設計から廃棄までの対応が制度・認定・手引きによって具体化していること",
+          "accepted_sha256": "dd26a8c5b3a94cc8a2318603fe29e57cdda6c98f27b9a38ca152d38f7f3a37df",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "設計から廃棄までの対応が制度・認定・手引きによって具体化していること"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "3ddd5c8744e0a9704f30d70e303dc59cd3b6ca22fe33015289b7c41717381caa"
+    },
+    "trend/recurrent-education-institutionalization": {
+      "body_sha256": "64095373cae12d233712657cce2ea10d6c8a2dd35acd695802008bc755e70bf0",
+      "elements": {
+        "1": {
+          "accepted": "企業は、労働者の主体的なキャリア形成に向けて、自己啓発への支援を含む複数の取組を今後拡充したいと考えている。",
+          "accepted_sha256": "f18de69768c57de15dbf3c1520c2027ab335d18f5265c4b95a92df2461eaf6f7",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "企業は、労働者の主体的なキャリア形成に向けて、自己啓発への支援を含む複数の取組を今後拡充したいと考えている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "社会人の学び直しが、個人の自己啓発だけでなく、大学等の講座、企業の人材育成、地域の産学官連携、学習履歴、就職・転職支援をつなぐ政策テーマになっている。",
+          "accepted_sha256": "1e8fafa6978c79de23f54e7f674908421c1757993fa438a25f5628c11c89e760",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "社会人の学び直しが、個人の自己啓発だけでなく、大学等の講座、企業の人材育成、地域の産学官連携、学習履歴、就職・転職支援をつなぐ政策テーマになっている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "8c8098f7d29cac7fc39037846f0a8f41f52a43d821d3f000b74629493bfcc9a5"
+    },
+    "trend/redelivery-reduction": {
+      "body_sha256": "81fbc755f36d386ba033dc2a1333873fb1046981e9027c7d3d64b13fb38735f6",
+      "elements": {
+        "1": {
+          "accepted": "政府は、消費者が宅配ボックス・置き配など多様な受取方法を選ぶ状態を、2030年度までに現在の2倍近くまで広げる数値目標を掲げている。",
+          "accepted_sha256": "e9fc7da3df98757b3affddf515f5424384acfb712fd2c02f0817ebc6a965ac3b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "政府は、消費者が宅配ボックス・置き配など多様な受取方法を選ぶ状態を、2030年度までに現在の2倍近くまで広げる数値目標を掲げている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "「多様な受取方法の利用率」（大手宅配事業者3社ベース）を2025年2月時点の25.6％から2030年度に50％程度へ引き上げる目標を明記した。",
+          "accepted_sha256": "9e938bb3d3d9ce0b1e3e7418cc311605ea6664148f2b6aeef83749847dabce69",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "「多様な受取方法の利用率」（大手宅配事業者3社ベース）を2025年2月時点の25.6％から2030年度に50％程度へ引き上げる目標を明記した。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "ab21ea31f2f53abbe8da8729e88dadad12638c32acf7c87a98046f860b5d575b"
+    },
+    "trend/reuse-c2c-market-expansion": {
+      "body_sha256": "b47cb04a5901a7f3ce897ef44725a67a2979cbbab6b22441884b17a2976d110c",
+      "elements": {
+        "1": {
+          "accepted": "生活者は、新たに何かが必要になったとき、新品ではなく中古品で購入してもよいという意向を、品目によっては過半数が持っている。",
+          "accepted_sha256": "311acbcb428341416338ba9485bd0d6c576375ce0698a5ad670750703d097bf5",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "生活者は、新たに何かが必要になったとき、新品ではなく中古品で購入してもよいという意向を、品目によっては過半数が持っている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "国内のリユース市場規模（消費財の販売額）が2023年の3兆1,227億円から、2030年には4兆円に達すると見込んでいる。",
+          "accepted_sha256": "f4229969c4702e12425bde7f9b219990eeee242fe8bec011e815cf53070884dc",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "国内のリユース市場規模（消費財の販売額）が2023年の3兆1,227億円から、2030年には4兆円に達すると見込んでいる。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "b60593eda52277b2abf4ef2bd664f6a4408e2e4b7a40fd97a81509d6f537aae1"
+    },
+    "trend/school-generative-ai-governance": {
+      "body_sha256": "722298e4f15377eaec3de8b5140a3a034798eec113a5eaea03be993b7e67531c",
+      "elements": {
+        "1": {
+          "accepted": "教育現場で生成AIを検討する際の判断条件を制度・運用の側から具体化している",
+          "accepted_sha256": "e62f7e7e3c7d88995ffe4e22392f19129414a207081ffab69f4ca8c1a8ce3caf",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "教育現場で生成AIを検討する際の判断条件を制度・運用の側から具体化している"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "文部科学省は、技術の進展や学校現場の取組状況を踏まえ、ガイドラインを今後も必要に応じて改訂していくことを想定している。",
+          "accepted_sha256": "8401148614326ad515fdfac99b0211a352daa793266c2e81d97cc3bc81a72d85",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "文部科学省は、技術の進展や学校現場の取組状況を踏まえ、ガイドラインを今後も必要に応じて改訂していくことを想定している。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "15723e57cdccd39868e75e0ffd0f59511a47d48d7e1d04c1c1e715bf118317ad"
+    },
+    "trend/senior-employment-expansion": {
+      "body_sha256": "88c0c363e79a47e2906629cc645e17ee703d10de5dbebe20100d79849ae65f9b",
+      "elements": {
+        "1": {
+          "accepted": "60歳以上の生活者、とりわけ既に働いている人の多くは、高齢期になっても長く働き続けたいと考えている。",
+          "accepted_sha256": "6adad6598071ca3fceeadcaaa054808c84783c9c6e9b4085e78090c285f7cb8d",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "60歳以上の生活者、とりわけ既に働いている人の多くは、高齢期になっても長く働き続けたいと考えている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "65歳以上の就業者が増え、商品・サービス、職場、学習、移動、健康管理の設計で「引退後の消費者」だけではない生活者像を前提にする必要が高まっている。",
+          "accepted_sha256": "9da98c32e61172e789ce2d6d90afc05859c6c76d7d7a2494a653302c34ba0b71",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "65歳以上の就業者が増え、商品・サービス、職場、学習、移動、健康管理の設計で「引退後の消費者」だけではない生活者像を前提にする必要が高まっている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "eb9dcb79cc6ef2a0a05b8f42a308444bff88d34afae9f01e8f04cd635d2e02fb"
+    },
+    "trend/service-ecommerce-expansion": {
+      "body_sha256": "b805f94f2c6a658db07de80a787e333ea92b1399f4ac0ee2ebcadb91b296acf4",
+      "elements": {
+        "1": {
+          "accepted": "サービス系BtoC-ECの中で最大の割合を占める旅行サービスについて、生活者は先の時期の旅行を具体的に予定または希望している。",
+          "accepted_sha256": "0a7d31281071fb5a11c8e847e6a4a45c3bcc61378587e7ae569a85fe8d7fb3ac",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "サービス系BtoC-ECの中で最大の割合を占める旅行サービスについて、生活者は先の時期の旅行を具体的に予定または希望している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "2025年3月〜5月（ゴールデンウィークを除く）については「旅行に行く予定である」17.4％、「まだ予定はないが、旅行に行きたい」22.3％で、合わせて約4割が前向きな回答だった。",
+          "accepted_sha256": "4e4c4fa96ee0710a63c5316e477563863dba09d08beb2acc0fd7d2bfc6bad12e",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "2025年3月〜5月（ゴールデンウィークを除く）については「旅行に行く予定である」17.4％、「まだ予定はないが、旅行に行きたい」22.3％で、合わせて約4割が前向きな回答だった。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "8480da2feeddfdee5b233c38ec715d3d839b0cf80d543542f60d17cabe9d1527"
+    },
+    "trend/short-video-mainstream": {
+      "body_sha256": "c79c2ca0f91101ea433639b9ac434176910e863154870fed60b2585c43b9c81b",
+      "elements": {
+        "1": {
+          "accepted": "広告主は、縦型（ショート）動画フォーマットへの出稿を今後さらに拡大する方向へ向かっている。",
+          "accepted_sha256": "ff5f3f9124b530f796f6b0665a28470b4f411ceaf0ec6f269f7df4bb7f66d859",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "広告主は、縦型（ショート）動画フォーマットへの出稿を今後さらに拡大する方向へ向かっている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "縦型動画広告市場規模（2,049億円、前年比155.9％）が、2026年に2,771億円、2029年には5,648億円（スマートフォン向け動画広告全体の42.5％）に達すると予測している",
+          "accepted_sha256": "0f1a817c4ca4ab31a95c3af03cf25a6317840b9d809ad64c2121b686293bfe1b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "縦型動画広告市場規模（2,049億円、前年比155.9％）が、2026年に2,771億円、2029年には5,648億円（スマートフォン向け動画広告全体の42.5％）に達すると予測している"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "5a91b1210e369a0f57bd4508a574ca8edd29716755c1fa4378c052e7b36f9596"
+    },
+    "trend/single-person-household-expansion": {
+      "body_sha256": "6bdf2c4265099bd60691266ff40bc157475cbd9e923b475a06fd7398f155f365",
+      "elements": {
+        "1": {
+          "accepted": "結婚意向の低下・後ろ倒しは、若年層の単独世帯としての生活期間が延びる方向と整合する。",
+          "accepted_sha256": "8e83179742ae5170faaefd0faa9a27383144717a3c5cb5e19d03ad1334797f0c",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "結婚意向の低下・後ろ倒しは、若年層の単独世帯としての生活期間が延びる方向と整合する。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "18〜34歳の未婚者は、結婚をより不確実なもの・より遠いものとして見るようになっている。",
+          "accepted_sha256": "a5ed7528e531407fe22878423f629839a7d09d96122d8c88efd12b035744bf8f",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "18〜34歳の未婚者は、結婚をより不確実なもの・より遠いものとして見るようになっている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "5a72ba8582aaf33ff1debc4d4b7fee3a2ddd4f567e682ebf72a889006bb5becd"
+    },
+    "trend/sleep-rest-health-management": {
+      "body_sha256": "8df8200a311c6e67bd1763801d557dea60712ff0b51a79e861c56164441a0af4",
+      "elements": {
+        "1": {
+          "accepted": "厚生労働省は、国民の睡眠による休養感と睡眠時間を2035年度までに引き上げる数値目標を掲げている。",
+          "accepted_sha256": "ba615874b917cdb59a5e0b5470d239f8a7660ac5564a72b482d47a2712d60b86",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "厚生労働省は、国民の睡眠による休養感と睡眠時間を2035年度までに引き上げる数値目標を掲げている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "健康日本21（第三次）は2024年度から2035年度までを計画期間とし、「睡眠で休養がとれている者の割合」を80％、「適切な睡眠時間を確保できている者の割合」を60％とする目標を置いている。",
+          "accepted_sha256": "98554de8f39e5887289de827d149db3cbf80cfd33ff6f64d347239c92efc3caf",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "健康日本21（第三次）は2024年度から2035年度までを計画期間とし、「睡眠で休養がとれている者の割合」を80％、「適切な睡眠時間を確保できている者の割合」を60％とする目標を置いている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "336b17f22f64475d3bc5e041460c005316b68d95b5f42c87fc00abd6ca095177"
+    },
+    "trend/specificity-over-relatability-expectation": {
+      "body_sha256": "a39300ff8feaf8c7a3831cb34fd9fb6e71bbba064914b8cb3b60c1435c1f89c9",
+      "elements": {
+        "1": {
+          "accepted": "ゲッティイメージズが向かっていると主張する先は、誰にでも当てはまる一般化された「共感」表現から、特定の個人・状況に根ざした具体性の高い表現への移行である。",
+          "accepted_sha256": "5b7c2fe9b558f26464bf00a35e1419bdbf42e6a285b906ca63f089746f700670",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "ゲッティイメージズが向かっていると主張する先は、誰にでも当てはまる一般化された「共感」表現から、特定の個人・状況に根ざした具体性の高い表現への移行である。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "2026年には、視聴者は広く「共感できる」画一的なイメージにはもはや感動せず、「独特で個人的、かつ具体的なイメージ」に惹かれるようになるという。",
+          "accepted_sha256": "e88248481c98de8775af02bafb2eba26a33cf7437fd41a86fb30b27f59382cc3",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "2026年には、視聴者は広く「共感できる」画一的なイメージにはもはや感動せず、「独特で個人的、かつ具体的なイメージ」に惹かれるようになるという。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "3e677feffd0a5e1fd5a9722dcdaa2469620e0a1461604de1d4ac8c6a0351e363"
+    },
+    "trend/sports-participation-plateau": {
+      "body_sha256": "bb0613e20c8d12d2485e68d6abb7ecfb95b88d9cac1c060d0275d1fe54a0e4ae",
+      "elements": {
+        "1": {
+          "accepted": "スポーツ庁は、成人の週1回以上のスポーツ実施率を70％程度（障害者は40％程度）まで引き上げることを目指している。",
+          "accepted_sha256": "1ce28a09e3c434d9f991d7e6b80840d5b8325608820ae994bfbeff9feeee7060",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "スポーツ庁は、成人の週1回以上のスポーツ実施率を70％程度（障害者は40％程度）まで引き上げることを目指している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "文部科学大臣が2022年3月25日に策定した第3期スポーツ基本計画（計画期間2022〜2026年度）は、「国民のスポーツ実施率を向上」という目標の下に「成人の週1回以上のスポーツ実施率を70％（障害者は40％）」を掲げている。",
+          "accepted_sha256": "870165e5145ff91cddd68c974c9261457134c65640841786ef15b3649e66ccd8",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "文部科学大臣が2022年3月25日に策定した第3期スポーツ基本計画（計画期間2022〜2026年度）は、「国民のスポーツ実施率を向上」という目標の下に「成人の週1回以上のスポーツ実施率を70％（障害者は40％）」を掲げている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "982c34031c53d8ef1503f5be992a0c57e433030d9f316993f3502068f6ca03fd"
+    },
+    "trend/sustainable-fashion-behavior": {
+      "body_sha256": "71ba049e755473d3dbdcad7dc0b9fd4887499bc9be2731e28f87d54a38060f93",
+      "elements": {
+        "1": {
+          "accepted": "家庭から廃棄される衣類を2030年度までに2020年度比25％削減する目標",
+          "accepted_sha256": "951057eb5ce6d836eecb71e6417279304a181c85987e8f40a806147f3095e937",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "家庭から廃棄される衣類を2030年度までに2020年度比25％削減する目標"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "生活者が衣類の回収・リユース・長期使用にどう関わることを見込んでいるかを具体的な行動として示している。",
+          "accepted_sha256": "89c21d3ff17e8b5b2b2c2743b795b25b0224801e702c9aebaad046eef8acd036",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "生活者が衣類の回収・リユース・長期使用にどう関わることを見込んでいるかを具体的な行動として示している。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "c59183097824be1d289d471829ab42a639e0cd536c1a8a1b83aee81af8d82170"
+    },
+    "trend/telework-stabilization": {
+      "body_sha256": "aacdb4e34b1432cf175525ffe0a1fd26265f38f0a6460869c4bac71c246b1d20",
+      "elements": {
+        "1": {
+          "accepted": "テレワークは感染症流行期の一時的な働き方から、実施率が一定水準で続く業務設計上の選択肢へ移っている。",
+          "accepted_sha256": "54e39bf0fbbc2abc162c45eec251b840bc73cf54c66e4c0ad40847ed7f675ce3",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "テレワークは感染症流行期の一時的な働き方から、実施率が一定水準で続く業務設計上の選択肢へ移っている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "テレワークを続けたいと考えている雇用型テレワーカーは、現状よりも高い頻度での実施を望んでいる。",
+          "accepted_sha256": "fceb2d72769f0c678db13908acb6803dbfb81d39e608ac775fc9b892a9d40523",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "テレワークを続けたいと考えている雇用型テレワーカーは、現状よりも高い頻度での実施を望んでいる。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "0b59ccd16731dadf6af0a965bf028cde8b30d6a53764dbe7c4891956fa152588"
+    },
+    "trend/tokyo-region-inmigration-persistence": {
+      "body_sha256": "830297ffb16e225ccb176e19705c7c340107dc549ff7334a66a1e8902d4eca3f",
+      "elements": {
+        "1": {
+          "accepted": "政府は、地方と東京圏との転入・転出を2027年度までに均衡させる（転入超過ゼロにする）ことを目指している。",
+          "accepted_sha256": "ad711ea019a06cdfe46eb5366c32a2dc3dc355d10b40d7db9cea7e684de5bade",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "政府は、地方と東京圏との転入・転出を2027年度までに均衡させる（転入超過ゼロにする）ことを目指している。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "既存の足元の根拠にある2025年の東京圏転入超過（11万2738人、30年連続）は、2021年度の83,827人よりむしろ拡大しており、2027年度均衡という目標との間に大きな距離がある。",
+          "accepted_sha256": "26af29101b6f03c5070f9a90d8cef2eb4f050b5f2bfe19eeaefdb188ade0445b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "既存の足元の根拠にある2025年の東京圏転入超過（11万2738人、30年連続）は、2021年度の83,827人よりむしろ拡大しており、2027年度均衡という目標との間に大きな距離がある。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "b11921ed6bc984d5477048983056a05cf9ee8881713d8bf69adf5ece7c950e25"
+    },
+    "trend/tracking-restrictions": {
+      "body_sha256": "597cd291dd9748b24133b315e9f3e0c6926e7e7f0f662e101709bdbe0b863c05",
+      "elements": {
+        "1": {
+          "accepted": "制約がある状態が例外ではなく常態になった",
+          "accepted_sha256": "6303fd3d46ed15deebbb9d78ab3ee42ea3051ddc40b7c107efcdc5ec09abebdc",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "制約がある状態が例外ではなく常態になった"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "不適正利用・不正取得の禁止を法制化する方針",
+          "accepted_sha256": "aa500225956e25973744da0edb3bd1fad002598a853402b1f27af6b60aea7a34",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "不適正利用・不正取得の禁止を法制化する方針"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "ba6f86342338737914610882fd4e191d5ae50e44aee0aa115a00ab105ad31229"
+    },
+    "trend/vacant-housing-expansion": {
+      "body_sha256": "f5a4c60f55a10824f79ff9bff779ccd8bea2d6c9431cbebc529f875fd2f0c23c",
+      "elements": {
+        "1": {
+          "accepted": "空き家をそのまま所有し続ける方向へ向かっている",
+          "accepted_sha256": "4539d9f6fac542940a50e59b83418f81d910ae12975d22e0a6de7b0e23b80178",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "空き家をそのまま所有し続ける方向へ向かっている"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "「使用目的のない空き家」の所有世帯では「空き家として所有しておく」意向の割合が約41％と最も高く",
+          "accepted_sha256": "e637be3cfa47b7298c1792556098b577e4104799e6f0fb74de56c0728f42127f",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "「使用目的のない空き家」の所有世帯では「空き家として所有しておく」意向の割合が約41％と最も高く"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "4de86551965fb462ce74576c32989d78b79b456a903f4770dccaa54c74eb6867"
+    },
+    "trend/video-distribution-expansion": {
+      "body_sha256": "5f4e14ee1125d23da654a987d50a1837aab654424a16051ca46fd5b5d496a0f9",
+      "elements": {
+        "1": {
+          "accepted": "映像作品の視聴・流通が、放送・劇場・パッケージだけでなく、定額配信（SVOD）、都度払い（TVOD）、買い切り型（EST）、広告型（AVOD）などの配信サービスへ広がっている。",
+          "accepted_sha256": "5eb792b51ea884d66ed2645008d292c0c3d5b84b0df32dea86b77c50719cee2b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "映像作品の視聴・流通が、放送・劇場・パッケージだけでなく、定額配信（SVOD）、都度払い（TVOD）、買い切り型（EST）、広告型（AVOD）などの配信サービスへ広がっている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "有料動画配信サービスの利用者数は、今後も増加を続けると見込まれている。",
+          "accepted_sha256": "8e5daeb7b0ee0c70747a78ff67f2dfab9a04c5a00e1c9d3e83bdb631f110cd6d",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "有料動画配信サービスの利用者数は、今後も増加を続けると見込まれている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "927862f06b0b662981523c7e3b006788ca545c7ace66dcc0a2475603972891d7"
+    },
+    "trend/women-employment-expansion": {
+      "body_sha256": "0d6af838732712626b5f014d103954d5483f1ded2b3913141c71eee226397086",
+      "elements": {
+        "1": {
+          "accepted": "政府は、25歳から44歳までの女性の就業率を2025年までに82%へ引き上げる目標を掲げていた。",
+          "accepted_sha256": "3dfc6b8b4de856a8e3bed30e94e6712ffb30d9c3ee4505b18ce5cb0e574c2a1b",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "政府は、25歳から44歳までの女性の就業率を2025年までに82%へ引き上げる目標を掲げていた。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "あわせて「第一子出産前後の女性の継続就業率」を2015年の53.1%から2025年に70%とする目標も置いている。",
+          "accepted_sha256": "b2248ab75667fc7339342fdb716d6440e8bec73552f081afe836ec80d763de46",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "あわせて「第一子出産前後の女性の継続就業率」を2015年の53.1%から2025年に70%とする目標も置いている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "c81792f994e0650f2f3e37daff319184d759d5a5fdfebe7e2269c255cf3d2ca5"
+    },
+    "trend/workplace-stress-check-institutionalization": {
+      "body_sha256": "385a280daf3fe02e54847c5173d9e9d745ff4a16d0d1c106ba0259767b45a66f",
+      "elements": {
+        "1": {
+          "accepted": "厚生労働省は、企業がストレスチェックの実施にとどまらず集団分析・職場環境改善まで行うことを2027年までに広げる数値目標を掲げている。",
+          "accepted_sha256": "2fc990a2514073e1906833339981600e3cf0967ab8f2e9fb92230eddd236d17a",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "厚生労働省は、企業がストレスチェックの実施にとどまらず集団分析・職場環境改善まで行うことを2027年までに広げる数値目標を掲げている。"
+            }
+          ]
+        },
+        "2": {
+          "accepted": "調査上も、集団分析を労働時間など他の情報と合わせて評価し、職場環境改善に取り組むことが事業者の努力義務とされている。",
+          "accepted_sha256": "652b71e62dfa370e382026ac183909fca85e90b6ffc1bdf308e5b0d69a788126",
+          "attempts": [
+            {
+              "attempt": 1,
+              "failures": [],
+              "value": "調査上も、集団分析を労働時間など他の情報と合わせて評価し、職場環境改善に取り組むことが事業者の努力義務とされている。"
+            }
+          ]
+        }
+      },
+      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+      "source_sha256": "140bf2715afc86b722bf7757ebccb9100d18268cd04f67c4bf3275f9f746a4ea"
+    }
+  },
+  "request_contract": "element-request/v1"
+}

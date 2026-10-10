@@ -101,6 +101,30 @@ issueイベントでrunnerや課金対象処理は起動しません。バック
 出典の利害（`certainty: vendor`）・反証と予測の答え合わせを一級市民にしている。詳しくは
 [docs/schema.md](docs/schema.md) と [docs/freshness.md](docs/freshness.md)。
 
+## trend のカード（`card`）
+
+段階 A（親 `agentic-art-orchestration` の `docs/20261010-phase-a-v2-design.md` 4.1〜4.2・9.3）へ渡す、
+各 trend の「何に向かっているか」を表す一字一句の抜き書き。`export_signals.py` の各 signal に
+`label_ja` と `card: [{text, source_locator, source_sha256}]` として出る。
+
+- 対象の本文は「見出している未来」「足元の根拠」の2節。引用記号・リンク記法・URL・ID・強調記号を除き、
+  日本語の間の改行を詰めた文字列（[tools/card_excerpts.py](tools/card_excerpts.py) の `normalize_paragraphs`）に対して一字一句一致を確かめる。
+- 1 trend につき 1要素1推論（`K1.card.trend.<slug>.1` は最もよく表す部分、`.2` は別の1箇所か「これ以上なし」）。
+  要素の依頼・答えの契約は [schemas/](schemas/README.md) に親から複製（出所と sha256 を記録）。
+- 答え手は `claude -p --model claude-haiku-5-5 --effort max`（[tools/haiku_answerer.py](tools/haiku_answerer.py)）。
+  落ちた要素だけを `previous_failure` 付きで再依頼する（1要素 5 回まで）。
+- 結果は本文の sha256・要素の履歴とともに `data/card-excerpts.json` に保存する（手で編集しない）。
+  本文の sha256 が変わった trend だけやり直す。
+
+```bash
+.venv/bin/python tools/card_excerpts.py status     # やり直しが要る件数
+.venv/bin/python tools/card_excerpts.py generate   # 未保存・本文が変わった trend だけ、1件ずつ依頼する
+.venv/bin/python tools/card_excerpts.py verify     # 全 trend にカードがあり、固定 commit の本文に一字一句あるか
+```
+
+`generate` は `entities/` に未コミットの変更があると止まる（固定 commit の本文と食い違うため）。
+trend の本文を直したら commit してから `generate` を実行し、`data/card-excerpts.json` を commit する。
+
 ## 関連リポジトリと関係性
 
 このリポジトリは、マーケティングの外部情報を蓄積する「入力ナレッジベース」です。兄弟リポジトリを
