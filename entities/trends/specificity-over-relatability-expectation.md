@@ -10,7 +10,7 @@ authority:
 time:
   start: "2026~"
   end: ".."
-  display: "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年9月14日）で示される局面"
+  display: "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年10月20日）で示される局面"
 kind: vendor-pushed
 stage: emerging
 market: cross-category
@@ -22,12 +22,13 @@ naming:
   original_label: "トレンド2: 本物であることは今や具体性にこそある"
   note: "ゲッティイメージズのVisualGPSチームが年次レポートで示した3トレンドの1つ。視聴者・受け手自身がこの視線を自称する調査ではなく、素材販売企業が自社のリサーチとして提示している"
 freshness:
-  valid_as_of: "2026-09-16"
-  recheck_by: "2026-10-16"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking", certainty: vendor, retrieved: primary, as_of: "2026-01-28", tense: intended}
   - {field: stage, source: "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking", certainty: vendor, retrieved: primary, as_of: "2026-01-28", tense: intended}
   - {field: time, source: "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking", certainty: attested, retrieved: primary, as_of: "2026-01-28", tense: completed}
+  - {field: current-status, source: "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking", certainty: attested, retrieved: primary, as_of: "2026-10-20", tense: completed}
 predictions:
   - {claim: "ゲッティイメージズ（VisualGPSチーム）が2027年前後に発表する次年度のクリエイティブトレンドレポートでも、「広く共感できる一般的なビジュアル」ではなく「具体性・個別性のあるビジュアル」を推奨する主張が継続する", by: "2027-06-30", resolved: null, outcome: null}
 channel_scope:
@@ -42,7 +43,7 @@ sources:
   - https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking
   - https://www.wikidata.org/wiki/Q1520122
 status: draft
-updated: 2026-09-16
+updated: 2026-10-22
 ---
 
 # 「共感できる」一般性より具体性・個別性を求める視線
@@ -64,7 +65,8 @@ updated: 2026-09-16
 
 ## 足元の根拠（完了した事実）
 
-レポートの初出日（2026年1月28日）・最終更新日（2026年9月14日）・著者（Dr. Rebecca Swift）は、
+レポートの初出日（2026年1月28日）・最終更新日（2026年10月20日。2026年9月時点の表示は9月14日）・
+著者（Dr. Rebecca Swift）は、
 ゲッティイメージズという当事者の一次言明として確認できる事実である（`attested`）。一方、
 「視聴者が具体性・個別性のあるビジュアルにより強く反応する」という主張自体を裏づける独立した
 消費者調査・行動データは、今回の調査では確認できていない（`vendor`）。
@@ -98,6 +100,11 @@ updated: 2026-09-16
 
 ## 未着手
 
+- 2026年10月22日にゲッティイメージズのレポート（https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking）を再確認した。最終更新日の表示が
+  2026年9月14日から2026年10月20日に変わっていたが、トレンド2の本文と「真正性に関する重要な洞察」
+  3項目（個性の表現、自然なインクルージョン、若い世代の複雑さへの選好）は前回確認時と同じ文言で、
+  主張に変化は無かった。次年度（2027年版）のレポートは検索では見つからず、predictions は未判定の
+  まま。独立した消費者調査・広告効果測定による裏づけは今回も探せていないため、kind・stage は変えない
 - 2026年9月16日にゲッティイメージズのレポートを実読して確認した。独立した消費者調査・広告効果
   測定による「具体性への反応」の裏づけ数字はまだ探せていない
 - 実際の広告クリエイティブでの表現手法の変化を、業界団体・広告賞等の実データで追う

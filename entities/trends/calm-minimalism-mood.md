@@ -22,12 +22,13 @@ naming:
   original_label: "PANTONE 11-4201 Cloud Dancer"
   note: "パントンが毎年発表する「Pantone Color of the Year」の2026年版。生活者自身がこの気分を「静けさ・簡素さ」と自称する調査は無く、パントンという一企業の解説文がこのラベル付けの起点である"
 freshness:
-  valid_as_of: "2026-09-16"
-  recheck_by: "2026-10-16"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer", certainty: vendor, retrieved: primary, as_of: "2025-12-04", tense: intended}
   - {field: stage, source: "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer", certainty: vendor, retrieved: primary, as_of: "2025-12-04", tense: intended}
   - {field: time, source: "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer", certainty: attested, retrieved: primary, as_of: "2025-12-04", tense: completed}
+  - {field: current-status, source: "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer", certainty: attested, retrieved: primary, as_of: "2026-10-22", tense: completed}
 predictions:
   - {claim: "Pantone（色彩研究所）が2026年12月頃に発表するPantone Color of the Year 2027の解説文でも、2026年のCloud Dancerと同様に「静けさ」「簡素化」「内省」「過剰からの解放」に類する語が用いられる（同社が毎年同種の意味づけを与え続けているかを確認できる）", by: "2026-12-31", resolved: null, outcome: null}
 channel_scope:
@@ -43,7 +44,7 @@ sources:
   - https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer
   - https://www.wikidata.org/wiki/Q2050040
 status: draft
-updated: 2026-09-16
+updated: 2026-10-22
 ---
 
 # 静けさ・簡素さを求める気分の高まり（Pantone Color of the Year 2026）
@@ -100,6 +101,13 @@ Cloud Dancer）は、パントンのプレスリリースという当事者の�
 
 ## 未着手
 
+- 2026年10月22日にパントンのプレスリリース（https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer）を再確認した。発表日（2025年12月4日）、
+  色名・色番号（PANTONE 11-4201 Cloud Dancer）、Leatrice Eiseman 氏・Laurie Pressman 氏の発言、
+  「過剰のない未来への願望」の記述は前回確認時と同じで、変化は無かった。Pantone Color of the Year
+  2027 は検索では見つからず（例年12月上旬の発表）、predictions は未判定のまま。kind・stage は変えない
+- **未確認**: パントンが2026年秋に Pantone View Home + Interiors 2027 のパレットを発表し、業界紙が
+  「騒がしい世界への息抜きと喜び」と見出しを付けていることを検索結果で見たが、原典は開いていない。
+  Color of the Year とは別の製品なので、本 trend の根拠には入れていない
 - 2026年9月16日にパントンのプレスリリースを実読して確認した。独立した消費者調査による
   「静けさ・簡素さへの欲求」の裏づけ数字はまだ探せていない
 - 実際のファッション・インテリア・パッケージデザインでの採用実績を、業界団体・小売の実データで

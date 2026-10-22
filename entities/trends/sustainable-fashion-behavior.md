@@ -22,13 +22,13 @@ naming:
   original_label: サステナブルファッション
   note: "「サステナブルファッションへの関心・循環行動」は、環境省の調査項目と衣類の循環フローを要約するための記述的なラベル。生活者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-09-15"
-  recheck_by: "2026-10-15"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.env.go.jp/policy/sustainable_fashion/about/", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
   - {field: stage, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-03", tense: completed}
   - {field: time, source: "https://www.env.go.jp/content/000389225.pdf", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
-  - {field: current-status, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-09-15", tense: completed}
+  - {field: current-status, source: "https://www.env.go.jp/policy/sustainable_fashion/resources/", certainty: independent, retrieved: primary, as_of: "2026-10-22", tense: completed}
   - {field: current-status, source: "https://www.env.go.jp/content/000389225.pdf", certainty: attested, retrieved: primary, as_of: "2026-03", tense: intended}
 predictions:
   - {claim: "次回の同テーマ独立調査で、サステナブルファッションの認知・関心層が2025年調査の約6割・約4割を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
@@ -46,7 +46,7 @@ sources:
   - https://www.env.go.jp/content/000389225.pdf
   - https://www.env.go.jp/press/press_03475.html
 status: verified
-updated: 2026-09-20
+updated: 2026-10-22
 ---
 
 # サステナブルファッションへの関心・循環行動
@@ -119,6 +119,8 @@ updated: 2026-09-20
 
 ## 未着手
 
+- 2026年10月22日に環境省のサステナブルファッションのページ（about・resources）と、令和7年度調査業務の報告書概要版（マテリアルフロー、materialflow_reiwa7.pdf）を再確認した。aboutページの令和7年度調査の掲載（認知層約6割、関心・取組層約4割、「本当に必要かどうか考えて購入する」は8割以上）は変わらず、マテリアルフローの数値（国内新規供給量82万トン〈82.1万トン〉、焼却等で処理される量50万トン〈49.9万トン〉、家庭から手放された衣類のリユース35％・リサイクル7％・焼却等58％）も同じだった。なお、aboutページの「年間で約46万トン」は家庭から手放され最終的に焼却等で処理される量で、事業所分を含む50万トンとは範囲が違う。resourcesページの最新資料は引き続き2026年3月のアクションプランと令和7年度報告書概要版で、令和8年度の同テーマ独立調査や目標の進捗報告は掲載されていない。数字が動いていないため stage は emerging のまま据え置く
+- resourcesページには令和7年度の「アパレル事業者アンケート」概要版（questionnaire_reiwa7.pdf、2026年3月、JAFIC・JSFA加盟企業対象、有効回答41件）も掲載されている。供給側の取組の調査なので、応答するpracticeの確認時に読む
 - 2026年9月20日、環境省「サステナブルファッションの推進に向けたアクションプラン」（000389225.pdf、2026年3月公表）を実読し、2030年度25％削減目標の内訳と生活者に期待するアクションを見出している未来として追記した。目標に対する年次進捗の公式な中間報告はまだ確認できていない
 - 2026年9月15日に環境省のページを再確認したが、令和7年度調査（認知層約6割・関心層約4割）が引き続き最新で、令和8年度の同テーマ独立調査はまだ公開されていない。2026年3月のアクションプランにも進捗報告スケジュールの追記はなかった
 - 調査の標本・設問・「実施」と「今後取り組みたい」の分解を原票で確認する

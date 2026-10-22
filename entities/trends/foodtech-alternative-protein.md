@@ -22,14 +22,16 @@ naming:
   original_label: フードテック
   note: "「フードテックによる新たなたんぱく質源の事業化」は、農林水産省の官民協議会と委託事業の対象領域を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-09-15"
-  recheck_by: "2026-10-15"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
   - {field: stage, source: "https://www.maff.go.jp/j/shokusan/sosyutu/", certainty: attested, retrieved: primary, as_of: "2026-06-24", tense: completed}
   - {field: time, source: "https://food-tech.maff.go.jp/about/", certainty: attested, retrieved: primary, as_of: "2020-10", tense: completed}
   - {field: current-status, source: "https://www.nttdata-strategy.com/newsrelease/news/251001/", certainty: vendor, retrieved: summary, as_of: "2025-10-01", tense: completed}
   - {field: current-status, source: "https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html", certainty: independent, retrieved: primary, as_of: "2020-12", tense: intended}
+  - {field: current-status, source: "https://www.maff.go.jp/j/shokusan/sosyutu/", certainty: attested, retrieved: primary, as_of: "2026-10-22", tense: completed}
+  - {field: current-status, source: "https://www.caa.go.jp/notice/entry/046298/index.html", certainty: independent, retrieved: primary, as_of: "2026-05-28", tense: completed}
 predictions:
   - {claim: "農林水産省または同等の独立調査が代替肉の食用意向を再計測した場合、「積極的に食べたい」「少しは食べたい」の合計が令和2年度調査の55.6%を大きく下回らない", by: "2029-12", resolved: null, outcome: null}
 channel_scope:
@@ -45,8 +47,10 @@ sources:
   - https://www.maff.go.jp/j/shokusan/sosyutu/itaku.html
   - https://www.maff.go.jp/j/shokusan/sosyutu/backnumber.html
   - https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html
+  - https://food-tech.maff.go.jp/
+  - https://www.caa.go.jp/notice/entry/046298/index.html
 status: verified
-updated: 2026-09-20
+updated: 2026-10-22
 ---
 
 # フードテックによる新たなたんぱく質源の事業化
@@ -105,6 +109,7 @@ updated: 2026-09-20
 
 ## 未着手
 
+- 2026年10月22日に農林水産省のフードテックページ（https://www.maff.go.jp/j/shokusan/sosyutu/）、フードテック官民協議会のサイト（https://food-tech.maff.go.jp/ 、/about/）を再確認した。参加者は約1,900人（令和8年6月現在）のまま変化なし。新たに確認できたのは、令和8年度第2回総会／提案・報告会（2026年10月19日）の参加者募集、令和8年度「未来を創る！フードテックビジネスコンテスト」（募集期間2026年9月14日〜11月13日、本選2027年2月10日）、日本成長戦略で「新規食品」をフードテックの推進領域の一つと位置付けたうえで設けられた「新規食品の規制等対応に関する事業相談窓口」、冷凍技術の国際標準化タスクフォース（第1回2026年9月14日）である。消費者庁の食品衛生基準審議会新開発食品調査部会は2026年5月28日にも細胞培養食品（仮称）を議題に開かれていた（https://www.caa.go.jp/notice/entry/046298/index.html）が、ガイドラインや規制枠組みが決定したかは確認できなかった。いずれも事業化・制度検討の継続を示すもので、代替たんぱく質の販売量・継続購入率や2020年以降の新しい消費者意向調査は今回も見つからず、stage は emerging のまま
 - 2026年9月20日、令和2年度食育白書のフードテック意向調査を実読し、見出している未来として本文に昇格させた。2020年調査から更新された同種の消費者意向調査は今回も見つけられていない
 - 2026年9月15日に再確認。フードテック官民協議会の総会・参加人数（約1,900人）に更新なし。令和8年度「フードテックビジネス実証事業」の公募開始と、令和7年度「フードテックビジネスコンテスト」（代替たんぱく質活用等がテーマ）の実施を確認したが、事業化支援の継続を示すのみで、代替たんぱく質・細胞性食品の具体的な上市事例や新規消費者調査は確認できなかった
 - 植物性食品、細胞性食品、精密発酵、発酵菌食品を分け、研究・実証・上市・継続販売の段階を確認する

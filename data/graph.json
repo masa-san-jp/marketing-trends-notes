@@ -2946,7 +2946,7 @@
       "time": {
         "start": "2026~",
         "end": "..",
-        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年9月14日）で示される局面"
+        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年10月20日）で示される局面"
       },
       "kind": "vendor-pushed",
       "stage": "emerging",
@@ -2960,8 +2960,8 @@
         "note": "ゲッティイメージズのVisualGPSチームが年次レポートで示した3トレンドの1つ。視聴者・受け手自身がこの視線を自称する調査ではなく、素材販売企業が自社のリサーチとして提示している"
       },
       "freshness": {
-        "valid_as_of": "2026-09-16",
-        "recheck_by": "2026-10-16"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -2987,6 +2987,14 @@
           "retrieved": "primary",
           "as_of": "2026-01-28",
           "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-10-20",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -3008,7 +3016,7 @@
         "https://www.wikidata.org/wiki/Q1520122"
       ],
       "status": "draft",
-      "updated": "2026-09-16",
+      "updated": "2026-10-22",
       "path": "entities/trends/ai-visual-trust-expectation.md"
     },
     "trend/algorithmic-trust-erosion": {
@@ -3038,8 +3046,8 @@
         "note": "「おすすめ表示・アルゴリズムへの不信感の高まり」は、消費者庁の設問「インターネット上では、あなた向けの情報が優先的に表示されたり、『おすすめ』が表示されたりします」への回答を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-09-16",
-        "recheck_by": "2026-10-16"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -3073,6 +3081,14 @@
           "retrieved": "primary",
           "as_of": "2026-06-12",
           "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_16.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2023-11",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -3098,10 +3114,11 @@
       "sources": [
         "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/",
         "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_14.pdf",
-        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf"
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf",
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_16.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-16",
+      "updated": "2026-10-22",
       "path": "entities/trends/algorithmic-trust-erosion.md"
     },
     "trend/anxiety-multiplication": {
@@ -3403,8 +3420,8 @@
         "note": "パントンが毎年発表する「Pantone Color of the Year」の2026年版。生活者自身がこの気分を「静けさ・簡素さ」と自称する調査は無く、パントンという一企業の解説文がこのラベル付けの起点である"
       },
       "freshness": {
-        "valid_as_of": "2026-09-16",
-        "recheck_by": "2026-10-16"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -3430,6 +3447,14 @@
           "retrieved": "primary",
           "as_of": "2025-12-04",
           "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.pantone.com/articles/press-releases/pantone-announces-color-of-the-year-2026-cloud-dancer",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-10-22",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -3451,7 +3476,7 @@
         "https://www.wikidata.org/wiki/Q2050040"
       ],
       "status": "draft",
-      "updated": "2026-09-16",
+      "updated": "2026-10-22",
       "path": "entities/trends/calm-minimalism-mood.md"
     },
     "trend/care-service-utilization-expansion": {
@@ -3935,8 +3960,8 @@
         "note": "「クリエイター広告表示の可視化」は、規制と消費者調査で観測される変化を要約するための記述的なラベル。原資料の固有名称ではない"
       },
       "freshness": {
-        "valid_as_of": "2026-09-14",
-        "recheck_by": "2026-10-14"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -3970,6 +3995,14 @@
           "retrieved": "primary",
           "as_of": "2026-09-14",
           "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-11",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -3988,10 +4021,11 @@
       "relations": [],
       "sources": [
         "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
-        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf"
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf",
+        "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-10-22",
       "path": "entities/trends/creator-ad-disclosure.md"
     },
     "trend/creator-rights-compensation-transparency": {
@@ -4293,8 +4327,8 @@
         "note": "「デジタル利用からの距離を求める意識と実践のギャップ」は、消費者庁の設問「デジタルデトックスによってインターネットから離れることに関する、あなたの考えや行動」を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-09-16",
-        "recheck_by": "2026-10-16"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -4356,7 +4390,7 @@
         "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-16",
+      "updated": "2026-10-22",
       "path": "entities/trends/digital-disengagement-intention.md"
     },
     "trend/digital-salary-payment": {
@@ -4386,8 +4420,8 @@
         "note": "「賃金デジタル払いの制度化」は、厚生労働省が説明する制度と導入手続を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-09-15",
-        "recheck_by": "2026-10-15"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -4437,6 +4471,14 @@
           "retrieved": "primary",
           "as_of": "2026-03",
           "tense": "intended"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-07-01",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -4466,7 +4508,7 @@
         "https://www.mhlw.go.jp/content/11200000/001690304.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-10-22",
       "path": "entities/trends/digital-salary-payment.md"
     },
     "trend/digital-textbook-practical-adoption": {
@@ -4784,8 +4826,8 @@
         "note": "「不妊治療の保険アクセス拡大」は、厚生労働省の保険適用説明と診療報酬実績を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-09-15",
-        "recheck_by": "2026-10-15"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -4840,7 +4882,7 @@
         "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-10-22",
       "path": "entities/trends/fertility-treatment-insurance-access.md"
     },
     "trend/food-ecommerce-expansion": {
@@ -5156,8 +5198,8 @@
         "note": "「フードテックによる新たなたんぱく質源の事業化」は、農林水産省の官民協議会と委託事業の対象領域を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-09-15",
-        "recheck_by": "2026-10-15"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -5199,6 +5241,22 @@
           "retrieved": "primary",
           "as_of": "2020-12",
           "tense": "intended"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.maff.go.jp/j/shokusan/sosyutu/",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-10-22",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.caa.go.jp/notice/entry/046298/index.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-05-28",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -5220,10 +5278,12 @@
         "https://www.maff.go.jp/j/shokusan/sosyutu/",
         "https://www.maff.go.jp/j/shokusan/sosyutu/itaku.html",
         "https://www.maff.go.jp/j/shokusan/sosyutu/backnumber.html",
-        "https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html"
+        "https://www.maff.go.jp/j/syokuiku/wpaper/r3/r3_h/book/part1/chap2/b1_c2_1_03.html",
+        "https://food-tech.maff.go.jp/",
+        "https://www.caa.go.jp/notice/entry/046298/index.html"
       ],
       "status": "verified",
-      "updated": "2026-09-20",
+      "updated": "2026-10-22",
       "path": "entities/trends/foodtech-alternative-protein.md"
     },
     "trend/foreign-worker-employment-expansion": {
@@ -5592,7 +5652,7 @@
       "uri": "urn:mtn:trend/generative-ai-daily-life-adoption",
       "type": "trend",
       "kind": "tech-enabled",
-      "stage": "emerging",
+      "stage": "growing",
       "market": "cross-category",
       "geo": "japan",
       "label_ja": "生成AIの日常利用の拡大",
@@ -5614,8 +5674,8 @@
         "note": "「生成AIの日常利用の拡大」は、消費者委員会の生成AI利用者調査を要約する記述的なラベル。調査対象者が生成AI利用者に限定される点を含む"
       },
       "freshness": {
-        "valid_as_of": "2026-09-15",
-        "recheck_by": "2026-10-15"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2027-01-22"
       },
       "evidence": [
         {
@@ -5657,12 +5717,26 @@
           "retrieved": "primary",
           "as_of": "2026-02",
           "tense": "intended"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r08/pdf/n1110000.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025年度",
+          "tense": "completed"
         }
       ],
       "predictions": [
         {
           "claim": "次回同種の生成AI利用者調査で、日常生活での毎日利用者が2026年調査の約20％を下回らない",
           "by": "2027-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "総務省の次回の情報通信白書の個人向け調査で、日本の20歳以上の生成AIサービス利用経験率が2025年度調査の52.2%を下回らない",
+          "by": "2027-08",
           "resolved": null,
           "outcome": null
         },
@@ -5681,10 +5755,11 @@
       "relations": [],
       "sources": [
         "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/004/shiryou/index.html",
-        "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf"
+        "https://www.cao.go.jp/consumer/kabusoshiki/ai_technology/doc/004_260604_sankou1.pdf",
+        "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r08/pdf/n1110000.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-10-22",
       "path": "entities/trends/generative-ai-daily-life-adoption.md"
     },
     "trend/giga-learning-platform-renewal": {
@@ -6070,8 +6145,8 @@
         "note": "「日本音楽の海外収入・売上の可視化」は、経済産業省の2024年調査結果を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-09-15",
-        "recheck_by": "2026-10-15"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -6105,12 +6180,26 @@
           "retrieved": "primary",
           "as_of": "2025-06",
           "tense": "intended"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.meti.go.jp/shingikai/mono_info_service/entertainment_creative/pdf/20260820_1.pdf",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-08",
+          "tense": "intended"
         }
       ],
       "predictions": [
         {
           "claim": "2025年以降も日本音楽産業の海外収入・海外売上が同じ定義で再推計される",
           "by": "2028-12",
+          "resolved": null,
+          "outcome": null
+        },
+        {
+          "claim": "経済産業省「エンタメ・クリエイティブ産業戦略2026」の音楽分野目標（2033年に海外売上0.7兆円）に向けて、2029年3月までに公表される同一定義の音楽産業海外売上推計が2024年の1,239.5億円を上回る",
+          "by": "2029-03",
           "resolved": null,
           "outcome": null
         },
@@ -6129,10 +6218,12 @@
       "relations": [],
       "sources": [
         "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/260430.html",
-        "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf"
+        "https://www.meti.go.jp/policy/mono_info_service/contents/2026/0430/musicindustry_data_report.pdf",
+        "https://www.meti.go.jp/press/2026/08/20260820001.html",
+        "https://www.meti.go.jp/shingikai/mono_info_service/entertainment_creative/pdf/20260820_1.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-10-22",
       "path": "entities/trends/japanese-music-overseas-expansion.md"
     },
     "trend/live-entertainment-experience-expansion": {
@@ -6611,8 +6702,8 @@
         "note": "「オンライン診療の制度対応と利用拡大」は、厚生労働省の制度資料と調査結果をまとめるための記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-09-15",
-        "recheck_by": "2026-10-15"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -6643,8 +6734,8 @@
           "field": "current-status",
           "source": "https://www.mhlw.go.jp/stf/index_0024_00004.html",
           "certainty": "attested",
-          "retrieved": "summary",
-          "as_of": "2026-09-15",
+          "retrieved": "primary",
+          "as_of": "2026-10-22",
           "tense": "completed"
         },
         {
@@ -6676,7 +6767,7 @@
         "https://www.mhlw.go.jp/content/10800000/001233107.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-10-22",
       "path": "entities/trends/online-medical-consultation-adoption.md"
     },
     "trend/online-news-platform-dependence": {
@@ -6706,8 +6797,8 @@
         "note": "「オンラインニュースプラットフォーム依存の可視化」は、文化庁・公正取引委員会の実態調査の説明を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-09-15",
-        "recheck_by": "2026-10-15"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -6779,7 +6870,7 @@
         "https://www.pressnet.or.jp/statement/copyright/260420_16248.html"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-10-22",
       "path": "entities/trends/online-news-platform-dependence.md"
     },
     "trend/outbound-travel-recovery": {
@@ -7178,8 +7269,8 @@
         "note": "「リカレント教育の社会実装」は、文部科学省の事業・調査研究・支援制度を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-09-15",
-        "recheck_by": "2026-10-15"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -7249,7 +7340,7 @@
         "https://www.mhlw.go.jp/content/11801500/001728125.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-10-22",
       "path": "entities/trends/recurrent-education-institutionalization.md"
     },
     "trend/redelivery-reduction": {
@@ -8018,7 +8109,7 @@
       "time": {
         "start": "2026~",
         "end": "..",
-        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年9月14日）で示される局面"
+        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年10月20日）で示される局面"
       },
       "kind": "vendor-pushed",
       "stage": "emerging",
@@ -8032,8 +8123,8 @@
         "note": "ゲッティイメージズのVisualGPSチームが年次レポートで示した3トレンドの1つ。視聴者・受け手自身がこの視線を自称する調査ではなく、素材販売企業が自社のリサーチとして提示している"
       },
       "freshness": {
-        "valid_as_of": "2026-09-16",
-        "recheck_by": "2026-10-16"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -8059,6 +8150,14 @@
           "retrieved": "primary",
           "as_of": "2026-01-28",
           "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking",
+          "certainty": "attested",
+          "retrieved": "primary",
+          "as_of": "2026-10-20",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -8080,7 +8179,7 @@
         "https://www.wikidata.org/wiki/Q1520122"
       ],
       "status": "draft",
-      "updated": "2026-09-16",
+      "updated": "2026-10-22",
       "path": "entities/trends/specificity-over-relatability-expectation.md"
     },
     "trend/sports-participation-plateau": {
@@ -8202,8 +8301,8 @@
         "note": "「サステナブルファッションへの関心・循環行動」は、環境省の調査項目と衣類の循環フローを要約するための記述的なラベル。生活者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-09-15",
-        "recheck_by": "2026-10-15"
+        "valid_as_of": "2026-10-22",
+        "recheck_by": "2026-11-22"
       },
       "evidence": [
         {
@@ -8235,7 +8334,7 @@
           "source": "https://www.env.go.jp/policy/sustainable_fashion/resources/",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2026-09-15",
+          "as_of": "2026-10-22",
           "tense": "completed"
         },
         {
@@ -8274,7 +8373,7 @@
         "https://www.env.go.jp/press/press_03475.html"
       ],
       "status": "verified",
-      "updated": "2026-09-20",
+      "updated": "2026-10-22",
       "path": "entities/trends/sustainable-fashion-behavior.md"
     },
     "trend/telework-stabilization": {

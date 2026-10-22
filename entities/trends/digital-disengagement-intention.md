@@ -22,8 +22,8 @@ naming:
   original_label: デジタルデトックスに関する意識
   note: "「デジタル利用からの距離を求める意識と実践のギャップ」は、消費者庁の設問「デジタルデトックスによってインターネットから離れることに関する、あなたの考えや行動」を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-09-16"
-  recheck_by: "2026-10-16"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf", certainty: independent, retrieved: primary, as_of: "2025-11", tense: intended}
   - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf", certainty: independent, retrieved: primary, as_of: "2025-11", tense: intended}
@@ -46,7 +46,7 @@ sources:
   - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_14.pdf
   - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf
 status: verified
-updated: 2026-09-16
+updated: 2026-10-22
 ---
 
 # デジタル利用からの距離を求める意識と実践のギャップ
@@ -107,6 +107,13 @@ SNSを使いすぎていると感じることがある」は56.3%だった。一
 
 ## 未着手
 
+- 2026年10月22日に消費者庁の調査ページ（https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/）と「2 調査結果の概要」PDFを再確認した。
+  最新は引き続き令和7年度（令和7年11月調査）で、令和8年度の結果は未公表。4,230人・71.2%・56.3%・
+  69.7% はいずれも前回確認時と同じ値だった。経年比較のため令和6年度（https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_250613_16.pdf）・
+  令和5年度（https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_16.pdf）の調査票も開いたが、
+  どちらにも「デジタルデトックス」を問う設問は見当たらなかった。令和7年度の調査票（https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_16.pdf）では
+  問8がこの設問に当たる。令和4年度以前の調査票は開いていない。同一設問の経年比較はまだできないので、
+  stage は emerging のまま変えない
 - 2026年9月16日、消費者庁の令和7年度消費者意識基本調査（2026年6月12日公表）の「2 調査結果の概要」
   PDFを実読して確認した。過去年度の同一設問による経年比較は、今回の調査環境では原典に到達・
   確認できていない
