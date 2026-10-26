@@ -3,7 +3,7 @@
   "contract_version": "card-excerpts/v1",
   "entries": {
     "trend/ai-visual-trust-expectation": {
-      "body_sha256": "cc44b4fd92be1664ae9c5025c529b1c304a016c6289cfb2db11542c678dde30a",
+      "body_sha256": "42236bb6e65aa58a5b96cbda5da4a05337462e18bed7840283a6f1cd2f31a8ba",
       "elements": {
         "1": {
           "accepted": "ゲッティイメージズが向かっていると主張する先は、AIを抽象的な象徴として描くのではなく、信頼・プライバシー・データ倫理への配慮を伴う人間中心の文脈で描くことへの期待である。",
@@ -17,19 +17,50 @@
           ]
         },
         "2": {
-          "accepted": "テクノロジーが現実の人々、現実の仕事、現実の結論と交差する様子を映し出すイメージ",
-          "accepted_sha256": "e705bca9d8a60c44668857620fc87b6161d5de9016cb5ba32a4f28869c4f8917",
+          "accepted": "AIを表現するビジュアルが「概念」から「人間の文脈」へ移行すると主張している。",
+          "accepted_sha256": "b1146b873f93d43fbb82492f5a40e4e110d8262762bfaabd01e70ac28b3a29cb",
           "attempts": [
             {
               "attempt": 1,
               "failures": [],
-              "value": "テクノロジーが現実の人々、現実の仕事、現実の結論と交差する様子を映し出すイメージ"
+              "value": "AIを表現するビジュアルが「概念」から「人間の文脈」へ移行すると主張している。"
             }
           ]
         }
       },
-      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
-      "source_sha256": "37fb11d85d27be9b601b16844d86ac99b9b2234434ae9f1249316c44c29bc9ac"
+      "source_commit": "62a0eadd8511cbba157ea7c8f2931ab5843d9ce2",
+      "source_sha256": "bb52d9710796452fbee24bca68d8e89a32479d78f36620387cf8a3fad181c6f3",
+      "superseded": [
+        {
+          "body_sha256": "cc44b4fd92be1664ae9c5025c529b1c304a016c6289cfb2db11542c678dde30a",
+          "elements": {
+            "1": {
+              "accepted": "ゲッティイメージズが向かっていると主張する先は、AIを抽象的な象徴として描くのではなく、信頼・プライバシー・データ倫理への配慮を伴う人間中心の文脈で描くことへの期待である。",
+              "accepted_sha256": "fe7bd3209947b0c216fe7d2a01e96cd1ee8f6cab13e5dfbecfe8f42b7636f8be",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "ゲッティイメージズが向かっていると主張する先は、AIを抽象的な象徴として描くのではなく、信頼・プライバシー・データ倫理への配慮を伴う人間中心の文脈で描くことへの期待である。"
+                }
+              ]
+            },
+            "2": {
+              "accepted": "テクノロジーが現実の人々、現実の仕事、現実の結論と交差する様子を映し出すイメージ",
+              "accepted_sha256": "e705bca9d8a60c44668857620fc87b6161d5de9016cb5ba32a4f28869c4f8917",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "テクノロジーが現実の人々、現実の仕事、現実の結論と交差する様子を映し出すイメージ"
+                }
+              ]
+            }
+          },
+          "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+          "source_sha256": "37fb11d85d27be9b601b16844d86ac99b9b2234434ae9f1249316c44c29bc9ac"
+        }
+      ]
     },
     "trend/algorithmic-trust-erosion": {
       "body_sha256": "e8d940ca35a6e4aebd4f301334518fccf414f9766b48c14de8ffbf4c02b340f0",
@@ -332,33 +363,64 @@
       "source_sha256": "9a0af3977195346da1758971fc8ac9b747155a4499d2f16aec88b4cf9f45c30d"
     },
     "trend/creator-ad-disclosure": {
-      "body_sha256": "d6ad25c9bc35d8bb8af0d47d8750a39ebd7aad6c7e578f968268062b3a4d79f2",
+      "body_sha256": "5973306c9639076b3dc1b18d7fb79d553935dcbc1267f0c0b9f109dc1980ecca",
       "elements": {
         "1": {
-          "accepted": "インフルエンサーや著名人の投稿を広告として扱うとき、広告であることを隠さず、受け手が広告主の関与を判別できるようにすることが、クリエイターを使ったマーケティングの実務要件として浮上した。",
-          "accepted_sha256": "2c64fc12c07978af7a5836c6a8f8e16a10d701eb31303b05f89cfc5c2882fb8b",
+          "accepted": "広告であることを隠さず、受け手が広告主の関与を判別できるようにすること",
+          "accepted_sha256": "81eeb21da52a2810d97bcfd4de1213fa780d8052e7595b1ccec89292e05debc1",
           "attempts": [
             {
               "attempt": 1,
               "failures": [],
-              "value": "インフルエンサーや著名人の投稿を広告として扱うとき、広告であることを隠さず、受け手が広告主の関与を判別できるようにすることが、クリエイターを使ったマーケティングの実務要件として浮上した。"
+              "value": "広告であることを隠さず、受け手が広告主の関与を判別できるようにすること"
             }
           ]
         },
         "2": {
-          "accepted": "そのうち表示を見た1,941人では、広告であることを明示する投稿者を、明示しない投稿者より信頼できると答えた割合が63.0％だった。",
-          "accepted_sha256": "b3539792c47b10d013ed9778c5a1048b4a531a6ce4a93a05eb66a8abc37f1438",
+          "accepted": "消費者・広告主・業界団体が「今後、広告表示をどう変えたいか」を直接問う独立調査に到達できていない",
+          "accepted_sha256": "f0bd8947c5e1b38975e4d06002e3d6a82130e66985260e5233ea8064ae77f239",
           "attempts": [
             {
               "attempt": 1,
               "failures": [],
-              "value": "そのうち表示を見た1,941人では、広告であることを明示する投稿者を、明示しない投稿者より信頼できると答えた割合が63.0％だった。"
+              "value": "消費者・広告主・業界団体が「今後、広告表示をどう変えたいか」を直接問う独立調査に到達できていない"
             }
           ]
         }
       },
-      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
-      "source_sha256": "cda5dfe4e0556a6392de7f48af6be3bb0413d7860c775f2ac61dcc86d97bb13c"
+      "source_commit": "62a0eadd8511cbba157ea7c8f2931ab5843d9ce2",
+      "source_sha256": "6c4e7782bc385104c8576b4f13014aae00953364add509e39ae6de48ce32ac79",
+      "superseded": [
+        {
+          "body_sha256": "d6ad25c9bc35d8bb8af0d47d8750a39ebd7aad6c7e578f968268062b3a4d79f2",
+          "elements": {
+            "1": {
+              "accepted": "インフルエンサーや著名人の投稿を広告として扱うとき、広告であることを隠さず、受け手が広告主の関与を判別できるようにすることが、クリエイターを使ったマーケティングの実務要件として浮上した。",
+              "accepted_sha256": "2c64fc12c07978af7a5836c6a8f8e16a10d701eb31303b05f89cfc5c2882fb8b",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "インフルエンサーや著名人の投稿を広告として扱うとき、広告であることを隠さず、受け手が広告主の関与を判別できるようにすることが、クリエイターを使ったマーケティングの実務要件として浮上した。"
+                }
+              ]
+            },
+            "2": {
+              "accepted": "そのうち表示を見た1,941人では、広告であることを明示する投稿者を、明示しない投稿者より信頼できると答えた割合が63.0％だった。",
+              "accepted_sha256": "b3539792c47b10d013ed9778c5a1048b4a531a6ce4a93a05eb66a8abc37f1438",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "そのうち表示を見た1,941人では、広告であることを明示する投稿者を、明示しない投稿者より信頼できると答えた割合が63.0％だった。"
+                }
+              ]
+            }
+          },
+          "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+          "source_sha256": "cda5dfe4e0556a6392de7f48af6be3bb0413d7860c775f2ac61dcc86d97bb13c"
+        }
+      ]
     },
     "trend/creator-rights-compensation-transparency": {
       "body_sha256": "91ac39e6c511541a5f15581c9752f61774686a06fc36c10f1228e534a1700fad",
@@ -854,7 +916,7 @@
       "source_sha256": "8c496d9963461c551e48ed5b4761f4ae41eff91067899f71a32ec6e16ddea5b3"
     },
     "trend/generative-ai-daily-life-adoption": {
-      "body_sha256": "ee580096702e36df7a61596097ecd1321ff1875e2530e33890eb88cf57e14554",
+      "body_sha256": "479d920101020699530fc8df373743816a8e80c1762e7407ee4851b81b53a81a",
       "elements": {
         "1": {
           "accepted": "生成AI利用者の約半数は、今後も利用を広げていきたいと考えている。",
@@ -879,8 +941,39 @@
           ]
         }
       },
-      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
-      "source_sha256": "744ef761ba9261c0ed5975d6639da16f32cf1ac25ffae80cc3965e83eefa78e2"
+      "source_commit": "62a0eadd8511cbba157ea7c8f2931ab5843d9ce2",
+      "source_sha256": "49eae8161d59a270b734907d3f94c85165f6ec61ca4063c41a34d78864cdae3b",
+      "superseded": [
+        {
+          "body_sha256": "ee580096702e36df7a61596097ecd1321ff1875e2530e33890eb88cf57e14554",
+          "elements": {
+            "1": {
+              "accepted": "生成AI利用者の約半数は、今後も利用を広げていきたいと考えている。",
+              "accepted_sha256": "b825780a2e264f427dcd0cd5fcacb2e412dd886a61ef2899efb170abb05a2edc",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "生成AI利用者の約半数は、今後も利用を広げていきたいと考えている。"
+                }
+              ]
+            },
+            "2": {
+              "accepted": "利用拡大と安全設計が同時に進む局面である。",
+              "accepted_sha256": "97d986d65e877e146e6adeb6aeda1e8f8dd02a8a53170462638c7d76a0685ec3",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "利用拡大と安全設計が同時に進む局面である。"
+                }
+              ]
+            }
+          },
+          "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+          "source_sha256": "744ef761ba9261c0ed5975d6639da16f32cf1ac25ffae80cc3965e83eefa78e2"
+        }
+      ]
     },
     "trend/giga-learning-platform-renewal": {
       "body_sha256": "0a8f7c0f032f86bbe2066b2b8f565e1694f7ae23d359262a8ec86a20b99dab7f",
@@ -999,33 +1092,64 @@
       "source_sha256": "5ea2b26baa43ddb0e3e75dcd917dd5c8f8fcb1d0a8a8095cbfdb2738ffd574d4"
     },
     "trend/japanese-music-overseas-expansion": {
-      "body_sha256": "f2b5fcc028de4d916559ecb0861cb4b895bedfe0f7f61d8c0bdce9d6a40d5b34",
+      "body_sha256": "32e3d4f5f8d84d43b6e0ef0dafedf8697bd67a9044c69c32e6d0f68c5d60feba",
       "elements": {
         "1": {
-          "accepted": "コンテンツ産業全体（音楽を含む）の海外売上高を2033年に20兆円とする目標",
-          "accepted_sha256": "27a2fd56a9a8388c208fd2a3c82bb15357c5973a7dbdc3c14b2833b9295476e1",
+          "accepted": "コンテンツ産業全体（音楽を含む）の海外売上高を2033年に20兆円とする目標を掲げ、その実現に向けた5ヵ年アクションプランを示している。",
+          "accepted_sha256": "0298137a03b32fb590a3760bd874008e0a1b98fb44e0a516b53f4f99ec48ef6a",
           "attempts": [
             {
               "attempt": 1,
               "failures": [],
-              "value": "コンテンツ産業全体（音楽を含む）の海外売上高を2033年に20兆円とする目標"
+              "value": "コンテンツ産業全体（音楽を含む）の海外売上高を2033年に20兆円とする目標を掲げ、その実現に向けた5ヵ年アクションプランを示している。"
             }
           ]
         },
         "2": {
-          "accepted": "海外需要を測定・運用する基盤が立ち上がったトレンド",
-          "accepted_sha256": "1c2b313d8aaf539b28bce2c2cfca260d8612e51601fc2432ec00b0521110fc3d",
+          "accepted": "2033年の海外売上を音楽0.7兆円と置き、2024年の0.1兆円から拡大を目指すとしている。",
+          "accepted_sha256": "0bc8220476244f07b0cc9fbf65d980dd3732db51e75d47c872a5f06a36b034ab",
           "attempts": [
             {
               "attempt": 1,
               "failures": [],
-              "value": "海外需要を測定・運用する基盤が立ち上がったトレンド"
+              "value": "2033年の海外売上を音楽0.7兆円と置き、2024年の0.1兆円から拡大を目指すとしている。"
             }
           ]
         }
       },
-      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
-      "source_sha256": "e5f2154c9eb7301da53ab7667668ed16f270012b322133212b09f88b15c9fd82"
+      "source_commit": "62a0eadd8511cbba157ea7c8f2931ab5843d9ce2",
+      "source_sha256": "c1b562ae6a621b5e97ac35e90923712028ae91fe3566e3e7cc996140c7db70a2",
+      "superseded": [
+        {
+          "body_sha256": "f2b5fcc028de4d916559ecb0861cb4b895bedfe0f7f61d8c0bdce9d6a40d5b34",
+          "elements": {
+            "1": {
+              "accepted": "コンテンツ産業全体（音楽を含む）の海外売上高を2033年に20兆円とする目標",
+              "accepted_sha256": "27a2fd56a9a8388c208fd2a3c82bb15357c5973a7dbdc3c14b2833b9295476e1",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "コンテンツ産業全体（音楽を含む）の海外売上高を2033年に20兆円とする目標"
+                }
+              ]
+            },
+            "2": {
+              "accepted": "海外需要を測定・運用する基盤が立ち上がったトレンド",
+              "accepted_sha256": "1c2b313d8aaf539b28bce2c2cfca260d8612e51601fc2432ec00b0521110fc3d",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "海外需要を測定・運用する基盤が立ち上がったトレンド"
+                }
+              ]
+            }
+          },
+          "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+          "source_sha256": "e5f2154c9eb7301da53ab7667668ed16f270012b322133212b09f88b15c9fd82"
+        }
+      ]
     },
     "trend/live-entertainment-experience-expansion": {
       "body_sha256": "89832fb7e12a809e5891e717b67209711fcc0a0adb384d1c9ba86e5c9e1aff33",
@@ -1202,33 +1326,64 @@
       "source_sha256": "00ac936771a662fecdb89618d626c06848391e294602537bf5d6069060fa47a1"
     },
     "trend/online-news-platform-dependence": {
-      "body_sha256": "d5256e8d47dff05291a5e27b92edbf4ac390ce72f108dec3daa90a748594c0a4",
+      "body_sha256": "e82e5b3a97afa420e38b7afb61b29b04d89834e2c8842d20c207d353ba9d5c1f",
       "elements": {
         "1": {
-          "accepted": "権利者の許諾を原則とする制度整備を国に求めている",
-          "accepted_sha256": "a4e0d6612e11559db723f8a55cf583b3d528c76ba92348ae9baf0f1ff8d94353",
+          "accepted": "新聞業界は、AI検索サービスによるニュースコンテンツの無断利用に対して、権利者の許諾を原則とする制度整備を国に求めている。",
+          "accepted_sha256": "6b17ec0abc81381065197a4f253220a2d3f05c058c4a8f9ba6f6467235821dd4",
           "attempts": [
             {
               "attempt": 1,
               "failures": [],
-              "value": "権利者の許諾を原則とする制度整備を国に求めている"
+              "value": "新聞業界は、AI検索サービスによるニュースコンテンツの無断利用に対して、権利者の許諾を原則とする制度整備を国に求めている。"
             }
           ]
         },
         "2": {
-          "accepted": "権利者が利用を拒否できる「オプトアウト」の仕組みを日本で早期に導入するようGoogleに求めている",
-          "accepted_sha256": "7281caac693d4c70bd5ff2c5dd1db837a16068a25376da3a70f5a61fc7c975eb",
+          "accepted": "ニュース業界とプラットフォームの取引条件をめぐる論点が、検索・ポータルの表示・対価から、AI検索での無断利用・対価還元へと広がっていることが分かる。",
+          "accepted_sha256": "9b1f32a11c962a25c2b0b83de2ca62987b48a41b098b0872819749b2e35a92b1",
           "attempts": [
             {
               "attempt": 1,
               "failures": [],
-              "value": "権利者が利用を拒否できる「オプトアウト」の仕組みを日本で早期に導入するようGoogleに求めている"
+              "value": "ニュース業界とプラットフォームの取引条件をめぐる論点が、検索・ポータルの表示・対価から、AI検索での無断利用・対価還元へと広がっていることが分かる。"
             }
           ]
         }
       },
-      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
-      "source_sha256": "3902326b18563d16445092692a6238b0f3a07761ec3fbf585d3ff60bb1c88936"
+      "source_commit": "62a0eadd8511cbba157ea7c8f2931ab5843d9ce2",
+      "source_sha256": "24a35af537d4c6e577b0766a52368d77b2e677830bf23189355d5e28bb3674a5",
+      "superseded": [
+        {
+          "body_sha256": "d5256e8d47dff05291a5e27b92edbf4ac390ce72f108dec3daa90a748594c0a4",
+          "elements": {
+            "1": {
+              "accepted": "権利者の許諾を原則とする制度整備を国に求めている",
+              "accepted_sha256": "a4e0d6612e11559db723f8a55cf583b3d528c76ba92348ae9baf0f1ff8d94353",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "権利者の許諾を原則とする制度整備を国に求めている"
+                }
+              ]
+            },
+            "2": {
+              "accepted": "権利者が利用を拒否できる「オプトアウト」の仕組みを日本で早期に導入するようGoogleに求めている",
+              "accepted_sha256": "7281caac693d4c70bd5ff2c5dd1db837a16068a25376da3a70f5a61fc7c975eb",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "権利者が利用を拒否できる「オプトアウト」の仕組みを日本で早期に導入するようGoogleに求めている"
+                }
+              ]
+            }
+          },
+          "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+          "source_sha256": "3902326b18563d16445092692a6238b0f3a07761ec3fbf585d3ff60bb1c88936"
+        }
+      ]
     },
     "trend/outbound-travel-recovery": {
       "body_sha256": "1a866f9d85af81fd6fb963dc955293face4090ca891fe049386d503da09d80db",
@@ -1608,7 +1763,7 @@
       "source_sha256": "336b17f22f64475d3bc5e041460c005316b68d95b5f42c87fc00abd6ca095177"
     },
     "trend/specificity-over-relatability-expectation": {
-      "body_sha256": "a39300ff8feaf8c7a3831cb34fd9fb6e71bbba064914b8cb3b60c1435c1f89c9",
+      "body_sha256": "47fa4b016482592225a337ffda128eb3c73c0938fcb23fa7f1e4e50f3e802b2e",
       "elements": {
         "1": {
           "accepted": "ゲッティイメージズが向かっていると主張する先は、誰にでも当てはまる一般化された「共感」表現から、特定の個人・状況に根ざした具体性の高い表現への移行である。",
@@ -1633,8 +1788,39 @@
           ]
         }
       },
-      "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
-      "source_sha256": "3e677feffd0a5e1fd5a9722dcdaa2469620e0a1461604de1d4ac8c6a0351e363"
+      "source_commit": "62a0eadd8511cbba157ea7c8f2931ab5843d9ce2",
+      "source_sha256": "1f6cf4ecc1f77424f3103df0ad5e4b2b094780dd3ac563e4f705d78b891af05c",
+      "superseded": [
+        {
+          "body_sha256": "a39300ff8feaf8c7a3831cb34fd9fb6e71bbba064914b8cb3b60c1435c1f89c9",
+          "elements": {
+            "1": {
+              "accepted": "ゲッティイメージズが向かっていると主張する先は、誰にでも当てはまる一般化された「共感」表現から、特定の個人・状況に根ざした具体性の高い表現への移行である。",
+              "accepted_sha256": "5b7c2fe9b558f26464bf00a35e1419bdbf42e6a285b906ca63f089746f700670",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "ゲッティイメージズが向かっていると主張する先は、誰にでも当てはまる一般化された「共感」表現から、特定の個人・状況に根ざした具体性の高い表現への移行である。"
+                }
+              ]
+            },
+            "2": {
+              "accepted": "2026年には、視聴者は広く「共感できる」画一的なイメージにはもはや感動せず、「独特で個人的、かつ具体的なイメージ」に惹かれるようになるという。",
+              "accepted_sha256": "e88248481c98de8775af02bafb2eba26a33cf7437fd41a86fb30b27f59382cc3",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "failures": [],
+                  "value": "2026年には、視聴者は広く「共感できる」画一的なイメージにはもはや感動せず、「独特で個人的、かつ具体的なイメージ」に惹かれるようになるという。"
+                }
+              ]
+            }
+          },
+          "source_commit": "1a02e5aaca120614cba5cd1bbb687a836706530f",
+          "source_sha256": "3e677feffd0a5e1fd5a9722dcdaa2469620e0a1461604de1d4ac8c6a0351e363"
+        }
+      ]
     },
     "trend/sports-participation-plateau": {
       "body_sha256": "bb0613e20c8d12d2485e68d6abb7ecfb95b88d9cac1c060d0275d1fe54a0e4ae",
