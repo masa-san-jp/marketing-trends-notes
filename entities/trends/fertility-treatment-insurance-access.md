@@ -22,8 +22,8 @@ naming:
   original_label: 不妊治療の保険適用
   note: "「不妊治療の保険アクセス拡大」は、厚生労働省の保険適用説明と診療報酬実績を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-09-15"
-  recheck_by: "2026-10-15"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html", certainty: independent, retrieved: primary, as_of: "2022-04", tense: completed}
   - {field: stage, source: "https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html", certainty: independent, retrieved: primary, as_of: "2022年度", tense: completed}
@@ -41,7 +41,7 @@ sources:
   - https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-01_00004.html
   - https://www.mhlw.go.jp/stf/shingi2/0000205879_00213.html
 status: verified
-updated: 2026-09-21
+updated: 2026-10-22
 ---
 
 # 不妊治療の保険アクセス拡大
@@ -78,6 +78,7 @@ updated: 2026-09-21
 
 ## 未着手
 
+- 2026年10月22日に厚生労働省の不妊治療ページ（funin-01_00004.html）と中央社会保険医療協議会総会の議事録（0000205879_00213.html、2023年11月17日開催）を再確認した。議事録で2022年度の医療費約895億円・レセプト約125万件・実患者数約37万人を改めて確認し、数字に変化はない。不妊治療ページは資料集が令和4年2月25日時点のままで、先進医療は「現在先進医療会議において議論」との記述も変わっていない。WebSearch で2023・2024年度の同一定義の実患者数・医療費と、令和8年度診療報酬改定での不妊治療の見直し内容を探したが、どちらも一次資料では確認できなかった。日本産科婦人科学会の2023年ART集計を報じる記事は見つかったが、記事本体は403で開けず未確認。stage は emerging のまま
 - 2026年9月21日、層0出典と厚生労働省の不妊治療関連ページを確認したが、患者・夫婦の今後の意向を示す一次資料が見つからず、第一節を`**未確認**:`とした
 - 2026年9月15日に厚生労働省の説明ページとWebSearchを再確認したが、2022年度を更新する2023・2024年度の同一定義の実患者数・レセプト件数は見つからなかった。中央社会保険医療協議会の関連資料PDFは本文抽出ができず、内容未確認のまま残っている
 - 保険・先進医療・自由診療、年齢、地域、治療段階別に費用と件数を分ける

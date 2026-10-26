@@ -22,13 +22,13 @@ naming:
   original_label: オンライン診療の実施・制度整備
   note: "「オンライン診療の制度対応と利用拡大」は、厚生労働省の制度資料と調査結果をまとめるための記述的なラベル"
 freshness:
-  valid_as_of: "2026-09-15"
-  recheck_by: "2026-10-15"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: primary, as_of: "2026-04-01", tense: completed}
   - {field: stage, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度", tense: completed}
   - {field: time, source: "https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html", certainty: independent, retrieved: primary, as_of: "2024年度-2026-04", tense: completed}
-  - {field: current-status, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: summary, as_of: "2026-09-15", tense: completed}
+  - {field: current-status, source: "https://www.mhlw.go.jp/stf/index_0024_00004.html", certainty: attested, retrieved: primary, as_of: "2026-10-22", tense: completed}
   - {field: current-status, source: "https://www.mhlw.go.jp/content/10800000/001233107.pdf", certainty: attested, retrieved: primary, as_of: "2023-06", tense: intended}
 predictions:
   - {claim: "次回の厚生労働省調査または同等の公的調査で、患者のオンライン診療経験率と医療機関の実施割合が再計測される", by: "2028-12", resolved: null, outcome: null}
@@ -43,7 +43,7 @@ sources:
   - https://www.mhlw.go.jp/stf/shingi2/0000190167_00062.html
   - https://www.mhlw.go.jp/content/10800000/001233107.pdf
 status: verified
-updated: 2026-09-21
+updated: 2026-10-22
 ---
 
 # オンライン診療の制度対応と利用拡大
@@ -92,6 +92,7 @@ updated: 2026-09-21
 
 ## 未着手
 
+- 2026年10月22日に厚生労働省「オンライン診療について」のページと検討会議事録（0000190167_00062）を再確認した。ページの掲載内容（2026年4月1日施行の医療法上の規定、2026年4月2日付の指針改訂通知、2026年7月23日付で掲載された自治体導入事例集〈令和8年3月版〉）は前回確認時から変わっておらず、議事録の数値（患者のオンライン診療受診歴3.5％、外来の1割超をオンラインで行う医療機関18.6％、5割超5.4％）も同じだった。これらを更新する令和7年度以降の公的調査の数値は、検索でも確認できなかった。数字が動いていないため stage は emerging のまま据え置く
 - 2026年9月21日、厚生労働省「オンライン診療その他の遠隔医療の推進に向けた基本方針」（2023年6月）を実読し、「幅広い普及」を目指す方針を見出している未来として追記した
 - 2026年9月15日に再確認。制度運用（2026年4月施行の医療法規定・指針、令和8年3月版の自治体導入事例集）は継続中だが、2024年度調査（患者経験率3.5%等）を更新する新しい一次数値は見つからなかった。社会保障審議会医療部会の関連PDF（001642125.pdf）に新しい実施状況データがある可能性があるが、この環境ではPDF内容を確認できなかった
 - 診療科、疾患、年齢、地域、医療機関規模ごとの利用差を確認する

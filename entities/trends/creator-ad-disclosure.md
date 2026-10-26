@@ -22,13 +22,14 @@ naming:
   original_label: null
   note: "「クリエイター広告表示の可視化」は、規制と消費者調査で観測される変化を要約するための記述的なラベル。原資料の固有名称ではない"
 freshness:
-  valid_as_of: "2026-09-14"
-  recheck_by: "2026-10-14"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/", certainty: attested, retrieved: primary, as_of: "2023-10-01", tense: completed}
   - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf", certainty: independent, retrieved: primary, as_of: "2023-11", tense: completed}
   - {field: time, source: "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/", certainty: attested, retrieved: primary, as_of: "2023-10-01", tense: completed}
   - {field: current-status, source: "https://www.caa.go.jp/about_us/about/caa_pamphlet/jp_2026_012.html", certainty: attested, retrieved: primary, as_of: "2026-09-14", tense: completed}
+  - {field: current-status, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf", certainty: independent, retrieved: primary, as_of: "2025-11", tense: completed}
 predictions:
   - {claim: "次回以降の消費者庁調査または同等の独立調査で、インフルエンサー投稿の広告表示を見た経験と、表示を信頼判断に使う割合が再計測される", by: "2027-12", resolved: null, outcome: null}
 channel_scope:
@@ -42,8 +43,9 @@ relations: []
 sources:
   - https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/
   - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf
+  - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf
 status: verified
-updated: 2026-09-17
+updated: 2026-10-22
 ---
 
 # クリエイター広告表示の可視化
@@ -65,6 +67,8 @@ updated: 2026-09-17
 1,941人では、広告であることを明示する投稿者を、明示しない投稿者より信頼できると答えた割合が63.0％だった。
 この調査は表示の増加率や投稿全体に占める表示率を測っていないため、広告表示が増えたことや、表示が売上を
 高めることまでは言えない。
+
+同庁の令和7年度「消費者意識基本調査」（2025年11月10日〜26日調査、全国の満15歳以上から層化2段無作為抽出した10,000人、有効回収5,473人）（https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf）は、「有名人やインフルエンサーなどの第三者が発信する情報」の節を設けたが、令和5年度の「PR」「広告」表示を見た経験の設問は繰り返していない。代わりに情報の信頼度を尋ね、有名人やインフルエンサーによる投稿やレビュー記事を「信頼している」は20.3％、「信頼していない」は64.6％で、一般人によるレビューやクチコミ（40.9％）、販売事業者自身が発信する情報（35.4％）より信頼が低かった。インフルエンサーの投稿を見て購入・申込みをしてトラブルにあった人は0.5％で、その29人のうち「事業者から依頼されてPRしていることが示されておらず、正当なレビューと信じてしまった」は24.1％だった（母数が29人と小さい）。令和5年度調査はインターネット利用者が母数で、設問も違うため、両年の数字を経年変化として並べない。
 
 ## kind と stage の判定
 
@@ -98,9 +102,10 @@ updated: 2026-09-17
 
 ## 未着手
 
+- 2026年10月22日に消費者庁のステマ規制の案内ページ、パンフレット（jp_2026_012.html）、消費者意識基本調査の一覧ページを再確認した。ステマ規制の説明は継続して掲載されている。一覧には令和6年度（2024年11月調査）と令和7年度（2025年11月調査）の報告書が掲載されており、両方の「調査結果の概要」と調査票を開いた。令和6年度にはインフルエンサー投稿に関する設問が見当たらず、令和7年度は情報の信頼度とトラブル経験を尋ねる設問に変わっていたため、令和5年度の基準値（表示を見た経験43.7％、明示する投稿者を信頼63.0％）を同じ設問で更新する数字は無い。令和7年度の結果を足元の根拠と evidence に追記した。規制施行後の措置命令の件数は消費者庁の一覧で確かめておらず**未確認**。数字は同じ設問で動いておらず、規制後の実務変化の経年値もまだ揃わないため、stage は emerging のまま据え置く
 - 2026年9月17日、消費者・広告主・業界団体の「今後の広告表示への意向」を測る独立調査を探したが見つからなかった（**未確認**の理由）。JIAAの2026年4月ガイドライン改定は確認したが、業界団体の完了済み対応で意向調査ではない
 - 2026年9月14日に消費者庁の現行案内を再確認した。ステマ規制の説明は継続して掲載されているが、同じ設問による新しい独立調査は確認できず、2023年調査の基準値を維持する
-- 令和6年度・令和7年度の消費者庁調査で同じ設問が継続されているかを確認し、経年変化を取る
+- 令和8年度以降の消費者庁調査で、令和5年度の「表示を見た経験」または令和7年度の「インフルエンサー投稿の信頼度」の設問が継続されるかを確認し、経年変化を取る
 - 規制施行後の行政処分・情報提供件数と、事業者側の表示管理の実務を一次資料で確認する
 - プラットフォームごとの表示機能・審査・保存要件は、各社の一次仕様を読んでから分ける
 - 応答するpractice（表示管理、案件審査、クリエイター契約等）の採用率と、表示が成果に与える影響を確認する

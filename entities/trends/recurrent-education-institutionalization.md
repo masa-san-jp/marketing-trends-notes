@@ -22,8 +22,8 @@ naming:
   original_label: リカレント教育の社会実装
   note: "「リカレント教育の社会実装」は、文部科学省の事業・調査研究・支援制度を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-09-15"
-  recheck_by: "2026-10-15"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/index.htm", certainty: independent, retrieved: primary, as_of: "2026-2027年度", tense: completed}
   - {field: stage, source: "https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html", certainty: independent, retrieved: primary, as_of: "2022-2024", tense: completed}
@@ -44,7 +44,7 @@ sources:
   - https://www.mext.go.jp/a_menu/ikusei/manabinaoshi/mext_00007.html
   - https://www.mhlw.go.jp/content/11801500/001728125.pdf
 status: verified
-updated: 2026-09-21
+updated: 2026-10-22
 ---
 
 # リカレント教育の社会実装
@@ -89,6 +89,7 @@ updated: 2026-09-21
 
 ## 未着手
 
+- 2026年10月22日に文部科学省のリカレント教育・学び直しの案内（index.htm）、社会実装の調査研究ページ（mext_00007.html）、厚生労働省の能力開発基本調査のページを再確認した。文部科学省の案内の最新通知は引き続き2026年9月2日付「社会のニーズに応えた大学のリ・スキリング等の取組の充実について」で、支援事業の掲載（産学連携リ・スキリング・エコシステム構築事業〈令和7年度補正〉、リカレント教育エコシステム構築支援事業〈令和6年度補正〉等）も変わっていない。調査研究の成果報告書は令和4年度補正事業の2分冊のままで、受講率・学習成果の新しい定量データは確認できなかった。能力開発基本調査は令和7年度結果が最新で、お知らせ欄に「令和8年度能力開発基本調査」の実施が掲載されている（結果は未公表）。数字が動いていないため stage は emerging のまま据え置く
 - 2026年9月21日、厚生労働省「令和7年度能力開発基本調査」の概要（001728125.pdf）を実読し、企業の「今後実施したい取組」を見出している未来として追記した。労働者本人の学び直し意向データはまだ確認できていない
 - 2026年9月15日に再確認。文部科学省のリカレント教育案内は2026年9月2日付通知で継続更新中で、支援事業8件・目的別施策4種類の掲載が続いている。調査研究の成果報告書は2024年4月付の既存2件から増えておらず、受講率・学習成果の新しい定量データは確認できなかった
 - 講座数ではなく、社会人の受講、修了、学習成果、就業成果を同じ定義で追う

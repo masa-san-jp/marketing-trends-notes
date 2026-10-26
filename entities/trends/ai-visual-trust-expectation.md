@@ -10,7 +10,7 @@ authority:
 time:
   start: "2026~"
   end: ".."
-  display: "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年9月14日）で示される局面"
+  display: "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日）で示される局面"
 kind: vendor-pushed
 stage: emerging
 market: cross-category
@@ -22,12 +22,13 @@ naming:
   original_label: "トレンド1: AIは概念から人間の文脈へ移行する"
   note: "ゲッティイメージズのVisualGPSチームが年次レポートで示した3トレンドの1つ。視聴者・受け手自身がこの視線を自称する調査ではなく、素材販売企業が自社のリサーチとして提示している"
 freshness:
-  valid_as_of: "2026-09-16"
-  recheck_by: "2026-10-16"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking", certainty: vendor, retrieved: primary, as_of: "2026-01-28", tense: intended}
   - {field: stage, source: "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking", certainty: vendor, retrieved: primary, as_of: "2026-01-28", tense: intended}
   - {field: time, source: "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking", certainty: attested, retrieved: primary, as_of: "2026-01-28", tense: completed}
+  - {field: current-status, source: "https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking", certainty: attested, retrieved: primary, as_of: "2026-10-20", tense: completed}
 predictions:
   - {claim: "ゲッティイメージズ（VisualGPSチーム）が2027年前後に発表する次年度のクリエイティブトレンドレポートでも、AI表現における「信頼・プライバシー・データ倫理への感受性」への言及が主要テーマとして継続する", by: "2027-06-30", resolved: null, outcome: null}
 channel_scope:
@@ -42,7 +43,7 @@ sources:
   - https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking
   - https://www.wikidata.org/wiki/Q1520122
 status: draft
-updated: 2026-09-16
+updated: 2026-10-22
 ---
 
 # AI表現に人間的文脈と倫理的信頼を求める視線
@@ -50,7 +51,7 @@ updated: 2026-09-16
 ## 見出している未来（何に向かって動いているか）
 
 ゲッティイメージズのVisualGPSチーム（Dr. Rebecca Swift、クリエイティブシニアバイスプレジデント）は
-「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年9月14日）で、AIを
+「2026年のビジュアルトレンドを追う」（初出2026年1月28日）で、AIを
 表現するビジュアルが「概念」から「人間の文脈」へ移行すると主張している。光る回路、人型ロボット、
 SF的な美学といったAIの定番の比喩は「ますます一般化され、実際の経験から切り離されたものと
 認識されつつある」とし、代わりに「テクノロジーが現実の人々、現実の仕事、現実の結論と交差する
@@ -65,7 +66,7 @@ SF的な美学といったAIの定番の比喩は「ますます一般化され�
 
 ## 足元の根拠（完了した事実）
 
-レポートの初出日（2026年1月28日）・最終更新日（2026年9月14日）・著者（Dr. Rebecca Swift）は、
+レポートの初出日（2026年1月28日）・著者（Dr. Rebecca Swift）は、
 ゲッティイメージズという当事者の一次言明として確認できる事実である（`attested`）。一方、
 「視聴者が信頼・プライバシー・データ倫理を反映したビジュアルを期待している」という主張自体を
 裏づける独立した消費者調査・行動データは、今回の調査では確認できていない（`vendor`）。
@@ -99,6 +100,12 @@ SF的な美学といったAIの定番の比喩は「ますます一般化され�
 
 ## 未着手
 
+- 2026年10月22日にゲッティイメージズのレポート（https://www.gettyimages.com/visualgps/creative-trends/technology/2026-visual-trends-were-tracking）を再確認した。最終更新日の表示が
+  2026年9月14日から2026年10月20日に変わっていたが、トレンド1の本文と「AIに関する重要な洞察」
+  3項目（抽象的な象徴から人間の相互作用へ、信頼・プライバシー・データ倫理への感受性、生成画像への
+  地域差）は前回確認時と同じ文言で、主張に変化は無かった。次年度（2027年版）のレポートは検索では
+  見つからず、predictions は未判定のまま。独立した消費者調査による裏づけは今回も探せていないため、
+  kind・stage は変えない
 - 2026年9月16日にゲッティイメージズのレポートを実読して確認した。独立した消費者調査による
   「AI表現への信頼・プライバシー期待」の裏づけ数字はまだ探せていない
 - 実際の広告クリエイティブでのAI表現の変化を、業界団体・広告賞等の実データで追う

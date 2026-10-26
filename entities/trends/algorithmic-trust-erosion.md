@@ -22,13 +22,14 @@ naming:
   original_label: インターネットの表示に関する意識
   note: "「おすすめ表示・アルゴリズムへの不信感の高まり」は、消費者庁の設問「インターネット上では、あなた向けの情報が優先的に表示されたり、『おすすめ』が表示されたりします」への回答を要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-09-16"
-  recheck_by: "2026-10-16"
+  valid_as_of: "2026-10-22"
+  recheck_by: "2026-11-22"
 evidence:
   - {field: kind, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf", certainty: independent, retrieved: primary, as_of: "2025-11", tense: intended}
   - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf", certainty: independent, retrieved: primary, as_of: "2025-11", tense: intended}
   - {field: time, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_14.pdf", certainty: independent, retrieved: primary, as_of: "2025-11", tense: completed}
   - {field: current-status, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf", certainty: independent, retrieved: primary, as_of: "2026-06-12", tense: completed}
+  - {field: current-status, source: "https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_16.pdf", certainty: independent, retrieved: primary, as_of: "2023-11", tense: completed}
 predictions:
   - {claim: "消費者庁の次回（令和8年度）消費者意識基本調査で、「関心を引くために根拠のない情報、虚偽の情報が混ざっていると感じる」に当てはまると回答する割合が、令和7年度調査の68.6%を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
   - {claim: "同調査で、「自分の情報が必要以上に収集されていると感じる」に当てはまると回答する割合が、令和7年度調査の56.1%を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
@@ -44,8 +45,9 @@ sources:
   - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/
   - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_14.pdf
   - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_260612_15.pdf
+  - https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_16.pdf
 status: verified
-updated: 2026-09-16
+updated: 2026-10-22
 ---
 
 # おすすめ表示・アルゴリズムへの不信感の高まり
@@ -107,6 +109,16 @@ WebKit・Privacy Sandbox 等の**供給側・規制側の技術的制約の常�
 
 ## 未着手
 
+- 2026年10月22日に消費者庁の調査ページ（https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/）と「2 調査結果の概要」PDFを再確認した。
+  最新は引き続き令和7年度（令和7年11月調査）で、令和8年度の結果は未公表。68.6%・56.1%・50.6%・
+  53.8%・51.6% はいずれも前回確認時と同じ値だった。経年比較のため令和6年度・令和5年度の調査票も
+  開いた。令和6年度の調査票には「おすすめ」「優先的に表示」を含む設問は見当たらなかった。令和5年度（2023年11月調査）には問10(2)「AIの活用によって、
+  自分に合わせた情報が優先的に表示されること」への考えを問う設問があり、「AIの活用のために、必要以上の
+  情報を収集されていると感じる」は「とても当てはまる」34.0%＋「ある程度当てはまる」43.5%、「自分に合わせた
+  情報ではなく、事業者の都合で提案をされていると感じたことがある」は22.7%＋46.7%だった。ただし
+  令和5年度は「優先表示を知っている」と答えた人（N=3,390）に限った設問で、文言も「AIの活用」を前提に
+  している。令和7年度（問9(2)、全員に質問）とは対象・文言が違うため、同一設問の経年比較には使えない。
+  数字が「高まっている」とは言えないままなので、stage は emerging のまま変えない
 - 2026年9月16日、消費者庁の令和7年度消費者意識基本調査（2026年6月12日公表）の「2 調査結果の概要」
   PDFを実読して確認した。過去年度の同一設問による経年比較は、今回の調査環境では確認できていない
 - この不信感が、実際のプライバシー設定変更・広告オプトアウト・特定プラットフォームの利用時間に
