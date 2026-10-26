@@ -39,13 +39,21 @@ class ExportSignalsTests(unittest.TestCase):
         self.assertRegex(payload["generated_at"], r"^\d{4}-\d{2}-\d{2}T")
 
     def test_all_trends_are_exported(self) -> None:
-        payload = self.run_export()
+        # 実時刻だと emerging の再検証期限（1ヶ月）を過ぎた日から落ちるため、時計を固定する。
+        payload = self.run_export("--now", "2026-10-01T00:00:00+09:00")
 
         self.assertEqual(payload["signal_count"], 65)
         self.assertEqual(payload["signal_count"], len(payload["signals"]))
         self.assertEqual(payload["stale_count"], 0)
         self.assertTrue(all(signal["entity_id"].startswith("trend/") for signal in payload["signals"]))
         self.assertNotIn("unknown", {signal["evidence_kind"] for signal in payload["signals"]})
+
+    def test_stale_trends_are_carried_not_dropped(self) -> None:
+        payload = self.run_export("--now", "2099-01-01T00:00:00+09:00")
+
+        self.assertEqual(payload["signal_count"], 65)
+        self.assertEqual(payload["stale_count"], payload["signal_count"])
+        self.assertTrue(all(signal["freshness"]["status"] == "stale" for signal in payload["signals"]))
 
     def test_all_kb_certainty_values_have_an_explicit_boundary_mapping(self) -> None:
         self.assertEqual(EVIDENCE_KIND["attested"], "primary")
