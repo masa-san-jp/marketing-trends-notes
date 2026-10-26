@@ -2946,7 +2946,7 @@
       "time": {
         "start": "2026~",
         "end": "..",
-        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年10月20日）で示される局面"
+        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日）で示される局面"
       },
       "kind": "vendor-pushed",
       "stage": "emerging",
@@ -4471,14 +4471,6 @@
           "retrieved": "primary",
           "as_of": "2026-03",
           "tense": "intended"
-        },
-        {
-          "field": "current-status",
-          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html",
-          "certainty": "independent",
-          "retrieved": "primary",
-          "as_of": "2026-07-01",
-          "tense": "completed"
         }
       ],
       "predictions": [
@@ -5662,7 +5654,7 @@
         "none_reason": "「生成AIの日常利用の拡大」「generative AI daily-life adoption in Japan」で検索したが、日本の利用者行動の変化そのもののWikidata項目は確認できない"
       },
       "time": {
-        "start": "2026~",
+        "start": "2023~",
         "end": "..",
         "display": "生成AIが検索・文章作成・相談・学習など日常生活の複数用途へ広がる局面"
       },
@@ -8109,7 +8101,7 @@
       "time": {
         "start": "2026~",
         "end": "..",
-        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年10月20日）で示される局面"
+        "display": "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日）で示される局面"
       },
       "kind": "vendor-pushed",
       "stage": "emerging",

@@ -10,7 +10,7 @@ authority:
 time:
   start: "2026~"
   end: ".."
-  display: "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日、最終更新2026年10月20日）で示される局面"
+  display: "Getty Images VisualGPS「2026年のビジュアルトレンドを追う」（初出2026年1月28日）で示される局面"
 kind: vendor-pushed
 stage: emerging
 market: cross-category
@@ -65,8 +65,7 @@ updated: 2026-10-22
 
 ## 足元の根拠（完了した事実）
 
-レポートの初出日（2026年1月28日）・最終更新日（2026年10月20日。2026年9月時点の表示は9月14日）・
-著者（Dr. Rebecca Swift）は、
+レポートの初出日（2026年1月28日）・著者（Dr. Rebecca Swift）は、
 ゲッティイメージズという当事者の一次言明として確認できる事実である（`attested`）。一方、
 「視聴者が具体性・個別性のあるビジュアルにより強く反応する」という主張自体を裏づける独立した
 消費者調査・行動データは、今回の調査では確認できていない（`vendor`）。

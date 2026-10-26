@@ -31,7 +31,6 @@ evidence:
   - {field: prediction, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html", certainty: independent, retrieved: primary, as_of: "2026-07-01", tense: completed}
   - {field: current-status, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html", certainty: independent, retrieved: primary, as_of: "2026-09-15", tense: completed}
   - {field: current-status, source: "https://www.mhlw.go.jp/content/11200000/001690304.pdf", certainty: independent, retrieved: primary, as_of: "2026-03", tense: intended}
-  - {field: current-status, source: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03_00028.html", certainty: independent, retrieved: primary, as_of: "2026-07-01", tense: completed}
 predictions:
   - {claim: "指定資金移動業者の数が2025年3月31日時点の83事業者を下回らない", by: "2027-12", resolved: "2026-08-12", outcome: miss}
   - {claim: "厚生労働省の次回同種調査で、労働者の賃金デジタル払い「今後利用したい」割合が令和7年度調査の13.8%を大きく下回らない", by: "2028-03", resolved: null, outcome: null}
