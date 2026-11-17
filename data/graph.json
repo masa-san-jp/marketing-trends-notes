@@ -7900,8 +7900,8 @@
         "note": "業界・媒体側の呼称が一般化した型。視聴者側の自称は「TikTok見てる」のように媒体名で、形式名では呼ばない。named_by は特定できない（未確認）"
       },
       "freshness": {
-        "valid_as_of": "2026-08-10",
-        "recheck_by": "2027-02-10"
+        "valid_as_of": "2026-11-18",
+        "recheck_by": "2027-05-18"
       },
       "evidence": [
         {
@@ -7915,6 +7915,14 @@
         {
           "field": "stage",
           "source": "https://www.soumu.go.jp/iicp/research/results/media_usage-time.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-12",
+          "tense": "completed"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.soumu.go.jp/main_content/001079082.xlsx",
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2025-12",
@@ -7970,7 +7978,7 @@
         "https://www.cyberagent.co.jp/news/detail/id=33050"
       ],
       "status": "draft",
-      "updated": "2026-09-17",
+      "updated": "2026-11-18",
       "path": "entities/trends/short-video-mainstream.md"
     },
     "trend/single-person-household-expansion": {
