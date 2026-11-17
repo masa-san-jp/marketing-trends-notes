@@ -22,8 +22,8 @@ naming:
   original_label: 空き家数の増加
   note: "「空き家の増加」は、総務省統計局の住宅・土地統計調査を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-11-12"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2023", tense: completed}
   - {field: stage, source: "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "1993-2023", tense: completed}
@@ -93,6 +93,7 @@ updated: 2026-09-16
 
 ## 未着手
 
+- 2026年11月15日、総務省統計局の2023年住宅・土地統計調査の基本集計概要（kihon_gaiyou.pdf）と国土交通省の令和6年空き家所有者実態調査（001907491.pdf）を再読し、空き家900万2千戸・空き家率13.8％・1993年から約2倍・賃貸売却用等を除く385万6千戸（2018年比36万9千戸増）、所有意向の約32％／使用目的のない空き家で約41％／相続前に対策なしで約35％が変わっていないことを確認した。両調査とも次回公表は未確認（stageは growing のまま）
 - 2026年9月16日、国土交通省「令和6年空き家所有者実態調査結果」（令和7年8月公表）を実読して見出している未来を追記した。図表の一部（今後の利用意向の種類別・取得方法別クロス集計の細目）は列と数値の対応が崩れており、本文の記述文からのみ数値を採用した
 - 所有関係、種類、築年、地域、管理状態、相続、流通可能性を分解する
 - 管理、改修、解体、賃貸、売却、地域活用の案件化率と費用を追う

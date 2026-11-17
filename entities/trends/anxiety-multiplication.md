@@ -22,13 +22,15 @@ naming:
   original_label: null
   note: "「不安の多重化」は現象を指すために私が付けた記述的なラベルで、当事者も媒体も官庁もこの語を使っていない。原資料にあるのは『日常生活での悩みや不安』と『悩みや不安の内容』という設問名だけ"
 freshness:
-  valid_as_of: "2026-08-10"
-  recheck_by: "2026-11-10"
+  valid_as_of: "2026-11-14"
+  recheck_by: "2027-02-14"
 evidence:
   - {field: kind, source: "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv", certainty: independent, retrieved: primary, as_of: "2025-08", tense: completed}
   - {field: stage, source: "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv", certainty: independent, retrieved: primary, as_of: "2025-08", tense: completed}
   - {field: time, source: "https://survey.gov-online.go.jp/assets/r07/r07-life/h13-2.csv", certainty: independent, retrieved: primary, as_of: "2025-08", tense: completed}
   - {field: current-status, source: "https://survey.gov-online.go.jp/living/202509/r07/r07-life/index.html", certainty: independent, retrieved: primary, as_of: "2025-08", tense: intended}
+  - {field: current-status, source: "https://www.boj.or.jp/research/o_survey/ishiki2610.htm", certainty: independent, retrieved: primary, as_of: "2026-09", tense: completed}
+  - {field: current-status, source: "https://www.esri.cao.go.jp/jp/stat/shouhi/gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2026-10", tense: completed}
 predictions:
   - {claim: "令和8年の同調査で、悩みや不安の内容の計（M.T.）が令和7年の379.8を下回らない", by: "2026-12", resolved: null, outcome: null}
   - {claim: "令和8年の同調査で、『現在の収入や資産について』が令和7年の47.9％を下回らない", by: "2026-12", resolved: null, outcome: null}
@@ -50,8 +52,10 @@ sources:
   - https://www.boj.or.jp/research/o_survey/index.htm
   - https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi
   - https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi_notice.html
+  - https://www.boj.or.jp/research/o_survey/ishiki2610.htm
+  - https://www.esri.cao.go.jp/jp/stat/shouhi/gaiyou.pdf
 status: draft
-updated: 2026-09-21
+updated: 2026-11-14
 ---
 
 # 不安の多重化
@@ -112,17 +116,26 @@ updated: 2026-09-21
 ## 補助指標（同じ構成概念ではない）
 
 頻度の異なる独立調査として、日本銀行の「生活意識に関するアンケート調査」と内閣府の「消費動向調査」を
-確認した。日本銀行調査は1993年以降、年4回、生活実感や金融・経済環境の影響を測っており、2026年6月調査の
-結果も公開されている。[日本銀行の調査結果・時系列データ](https://www.boj.or.jp/research/o_survey/index.htm)
+2026年11月14日に開き直した。
+
+日本銀行調査は1993年以降、年4回、生活実感や金融・経済環境の影響を測っている。最新の第107回
+（2026年9月調査、2026年10月13日公表）は、調査実施期間2026年8月3日〜9月4日、全国の満20歳以上の
+個人4,000人に郵送し、有効回答者数1,972人（有効回答率49.3％）である。現在の暮らし向きを前年と比べた
+問いで「ゆとりがなくなってきた」は、第104回（2025年12月）57.2％、第105回（2026年3月）53.4％、
+第106回（2026年6月）55.0％、第107回54.4％だった。[第107回の結果](https://www.boj.or.jp/research/o_survey/ishiki2610.htm)
+（結果ページの表を読んだ。全文PDFは未読）
 
 内閣府の消費動向調査は、消費者の暮らし向きや物価見通しなどを毎月測定し、消費者態度指数として公表する。
-2026年7月調査まで公開されている。[統計表一覧](https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi)
-ただし、同指数は「暮らし向き」「収入の増え方」「雇用環境」「耐久消費財の買い時判断」などの5段階評価から
+令和8（2026）年10月実施分（2026年10月29日公表）の消費者態度指数（二人以上の世帯・季節調整値）は35.0で、
+前月差▲0.4ポイント、2か月連続の小幅な低下だった。2026年4月の32.2から8月の35.5までは上がっている。
+同概要は「１年後の物価について、『上昇する』と見込む割合は９割を超えている」と述べている。
+[結果の概要](https://www.esri.cao.go.jp/jp/stat/shouhi/gaiyou.pdf)
+ただし、同指数は「暮らし向き」「収入の増え方」「雇用環境」「耐久消費財の買い時判断」の5段階評価から
 作られ、内閣府世論調査の複数回答 M.T.（一人が挙げる不安項目数）とは質問・集計単位が異なる。
 [指数の作成方法](https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi_notice.html)
 
 したがって、これらを M.T. の系列へ合算したり、金銭不安の増加を直接裏づける同一指標として扱ったりしない。
-月次・四半期の景況感を併記する補助観測として、次回の再検証で比較可能性を確認する。
+月次・四半期の景況感を併記する補助観測として置く。
 
 ## kind と stage の判定
 
@@ -169,5 +182,7 @@ updated: 2026-09-21
   内閣府「消費動向調査」の消費者態度指数（月次）は調査ページと作成方法を一次確認済みだが、
   M.T. と質問・集計単位が異なるため、同じ系列へ統合していない。比較可能な補助指標としての扱いを次回再検証する
 - 令和3年より前の長期系列
+- 2026年11月14日の再検証: 内閣府世論調査の時系列表（表13-2・表14-2）は前回記録と同じ5回分で、数値の変更は無かった。令和8年調査の結果は、同日時点で当該ページに見当たらない（**未確認**: 公開予定日）。stage は growing のまま。令和8年調査が出た時点で predictions の3件を答え合わせする
+- 日本銀行の第107回全文PDFと、消費動向調査10月分の報告書本文は未読。補助指標の数字は結果ページと概要PDFから採った
 - **この trend に応答する practice として、recurring-cost-transparency を接続済み。**
   金銭不安の増加に対するその施策の採用効果や、他の供給側の応答は未確認である

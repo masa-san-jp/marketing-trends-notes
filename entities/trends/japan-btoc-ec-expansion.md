@@ -28,6 +28,7 @@ evidence:
   - {field: kind, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
   - {field: stage, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
   - {field: time, source: "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
+  - {field: current-status, source: "https://ecnomikata.com/ecnews/52119/", certainty: anecdotal, retrieved: summary, as_of: "2025", tense: completed}
 predictions:
   - {claim: "2025年の国内BtoC-EC市場規模が2024年の26.1兆円を下回らない", by: "2026-12", resolved: null, outcome: null}
 channel_scope:
@@ -40,8 +41,9 @@ relations: []
 sources:
   - https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html
   - https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf
+  - https://ecnomikata.com/ecnews/52119/
 status: verified
-updated: 2026-09-17
+updated: 2026-11-17
 ---
 
 # 国内BtoC-ECの拡大
@@ -81,6 +83,11 @@ ECそのものの始まりを2022年と主張しているわけではない。�
 特定のプラットフォームや媒体が発生チャネルだとは置かない。ここで観測しているのは、商取引全体に占める電子取引の構成変化である。
 モール、ブランド直販、SNS経由などの内訳は、報告書を実読してから分ける。
 
+## 追記（2026-11-17・二次情報・一次未確認）
+
+ECのミカタの記事（https://ecnomikata.com/ecnews/52119/、2026-11-17に取得）によると、経済産業省が2026年10月21日に「令和7年度電子商取引に関する市場調査」を公表し、2025年の国内BtoC-EC市場規模は27.6兆円（記事の記載で前年比5.5％増）、BtoC-EC化率は9.80％（前年比0.02ポイント増）とされる。記事は前年を26.1兆円と記しており、27.6兆円と26.1兆円から計算した増加率は約5.7％で記事の5.5％と一致しない（2024年値の改定の有無は未確認）。
+上の2024年の値（26.1兆円・9.8％）は上書きせず残す。経産省の公表ページ（https://www.meti.go.jp/press/2026/10/20261021001.html）は2026-11-17にHTTP 403で、Web Archiveにも保存が無く、一次情報は未確認。このため予測「2025年が26.1兆円を下回らない」の答え合わせは一次確認までresolvedにしない。
+
 ## 反証（これが偽なら何が観測されるか）
 
 - 2025年の次回公表値で国内BtoC-EC市場規模が2024年の26.1兆円を下回り、EC化率も低下する
@@ -88,6 +95,9 @@ ECそのものの始まりを2022年と主張しているわけではない。�
 - 物販・サービス・デジタルの内訳の一部だけが増え、BtoC-EC全体の拡大というまとめが過大だったと分かる
 
 ## 未着手
+
+- 2026年11月17日、https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html は直接取得が403（またはbot遮断の空応答）で、Web Archiveの保存版（2026-05-15取得分）を取得して、2024年の26.1兆円（前年24.8兆円、前々年22.7兆円、前年比5.1％増）とBtoC-EC化率9.8％（前年比0.4ポイント増）を再確認した。報告書PDF（250826_kohyoshiryo.pdf）は403で未確認。公式ページを直接開けていないため valid_as_of は更新していない
+- 経産省の2026-10-21公表ページ（令和7年度調査）を一次で取得し、27.6兆円・9.80％と2024年値の改定有無を確認する
 
 - 2026年9月17日、生活者の「今後ネット通販を増やしたいか」という意向を測る独立調査を探したが見つからなかった（**未確認**の理由）。EC拡大を裏づける消費者意向調査（総務省・消費者庁・業界団体等）を継続して探す
 - 経済産業省の報告書PDFを取得して、分野別内訳・調査方法・分母の変更を実読確認する

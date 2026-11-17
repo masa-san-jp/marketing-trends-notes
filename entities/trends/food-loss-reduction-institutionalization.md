@@ -22,8 +22,8 @@ naming:
   original_label: 食品ロス削減
   note: "「食品ロス削減対応の制度化」は、食品ロス量の推計と法制度・目標・ガイドラインの展開をfood-beverageの事業変化として要約する記述的なラベル。生活者や事業者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/", certainty: attested, retrieved: primary, as_of: "2019-10-01", tense: completed}
   - {field: stage, source: "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf", certainty: attested, retrieved: primary, as_of: "2025-03-25", tense: completed}
@@ -44,8 +44,9 @@ sources:
   - https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf
   - https://www.env.go.jp/press/press_00002.html
   - https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/index.html
+  - https://www.maff.go.jp/j/press/shokuhin/recycle/260630.html
 status: verified
-updated: 2026-09-20
+updated: 2026-11-15
 ---
 
 # 食品ロス削減対応の制度化
@@ -73,8 +74,9 @@ updated: 2026-09-20
 削減に取り組む消費者の割合80％も目標としている。2024年12月には食品寄附ガイドラインと食べ残し持ち帰り促進ガイドラインが
 公表され、事業者・自治体・消費者の具体的な接点も制度周辺に加わっている。
 
-環境省の令和5年度推計では、食品ロスは約464万トン（家庭系233万トン、事業系231万トン）だった。農林水産省の別集計では、
-令和6年度の事業系食品ロスは237万トンで前年度より6万トン増えているため、年度や対象が異なる数字を合算したり、食品ロスが
+環境省の令和5年度推計では、食品ロスは約464万トン（家庭系233万トン、事業系231万トン）だった。農林水産省の2026年6月30日公表
+（2026年11月15日に原典を再確認）では、2024年度（令和6年度）の食品ロス量は461万トン（前年度比3万トン減）、うち事業系食品ロスは
+237万トンで前年度より6万トン増えているため、年度や対象が異なる数字を合算したり、食品ロスが
 毎年一方向に減っていると解釈したりしない。制度化が進んだことと、個別事業者の削減実績は分けて扱う。
 
 ## kind と stage の判定

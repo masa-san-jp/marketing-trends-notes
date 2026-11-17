@@ -22,8 +22,8 @@ naming:
   original_label: GIGAスクール構想第2期
   note: "文部科学省の制度名称を踏まえ、導入後の端末・ネットワーク・クラウド学習環境の更新と持続運用という観測対象をこのKBで要約したラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mext.go.jp/content/20240417-mxt_jogai02-000033777_5.pdf", certainty: attested, retrieved: primary, as_of: "2024-04-17", tense: completed}
   - {field: stage, source: "https://www.mext.go.jp/content/20251020-mxt_syoto02-000045471_14.pdf", certainty: attested, retrieved: primary, as_of: "2025-10-20", tense: completed}

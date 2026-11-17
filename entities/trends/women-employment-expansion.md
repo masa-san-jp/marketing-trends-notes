@@ -22,8 +22,8 @@ naming:
   original_label: 女性就業者数・就業率の上昇
   note: "「女性就業の拡大」は、総務省統計局の労働力調査を要約する記述的なラベルで、就業者の消費行動を一様に推定するものではない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf", certainty: independent, retrieved: primary, as_of: "2025年平均", tense: completed}
   - {field: stage, source: "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf", certainty: independent, retrieved: primary, as_of: "2020-2025年平均", tense: completed}
@@ -43,7 +43,7 @@ sources:
   - https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf
   - https://www.gender.go.jp/about_danjo/basic_plans/5th-2/pdf/print.pdf
 status: verified
-updated: 2026-09-23
+updated: 2026-11-15
 ---
 
 # 女性就業の拡大

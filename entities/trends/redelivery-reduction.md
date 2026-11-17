@@ -22,12 +22,13 @@ naming:
   original_label: 宅配便再配達率の削減
   note: "「宅配便の再配達削減」は、国土交通省の再配達率調査と受取方法の推進を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-11-12"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2025-04", tense: completed}
   - {field: stage, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2022-10-2025-04", tense: completed}
   - {field: time, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html", certainty: independent, retrieved: primary, as_of: "2022-2025", tense: completed}
+  - {field: stage, source: "https://www.mlit.go.jp/report/press/tokatsu01_hh_001025.html", certainty: independent, retrieved: primary, as_of: "2026-04", tense: completed}
   - {field: current-status, source: "https://www.mlit.go.jp/seisakutokatsu/freight/content/001993236.pdf", certainty: attested, retrieved: primary, as_of: "2026-03-31", tense: intended}
 predictions:
   - {claim: "2026年10月の宅配便再配達率が2025年4月の8.4％を上回らない", by: "2027-12", resolved: null, outcome: null}
@@ -41,6 +42,7 @@ relations: []
 sources:
   - https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html
   - https://www.mlit.go.jp/seisakutokatsu/freight/content/001993236.pdf
+  - https://www.mlit.go.jp/report/press/tokatsu01_hh_001025.html
 status: verified
 updated: 2026-09-17
 ---
@@ -62,7 +64,7 @@ updated: 2026-09-17
 
 ## 足元の根拠（完了した事実）
 
-宅配便の取扱量が大きいまま、受取方法を多様化して再配達を減らすことが、物流の持続可能性と購買体験の両方の課題になっている。国土交通省は宅配ボックスや置き配などを推進し、2025年4月の再配達率は8.4％となった。2024年10月の9.0％、2022年10月の10.6％から低下している。
+宅配便の取扱量が大きいまま、受取方法を多様化して再配達を減らすことが、物流の持続可能性と購買体験の両方の課題になっている。国土交通省は宅配ボックスや置き配などを推進し、2025年4月の再配達率は8.4％となった。2024年10月の9.0％、2022年10月の10.6％から低下している。その後、2025年10月は8.3％、2026年4月は7.6％（2026年7月10日国土交通省発表、6社ベース）とさらに低下した。2026年4月の内訳は都市部8.5％、都市部近郊7.2％、地方6.0％。同発表では、多様な受取方法の利用率（3社ベース）が2025年2月の25.6％、2025年10月の29.9％から2026年4月に31.0％へ上がったとしている。
 
 この調査は大手宅配事業者6社をベースにしたサンプルであり、全配送の再配達率や個別事業者の効果を直接示すものではない。都市部は9.3％、都市部近郊は7.9％、地方は7.0％で、地域差も残っている。
 
@@ -70,7 +72,7 @@ updated: 2026-09-17
 
 **kind: regulation-driven とした。** 受取方法の普及だけでなく、国土交通省が再配達削減を政策課題として調査・推進し、物流の担い手不足への対応と結び付けているためである。
 
-**stage: growing とした。** 2022年から2025年にかけて率は低下したが、再配達はなお発生しており、受取方法・通知・配送事業者・住宅環境をまたぐ改善余地が残るためである。
+**stage: growing とした。** 2022年から2026年4月にかけて率は低下し（2026-11-15の再検証で2026年4月調査まで確認。stageは変更なし）が、再配達はなお発生しており、受取方法・通知・配送事業者・住宅環境をまたぐ改善余地が残るためである。
 
 ## 時間
 

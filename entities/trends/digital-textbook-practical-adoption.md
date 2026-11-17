@@ -22,8 +22,8 @@ naming:
   original_label: 学習者用デジタル教科書の段階導入・活用拡大
   note: "「デジタル教科書の実用化」は、文部科学省の導入方針と活用調査を要約するための記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mext.go.jp/a_menu/shotou/kyoukasho/digital/mext_03528.html", certainty: attested, retrieved: primary, as_of: "2025年度", tense: completed}
   - {field: stage, source: "https://www.mext.go.jp/content/20241220-mxt_kyokasyo01-000039303_7.pdf", certainty: independent, retrieved: summary, as_of: "2024年度", tense: completed}
@@ -94,6 +94,7 @@ updated: 2026-09-21
 
 ## 未着手
 
+- 2026年11月15日、文部科学省の実証研究事業ページ、令和7年度成果報告書（20260518-mxt-kyokasyo-000049761_1.pdf）、2026年4月7日の閣議決定発表を再読し、教師の「毎授業で使用」28.4％（令和7年度、n=9,037）と22.7％（令和6年度、n=7,699）、法律案の内容と指針検討会議（秋ごろ取りまとめ目標）の記述が変わっていないことを確認した。法律案の国会審議の結果は、これらの出典からは確認できない（stageは growing のまま）
 - 2026年9月21日、文部科学省の2026年4月7日発表（学校教育法等改正法律案の閣議決定）を実読し、大臣の期待表明と法案の内容を見出している未来として追記した。国会審議の進捗はまだ確認できていない
 - 教科、学年、学校規模、自治体、端末環境ごとの活用頻度を比較する
 - 紙との併用比率、教員研修、授業準備時間、学習成果を同じ定義で追う

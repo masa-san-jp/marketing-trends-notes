@@ -22,16 +22,16 @@ naming:
   original_label: 育児休業取得率の上昇と両立支援制度の拡充
   note: "「育児休業取得の制度定着」は、厚生労働省の制度情報・雇用均等基本調査を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2", certainty: attested, retrieved: primary, as_of: "2025-04-2025-10", tense: completed}
-  - {field: stage, source: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2", certainty: independent, retrieved: primary, as_of: "2023-2024年度", tense: completed}
+  - {field: stage, source: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2", certainty: independent, retrieved: primary, as_of: "2023-2025年度", tense: completed}
   - {field: time, source: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2", certainty: independent, retrieved: primary, as_of: "2022-2025", tense: completed}
   - {field: current-status, source: "https://tomoiku.mhlw.go.jp/assets/pdf/activity/document_R6.pdf", certainty: attested, retrieved: primary, as_of: "2024年度", tense: intended}
 predictions:
-  - {claim: "次回の雇用均等基本調査で男性の育児休業取得率が2024年度調査の40.5％を下回らない", by: "2027-12", resolved: null, outcome: null}
-  - {claim: "厚生労働省の次回雇用均等基本調査で、男性の育児休業取得率が政府目標（令和7年度50%）に向けて上昇を続け、2025年度調査で45%を下回らない", by: "2027-06", resolved: null, outcome: null}
+  - {claim: "次回の雇用均等基本調査で男性の育児休業取得率が2024年度調査の40.5％を下回らない", by: "2027-12", resolved: "2026-11-15", outcome: hit}
+  - {claim: "厚生労働省の次回雇用均等基本調査で、男性の育児休業取得率が政府目標（令和7年度50%）に向けて上昇を続け、2025年度調査で45%を下回らない", by: "2027-06", resolved: "2026-11-15", outcome: hit}
 channel_scope:
   status: not-applicable
   note: >-
@@ -43,7 +43,7 @@ sources:
   - https://www.mhlw.go.jp/stf/wp/hakusyo/kousei/25/backdata/02-01-03-01.html
   - https://tomoiku.mhlw.go.jp/assets/pdf/activity/document_R6.pdf
 status: verified
-updated: 2026-09-19
+updated: 2026-11-15
 ---
 
 # 育児休業取得の制度定着
@@ -53,15 +53,15 @@ updated: 2026-09-19
 政府は、男性の育児休業取得率を今後さらに引き上げる数値目標を掲げている。厚生労働省「令和6
 年度育児休業取得率の調査結果（雇用均等基本調査）のポイント」は、男性の育児休業取得率の
 経年グラフに「政府目標 令和7（2025）年：50％、令和12（2030）年：85％」を明記している。
-2024年度の実績は40.5％で、2025年度目標の50％まで残り約10ポイントの水準にある。
+2024年度の実績は40.5％だったが、同省の育児休業制度特設サイトが2026年7月公表の令和7年度雇用均等基本調査として示す2025年度の男性取得率は50.9％で、2025年度目標の50％に到達した。2030年度目標の85％までは約34ポイントの差がある。
 
 これは政府が自ら掲げた目標であり、企業や労働者自身が「今後もっと取得したい」と回答した
-意向調査ではない。目標と実績の差は、育児休業取得が制度としては拡充されつつも、目標水準
-までの定着にはまだ距離があることを示している。
+意向調査ではない。2025年度目標には届いたが、2030年度目標との差は大きく、育児休業取得は目標水準
+までの定着にはまだ距離がある。
 
 ## 足元の根拠（完了した事実）
 
-育児休業は個人の意識だけでなく、企業の人事・勤怠・引き継ぎ・柔軟な働き方を含む業務制度として定着しつつある。厚生労働省の2024年度調査では、育児休業取得率は女性86.6％、男性40.5％で、2023年度の女性84.1％、男性30.1％から上昇した。2022年施行の産後パパ育休や、2025年4月・10月の段階的な制度施行も続いている。
+育児休業は個人の意識だけでなく、企業の人事・勤怠・引き継ぎ・柔軟な働き方を含む業務制度として定着しつつある。厚生労働省の2024年度調査では、育児休業取得率は女性86.6％、男性40.5％で、2023年度の女性84.1％、男性30.1％から上昇した。2025年度調査（2026年7月公表）では女性88.3％、男性50.9％とさらに上昇している（育児休業制度特設サイトの表示。調査の公表資料そのものは今回開けていない）。2022年施行の産後パパ育休や、2025年4月・10月の段階的な制度施行も続いている。
 
 取得率の上昇だけで、取得期間、復職、昇進、賃金、育児負担の均等化まで改善したとは言えない。企業規模、雇用形態、産業、取得日数、復職後の働き方を分けて観測する必要がある。
 
@@ -91,3 +91,4 @@ updated: 2026-09-19
 - 取得率、取得日数、復職率、離職、評価、賃金、企業規模・産業を分解する
 - 2025年施行の柔軟な働き方措置と、育児・介護・テレワークの運用を接続する
 - 次回の雇用均等基本調査で予測を答え合わせする
+- 2026年11月15日の再検証で、特設サイトに令和7年度雇用均等基本調査の結果（女性88.3％・男性50.9％）が載っているのを確認して本文と予測2件を更新した。男性の取得率が上昇を続けているため stage は growing のまま変更しない。調査の原典ページ（雇用均等基本調査の公表資料）で同じ数字を直接確認することは次の課題

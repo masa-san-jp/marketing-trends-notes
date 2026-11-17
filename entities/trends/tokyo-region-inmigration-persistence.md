@@ -22,8 +22,8 @@ naming:
   original_label: 東京圏の転入超過
   note: "「東京圏への転入超過の持続」は、総務省統計局の住民基本台帳人口移動報告を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-11-12"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-05-15"
 evidence:
   - {field: kind, source: "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
   - {field: stage, source: "https://www.stat.go.jp/data/idou/2025np/jissu/youyaku/index.html", certainty: independent, retrieved: primary, as_of: "1995-2025", tense: completed}
@@ -43,7 +43,7 @@ sources:
   - https://www.stat.go.jp/data/idou/2025np/jissu/pdf/2025all.pdf
   - https://www.cas.go.jp/jp/seisaku/digital_denen/pdf/20221223_gaiyou.pdf
 status: verified
-updated: 2026-09-22
+updated: 2026-11-15
 ---
 
 # 東京圏への転入超過の持続

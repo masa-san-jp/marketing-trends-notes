@@ -22,8 +22,8 @@ naming:
   original_label: 生成AIの導入状況
   note: "「企業の生成AI導入拡大」は、IPAの企業調査にある導入率と組織実装の状況を要約する記述的なラベル。企業がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2025年度", tense: completed}
   - {field: stage, source: "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf", certainty: independent, retrieved: primary, as_of: "2024-2025年度", tense: completed}
@@ -44,7 +44,7 @@ sources:
   - https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf
   - https://www.ipa.go.jp/pressrelease/2026/press20260515.html
 status: verified
-updated: 2026-09-19
+updated: 2026-11-15
 ---
 
 # 企業の生成AI導入拡大

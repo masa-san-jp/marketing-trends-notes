@@ -22,8 +22,8 @@ naming:
   original_label: 宅配便取扱個数の増加
   note: "「宅配便取扱量の拡大」は、国土交通省の宅配便・メール便取扱実績を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html", certainty: independent, retrieved: primary, as_of: "2024年度", tense: completed}
   - {field: stage, source: "https://www.mlit.go.jp/report/press/jidosha04_hh_000341.html", certainty: independent, retrieved: primary, as_of: "2023-2024年度", tense: completed}
@@ -43,7 +43,7 @@ sources:
   - https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html
   - https://www.jcer.or.jp/research-report/20201117-2.html
 status: verified
-updated: 2026-09-17
+updated: 2026-11-15
 ---
 
 # 宅配便取扱量の拡大

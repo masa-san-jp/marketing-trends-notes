@@ -22,8 +22,8 @@ naming:
   original_label: ゲーム市場のデジタル・グローバル化
   note: "消費者が自称する呼称ではなく、ゲーム産業の市場規模・プラットフォーム・地域データをこのKBでまとめた名称"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.cesa.or.jp/action/industry-research/2024/", certainty: independent, retrieved: primary, as_of: "2024-12-20", tense: completed}
   - {field: time, source: "https://www.cesa.or.jp/action/industry-research/2024/", certainty: independent, retrieved: primary, as_of: "2024-12-20", tense: completed}
@@ -44,7 +44,7 @@ sources:
   - https://www.cesa.or.jp/action/industry-research/2025/
   - https://www.cesa.or.jp/uploads/2025/release_game_industry_report2025.pdf
 status: verified
-updated: 2026-09-21
+updated: 2026-11-15
 ---
 
 # ゲーム市場のデジタル・グローバル化

@@ -12,7 +12,7 @@ depends_on: []
 受け入れ条件の閾値も同じファイルに置いてある（issue #1 と対応）。
 
 <!-- generated:coverage:start -->
-データの最新日: 2026-10-22 — `python3 tools/build_graph.py` が生成（手で書き換えない）
+データの最新日: 2026-11-17 — `python3 tools/build_graph.py` が生成（手で書き換えない）
 
 trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 'verified': 59}
 
@@ -31,6 +31,8 @@ trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 've
 | education（教育） |  |  |  |  |  |  |  |  |  |  | 1 |  |  | 1 | 1 | 1 |  |  |  | 4 |
 | cross-category（カテゴリ横断） |  | 1 | 1 |  | 1 |  |  |  |  | 1 | 1 | 2 | 1 | 1 | 1 |  | 3 | 2 |  | 15 |
 
+**鮮度切れ**（recheck_by < 2026-11-17）: trend/b2b-ecommerce-expansion, trend/cosmetics-overseas-expansion, trend/cross-border-ecommerce-expansion, trend/foodservice-demand-recovery, trend/japan-btoc-ec-expansion, trend/online-game-spending-protection, trend/online-marketplace-transparency, trend/reuse-c2c-market-expansion, trend/service-ecommerce-expansion
+
 **調査したが該当が無かった**（空欄との区別。`tools/record_searched.py` の記録）:
 - entertainment-content: 2020年以降の日本における短尺動画と長尺動画の視聴時間・利用率を形式別に分解した独立調査（総務省・政府統計・研究論文を確認）（2026-08-25・aiko-pr／出典 3本）
 
@@ -47,9 +49,9 @@ trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 've
 - primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
 - per_category_min: 12/12 カテゴリが 2件以上
-- stale_ratio: 0.00（上限 0.15・as_of=2026-10-22 時点）
+- stale_ratio: 0.14（上限 0.15・as_of=2026-11-17 時点）
 - practice_linked: 60/61 の practice が responds_to を持つ（下限比率 0.5）
-- resolved_predictions: 5/5 件の予測が答え合わせ済み
+- resolved_predictions: 8/5 件の予測が答え合わせ済み
 - forward_stated_ratio: 1.00（下限 1.0・第一節とpredictionsを持つtrend）
 - intended_evidence_ratio: 0.92（下限 0.3・tense: intendedの根拠を持つtrend）
 
@@ -84,6 +86,17 @@ trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 've
 形式の検証（`build_graph.py --check`）と違って commit は止めない——次に何を調べるかの材料として出す。
 
 <!-- generated:audit:start -->
+**鮮度切れ**
+- BtoB電子商取引の拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- 日本化粧品の海外展開・高付加価値化（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- 越境ECの拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- 外食・飲食サービス需要の回復（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- 国内BtoC-ECの拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- オンラインゲーム課金・未成年者保護の運用強化（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- オンラインモール取引透明化の制度化（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- リユース・CtoC市場の拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+- サービスECの拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす
+
 **未来向きの未着手**
 - AI表現に人間的文脈と倫理的信頼を求める視線 に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）
 - おすすめ表示・アルゴリズムへの不信感の高まり に応答する practice が無い。打ち手に落ちていない（判断材料として未完成）

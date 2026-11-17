@@ -1,6 +1,51 @@
 {
-  "as_of": "2026-10-22",
+  "as_of": "2026-11-17",
   "findings": [
+    {
+      "kind": "stale",
+      "about": "trend/b2b-ecommerce-expansion",
+      "text": "BtoB電子商取引の拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/cosmetics-overseas-expansion",
+      "text": "日本化粧品の海外展開・高付加価値化（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/cross-border-ecommerce-expansion",
+      "text": "越境ECの拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/foodservice-demand-recovery",
+      "text": "外食・飲食サービス需要の回復（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/japan-btoc-ec-expansion",
+      "text": "国内BtoC-ECの拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/online-game-spending-protection",
+      "text": "オンラインゲーム課金・未成年者保護の運用強化（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/online-marketplace-transparency",
+      "text": "オンラインモール取引透明化の制度化（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/reuse-c2c-market-expansion",
+      "text": "リユース・CtoC市場の拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
+    {
+      "kind": "stale",
+      "about": "trend/service-ecommerce-expansion",
+      "text": "サービスECの拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
+    },
     {
       "kind": "unanswered",
       "about": "trend/ai-visual-trust-expectation",

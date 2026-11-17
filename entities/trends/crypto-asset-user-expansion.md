@@ -22,8 +22,8 @@ naming:
   original_label: 暗号資産の国内口座数・取引規模の拡大
   note: "「暗号資産利用者の拡大」は、金融庁の金融審議会議事録に示された国内口座数・取引金額を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html", certainty: independent, retrieved: primary, as_of: "2024-06", tense: completed}
   - {field: stage, source: "https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html", certainty: independent, retrieved: primary, as_of: "2024-06-2024-08", tense: completed}
@@ -42,7 +42,7 @@ sources:
   - https://www.fsa.go.jp/singi/kessaiseido_wg/gijiroku/20240925.html
   - https://www.fsa.go.jp/common/diet/221/02/03.pdf
 status: verified
-updated: 2026-09-21
+updated: 2026-11-15
 ---
 
 # 暗号資産利用者の拡大

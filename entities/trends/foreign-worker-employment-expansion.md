@@ -22,8 +22,8 @@ naming:
   original_label: 外国人労働者数の増加
   note: "「外国人雇用の拡大」は、厚生労働省の外国人雇用状況届出を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-11-12"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/stf/newpage_68794.html", certainty: independent, retrieved: primary, as_of: "2025-10", tense: completed}
   - {field: stage, source: "https://www.mhlw.go.jp/stf/newpage_68794.html", certainty: independent, retrieved: primary, as_of: "2007-2025", tense: completed}
@@ -42,7 +42,7 @@ sources:
   - https://www.mhlw.go.jp/stf/newpage_68794.html
   - https://www.moj.go.jp/isa/applications/ssw/2024.03.29.kakugikettei.html
 status: verified
-updated: 2026-09-21
+updated: 2026-11-15
 ---
 
 # 外国人雇用の拡大

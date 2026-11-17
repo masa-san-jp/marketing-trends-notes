@@ -22,8 +22,8 @@ naming:
   original_label: 日本人の国内旅行消費額の増加
   note: "「国内旅行消費の拡大」は、観光庁の旅行・観光消費動向調査を要約するための記述的なラベル。旅行者の自称ではない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mlit.go.jp/kankocho/news02_00074.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
   - {field: stage, source: "https://www.mlit.go.jp/kankocho/content/001981888.pdf", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
@@ -43,7 +43,7 @@ sources:
   - https://www.mlit.go.jp/kankocho/content/001981888.pdf
   - https://www.mlit.go.jp/kankocho/news02_00077.html
 status: verified
-updated: 2026-09-21
+updated: 2026-11-15
 ---
 
 # 国内旅行消費の拡大

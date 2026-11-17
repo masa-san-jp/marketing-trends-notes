@@ -22,8 +22,8 @@ naming:
   original_label: 機能性表示食品の制度見直し
   note: "消費者が自称する呼称ではなく、消費者庁の制度改正・届出管理の動きをこのKBでまとめた名称"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.caa.go.jp/notice/entry/038499/", certainty: attested, retrieved: primary, as_of: "2024-06-27", tense: completed}
   - {field: time, source: "https://www.caa.go.jp/notice/assets/food_labelling_cms_240903_01.pdf", certainty: attested, retrieved: primary, as_of: "2024-08-30", tense: completed}
@@ -107,6 +107,7 @@ updated: 2026-09-21
 
 ## 未着手
 
+- 2026年11月15日、消費者庁の2024年6月27日の諮問ページ、2024年8月30日の説明資料（food_labelling_cms_240903_01.pdf）、2025年10月1日の手引き・質疑応答集改正のお知らせを再読し、15日／30日の情報提供期限、因果関係不明でも提供する義務、厚生労働省の定期公表方針、2025年10月1日の改正の記述が変わっていないことを確認した。これら以降の改正は、この3ページからは確認できない（stageは growing のまま）
 - 2026年9月21日、既存sourcesにあった消費者庁・厚生労働省の説明資料（food_labelling_cms_240903_01.pdf）を実読し、厚生労働省の定期公表方針を見出している未来として追記した。定期公表の実施実績はまだ確認できていない
 - 2025年以降の届出データベースで、新規届出・変更・撤回・販売状況更新の件数を同じ定義で確認する
 - 事業者が根拠資料の再検証、健康被害情報の収集、表示変更・撤回をどの程度実装しているかを商品カテゴリ別に整理する

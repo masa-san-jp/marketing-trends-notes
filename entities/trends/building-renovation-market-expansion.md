@@ -22,8 +22,8 @@ naming:
   original_label: 建築物リフォーム・リニューアル工事受注高の増加
   note: "「建築物リフォーム・リニューアル需要の拡大」は、国土交通省の受注高調査を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-11-12"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mlit.go.jp/report/press/joho04_hh_001375.html", certainty: independent, retrieved: primary, as_of: "2025年度", tense: completed}
   - {field: stage, source: "https://www.mlit.go.jp/report/press/content/002005995.pdf", certainty: independent, retrieved: primary, as_of: "2024-2025年度", tense: completed}
@@ -82,6 +82,7 @@ updated: 2026-09-16
 
 ## 未着手
 
+- 2026年11月15日、国土交通省の令和7年度計の発表ページと記者発表資料（002005995.pdf）、住宅リフォーム推進協議会の報告書（jitsurei-R7-c.pdf）を再読し、受注高16兆4,104億円（前年度比18.7％増）、住宅4兆9,033億円、非住宅115,071億円、住宅の改装・改修3兆8,164億円、検討者の「1年以内」0.7ポイント上昇、検討者の最多回答「省エネ性能を高める」が変わっていないことを確認した。令和8年度以降の四半期公表は未確認（stageは growing のまま）
 - 2026年9月16日、住宅リフォーム推進協議会「2025年度住宅リフォームに関する消費者（検討者・実施者）実態調査報告書」を実読して見出している未来を追記した。「リフォーム予定時期」のグラフ部分は列と数値の対応が崩れており、正確な内訳（3ヶ月以内〜3年以内の構成比）は読み取れなかったため、「1年以内が0.7ポイント上昇」という文章記載の事実のみを採用した
 - 住宅・非住宅、工事種類、発注者、用途、地域別に受注高を分解する
 - 工事単価、工期、完工率、再工事、設備性能、補助制度の影響を接続する
