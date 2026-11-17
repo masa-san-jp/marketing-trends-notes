@@ -12,7 +12,7 @@ depends_on: []
 受け入れ条件の閾値も同じファイルに置いてある（issue #1 と対応）。
 
 <!-- generated:coverage:start -->
-データの最新日: 2026-11-17 — `python3 tools/build_graph.py` が生成（手で書き換えない）
+データの最新日: 2026-11-18 — `python3 tools/build_graph.py` が生成（手で書き換えない）
 
 trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 'verified': 59}
 
@@ -31,7 +31,7 @@ trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 've
 | education（教育） |  |  |  |  |  |  |  |  |  |  | 1 |  |  | 1 | 1 | 1 |  |  |  | 4 |
 | cross-category（カテゴリ横断） |  | 1 | 1 |  | 1 |  |  |  |  | 1 | 1 | 2 | 1 | 1 | 1 |  | 3 | 2 |  | 15 |
 
-**鮮度切れ**（recheck_by < 2026-11-17）: trend/b2b-ecommerce-expansion, trend/cosmetics-overseas-expansion, trend/cross-border-ecommerce-expansion, trend/foodservice-demand-recovery, trend/japan-btoc-ec-expansion, trend/online-game-spending-protection, trend/online-marketplace-transparency, trend/reuse-c2c-market-expansion, trend/service-ecommerce-expansion
+**鮮度切れ**（recheck_by < 2026-11-18）: trend/b2b-ecommerce-expansion, trend/cosmetics-overseas-expansion, trend/cross-border-ecommerce-expansion, trend/foodservice-demand-recovery, trend/japan-btoc-ec-expansion, trend/online-game-spending-protection, trend/online-marketplace-transparency, trend/reuse-c2c-market-expansion, trend/service-ecommerce-expansion
 
 **調査したが該当が無かった**（空欄との区別。`tools/record_searched.py` の記録）:
 - entertainment-content: 2020年以降の日本における短尺動画と長尺動画の視聴時間・利用率を形式別に分解した独立調査（総務省・政府統計・研究論文を確認）（2026-08-25・aiko-pr／出典 3本）
@@ -49,7 +49,7 @@ trend **65** 件（stub 0件は不算入）／内訳 {'draft': 6, 'stub': 0, 've
 - primary_read_ratio: 1.00（下限 0.3・原典を実読した根拠を持つ trend）
 - independent_ratio: 1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）
 - per_category_min: 12/12 カテゴリが 2件以上
-- stale_ratio: 0.14（上限 0.15・as_of=2026-11-17 時点）
+- stale_ratio: 0.14（上限 0.15・as_of=2026-11-18 時点）
 - practice_linked: 60/61 の practice が responds_to を持つ（下限比率 0.5）
 - resolved_predictions: 8/5 件の予測が答え合わせ済み
 - forward_stated_ratio: 1.00（下限 1.0・第一節とpredictionsを持つtrend）
