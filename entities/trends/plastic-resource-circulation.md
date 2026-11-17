@@ -22,8 +22,8 @@ naming:
   original_label: プラスチック資源循環
   note: "「プラスチック資源循環対応の制度化」は、法律・手引き・認定制度の展開をconsumer-goodsの事業変化として要約する記述的なラベル。消費者や事業者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-17"
+  recheck_by: "2027-02-17"
 evidence:
   - {field: kind, source: "https://www.env.go.jp/recycle/plastic/circulation.html", certainty: attested, retrieved: primary, as_of: "2022-04-01", tense: completed}
   - {field: stage, source: "https://www.meti.go.jp/press/2023/04/20230419001/20230419001.html", certainty: attested, retrieved: primary, as_of: "2023-04-19", tense: completed}
@@ -46,7 +46,7 @@ sources:
   - https://survey.gov-online.go.jp/hutai/r04/r04-plastic/
   - https://survey.gov-online.go.jp/hutai/r04/r04-plastic/table/PR0403105.csv
 status: verified
-updated: 2026-09-16
+updated: 2026-11-17
 ---
 
 # プラスチック資源循環対応の制度化
@@ -108,6 +108,7 @@ commoditizedとは判定しない。
 ## 未着手
 
 - 2026年9月16日、内閣府「プラスチックごみ問題に関する世論調査」（令和4年9月調査）の集計表CSVを実読して見出している未来を追記した。同調査は令和4年実施で、令和8年時点でより新しい同種世論調査があるかは未確認
+- 2026年11月17日の再確認。開けたURL: 環境省 circulation.html（2021年6月11日公布・2022年4月1日施行の記載を確認。最新項目は令和8年3月のプラスチック製買物袋有料化実施ガイドライン改訂）、環境省 plastic-circulation.env.go.jp（最新ニュースは2026/11/05。2026/10/01に設計認定製品の追加。認定件数のページ記載はなし）、環境省 research_R06.html（令和6年度の容器包装廃棄物実態調査、8都市平均。令和7年度版へのリンクはなし）、内閣府調査の集計表CSV PR0403105（総数1,791、「今後新たに取り組んでみたいと思うことはない」3.4%、分別77.6%、店頭回収56.1%で、本文の数字と一致）と調査ページ（令和4年9月調査、2023年1月10日掲載。より新しい同種調査へのリンクなし）、経済産業省 20230419001（2023年4月19日に初の認定。緑川化成工業が自主回収・再資源化事業計画の第1号、三重中央開発が再資源化事業計画の第1号）。内閣府の2ページと経産省1ページは現行サイトが403のためWayback Machine経由で読んだ。本文の数字に変更はなく、valid_as_ofとrecheck_byを更新した
 - 2022年以降の設計認定・自主回収・再資源化計画の認定件数と対象製品を時系列で整理する
 - 容器包装・家庭ごみの実態調査から、素材別の排出量と分別・再資源化の実績を確認する
 - 消費者が環境配慮設計や再生材表示を商品選択に使う割合を、独立した意識調査・購買統計で確認する

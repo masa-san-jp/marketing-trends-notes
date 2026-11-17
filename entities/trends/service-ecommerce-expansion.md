@@ -42,7 +42,7 @@ sources:
   - https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf
   - https://www.recruit.co.jp/newsroom/pressrelease/assets/20250403_travel_01.pdf
 status: verified
-updated: 2026-09-17
+updated: 2026-11-17
 ---
 
 # サービスECの拡大
@@ -90,6 +90,7 @@ updated: 2026-09-17
 
 ## 未着手
 
+- 2026-11-17 再確認: https://www.recruit.co.jp/newsroom/pressrelease/assets/20250403_travel_01.pdf を開いて読み、n=6,475、春（GW除く）「予定である」17.4％・「行きたい」22.3％、GW「予定である」7.0％・「行きたい」17.3％が原文どおりであることを確認した。経産省 https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf は403で直接は開けず、ウェブアーカイブ経由の写しでサービス系 7兆5,169億円→8兆2,256億円（9.43％増）を読み直して一致した。ただし検索結果に令和7年度の電子商取引市場調査（2026年10月21日付 https://www.meti.go.jp/press/2026/10/20261021001.html ）が出てきた。このページとPDF（https://www.meti.go.jp/files/000006536.pdf）は403・アーカイブ未収録で開けず、2025年のサービス系市場規模は未確認（予測の答え合わせも未了）。このため valid_as_of は更新しない
 - 2026年9月17日、じゃらんリサーチセンターの「国内宿泊旅行ニーズ調査2025春」を実読して見出している未来を追記した。旅行以外のサービスEC分野（チケット、金融等）の意向データは今回探せていない
 - サービス分野の内訳別市場規模と成長率を分解する
 - 予約件数、利用者数、単価、キャンセル、オフライン併用を同じ定義で比較する

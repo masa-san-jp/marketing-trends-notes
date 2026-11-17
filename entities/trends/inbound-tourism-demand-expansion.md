@@ -22,8 +22,8 @@ naming:
   original_label: 訪日外国人旅行者数・訪日旅行消費額の増加
   note: "「訪日観光需要の拡大」は、観光庁の旅行者数と旅行消費額を要約するための記述的なラベル。訪日客がこの語を自称することは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mlit.go.jp/kankocho/page01_00056.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
   - {field: stage, source: "https://www.mlit.go.jp/kankocho/page01_00056.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
@@ -43,7 +43,7 @@ sources:
   - https://www.mlit.go.jp/kankocho/tokei_hakusyo/shutsunyukokushasu.html
   - https://www.mlit.go.jp/kankocho/news02_00077.html
 status: verified
-updated: 2026-09-21
+updated: 2026-11-15
 ---
 
 # 訪日観光需要の拡大

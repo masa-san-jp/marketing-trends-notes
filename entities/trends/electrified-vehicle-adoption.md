@@ -22,8 +22,8 @@ naming:
   original_label: 電動車の普及拡大
   note: "「乗用車の電動化拡大」は、資源エネルギー庁・経済産業省の電動車定義と販売比率を要約する記述的なラベル。BEVだけの拡大とは区別する"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-17"
+  recheck_by: "2027-02-17"
 evidence:
   - {field: kind, source: "https://www.enecho.meti.go.jp/about/special/johoteikyo/xev_cev_2024.html?ui_medium=lpene", certainty: attested, retrieved: primary, as_of: "2024-06-24", tense: completed}
   - {field: stage, source: "https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-3.html", certainty: independent, retrieved: summary, as_of: "2024", tense: completed}
@@ -43,7 +43,7 @@ sources:
   - https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-3.html
   - https://www.jama.or.jp/release/news_release/2026/3582/
 status: verified
-updated: 2026-09-16
+updated: 2026-11-17
 ---
 
 # 乗用車の電動化拡大
@@ -92,5 +92,6 @@ updated: 2026-09-16
 - 2026年9月16日、日本自動車工業会「2025年度乗用車市場動向調査」のプレスリリースを実読して見出している未来を追記した。「電動車意向4割台半ば」という表現の厳密な数値（45〜46％台のどこか）はプレスリリース本文に明記されておらず、報告書本体の該当ページには到達していない
 - HEV、PHEV、BEV、FCVを分けた年次販売・保有台数を同じ定義で整理する
 - 充電器設置、走行距離、車両価格、中古車価格、法人保有の関係を確認する
-- 2025年以降の電動車比率と、電動車内部の構成変化を一次資料で答え合わせする
+- 2025年以降の電動車比率と、電動車内部の構成変化を一次資料で答え合わせする（2026年11月17日時点で、資源エネルギー庁の2025年データを載せた新しい版は未確認）
+- 2026年11月17日、資源エネルギー庁の2記事（xev_cev_2024.html、energytrends/202506/html/s-1-3.html）と日本自動車工業会のプレスリリース（release/news_release/2026/3582/）を実際に開き、数値が変わっていないことを確認した。2023年度はHEV約50％・EV/FCV/PHEV合計約3.5％、2024年の電動車比率57％、JAMA調査（2025年9月5〜22日、WEB法）は電動車意向「4割台半ば」・BEVを検討順位1位とする割合「2割強」。素のWebFetchは資源エネルギー庁が403で、ブラウザUAのcurlで取得した
 - 「電動車意向」（次期購入意向）と実際の新車販売構成比の差が、どの程度・どの期間で縮小するかを追う

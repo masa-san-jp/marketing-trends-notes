@@ -3,7 +3,7 @@ id: trend/green-oriented-consumption
 uri: urn:mtn:trend/green-oriented-consumption
 type: trend
 kind: demand-shift
-stage: growing
+stage: declining
 market: consumer-goods
 geo: japan
 label_ja: 日用品を含むグリーン志向消費の拡大
@@ -22,16 +22,17 @@ naming:
   original_label: グリーン志向の消費行動
   note: "消費者庁の政策・調査で使われる表現を参照したKBラベルであり、すべての消費者が自称する市場名ではない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-05-15"
 evidence:
   - {field: kind, source: "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html", certainty: independent, retrieved: primary, as_of: "2025-06-26", tense: completed}
   - {field: time, source: "https://www.caa.go.jp/notice/entry/044090/", certainty: independent, retrieved: primary, as_of: "2025-11-06", tense: completed}
   - {field: stage, source: "https://ondankataisaku.env.go.jp/carbon_neutral/topics/20250626-topic-73.html", certainty: independent, retrieved: primary, as_of: "2025-06-26", tense: completed}
   - {field: current-status, source: "https://www.caa.go.jp/notice/assets/consumer_research_cms201_241107_01.pdf", certainty: independent, retrieved: primary, as_of: "2024-10", tense: intended}
+  - {field: stage, source: "https://www.caa.go.jp/notice/assets/consumer_reseach_cms201_251106_01.pdf", certainty: independent, retrieved: primary, as_of: "2025-10", tense: completed}
 predictions:
   - {claim: "消費者庁の次回の消費生活意識調査（エシカル消費テーマ）で、エシカル消費につながる商品を「今後購入したい」と回答する割合が令和6年度調査の約6割を大きく下回らない", by: "2027-12", resolved: null, outcome: null}
-  - {claim: "同調査で、エシカル消費につながる行動を実践していると回答する割合が令和6年度調査の36.1%を大きく下回らない（令和5年度27.4%からの増加傾向が続くか）", by: "2027-12", resolved: null, outcome: null}
+  - {claim: "同調査で、エシカル消費につながる行動を実践していると回答する割合が令和6年度調査の36.1%を大きく下回らない（令和5年度27.4%からの増加傾向が続くか）", by: "2027-12", resolved: "2026-11-15", outcome: miss}
 channel_scope:
   status: not-applicable
   note: >-
@@ -46,8 +47,9 @@ sources:
   - https://www.ethical.caa.go.jp/ethical-consumption.html
   - https://www.caa.go.jp/notice/entry/039947/
   - https://www.caa.go.jp/notice/assets/consumer_research_cms201_241107_01.pdf
+  - https://www.caa.go.jp/notice/assets/consumer_reseach_cms201_251106_01.pdf
 status: verified
-updated: 2026-09-16
+updated: 2026-11-15
 ---
 
 # 日用品を含むグリーン志向消費の拡大
@@ -80,6 +82,8 @@ updated: 2026-09-16
 「今後購入したい」約6割と「実践している」36.1％の差は、関心・意向がそのまま日用品の購入や継続利用に変わったことを意味しない。価格、
 性能、入手しやすさ、表示の分かりやすさ、手間などが、意向から実践への移行条件として残っている。
 
+2026年11月15日に消費者庁「令和7年度第2回消費生活意識調査」（2025年10月実施、全国15歳以上5,000人、2025年11月6日公表）の原典PDFを読み直したところ、実践している人（「よく」または「時々」実践）の割合は26.1％で、令和6年度の36.1％から10ポイント下がった。同PDFの系列では令和4年度27.6％、令和5年度27.3％、令和6年度36.1％、令和7年度26.1％で、令和6年度の上昇は維持されていない。認知度は27.1％で令和6年度の27.4％と同水準。この調査は「今後購入したい」を尋ねていないため、上記の約6割は令和7年度では更新できていない。実践しない理由は「どれがエシカル消費につながる商品やサービスか分からない」24.9％、「経済的余裕がない」20.9％が上位だった。
+
 したがって、このtrendはすべての消費者が環境配慮商品へ移行したという主張ではなく、商品選択・使い切り・修理・リユース・リサイクルを含む
 消費行動が、企業や行政の情報設計によって変わり得るものとして観測される局面を記録する。
 
@@ -88,7 +92,7 @@ updated: 2026-09-16
 **kind: demand-shift とした。** 観測対象は、消費者の環境・社会課題への関心、購入意向、実践行動の差であり、特定の事業者の販売施策や制度だけでは
 ないためである。消費者庁・環境省の啓発や企業の取組は、この需要側の変化を促す環境として分けて扱う。
 
-**stage: growing とした。** 2024年の消費者意識調査をもとに、2025年にはグリーン志向消費を消費者月間・消費者白書・行動チェックリストで取り上げ、
+**stage: declining に変更した（2026-11-15。旧: growing）。** 令和7年度第2回消費生活意識調査で、エシカル消費の実践度が令和6年度の36.1％から26.1％へ下がり、growing の根拠だった令和5年度から令和6年度への上昇（27.4％から36.1％）が続かなかったため。判定表の「数字が落ちている」に当てはめたもので、1年分の低下であり、令和4〜5年度の水準（27％台）に戻った形でもある点は留保する。次回の再確認で令和8年度調査の実践度が上向けば growing に戻す余地がある。以下は変更前（growing）の判定理由: 2024年の消費者意識調査をもとに、2025年にはグリーン志向消費を消費者月間・消費者白書・行動チェックリストで取り上げ、
 日用品、認証ラベル、3R商品、省エネ家電など具体的な選択肢へ落とす取組が進んでいる。関心・購入意向と実践の差は残っており、消費者全体の行動が
 定着したpeakやcommoditizedとは判定しない。
 

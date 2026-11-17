@@ -22,8 +22,8 @@ naming:
   original_label: クラウドサービスの利用
   note: "「企業のクラウドサービス利用定着」は、総務省調査の利用率推移を要約する記述的なラベル。企業がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.soumu.go.jp/menu_news/s-news/01tsushin02_02000183.html", certainty: independent, retrieved: primary, as_of: "2026-05-29", tense: completed}
   - {field: stage, source: "https://www.soumu.go.jp/menu_news/s-news/01tsushin02_02000183.html", certainty: independent, retrieved: primary, as_of: "2026-05-29", tense: completed}
@@ -46,7 +46,7 @@ sources:
   - https://www.e-stat.go.jp/stat-search/files?collect_area=000&page=1&toukei=00200356&tstat=000001243701
   - https://www.yano.co.jp/press-release/show/press_id/4055
 status: verified
-updated: 2026-09-19
+updated: 2026-11-15
 ---
 
 # 企業のクラウドサービス利用定着

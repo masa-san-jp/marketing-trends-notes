@@ -22,8 +22,8 @@ naming:
   original_label: クリエイターへの適切な対価還元
   note: "文化庁の調査・政策資料で扱われる論点を参照したKBラベルであり、クリエイター全体が自称する市場名ではない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.bunka.go.jp/prmagazine/rensai/news/news_019.html", certainty: attested, retrieved: primary, as_of: "2025-12-24", tense: completed}
   - {field: time, source: "https://www.bunka.go.jp/tokei_hakusho_shuppan/tokeichosa/chosakuken/index.html", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}

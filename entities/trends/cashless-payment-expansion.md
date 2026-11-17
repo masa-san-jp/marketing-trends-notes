@@ -22,8 +22,8 @@ naming:
   original_label: キャッシュレス決済比率
   note: "「国内キャッシュレス決済の拡大」は、経済産業省の年次比率を要約するための記述的なラベル。消費者が拡大現象をこの語で自称することは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.meti.go.jp/files/000001765.xlsx", certainty: independent, retrieved: primary, as_of: "2010-2025", tense: completed}
   - {field: stage, source: "https://www.meti.go.jp/files/000001765.xlsx", certainty: independent, retrieved: primary, as_of: "2010-2025", tense: completed}
@@ -106,6 +106,7 @@ updated: 2026-09-21
 
 ## 未着手
 
+- 2026年11月15日、経済産業省の公式Excel（000001765.xlsx）と発表ページ（20260331006.html、2026年6月18日更新表記）を再読し、2025年58.0％（162.7兆円）、2010年16.6％、2020年37.3％、2022年44.0％、2023年48.4％、2024年52.8％、2025年のクレジット134.6兆円・コード決済16.6兆円、2030年65%・将来的に80%の目標が変わっていないことを確認した（stageは growing のまま）
 - 2026年9月21日、既存sourcesにあった経済産業省の発表（20260331006.html）を実読し、2030年65%・将来的に80%という目標を見出している未来として追記した
 - キャッシュレス決済件数と利用者頻度を、金額比率とは別の独立指標で確認する
 - 業種・店舗規模・地域・オンライン／実店舗別の差を確認する

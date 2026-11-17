@@ -22,8 +22,8 @@ naming:
   original_label: 映像作品配信市場の拡大
   note: "「映像配信市場の拡大」は、文化庁の審議会で示された配信市場の時系列を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2021", tense: completed}
   - {field: stage, source: "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/", certainty: independent, retrieved: primary, as_of: "2016-2021", tense: completed}
@@ -42,7 +42,7 @@ sources:
   - https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/kihonseisaku/r04_03/
   - https://ictr.co.jp/report/20250423.html/
 status: verified
-updated: 2026-09-17
+updated: 2026-11-15
 ---
 
 # 映像配信市場の拡大

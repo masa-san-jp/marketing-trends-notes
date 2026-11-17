@@ -22,8 +22,8 @@ naming:
   original_label: 単独世帯の増加
   note: "「単独世帯の拡大」は、国勢調査の家族類型別世帯数を要約するための記述的なラベル。世帯主がこの語を自称することは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf", certainty: independent, retrieved: primary, as_of: "2005-2020", tense: completed}
   - {field: stage, source: "https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf", certainty: independent, retrieved: primary, as_of: "2020", tense: completed}
@@ -42,7 +42,7 @@ sources:
   - https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf
   - https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf
 status: verified
-updated: 2026-09-16
+updated: 2026-11-15
 ---
 
 # 単独世帯の拡大

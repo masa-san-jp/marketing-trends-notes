@@ -22,8 +22,8 @@ naming:
   original_label: 金融犯罪対策の高度化
   note: "「オンライン金融犯罪対策の高度化」は、この金融機関横断の制度・運用変化を要約するためのKBラベルであり、顧客が自称する呼称ではない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.fsa.go.jp/news/r6/20250627/01.pdf", certainty: attested, retrieved: primary, as_of: "2025-06-27", tense: completed}
   - {field: time, source: "https://www.fsa.go.jp/news/r7/ginkou/20260630.html", certainty: independent, retrieved: primary, as_of: "2026-06-30", tense: completed}

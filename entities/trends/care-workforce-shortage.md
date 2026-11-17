@@ -22,8 +22,8 @@ naming:
   original_label: 介護職員の必要数の増加
   note: "「介護人材の需給ギャップ拡大」は、厚生労働省の第9期介護保険事業計画に基づく必要数推計を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-12"
-  recheck_by: "2026-11-12"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/content/12004000/001274765.pdf", certainty: independent, retrieved: primary, as_of: "2022-2040年度", tense: completed}
   - {field: stage, source: "https://www.mhlw.go.jp/stf/newpage_02977.html", certainty: independent, retrieved: primary, as_of: "2022-2040年度", tense: completed}
@@ -42,7 +42,7 @@ sources:
   - https://www.mhlw.go.jp/stf/newpage_02977.html
   - https://www.mhlw.go.jp/content/12004000/001274765.pdf
 status: verified
-updated: 2026-09-20
+updated: 2026-11-15
 ---
 
 # 介護人材の需給ギャップ拡大

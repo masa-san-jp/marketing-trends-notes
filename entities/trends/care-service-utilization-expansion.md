@@ -22,8 +22,8 @@ naming:
   original_label: 介護サービス受給者数・費用額の増加
   note: "「介護サービス利用の拡大」は、厚生労働省の介護給付費等実態統計を要約する記述的なラベルで、利用者の満足度や供給量を推定するものではない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2026-02審査分", tense: completed}
   - {field: stage, source: "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202602_gaiyou.pdf", certainty: independent, retrieved: primary, as_of: "2025-2026-02", tense: completed}
@@ -42,7 +42,7 @@ sources:
   - https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202603_gaiyou.pdf
   - https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html
 status: verified
-updated: 2026-09-21
+updated: 2026-11-15
 ---
 
 # 介護サービス利用の拡大
@@ -55,7 +55,7 @@ updated: 2026-09-21
 
 介護サービスの利用者数と費用額が増加し、本人・家族・自治体・事業者が、在宅・通所・施設・予防を組み合わせて生活を支える前提が大きくなっている。厚生労働省の2026年2月審査分では、介護サービス受給者数は482.86万人で前年同月比1.9％増、介護予防サービスは101.22万人で5.1％増だった。介護サービス費用額は9,874.71億円で2.8％増となっている。
 
-2026年3月審査分の介護サービス受給者数は480.09万人で、2月の482.86万人を下回った。このため、次回統計に対する「482.86万人以上」という予測はmissと判定した。ただし、前年同月比では1.9％増であり、単月の低下を長期的な縮小とは解釈しない。
+2026年3月審査分の介護サービス受給者数は480.09万人で、2月の482.86万人を下回った。このため、次回統計に対する「482.86万人以上」という予測はmissと判定した。ただし、前年同月比では1.9％増であり、単月の低下を長期的な縮小とは解釈しない。2026-11-15の再確認時点で公表済みの最新の2026年7月審査分では、介護サービス受給者数は488.72万人（前年同月比1.2％増）、介護予防サービスは104.07万人（4.8％増）、介護サービス費用額は1兆219.72億円（4.3％増）で、前年同月を上回る推移は変わっていない（https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/dl/202607_gaiyou.pdf）。stageはgrowingのままとした。
 
 これは高齢者全体の人数やサービス品質、介護事業者の利益を直接表さない。要介護度、サービス種類、地域、供給制約、家族介護、自己負担、利用継続を分けて観測する必要がある。
 

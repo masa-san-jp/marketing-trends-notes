@@ -3148,8 +3148,8 @@
         "note": "「不安の多重化」は現象を指すために私が付けた記述的なラベルで、当事者も媒体も官庁もこの語を使っていない。原資料にあるのは『日常生活での悩みや不安』と『悩みや不安の内容』という設問名だけ"
       },
       "freshness": {
-        "valid_as_of": "2026-08-10",
-        "recheck_by": "2026-11-10"
+        "valid_as_of": "2026-11-14",
+        "recheck_by": "2027-02-14"
       },
       "evidence": [
         {
@@ -3183,6 +3183,22 @@
           "retrieved": "primary",
           "as_of": "2025-08",
           "tense": "intended"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.boj.or.jp/research/o_survey/ishiki2610.htm",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-09",
+          "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www.esri.cao.go.jp/jp/stat/shouhi/gaiyou.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-10",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -3217,10 +3233,12 @@
         "https://survey.gov-online.go.jp/assets/r07/r07-life/h14-2.csv",
         "https://www.boj.or.jp/research/o_survey/index.htm",
         "https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi",
-        "https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi_notice.html"
+        "https://www.esri.cao.go.jp/jp/stat/shouhi/shouhi_notice.html",
+        "https://www.boj.or.jp/research/o_survey/ishiki2610.htm",
+        "https://www.esri.cao.go.jp/jp/stat/shouhi/gaiyou.pdf"
       ],
       "status": "draft",
-      "updated": "2026-09-21",
+      "updated": "2026-11-14",
       "path": "entities/trends/anxiety-multiplication.md"
     },
     "trend/b2b-ecommerce-expansion": {
@@ -3277,6 +3295,14 @@
           "retrieved": "primary",
           "as_of": "2022-2024",
           "tense": "completed"
+        },
+        {
+          "field": "stage",
+          "source": "https://bcart.jp/post/202",
+          "certainty": "independent",
+          "retrieved": "summary",
+          "as_of": "2025",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -3297,7 +3323,7 @@
         "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-19",
+      "updated": "2026-11-17",
       "path": "entities/trends/b2b-ecommerce-expansion.md"
     },
     "trend/building-renovation-market-expansion": {
@@ -3327,8 +3353,8 @@
         "note": "「建築物リフォーム・リニューアル需要の拡大」は、国土交通省の受注高調査を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-11-12"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -3506,8 +3532,8 @@
         "note": "「介護サービス利用の拡大」は、厚生労働省の介護給付費等実態統計を要約する記述的なラベルで、利用者の満足度や供給量を推定するものではない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -3563,7 +3589,7 @@
         "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/24/index.html"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-15",
       "path": "entities/trends/care-service-utilization-expansion.md"
     },
     "trend/care-workforce-shortage": {
@@ -3593,8 +3619,8 @@
         "note": "「介護人材の需給ギャップ拡大」は、厚生労働省の第9期介護保険事業計画に基づく必要数推計を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-11-12"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -3655,7 +3681,7 @@
         "https://www.mhlw.go.jp/content/12004000/001274765.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-20",
+      "updated": "2026-11-15",
       "path": "entities/trends/care-workforce-shortage.md"
     },
     "trend/cashless-payment-expansion": {
@@ -3685,8 +3711,8 @@
         "note": "「国内キャッシュレス決済の拡大」は、経済産業省の年次比率を要約するための記述的なラベル。消費者が拡大現象をこの語で自称することは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -3778,8 +3804,8 @@
         "note": "「企業のクラウドサービス利用定着」は、総務省調査の利用率推移を要約する記述的なラベル。企業がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -3842,7 +3868,7 @@
         "https://www.yano.co.jp/press-release/show/press_id/4055"
       ],
       "status": "verified",
-      "updated": "2026-09-19",
+      "updated": "2026-11-15",
       "path": "entities/trends/cloud-service-adoption.md"
     },
     "trend/cosmetics-overseas-expansion": {
@@ -3930,7 +3956,7 @@
         "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-20",
+      "updated": "2026-11-17",
       "path": "entities/trends/cosmetics-overseas-expansion.md"
     },
     "trend/creator-ad-disclosure": {
@@ -4055,8 +4081,8 @@
         "note": "文化庁の調査・政策資料で扱われる論点を参照したKBラベルであり、クリエイター全体が自称する市場名ではない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -4205,7 +4231,7 @@
         "https://beenos.com/news-center/detail/20230907_bcr_pr/"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-11-17",
       "path": "entities/trends/cross-border-ecommerce-expansion.md"
     },
     "trend/crypto-asset-user-expansion": {
@@ -4235,8 +4261,8 @@
         "note": "「暗号資産利用者の拡大」は、金融庁の金融審議会議事録に示された国内口座数・取引金額を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -4297,7 +4323,7 @@
         "https://www.fsa.go.jp/common/diet/221/02/03.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-15",
       "path": "entities/trends/crypto-asset-user-expansion.md"
     },
     "trend/digital-disengagement-intention": {
@@ -4530,8 +4556,8 @@
         "note": "「デジタル教科書の実用化」は、文部科学省の導入方針と活用調査を要約するための記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -4632,8 +4658,8 @@
         "note": "「国内旅行消費の拡大」は、観光庁の旅行・観光消費動向調査を要約するための記述的なラベル。旅行者の自称ではない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -4695,7 +4721,7 @@
         "https://www.mlit.go.jp/kankocho/news02_00077.html"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-15",
       "path": "entities/trends/domestic-travel-consumption-expansion.md"
     },
     "trend/electrified-vehicle-adoption": {
@@ -4725,8 +4751,8 @@
         "note": "「乗用車の電動化拡大」は、資源エネルギー庁・経済産業省の電動車定義と販売比率を要約する記述的なラベル。BEVだけの拡大とは区別する"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-17",
+        "recheck_by": "2027-02-17"
       },
       "evidence": [
         {
@@ -4788,7 +4814,7 @@
         "https://www.jama.or.jp/release/news_release/2026/3582/"
       ],
       "status": "verified",
-      "updated": "2026-09-16",
+      "updated": "2026-11-17",
       "path": "entities/trends/electrified-vehicle-adoption.md"
     },
     "trend/fertility-treatment-insurance-access": {
@@ -4904,8 +4930,8 @@
         "note": "「食品・飲料・酒類ECの拡大」は、経済産業省の分野別市場規模を要約するための記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-17",
+        "recheck_by": "2027-02-17"
       },
       "evidence": [
         {
@@ -4966,7 +4992,7 @@
         "https://prtimes.jp/main/html/rd/p/000004474.000001594.html"
       ],
       "status": "verified",
-      "updated": "2026-09-20",
+      "updated": "2026-11-17",
       "path": "entities/trends/food-ecommerce-expansion.md"
     },
     "trend/food-loss-reduction-institutionalization": {
@@ -4996,8 +5022,8 @@
         "note": "「食品ロス削減対応の制度化」は、食品ロス量の推計と法制度・目標・ガイドラインの展開をfood-beverageの事業変化として要約する記述的なラベル。生活者や事業者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -5057,10 +5083,11 @@
         "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/",
         "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/promote/assets/consumer_education_cms201_250325_01.pdf",
         "https://www.env.go.jp/press/press_00002.html",
-        "https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/index.html"
+        "https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/index.html",
+        "https://www.maff.go.jp/j/press/shokuhin/recycle/260630.html"
       ],
       "status": "verified",
-      "updated": "2026-09-20",
+      "updated": "2026-11-15",
       "path": "entities/trends/food-loss-reduction-institutionalization.md"
     },
     "trend/foodservice-demand-recovery": {
@@ -5160,7 +5187,7 @@
         "https://www.meti.go.jp/statistics/toppage/report/archive/kako/20260527_1.html"
       ],
       "status": "verified",
-      "updated": "2026-09-20",
+      "updated": "2026-11-17",
       "path": "entities/trends/foodservice-demand-recovery.md"
     },
     "trend/foodtech-alternative-protein": {
@@ -5305,8 +5332,8 @@
         "note": "「外国人雇用の拡大」は、厚生労働省の外国人雇用状況届出を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-11-12"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -5367,7 +5394,7 @@
         "https://www.moj.go.jp/isa/applications/ssw/2024.03.29.kakugikettei.html"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-15",
       "path": "entities/trends/foreign-worker-employment-expansion.md"
     },
     "trend/functional-food-safety-governance": {
@@ -5397,8 +5424,8 @@
         "note": "消費者が自称する呼称ではなく、消費者庁の制度改正・届出管理の動きをこのKBでまとめた名称"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -5486,8 +5513,8 @@
         "note": "消費者が自称する呼称ではなく、ゲーム産業の市場規模・プラットフォーム・地域データをこのKBでまとめた名称"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -5543,7 +5570,7 @@
         "https://www.cesa.or.jp/uploads/2025/release_game_industry_report2025.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-15",
       "path": "entities/trends/gaming-digital-global-expansion.md"
     },
     "trend/generative-ai-business-adoption": {
@@ -5573,8 +5600,8 @@
         "note": "「企業の生成AI導入拡大」は、IPAの企業調査にある導入率と組織実装の状況を要約する記述的なラベル。企業がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -5636,7 +5663,7 @@
         "https://www.ipa.go.jp/pressrelease/2026/press20260515.html"
       ],
       "status": "verified",
-      "updated": "2026-09-19",
+      "updated": "2026-11-15",
       "path": "entities/trends/generative-ai-business-adoption.md"
     },
     "trend/generative-ai-daily-life-adoption": {
@@ -5781,8 +5808,8 @@
         "note": "文部科学省の制度名称を踏まえ、導入後の端末・ネットワーク・クラウド学習環境の更新と持続運用という観測対象をこのKBで要約したラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -5848,7 +5875,7 @@
       "uri": "urn:mtn:trend/green-oriented-consumption",
       "type": "trend",
       "kind": "demand-shift",
-      "stage": "growing",
+      "stage": "declining",
       "market": "consumer-goods",
       "geo": "japan",
       "label_ja": "日用品を含むグリーン志向消費の拡大",
@@ -5870,8 +5897,8 @@
         "note": "消費者庁の政策・調査で使われる表現を参照したKBラベルであり、すべての消費者が自称する市場名ではない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-05-15"
       },
       "evidence": [
         {
@@ -5905,6 +5932,14 @@
           "retrieved": "primary",
           "as_of": "2024-10",
           "tense": "intended"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.caa.go.jp/notice/assets/consumer_reseach_cms201_251106_01.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-10",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -5917,8 +5952,8 @@
         {
           "claim": "同調査で、エシカル消費につながる行動を実践していると回答する割合が令和6年度調査の36.1%を大きく下回らない（令和5年度27.4%からの増加傾向が続くか）",
           "by": "2027-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-11-15",
+          "outcome": "miss"
         }
       ],
       "channel_scope": {
@@ -5933,10 +5968,11 @@
         "https://www.caa.go.jp/policies/policy/consumer_education/consumer_education/subcommittee/effrots_001",
         "https://www.ethical.caa.go.jp/ethical-consumption.html",
         "https://www.caa.go.jp/notice/entry/039947/",
-        "https://www.caa.go.jp/notice/assets/consumer_research_cms201_241107_01.pdf"
+        "https://www.caa.go.jp/notice/assets/consumer_research_cms201_241107_01.pdf",
+        "https://www.caa.go.jp/notice/assets/consumer_reseach_cms201_251106_01.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-16",
+      "updated": "2026-11-15",
       "path": "entities/trends/green-oriented-consumption.md"
     },
     "trend/inbound-tourism-demand-expansion": {
@@ -5966,8 +6002,8 @@
         "note": "「訪日観光需要の拡大」は、観光庁の旅行者数と旅行消費額を要約するための記述的なラベル。訪日客がこの語を自称することは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -6029,7 +6065,7 @@
         "https://www.mlit.go.jp/kankocho/news02_00077.html"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-15",
       "path": "entities/trends/inbound-tourism-demand-expansion.md"
     },
     "trend/japan-btoc-ec-expansion": {
@@ -6086,6 +6122,14 @@
           "retrieved": "primary",
           "as_of": "2024",
           "tense": "completed"
+        },
+        {
+          "field": "current-status",
+          "source": "https://ecnomikata.com/ecnews/52119/",
+          "certainty": "anecdotal",
+          "retrieved": "summary",
+          "as_of": "2025",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -6104,10 +6148,11 @@
       "relations": [],
       "sources": [
         "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
-        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+        "https://ecnomikata.com/ecnews/52119/"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-11-17",
       "path": "entities/trends/japan-btoc-ec-expansion.md"
     },
     "trend/japanese-music-overseas-expansion": {
@@ -6245,8 +6290,8 @@
         "note": "「ライブ・体験型エンタメ消費の拡大」は、経済産業省が整理する第三次産業活動指数とライブ市場調査を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-17",
+        "recheck_by": "2027-02-17"
       },
       "evidence": [
         {
@@ -6307,7 +6352,7 @@
         "https://corporate.pia.jp/news/detail_live_enta_market20260617.html"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-11-17",
       "path": "entities/trends/live-entertainment-experience-expansion.md"
     },
     "trend/music-streaming-expansion": {
@@ -6337,8 +6382,8 @@
         "note": "「音楽配信・ストリーミングの定着」は、日本レコード協会の売上・配信区分を要約するKBラベルであり、利用者が自称する市場名ではない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-17",
+        "recheck_by": "2027-02-17"
       },
       "evidence": [
         {
@@ -6396,7 +6441,7 @@
         "https://www.jmrlsi.co.jp/trend/mranking/05-it/mranking441.html"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-11-17",
       "path": "entities/trends/music-streaming-expansion.md"
     },
     "trend/online-financial-crime-governance": {
@@ -6426,8 +6471,8 @@
         "note": "「オンライン金融犯罪対策の高度化」は、この金融機関横断の制度・運用変化を要約するためのKBラベルであり、顧客が自称する呼称ではない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -6574,7 +6619,7 @@
         "https://www.kportal.caa.go.jp/teaching-material/000509/"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-17",
       "path": "entities/trends/online-game-spending-protection.md"
     },
     "trend/online-marketplace-transparency": {
@@ -6664,7 +6709,7 @@
         "https://www.meti.go.jp/files/900016748.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-11-17",
       "path": "entities/trends/online-marketplace-transparency.md"
     },
     "trend/online-medical-consultation-adoption": {
@@ -6892,8 +6937,8 @@
         "note": "「海外旅行需要の回復」は、観光庁が公表する日本人出国者数の推移を要約するための記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -6985,8 +7030,8 @@
         "note": "「宅配便取扱量の拡大」は、国土交通省の宅配便・メール便取扱実績を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -7048,7 +7093,7 @@
         "https://www.jcer.or.jp/research-report/20201117-2.html"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-11-15",
       "path": "entities/trends/parcel-delivery-volume-expansion.md"
     },
     "trend/parental-leave-normalization": {
@@ -7078,8 +7123,8 @@
         "note": "「育児休業取得の制度定着」は、厚生労働省の制度情報・雇用均等基本調査を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -7095,7 +7140,7 @@
           "source": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/?sa_p=YSA&sa_ra=A2",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-2024年度",
+          "as_of": "2023-2025年度",
           "tense": "completed"
         },
         {
@@ -7119,14 +7164,14 @@
         {
           "claim": "次回の雇用均等基本調査で男性の育児休業取得率が2024年度調査の40.5％を下回らない",
           "by": "2027-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-11-15",
+          "outcome": "hit"
         },
         {
           "claim": "厚生労働省の次回雇用均等基本調査で、男性の育児休業取得率が政府目標（令和7年度50%）に向けて上昇を続け、2025年度調査で45%を下回らない",
           "by": "2027-06",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-11-15",
+          "outcome": "hit"
         }
       ],
       "channel_scope": {
@@ -7141,7 +7186,7 @@
         "https://tomoiku.mhlw.go.jp/assets/pdf/activity/document_R6.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-19",
+      "updated": "2026-11-15",
       "path": "entities/trends/parental-leave-normalization.md"
     },
     "trend/plastic-resource-circulation": {
@@ -7171,8 +7216,8 @@
         "note": "「プラスチック資源循環対応の制度化」は、法律・手引き・認定制度の展開をconsumer-goodsの事業変化として要約する記述的なラベル。消費者や事業者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-17",
+        "recheck_by": "2027-02-17"
       },
       "evidence": [
         {
@@ -7231,7 +7276,7 @@
         "https://survey.gov-online.go.jp/hutai/r04/r04-plastic/table/PR0403105.csv"
       ],
       "status": "verified",
-      "updated": "2026-09-16",
+      "updated": "2026-11-17",
       "path": "entities/trends/plastic-resource-circulation.md"
     },
     "trend/recurrent-education-institutionalization": {
@@ -7362,8 +7407,8 @@
         "note": "「宅配便の再配達削減」は、国土交通省の再配達率調査と受取方法の推進を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-11-12"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -7388,6 +7433,14 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2022-2025",
+          "tense": "completed"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.mlit.go.jp/report/press/tokatsu01_hh_001025.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2026-04",
           "tense": "completed"
         },
         {
@@ -7421,7 +7474,8 @@
       "relations": [],
       "sources": [
         "https://www.mlit.go.jp/report/press/tokatsu01_hh_000908.html",
-        "https://www.mlit.go.jp/seisakutokatsu/freight/content/001993236.pdf"
+        "https://www.mlit.go.jp/seisakutokatsu/freight/content/001993236.pdf",
+        "https://www.mlit.go.jp/report/press/tokatsu01_hh_001025.html"
       ],
       "status": "verified",
       "updated": "2026-09-17",
@@ -7489,6 +7543,14 @@
           "retrieved": "primary",
           "as_of": "2025-01",
           "tense": "intended"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2024",
+          "tense": "completed"
         }
       ],
       "predictions": [
@@ -7513,10 +7575,11 @@
       "relations": [],
       "sources": [
         "https://www.env.go.jp/recycle/circul/reuse/",
-        "https://www.env.go.jp/content/000327691.pdf"
+        "https://www.env.go.jp/content/000327691.pdf",
+        "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-11-17",
       "path": "entities/trends/reuse-c2c-market-expansion.md"
     },
     "trend/school-generative-ai-governance": {
@@ -7546,8 +7609,8 @@
         "note": "学校関係者が自称する市場カテゴリではなく、文部科学省のガイドラインと実証事業の積み上がりをこのKBでまとめた名称"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -7604,7 +7667,7 @@
         "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-15",
       "path": "entities/trends/school-generative-ai-governance.md"
     },
     "trend/senior-employment-expansion": {
@@ -7634,32 +7697,32 @@
         "note": "「高齢者就業の拡大」は、総務省統計局の労働力調査を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-11-12"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
           "field": "kind",
-          "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
+          "source": "https://www.stat.go.jp/data/topics/pdf/topi149_02.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024",
+          "as_of": "2025",
           "tense": "completed"
         },
         {
           "field": "stage",
-          "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
+          "source": "https://www.stat.go.jp/data/topics/pdf/topi149_02.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2004-2024",
+          "as_of": "2004-2025",
           "tense": "completed"
         },
         {
           "field": "time",
-          "source": "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
+          "source": "https://www.stat.go.jp/data/topics/pdf/topi149_02.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2004-2024",
+          "as_of": "2004-2025",
           "tense": "completed"
         },
         {
@@ -7676,6 +7739,14 @@
           "certainty": "independent",
           "retrieved": "primary",
           "as_of": "2025",
+          "tense": "intended"
+        },
+        {
+          "field": "current-status",
+          "source": "https://www8.cao.go.jp/kourei/whitepaper/w-2026/html/zenbun/s1_3_2.html",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-09/11",
           "tense": "intended"
         }
       ],
@@ -7700,13 +7771,14 @@
       "channels": [],
       "relations": [],
       "sources": [
-        "https://www.stat.go.jp/data/topics/topi1460.html",
-        "https://www.stat.go.jp/data/topics/pdf/topi146_02.pdf",
+        "https://www.stat.go.jp/data/topics/topi1490.html",
+        "https://www.stat.go.jp/data/topics/pdf/topi149_02.pdf",
         "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/gaiyou.pdf",
-        "https://www8.cao.go.jp/kourei/whitepaper/w-2025/html/zenbun/s1_3_1.html"
+        "https://www8.cao.go.jp/kourei/whitepaper/w-2025/html/zenbun/s1_3_1.html",
+        "https://www8.cao.go.jp/kourei/whitepaper/w-2026/html/zenbun/s1_3_2.html"
       ],
       "status": "verified",
-      "updated": "2026-09-22",
+      "updated": "2026-11-15",
       "path": "entities/trends/senior-employment-expansion.md"
     },
     "trend/service-ecommerce-expansion": {
@@ -7798,7 +7870,7 @@
         "https://www.recruit.co.jp/newsroom/pressrelease/assets/20250403_travel_01.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-11-17",
       "path": "entities/trends/service-ecommerce-expansion.md"
     },
     "trend/short-video-mainstream": {
@@ -7928,8 +8000,8 @@
         "note": "「単独世帯の拡大」は、国勢調査の家族類型別世帯数を要約するための記述的なラベル。世帯主がこの語を自称することは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -7990,7 +8062,7 @@
         "https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-16",
+      "updated": "2026-11-15",
       "path": "entities/trends/single-person-household-expansion.md"
     },
     "trend/sleep-rest-health-management": {
@@ -8020,8 +8092,8 @@
         "note": "「睡眠・休養の健康管理ニーズの可視化」は、厚生労働省の健康目標と国民調査を生活者側の課題として要約する記述的なラベル。生活者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -8065,7 +8137,7 @@
           "outcome": null
         },
         {
-          "claim": "健康日本21（第三次）の中間評価で、睡眠で休養がとれている者の割合が2035年度目標の80%、適切な睡眠時間を確保できている者の割合が同60%に向けて改善傾向にある",
+          "claim": "健康日本21（第三次）の中間評価で、睡眠で休養がとれている者の割合が令和14年度（2032年度）目標の80%、適切な睡眠時間を確保できている者の割合が同60%に向けて改善傾向にある",
           "by": "2030-03",
           "resolved": null,
           "outcome": null
@@ -8085,7 +8157,7 @@
         "https://www.mhlw.go.jp/web/t_doc?dataId=00012990&dataType=0&pageNo=1"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-15",
       "path": "entities/trends/sleep-rest-health-management.md"
     },
     "trend/specificity-over-relatability-expectation": {
@@ -8395,8 +8467,8 @@
         "note": "「テレワークの定着」は、国土交通省の実施率調査を要約するための記述的なラベルであり、全職種の働き方が固定化したことを意味しない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -8487,8 +8559,8 @@
         "note": "「東京圏への転入超過の持続」は、総務省統計局の住民基本台帳人口移動報告を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-11-12"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-05-15"
       },
       "evidence": [
         {
@@ -8550,7 +8622,7 @@
         "https://www.cas.go.jp/jp/seisaku/digital_denen/pdf/20221223_gaiyou.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-22",
+      "updated": "2026-11-15",
       "path": "entities/trends/tokyo-region-inmigration-persistence.md"
     },
     "trend/tracking-restrictions": {
@@ -8761,8 +8833,8 @@
         "note": "「空き家の増加」は、総務省統計局の住宅・土地統計調査を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-11-12"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -8854,8 +8926,8 @@
         "note": "「映像配信市場の拡大」は、文化庁の審議会で示された配信市場の時系列を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -8916,7 +8988,7 @@
         "https://ictr.co.jp/report/20250423.html/"
       ],
       "status": "verified",
-      "updated": "2026-09-17",
+      "updated": "2026-11-15",
       "path": "entities/trends/video-distribution-expansion.md"
     },
     "trend/women-employment-expansion": {
@@ -8946,8 +9018,8 @@
         "note": "「女性就業の拡大」は、総務省統計局の労働力調査を要約する記述的なラベルで、就業者の消費行動を一様に推定するものではない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -9009,7 +9081,7 @@
         "https://www.gender.go.jp/about_danjo/basic_plans/5th-2/pdf/print.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-23",
+      "updated": "2026-11-15",
       "path": "entities/trends/women-employment-expansion.md"
     },
     "trend/workplace-stress-check-institutionalization": {
@@ -9039,8 +9111,8 @@
         "note": "「職場ストレスチェックの制度定着」は、厚生労働省の労働安全衛生調査を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-12",
-        "recheck_by": "2026-11-12"
+        "valid_as_of": "2026-11-15",
+        "recheck_by": "2027-02-15"
       },
       "evidence": [
         {
@@ -9078,7 +9150,7 @@
       ],
       "predictions": [
         {
-          "claim": "次回同種調査のストレスチェック実施率が2024年の75.4％を下回らず、集団分析実施率が58.0％を下回らない",
+          "claim": "次回同種調査のストレスチェック実施率が2024年の41.3％を下回らず、実施事業場のうち集団分析を実施した割合が2025年の74.9％を下回らない",
           "by": "2027-12",
           "resolved": null,
           "outcome": null
@@ -9099,10 +9171,11 @@
       "sources": [
         "https://www.mhlw.go.jp/toukei/list/r06-46-50d.html",
         "https://www.mhlw.go.jp/content/11303000/001681620.pdf",
-        "https://www.mhlw.go.jp/content/11200000/001287207.pdf"
+        "https://www.mhlw.go.jp/content/11200000/001287207.pdf",
+        "https://www.mhlw.go.jp/toukei/list/dl/r07-46-50_gaikyo.pdf"
       ],
       "status": "verified",
-      "updated": "2026-09-21",
+      "updated": "2026-11-15",
       "path": "entities/trends/workplace-stress-check-institutionalization.md"
     }
   },

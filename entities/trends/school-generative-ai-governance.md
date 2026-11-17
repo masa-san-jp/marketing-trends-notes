@@ -22,8 +22,8 @@ naming:
   original_label: 学校現場における生成AIの利活用
   note: "学校関係者が自称する市場カテゴリではなく、文部科学省のガイドラインと実証事業の積み上がりをこのKBでまとめた名称"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mext.go.jp/a_menu/other/mext_02412.html?s=03", certainty: attested, retrieved: primary, as_of: "2024-12-26", tense: completed}
   - {field: time, source: "https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf", certainty: attested, retrieved: primary, as_of: "2024-12-26", tense: completed}
@@ -45,7 +45,7 @@ sources:
   - https://www.mext.go.jp/a_menu/other/mext_02412.html?s=03
   - https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf
 status: verified
-updated: 2026-09-21
+updated: 2026-11-15
 ---
 
 # 学校教育における生成AI利用の制度化

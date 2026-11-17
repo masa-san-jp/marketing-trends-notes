@@ -22,8 +22,8 @@ naming:
   original_label: ライブ・エンタテインメント市場の拡大
   note: "「ライブ・体験型エンタメ消費の拡大」は、経済産業省が整理する第三次産業活動指数とライブ市場調査を要約する記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-17"
+  recheck_by: "2027-02-17"
 evidence:
   - {field: kind, source: "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
   - {field: stage, source: "https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html", certainty: independent, retrieved: primary, as_of: "2020-2024", tense: completed}
@@ -42,7 +42,7 @@ sources:
   - https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html
   - https://corporate.pia.jp/news/detail_live_enta_market20260617.html
 status: verified
-updated: 2026-09-17
+updated: 2026-11-17
 ---
 
 # ライブ・体験型エンタメ消費の拡大
@@ -87,6 +87,8 @@ updated: 2026-09-17
 - 特定ジャンル・大都市・一部アーティスト以外では体験型消費の拡大が再現されない
 
 ## 未着手
+
+- 2026年11月17日、https://corporate.pia.jp/news/detail_live_enta_market20260617.html を開き、2025年の市場規模8,564億円（前年比12.6%増）、1人あたり単価9,286円（同4.5%増）、2035年見通し「1兆1億円規模」を再確認した（変化なし）。https://www.meti.go.jp/statistics/toppage/report/minikaisetsu/hitokoto_kako/20251126hitokoto.html は直接取得が403（bot遮断）のため、Web Archiveの保存版（2026-03-19取得分）を取得し、音楽・芸術等興行の指数が2020年36.0から2024年196.6、娯楽業が2024年122.7、ライブ市場調査の2024年総動員数約5,940万人・総売上額約6,122億円を再確認した（変化なし。経産省ページ自体は保存版経由）
 
 - 2026年9月17日、ぴあ総研のプレスリリースを実読して見出している未来を追記した。2035年予測の詳細な年平均成長率は本文取得の範囲では確認できなかった
 - ジャンル、地域、会場規模、国内外、チケット単価、物販、配信を分けて比較する

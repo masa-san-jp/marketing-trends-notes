@@ -22,8 +22,8 @@ naming:
   original_label: テレワーク実施率の安定・再上昇
   note: "「テレワークの定着」は、国土交通省の実施率調査を要約するための記述的なラベルであり、全職種の働き方が固定化したことを意味しない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html", certainty: independent, retrieved: primary, as_of: "2025年度", tense: completed}
   - {field: stage, source: "https://www.mlit.go.jp/report/press/toshikankyoteleworkr7.html", certainty: independent, retrieved: primary, as_of: "2025年度", tense: completed}

@@ -28,6 +28,7 @@ evidence:
   - {field: kind, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
   - {field: stage, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2022-2024", tense: completed}
   - {field: time, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2022-2024", tense: completed}
+  - {field: stage, source: "https://bcart.jp/post/202", certainty: independent, retrieved: summary, as_of: "2025", tense: completed}
 predictions:
   - {claim: "2025年の国内BtoB-EC市場規模が2024年の514.4兆円を下回らない", by: "2026-12", resolved: null, outcome: null}
 channel_scope:
@@ -39,7 +40,7 @@ relations: []
 sources:
   - https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf
 status: verified
-updated: 2026-09-19
+updated: 2026-11-17
 ---
 
 # BtoB電子商取引の拡大
@@ -69,6 +70,10 @@ updated: 2026-09-19
 
 企業間の受発注、調達、販売管理などの取引接点にまたがる。特定のクラウドサービスや業界を発生源とは置かず、業種別・取引段階別の内訳は資料の範囲を超えて断定しない。
 
+### 追記（2026-11-17・二次情報）
+
+経済産業省の令和7年度調査（2026年10月21日公表と報じられている）の2025年値として、国内BtoB-EC市場規模560.1兆円（前年比8.9％増）、BtoB-EC化率45.9％（前年比2.8ポイント増）が、販売支援系の記事2本（hanbaishi.com、bcart.jp）に載っていた。経済産業省の原本（press/2026/10/20261021001.html、files/000006536.pdf）は2026年11月17日時点で403のため読めておらず、**未確認**（二次情報の転記）。2024年値514.4兆円・43.1％は上書きせず残す。予測「2025年が2024年を下回らない」は、二次情報の範囲では下回っていない。原本確認までは resolved にしない。
+
 ## 反証（これが偽なら何が観測されるか）
 
 - 次回の同じ定義の統計でBtoB-EC市場規模とEC化率がともに低下する
@@ -76,6 +81,8 @@ updated: 2026-09-19
 - 調査定義の変更で2022年から2024年の増加を同じ系列として比較できないと判明する
 
 ## 未着手
+
+- 2026年11月17日、再検証を試みた。開いて読めたURLは、公表資料の古い複製（web.archive.org 2026-01-28版の250826_kohyoshiryo.pdf。514.4兆円・465.2兆円・420.2兆円・43.1％を確認）と、二次情報の hanbaishi.com/news/23720 と bcart.jp/post/202。経済産業省本体（250826_kohyoshiryo.pdf、ecresult.html、令和7年度の press と報告書）は403で、新版の原本は**未確認**。このため valid_as_of と recheck_by は更新していない
 
 - 2026年9月19日、企業の受発注・契約デジタル化に関する今後の意向調査を探したが見つからなかった（**未確認**の理由）。デジタル庁の電子契約普及調査（2025年3月）とJIPDEC調査（2026年1月）は確認したが、いずれも現状把握が中心だった
 - 業種別・取引形態別のBtoB-EC化率を分解する

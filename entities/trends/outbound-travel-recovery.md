@@ -22,8 +22,8 @@ naming:
   original_label: 日本人海外旅行者数の回復
   note: "「海外旅行需要の回復」は、観光庁が公表する日本人出国者数の推移を要約するための記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-15"
+  recheck_by: "2027-02-15"
 evidence:
   - {field: kind, source: "https://www.mlit.go.jp/kankocho/page01_00056.html", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
   - {field: stage, source: "https://www.mlit.go.jp/policy/shingikai/content/001986335.pdf", certainty: independent, retrieved: primary, as_of: "2025", tense: completed}
@@ -88,6 +88,7 @@ updated: 2026-09-21
 
 ## 未着手
 
+- 2026年11月15日、観光庁の記者会見ページ（page01_00056）、基本計画の報道発表（news02_00077）、交通政策審議会の資料（001986335.pdf）を再読し、出国日本人数の2019年2,008万人・2023年962万人・2024年1,301万人・2025年1,473万人（前年比約13％増）と、アウトバウンド拡大を柱とする基本計画の記述が変わっていないことを確認した。2026年の月次値はこの3出典に無く未確認（stageは growing のまま）
 - 2026年9月21日、観光庁「観光立国推進基本計画」（第5次、2026年3月27日閣議決定）の報道発表を実読し、パスポート手数料引下げ等のアウトバウンド拡大施策を見出している未来として追記した
 - 方面別、年齢別、旅行目的別に回復速度を分解する
 - 出国者数と旅行消費額、航空座席供給、平均旅行費用を同じ期間で比較する

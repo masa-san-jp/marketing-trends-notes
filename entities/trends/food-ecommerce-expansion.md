@@ -22,8 +22,8 @@ naming:
   original_label: 食品、飲料、酒類のBtoC-EC市場拡大
   note: "「食品・飲料・酒類ECの拡大」は、経済産業省の分野別市場規模を要約するための記述的なラベル"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-17"
+  recheck_by: "2027-02-17"
 evidence:
   - {field: kind, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2024", tense: completed}
   - {field: stage, source: "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf", certainty: independent, retrieved: primary, as_of: "2023-2024", tense: completed}
@@ -42,7 +42,7 @@ sources:
   - https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf
   - https://prtimes.jp/main/html/rd/p/000004474.000001594.html
 status: verified
-updated: 2026-09-20
+updated: 2026-11-17
 ---
 
 # 食品・飲料・酒類ECの拡大
@@ -90,6 +90,7 @@ ECモール、食品宅配、メーカー直販、オンラインスーパーな
 ## 未着手
 
 - 2026年9月20日、LINEリサーチのプレスリリース（2023年8月）を実読して見出している未来を追記した。より新しい同種調査は今回探せておらず、2023年時点のデータであることに留意する
-- 2025年公表値で予測を答え合わせする
+- 2025年公表値で予測を答え合わせする（2026年11月17日時点で、令和7年度調査の公表は未確認。経産省の一覧ページは到達できなかった）
+- 2026年11月17日、経産省の令和6年度電子商取引市場調査PDFとLINEリサーチのプレスリリースを開いて確認した。経産省のサイトはWAFで直接取得できず、Internet Archiveの保存版（2026-01-28取得）のPDFを読んだ。食品・飲料・酒類は2023年29,299億円（EC化率4.29％）、2024年31,163億円（EC化率4.52％、6.36％増）で変わらず。LINEは2023年7月18〜20日調査、n=1,045、今後の利用意向56％で変わらず
 - 食品、飲料、酒類を分けた市場規模とEC化率を確認する
 - 食品ECの利用者属性、購買頻度、配送・店舗受取などの行動変化を独立調査で補う
