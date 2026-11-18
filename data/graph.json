@@ -6095,32 +6095,32 @@
         "note": "「国内BtoC-ECの拡大」は、経済産業省の市場規模・EC化率の統計を要約するための記述的なラベル。消費者がこの語を自称することは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-19",
+        "recheck_by": "2027-02-19"
       },
       "evidence": [
         {
           "field": "kind",
-          "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
+          "source": "https://www.meti.go.jp/press/2026/10/20261021001.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024",
+          "as_of": "2025",
           "tense": "completed"
         },
         {
           "field": "stage",
-          "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
+          "source": "https://www.meti.go.jp/press/2026/10/20261021001.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024",
+          "as_of": "2025",
           "tense": "completed"
         },
         {
           "field": "time",
-          "source": "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
+          "source": "https://www.meti.go.jp/press/2026/10/20261021001.html",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024",
+          "as_of": "2025",
           "tense": "completed"
         },
         {
@@ -6136,8 +6136,8 @@
         {
           "claim": "2025年の国内BtoC-EC市場規模が2024年の26.1兆円を下回らない",
           "by": "2026-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-11-19",
+          "outcome": "hit"
         }
       ],
       "channel_scope": {
@@ -6147,12 +6147,14 @@
       "channels": [],
       "relations": [],
       "sources": [
+        "https://www.meti.go.jp/press/2026/10/20261021001.html",
+        "https://www.meti.go.jp/files/000006536.pdf",
         "https://www.meti.go.jp/press/2025/08/20250826005/20250826005.html",
         "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
         "https://ecnomikata.com/ecnews/52119/"
       ],
       "status": "verified",
-      "updated": "2026-11-17",
+      "updated": "2026-11-19",
       "path": "entities/trends/japan-btoc-ec-expansion.md"
     },
     "trend/japanese-music-overseas-expansion": {

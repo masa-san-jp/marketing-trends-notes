@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-17",
+  "as_of": "2026-11-19",
   "findings": [
     {
       "kind": "stale",
@@ -20,11 +20,6 @@
       "kind": "stale",
       "about": "trend/foodservice-demand-recovery",
       "text": "外食・飲食サービス需要の回復（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
-    },
-    {
-      "kind": "stale",
-      "about": "trend/japan-btoc-ec-expansion",
-      "text": "国内BtoC-ECの拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
     },
     {
       "kind": "stale",
