@@ -3268,32 +3268,32 @@
         "note": "「BtoB電子商取引の拡大」は、経済産業省の市場規模・EC化率を要約するための記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-20",
+        "recheck_by": "2027-02-20"
       },
       "evidence": [
         {
           "field": "kind",
-          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "source": "https://www.meti.go.jp/files/000006536.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024",
+          "as_of": "2025",
           "tense": "completed"
         },
         {
           "field": "stage",
-          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "source": "https://www.meti.go.jp/files/000006536.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2024",
+          "as_of": "2025",
           "tense": "completed"
         },
         {
           "field": "time",
-          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "source": "https://www.meti.go.jp/files/000006536.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2024",
+          "as_of": "2022-2025",
           "tense": "completed"
         },
         {
@@ -3309,8 +3309,8 @@
         {
           "claim": "2025年の国内BtoB-EC市場規模が2024年の514.4兆円を下回らない",
           "by": "2026-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-11-20",
+          "outcome": "hit"
         }
       ],
       "channel_scope": {
@@ -3320,10 +3320,11 @@
       "channels": [],
       "relations": [],
       "sources": [
+        "https://www.meti.go.jp/files/000006536.pdf",
         "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf"
       ],
       "status": "verified",
-      "updated": "2026-11-17",
+      "updated": "2026-11-20",
       "path": "entities/trends/b2b-ecommerce-expansion.md"
     },
     "trend/building-renovation-market-expansion": {
