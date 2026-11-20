@@ -22,12 +22,13 @@ naming:
   original_label: 化粧品産業の海外展開
   note: "「日本化粧品の海外展開・高付加価値化」は、経済産業省の化粧品産業政策・調査・検討会を要約する記述的なラベル。消費者がこの複合語を自称するかは確認していない"
 freshness:
-  valid_as_of: "2026-08-11"
-  recheck_by: "2026-11-11"
+  valid_as_of: "2026-11-21"
+  recheck_by: "2027-02-21"
 evidence:
-  - {field: kind, source: "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html", certainty: attested, retrieved: primary, as_of: "2026-08-11", tense: completed}
+  - {field: kind, source: "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html", certainty: attested, retrieved: primary, as_of: "2026-02-06", tense: completed}
   - {field: stage, source: "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/001_04_00.pdf", certainty: attested, retrieved: primary, as_of: "2025-12-08", tense: completed}
   - {field: time, source: "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html", certainty: attested, retrieved: primary, as_of: "2020-08", tense: completed}
+  - {field: stage, source: "https://www.meti.go.jp/meti_lib/report/2024FY/000308.pdf", certainty: independent, retrieved: primary, as_of: "2025-02-28", tense: completed}
   - {field: current-status, source: "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf", certainty: vendor, retrieved: primary, as_of: "2026-01-26", tense: intended}
 predictions:
   - {claim: "化粧品産業競争力強化検討会の次回会合資料で、J-Beauty構想がASEAN・EUを起点とする海外市場拡大方針として具体的な実行計画（拠点設置、認証制度等）に進む", by: "2027-06", resolved: null, outcome: null}
@@ -44,7 +45,7 @@ sources:
   - https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/001_04_00.pdf
   - https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf
 status: verified
-updated: 2026-11-17
+updated: 2026-11-21
 ---
 
 # 日本化粧品の海外展開・高付加価値化
@@ -70,9 +71,16 @@ updated: 2026-11-17
 政策・産業活動が継続している。経済産業省は2020年の化粧品産業ビジョン以降、産業の持続的発展、OEM/ODM・原料製造の市場動向と海外展開、
 新輸出大国コンソーシアムなどを掲載し、2025年12月からは化粧品産業競争力強化検討会を開催している。
 
-2024年度調査では、米国、欧州、中国、韓国、東南アジアなどへの展開理由と、規制、認証、価格競争、現地ブランドとの競争、表示・処方対応などの
+経済産業省の化粧品産業競争力強化検討会の第1回資料（2025年12月8日、あずさ監査法人作成）によると、2023年の国内化粧品製造業の出荷額は約1.3兆円で、
+インバウンド需要による伸びはコロナ禍を経て消失し、コロナ禍以前の水準には達していない。輸入額は約0.4兆円で徐々に増えている。日本からの輸出額は近年増加していたが、
+2021年から減少に転じており、主な輸出先は中国、香港、シンガポールである。2010年以後、韓国の輸出額は日本の倍近い伸びを示している。
+同検討会は2026年6月3日の第6回まで開かれ、2026年6月付で中間報告書が公表されている（検討会の一覧ページと報告書ページで確認。報告書の中身は**未確認**）。
+
+2024年度調査（あずさ監査法人、2025年2月28日付最終報告資料）では、米国、欧州、中国、韓国、東南アジアなどへの展開理由と、規制、認証、価格競争、現地ブランドとの競争、表示・処方対応などの
 課題が企業ヒアリングで整理されている。これは海外消費者の購買が一様に増えたことを示す統計ではなく、供給側が海外展開を事業の成長経路として
 整理し、商品・原料・ブランド・規制対応の組み替えを検討していることを示す資料として扱う。
+同調査の要約によると、ヒアリング企業の海外展開は国内工場生産・国内営業拠点による輸出・販売が最多で、海外工場生産は品質管理や商慣行の違いから採用困難との意見が多い。
+展開先は欧米と中国が多かったが、規制の厳格化や競争の激化を背景に転換・分散を検討する企業が多く、有望先として東南アジアを挙げる企業が多かった一方、総じて安定的な需要獲得には至っていないとされる。
 
 ## kind と stage の判定
 
@@ -101,10 +109,10 @@ OEM/ODM、原料、ブランドを競争力の政策課題としてまとめる�
 
 ## 未着手
 
-- 2026年11月17日、再検証を試みた。開いて読めたURLは、web.archive.org の複製のみ。cosme.html（2026-01-19版、最終更新日2025年4月7日・化粧品産業ビジョンの掲載を確認）、001_04_00.pdf（2026-01-11版、2025年12月8日付・出荷額約1.3兆円・輸出額は2021年から減少に転じている旨・中国、香港、シンガポールが主な輸出先の旨を確認）、meti_lib/report/2024FY/000308.pdf（2026-11-16版、あずさ監査法人2025年2月28日付最終報告資料であることを確認）。002_04_00.pdf（J-Beauty提案）は直接も複製も読めず、本文の「ASEANとEUを起点」の記述は2026年9月20日の実読に拠り、今回は再確認できていない（**未確認**）。複製は古い版であり、検討会の新しい資料の有無は**未確認**。このため valid_as_of と recheck_by は更新していない
-
+- 2026年11月21日、経済産業省の原典を再度開いて読み直した（cosme.html は最終更新日2026年2月6日、001_04_00.pdf、002_04_00.pdf、meti_lib/report/2024FY/000308.pdf）。出荷額・輸出額の記述と、J-Beauty提案の「ASEANとEUを起点」の記述は原典のまま確認でき、stage は growing のまま据え置いた。検討会の一覧ページ（最終更新日2026年3月26日と表示されるが第6回・中間報告書の掲載あり）と中間報告書ページ（最終更新日2026年8月3日）は読めたが、中間報告書（20260605_1.pdf ほか）と第6回資料（006_01_00.pdf ほか）のPDFは HTTP 202・0バイトで読めておらず**未読**。J-Beauty提案が中間報告書に採り入れられたか、予測の実行計画に進んだかは**未確認**
 - 2026年9月20日、既存sourcesにあった羽田未来総合研究所「J-Beauty」提案資料（002_04_00.pdf）を実読し、見出している未来として本文に昇格させた。1企業の提案であり、検討会でどこまで採択されたかの続報はまだ確認できていない
 - 化粧品、OEM/ODM、原料、物流・小売を分け、海外展開の目的、売上、取引先、規制対応費用を整理する
 - 中国、北米、欧州、韓国、東南アジアなど市場別に、輸出・現地生産・越境EC・代理店の経路を確認する
 - 海外向け表示・成分規制・認証・ハラル・環境要求が商品設計、発売期間、返品・回収に与える影響を同じ定義で追う
 - 応答するpractice（市場別の規制・表示・ブランド・販売後対応をつなぐ海外展開運用）の採用率と実績を確認する
+- 中間報告書（2026年6月）と第2〜6回の資料を読み、J-Beauty提案・海外展開方針の扱いと国別の数値目標の有無を確認する

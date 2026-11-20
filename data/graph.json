@@ -3898,8 +3898,8 @@
         "note": "「日本化粧品の海外展開・高付加価値化」は、経済産業省の化粧品産業政策・調査・検討会を要約する記述的なラベル。消費者がこの複合語を自称するかは確認していない"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-21",
+        "recheck_by": "2027-02-21"
       },
       "evidence": [
         {
@@ -3907,7 +3907,7 @@
           "source": "https://www.meti.go.jp/policy/mono_info_service/mono/bio/cosme/cosme.html",
           "certainty": "attested",
           "retrieved": "primary",
-          "as_of": "2026-08-11",
+          "as_of": "2026-02-06",
           "tense": "completed"
         },
         {
@@ -3924,6 +3924,14 @@
           "certainty": "attested",
           "retrieved": "primary",
           "as_of": "2020-08",
+          "tense": "completed"
+        },
+        {
+          "field": "stage",
+          "source": "https://www.meti.go.jp/meti_lib/report/2024FY/000308.pdf",
+          "certainty": "independent",
+          "retrieved": "primary",
+          "as_of": "2025-02-28",
           "tense": "completed"
         },
         {
@@ -3956,7 +3964,7 @@
         "https://www.meti.go.jp/shingikai/mono_info_service/cosmetic_industry/pdf/002_04_00.pdf"
       ],
       "status": "verified",
-      "updated": "2026-11-17",
+      "updated": "2026-11-21",
       "path": "entities/trends/cosmetics-overseas-expansion.md"
     },
     "trend/creator-ad-disclosure": {
