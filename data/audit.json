@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-17",
+  "as_of": "2026-11-22",
   "findings": [
     {
       "kind": "stale",
@@ -10,11 +10,6 @@
       "kind": "stale",
       "about": "trend/cosmetics-overseas-expansion",
       "text": "日本化粧品の海外展開・高付加価値化（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
-    },
-    {
-      "kind": "stale",
-      "about": "trend/cross-border-ecommerce-expansion",
-      "text": "越境ECの拡大（growing）の再検証期限 2026-11-11 を過ぎている。実データで確かめて valid_as_of を更新するか、stage を動かす"
     },
     {
       "kind": "stale",

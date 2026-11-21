@@ -4169,32 +4169,32 @@
         "note": "「越境ECの拡大」は、経済産業省が推計する日米中3か国間の消費者向け越境EC市場規模を要約する記述的なラベル"
       },
       "freshness": {
-        "valid_as_of": "2026-08-11",
-        "recheck_by": "2026-11-11"
+        "valid_as_of": "2026-11-22",
+        "recheck_by": "2027-02-22"
       },
       "evidence": [
         {
           "field": "kind",
-          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "source": "https://www.meti.go.jp/files/000006536.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2024",
+          "as_of": "2025",
           "tense": "completed"
         },
         {
           "field": "stage",
-          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "source": "https://www.meti.go.jp/files/000006536.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2023-2024",
+          "as_of": "2024-2025",
           "tense": "completed"
         },
         {
           "field": "time",
-          "source": "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
+          "source": "https://www.meti.go.jp/files/000006536.pdf",
           "certainty": "independent",
           "retrieved": "primary",
-          "as_of": "2022-2024",
+          "as_of": "2022-2025",
           "tense": "completed"
         },
         {
@@ -4210,8 +4210,8 @@
         {
           "claim": "2025年の中国消費者による日本事業者からの越境EC購入額が2024年の2兆6,372億円を下回らない",
           "by": "2027-12",
-          "resolved": null,
-          "outcome": null
+          "resolved": "2026-11-22",
+          "outcome": "hit"
         },
         {
           "claim": "BEENOSグループの次回同種調査で、訪日後の旅アト・リピート購入経験がない海外顧客のうち、越境ECの利用意志があると回答する割合が2023年調査の43.7%を大きく下回らない",
@@ -4227,11 +4227,12 @@
       "channels": [],
       "relations": [],
       "sources": [
+        "https://www.meti.go.jp/files/000006536.pdf",
         "https://www.meti.go.jp/policy/it_policy/statistics/outlook/250826_kohyoshiryo.pdf",
         "https://beenos.com/news-center/detail/20230907_bcr_pr/"
       ],
       "status": "verified",
-      "updated": "2026-11-17",
+      "updated": "2026-11-22",
       "path": "entities/trends/cross-border-ecommerce-expansion.md"
     },
     "trend/crypto-asset-user-expansion": {
