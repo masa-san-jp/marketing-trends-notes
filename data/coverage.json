@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-17",
+  "as_of": "2026-11-22",
   "trend_total": 65,
   "trend_stub_excluded": 0,
   "by_status": {
@@ -99,7 +99,6 @@
   "stale": [
     "trend/b2b-ecommerce-expansion",
     "trend/cosmetics-overseas-expansion",
-    "trend/cross-border-ecommerce-expansion",
     "trend/foodservice-demand-recovery",
     "trend/japan-btoc-ec-expansion",
     "trend/online-game-spending-protection",
@@ -248,7 +247,7 @@
         "passed": true
       },
       "stale_ratio": {
-        "actual": 0.13846153846153847,
+        "actual": 0.12307692307692308,
         "operator": "<=",
         "threshold": 0.15,
         "passed": true
@@ -260,7 +259,7 @@
         "passed": true
       },
       "resolved_predictions": {
-        "actual": 8,
+        "actual": 9,
         "operator": ">=",
         "threshold": 5,
         "passed": true
@@ -285,9 +284,9 @@
     "primary_read_ratio": "1.00（下限 0.3・原典を実読した根拠を持つ trend）",
     "independent_ratio": "1.00（下限 0.5・independent / attested / measured の根拠を持つ trend）",
     "per_category_min": "12/12 カテゴリが 2件以上",
-    "stale_ratio": "0.14（上限 0.15・as_of=2026-11-17 時点）",
+    "stale_ratio": "0.12（上限 0.15・as_of=2026-11-22 時点）",
     "practice_linked": "60/61 の practice が responds_to を持つ（下限比率 0.5）",
-    "resolved_predictions": "8/5 件の予測が答え合わせ済み",
+    "resolved_predictions": "9/5 件の予測が答え合わせ済み",
     "forward_stated_ratio": "1.00（下限 1.0・第一節とpredictionsを持つtrend）",
     "intended_evidence_ratio": "0.92（下限 0.3・tense: intendedの根拠を持つtrend）"
   }
